@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-10-31 Sat 11:02 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<p>
+"/Users/a/org/newton-guc-tanim-01.org"
+</p>
+<div id="outline-container-org1d7477e" class="outline-2">
+<h2 id="org1d7477e">Newtoncu çekim gücünün tanımı nedir?</h2>
+<div class="outline-text-2" id="text-org1d7477e">
+<ol class="org-ol">
+<li>Yani şu Newtoncu çekim gücü denen şey nasıl tanımlanıyor?</li>
+
+<li>Action-at-a-distance ve ether kavramı falan işin içine giriyor.</li>
+
+<li>Fizikçilerin kelime oyunları bunlar. Newton'un otoritesini kurtarmak için uydurulmuş kavramlar.</li>
+
+<li>Evet, nedir bu Newtoncu güç?</li>
+
+<li>Fizikçiler hiç sorgulamadan "Newton mekaniğinin" standard denklemlerini kullanırlar ve işlerini görürler.</li>
+
+<li>Burada kabul edilmiş mantık şu, fizikçilerin mantığı yani. Fizikçiler diyorlar ki, Newtoncu mekanik denen sistemin içinde bulunan denklemleri kullanarak gezegenlerin yörüngelerini hesaplıyoruz. Bu mekaniğin adı "Newtoncu mekanik" veya "Newton mekaniği", demek ki, bu mekanik Newtoncu çekim gücünü kullanan bir mekanik. İsminden bu anlaşılıyor. Üstelik, denklemlerimizde Newton'un adı verilmiş terimler var mesela, "Newton'un evrensel çekim gücü sabiti". Bu kadar görkemli bir ismi olan bir sabitin Newton'un olmaması imkanı var mı? İsmi "çekim gücü sabiti" olan bir şeyin çekim gücü olmama ihtimali var mı? Yani, içinde Newton'un çekim gücü sabiti G olan bir denklemi kullandığınız zaman zorunlu olarak çekim gücü kullanmış oluyorsunuz, bunun aksini kim iddia edebilir? Fizikçilerin mantığı bu? Newton'un kutsal adı ile markalanmış ve damgalanmış terimler kullandılar diye Newton'un çekim gücünü kullanıyorlar diye bizi kandırıyorlar.</li>
+
+<li>Newton'un evrensel çekim gücü sabiti G diye bir şeyi denklemlere yapıştırdılar diye Newton'un çekim gücünü kullandıklarını söylüyorlar. Böyle bir şey zaten teorik olarak imkansız. Adı üstünde Newton'un G'si bir sabit, yani bir birim. Newtoncuların tanımladığı bir birim.</li>
+
+<li>Ve fizikçiler Newtoncu çekim gücünü kullanarak yörüngeleri hesapladığımıza göre bu kutsal Newtoncu güç var olmalıdır, diyorlar. Bu güç action-at-a-distance'mış, zaman geçmeden mesafeleri katedebiliyormuş, cisimlere temas etmeden uzaktan hareket ettirebiliyormuş, bunlar bizi hiç ilgilendirmez, Newton markalı terimler kullanıyoruz ve doğru sonuçlar alıyoruz öyleyse Newton'un dediği her şey doğrudur, diyorlar. Newtoncu güç vardır ama nasıl işlediğini bilmiyoruz, diyorlar.</li>
+
+<li>Newtoncu gücü anlamak için, akademik fizik denen şeyin Newtoncu okulcu bir tarikat olduğunu anlamamız gerekiyor. Newton bir tarikat kurucudur ve Aristo tarikatını devirip yerine Newton tarikatını kurmuştur. Tarikat demek, tarikat şeyhine sorgulamadan inanan insanların topluluğu demektir. Newton tarikatı da Newtoncu çekim gücü denen mucizeye sorgulamadan inanan insanların tarikatı demektir.</li>
+
+<li>Newton mekaniği Newton'un müritlerinin 350 yıldır geliştirdikleri, kendi içinde tutarlı bir birim sistemidir ve temelinde Newton mucizesi yani çekim gücü vardır.</li>
+
+<li>Bu çekim gücü doğada olmadığına göre Newton mekaniği kendi içinde tutarlı yalanlar sistemidir.</li>
+
+<li>Yalanlar ve sahtekarlıklar.</li>
+
+<li>Yalan nerede? Yalan şu. Fizikçiler Newtoncu gücü kullanarak yörünge hesaplamıyorlar, Kepler Kuralını kullanarak yörüngeleri hesaplıyorlar. Ama önce Newton'un adı ile markalanmış terimleri yazıyorlar. "Bakın Newton gücü ile yüklü <i>M</i> kütlesi, küçük kütle <i>m</i>'yi çekiyor? Nasıl mı çekiyor? Bayağı çekiyor işte. Newtoncu güç bütün fizik yasalarını ihlal ederek <i>M</i> kütlesinden çıkıp hiç zaman geçmeden <i>m</i> kütlesine ulaşıyor ve <i>m</i> kütlesine hiç temas etmeden <i>m</i> kütlesini kendine doğru çekiyor. Nasıl çekiyor? Bilmiyoruz çekiyor işte. Newton öyle demiş, ondan çekiyor. Saçmalıklar ve yalanlar daha bitmedi. Bu şekilde Newton'un kutsal ruhuna dua ettikten sonra fizikçi <i>m</i> kütlesini denklemlerden eler. Ee, hani <i>M</i>, <i>m</i>'yi çekiyordu? Artık <i>m</i> denklemlerde yok. Yani, yörüngelerin hesaplandığı denklemlerde <i>m</i> yok. Elendi. O zaman neden yazdınız? Newton'a dua etmek için yazdınız. Ama <i>m</i> harfi denklemlerde kalsa yörünge hesapları yapamayacaksınız, onun için <i>m</i> harfini eliyorsunuz.</li>
+
+<li>Fizikçiler önce Newton marka terimleri yazıyorlar, Newton'a dualarını yapıyorlar sonra da bu dekoratif ve ideolojik terimleri eliyorlar. Daha önemlisi, sadece <i>m</i> kütlesi değil, Newtoncu gücü temsil eden <i>F</i> harfi de eleniyor. Yani yörüngelerin hesaplandığı denklemlerde güç terimi yok! Hani Newtoncu çekim gücünü kullanarak yörünge hesaplıyordunuz? Yalan söylüyorsunuz.</li>
+
+<li>Bu sahtekarlık, çekim gücü terimlerini yazıp elemek sahtekarlığı, Newton'un yazılarında en açık şekilde görülüyor çünkü Newton sadece orantılar kullanıyor, müritlerinin sonradan uydurduğu G gibi marka terimleri kullanmıyor, Newton'un Newton çekim gücü sabitinden haberi bile yok.</li>
+
+<li>Ama biz müritlerin sahtekarlığına bakalım, çünkü fizikçilerin Kepler Kuralını Newtoncu marka terimlerle yazmaları açıkca görülüyor:</li>
+</ol>
+
+\begin{equation}
+F(I) = m\frac{R}{T^2} = m\frac{GM}{R^2}= F(G)
+\end{equation} 
+
+<ol class="org-ol">
+<li value="17">Burada ilk gözümüze çarpan sahtekarlık <i>m</i> harfinin denklemin iki tarafına da yazılmış olması. Denklemin iki tarafına da yazılmış olan bir terim yok demektir.</li>
+</ol>
+
+\begin{equation}
+F(I) = [\text{kuru fasulye}]\frac{R}{T^2} =  [\text{kuru fasulye}]\frac{GM}{R^2}= F(G)
+\end{equation}
+
+<p>
+Denklem (1) ile Denklem (2) eşdeğerdir, aralarında hiçbir fark yoktur. Yörüngelerin kuru fasulye ile bir ilgisi olmadığı gibi <i>m</i> kütlesi ile de bir ilgisi yoktur.
+</p>
+
+<ol class="org-ol">
+<li value="18">Eğer fizikçiler, eleneceğini bildikleri ve yörünge ile ilgisi olmayan <i>m</i> kütlesini denklemin iki tarafına da yazıyorlarsa bunun tek bir sebebi olabilir, o da Newton'un kutsal otoritesini korumak. Newton <i>M</i> kütlesi ile <i>m</i> kütlesi birbirini çekmelidir demiş, ama yörünge matematiği böyle bir çekim olmadığını söylüyor çünkü yörünge matematiğine göre, yörünge hareketi <i>m</i> kütlesinden bağımsızdır. Ama eğer Newtoncu tarikatın bir üyesi iseniz <i>M</i> kütlesi <i>m</i> kütlesini çekmiyor diyemezsiniz, ancak <i>m</i> harfini denklemin iki tarafına da yazıp "işte bakın <i>M</i> kütlesi <i>m</i> kütlesini çekiyor dersiniz ama ondan sonra da <i>m</i> kütlesini elersiniz.</li>
+
+<li>Yani Newtoncu çekim gücünü dayatmak için <i>m</i> göstermelik de olsa yazılmalı sonra da elenmeli.</li>
+
+<li>Aynı şekilde güç terimleri de denklemin iki tarafına yazılmış ve onlar da eleniyor. Denklemin iki tarafına yazılmış <i>F</i> terimleri matematik olarak yok sayılıyor, yani <i>F</i> terimleri de kuru fasulye kadar yörünge ile ilgili.</li>
+
+<li>Üstelik burada <i>F</i> terimleri ile fizikçiler bir de kelime oyunu cambazlığı yapıyorlar. İki cins güç varmış ta birine "İnertial" güç deniyormuş diğerine "gravitational" güç deniyormuş ve bu iki güç birbirine eşitmiş. Hayır. İki güç yok. "İnertial force" ve "gravitationl force" eşanlamlı kelimelerdir. Aynı şey için iki kelime üretmiş bu Newtoncu sahtekarlar ve kelime cambazları, \(F \equiv F(I) \equiv F(G)\).</li>
+
+<li>Doğada "Newtoncu çekim gücü" diye bir mucize yok ki bu mucizenin iki cinsi olsun. Ama okulcuların yaptığı en iyi şey, olmayan şeylerin olmayan yeni cinslerini tanımlamaktır.</li>
+
+<li><i>m</i>'ler ve <i>F</i>'ler zaten eleniyor. Dikkat edin, daha yörüngeleri hesaplamadan bu terimler eleniyor. Newtoncuların iki temel marka terimi "kütle" ve "güç" terimleri yörünge hesapları yapmadan eleniyor. Kütle kavramı da Newton'un uydurması. Cavendish, mesela, kütle değil sadece ağırlık kelimesini kullanıyor.</li>
+
+<li>Daha yörünge hesapları yapmadan Newtoncu gücü temsil eden "F" terimleri elendiğine göre yörüngelerin güç ile kuru fasulye kadar bile ilişkisi olmadığını anlıyoruz. Elenen terimler iz bırakmadan elenir, matematikte bu böyledir ama Newtoncu okulcu fizikte bir terim bir kere yazıldı mı elense bile o terim Newtoncu fizikçilere görünür, bize görünmez ama onlara görünür.</li>
+
+<li>Newtoncu dekoratif süs terimleri elenince geriye ne kaldı? Geriye Kepler Kuralı kaldı:</li>
+</ol>
+
+\begin{equation}
+\frac{R}{T^2} = \frac{GM}{R^2}
+\end{equation}
+
+<ol class="org-ol">
+<li value="26">Ama şu meşhur Newtoncu çekim sabiti G hâlâ orada duruyor, öyleyse bu Kepler Kuralı ile yapılan hesaplar G harfini kullandığımız için Newtoncu çekim ile hesaplanmış olamz mı? Hayır olmaz.</li>
+
+<li>Bir kere <i>GM</i> iki terim gibi görünse bile, tek bir terimdir. Astronomide <i>G</i> kullanılmaz sadece <i>GM</i> kullanılır. Zaten burada Newton'un müritlerinin Newton'un ismi ile şanlandırdıkları bu kutsal <i>GM</i> Kepler Kuralının sabit teriminden başka bir şey değildir.</li>
+
+<li>Kepler Kuralı bir orantıdır. Bir orantı ile hesap yapmak istiyorsanız, o orantıda geçen terimlerin bilinen değerlerini bulup yazmalısınız. Bu sizin, katsayınız, veya biriminiz, olacaktır. Başka yolu yoktur. Ama bu birime, ister Gauss'un sabiti deyin, ister Kepler'in sabiti deyin, ister Newton'un sabiti deyin, istersiniz, "Kurukahveci Mehmet Efendi ve Mahdumları Sabiti" deyin, hiçbir şey değişmez.</li>
+
+<li>Burada \(R_0\) ve \(T_0\) bilinen terimler olsun. Newton o zamanlar en iyi bilinen Dünya Venüs mesafesini birim olarak kullanmıştır.</li>
+
+<li>O zaman bir birim seçip Kepler Kuralını</li>
+</ol>
+
+\begin{equation}
+\frac{R_0^3}{T_0^2} = \frac{R^3}{T^2}
+\end{equation}
+
+<p>
+olarak yazarsınız.
+</p>
+
+<ol class="org-ol">
+<li value="31">Newtoncular \(\frac{R_0^3}{T_0^2}\) terimin çalıp Newton damgasını vurup markalamışlar yani,</li>
+</ol>
+
+\begin{equation}
+\frac{R_0^3}{T_0^2} = GM
+\end{equation}
+
+<p>
+demişler. Sahtekarlığın ve okulculuğun bu kadarı da fazla!
+</p>
+
+<ol class="org-ol">
+<li value="32">\(\frac{R_0^3}{T_0^2}\) terimi bilinen herhangi bir <i>R</i> ve <i>T</i>'nin oranı olabilir. Hangi birimi seçtiğimizin hiçbir önemi yoktur. Newtoncular seçtikleri birimi Newton adına kutsallaştırıp bütün dünyaya bir doğa sabiti diye satmışlar. Yuh artık! Sahtekarlığın bu kadarı!</li>
+
+<li>tarikatçılık bir birim tanımlayıp o birimi tarikat sembolleri ile yükleyip kutsallaştırmak demektir. Hırıstiyanlıkta haç neyse Newtonculukta da güç odur.</li>
+
+<li>Sanki <i>GM</i> kullanmadan yörüngeler hesaplanamazmış gibi bir hava yaratılmak istenmektedir, biz bu numaraları yutmayız. <i>GM</i> bir birimdir. İsteyen <i>GM</i> kullanır, isteyen Newton gibi Venüs'ün değerlerini birim olarak kullanır.</li>
+
+<li>Sonuç olarak, görüyoruz ki, Newtoncular da yörüngeleri Kepler Kuralını kullanarak hesaplıyorlar. Kepler Kuralında bir güç terimi yok. Newtoncular da Kepler Kuralına bir güç terimi monte edemiyorlar onun için sahtekarlık yapıyorlar ve Kepler'in orantısının terimleri üzerine Newtoncu etiketler yapıştırıp sahtekarlık yapıyorlar.</li>
+
+<li>Akademik fizik Aristo okulculuğunun devamıdır, yani okulculuğun sadece şeyhi ve ismi değişmiştir. Newton'un mucize gücü Newton tarikatı tarafından bütün dünyaya tek gerçek doğa modeli olarak dayatılmaktadır.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-10-31 Sat 11:02</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-10-31 Sat 11:05 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org22292f7" class="outline-2">
+<h2 id="org22292f7">G: Deus Ex Machina</h2>
+<div class="outline-text-2" id="text-org22292f7">
+<p>
+Did Cavendish measure the so-called Newtonian so-called gravitational so-called constant \(G\)? No. He didn't.<br />
+</p>
+
+<p>
+In the 19th century, two centuries after Newton's definition of his "universal" force of attraction, there was still no experimental verification of it.<br />
+</p>
+
+<p>
+Physicists desperately needed an experimental verification of this sanctified force so they defined the Cavendish experiment posthumously in the 19th century as the experiment that measured \(G\) for the first time.<br />
+</p>
+
+<p>
+But first they needed to define \(G\) and this was done by C.V. Boys.<br />
+</p>
+
+<p>
+\(G\) was defined in 1894, Henry Cavendish conducted his experiment in 1798. \(G\) was defined 96 years after Cavendish experiment.<br />
+</p>
+
+<p>
+[Boys, C. Vernon (1894). "On the Newtonian constant of gravitation". Nature. 50 (1292): 330–334.]<br />
+</p>
+
+<blockquote>
+<p>
+<br />
+</p>
+
+<p>
+The Newtonian Constant will be known if we know the force of attraction between two bodies which we can completely measure and weigh. Employing the C.G.S system of measurement, the Newtonian Constant is equal to the force of attraction in dynes between two balls weighing a gram each, with their centers one centimeter apart.<br />
+</p>
+
+<p>
+Of course it may be referred to pounds and inches or tons and yards, but as soon as all the quantities but G in Newton’s equation<br />
+</p>
+
+\begin{equation*}
+\text{Force}=G \frac{\text{Mass} \times \text{Mass}}{\text{Distance}^2}
+\end{equation*}
+
+<p>
+are known, no matter in what units the quantities are measured, G is known. The conversion of its numerical value from one system of measurement to another is of course a mere matter of arithmetic.<br />
+</p>
+
+<p>
+[…]<br />
+</p>
+
+<p>
+All these observers [using Cavendish type balances] actually determined the attraction between masses which could be weighed and measured, and thus found with different degrees of accuracy the value of G.<br />
+</p>
+</blockquote>
+
+<p>
+Boys defines \(G\) as the unit of force and gives it the unit of dyne. Dyne is the unit of force.<br />
+</p>
+
+<p>
+So, according to Boys, G appears to be a measurable quantity. He defines it as "the force of attraction in dynes between two balls weighing a gram each, with their centers one centimer apart" but the numerical value of this force is not known. There is no such force in nature.<br />
+</p>
+
+<p>
+Then he writes the formula of force with G. All terms are known, except Force and \(G\).<br />
+</p>
+
+<p>
+\(G\) is defined as a scaling factor.<br />
+</p>
+
+<p>
+So it's not true that \(G\) is a unit like meter. Dyne is a unit like meter. \(G\) is a chimera.<br />
+</p>
+
+<p>
+\(G\) is a scaling factor for force.<br />
+</p>
+
+<p>
+This is strange because in the Newtonian equation that Boys writes<br />
+</p>
+
+\begin{equation*}
+\text{Force}=G \frac{\text{Mass} \times \text{Mass}}{\text{Distance}^2}
+\end{equation*}
+
+<p>
+if \(G\) has the units of dynes, this equation does not work, the units of this equation will not work. The units will be<br />
+</p>
+
+\begin{equation*}
+dyne = dyne \frac{gram^2}{cm^2}
+\end{equation*}
+
+<p>
+or,<br />
+</p>
+
+\begin{equation*}
+\frac{g \cdot cm}{s^2} = \frac{g \cdot cm}{s^2} \frac{gram^2}{cm^2}
+\end{equation*}
+
+<p>
+And what are the units of \(G\)?<br />
+</p>
+
+\begin{equation*}
+G = \frac{1g \cdot cm}{s^2}\cdot \left( \frac{cm^3}{g^2} \right) \end{equation*}
+
+<p>
+The last part, inside the brackets is added by physicists, purely ad hoc, as deus Ex Machina, to make units of \(F=Mm/r^2\) to work.<br />
+</p>
+
+<p>
+What kind of physical quantity can have units of,<br />
+</p>
+
+\begin{equation*}
+G = \frac{1g \cdot cm}{s^2}\cdot \left( \frac{cm^2}{g^2} \right) \end{equation*}
+
+<p>
+???<br />
+</p>
+
+<p>
+The units of \(G\) simplifies to,<br />
+</p>
+
+\begin{equation*}
+G = \frac{cm^3}{s^2}\cdot \frac{1}{g} 
+\end{equation*}
+
+<p>
+This looks suspiciously like Kepler's Rule with the addition of \(1/g\).<br />
+</p>
+
+<p>
+But physicists, Newton's blind followers, like to hide this fact and write the units of \(G\) with the unit of force they named after the prophet of mechanics, their god, Newton, N.<br />
+</p>
+
+<p>
+It is defined, or rather its units are defined but its numerical value can be computed with an experiment. There are problems with the Newtonian force expression itself. It is a sacred definition and anyone who questions it will be dubbed a crackpot by physicists.<br />
+</p>
+
+<p>
+[I used  to say that \(G\) is a defined unit like meter and there is nothing to measure experimentally but it seems that the status of \(G\) is more complicated.]<br />
+</p>
+
+<p>
+Physicists needed to say that Newton's force of attraction was universal and they made \(G\) the symbol of that force.<br />
+</p>
+
+<p>
+[You cannot measure a constant of proportionality, you defined it.]<br />
+</p>
+
+<p>
+In this sense \(G\) is a scaling factor and unit converter. It fixes the unit of $F<br />
+</p>
+
+<p>
+What does Cavendish experiment measure? Cavendish measured the deflection of the arm due to the supposed attraction of the Newtonian force.<br />
+</p>
+
+<p>
+Did Cavendish measure G? No. This is a historical certainty. If so, why do physicists insists that Cavendish measured \(G\)?<br />
+</p>
+
+<p>
+This is what I'm trying to understand.<br />
+</p>
+
+<p>
+On the <a href="https://en.wikipedia.org/wiki/Cavendish_experiment">Wikipedia page</a>, they compute \(G\) from the constants of the pendulum.<br />
+</p>
+
+\begin{equation*}
+G=\frac{2 \pi^2 L r^2 \theta}{M N^2}
+\end{equation*}
+
+<p>
+If this is true, \(G\) must be independent of the constants of the pendulum. So if I change \(L\) or \(W\) or the torsion wire the value of \(G\) will not change, I will still get the correct value of G.<br />
+</p>
+
+<p>
+And this is what happens because Boys, Baily, Reich and many others used various types of pendulums and they all got the same value for \(G\) and density \(D\).<br />
+</p>
+
+<p>
+But this statement,<br />
+</p>
+
+\begin{equation*}
+G=\frac{2 \pi^2 L r^2 \theta}{M N^2}
+\end{equation*}
+
+<p>
+is missing an important term, the term \(m\) which represents the small mass. This statement is absurd because \(G\) is the attraction between the big weights \(M\) and the small weights \(m\). But \(m\) is not included in this equation which states the attraction between \(M\) and \(m\). There is the distance between \(M\) and \(m\) represented by \(r\), but \(m\) is not here. So \(r\) cannot be the distance between \(M\) and \(m\) because \(m\) is not included in this equation.<br />
+</p>
+
+<p>
+In physics, when a term is cancelled from an equation its effect stays in the equation. This is magic. Phyisics equations are magical. Scholastic magic.<br />
+</p>
+
+<p>
+This is absurd.<br />
+</p>
+
+<p>
+<a href="https://en.wikipedia.org/wiki/Cavendish_experiment#Derivation_of_G_and_the_Earth's_mass">The Wikipedia article</a> starts with<br />
+</p>
+
+\begin{equation*}
+G = g\frac{R^2}{M}
+\end{equation*}
+
+<p>
+Then makes the substitution \(\text{Mass}=\text{Density}\times \text{Volume}\) and obtains<br />
+</p>
+
+\begin{equation*}
+G = \frac{3g}{4\pi R D}
+\end{equation*}
+
+<p>
+Here they use Cavendish's values for density \(D\) and obtain the "correct" value for \(G\).<br />
+</p>
+
+<p>
+\(R\) is known, \(g\) is known, [we have to express \(g\), the acceleration of falling stone as the fall of a earth skimming satellite]  but \(D\) is not known. That is, I don't know if there is an independent calculation of the earth's density.<br />
+</p>
+
+<p>
+How do they compute the modern value of Earth's density? They compute it from \(G\). How do they compute \(G\)? They compute \(G\) from earth's density! Very rigorous.<br />
+</p>
+
+<p>
+Also, this expression ties \(G\) to \(g\). But Boys said,<br />
+</p>
+
+<blockquote>
+<p>
+Let me explain now that this \(G\), the gravitation constant, or as I prefer to call it, for the sake of distinction, The Newtonian Constant of Gravitation, has nothing to do with that other quantity generally written g, which represents the attraction at the earth’s surface.<br />
+</p>
+</blockquote>
+
+<p>
+[This is hidden assumption. How do we know free fall is attraction? There is acceleration without attraction.]<br />
+</p>
+
+<p>
+So, \(g\) must be a special case of \(G\), since \(g\) too represents the same Newtonian attraction.<br />
+</p>
+
+<p>
+\(g = \text{Newtonian attraction on the surface of the earth}\)<br />
+</p>
+
+<p>
+\(G = \text{Newtonian attraction between unit masses at unit distances}\)<br />
+</p>
+
+<p>
+But they have different units. This is a total mess. A total scholastic mess that physicists created to save Newton's sacred authority. Physicists are no different than medieval Peripatetics who sanctified Aristotle. Physicists sanctified Newton.<br />
+</p>
+
+<p>
+This mess, eventually works because physicists developed algebraic magic manipulations to eliminate unwanted, dummy terms that they had written to save the Newtonian doctrine. Physicists assume an absurdity called "universal force of gravity" and try to fit nature to this doctrine.<br />
+</p>
+
+<p>
+If \(G\) is not related to \(g\), what do we make of this expression:<br />
+</p>
+
+\begin{equation*}
+G = g\frac{R^2}{M}
+\end{equation*}
+
+<p>
+For \(G\) to stay constant \(g/R^2\) needs to stay constant.<br />
+</p>
+
+<p>
+There is a formula to compute \(g\) at various altitudes.<br />
+</p>
+
+<p>
+How did they obtain<br />
+</p>
+
+\begin{equation*}
+G = g\frac{R^2}{M}
+\end{equation*}
+
+<p>
+It's not hard to guess.<br />
+</p>
+
+\begin{equation*}
+mg = \frac{GmM}{R^2}
+\end{equation*}
+
+<p>
+But this is Kepler's Rule written with Newtonian jargon.<br />
+</p>
+
+<p>
+There are problems with this expression.<br />
+</p>
+
+<p>
+It is really stupid to write the same term on both sides of an equation. In this equation there is no \(m\), because a term written on both sides has no effect on the equation. I wonder if physicists, the supreme mathematicians, know this simple aritmetical fact taught to them in nursery school? Maybe they forgot.<br />
+</p>
+
+<p>
+So this expression really is<br />
+</p>
+
+\begin{equation*}
+g = \frac{GM}{R^2}
+\end{equation*}
+
+<p>
+And this is an absurd expression. \(R\) is the distance between \(M\) and \(m\) but \(m\) is not included in the equation.<br />
+</p>
+
+\begin{equation*}
+\frac{g}{G} = \frac{M}{R^2}
+\end{equation*}
+
+<p>
+So, \(M/R^2\) is constant so \(g/G\) must be constant too.<br />
+</p>
+
+<p>
+But \(g\) varies with altitude, so,<br />
+</p>
+
+\begin{equation*}
+\frac{g}{G} = \frac{M}{(R+A)^2}
+\end{equation*}
+
+<p>
+\(A=\text{Altitude}\)<br />
+</p>
+
+<p>
+Mass stays constant. So in this case \((R+A)^2\) changes as squared but g changes linearly. I don't think this value will stay constant. I can calculate. I don't think this proportionality will be valid.<br />
+</p>
+
+<p>
+[Equation is a lame proportionality]<br />
+</p>
+
+<p>
+But where this \(G\) comes from?<br />
+</p>
+
+<p>
+\(G\) is introduced in the guise of a "proportionality constant".<br />
+</p>
+
+<p>
+For G to be a proportionality constant, the expression<br />
+</p>
+
+\begin{equation*}
+F= \frac{Mm}{D^2}
+\end{equation*}
+
+<p>
+must be a proportionality and must be written as<br />
+</p>
+
+\begin{equation*}
+F\propto \frac{Mm}{D^2}
+\end{equation*}
+
+<p>
+We know that this is not a proportionality, it already includes a constant term, \(Mm\).<br />
+We all know that no orbit can be computed with<br />
+</p>
+
+\begin{equation*}
+F\propto \frac{Mm}{D^2}
+\end{equation*}
+
+<p>
+because \(F\) is a placeholder and must be replaced with the other part of Kepler's Rule.<br />
+</p>
+
+<p>
+And we all know that \(m\) is a dummy term, it's here solely to save Newton's sacred authority, to let physicists pray to Newton by saying that "Force is the attraction between \(M\) and \(m\)" and when they finish their prayer they discard \(m\) in the next step.<br />
+</p>
+
+<p>
+So, is<br />
+</p>
+
+\begin{equation*}
+F\propto \frac{Mm}{D^2}
+\end{equation*}
+
+<p>
+a proportionality?<br />
+</p>
+
+<p>
+No. A proportionality is an equality of ratios. While the terms of the proportionality vary, the proportionality stays constant. This is the definition of proportionality. A proportionality cannot include a dummy term like \(F\) which does not change as the other terms representing real quantities change according to the rule of the proportionality.<br />
+</p>
+
+\begin{equation*}
+\frac{F}{1}= \frac{Mm}{D^2}
+\end{equation*}
+
+<p>
+And what does \(M\times m\) mean. Physics deals with physically possible processes. Is multiplying an apple with another apple a physically meaningful thing to do? No. This is absurd.<br />
+</p>
+
+<p>
+Physicists must write both \(M\) and \(m\) to state that there is the Newtonian attraction between \(M\) and \(m\). The absurdity is temporary because \(m\) is eliminated anyway. Historically, in earlier times, physicists wrote<br />
+</p>
+
+\begin{equation*}
+F = \frac{M+m}{D^2}
+\end{equation*}
+
+<p>
+which makes a little more sense but then it is more difficult to eliminate \(m\) algebraically. It is easier to get rid of \(m\) if it is a multiplication.<br />
+</p>
+
+<p>
+So, in<br />
+</p>
+
+\begin{equation*}
+\frac{F}{1}= \frac{Mm}{D^2}
+\end{equation*}
+
+<p>
+\(M\) and \(m\) are constants. As \(D\) varies, and if this is a proportionality, \(F\) must also vary according to the rule of the proportionality. And this is what Newton claimed and Newton's disciples have been claiming ever since.<br />
+</p>
+
+<p>
+But this is not true.<br />
+</p>
+
+<p>
+Because this expression is a lame proportionality, it is missing one leg, the true proportionality is the Kepler's Rule,<br />
+</p>
+
+\begin{equation*}
+R^3 =T^2
+\end{equation*}
+
+<p>
+Yes, if you want, you can write Kepler's Rule, as Newton did, as<br />
+</p>
+
+\begin{equation*}
+\frac{1}{R^2}= \frac{R}{T^2}
+\end{equation*}
+
+<p>
+but you cannot make this into an equation where Force \(F\) varies with \(1/R^2\).<br />
+</p>
+
+<p>
+Maybe physicists are blinded by Newton's sacred authority and does not see the other \(R\) on the right hand side of the proportionality, but it is there. How can \(1/R^2\) on the left hand side vary as \(1/R^2\) while there is another \(R\) on the right hand side!!!<br />
+</p>
+
+<p>
+In Kepler's Rule there are three \(R\)'s, to save Newton's sacred authority, two of them conspire to change, while one of them stays constant and does not change. All the rules of mathematics are broken but Newton's authority is saved. This is scholasticism.<br />
+</p>
+
+<p>
+Mathematical scoundrel Sir Isaac, hides the other \(R\) by labeling the ratio \(R/T^2\) in Kepler's Rule, \(F\), that is \(F=R/T^2\).<br />
+</p>
+
+<p>
+It's time to call Newton's bluff.<br />
+</p>
+
+<p>
+It's time to expose Newton's fairy tales.<br />
+</p>
+
+<p>
+\(G\) entered physics as Deus ex Machina, by Boys' hocus pocus.<br />
+</p>
+
+<p>
+Physicists live and practice physics in a state of suspension of disbelief. They believe in the Newtonian force which is a supernatural cause that violates all known laws of physics by traveling huge distances without time passing. But, nothing happens in our world without time passing. In Newton's System of the World, God gave Newton the privilege to define a force that disregards time and can move without time passing.<br />
+</p>
+
+<p>
+Physics is scholasticism incarnate.<br />
+</p>
+
+<p>
+Physicists especially the cosmologists are charlatans. If they are not charlatans we must call them morons. Take your pick.<br />
+</p>
+
+
+
+<p>
+Draft 3: 17 September 2022<br />
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-10-31 Sat 11:05</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

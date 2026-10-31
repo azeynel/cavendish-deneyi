@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-10-31 Sat 11:03 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org30478b0" class="outline-2">
+<h2 id="org30478b0">Troubles with Newton's gravity</h2>
+<div class="outline-text-2" id="text-org30478b0">
+<p>
+Newtoncu yerçekimi gücüyle ilgili sorunlar.
+</p>
+
+
+<ul class="org-ul">
+<li>From the book, /Einstein Relatively Simple: Our Universe Revealed in Everyday Language, Ira Mark Egdall (2014)</li>
+</ul>
+
+<p>
+["Our universe"&#x2026; bunlar hep anlamsız kavramlar. "Bizim evrenimiz" diye bir şey mi varmış?]  
+</p>
+
+<ol class="org-ol">
+<li>S.9, In his treatise of 1638, the brilliant Tuscan scientist Galileo Galilei had established the science of mechanics &#x2013; how forces affect the motion of objects. Among a number of notable achievements, Galileo provided the first formulas for how an object falls to Earth.</li>
+</ol>
+
+<p>
+[Galileo'nun mekaniği Newtoncu çekim gücü üzerine kurulmamıştır. Galileo'ya Newtoncu jargon yüklemeyelim.]
+</p>
+
+<p>
+[Galileo Mekanik bilimini kurmuş! Bu doğru değil, mekanik eski zamanlardan beri vardı.]
+</p>
+
+<p>
+[Galileo "güç" diye bir kavram kullanmamıştır. Ama Newtoncu tarikat bilim tarihini kendi amaçlarına uygun olarak yazmıştır. Bütün bilim tarihi Newton'u zirveye oturtmak için varolmuştur. Newton'dan önce gelen herkes Newtoncudur. Gelmiş geçmiş bütün buluşları Newton yapmıştır. Tarihteki bütün buluşlar Newton adına yapılmıştır. Galileo da Kepler de Newtoncudur. Kepler yasalarını Newton onların esasını insanlığa açıklasın diye bulmuştur.]
+</p>
+
+<ol class="org-ol">
+<li value="2">S.10, &#x2026; ve yalanlar ve Newtoncu propaganda başlıyor&#x2026; "The turn of the century (1900) was a heady time for scientists. First and foremost, there was the outstanding success of Isaac Newton's laws. The predictions of Newton's theories had proved remarkably accurate for over 200 years &#x2013; from the motion of gases and everyday objects, the paths of the Sun, planets, moons, and comets, to the slightly oblate shape of the Earth and tha timing of its tides.</li>
+</ol>
+
+<p>
+[Newton's laws&#x2026; Newton'un yasaları çok başarılı olmuşmuş. Newtoncu teorilerin tahminleri 200 yıl boyunca çok hassas ve doğru sonuçlar vermişmiş.]
+</p>
+
+<p>
+[Newton'un yasaları nedir? Newton'un teorileri nedir? Bunlar anlamsız propaganda klişeleridir. Newton, "Newton'un yasalarını" kullanarak yörünge hesapları mı yapmış? Hayır. Newton yörünge hesapları yaparken kendi tanımladığı bir yasayı kullanmıyor. Peki Newton yörünge hesapları yaparken Newtoncu teoriler mi kullanıyor? Hayır. Newton'un teorisi falan yok. Newton, mucizevi ve bu dünyada olmayan bir "çekim gücü" tanımlamış, bu çekim gücü kavramını kullanarak yörünge hesapları yaptığını söylüyor. Ama Newton böyle bir şey yapmıyor, yalan söylüyor. Newton'un kendi tanımladığı bir çekim gücünü kullanarak yörünge hesapları yaptığı bir propaganda ve Newton bu propagandayı bütün dünyaya dayatmaya başarıyor.]
+</p>
+
+<ol class="org-ol">
+<li value="3">Newton'un teorileri 200 yıl boyunca son derece hassas öngörülerde bulunmamıştır. Newton hesaplarını Kepler Kuralı ile yapmıştır.</li>
+</ol>
+
+<p>
+[Bu genellemelerden kurtulalım. Newtoncu propagandadan kurtulalım.]
+</p>
+
+<p>
+[Konumuz gezegenlerin yörüngelerini hesaplamak. Newton gezegenlerin yörüngelerini nasıl hesaplıyor? Newton, Newton'un yasalarını mı kullanıyor? Hayır. Newton, Newton'un teorilerini mi kullanıyor? Hayır.]
+</p>
+
+<p>
+[Gezegenlerin yörüngelerini hesaplamak için sadece iki yöntem vardır. Yörüngeleri ya tablolar ile hesaplarsınız veya elinizde bir formül vardır ve bu formül ile hesaplarsınız. Başka da yolu yoktur. Newton bir formülle gezegenlerin yörüngelerini hesaplıyor. Gezegenlerin yörüngelerini hesaplamak için sadece bir formül vardır o da Kepler Kuralıdır. Newton da Kepler Kuralını kullanarak gezegenlerin yörüngelerini hesaplıyor. Newton'un sahtekarlığı burada. Kepler Kuralını kullanıp Newton'un çekim gücünü kullandığını söylüyor.]
+</p>
+
+<ol class="org-ol">
+<li value="4">Newton'un teorileri ne demek? Yok böyle bir şey. Newton'un marka terimleri ile markalanmış Kepler Kuralı var.</li>
+</ol>
+
+
+<p>
+[Newton konusunda yazan herkes Newtoncu propagandayı tekrarlıyor. Newton'un gelmiş geçmiş en büyük dahi olduğunu söylüyorlar. Bu yüce dahi çekim gücü diye doğanın en temel yasasını bulmuştur. Bu güç ile gözlemlenen her şey açıklanabilir. Bu gücün bu dünyada olmadığı ve bir mucize olduğu detayı Newtoncu propagandada belirtilmez, önemsiz bir detay olarak verilir.]
+</p>
+
+<p>
+[Bu propagandayı istediğiniz gibi parlatıp tekrarlayabilirsiniz ve çok bilimsel şeyler söylediğiniz kabul edilir.]
+</p>
+
+
+<ol class="org-ol">
+<li value="5">S.142 Troubles with Newton's Gravity</li>
+</ol>
+
+<p>
+[Newtoncu çekim gücünün sorunları. Newtoncu çekim gücünün sorunları mı varmış?]
+</p>
+
+<ol class="org-ol">
+<li value="6"><p>
+In the early part of the 20th century, no one questioned Newton's theory of gravity. It was considered the be-all, the end-all, the final word on the matter. Why? Because it worked beautifully."
+</p>
+
+<p>
+[Burada ne diyor? "&#x2026;Newton's theory of gravity&#x2026; worked beautifully" ve bu sebepten kimse Newton'un çekim gücü tanımının ne kadar saçma bir şey olduğunu sorgulamamış. Newton'un yerçekimi teorisi çok doğru sonuçlar veriyormuş. Newton'un yerçekimi teorisi nedir? \(F=GMm/r^2\) mı? \(F=ma\) mi? Hiç önemli değil. Önemli olan Newton'un yörünge hesapları yaparken burada "F" ile temsil edilen "çekim gücü" terimini kullanıyor mu? Hayır. Kullanmıyor. Newtoncular "F" terimlerini denklemin iki tarafına yazıp eliyorlar. Yani "F" terimleri sadece birer süs ve Newton'un otoritesini kurtarmak için yazılıp elenen yalancı terimler.]
+</p></li>
+
+<li value="7"><p>
+Ne güzel bir propaganda. Üç asırdır söylene söylene artık gerçek olduğu sorgulanmadan kabul ediliyor. "&#x2026; it worked so beautifully&#x2026;" Neymiş bu "it"? Bu kadar iyi çalışan şey neymiş? "Newton'un yerçekimi teorisi." Peki Newton'un yerçekimi teorisi diye bir teori var mı? Yok. Newton yörüngeleri hesaplamak için Kepler Kuralını kullanıyor. Hangi teoriden bahsediyorsunuz? Yalan söylüyorsunuz.
+</p>
+
+<p>
+[Bu tanımlanmamış ve anlamsız terimlerden kurtulmamız lazım. Newtoncu propagandadan bıktık artık. Newton bir tarikat şeyhidir. Newton'un dediği her şey doğrudur. Newtonun lafları önce doğru kabul edilir ve ondan sonra doğa Newton'un palavralarına uyarlanır. Newton'un müritlerinin işi budur zaten. Newton'un müritleri kimler? Kendilerine "fizikçiler" diyen Newton kültünün üyeleri.]
+</p></li>
+
+<li value="8">Newton's "Law of Universal Gravitation" explained the movements of planets around the Sun, the "precise motion of the Moon," the motions of the moons of Jupiter and Saturn, the eccentric orbits of comets due to the Sun's attraction, the equatorial bulge of Earth, the tides of Earth's seas due to the pull of gravity of the Moon and Sun, and the precession of the axis of rotation of the Earth. It had even predicted the location of two new planets &#x2013; Neptune and the dwarf-planet Pluto before they were spotted by telescopes."</li>
+</ol>
+
+<p>
+[Newton'un "Evrensel yerçekimsel çekim gücü yasası" neymiş peki? Veya, Newton gezegenlerin yörüngelerin "Evrensel yerçekimsel çekim gücü yasası" diye bir şey kullanarak mı hesaplıyor? Hayır. Ama bu propaganda cümleleri asırlardır tekrarlanıyor.]
+</p>
+
+<p>
+[Newton gezegenlerin güneş etrafındaki hareketlerini açıklamış. Hem de kendi bulduğu yeni bir doğa yasası ile hesaplamış. Ama Newton yalan söylüyor. Gezegenlerin yörüngelerini açıklayan tek bir formül var, \(T=R^{1.5}\). Bu orantıya Kepler Kuralı diyoruz. Bu orantıyı $\frac{R_^3}{T_0^2} = \frac{R^3}{T^2} ile birim terimi ile birlikte yazarsanız gezegenlerin yörüngelerini doğru olarak hesaplayabilirsiniz. Tabii, eğer Newtoncu kültün üyesi olan bir fizikçiyseniz bu formülde <i>F</i>'ler, <i>G</i>'ler, <i>M</i>'ler ve <i>m</i>'ler görürsünüz ama onlar yalnız size görünür ve içinde R ve T'den başka bir terim olmayan bir orantının Newton'un evrensel çekim gücü yasası olduğunu söylersiniz. Okulculuk budur. Terimleri markalaştırarak sahiplenmektir. Aynı ilişkiyi $GM = \frac{R^3}{T^2} yazarsınız ve "işte Newton'un çekim yasası" dersiniz.]
+</p>
+
+<ol class="org-ol">
+<li value="9">Yalanlarla dolu bir paragraf. "Newton's Law of Universal Gravitation" dedikleri Newton'un marka terimleri ile markalanmış Kepler Kuralıdır. Bu marka terimler hesaplar yapılmadan elenir. Yörüngeler hesaplanırken geriye Newton'un "teorisinden" hiçbir şey kalmaz. Hesaplar Kepler Kuralı ile yapılır. Gerçek budur.</li>
+
+<li>S.142. "There was one issue with Newton's theory &#x2013; the tiniest of anomalies. Precise observations of Mercury, the planet closest to the Sun, showed its orbit ever so slightly off from Newtonian predictions. French mathematician Urbain Le Verrier tried to explain it as perhaps a disturbance from a tiny unknown planet inside the orbit of Mercury. But the planet "Vulcan" was never found."</li>
+</ol>
+
+<p>
+[Ve bu yalan asırlardır söylenir. "Newton'un teorisi" Merkür'ün yörüngesindeki çok küçük bir açıyı hesaplayamıyormuş. İyi de Merkür'ün yörüngesi Newton'un teorisi diye bir şeyle hesaplanmıyor ki. Hatta Kepler Kuralı bile değil. Pratik astronomide trigonometrik fonksiyonlar kullanır. Tablolar kullanır. Kepler Kuralı da kullanır. Yapılan gözlemler matematik yolu ile modele uyarlanır. LeVerrier'nin yaptığı da budur. Kitabına baktığınızda sayfalar süren trigonometrik formüller görüyorsunuz. Bu kadar formüle rağmen demek ki Merkür'ün bir açısını gözlemlere uyduramamış. Zaten bu açı o kadar küçük ki, asırlar içinde kendini belli ediyor. Merkür'ün açıklanamayan açısının Newton'un çekim gücü saçmalığı ile bir ilgisi yok, Newton'un çekim gücü pratik astronomide kullanılmıyor.]
+</p>
+
+<ol class="org-ol">
+<li value="11">Newtoncu çekim doktrinleri sanki yörüngeleri hesaplıyormuş da sadece Merkür'de küçük bir hata yapıyormuş gibi bir hava yaratılmak istenmiş. Yok böyle bir şey. Eğer Merkür de bir hata varsa, Kepler Kuralı ile ilgili bir sorun vardır. "Newtonian predictions" diye bir şey yok. Kepler Kuralı kullanılıyor yörüngeleri hesaplamak için. Gerçek bu. Ama pratik astronomide mesela NASA Mars'a uydu yollayacağı zaman ne Newton'un doktrinlerini kullanır ne de Kepler Kuralını kullanır. Kepler Kuralı bile yeteri kadar hassas değildir. NASA yıllardır gezegenleri gözlemliyor bu gözlemlere "numerical analyisis" dedikleri matematik yöntemler uyguluyorlar ve yörüngeleri hiçbir teoriye bağlı kalmadan en hassas bir şekilde hesaplıyorlar. NASA'nın sanki F=ma yazarak yörünge hesapladığını sanmak çok saflık olurdu. NASA'nın yörünge hesaplarını nasıl yaptığı <a href="https://www.sjsu.edu/ae/docs/project-thesis/Angel.Rocha.Sp18.pdf">bu yazıda</a> anlatılıyor. Yerçekimi sadece \(\mu\) = gravitational parameter diye bir terimle temsil ediliyor. Parametre ne demek? Duruma göre ayarladığınız bir terim demek. Ama Newtoncu propagandaya göre Newtoncu çekim gücü olmasaydı bütün uydular dünyaya düşerdi!</li>
+
+<li>S.142. "Mercury's measured orbit was such a small discrepancy in a veritable catalogue of successes that no one dared question the efficacy of newton's theory. No one, that is, until Albert Einstein."</li>
+</ol>
+
+<p>
+[Newtoncu propaganda nasıl, çok güzel değil mi? Newtoncu çekim gücü doktrinleri o kadar başarılı ki, bütün yörüngeleri hesaplıyor ama Merkür'ün bir asır içinde ancak kendini belli eden küçücük bir açısını hesaplayamıyor.]
+</p>
+
+<p>
+[Einstein'ı tebrik ediyorum çünkü Newtoncu tarikatın bu propagandasını sorgulayabilmiş. Burada ilkesel bir sorun var. Newton "evrensel yerçekimsel çekim gücü yasası" diye bir şey kullanarak yörünge hesaplamıyor çünkü Newton bu gücü bir mucize olarak tanımlamış. Newton, doğada olmayan bu çekim gücü denen şeyi doğanın en temel gücü olarak bütün dünyaya dayatmış. Yani Einstein da böyle düşünüyor, bu güç doğada yok, öyleyse Newton bu gücü kullanarak yörüngeleri hesaplayamaz, diyor.]
+</p>
+
+<ol class="org-ol">
+<li value="13">Evet gerçek bu. Kariyer yapmak isteyen hiçbir fizikçi Newton'un doktrinlerini sorgulayamaz. Fiziğin bütün temel yasalarını ihlal eden bir güç tanımlamış Newton ve bütün fizikçiler bu gücü doğal bir şeymiş gibi kabul ediyorlar. Neden? Çünkü, Newtonculuk okulcu bir tarikattır ve fizikçiler Newtoncu tarikatın üyeleridir, Newton'un müridleridir. Düşünün, bir fizikçi hiç sorgulama ihtiyacı duymadan \(F=\frac{GMm}{r^2}= m \frac{r}{t^2}= F\) yazabiliyor. "Ben iki tarafa da <i>m</i> yazdım öyleyse bu denklemde <i>m</i> yoktur" diyemiyor. Resmi fizik ezberini sorgulamadan kabul ediyor, aynı bir katolik rahip gibi ama İsa yerine Newton'a inanarak yoluna devam ediyor.</li>
+
+<li>Fakat, bir patent ofisinde çalışan Einstein'ın fizik kariyeri zaten yoktu ve kahramanca Newtoncu gücü eleştirebildi.</li>
+
+<li>S.143. "What made Einstein doubt the great Newton? He saw fundamental disagreements between Newton's theory of gravity and his new theory of special relativity. If Einstein's theory was correct, Isaac Newton had to be wrong!"</li>
+</ol>
+
+<p>
+["What made Einstein doubt the great Newton?" Ne komik bir cümle değil mi? Bilim denen şey şüphecilik değil midir zaten? "Great" Newton'un doktrinlerini sorgulamak da ne oluyormuş. Yasak. Newton tarikat şeyhidir ve sorgulanamaz sadece onaylanır ve Newton'a inanılır.]
+</p>
+
+<p>
+["If Einstein's theory was correct, Isaac Newton had to be wrong!" Fizikçiler ve propagandacılar hep "teorilerden" bahsederler. Ama teori sadece bir isimdir, bir etikettir. Teoriye değil uygulamaya bakmak lazım.]
+</p>
+
+<p>
+[Peki Einstein'ın teorileri doğruysa Newton'un teorilerinin yanlış olacağı doğru mu? Böyle bir şey olmuş mu? Hayır. Fizikte Einstein'ın teorileri en çok doğrulanmış teorilerin başında gelir. Fizikçiler, "Einstein'ın teorilerini doğrulama yan sanayisi" diye bir iş uydurmuşlar kendilerine ve Einstein'ın teorilerini doğrulayıp dururlar. Peki Einstein doğrulandı diye Newton çöpe mi atıldı? Hayır. Newton da her zamankinden daha doğru olarak hayatına devam ediyor. Okulculuk budur işte. Okulculukta çelişki yoktur. Newton tarikat şeyhidir doktrinleri yanlışlanamaz sadece doğrulanabilir. Fizikçiler Newton'u sadece eğitim amaçlı öğrettiklerini söylerler. Okulculukta mazeretler bitmez. Yüce Newton'un doktrinleri okullarda, ders kitaplarında anlatılmaya devam eder.]
+</p>
+
+<ol class="org-ol">
+<li value="16">Newton'un saçma çekim gücünün yanlış olması için Einstein'ın teorilerinin doğru olması gerekmez. Newton'un çekim gücü bir mucize olarak tanımlanmıştır ve bir mucizedir bu dünyada yoktur.</li>
+
+<li>S.143. Einstein saw three key issues in Newton's theory:</li>
+</ol>
+
+<p>
+[Newton's theory diye bir şey yok çünkü "teori" sadece bir etikettir. Hesaplar teori ile yapılmaz formül ile yapılır. Newton da herkes gibi Kepler Kuralını kullanarak yörünge hesapları yapıyor. Yörünge hesaplamak için kullanılabilecek başka bir formül yok. Fakat okulcular markalaştırdıkları teorilerden bahsetmeyi severler.]
+</p>
+
+<ol class="org-ol">
+<li value="18"><i>(A) Gravity is instantaneous</i> &#x2013; [&#x2026;] Güneşten çıkan bir ışık hüzmesinin dünyaya ulaşmasının 8 dakika alacağını söylüyor. Yani ışık güneşten dünyaya anında gelmiyormuş.</li>
+</ol>
+
+<p>
+["Instantaneous" ne demek? Anlık demek olabilir. Çok kısa zamanda olan bir şey için söylenebilir. Mesela, elektrik, insanın algılama yetisinden çok daha hızlı hareket ettiği için kısa mesafelerde hiç zaman geçmeden hareket ediyormuş gibi gelebilir. Işığı açınca oda anında aydınlanır, halbuki zaman geçmiştir. Fakat, Newton'un tanımladığı çekim gücü, tanım olarak, hiç zaman geçmeden mesafeleri kat eder. Güneşten çıkan çekim gücü aynı anda dünyaya ulaşır yani hem güneşte hem de dünyadadır, aynı anda. Newtoncu çekim gücünün özelliği budur, kısa zamanda değil, zaman geçmeden mesafe kateder, her yerde aynı anda mevcuttur. Ve bu saçmalığa insanlık Newton dedi diye inanır.]
+</p>
+
+<ol class="org-ol">
+<li value="19">What about gravity? Per Newton, the force of gravity holds Earth in orbit around the Sun. What if our Sun were to suddenly disappear? Would Earth instantly leave the Sun's orbit and fly off into space?</li>
+</ol>
+
+<p>
+[Masal içinde masal. Güneş aniden yok olsaydı, dünya yörüngesinden uçup gider miydi? Yoksa 8 dakika sonra mı uçup giderdi? Uçup gitmezdi çünkü dünyayı yörüngesinde tutan bir güç yok. Dairesel hareket doğal harekettir. Tartışacak bir şey yok. Newton zaman geçmeden mesafe katedebilen bir mucize tanımlamış, bu dünyada böyle bir mucize yoktur.]
+</p>
+
+<p>
+[Peki ya yerçekimi? Yerçekimi güneşten çıkıp dünyaya zaman içinde mi gelir? Newton'a  göre, yerçekimsel çekim gücü dünyayı güneşin etrafındaki yörüngesinde tutar. İyi de bu Newton'un uydurduğu bir palavra. Dünyanın yörüngesini Kepler Kuralı ile açıklıyoruz ve Kepler Kuralında bir güç terimi yoktur.]
+</p>
+
+<ol class="org-ol">
+<li value="20">Newton would say yes. In Newton's theory, any changes in gravity are communicated <i>instantanously</i>.</li>
+</ol>
+
+<p>
+[Tamam işte, Newtoncu çekim gücü zaman geçmeden mesafeleri kateden bir "güç" olarak tanımlanmış. Böyle bir şey bu dünyada olamaz. Newton'un bu mucize güç üzerine kurduğu hayali "dünya sistemi" de yıkılıyor.]
+</p>
+
+<ol class="org-ol">
+<li value="21">Daha konuşacak ne olabilir ki? Bu dünyada zaman geçmeden hiçbir şey olamaz. Newton zaman geçmeden mesafeler kateden bir "güç" tanımlamış. Demek ki, Newton'un bu tanımı bir mucize olarak tanımlanmıştır, bu dünyada yoktur. Ancak Newtoncu tarikata, Newton kültüne, ve Newtoncu propagandaya inananların sorgulamadan inanacakları bir mucizedir.</li>
+</ol>
+
+<p>
+[Bu dünyada zaman geçmeden hiçbir şey olamaz. Bunu kabul etmeyenler var mı? Kendine bilim adamı diyen ama zaman geçmeden mesefeler geçen bir güce inanan insanlar var. Newton'un otoritesi bu kadar güçlü işte. Newton dedi diye bu saçmalıklara inanan insanlar var.]
+</p>
+
+<ol class="org-ol">
+<li value="22">"But for Einstein, a gravitational disturbance traveling instantaneously is a serious problem. It violates special relativity's dictum that nothing can travel through space faster than the speed of light."</li>
+</ol>
+
+<p>
+[Ne komik! Zaman geçmeden mesafe katedilemez temel ilkesini ancak Einstein söylerse kabul ediyorlar. Özel Görelilik teorisi hiçbir şey ışıktan hızlı gidemez dedi diye. Hayır. Bunun Einstein'ın teorileri ile ilgisi yok. Bu dünyada zaman geçmeden mesafe katedilemez. Zaman geçmeden mesafe katedilemediği için, ışık bile olsa, zaman içinde hareket edebiliyor.]
+</p>
+
+<ol class="org-ol">
+<li value="23">Demek ki, Einstein'ın uydurduğu bir teoriye uymuyor diye Newtoncu güç doğru olamazmış! Hayır. Bunun Einstein'ın teorileri ile ilgisi yok. Tanım icabı bu Newtoncu çekim gücü bir mucize olarak tanımlanmıştır ve bu dünyada var olamaz. Hiçbir uzay cismini yörüngede tutamaz. Yoktur. Mucizedir.</li>
+
+<li><p>
+"Einstein theorized, gravitational disturbances are not transmitted instantaneously, but <i>at the speed of light</i>.
+</p>
+
+<p>
+[Gizli varsayımları açığa çıkartalım. Gravitational disturbance diye bir şey yok. Yörüngeler dinamiktir, bu da başka bir gizli varsayım. Hayır. Uyduları yörüngede tutmak için bir güç gerekmez.]
+</p></li>
+
+<li value="25"><p>
+S.146. The third issue with Newton's gravity is <i>action at a distance</i>.
+</p>
+
+<p>
+[Newtoncu güç zaman geçmeden mesafeleri katediyormuş, Newton çekim gücünü böyle tanımlamış. Bu durum Einstein'ın hiç hoşuna gitmemiş. Bu Newtoncu güç, temas olmadan, uzaktan cisimleri hareket ettirebiliyormuş. Yani kendisi hareket etmeden, bu kendisinde olmayan hareketi, temas da etmeden uzaktaki cisimlere trasfer edebiliyormuş. Böylesine masalsı bir şeye salt Newton dedi diye insanlar inanıyor. Newton, temas olmadan, uzaktan cisimleri hareket ettirebilen sihirli ve mucizevi bir güç tanımlamış. Newton'un otoritesine kimse karşı çıkamamış. Newton bir okulcu tarikat şeyhidir ve kimse Newton'un doktrinlerini sorgulayamaz.]
+</p>
+
+<p>
+[21. yüzyılda bile hala insanlar Newton'un tanımladığı bu saçmalığa inanıyorlar. Hem de sorgulamadan. Peki Einstein, Newtoncu güce inanmadığı ve onu sorguladığı için bir kaçık mıydı? Çünkü fizikçiler Newton'u eleştirenlere hemen "crackpot" etiketini yapıştırırlar. Einstein kaçık mıydı? Değildi. Einstein Newtoncu gücü eleştirmekte haklıydı. Peki, o zaman, madem Einstein ve daha bir çokları, Newtoncu gücün doğada olmayan bir mucize olduğunu söyledikleri halde, neden "çekim gücü" denen bu mucize hala fiziğin en temelinde bulunmaktadır?]
+</p>
+
+<p>
+[Bu Newtoncu çekim gücü o kadar saçma ve absürd bir şey ki, bu gücü fizikten atmak için yerine başka bir şey bulmaya gerek yok. Bu gücü fizikten atınca fizik çalışmaz hale mi gelecek? Hayır. Bu güç fizikte zaten sadece Newton'un kutsal otoritesini törensel olarak yüceltmek için varolan bir şeydir.]
+</p>
+
+<p>
+[Newton'un müritleri Newton'un yalanlarına inanmışlar ve hala da bu yalanlara sorgulamadan inanmaya devam ediyorlar. Newton'un yörüngeleri kendi uydurduğu bu güçle hesapladığına inanıyorlar. Newtoncu kültçüler bu inançlarından vazgeçmeyeceklerdir, çünkü güç Newtoncu kültün temel mucizesidir. Mecburen inanacaklar.]
+</p></li>
+
+<li value="26"><p>
+<i>(C) Action at a distance</i> &#x2013; Unlike his three laws of motion, Newton's law of gravity describes an invisible force which "exerts control over matter without having any direct physical contact." In othor words, Newton's theory gives us a formula for the strength of gravity, but no explanation on how it is transmitted from place to place.
+</p>
+
+<p>
+[Bu açıklamada yanlış olan nedir? Newton'un üç tane hareket yasası varmış. Olabilir. Ama Newton yörünge hesaplarında bu yasaları kullanmaz ki. Newton'un yasaları bizi ilgilendirmez çünkü Newton yasalarını yörünge hesaplarında kullanmaz. Newton'un yerçekimi gücü yasası varmış. Böyle bir yasa yok. Newton'un tanımladığı mucizevi bir güç var. Newton'un her söylediği şey ne kadar saçma olursa olsun yasa olarak kabul ediliyor.]
+</p>
+
+<p>
+[Newton'un yerçekimsel güç yasası "görünmez bir güç" tanımlıyormuş. Görünmez bir güç yok, olmayan bir güç var. Bunlar hep Newton tarikatının uydurduğu kelime oyunları. Olmayan bir şeye "görünmez" diyerek varmış gibi göstermeye çalışıyorlar.]
+</p>
+
+<p>
+[Newton'un teorisi yerçekimi gücü için bir formül veriyormuş. Ama bir noktadan diğer noktaya nasıl gittiğini açıklamıyormuş. Yalan! Açıklıyor. Newtoncu çekim gücü bir noktadan başka bir noktaya zaman geçmeden gidiyor. Açıklaması bu. Bilinmeyen bir şey yok. Zaman geçmeden nasıl mesafe katediyor sorusu da saçma bir soru çünkü böyle bir şeyin olabileceğini varsayıyorlar. Newton'un uydurduğu yalanları daha da büyük yalanlarla açıklıyorlar. Doğada olmayan bir mucizenin nasıl çalıştığını bilmiyormuşuz. Ama olduğu ve çalıştığı varsayılıyor. Nasıl bir mantıktır bu? Sahtekarlık burada. Doğada mucize yoktur.]
+</p></li>
+
+<li value="27">"How does the Sun reach out some 93 million miles, grab Earth, and hold it in its orbit? What exactly <i>travels</i> from the Sun to Earth to make contact with our planet, telling it not to fly off into space?</li>
+</ol>
+
+<p>
+[Yine gizli varsayımlar. Newtoncu gizli varsayımlar. Güneş dünyayı yörüngesinde bir güç ile tutmuyor. Güneş dünyayı yörüngesinde tutmasa dünya düz çizgi üzerinde uçup gitmeyecek. Newton'un uydurduğu yörünge masalları bunlar.]
+</p>
+
+<ol class="org-ol">
+<li value="28">Something has to be sent out from the Sun to make contact with Earth, doesn't it? Is it some form of matter or some type of non-material energy which goes from the Sun to Earth? Is it a particle? Is it a wave? Or is it something else entirely?</li>
+</ol>
+
+<p>
+[Güneşten çıkan bir şey dünyaya doğru yollanmalı diyor. Bu şey bir çeşit madde midir? Madde olmayan bir enerji tipi midir? Yoksa bir dalga mı? Veya bambaşka bir şey mi? Evet, gizli varsayımlarınız yanlış olduğu için açıklanması gerekmeyen bir şeyi açıklamaya çalışıyorsunuz.]
+</p>
+
+<ol class="org-ol">
+<li value="29">This is called "action at a distance" &#x2013; the Sun some 93 million miles over there somehow controlling Earth's actions over here with an invisible force "transmitted through empty space space, through nothingness."</li>
+</ol>
+
+<p>
+[Yerçekiminin bir mucize olduğunu daha nasıl anlatsın. Ama Newton'un otoritesi o kadar güçlü ki, bu mucizeyi bir doğa olayı olarak kabul ettirmeyi başarmış. Uzaktan, temas olmadan, hareket ettirmek deniyor bu mucizeye. Güneş, milyonlarca kilometre uzaktan dünyaya temas etmeden dünyanın hareketlerini kontrol ediyor. Buna mucize denir. Güneş kendinde olmayan hareketi, temas etmeden ve hiç zaman geçmeden dünyaya transfer ediyor. Bu mucize kutsal kitaplarda anlatılan güneşin sabit durması gibi harika bir mucize ama yine de bir mucize, bu dünyada olmayan sadece inananların inandığı bir mucize.]
+</p>
+
+<p>
+[Zaten action at a distance konusu önemli değil ki. Newtoncu çekim gücü zaman geçmeden mesafe kateden bir şey olarak tanımlanmış. Yok böyle bir şey. Zaman geçmeden mesafe kat eden şey cisimlere dokunmadan onları hareket ettiriyor.]
+</p>
+
+<p>
+[Gizli varsayımlar: Güneşte konuşlanmış görünmez bir güç varmış, bu güç uzayın boşluğunda zaman geçmeden mesafeleri aşıp başka cisimleri hareket ettirebiliyormuş. Newton Kepler Kuralını kullanarak yörünge hesaplarını yaptığını gizlemek için bu masalları uydurmuş.]
+</p>
+
+<ol class="org-ol">
+<li value="30"><p>
+What was Newton's answer to this issue? Basically he said "I donno." Of course he phrased it in the more formal language of the time: «I have not been able to deduce&#x2026; the cause of these properties of gravity, and offer no hypothesis." &#x2013;Isaac Newton, <i>Principia</i>
+</p>
+
+<p>
+[Peki Newton ne demiş tanımladığı bu mucize hakkında? Bu yerçekimi gücü mesafeleri nasıl aşıyor bilmiyorum demiş, yüce Newton, böyle demiş. Ama aşıyor, bundan şüphesi yok. Newton bir mucize tanımlıyor, bu mucizenin bir doğa olayın olduğunu söylüyor ama sebebini bilmiyorum diyor. İncil'de Yuşa Tanrı ile konuşur ve güneş bir müddet hareketsiz kalır. (Yuşa 10-12) Bu bir mucizedir. Nasıl olduğunu bilmiyoruz demek mucize olmadığı anlamına gelmez. Üstelik bu tek bir kereye mahsus bir mucizedir, Newtoncu mucize ise sürekli devam etmektedir, bir doğa olayı gibi her yerde her an etkisini sürdürmektedir.]
+</p></li>
+
+<li value="31"><p>
+"That gravity should be innate, inherent, and essential to matter, so that one body can act on another at a distance, through a vacuum," wrote Newton, "&#x2026;is to me so great an absurdity that I believe no man, who has &#x2026; a competent facility of thinking can ever fall into it."
+</p>
+
+<p>
+[Newton çok usta bir laf cambazıydı çünkü Newton bir skolastik tarikat kurucuydu. Burada görüyoruz işte, temas olmadan, uzaktan cisimleri oynatan bir güç tanımlamış ama böyle bir gücün olamayacağını söylüyor. Ve bu propaganda 350 yıldır tekrarlanıyor. Aksini iddia etmek bir işe yaramaz. Newton kendisi zaten absürd bir şey tanımladığını söylemiş. Ama bu absürd güç hala fizikte Newton'un tanımladığı gibi varolmaya devam ediyor. Saçmalık içinde saçmalık.]
+</p></li>
+
+<li value="32"><p>
+Unutmayalım ki Newton bir okulcu şeyhtir, bin yıllık Avrupa okulculuğunun en son şeyhidir, Newton bir tarikat kurucudur. Okulcuların en önemli özelliği çok usta bir kelime cambazı, dil cambazı olmalıdır. Burada da Newton önce cisimlere dokunmadan uzaktan cisimleri hareket ettirebilen bir güç tanımlayor ondan sonra bu o kadar saçma bir şeydir ki aklı olan kimse buna inanmaz diyor. Bu tabii çok eski bir retorik yöntemdir. Newton da ustaca kullanıyor bu yöntemi.
+</p>
+
+<p>
+[Newton bile tanımladığı gücün absürd ve doğadışı bir şey olduğunu kabul ediyor.]
+</p></li>
+
+<li value="33"><p>
+Newton's theory was generally accepted despite this objection, because its predictions proved so accurate and universal. Over time, concerns with how gravity is transmitted receded into the background. But with Einstein's pursuit of a new theory of gravitation, they once again came to the forefront.
+</p>
+
+<p>
+[İşte Newtoncu propagandanın gücü! Newton doğada olmayan, doğa üstü, absürd, mesafeleri zaman geçmeden kat edebilen ve temas etmeden uzaktan cisimleri hareket ettirebilen bir şey tanımlıyor ve bu şey kabul görüyor çünkü bu güçle yapılan yörünge hesapları doğru ve evrensel sonuçlar vermiş. Newton'a körü körüne inanmak denir buna. Zaman geçmeden mesafe kateden bir şey yörünge hesabı yapılamaz. Demek ki Newton uydurduğu bu absürd güçle yörünge hesapları yapmamış. Newton'un kitabını açıp nasıl yalan söylediğini göstermemiz lazım.]
+</p>
+
+<p>
+[Tabii, Einstein'ı Newton'un sahtekarlığını göstermeye çalıştığı için tebrik ediyoruz. Ama Newtoncu absürd güç fizikte hala duruyor. Newton'un propaganda yalanları hala fizikçiler tarafından tekrarlanıyor. Bu absürd güç hala doğanın en temel gücü olarak fizikte kabul görüyor.]
+</p></li>
+
+<li value="34"><p>
+Fizikçiler, Einstein dahil olmak üzere, Newton'un kitabını okumadıkları için, Newton'un yaptığı yörünge hesaplarının Newtoncu çekim gücü kullanılarak yapılmadığını anlayamamışlardır. Yani Newtoncu doktrinlerin Newton'un yaptığı yörünge hesaplarının doğru olmasından dolayı kabul edildiği saçma bir söz çünkü Newton hesaplarını Newtoncu doktrinlerle yapmamıştır.
+</p>
+
+<p>
+[Zaten Newtoncu doktrin bile demesek daha iyi. Newton'un tanımladığı bir çekim gücü var, Newton bu gücü kullanarak yörüngeleri hesapladığını söylüyor, kitabını açıp bakıyoruz, Newton'un yalan söylediğini ve yörüngeleri bu güç ile hesaplamadığını görüyoruz.]
+</p></li>
+
+<li value="35">Yani özetle olay şu. Newton'dan önce yörünge hesapları sadece ve sadece tablolarla yapılıyordu. Astronomların gözlemlerden derledikleri tablolar vardı. Bir gezegenin tablosundaki her veri noktası o gezegenin yerini belirliyordu. Her noktanın en yakınından geçen bir çizgi çizerek gezegenin her an nerede olduğunu bulabilirdiniz. Fakat, Newton bu tabloların altında yatan sebebi bulduğunu iddia etti, ve yörüngeleri tablolarla değil de kendi bulduğu bir formülle hesapladığını söyledi. Newton yörüngeleri bir "evrensel çekim gücü" yasası ile hesapladığını söyledi. Bu da Newton'un çağdaşlarına sihirbazlık gibi geldi. Newton uzaktan etki eden absürd bir güç tanımlıyor ve bu güçle yörüngeleri hesaplıyor ve doğru sonuçlar alıyor. Bu nasıl olabilir? Olmaması lazım çünkü Newton'un tanımladığı gibi bir güç bu dünyada olamaz. Burada Newton'un müthiş propaganda gücü ortaya çıktı ve Newton bu absürd gücü bütün dünyaya satmayı başardı.</li>
+
+<li>Newton hasaplarında uydurduğu bu absürd gücü kullanmıyordu ama Newton'un otoritesi o kadar güçlüydü ki, insanlar karşı çıkamadı, Newton'u yalanlayamadı.</li>
+
+<li>Eğer fizikçiler Newton'un kitabını açıp okuma zahmetine katlansalardı, şeyhlerinin sözlerini sorgulamadan kabul etmeselerdi, o zaman, Newton'un bütün yörünge hesaplarını Kepler Kuralı ile yaptığını göreceklerdi. Newton'un yaptığına sihirbazlık değil, sahtekarlık denir.</li>
+
+<li>"Over time, concerns with how gravity is trasmitted receded into the background. But with Einstein's pursuit of a new theory of gravitation, they once again came to the forefront.</li>
+</ol>
+
+<p>
+[Sorun yerçekiminin mesafeleri nasıl katettiği imiş. Yani mucizenin sebebi. Mucize olduğu önemli değilmiş. Mucize doğal olarak kabul edilmiş.]
+</p>
+
+<ol class="org-ol">
+<li value="39">In summary, Einstein needed to resolve three issues: (1) the instantaneous transmission of gravitational disturbances, (2) the relative distance between masses, and (3) how gravity is transmitted from place to place. And hopefully, his new theory would explain the anomaly in Mercury's orbit not accounted for by Newton.</li>
+</ol>
+
+<p>
+[Ne komedi işler yaa! Newton'un bu absürd gücü kullanarak yörüngeleri hesapladığı sorgulanmadan kabul ediliyor ya, Einstein da çıkıyor, uzaktan temassız etki etmeyen ve mesafeleri zaman geçmeden katetmeyen bir teori tanımlayayım diyor. Halbuki böyle bir "teori" var: Kepler Kuralı. Başka bir teori aramaya gerek yok.]
+</p>
+
+<ol class="org-ol">
+<li value="40">Aynı konu ile ilgili bir örnek daha. Einstein's Mirror, Tony Hey, Anthony J.G Hey, Patrick Walters.</li>
+
+<li><p>
+S.23 "Newton pictured atoms of matter as having various powers of attraction and repulsion, gravity being the most famous such property. In Newton's scheme of things, the Earth attracts the Moon and all other bodies &#x2013;such as the famous apple&#x2013; by virtue of its mass.
+</p>
+
+<p>
+[Kütle diye bir şey tanımlamış. Cisimler kütlelerine oranlı olarak çekerlermiş. Newton atomcuydu, yani dünyanın bölünemez birimlerden meydana geldiğini varsayıyordu.]
+</p></li>
+
+<li value="42"><p>
+Newton discovered how this attractive force diminished with distance and, by applying his force law to the Sun and the planets of the solar system, he was able to explain the orbits of the planets.
+</p>
+
+<p>
+[İşte Newtoncu propaganda. Bu saçma ve anlamsız cümleyi okuyup inananlar var.]
+</p>
+
+<p>
+[Newton "yerçekimi" olarak gözlemlediğimiz hareketi, yani serbest düşüş hareketini, bir çekimin sonucu olduğunu keşfetmiş. Yeryüzünde düşen bir taş ile dünyanın etrafında yörüngede olan bir uydu bu çekim gücünün etkisi ile hareket ediyormuş. Newton bu çekim gücünü bulmuş. Ayrıca bu çekim gücünün mesafenin karesi ile azaldığını bulmuş, yani Newtoncu çekim gücü mesafenin karesi ile azalıyormuş. Newton bu mesafenin karesi ile azalan çekim gücünü kullanarak gezegenlerin yörüngelerini hesaplamış. Newton, bu gücü kullanarak gezegenlerin yörüngelerini doğru olarak hesapladığına göre de bu çekim gücü doğa da var olmalıymış. Yani Newtonculara göre, zaman geçmeden mesafeleri aşan bu çekim gücü ile Newton gezegenlerin yörüngelerini hesaplamış ve doğru sonuçlar bulmuş. Eğer böyle olsaydı bütün fizik yasalarını değiştirmemiz gerekirdi, çünkü fiziğin en kutsal yasaları olan enerji koruma yasalarına göre hiçbir şey zaman geçmeden mesafeleri katedemez. Fakat Newtoncu kültün bir üyesi iseniz, Newton'un müridi iseniz, Newton'un tanımladığı bu mucizeyi sorgulayamazsınız, sadece kabul edersiniz. Etmek zorundasınız. Ama Newtoncu kültün bir üyesi değilseniz, zaman geçmeden mesafeleri aşan bir gücün bu dünyada olmadığını bilirsiniz ve bu mucize güçle yörünge hesapları yapılamayacağını bilirsiniz ve Newton'un yalan söylediğini anlardınız.]
+</p></li>
+
+<li value="43">Bu kitabı yazan arkadaşlar Newton'un yörüngeleri çekim gücü kullanarak hesaplamadığını bilmiyorlar çünkü Newton'un kitabını açıp bakmamışlar. Sadece yüzyıllardır tekrarlanan Newtoncu propagandayı tekrarlıyorlar.</li>
+
+<li><p>
+It therefore seems as if the gravitational force is able to exert its influence over vast distances of empty space: this ability is known as 'action at a distance'.
+</p>
+
+<p>
+[ Yerçekimsel çekim gücü, etkisini boş uzayda büyük mesafeler katederek gösteriyormuş gibi geliyor. Buna da action at a distance yani uzaktan hareket ettirme denir. Tabii bu laflar hep klişe olmuş propaganda lafları. Temas olmadan uzaktaki bir cismi hareket ettirebiliyor. Bundan önce, bu güç mesafeleri zaman geçmeden katediyor. Bu özelliği olan bir şey bu dünyada yoktur. Doğa üstüdür ve bir mucizedir. O zaman, bu Newtoncu çekim gücünün başka özelliklerini tartışmaya gerek yoktur.]
+</p></li>
+
+<li value="45"><p>
+As can be seen from his private letters, Newton himself was uncomfortable with this picture, believing that something must pass between the bodies to produce this gravitational attraction.
+</p>
+
+<p>
+[Çok komik. Newton'un kutsal otoritesini korumaya çalışıyorlar. Bu absürd gücü tanımlayan Newton arada yerçekimsel çekim gücünü iletecek bir aracı medya olması gerektiğine inanıyormuş. Newton'un neye inandığı bizi hiç ilgilendirmiyor. Newton doğa üstü bir güç tanımlamış ve bu güçle yörüngeleri hesapladığını söyleyerek yalan söylemiş.]
+</p></li>
+
+<li value="46"><p>
+Nonetheless, it was undeniable that the 'action at a distance' theory of gravity was spectacularly successful. This success diverted attention from Newton's more intuitive concerns about such a theory.
+</p>
+
+<p>
+[İşte Newtoncu propaganda böyle tekrarlanıyor. Bu uzaktan temas olmadan uyduları yörüngede tutan güç, mesafeleri zaman geçmeden aşan bu mucize, muhteşem bir şekilde başarılıymış. Newton'un uydurduğu propaganda tekrarlanıyor burada. Ey, Newtoncu propagandayı tekrarlayan Newton'un müritleri, Newton'un tanımladığı güç bir mucize olduğuna göre Newton bu mucize ile yörüngeleri hesaplayamazdı ve hesaplamamıştır.]
+</p></li>
+
+<li value="47">Bu da Einstein'ın kendi ağzından Newton'un absürd gücünü nasıl eleştirdiği. Einstein'ın Relativity and the ether adlı konuşmasından.</li>
+
+<li>"Why is it that alongside of the notion derived by abstraction from everyday life, of ponderable matter the physicists set the notion of the existence of another sort of matter, the ether?</li>
+</ol>
+
+<p>
+[Ne demek istiyor anlayamadım. Bu eter uyduruk bir kavram. Eter yeni bir madde çeşidi olarak tanımlanmış anlaşılan ve tek görevi Newtoncu yerçekimi gücünü iletecek bir medya olması. Ponderable, tartırabilir, ağırlığı olan demekmiş. Eter'in ağırlığı yok anlaşılan.]
+</p>
+
+<ol class="org-ol">
+<li value="49">Yani, Newton'un kutsal otoritesini zedelemeden ve Newton'a karşı çıkmadan "action at a distance" mucizesini açıklamak için fizikçiler eter dedikleri yeni bir madde türü icad etmişler.. Eterin tek görevi var o da Newton'un mucize çekim gücünü taşıyan bir aracı olmak. Action at a distance'ın etrafından dolanmak için Newtoncu fizikçilerin bir yeni madde çeşidi olarak uydurdukları "eter" kavramının action at a distance kadar sorunlu bir kavram olduğunu Einstein hatırlatıyor.</li>
+
+<li>The reason lies no doubt in those phenomena which gave rise to the theory of forces acting at a distance, and in those properties of light which led to the wave-theory. Let us shortly consider these two things.</li>
+
+<li>Non-physical thought knows nothing of forces acting at a distance. [Alternatif tercüme: "Outside of physics we know nothing of action at a distance."]</li>
+</ol>
+
+<p>
+[Tercümede bir sorun var galiba. Fiziğin dışında uzaktan etki eden güçler hakkında hiçbir şey bilmiyoruz. Ne demek istiyor anlayamadım.]
+</p>
+
+<ol class="org-ol">
+<li value="52">When we try to subject our experiences of bodies by a complete causal scheme, there seems at first sight to be no reciprocal interaction except what is produced by means of immediate contact, e.g., the transmission of motion by impact, pressure or pull, heating or inducing combustion by means of a flame, etc.</li>
+</ol>
+
+<p>
+["Temas olmadan karşılıklı etkileşim yoktur" diyor Einstein. Hareket sadece temas ile transfer edilir diyor. Bu dünyada temas olmadan hareket trasferi yoktur diyor Einstein. Bu temel bir gözlem. Tartışılacak bir konu değil. Eğer bir güç temas olmadan hareket transferi yapan bir etken olarak tanımlanmışsa, Einstein'a göre bu dünyada yeri yoktur.]
+</p>
+
+<ol class="org-ol">
+<li value="53">[Ben bu dünyada zaman geçmeden mesafe katetmenin olmadığını bir aksiyom olarak kabul ediyorum. Yani bunu ispat etmeme gerek yok. Ama siz bu aksiyomu kabul etmek mecburiyetinde değilsiniz. Siz mucizelere inanabilirsiniz. Veya Newtoncu mucize gücün bir istisna olduğunu varsayarsınız. Bu sizin bileceğiniz bir şey. Ben, bu aksiyomu kabul ettiğim için, başka hiçbir sebep göstermeden, Newton'un tanımladığı bu çekim gücünün doğada olmadığını kesin ve net olarak söyleyebilirim. Bu Newtoncu çekim gücü doğada olmadığına göre Newton'un uyduruk mazereti yani, "bu güçle yörüngeleri hesapladım ve doğru sonuçlar aldım, öyleyse bu güç vardır" söylemine inanabilirsiniz. Yani Newton, evet, belki bu güç absürddür, saçmadır, bu dünyada yoktur, ama iş gördüğüne göre ben var olduğunu kabul ediyorum ama nasıl çalıştığını bilmediğimi söylüyorum, diyor. Hayır. Newton'un bu mantığı kabul edilemez. Çünkü Newton bu güç bir mucizedir ve bu mucizeyi kullanarak yörüngeleri hesapladım öyleyse bu mucize vardır, diyor. Bu tam bir skolastik kaypaklıktır. Newton'un iddiasından çıkartılacak sonuç çok basittir. Bu güç doğada olmadığına göre Newton bu gücü kullanarak yörüngeleri hesaplamamıştır. Newton yalan söylüyor. Newton'un yalan söylediğini çok kolay ispatlayabiliriz. Bütün yapmamız gereken Newton'un <i>İlkeler</i> kitabını açıp Newton'un yörüngeleri nasıl hesapladığına bakmak. Baktığımız zaman görüyoruz ki, Newton kendi uydurduğu dinamik bir jargon kullanarak önce bir masal anlatıyor ondan sonra uydurduğu jargon terimlerini eliyor, ve hesapları Kepler Kuralı ile yapıyor. Newton bu kadar basit bir sahtekarlığı salt otoritesini kullanarak bütün dünyaya dayatmayı başarmıştır. Dediğim gibi siz Newtoncu çekim gücüne inanmaya devam edebilirsiniz. Ben inanmıyorum. Bu sebepten Cavendish deneyini tekrar yapmak istiyorum. Cavendish'in sarkacının kolu Newtoncu gücün etkisi altında oynuyor mu oynamıyor mu? Oynuyorsa siz haklısınız, Newton haklı ve ben boşuna bu kadar uğraşmış olurum. Ama eğer sarkaç kolu Newtoncu çekim gücü altında oynamıyorsa o zaman ben kendimi haklı görürüm, sevinirim, ama siz yine de Newtoncu güce inanmaya devam edersiniz çünkü Newtonculuk bir külttür.]</li>
+
+<li>"To be sure, gravity, that is to say,a force acting at a distance, does play an important part in everyday experience. But since the gravity of bodies presents itself to us in common life as something constant, dependent on no variable temporal or spatial cause, we do not ordinarily think of any cause in connection with it and thus are not conscious of its character as a force acting at a distance."</li>
+</ol>
+
+<p>
+[Yani, Einstein, yerçekimi (gravity) olarak adlandırılan şeyin (uzaktan etki eden bir güç) olduğunu kabul ediyor, yani, bu yerçekimi denen şeyin uzaktan temas olmadan hareket transfer eden bir şey olduğunu kabul ediyor. Bu nasıl oluyor? Newton'un otoritesi o kadar güçlü ki, Einstein gibi birisi sadece Newton dedi diye temas olmadan hareket trasferi yapan bir etkeni kabul ediyor. Yani Einstein, Newton'un tanımladığı şey, temas olmadan hareket trasferi yapan bir şey olarak tanımlamış, o zaman bu dünyada yoktur, olamaz, diyemiyor. Einstein, hala bu dünyada olmayan bir şeyin, mucize olarak tanımlanmış bir şeyin, olmadığını söylemiyor, "sebebini bilmiyoruz" diyor. Yani bu saçma şeyin varolduğunu Newton'un otoritesi ile kabul ediyor.]
+</p>
+
+<ol class="org-ol">
+<li value="55">"It was not till Newton's theory of gravitation that a cause was assigned to it; it was then explained as a force acting at a distance, due to mass."</li>
+</ol>
+
+<p>
+[Ne diyor Einstein burada? Yerçekimi için Newton bir sebep tanımlamış, Bu yerçekimi gücü kütleye oranlıdır ve temas etmeden uzaktan hareket trasferi yapabilmektedir, diyor Einstein. Newton böyle demiş. İyi de sebep nerede? Ben bir sebep göremiyorum. Sadece bir süreç verilmiş. Yani bu güç uzaktan temas olmadan hareket ettirme gücü vardır. Einstein da Newton'un teorisinden bahsediyor. Newton'un teorisi yok. Newton bir mucize tanımlamış.]
+</p>
+
+<ol class="org-ol">
+<li value="56">Bu yerçekimine bir sebep vermek değil ki.</li>
+</ol>
+
+<p>
+[Olay, yerçekiminin sebebi değil, Newton'un gezegenlerin yörüngelerini hesaplarken bu tanımladığı mucize gücü kullanmadığıdır. Akademik tartışmaya gerek yok. Yerçekimi gücünün sebebi nedir, akademik bir tartışmadır çünkü yerçekimi çekim değildir ve güç değildir.]
+</p>
+
+<ol class="org-ol">
+<li value="57">Newton's theory certainly marks the greatest step ever taken in linking up natural phenomena causally.</li>
+</ol>
+
+<p>
+[Einstein olaya sebep sonuç olarak bakıyor. Ama uzaktan temas olmadan hareket transferi yapabilen bir etmenin sebep sonuç ilişkisine uymadığı çok açıktır. Ama Einstein Newton'un otoritesini sorgulamadan kabul ediyor. Newton'un sebep sonuç ilişkisine uymayan gücü doğa olaylarını sebep sonuç ilişkisi ile açıklamak için çok önemli bir adımdır diyor. Bu biraz açıklama gerektiyor. Bilim öncesi insanlar doğa olaylarını doğal sebeplerle açıklamıyorlardı. Her doğal olayı açıklayan bir tanrı tanımlıyorlardı. Einstein bundan bahsediyor. Newton doğa olaylarını doğal sebeplerle açıklamış. Ama bu doğru değil çünkü Newton'un uydurduğu güç doğal bir güç değil. Yani Einstein Newton propagandasını tekrarlıyor.]
+</p>
+
+<ol class="org-ol">
+<li value="58">"Newton'un teorisi" dedikleri zaman bu insanlar ne anlıyor acaba? Newton'un teorisi tamamen anlamsız bir kavram. Newton'un bütün dünyaya hareket yasaları diye sattığı aksiyomlara mı Newton'un teorisi diyorsunuz? F=ma yazıp buna Newton'un teorisi mi diyorsunuz? Bu kadar muğlak ve anlamsız laflar sadece Newton'un otoritesi altında anlam kazanır. Lütfen açık olalım. Newton'un teorisi falan yok. Ben sadece Newton'un <i>İlkeler</i>'inde yaptığı yörünge hesaplarına bakıyorum. Newton bu hesaplarda bir teori kullanmıyor. Bir güç terimi kullanmıyor. Kütle terimi kullanmıyor. Eğer yörünge hesaplarken kullandığınız formüllerde bir güç terimi yoksa o zaman siz yörüngeleri güç ile hesapladım dediğiniz zaman yalan söylemiş oluyorsunuz. Onun için, sadece Newton'un kitabında kullandığı basit orantılara bakacağız. Bu orantılarda bir güç terimi var mı? Yok. Ne var? Kepler Kuralı var yani yörüngeler sadece R ve T ile hesaplanıyor.</li>
+
+<li><p>
+"And yet his contemporaries were by no means satisfied with it, because it seemed to contradict the principle derived from the rest of experience that reciprocal action only takes place through direct contact, not by direct action at a distance, without any means of transmission.
+</p>
+
+<p>
+[Einstein Newton'un çağdaşlarının Newton'un tanımladığı bu mucizeyi kabul etmediklerini söylüyor. Ama hala Newton'un otoritesi o kadar güçlü ki Einstein Newton saçmalamış diyemiyor, hala "it seemed to contradict&#x2026;" diyor, yani bu dünyada gözlemlediğimiz her şeye ters düşüyor diyemiyor, hala ters düşüyor gibi görünüyor diyor. Einstein, temas olmadan hareket trasferi olamaz onun için Newton'un bu gücü bu dünyada yoktur diyemiyor.]
+</p></li>
+
+<li value="60"><p>
+Bu şekilde fizikçiler bir "means of transmission" uydurarak Newton'u kurtaracaklarını zannetmişler. Hala Newtonu kurtarmaya çalışıyorlar. Newton mesafeleri zaman geçmeden kateden bir şey tanımlamış. Böyle bir şey bir aksiyom olarak bu dünyada yoktur. Öyleyse tartışılacak bir şey yok, Newton yörüngeleri bu gücü kullanarak hesaplamamıştır.
+</p>
+
+<p>
+[Einstein ve fizikçiler hala Newton'un mucizevi gücünü kartarmaya çalışıyorlar. Madem Newton temas olmadan hareket trasferi yapan bir güç tanımlamış, bu da bu dünyada yasaktır, o zaman, biz eter diye bir aracı madde tanımlayalım ve Newton'un otoritesini kurtaralım diyorlar.]
+</p></li>
+
+<li value="61"><p>
+"Man's thirst for knowledge only acquiesces in such a dualism reluctantly. How could unity in our conception of natural forces be saved?"
+</p>
+
+<p>
+[Einstein filozofçuluk oynuyor burada. Doğanın tekliğine inanıyormuş. Ama Newtoncu jargonu da kullanıyor, doğal güçlerin birliğine inanıyoruz diyor.]
+</p></li>
+
+<li value="62">People could either attempt to treat the forces which appear to us to act by contact as acting at a distance, though only making themselves felt at very small distances; this was the way generally chosen by Newton's successors, who were completely under the spell of his teaching.</li>
+
+<li><p>
+"Newton's successors, who were completely under the spell of his teaching&#x2026;" İşte Einstein bile görmüş, bir fizikçi olarak, Newtonculuğun bir tarikat olduğunu ve Newton'un müritlerinin, Newton'un otoritesine karşı çıkamayacakları&#x2026; Bu Einstein'dan geldiğine göre ciddiye almalıyız.
+</p>
+
+<p>
+[Newton bu dünyada olmayan bir mucize tanımlıyor, bu mucizeye çekim gücü diyor, ve bu güç zaman geçmeden mesafeleri aşıp temas olmadan hareket transferi yapar diyor ve kimse Newton'un otoritesine karşı çıkıp böyle saçma şey olamaz diyemiyor. Artık Newton'un yalanını yüzüne vurmak gerekiyor.]
+</p></li>
+
+<li value="64">"Or they could take the line that Newton's forces acting at a distance only <i>appeared</i> to act thus directly; that they were really transmitted by a medium which permeated space, either by motions or by an elastic deformation of this medium.</li>
+</ol>
+
+<p>
+[Evet işte, eter maddesini yaratarak Newton'um otoritesini kurtarmaya çalışıyorlar.]
+</p>
+
+<ol class="org-ol">
+<li value="65">Thus the desire for unity in our view of the nature of these forces led to the hypothesis of the ether. It certainly led to no advance in the theory of gravitation or in physics generally to begin with, so that people got into the habit of treating Newton's law of force as an irreducible axiom.</li>
+</ol>
+
+<p>
+[Einstein, eteri uydurduk ama bir işe yaramadı diyor. Newton çekim gücü yasası temel bir aksiyon olarak kabul edildi diyor. Bu dünyada olmayan bir mucizeyi kendilerine fizikçi diyen Newton'un müritleri fiziğin temel mucizesi yapmışlar.]
+</p>
+
+<ol class="org-ol">
+<li value="66">Evet doğru. Newton'un güç yasası diye bir yasası yoktur, Newton, bu absürd çekim gücünü bir mucize olarak tanımlamıştır. Newtoncu güç bir tanımdır.</li>
+
+<li>But the ether hypothesis was bound always to play a part, even if it was mostly a latent one at first in the thinking of physicists.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-10-31 Sat 11:03</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
