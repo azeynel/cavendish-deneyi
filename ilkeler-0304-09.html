@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-01 Sun 20:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgb28490d" class="outline-2">
+<h2 id="orgb28490d">III.4 Densmore, (s.375)</h2>
+<div class="outline-text-2" id="text-orgb28490d">
+<blockquote>
+<p>
+<i>Bu hesaplar dünyanın sabit olduğu varsayımına dayanmaktadır. Bu hesapları yapan herkesin açıkça göreceği gibi, eğer dünya ve ay güneş etrafında dönüyorlarsa, ve aynı zamanda kendi ağırlık merkezlerinin etrafında dönüyorlarsa, yerçekimi kuralı aynı kaldığı müddetçe, ayın ve dünyanın arasındaki mesafe \(60\frac{1}{2}\) dünya yarıçapı olacaktır. Bu hesaplar, I. Kitabın 60. önermesine göre yapılabilir.</i>
+</p>
+</blockquote>
+
+<p>
+Densmore:
+</p>
+
+<p>
+Not: Newton'un bu düşüncesi pek yerinde değil. Newton nereye doğru gittiğini biliyor ve ayın dünyaya doğru yerçekimsel çekiminin (gravitation) aslında her iki cismin karşılıklı çekimi olduğu meydana çıkacaktır, ama bu henüz ispatlanmamıştır. Ve kullanmamızı tavsiye ettiği Önerme I.60, karşılıklı çekimi varsayan hayalî (hypothetical) bir önermedir.
+</p>
+
+<p>
+[ Karşılıklı çekimin geçerli olup olmadığını bilmediğimiz ] için, mantıkan I.60'ı kullanamayız.
+</p>
+
+<p>
+[ Tek tek çekim yok ki karşılıklı çekim olsun! Çok yan konulara giriyor ama sabırlı olup okumaya devam. Asıl konu, asıl sorun, Newton'un uydurduğu deli saçması "ters kare yerçekimsel güç yasası" diye bir şey olmaması. Ama bu insanların sanki varmış gibi hem kendilerini hem de bizi aldatmaları&#x2026; ]
+</p>
+
+<p>
+[ Gereksiz detayları tartışıyoruz. ]
+</p>
+
+<p>
+[ Şimdi tartışılan konu, bu yerçekimsel çekimin karşılıklı olup olmadığı. Tabii, Newton, çekimin karşılıklı olduğunu iddia ediyor ama bu işleri karıştırır ve yörünge hesaplarının imkansızlaştırır, eğer her madde birimi hem yakınındaki diğer bütün madde birimlerini hem de uzaktaki madde birimlerini &#x2013;Newton'un varsaydığı gibi&#x2013; çekiyor olsaydı, böyle bir hesaplama yapmak modern bilgisayarları bile aşardı. Onun için fizikçiler hep çekilen kütlenin çekecek gücü olmadığını varsayarlar. Çeken cisim de kendi içinde çekim yapmaz ve bütün çekim gücü sanki markezinde toplanmış gibi çekim yapar. Bütün bu masalları Newton Kepler Kuralına kendi ideolojik maddeci doktrinlerini ekleyebilmek için uydurmuştur. ]
+</p>
+
+<p>
+[ Ama Newton'un Kepler Orantısı'nın bir oranını kopartıp alıp "güç" diye etiketledi diye, doğada bu absürd güç var olmuyor. Doğa Newton7a uymuyor, Newton doğaya uyacak. Sadece Newton'un masallarına inanan müritlerinin masal dünyasında bu güç ve çekip çekilen dinamik madde birimleri, düz çizgide eylemsiz harekteler ve düz çizgide eylemsiz giderken Newtoncu güce rastlayınca aniden eylemli harekete geçebilen gibi saçmalıklar varolur. İçinde yaşadığımız dünyada bunlar yoktur. ]
+</p>
+
+<p>
+Devam:
+</p>
+
+<p>
+Bu düzeltme, Newton'un yerçekimsel çekimlerin karşılıklı olduğunu ispatladığı III.7'den sonra gelmeliydi. Ancak, ondan sonra, III.4'te bulduğumuz sonuçları yeniden düşünmemiz mi ve hatta onlardan vazgeçmemiz mi gerektiği sorgulardık.
+</p>
+
+<p>
+Ondan sonra, Newton bu mantıkla ilerleyip ve I.60'ı kullanarak, dünyanın, ayla olan ortak ağırlık merkezine hareketinin, ölçebileceğimizden daha az olduğunu gösterebilirdi, aynı dünya ve bir sarkacın topu arasındaki ilişkide olduğu gibi.
+</p>
+
+<p>
+[ Bu sorunlar hep Newton'un deli saçması yerçekimsel çekim gücü varsayımını sorgulamadan kabul ettikleri için ortaya çıkıyor. Çekim yok, çünkü bu olayları Kepler Kuralı ile çekim olmadan açıklayabiliriz. Ama Newton'un çekim gücünü kullanarak açıklayamayız. Onun için Newton ve onun müritleri sahte bir sistem geliştirmişler Newtoncu güç terimlerini yazdıktan sonra eliyorlar ama güç terimlerini eledikleri halde uyduların yörüngelerinde Newtoncu gücün sayesinde döndüklerine inanıyorlar. Newton'un müritleri Kepler Kuralı'nı yeterli bulmuyorlar, ve yörünge harektelerinin altında yatan esas sebebi bulmak istiyorlar. Böyle bir sebep olmadığı için de hayalî bir güç tanımlıyorlar. ]
+</p>
+
+<p>
+(s. 375)
+</p>
+
+<p>
+I.59'da, Newton, birbirlerini karşılıklı çeken iki cisimli bir sistem varsayarsak ne olacağını inceliyor; bu cisimlerden biri sabittir, diğeri ise onun etrafında yörüngededir; ve ikisi de aynı gücün etkisi oltanda ortak ağırlık merkezinin etrafında dönmektedir.
+</p>
+
+<p>
+[ Yani, ay ve dünyanın güneş etrafında dönüşünü tarif ediyor. Aslında, dünya ve ay ortak ağırlık merkezlerinin etrafında döner ve "barycenter" denen bu ağırlık merkezi güneşin etrafında döner. [ ağırlık merkezinin Kepler tanımı ] 
+</p>
+
+<p>
+(Önerme I.58 böyle bir değişimin mümkün olduğunu göstermiştir.)
+</p>
+
+<p>
+Newton'un dünya ve ay için bu tip bir hareketin varlığından henüz bahsetmediğini not edelim.
+</p>
+
+<p>
+Karşılıkla çekimle birbirlerini çeken cisimlerin bulunduğu bir hayalî sistemde cisimlerin görece mesafelerini inceleyelim.
+</p>
+
+<p>
+Eğer birbirleri arasındaki mesafe önceki gibi sabit kalacak olsa, dönemlerin azalması gerekecek.
+</p>
+
+<p>
+[ Bu Kepler Orantısının bir sonucu, dönem değişirse yarıçap da Kepler Orantısına göre değişecek. Burada Newtonluk bir durum yok, Newton Kepler'in orantısını kullanıyor ama onu Newton'un dinamik terimleri ile ifade ediyor. ]
+</p>
+
+<p>
+Newton, I.60'ta, dönemlerin sabit kaldığını varsayarsak neyin değişeceğini inceliyor. Sonuç ana eksenin aşağıdaki orantıyı göre [ Kepler Orantısına göre] değişeceği:
+</p>
+
+\begin{equation*}
+\frac{\text{Yeni eksen}}{\text{Eski eksen}} = \sqrt[3]{\frac{T + M}{T}}
+\end{equation*}
+
+<p>
+Burada \(T\) daha önce sabit duran cismin madde miktarı ve \(M\) de diğer cismin madde miktarıdır. [ "Madde miktarı" diye çevirdiğimiz "Quantity of matter" sözüdür, daha sonra bu şey fiziğe "kütle" olarak girecektir. Ama "Quantity of matter" Newton'un Kepler Kuralında sabit tutalan birim oranınına verdiği isimdir. Bir etikettir. Fiziksel bir değer değildir. Newton, Kepler Kuralını alıp parçalırına bölmüş ve her parçaya yeni bir Newtoncu etiket yapıştırarak Kepler Kuralını sahiplenmiştir. Yani Newton mekaniğu Newton ve müritlerinin Kepler Kuralına yapıştırdıkları kozmetik, dekoratif, ideolojik etiketlerdir. ]
+</p>
+
+<p>
+İncelediğimiz konuyla ilgili olan asıl önerme I.59 değil I.60 olmalıdır, çünkü ayın dönemi tam olarak bilindiği halde, dünya ile arasındaki mesafe daha az doğrulukta bilinmektedir.
+</p>
+
+<p>
+[ Bu tartışmalar iyi güzel de, zaten Newtoncu çekim gücü diye bir şey yok, Newton ve havarilerinin ve müritlerinin Kepler Kuralına yapıştırdığı kozmetik etiketlerden bahsediyoruz sanki bu etiketler gerçek sayısal değerlermiş gibi; ama bu Newtoncu etiketlerin sayısal değeri olmadığı için ve sadece başka değerler için yer tutan kukla semboller oldukları için, orantılarda ve oranlarda yer almıyorlar. Ama yüzyıllardır Newtonculuğun bu sahte etiketleri Newton'un müritleri tarafından sanki gerçik fiziksel değerlermiş gibi tartışılıyor ve bu etiketlere fiziksel anlamlar yükleniyor. Hepsi hayalî tabii. ]
+</p>
+
+<p>
+[ Bu Newtoncu etiketler okulcu, skolastik tartışmaları bizim Cavendish deneyine geri dönmemizi engelliyor. Öte yandan, Cavendish deneyini, Newtoncu çekim gücünden ayırmak mümkün değil çünkü Cavendish de, deneyi analiz edenler de Newtoncu gücü varsayıyorlar ve eğer Newtoncu güç olmasaydı sarkaç kolu oynamızdı diyorlar. ]
+</p>
+
+<p>
+Newton'un hedefinin, I.60 tarafından gerekli bulunan düzeltmenin astronomların ölçtüğü mesafe aralıkları ile uyuşmaz olmadığını göstermek olduğu açıktır.
+</p>
+
+<p>
+Madde miktarları için Newton'un evrensel yerçekimsel çekim gücü yoluyla çıkaracağı sonuçları beklememiş gerekecek. Burada Newton bizi bu sonuçlara doğru götürüyor.
+</p>
+
+<p>
+(Fakat evrensel yerçekimsel çekim gücü kuramının buraya kadar henüz Newton tarafından ispatlanmadığını aklımızdan çıkartmayalım.)
+</p>
+
+<p>
+[ Sanki daha sonra ispatlanacak mı? Bu Newtoncu çekim gücü sanki yerel olarak ispatlanmış mı ki, evrensel olarak varolabilsin? Bunlar okulcu laf cambazlığı. Newton'un ölümünden 100 yıl sonra Cavendish deneyi yapılıyor, hâlâ Newtoncu çekim gücü gözlemlenmemiş. Cavendish deneyi de bu gücü varsayıyor ama gözlemlemiyor. Yani Cavendish deneyi Newtoncu gücü gözlemlemek için tasarlanmamış. Cavendish deneyinden yüz yıl sonra, Newtoncu deli saçması çekim gücü hâlâ gözlemlenmemiş ama fiziğe, fiziğin temel birimi olarak monte edilmiş; fiziğin ana direği güç, üstelik birimin ismi de "Newton" ama bu güç hâlâ bir fizik deneyi ile gözlemlenmemiş. Ondokuzuncu yüzyılda fizikçiler artık yeter diyorlar ve Newton'un kutsal otoritesi daha fazla incinmesin diye, geçmişe uzanıp Cavendish deneyini bu, doğa üstü, deli saçması, Newtoncu gücü ölçen ilk deney olarak tanımlıyorlar. Sahtekarlık bu. Fiziğin okulcu bir hukuk sistemi olduğunun bir ispatı. Bu inançtır. tarikatçılıktır. Dindir. Newtoncu güç denen mucizenin bir fizik deneyi ile ölçüldüğünü iddia etmek kadim fizik bilimini eski Aristo skolastikliğinden de daha aşağı bir yere taşımak demektir. ]
+</p>
+
+<p>
+Devam:
+</p>
+
+<p>
+III.37'de ayın ve güneşin med cezir olayına etkilerini kukayese ederek, ayın gücünün güneşin gücünün 4.4815'te biri olduğu sonucuna varıyor.
+</p>
+
+<p>
+[ Fakat, hatırladığım kadar, Newton'un bu sonucu çok yanlış. Densmore yanlış olduğunu bilmiyor mu? Belki ben yanlış hatırlıyorum. ]
+</p>
+
+<p>
+III.37'nin 3. Doğal Sonucunda, Newton bu oranı ve ayın ve dünyanın görünen çaplarını kullanarak güneşle ayın yoğunluğunun oranını ve ayla dünyanın yoğunluklarının oranını hesaplıyor.
+</p>
+
+<p>
+Newton, ayla dünyanın yoğunluk oranının 11'e 9 olduğunu buluyor ve "öyleyse, ayın cismi dünyadan daha yoğun ve dünyanın kendisinden daha dünyevidir (earthly)" diyor. 
+</p>
+
+<p>
+[ Burada da Kepler Kuralını kullandığından şüphe yok çünkü Kepler Kuralı yoğunluğun tanımıdır, yoğunluk hesabı yapıyorsanın Kepler Kuralını kullanmak zorundasınız, ama Newton gibi Kepler Kuralını kendi etiketleriniz altında gizleyerek de kullanabilirsiniz. ]
+</p>
+
+<p>
+III.37'nin 4. Doğal Sonucunda bu oranı dünyanın ve ayın çaplarının oranı (365'e 100, astronomlara göre) ile birleştiriyor ve madde miktarlarının oranının 1'e 39.788 olduğunu buluyor.
+</p>
+
+<p>
+Bu sayıyı yukardaki orantıda geçici olarak kullanarak mesafelerde yapılması gereken düzeltmeyi hesaplayabiliriz.
+</p>
+
+
+\begin{equation*}
+\frac{\text{Yeni eksen}}{60} = \sqrt[3]{\frac{1 + 39.788}{39.788}}
+\end{equation*}
+
+<p>
+Newton'un dediği gibi bu aşağı yukarı 60\(\frac{1}{2}\)
+</p>
+
+<p>
+Öyleyse, eğer dünyanın hareketi için mesafeyi ayarlamamız gerekse bile, bu düzeltme dikkate alınması gerekmeyecek kadar küçük olacaktar.
+</p>
+
+<p>
+Q.E.D.
+</p>
+
+<p>
+[ Bundan sonra III.4'ün Yorumu (Scholium) geliyor. <a href="ilkeler-0304-02.html">Bunu tercüme etmişim</a>. Densmore da detaya girmiyor zaten. Densmore'un bu yorum için ne dediğini tercüme edelim ve duralım. ]
+</p>
+
+<p>
+III.4'den sonra gelen Yorumla ilgili not.
+</p>
+
+<p>
+Neqton'un; sadece 2. Kural'ın gücü ile merkezcil gücün yerçekimi olduğunu söylemesinin bizi ikna etmeyeceğini düşündüğü anlaşılıyor.
+</p>
+
+<p>
+[ Yani, 2. Kural'a göre aynı sonuçların sebepleri de aynıdır dediler ya, ondan merkezcil güç hem ayı yörüngesinde tuttuğu hem de yeryüzünde taşı düşürdüğü için düşme sonucunun aynı sebebi olmuş oluyor. Böyle bir mantık yürütüyor Newton. Ama anlaşılan bunu kendi de yeterli bulmuyor ve III.4'ün bu Yorumunda daha detaylı bir hayalî deney anlatıyor. ]
+</p>
+
+<p>
+Newton, sadece kaba olarak 2. Kurala güvenmek yerine tümevarım adımlarının kaçınılmaz olarak açık seçik olmasını istemiş.
+</p>
+
+<p>
+Newton'un bize kesin bir ispat vermek için çabalamasını takdir ediyoruz ve ona bu şüpheleri için ve bize dağların zirvelerine yakın yörüngelerinde dolaşan küçük aylarla ilgili hayalî bir deneyi sunduğu için teşekkür ediyoruz; bu da çok heyecan verici bir önermeye çok tatlı bir son oldu.
+</p>
+
+<p>
+(s.377)
+</p>
+
+<p>
+<b>III.4'ten sonra ara</b>
+</p>
+</div>
+
+<div id="outline-container-orgb363ddc" class="outline-3">
+<h3 id="orgb363ddc">Ters kare yasasının evrenselliği</h3>
+<div class="outline-text-3" id="text-orgb363ddc">
+<p>
+Bu önermede yararlandığımız hayalî deneyde, ayı dünyanın bir yarıçapı mesafeye getirdik ve ters kare yasasının bu mesafede geçerli olduğunu varsayarak, ayın düşme oranının ne olduğunu öngörmeye çalıştık.   
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-01 Sun 20:04</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

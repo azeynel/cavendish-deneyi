@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-01 Sun 20:01 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org40ac4e0" class="outline-2">
+<h2 id="org40ac4e0">Newton: <i>İlkeler</i>, 3. Kitap, 4. Önerme'nin tercümesi</h2>
+<div class="outline-text-2" id="text-org40ac4e0">
+<ol class="org-ol">
+<li><i>That the moon gravitates towards the earth, and is always drawn back from rectilinear motion, and held back in its orbit, by the force of gravity.</i></li>
+</ol>
+
+<p>
+Ay, yerçekimi gücünün çekimi ile; dünyaya yönelir, düz çizgi hareketinden devamlı geri çekilir ve yörüngesinde tutulur.
+</p>
+
+<p>
+Yorum:
+</p>
+
+<p>
+[ Acaba Newton neden bu önermeyi "active voice" ile yazmamış? Şöyle yazsaymış, ayın yörüngesini yapan ve ayı yörüngesinde tutun sebebin Newtoncu güç olduğu daha açık olarak belirtilmiş olurdu: "<i>The force of gravity, makes the moon gravitate towards the earth, draws the moon back from rectilinear motion, and holds it back in its orbit.</i>" Çok daha net olurmuş.]
+</p>
+
+<p>
+[ Cohen tercümesi daha iyi: <i>The moon gravitates toward the earth and by the force of gravity is always drawn back from rectilinear motion and kept in its orbit.</i>  Ay dünyaya yönelir ve yerçekimi gücü tarafından devamlı düz çizgi hareketinden içe doğru çekilir ve yörüngesinde tutulur. ]
+</p>
+
+<p>
+[ Yerçekimi gücü; yerçekimi gücü olmasa, düz bir çizgi üzerinde süredurumsal olarak gidiyor olacak olan ayı düz çizgiden çevirip, onu dünyaya doğru yönlendirir ve aynı zamanda da yörüngede tutar. Yani, dünyanın merkezinde konuşlanmış gibi yapan bu yerçekimi denen güç, hiç zaman geçmeden, ayın kütlesini öğrenir ve ayı yörüngesinde tutmak için gerekli olan doğru çekim gücünü hesaplar ve yine hiç zaman geçmeden bu gücü aya yollayıp ayı kendine doğru çekmeye başlar; bu şekilde ay dünyaya düşmeye başlayınca, bu süper akıllı güç, gücünde gerekli ayarlamaları yaparak ayın direk dünyaya düşmesini engeller ve onu dünya etrafında bir yörüngede tutar. İsaac Newton'dan doğa üstü çekim masalları dinlediniz. Şimdi, Newton'un uydurduğu bu masalı nasıl ispatlayacağına bakalım. ]
+</p>
+
+<p>
+[ Fakat önce, tercüme hakkında birkaç söz: İngilizce "gravity" kelimesi, Türkçe'ye, "yerçekimi" olarak geçmiş, bu da tercümede sorun yaratıyor. Newtoncu çekim doktrini Türkçe'ye değişmez şekilde monte edilmiş. Yani, biz Newtoncu çekim doktrini olmadan doğaya bakamıyoruz. İngilizce "gravity", Fransızca, "la gravité", Almanca "Schwere", hepsi, ağırlıkla ilgili kelimeler, Newton bu kelimelere çekim gücü anlamı yüklemiş ama İngilizce, Fransızca ve Almanca kelimeleri tanımlayan otoriteler, "ağırlık" anlamına gelen bir kelimeyi Newtoncu doktrine uydurmak için, ona "çekim gücü" anlamı yüklememişler. Ama, Türkçe'ye yeni kelimeler kazandıran otoriteler aşırı Newtoncu oldukları için ağırlığı Newtoncu çekim olarak tanımlayalım demişler ve dilimize yerçekimi kelimesini sokmuşlar. "Düşen cisimler, Newtoncu çekim gücüne uyarak düşerler; ağırlıkları oldukları için düşmezler, Newtoncu çekim tarafından çekildikleri için düşerler" demişler. Newton'dan çok önce de varolan ve ağırlık anlamına gelen, "gravity" kelimesi çekimden bağımsız iken Newton bu kelimeye "uzaktan zaman geçmeden çekim gücü" anlamını yüklemeyi başarmıştır. Ama biz, Türkçe konuşup yazdığımız için, ağırlığı çekimden ayrı olarak düşünemeyiz çünkü Newtoncu çekim dilimize monte edilmiş. Newton'un "force of gravity" kavramı, nerdeyse, "ağırlık gücü" diye tercüme edilebilir, "cisimlere ağırlıklarını veren güç" gibi. Ama biz Newton çekim gücünü sorgulayamayız, "yerçekimi" demek zorundayız. ]
+</p>
+
+<p>
+[ Bu önermede Newton'un hedefi zaten, "çekim gücü" diye tanımladığı şeyin varlığını ayın yörüngesini kullanarak ispatlamaya çalışmak. Ay yörüngesinde, aynı yeryüzünde serbest düşüşte olan bir cisim gibi düşmektedir, yoksa ay dümdüz yoluna devam ederdi, diyor Newton. Daha ilk cümlesi, «&#x2026;the moon gravitates towards the earth&#x2026;» bir kelime oyunu. "Gravitates" yönelmek demek, ama Newton, sanki ay dünyaya, kendi tanımladığı bu çekim gücü ile çekilerek yöneliyormuş gibi bir his yaratmak için "gravitates" kelimesini kullanıyor. ]
+</p>
+
+<p>
+[ "Inertia" ve "Inertial motion", ve "rectilinear inertial motion", hepsi sorunlu kavramlar. Tercüme açısından, "inertia", sözlükte, "atalet", "eylemsizlik" ve "süredurum" olarak verilmiş. Newton bu önermede, gizli varsayım olarak, doğada ve uzayda, doğal hareketin düz çizgi üzerinde, hiçbir gücün etkisi altında olmadan, eylemsiz bir şekilde, süredurumsal olarak, ve atalet içinde, aynı hızda sonsuza dek hareket olduğunu varsayıyor. Doğal hareket düz çizgi üzerinde eylemsiz ve devamlı aynı hızda kalan hareketmiş. Aslında, sürtünme tamamen kaldırılamaz, bu sebepten sürtünmenin olmadığı uzayda bile hareket kıvrılarak bir çeşit sürtünmeye maruz kalmış oluyor. Bu düz çizgi üzerinde hareketin doğal olduğu fikri, Newton'un Batlamyus'tan beri bir dogma olarak kabul edilmiş olan, dairesel hareketin doğal olduğu varsayımına karşı bir tepki olarak öne sürdüğü bir fikirdir. Doğal hareketin nasıl olduğu tartışılması gereken bir konudur. Newton'un kendi dinamik ve maddeci doktrinlerini kurtarmak için uydurduğu düz çizgi hareketini sorgulamalıyız. Doğal hareket dairesel mi? Düz çizgi üzerinde eylemsiz ve aynı hızda mı? Yoksa başka bir geometri ve başka özellikleri mi var? Newton, düz çizgi hareketinin doğal hareket olduğu fikrini Galileo'nun süredurumsal hareket varsayımından almış. Galileo, eğer sürtünme olmasa, yatay bir masa üzerinde, bir kere hareket ettirilen bir topun aynı hızda hareket etmeye devam edeceğini söylüyor. Newton almış bu fikri uzayda yörünge hareketlerine uygulamış. Yani Newton'a göre yörünge yapay bir harekettir, doğal hareket değiltir, dinamik bir harekettir; merkezde konuşlanmış olan Newtoncu güç devamlı yörüngedeki cismi çekerek yörüngede tutmalıdır, yoksa cisim yörüngeden fırlayıp gider. Newtoncu yörünge böyle tanımlanmıştır, Newton'un yazdığı yörünge masalında. Peki, bu gücün sayısal değeri nedir? Yörünge hareketinin formülünde, güç bir sayı olarak var mıdır? Yoktur. Mesela, bir burulma sarkacını hareket ettiren, telin burulma sabitidir ve bu bir sayı olarak hesaplara girmelidir yoksa sarkacın hareketini hesaplayamayız. Eğer yörüngeler de böyle bir güç ile hereket ettiriliyorlarsa bu gücün sayısal değerini bilmeliyiz. Ama Newton, yörünge hesaplarken böyle bir güç terimi kullanmaz. ]
+</p>
+
+<p>
+[ Yerçekimi olmazsa ayın düz bir çizgi üzerinde sonsuza dek aynı hızda süredurumsal olarak hareket edeceği Newton'un uydurduğu bir yalandır. Uzayda düz çizgi hareketi yoktur. Hiç gözlemlenmemiştir. Ama Newton'un müritleri üçyüz yıldır Newton'un bu yalanını tekrarlıyıp dururlar. Zaten, süredurumsal bir harektle yol alan bir cisim, tanım icabı, bütün güçten yoksundur, yani kendi hareketini devam ettirmek için bir güç üretmemektedir. Böyle süredurumsal olarak düz bir çizgi üzerinde kendi halinde giden, güçsüz bir cisim bir güçle karşılaşınca ne olur? Newton'a göre, güçsüz hareketle, yani ataletle, giden cisim, bir gücün etkisi altına girince aniden kendisi de bir karşı güç yaratır. Nasıl yapar bunu? Bilmiyoruz, ama Newton böyle buyurduğu için kabul etmeliyiz. Aslında, eğer düz çizgide aynı hızda güç harcamadan giden bir hareket tipi olsaydı bile, bu şekilde hareket eden cisim bir güçle karşılaşınca, bir gücün etkisi altına girer girmez, o güce hiçbir şekilde karşı koyamazdı ve o gücün kaynağına hızlanarak düşer ve parçalanırdı. Yörünge falan olmazdı. Mıknatıs gücü bu sebepten yörünge yapamaz. Gerci mıknatıs gücü karşılıklıdır. (Ama Newtoncu güç de karşılıklıdır!) Güçsüz hareketle devam eden cisim güçle karşılaştığında yörünge ihtimali sıfırdır, ancak Newtoncu masallarda böyle bir şey olabilir. ]
+</p>
+
+<p>
+[ Newton anlattığı masalda, "force of gravity" diye ayı yörüngede tutan, yani ayı dünya etrafında dairesel, kapalı bir yörüngede tutan, bir güçten bahsediyor; bu gücün sayısal bir değeri olmalı, yani bu güce F dersek, yörünge hesaplarında \(F=x\), yani, \(x=\) bir sayı, gibi bir terim görmeliyiz, fakat yok, yörünge hesapları sadece iki terimle hesaplanır; yörüngenin dönemi T ve yarıçapı R; T'nin de, R'nin de sayısal değerleri vardır, çünkü bunları yörüngeyi tanımlayan özelliklerdir, dönem ve yarıçap olmadan yörünge olmaz ama Newtoncu çekim gücü olmadan yörünge olur ve oluyor çünkü Newtoncu çekim gücü F yörüngenin tanımlayıcı bir özelliği değildir. Newtoncu güç F, sadece Newton'un bu önermenin girişinde anlattığı masalda geçiyor, ama gerçek hesaplamalara girmiyor. Öyleyse, yörüngeyi yapan ve yerinde tutan Newtoncu güç değilmiş. ]
+</p>
+
+<p>
+Tercümeyle devam edelim. Yukarda çevirdiğim Cümle (1), ayın yörüngesini yapan ve ayı yörüngede tutan şeyin yerçekimsel güç olduğunu söyleyen önermeydi. Newton şimdi bu önermeyi ispat edecek.
+</p>
+
+<p>
+Bu önermede, "syzygy" (Türkçe'ye "sizigi" diye geçmiş) diye içinde sesli harf olmayan astronomiye ait bir kelime var. Eski Yunanca, boyunduruk vurmak anlamına gelen "suzugos" kelimesinden geliyormuş. Astronomide, üç gök cisminin aynı çizgide olmaları demekmiş. Mesela, güneş, dünya ve ayın, dolunay ve yeni ay dönemlerinde aynı çizgide olmaları gibi. Ayla dünya arasındaki mesafe devamlı değiştiği için, Newton'un da örnek verdiği eski astronomlar, ayla dünya arasındaki ortalama mesafeyi sizigi dönemlerindeki mesafe olarak vermişler. Newton hesaplarında dünyanın yarıçapını birim olarak alıyor ve dünya ile ay arasındaki uzaklığı da 60 dünya yarıçapı olarak kabul ediyor.
+</p>
+
+<ol class="org-ol">
+<li value="2"><i>The moon's mean distance from the earth in the syzygies, in terrestrial semidiameter, is 59 according to Ptolemy and most astronomers; 60 according to Wendelin and Huygens, \(60\frac{1}{3}\) according to Copernicus, \(60\frac{2}{5}\) according to Streete, and \(56\frac{1}{2}\) according to Tycho.</i></li>
+</ol>
+
+<p>
+Ayın sizigilerde dünyadan ortalama uzaklığı, dünyanın yarıçapı olarak, Batlamyus ve birçok astronoma göre 59; Wendelin ve Huygens'e göre 60; Kopernik'e göre \(60\frac{1}{3}\); Streete'e göre \(60\frac{2}{5}\); ve Tycho'ya göre \(56\frac{1}{2}'dir\). 
+</p>
+
+
+<ol class="org-ol">
+<li value="3"><i>But Tycho and those who follow his tables of refraction in setting a greater refraction&#x2013;by as much as four or five minutes&#x2013;for the sun and moon than for the fixed stars (in complete opposition to the nature of light), had increased the parallax of the moon by the same number of minutes: that is, by as much as the twelfth or fifteenth part of the whole parallax.</i></li>
+</ol>
+
+<p>
+Fakat, Tycho ve onun, ay ve güneş için sabit yıldızların paralaksından 4 veya 5 dakika kadar daha yüksek paralaks tanımlayan tablolarını kabul edenler (ışığın doğasına aykırı olarak), ayın paralaksını da aynı dakikalar kadar arttırdılar, yani bütün paralaksın 12'de biri, veya 15'de biri kadar arttırdılar.
+</p>
+
+<ol class="org-ol">
+<li value="4"><i>Let this error be corrected, and the distance will come out to be \(60\frac{1}{2}\) terrestrial semidiameters, more or less, about what was assigned by the others.</i></li>
+</ol>
+
+<p>
+Bu hatayı düzeltince, ayla dünya arasındaki mesafe \(60\frac{1}{2}\) dünya yarıçapı kadar olacaktır, bu da, aşağı yukarı, diğerlerinin belirttiği mesafelere uygundur.
+</p>
+
+<ol class="org-ol">
+<li value="5"><i>Let us assume that the mean distance is sixty diameters at the syzygies, and that the lunar period with respect to the fixed stars amounts to 27 days, 7 hours, and 43 minutes, as is stated by the astronomers; and that the circumference of the earth is 123,249,600 Paris feet, as is established by the measuring Frenchmen.</i></li>
+</ol>
+
+<p>
+Sizigilerde ortalama mesafenin 60 yarıçap olduğunu, ve ayın döneminin, astronomların dediği gibi, sabit yıldızlara göre, 27 gün, 7 saat, 43 dakika olduğunu; dünyanın çevresinin, Fransızlar tarafından ölçüldüğü gibi, 123,249,600 Paris feet'i olduğunu varsayalım.
+</p>
+
+<ol class="org-ol">
+<li value="6"><i>If the moon be supposed to be deprived of all motion and dropped, so as to descend towards the earth, under the influence of all that force by which (by Proposition 3 Corollary) it is held back in its orbit, it will in falling traverse \(15\frac{1}{12}\) Paris feet in the space of one minute.</i></li>
+</ol>
+
+<p>
+Eğer ay bütün hareketlerinden arındırılıp, dünyaya doğru inecek şekilde bırakılsaydı, onu yörüngesinde tutan bütün gücün etkisi altında düşerken (3. önermenin Doğal Sonucuna göre), bir dakika içinde \(15\frac{1}{12}\) Paris feet'i kadar mesafe katedecektir.
+</p>
+
+<ol class="org-ol">
+<li value="7"><i>This conclusion comes from a computation based either upon Proposition 36 of the first Book or (what amounts to the same thing) the ninth Corollary of the fourth Proposition of the same Book.</i></li>
+</ol>
+
+<p>
+Bu sonuç, ya 1. Kitabın 36. önermesi, veya, aynı hesaba gelen, yine 1. kitaptadaki 4. Önermenin 9. Doğal Sonucunda yapılan hesaplardan çıkmaktadır.
+</p>
+
+<ol class="org-ol">
+<li value="8"><i>For the versed sine of that arc which the moon in its mean motion describes in the time of one minute at a distance of sixty terrestrial semidiameters, is about \(15\frac{1}{12}\) Paris feet, or more accurately, 15 feet 1 inch and \(1\frac{4}{9}\) lines.</i></li>
+</ol>
+
+<p>
+Çünkü ayın 60 dünya yarıçapı mesafesindeki yörüngesinde bir dakikada çizdiği yayın (versed sine)'ı, \(15\frac{1}{12}\) Paris feet'dir veya daha kesin olarak, 15 feet 1 inch ve \(1\frac{4}{9}\) lines'dır.
+</p>
+
+<ol class="org-ol">
+<li value="9"><i>Whence, since in approaching the earth that force increases in the inverse of the duplicate ratio of the distance, and is thus greater at the surface of the earth by 60 \(\times\) 60 parts than at the moon, a body, in falling by that force in our regions, ought to describe a space of \(60\times 60 \times 15\frac{1}{12}\) Paris feet in the space of one minute, and in the space of one second, \(15\frac{1}{12}\) feet, or more accurately, 15 feet 1 inch and \(1\frac{4}{9}\) lines.</i></li>
+</ol>
+
+<p>
+Yorum:
+</p>
+
+<p>
+[ Böyle bir güç olmadığına göre, mesafenin karesine ters orantılı olarak nasıl azalıyor, ve herkes neden bu konuda Newton'a katılıyor, bunu iyi anlamak lazım. ]
+</p>
+
+<p>
+Bundan dolayı, dünyaya yaklaşırken, o güç, mesafenin karesinin tersi ile arttığına göre, ve dünyanın yüzeyinde ayın mesafesinde olduğundan \(60 \times 60\) kere daha büyük olacağına göre, bizim bölgemizde o gücün etkisi altında düşen bir cisim 1 dakika içinde \(60 \times 60 \times 15\frac{1}{12}\) Paris feet'i kadar mesafe geçmiş olur; veya 1 saniye içinde \(15\frac{1}{12}\) feet veya daha kesin olarak, 15 feet 1 inch ve \(1\frac{4}{9}\) lines geçmiş olur.
+</p>
+
+<ol class="org-ol">
+<li value="10"><i>And heavy bodies on earth do in fact descend with the same force.</i></li>
+</ol>
+
+<p>
+Ve dünya üzerindeki ağır cisimler gerçekten de bu güçle aşağı inerler.
+</p>
+
+<ol class="org-ol">
+<li value="11"><i>For the length of a pendulum oscillating seconds, at the latitude of Paris, is three Paris feet \(8\frac{1}{2}\) lines, as Huygens has observed.</i></li>
+</ol>
+
+<p>
+Çünkü Huygens'in gözlemlediği gibi, bir saniye sarkacının uzunluğu Paris'in enleminde, 3 Paris feet ve \(8\frac{1}{2}\) lines'dır.
+</p>
+
+<ol class="org-ol">
+<li value="12"><i>And the height which a heavy body traverses in falling in the time of one second, is to half the length of this pendulum, in the duplicate ratio of the circumference of the circle to its diameter (as Huygens has also pointed out).</i></li>
+</ol>
+
+<p>
+Ve ağır bir cismin bir saniyede düştüğü yüksekliğin : sarkaç kolunun uzunluğunun yarısına olan oranı :: dairenin çevresinin : çapına olan oranının iki katı oranına (duplicate ratio, yani karesine), eşittir.
+</p>
+
+<p>
+Yorum:
+</p>
+
+<p>
+[ O zamanlar, henüz \(\pi\) sembolü olmadığı için, Newton bu ilişkiyi "dairenin çevresinin çapına oranı" diye sözle açıklıyor.]
+</p>
+
+<p>
+[ Eğer, \(d\) dünya yüzeyinde, bir cismin serbest düşüşle, bir saniyede geçtiği mesafe ise, ve \(L\) bir saniye sarkacının kolunun uzunluğu ise, Newton'un demek istediği, şöyle yazılabilir:
+</p>
+
+\begin{align*}
+    \frac{\text{Cismin düştüğü mesafe}}{\text{Sarkaç kolunun yarısı}} &= \frac{\text{(Dairenin çevresi)}^2}{\text{(Dairenin çapı)}^2}\\
+    \\
+    \frac{d}{L/2} &= \frac{(2\pi r)^2}{(2r)^2} = \pi^2\\
+    \\
+    d &= \frac{L}{2}\pi^2
+\end{align*}
+
+<p>
+]
+</p>
+
+
+<ol class="org-ol">
+<li value="13"><i>It is therefore 15 Paris feet 1 inch \(1\frac{7}{9}\) lines.</i></li>
+</ol>
+
+<p>
+Öyleyse, 15 Paris feet'i ve \(1\frac{7}{9}\) lines'dır.
+</p>
+
+<ol class="org-ol">
+<li value="14"><i>And because the force which holds the moon back in its orbit, if it should descend to the surface of the earth, comes out equal to our force of gravity, therefore, (by Rules 1 and 2) it is that very force which we are accustomed to call gravity.</i></li>
+</ol>
+
+<p>
+Ve çünkü ayı yörüngesinde tutan güç, eğer ay dünyanın yüzeyine inecek olsaydı, bizim yerçekimi gücümüzle aynı olduğu için, dolayısıyla (1. ve 2. kurallar gereği) o bizim yerçekimi demeye alıştığımız gücün ta kendisidir.
+</p>
+
+<ol class="org-ol">
+<li value="15"><i>For if gravity were different from it, bodies, in seeking the earth with the two forces conjoined, would descend twice as fast, and in falling in the space of one second would describe \(30\frac{1}{6}\) Paris feet, in complete opposition to experience.</i></li>
+</ol>
+
+<p>
+Çünkü eğer yerçekimi ondan farklı olsaydı, cisimler, dünyaya doğru düşerken, birleşmiş iki gücün etkisi altında, 2 katı daha hızlı düşerlerdi, ve düşerken 1 saniye içinde \(30\frac{1}{6}\) Paris feet'i mesafe geçerlerdi, gözlemlerin tam aksi olan bir durum.
+</p>
+
+<p>
+Soru:
+</p>
+
+<p>
+[ Neden birleşmiş iki güçten bahsediyor? Çünkü, ayı çeken bir güç olsaydı, ve ayrıca bir de yeryüzünde düşen cisimleri çeken bir güç olsaydı, aydan düşerek gelen bir cisim bu iki gücün toplamı olan bir güçle çekilirdi, demek istiyor herhalde. ]
+</p>
+
+<ol class="org-ol">
+<li value="16"><i>This computation is based upon the hypothesis that the earth is at rest.</i></li>
+</ol>
+
+<p>
+Bu hesaplar dünyanın sabit olduğu varsayımına dayanmaktadır.
+</p>
+
+<ol class="org-ol">
+<li value="17"><i>For if the earth and the moon should move around the sun, and should also at the same time move around their common center of gravity, the law of gravity remaining the same, the distance of the centers of the moon and the earth from each other will be about \(60\frac{1}{2}\) terrestrial semidiameters, as will be clear to anyone undertaking the computation.</i></li>
+</ol>
+
+<p>
+Bu hesapları yapan herkesin açıkça göreceği gibi, eğer dünya ve ay güneş etrafında dönüyorlarsa, ve aynı zamanda kendi ağırlık merkezlerinin etrafında dönüyorlarsa, yerçekimi kuralı aynı kaldığı müddetçe, ayın ve dünyanın arasındaki mesafe \(60\frac{1}{2}\) dünya yarıçapı olacaktır.
+</p>
+
+<ol class="org-ol">
+<li value="18"><i>And the computation can be undertaken by Proposition 60 of Book I.</i></li>
+</ol>
+
+<p>
+Bu hesaplar, I. Kitabın 60. önermesine göre yapılabilir.    
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-01 Sun 20:01</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-01 Sun 20:02 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org07f4cce" class="outline-2">
+<h2 id="org07f4cce">İlkeler III.4, Densmore, tercüme</h2>
+<div class="outline-text-2" id="text-org07f4cce">
+<ul class="org-ul">
+<li>III.4, Densmore'dan okuyorum ama önce, benim yorumum var, onu paylaşıyorum:</li>
+</ul>
+
+<p>
+Genel Yorum I
+</p>
+
+<p>
+Phenomenon: olgular, doğal olaylar.
+</p>
+
+<p>
+III. Kitabın başında, "Phenomenon" diye bir bölümde, Newton ilerde önermelerde kullanacağı astronomi olayların listelemiş. Phenomena herhalde en iyi "olgular" olarak tercüme edilebilir.
+</p>
+
+<p>
+Newton Olgular bölümünde Kepler Kuralı'nı direk olarak kullanıyor, yani kendi güç terimlerini işin içine karıştırmıyor. (Örnek?)
+</p>
+
+<p>
+Peki, Densmore, Newton'un hesaplarına bu kadar detaylı olarak bakıyor ve Newton'un karanlık bıraktığı yerleri açıklıyor ama yine de Newton'un her dediğini sorgulamadan kabul ediyor, yani Newton'a eleştirel bakamıyor. Mesela, Newton'un yörünge masalında geçen merkezcil gücü nasıl kabul edebiliyor? Böyle bir güç var mı? diye sormuyor? Fizikçileri anlıyorum, onlar Newton'un sadek müritleri olarak bu güce "hayali" güç demişler ve bu şekilde fizikte tutmuşlar, merkezcil diye bir güç olmadığını biliyorlar ama Newton'un kutsal otoritesini korumak için "hayali" güç olarak tanımlayıp gerçek güç muamelesi yapıyorlar. Ama tarihçilerin Newton'a bir borcu yok, onlar neden Newton'u sorgulamıyorlar?
+</p>
+
+<p>
+\(2\). Önermede Newton, yörünge masalında önemli bir rolü olan düz çizgide süredurumsal hareket palavrasını öne sürüyor. Uydu düz çizgide gidiyormu, uydu olmadan önce, yani düz çizgi üzerinde tekdüze, ivmesiz hareket, doğal hareketmiş, sonra bu düzçizgi Newtoncu güce rastlıyormuş ve hemen düz çizgi kapalı bir eğriye dönüşüp yörünge oluyormuş. Ama masal bu ya, düz çizgide, tanım olarak, hiç enerji kullanmadan, aynı hızda giden cisim, Newtoncu güçle karşılaşında, iyice hırslanıyor ve düz çizgide gitmek üzere Newtoncu güç ile savaşmaya başlıyor. Newtoncu güç merkeze doğru çektikce o düz çizgide gitmeye çalışıyor. Peki bu enerji nereden geliyor? Hani cisim, güçsüz ve enerjisiz olarak süredurumsal olarak hareket ediyordu? Dünyadan kaynaklanan Newtoncu çekim gücü ayı milyonlarca yıldır düz çizgide gitmeye çalışmaktan vazgeçirtemedi, ayın da düz çizgide gitme enerjisi bir türlü bitmedi. Newtoncu yörünge masalına göre, milyonlarca yıl sonra bile ay hala dünyanın etkisinden kurtulup düz çizgi üzerinde gitmeye çalışıyor, ama dünyadan kurtulsa yine süredurumsal harekete geçecek ve milyonlarca yıldır harcadığı ve hiç bitmeyen düz çizgide gitme enerjisi yok olup gidecek. Ayın düz çizgide enerjisiz gitme enerjisi bir türlü bitmiyor ve sonsuza dek merkezi güce karşı Newton'u memnun etmek tam da yeteri kadar düz çizgi gücü ile dünyadan gelen Newtoncu çekim gücüne karşı koyacak&#x2026; Bu yörünge yapan, hiç bitmeyen, düz çizgide gitme isteği olmasa ay dünyaya düşecek ama bir türlü düşmüyor çünkü düz çizgide hiç enerji kullanmadan gitme enerjisi o kadar fazla ki, merkez ne kadar çekerse, ay, hemen enerjisizlik enerjisinden biraz borç alıp tam da merkezin gücüne orantılı bir güçle karşı koyuyor ve böylece Newton'un kutsal otoritesi zedelenmekten kurtulmuş oluyor. Gök cisimleri bile Newton'un uyduruk uydu masallarına göre hareket ediyorlar. Enerji kullanmadan bir düz çizgi üstünde, atalet içinde, sıfır enerji sarfederek, aynı hızda gitmekte olan cisim, Newtoncu çekim gücü ile karşılaşır karşılaşmaz, enerjisiz ve atalet içinde olduğunu unutuyor, ve belki tanrının eli işe karışıyor, ve cisim birden enerji sahibi oluyor çünkü Newtoncu yörünge dinamiktir, yörünge olabilmesi için uydunun sürekli olarak düz çizgi üzerinde atalet durumunda enerjisiz gitmek istemesi lazım, peki bu bitmez tükenmez enerji nereden geliyor? Newton'un uydu masalında, atalet cisimleri birden enerji cisimleri olabiliyor, cismin enerji deposu aniden Newton'un ruhu güç ile doluyor. Deposu Newton7un ruhu ile dolan cisim ataletini atıp canlanıyor. İnsanlar 300 yıldır Newton'un bu uydu masalına inanıyor. Newton'un hakkını teslim etmek lazım böyle bir masalı insanlığa kabul ettirebilmek için bir insanın çok usta bir propagandacı olması lazım ve Newton'dan daha üst düzey bir propagandacı dünyaya gelmemiştir. Newton'un müritleri fizikçiler bu uydu masalını  "fiziksel" olarak açıklamak için daha da güzel masallar uydurmuşlar. Hayali güçler tanımlamışlar, Newton'un kutsal ismi ile şanlandırılmış terimleri olan denklemler yazarlar sonra bu terimleri elerler, falan, sonuçta Newton'un kutsal ismi zarar görmemiş olur.
+</p>
+
+<p>
+Densmore, ayın düz çizgide gitme eğilimine Densmore, "tangential inertial motion" diyor, yani "eylemsiz teğet hareketi." Bitmez tükenmez düz çizgide yörüngeye teğet geçme enerjisi.
+</p>
+
+<p>
+Newton Kepler'in yüzey yasasını da kullanıyor, bu yasayı da kendi çekim gücü yasasına destek olarak kullanıyor.
+</p>
+
+<p>
+\(* * *\)
+</p>
+
+<p>
+Sayfa 354'ten tercüme etmeye devam edelim:
+</p>
+
+<p>
+Şimdi güç yasasının ters kare olduğunu ispatlamamız gerekiyor.
+</p>
+
+<p>
+[ "Ters kare yasası" yani "inverse square law" Newtoncu gücün mesafe ile ters orantılı olduğunu belirtmek için kullanılan bir kısaltma. Tabii bu doğru değil. Kepler Kuralında mesafenini karesi ile ters orantılı olan bir şey yok. Yörüngeleri de sadece Kepler Kuralı ile açıklayabildiğimize göre bu "ters kare" yasası Newton masallarında olan ama gerçek dünyada olmayan bir şey. Zaten bunu biliyoruz çünkü Newton bile yörünge hesaplarında bir ters kare gücü kullanmıyor, sadece kullandığını söylüyor ve insanlar da Newton'un ne yaptığına değil ne söylediğine inanıyorlar çünkü Newton bir tarikat lideridir, bir yarı-tanrıdır. Newton "güç yasasının" ters kare olduğunu nasıl ispatlıyor? İspatlıyor mu?]
+</p>
+
+<p>
+Newton I.4 sayılı önermesinin 6. Doğal Sonucu'na gönderme yapıyor, yani "ters kare" güç için orada açıklama yapmış. Gidip bakmak gerekiyor.
+</p>
+
+<p>
+[ «Force law», yani «güç yasası» diye bir şey yok, sadece Kepler'in bulduğu orantı var. Newton bu orantıyı parçalayıp, kesip doğrayıp, bu parçalara Newtoncu etiketlerle damgalamaya çalışıyor.]
+</p>
+
+<p>
+Sayfa 360 ile ilgili bir kaç yorum daha:
+</p>
+
+<p>
+Ayın dünya ile ortalama mesafesi 60 dünya yarıçapı kadar, bunu biliyoruz, Newton bu Önerme'de bu mesafeyi nasıl bulduğunu uzun uzun anlatıyor, şimdilik incelemeye gerek yok. Ayın dönemini de biliyor, zaten ayın yörüngesini hesaplamak için bize gerekli olan iki değer dönem ve mesafe, başka bir terime ihtiyacımız yok. Newton, daha sonra, dünya üzerinde düşen bir taşın hızı ile, dünyaya düşen ayın hızını karşılaştırıyor.
+</p>
+
+<p>
+Sayfa 361'den tercümeye devam:
+</p>
+
+<p>
+Önerme III.4, modern kozmolojimizin ve evrensel yerçekimi gücü kuramının geliştirilmesinde çok önemli ve kritik bir önermedir; bilim tarihinde önemli bir dönüm noktasıdır, ve belki de <i>İlkeler</i>'deki en heyecan verici ispattır.
+</p>
+
+<p>
+(s. 361)
+</p>
+
+<p>
+"Gravity" kelimesi <i>İlkeler</i>'den önce sadece "yeryüzünde ağırlık" anlamında kullanılıyordu; ve aksini ispatlayana kadar da "ağırlık"tan başka anlamı olmayacaktı.
+</p>
+
+<p>
+[ Bu cümleyi çözemedim doğrusu. Tamam, Newton "gravity" kelimesinin yüzyıllardır kullanılan "ağırlık" anlamını değiştirip ona "Newtoncu çekim gücü" anlamı yüklemiş ve kelimeyi yozlaştırmış. Hatta daha sonra bu karışıklığı bir ölçüde gidermek için "gravitation" diye bir kelime tanımlanmış, bu kelime ağırlık kavramı olmadan "yerçekimi" olayını açıklamak için tanımlanmış. Newton mu, "gravity" kelimesinin ağırlık değil "çekim" demek olduğunu ispatlamış? Zaten fizikte, ağırlık, çekim gücü ve Newton'un uydurduğu diğer bir kavram olan kütle kavramı okulculuğun zirve yaptığı kavramlardır. Okulcu fizikçiler bu kelimeler o kadar değişik anlamlar yüklemişlerdir ki, bu anlamlar rafından her durum için geçerli olan bir anlam alıp kullanabilirsiniz. Okulculuk budur işte.]
+</p>
+
+<p>
+Bu önerme ayın yerçekimsel güç tarafından yörüngesindeki teğet hareketinden merkeze doğru çekildiği savını öne sürer.
+</p>
+
+<p>
+Ayı merkeze doğru çekip düz çizgiden ayartan bu güç, bizim daha önce merkezcil güç (centripetal force) dediğimiz şey değildir.
+</p>
+
+<p>
+Aslında, dünyada taşların düşmesine sebep olan bu güç ("force" yerine "power" demeyi seçmiş) ile ayı yörüngesinde tutan güç aynı güçtür savının bir ifadesidir.
+</p>
+
+<p>
+Bu kavram o zaman için hem yeni hem de şaşırtıcı idi.
+</p>
+
+<p>
+Eğer bu konuda biraz düşünürsek ve bu konuda "bildiklerimizi" ve bize öğretilenleri ve okuduklarımızı bir kenara koyarsak, bugün bile, ayı yörüngesinde tutan şeyle, yeryüzünde taşın düşmesine sebep olan şeyin aynı olması bize şaşırtıcı gelecektir.
+</p>
+
+<p>
+Gökte asılı duran o küreye bir bakın! O çok yuvarlak ve aydınlık bir taş mı? Ay hem güzel hem de şiirsel olabilir, mistik bir gücü vardır ve şairlere ve aşıklara hep ilham vermiştir; Newton'un çalışmalarına rağmen&#x2026;
+</p>
+
+<p>
+[Densmore hanım gereksiz bir şiirselliğe düştü, geçelim buraları.]
+</p>
+
+<p>
+Geleneksel olarak gök cisimlerinin, yeryüzündeki cisimlerin maddesinden ayrı cinsten olduğu kabul edilmiştir, bu da yeryüzündeki bir taşla ayın başka oldukları beklentisini yaratmıştır. Ve cisimlerin neden ve nasıl yörüngelerde hareket ettiklerin açıklamaya çalışan gök mekaniklerinin (celestial mechanics) çok değişik eğimleri ve mekanizmaları olmuştur.
+</p>
+
+<p>
+Yorum:
+</p>
+
+<p>
+Aslında, III.4'te Newton, ayın da dünyada serbest düşüşte olan bir taş gibi düştüğünü göstermiyor; tam tersi, dünya üzerindeki taşın da ay gibi yörüngede olduğunu gösteriyor. Dünya üzerinde serbest düşüşün de, yörüngenin de Kepler Kuralı'na göre hareket ettiğini göstermiş oluyor. III.4'te Newton'un ispatı başka bir şey ispatlamıyor.
+</p>
+
+<p>
+Ayı veya herhangi bir cismi, Kepler Kuralı'na göre olması gerektiği yerden alıp başka yeri taşırsanız, o cisim Kepler Kuralı'na uymak için ya dönemini değiştirecektir ya da yerini değiştirecektir, ya hızını ya da yerini  değiştirecektir, bunu da Kepler'in bulduğu R ve T arasındaki orana göre yapmak zorundadır, yani yer değiştirmek zaten hız değiştirmek demektir. İki yörünge değeri birbirlerini \(R :: T^{1.5}\) orantısı ile bağlı oldukları için, yer değiştirmek hız değiştirmek demektir.
+</p>
+
+
+<p>
+Sayfa 362'den tercümeye devam:
+</p>
+
+<p>
+Descartes ve Kepler ayın ve dünyanın maddelerinin benzer olduğuna inanıyorlardı ve bu açıdan görüşleri Newton'un devrimce görüşüne yakındı. Fakat Descartes'ın da Kepler'in de yerçekimi (gravity) konusundaki fikirleri Newton'un fikirlerinden belirgin bir şekilde farklıydı.
+</p>
+
+<p>
+(s.362)
+</p>
+
+<p>
+Kepler, yeryüzündeki ağırlığı, benzer cinsten olan maddelerin kümelenmesi olarak anlıyordu, ve ayın maddesinin (ama ayın ötesinde başka hiçbir şeyin değil) dünyanın maddesine benzer olduğuna inanıyordu.
+</p>
+
+<p>
+Fakat, Kepler için, ayı yörüngesinde tutan, benzer maddelerin kümelenme eğiliminde olması değil, fakat tanrı ayı yörüngesine koyduğu içindi: ay, dünyadan tam doğru uzaklığa, orijinal (archetypal) ilkelere göre yerleştirilmiş ve evrendeki diğer bütün hareketlerle uyumlu olarak kendi rolünü oynasın diye ona bir de hız verilmişti. Kepler Newton'un yerçekimine bağlı yörünge fikirlerini kabul etmezdi.
+</p>
+
+<p>
+(s.362)
+</p>
+
+<p>
+Descartes, ayın yörüngesini ve taşların düşüşünü girdap hareketlerinin, yani, çok ince, akışkan sıvıların farklı basınçlarının sonucu olduğunu inanıyordu.
+</p>
+
+<p>
+Girdaplar savı çok geniş bir olgular yelpazesini kaplıyordu fakat girdaplar ile sayısal tahminler yapılamıyordu; Huygens ve Leibniz gibi matematikçiler girdaplar savını kullanarak gezegenlerin hareketlerini açıklamaya çalıştılar ama başarılı olamadılar.
+</p>
+
+<p>
+[ Descartes'ın girdaplar teorisi Kepler Kuralı ile açıklanabilir mi? Newton bu eski teorileri ıskartaya çıkartmış çünkü çok güçlü bir şekilde kendi propagandasını yapmış ama asıl ıskartaya çıkartılması gereken Newton'un masallarıdır. ]
+</p>
+
+<p>
+(s.362)
+</p>
+
+<p>
+Newton'un Descartes'ın girdaplar teorisi hakkında yorumları için III. Kitabın Genel Yorum'a bakabilirsiniz. (s.485)
+</p>
+
+<p>
+Galileo da ayın bir taş olduğuna inanıyordu, fakat ay bir taş gibi <i>gözüktüğü</i> için buna inanıyordu: mesela ışık aydan, ışığın bir taştan yansıdığı gibi yansıyordu. Fakat, Newton, aksine, burada III.4'te, hem ayın yerçekimi tarafından yörüngesinde tutulduğu şaşırtıcı iddiasını ileri sürdü hem de bu iddiasını ispatladı.
+</p>
+
+<p>
+Bundan sonraki uzun ve karmaşık cümleyi biraz açıklamak gerekecek. Kelime kelime tercümesi şöyle: «İlk adımdır, geniş olarak ifade edilmiş ürünü rasyonel mekaniğin yani evrensel yerçekimsel güç teorisinin o kitapta anlatıldığı gibi &#x2013; o teori ki gök cisimlerini normal ve bütün bilinen normal dışı hareketlerini tahmin etmek için kullandı.»
+</p>
+
+<p>
+Yani, incelemekte olduğumuz, III. Kitabın, 4. önermesi, Newton'un <i>İlkeler</i> kitabında geliştirdiği evrensel yerçekimsel güç kuramının ilk adımıydı. Bu yerçekimsel güç kuramı Newton'un akılcı mekaniğinin (rational mechanics) geniş olarak açıklanmış ürünüydü. Newton bulduğu bu yerçekimsel gücü kullanarak gök cisimlerinin normal yörünge hareketlerini ve bilinen bütün normal dışı hareketlerini önceden doğru olarak hesaplayıp tehmin etmeyi başarmıştır.
+</p>
+
+<p>
+Bu cümle için yorum:
+</p>
+
+<p>
+Bir kere, Newton mekaniği Newton'un geliştirdiği bir şey değildir. Newton'un Newton mekaniği diye bir şeyden haberi bile yoktu. Newtoncu mekaniği Newton'un müretleri Newton ölümünden sonru 200 yıl içinde geliştirmişlerdir.
+</p>
+
+<p>
+Newton makaniği akılcı, yani rasyonel, yani oran ve orantılara saygı duyan bir sistem değildir, tam aksine Newton mekaniği, Kepler Kuralı dediğimiz orantıyı işlevsiz parçalara bölüp her parçasına Newtoncu etiketler yapıştırarak Newton'a ibadet edebilmek için müritlerinin uydurduğu bir birimler sistemidir. Newtoncu dekoratif terimleri önce yazıp sonra ritüel olarak eleyerek Newton'a ibadet etme mekaniğidir. Tabii ki, Mekanik tanrısına mekanik ritüeli ile ibadet edersiniz.
+</p>
+
+<p>
+Cümlenin son bölümünde ise, Newton'un geliştirdiği bu muhteşem ve evrensel yerçekimsel çekim gücü ile gök cisimlerinin normal ve normal dışı hareketlerini büyük bir başarı ile hesapladığını söylüyor. Bu çok iyi bildiğimiz Newtoncu propagandadan başka bir şey değil. Newton yörüngeleri Kepler Kuralı'nı kullanarak hesaplamıştır. Hesapları yapmadan önce Newton, "Newton'un evrensel yörünge masalları"nı anlatıyor ama sonra sadece Kepler Kuralı'nı kullanarak yörüngeleri hesaplıyor.
+</p>
+
+<p>
+Tercüme ile devam:
+</p>
+
+<p>
+Yerçekiminin (gravity) Newtoncu yerçekimsel çekim gücü olduğu anlayışı, bugün bizim sağduyumuzla doğal olarak kabul ettiğimiz fiziksel evreni anlayışımızın temel parçasıdır.
+</p>
+
+<p>
+Açıklanması gereken zor bir cümle daha.
+</p>
+
+<p>
+Türkçe'de (gravity = ağırlık) kelimesinin (yerçekimi) olarak tercüme edilmiş olması zaten Türkçe konuşan birisinin ağır olduğu için düşen bir objenin Newtoncu yerçekimsel çekim gücü etkisi altında düştüğü olarak algılaması kaçınılmazdır. Ağırlık kavramını dilimize "Newtoncu yerçekimsel çekim gücü" olarak tercüme etmişler.
+</p>
+
+<p>
+Densmore da bu durumu anlatıyor zaten. İnsanlık doğanın Newtoncu olduğuna inandırılmış ve Newtoncu çekim gücünün temel olduğu bir doğa bize tek doğru doğa modeli olarak görülüyor. Sağduyumuz bunu emrediyor, Newtoncu absürd ve mucizevi çekim gücünü sorgulamak sağduyusu olmayan insanların yapacağı bir iş olarak algılanıyor.
+</p>
+
+<p>
+Doğayı Newton'un çekim gücünün hakim olduğu, dinamik ve mucizevi bir yer olarak algılıyoruz, demek istiyor, Densmore.
+</p>
+
+<p>
+(s.362)
+</p>
+
+<p>
+Densmore, III.4'ün bir özetini veriyor:
+</p>
+
+<p>
+İlk bölüm, yörüngedeki aya etki eden ivmelendirici gücü belirliyor ve eğer teğetsal hareketinden yoksun olsaydı bir dakika içinde düşeceği mesafeyi hesaplıyor
+</p>
+
+<p>
+Yorum:
+</p>
+
+<p>
+Tabii, burada gizli varsayımlar var. Teğetsel hareket diye Newton'un uydurduğu komik bir kavram var. Newton'a göre, uzayda hareket düz çizgi üzerinde eylemsiz, değişmeyen, hap aynı hızda kalan bir harekettir. Yörünge; düz çizgi üzerinde, kendi halinde giden bu cismin, Newtonculuğu kabul etmiş bir güç ile karşılaşması sonucu gerçekleşen bir hareket biçimidir.
+</p>
+
+<p>
+Newtoncu gücü yakalanan düz çizgi güçsüzlüğü birden kendisinde Newtoncu güce karşı koyacak sonsuz bir enerji kaynağı olduğunu farkeder ve şiddetli bir şekilde düz çizgi üzerinde ivmeli olarak gitmeye karar verir, çünkü bu Newtoncu gücün esiri olmaktansa düz çizgi üzerinde gitmeyi tercih eder, ve böylece Newtoncu yörünge oluşmuş olur. Yani, masalsı bir Newtonvari yörünge oluşmuş olur, gerçek dünyada olmayan sadece Newtoncu masallarda yaşayan bir yörünge.
+</p>
+
+<p>
+Teğetsel hareket işte budur, yörüngedeki cismin düz cizgide gitme ama gidememe isteği.
+</p>
+
+<p>
+Yörüngedeki cismin düz çizgidi gitme isteği olmasa dünyaya düşerdi, Newton hangi hızla düşerdi diye soruyor ve bu hızı hesaplıyor. İyi de buna ne gerek var? Ayın mesafesinde olan bir objenin Kepler Kuralına göre hareketi nasıl olurdu diye sormak yeterli olurdu.
+</p>
+
+<p>
+(s.362)
+</p>
+
+<p>
+İkinci bölüm, gücün mesafenin karesine ters orantılı olduğunu varsayarak, ayı dünyanın yüzeyinde çeken ivmelendirici gücü belirliyor, ve ayın dünya yüzeyinde bir saniye içinde düşeceği mesafeyi hesaplıyor.
+</p>
+
+<p>
+Üçüncü bölüm, dünyanın yüzeyinde sir taşa etki eden ivmelendirici gücü belirliyor; bu gücü en doğru şekilde bir sarkaçla ölçebiliriz.
+</p>
+
+<p>
+Burada başka bir sıralanmamış olguyu kullanıyoruz. ("Unnumbered pehenomanon", yani Newton'un III. Kitabın başında sıraladığı astronomi olguları arasında listelenmemiş bir olgu, demek istiyor).
+</p>
+
+<p>
+Christian Huygens'in (bakınız 7. not) bir önermesini kullanarak Newton, dünyanın yüzeyinde bir taşın bir saniyede düşeceği mesafeyi hesaplıyor.
+</p>
+
+<p>
+Ve nihayet bu iki mesafenin (yani ayın yeryüzünde bir saniyede düşeceği mesafe ile bir taşın düşeceği mesafe) hemen hemen aynı olduğunu not ediyoruz ve 2. Kural gereği aynı sonuca aynı sebebin sebep olduğunu söylüyoruz.
+</p>
+
+<p>
+[ Bu kural doğru mi acaba? Ayrı sebepler aynı sonucu veremez mi? ]
+</p>
+
+<p>
+[ Dünyadaki bir taşla ay neden aynı doğa yasalarına uysun ki? diye soruyor ama bu iki şey Newton'un çekim yasasına uymuyor, Kepler Kuralı'na uyuyor.]
+</p>
+
+<p>
+(s.363)
+</p>
+
+<p>
+Ayın yörüngesinde bir dakikada düştüğü mesafenin dünya yüzeyinde bir saniyede düştüğü mesafe olması rastlantısını durup bir düşünün veya açıklamaya çalışın. [ Neden böyle bir raslantı var? 60R olduğu için mi? ]
+</p>
+
+
+<p>
+(s.363)
+</p>
+
+<p>
+Sizigi konusunu işliyor ama bunları geçiyorum çünkü önemli olan Newton'un ay ile dünya arasındaki mesafeyi 60 dünya yarıçapı olarak kabul etmiş olması. Bugün kabul edilen mesafe, Wikipedia'ya göre, 60.32 dünya yarıçapı, yani Newton iyi bir seçim yapmış.
+</p>
+
+<p>
+Dünya, ay ve güneşin aynı çizgide olduğu zamanlara sizigiler deniyor. Dünyanın güneş ve ayın arasında olduğu sizigiye karşıtlık deniyor ve ay dünyadan dolunay olarak görülüyor.
+</p>
+
+<p>
+Ay dünya ve güneşin arasında olduğu sizigiye da birleşim deniyor ve ay dünyadan yeni ay olarak gözüküyor.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-01 Sun 20:02</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

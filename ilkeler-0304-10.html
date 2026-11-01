@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-01 Sun 20:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgee3be34" class="outline-2">
+<h2 id="orgee3be34">III.4 Son Tercüme (s.377)</h2>
+<div class="outline-text-2" id="text-orgee3be34">
+<p>
+<b>Ters kare yasasının evrenselliği</b>
+</p>
+
+<p>
+Bu önermelerdeki hayalî deneyde, ayı yörüngesinden alıp, dünyanın merkezinden bir dünya yarıçapı mesafesine getirdik, ve ters kare yasasının bu mesafede de geçerli olduğunu varsayarak, ayın düşme oranını öngörmeye çalıştık.
+</p>
+
+<p>
+Buraya nasıl geldiğimizi hatırlayalım. I.4'üncü Önermenin 6. Doğal Sonucunda, dairesel yörüngeler için, eğer \(R \propto T^{1.5}\) orantısına uyan bir yörünge varsa, (yani yarıçapın dönemin 1.5 katına oranlı olduğu bir yörünge varsa), bu yörüngedeki gök cisimlerini yörüngede tutan gücün ters kare gücü olacağını saptadık.
+</p>
+
+<p>
+[ Newton'un oran ve orantıları nasıl kullandığına dair s.160'da faydalı açıklamalar var. Mesela, Newton \(R \propto T^{1.5}\) orantısını şablon olarak alıp, 1.5 kat yerine başka sayılar koyarsa ne olacağına bakıyor. Densmore, burada Newton'un Kepler Kuralından bahsetmediğini fakat genel olarak dönemin katsayısını değiştirsek yörüngelerin nasıl değişeceğine bakıyormuş. ]
+</p>
+
+<p>
+[ Peki Newton'un Kepler Kuralının temel olmadığı aslında kendi güç kavramının temel olduğu fikrini nasıl analiz edeceğiz. Aslında, Kepler Kuralı bir açıklama gerektirmiyor, Kepler Kuralının altında ne var diye bakmanın bir anlamı yok. Kepler Kuralının altında pörüngeleri tutan bir güç olduğunu söylemek, eskilerin gök cisimlerini tutan kristal küreler oluduğunu söylemelirine benziyor. Newtoncular, eğer yörüngedeki uyduların tutan bir güç olmazsa uyduların dünyaya düşeceğini düşünüyorlar çünkü onlar Newton'un yörünge masallarına inanıyorlar. ]
+</p>
+
+<p>
+[ Peki Newton ne diyor? Kepler Kuralı doğruysa diyor, ki bu ne demek, zaten bütün hareketler uzayda Kepler Kuralına uygun olarak hareket ediyorlar. Newton ne diyor, yörüngeler Kepler Kuralına göre hareket ediyorsa, (ki hepsi ediyor) o zaman bu yörüngelerdeki cisimleri, uyduları, yörüngede tutan Newton'un bulduğunu söylediği mesafenin karesi ile değişen güç imiş. Yani, yörüngelerin Kepler Kuralına uyduğunu Newton dahil herkes kabul ediyor. Kepler Kuralı yoksa Newtocu çekim gücü de yok, Newton öyle diyor, eğer bir hareket Kepler Kuralına uyuyorsa Newtoncu çekim gücü vardır diyor. ]
+</p>
+
+<p>
+[ Kepler Kuralı nedir? ]
+</p>
+
+<p>
+[
+</p>
+
+\begin{equation*}
+\frac{1}{R^2} = \frac{R}{T^2}
+\end{equation*}
+
+<p>
+Yani Newton, Kepler'in bulduğu bu orantıda \(1/R^2\) terimini "güç" olarak etiketlemiş ve Kepler'in orantısında bu terimin (\(1/R^2\)), Newton'un "güç", yani "F" dediği bir şey ile orantılı olduğunu söylüyor. Ama Newton'un yalan söylediğini Kepler'in orantısına baktığımızda açıkça görüyoruz, çünkü Kepler kuralında "F" diye bir terim yok:
+</p>
+
+\begin{equation*}
+\frac{1}{R^2} = \frac{R}{T^2}
+\end{equation*}
+
+<p>
+Eğer Kepler'in orantısı doğruysa ve yörüngeleri doğru olarak açıklıyorsa, o zaman, yörünge hareketlerinde \(1/R^2\) ile değişen sayısal bir değer yok, çünkü bu orantının sağ tarafında da \(R\) terimi var, demek ki, Kepler Kuralında \(1/R^2\) ile değişen bir oran yok. \(R\) değiştikçe değişen \(T\)'dir, güç diye bir şey değil. Bunu zaten Kepler'in orantısında açıkça görüyoruz:
+</p>
+
+\begin{equation*}
+R \propto T^{1.5}
+\end{equation*}
+
+<p>
+« « Bunlar da doğru mu ? » »
+</p>
+
+\begin{equation*}
+R^2 \propto T^{3}
+\end{equation*}
+
+\begin{equation*}
+\frac{1}{R^2} \propto \frac{R}{T^3}
+\end{equation*}
+
+<p>
+orantısı ile veriliyorsa o zaman, Newton'un uydurduğu yörüngelerde uyduları yörüngede tutan \(R\)'nin oranlı olduğu <i>Kepler Kuralı dışında</i> bir güç yok. Olamaz çünkü Kepler Kuralında böyle bir terim yok; "güç" veya "Force \(F\)" gibi bir terim yok.
+</p>
+
+<p>
+Peki Newton'un \(1/R^2\)'ı "güç" olarak etiketlemesini nasıl analiz edebiliriz, nasıl anlayabiliriz?
+</p>
+
+<p>
+Yani, \(F \propto 1/R^2\) ifadesinde \(F\), \(1/R^2\) ile değişen bir orantı mı? Çünkü değişim olması için bir orantı olması gerekir, etiketler değişimez. Yani,
+</p>
+
+\begin{equation*}
+\frac{F}{1} = \frac{1}{R^2}
+\end{equation*}
+
+<p>
+diye bir orantı var mı? Yok. Çünkü böyle bir orantı olsaydı 1) \(F\) yazılıp sonra da elenmezdi, 2) bu orantıyla yörünge hesabı yapılabilirdi. Ama hiç kimse 
+</p>
+
+\begin{equation*}
+\frac{F}{1} = \frac{1}{R^2}
+\end{equation*}
+
+<p>
+orantısını kullanarak yörünge hesapları yapamaz çünkü bir kere burada yörüngenin dönemini belirten \(T\) terimi yok. Yani, Newton Kepler'in orantısından bir terimi kopartım almış ve bu topal orantı terimi üzerine, (topal çünkü bir tarafında canlı bir orantı diğer tarafında ölü bir etiket var) masallar yazıyor, hikayeler anlatıyor, çekim gücü diyor, madde miktarı diyor, düz çizgi üzerinde eylemsiz hareket diye bir şey uydurmuş ondan bahsediyor ama yörüngeleri hesaplamaya gelince, Kepler Kuralının diğer parçasını ekleyip hesapları Kepler Kuralı ile yapıyor. Ve bu sahtekarlık Newton'un müritleri tarafından bugün bile aynen böyle Newtonculuk tarikatının kutsal bir ritüeli olarak yapılıyor. Çok komik.
+</p>
+
+<p>
+Yörünge hesapları yapabilmek için Newtoncuların, bir şekilde, parçaladıkları Kepler Kuralını yeniden birleştirmeleri gerekiyor, bunu yapmak için de Kepler Kuralı'nın diğer yarısı \(R/T^2\)'ı da \(F\) etiketi ile etiketliyorlar ve
+</p>
+
+\begin{equation*}
+F = \frac{R}{T^2}
+\end{equation*}
+
+<p>
+Ondan sonra da, yörüngeleri yerinde tutuyor dedikler \(F\) terimlerini \(F=F\) diyerek eliyorlar ve
+</p>
+
+\begin{equation*}
+\frac{1}{R^2} = \frac{R}{T^2}
+\end{equation*}
+
+<p>
+orantısını yeniden buluyorlar. Buna da bir de utanmadan, Newtoncu çekim gücünden "Kepler'in 3. Yasasını" bulmak diyorlar! Yani basit cebir kurallarına göre etiketleme yapıyorlar sonra hiçbir işe yaramayan ve kullanılmayan etiketleri eleyip Kepler Kuralını Newtoncu güçten bulduk diyorlar. Yani Newton'un gücü, yani bütün evreni saran Newton'un kutsal ruhu Kepler Kuralının da altında yatıyormuş haberimiz yokmuş.
+</p>
+
+<p>
+Bu orantıda güç terimleri nerede? Çöpe gittiler. Ben göremiyorum. Eğer yörüngeleri yapan, uyduları yörüngede tutan bu Newtoncu çekim gücü ise, hani nerede, neden yörünge hesaplarını \(F\)'ler ile yapmıyorsunuz?
+</p>
+
+<p>
+Eğer yörüngeleri yapam ve uyduları yörüngede tutan Newtoncu güç \(F\) olsaydı, \(F\)'nin
+</p>
+
+\begin{equation*}
+\frac{1}{R^2} = \frac{R}{T^2}
+\end{equation*}
+
+<p>
+orantısında görünür olması gerekirdi. Ama yok. Daha doğrusu sana bana görünmüyor ama bu orantıya bakan Newtoncu bir fizikçi (Newtoncu olmayan fizikçi var mı?) normal insanlara görünmez olar \(F\)'yi rahatlıkla görebiliyor ve yörüngelerin Newtoncu çekim gücü ile hesaplandığını söyleyebiliyor. İşte tarikatçılık budur, okulculuk budur, inanç, dinî inanç budur. Fizik peygamberi Newton'un mucize çekim gücüne körü körüne inanmak budur.
+</p>
+
+<p>
+Eğer yörünge hesaplarında \(F\) yoksa o zaman yörünge hareketleri de \(F\) olmadan var oluyor demektir.
+</p>
+
+<p>
+Peki, \(1/R^2\) terimi Kepler kuralında var, gerçi, üçüncü \(R\), orantının diğer tarafında kaldığı için, sadece bu sebepten bile, \(1/R^2\) fiziksel bir anlamı olamaz, ama \(1/R^2\)'ı \(F\)'ye eşitleyen Newtonculara bu \(F\)'nin bir etiket olduğunu bir oran olmadığını nasıl anlatabiliriz?
+</p>
+
+<p>
+Anlatamayız, çünkü fizikte eşitlik (\(=\)), orantı (\(\propto\)) ve eşdeğerlik ("equivalence") (\(\equiv\)) işaretlerinin aralarında hiçbir fark yoktur ve "\(=\)" bu üç anlama gelecek şekilde kullanılabilir, sadece okurken fizikçi işine geldiği gibi okur, eşitliği orantı olarak okur, işine gelmezse eşitliği eşitlik olarak okur, onun için, Newtoncu fizikçilerle zaten işimiz olamaz.
+</p>
+
+<p>
+Yani, \(F\)'nin \(R\) ile değişip değişmediğini nasıl anlayabiliriz? Bir kere elendiğine göre değişen bir şey değil, elenip gidiyor, sadece bir etiket olarak yazılmış, ideolojik bir etiket olarak yazılmış.
+</p>
+
+<p>
+Newton Kepler'in orantısını
+</p>
+
+\begin{equation*}
+\frac{1}{R^2} = \frac{R}{T^2}
+\end{equation*}
+
+<p>
+olarak yazıyor ve \(1/R^2\) terimini bu orantıdan kopartıp alıyor ve sanki tek başına bir anlamı olabilirmiş gibi ona "güç" diyor. Yani \(1/R^2\)'nin \(R/T^2\) ile olan ilişkisin kopartıyor, orantıyı bozuyor, anlamsızlaştırıyor, şimdi ne \(1/R^2\) ne de \(R/T^2\)'ın tek başına bir anlamı kalıyor çünkü orantı demek, oranların eşitliği demektir, oranlardan birini kopartıp alırsanız geriye orantı kalmaz ve eşitlik de olmadan oranların tek tek bir anlamı olmaz. Bu basit kuralı newton'a biz mi anlatacağız! Newton \(1/R^2\)'ın kendi başına, Kepler'in orantısı dışında, anlamı olacağını iddia ediyor ve anlama da "güç" diyor.
+</p>
+
+<p>
+Ama eğer böyle bir güç olsaydı, Newton bu gücü kullanarak yörüngeleri hesaplayabilirdi ama Newton uyduları yörüngede tutan çekim gücüdür diye sözlü bir iddiada bulunuyor ama bu sözlü iddiasını matematiksel orantılarda gösteremiyor. Biz Newton'un ne dediğine değil ne yaptığına bakıyoruz. Newton'un müritleri fizikçiler Newton'un ne yaptığına değil Newton'un ne dediğine bakıyorlar. Çünkü onlar efendileri Newton'a \(F\) terimlerini yazarak ve hatta doğada olmayan bu çekim gücünün birimine "Newton" diyerek peygamberleri Hazreti Newton'a ibadet ediyorlar.
+</p>
+
+<p>
+Newton yörüngeleri tutan güçtür diyor ama bu lafı lafta kalıyor, Newto Kepler'in orantısını kullanarak yörüngeleri hesaplıyor ama çekim gücü kullanarak hesapladım diye yalan söylüyor.
+</p>
+
+<p>
+Ama hâlâ cevabını tam olarak bulamadık sanki çünkü hâlâ bir fizikçi
+</p>
+
+\begin{equation*}
+\frac{1}{R^2} = \frac{R}{T^2}
+\end{equation*}
+
+<p>
+orantısına bakıp bu "denklemde" güç terimleri var sen göremiyorsunz diyebilir. Zaten, \(1/R^2\) var ya, ve Newton \(1/R^2\)'ı "güç" diye etiketledi ya, o zaman bu orantıda güç var demektir. Newton'un kutsal otoritesi fizikilere olmayan terimleri gösterecek kadar güçlüdür. Ama burada \(R\) azaldıkça \(F\) diye bir şey değişmiyor ki. Sol taraftaki \(R\) arttıkça sağ taraftaki \(R\) de artmaktadır, sağdaki \(R\) soldaki \(R\)'den bağımsız olarak değişmemektedir, tek değişen dönem \(T\)'dir. Kepler Kuralında, yani, Kepler Kuralına uyan bütün yörüngelerde, yani bütün yörüngelerde, \(1/R^2\) terimininz tek başına \(R/T^2\) terimi olmadan, bir anlamı yoktur.
+</p>
+
+<p>
+O zaman, madem öyle, Newton \(1/R^2\) terimini kullandığı bir orantı belirlesin, yani içinde \(F\) olsun ve bu \(F\) bir oran olsun ki değişesilsin ve Newton sadece \(F\)'yi ve \(1/R^2\)'ı kullanarak yörünge hesapları yapsın ve \(R \propto T^{1.5}\) kuralı ile yapılan hesaplarla aynı sayıları bulsun. Var mı böyle bir orantı, içinde Newtoncu marka terimlerin olduğu ve daha doğrusu elenmeyen Newtoncu marka terimlerin olduğu bir orantı? Yok. Sadece Kepler Kuralı var. Newton Kepler'in orantısına dahil olan bir terime "güç" diye bir etiket yapıştırmış, o kadar. Bütün Newtoncu dünya sistemi bir etiket üzerine kurulmuş. Bu etiketi söküp atınca geriye Newtoncu dünyü sisteminin molozları kalıyor.
+</p>
+
+<p>
+Gerçek şu ki, Newtoncular Newton'un çekim gücüne olan kör inançlarından hiçbir zaman vazgeçmeyecekler, Cavendish deneyini de aslına uygun olarak tekrarlamamızın bir amacı da zaten bu, Cavendish deneyinin Newtoncu mucize çekim gücünü ölçmediğini göstermek. ]
+</p>
+
+<p>
+Devam.
+</p>
+
+<p>
+(Sayfa 377)
+</p>
+
+<p>
+Sonra, III.1 ve III.2'de Jüpiter ve Satürn'ün aylarının Kepler Kuralına göre hareket ettiğini bulduk yani \(R \propto T^{1.5}\), kuralına göre, ve güneşin etrafında yörüngede olan gezegenlerin de Kepler Kuralına uyduklarını, yani yörüngelerinin yarıçapının dönemin 1.5 katına oranlı olduğunu gördük ve bu gök cisimlerini etkileyen gücün ters kare gücü olduğu sonucuna vardık.
+</p>
+
+<p>
+[ Yörüngeler Newtoncu çekim gücü ile hareket ettirilmiyor. ]
+</p>
+
+<p>
+Burada incelediğimiz III.4, dünyanın ayı için, dairesel veya daireye çok yakın yörüngelere ve apsisin belli hareketlerine uygun olan güç yasasını bulmak için I.45'in Doğal Sonucunu kullandık. (Apsis: Bir yörüngenin merkezden en uzak ve en yakın noktalarını birleştiren çizgi.)
+</p>
+
+<p>
+I.45'te ve I.4'te verilen bir yörüngeden bazı sonuçlar çıkardık. Dikkat etmemiz gereken önemli nokta, başka bir gök cisminin başka bir yörüngede, belki başka bir mesafede, daha önce bahsedilen gök cisimleri ile bir ters kare ilişkisi olduğunu söyleyen hiçbir varsayım kabul edilmemiştir ve bu doğrultuda herhangi bir argüman öne sürülmemiştir.
+</p>
+
+<p>
+[ Neden bu tartışmaya girdik ki? ]
+</p>
+
+<p>
+I.4'ün, 3.'den 7.'ye olan Doğal Sonuçları ile ilgili notlarımızda söylediğimiz gibi, yarıçapın dönemin 1.5 katına oranlı olduğu yörüngelerde hareket eden gök cisimleri bulduğumuzda, sadece o mesafedeki o gök cisimleri hakkında bir şeyler biliyoruz demektir, değişik mesafelere yerleştireceğimiz gök cisimlerinin dönemleri ne olurdu bilemiyoruz.
+</p>
+
+<p>
+[ İyi de Kepler Kuralına uymayan yörünge gözlemlenmiş mi şimdiye kadar? Hayır. Ama tabii bu insanlar Kepler Kuralına "Kepler Kuralı" demiyorlar, "Newton'un ters kare yasası" diyorlar.
+</p>
+
+<p>
+Kepler Kuralı'nın doğal bir ilke olduğunu ve herhangi bir mesafede dairesel bir yörüngede olan her gök cismi için geçerli olduğunu varsaymaya alışmışızdır.
+</p>
+
+<p>
+[ Densmore, bizim "Kepler Kuralı" dediğimiz Kepler'in bulduğu orantıya "Kepler Kuralı" demiyor, "sesquplicate relationship" diyor. "Sesquplicate", 1.5 katı demek, yani nasıl ki Densmore, Newtoncu çekim gücüne kısaca "ters kare yasası" diyorsa, Kepler Kuralına da "1.5 katı ilişkisi" diyor. Ama bu Kepler Kuralı dediğimiz \(R\propto T^{1.5}\) orantının, yani yörüngenin yarıçapının dönemin 1.5 katı ile değiştiğini söyleyen orantının, başka bir adı oluyor. Fizikte Kepler Kuralını Kepler'in bulduğu diğer iki yasa ile beraber paketleyip "Kepler'in 3. Yasası" derler çünkü böylece Kepler'in buluşlarının Newton'a hazırlık olduğunu, Newton onlara çekim gücü ile anlam vermemiş olsa onların hiçbir anlamı olmayacağı propagandasını yaymak isterler. Newton Kepler yasalarının da sahibidir çünkü Newton bu yasaların altında yatan gücü bulmuştur. Zaten, Newton tarihin başlangıcından, tarihin sonuna kadar yapılmış yapılacak bütün buluşların gerçik sahibidir. Fizik denen Newtoncu tarikat için bu böyledir. ]
+</p>
+
+<p>
+Devam edelim.
+</p>
+
+<p>
+Fakat şimdiye kadar anlattıklarımızdan analaşılacağı gibi Newton [ Kepler Kuralının evrensel olarak geçerli olduğu ] varsayımını ileri sürmemiştir.
+</p>
+
+<p>
+Fakat bu aşamadan sonra, Newton'un; bir \(\frac{3}{2}\) güç ilişkisinin varolduğunu ispatlamasına gerek kalmadan, veya apsis çizgisinin bazı hareketlerine bağlı olmayan, her noktada, genel olarak geçerli olan, bir ters kare yasasına ihtiyacı var.
+</p>
+
+<p>
+[ Yani, Densmore, Newton'un kendi bulduğunu iddia ettiği, ters kare çekim gücü yasasının Kepler Kuralından bağımsız olduğunu göstermesi gerekir diyor. Çünkü, Densmore'a göre, şimdiye kadar, Newton, ters kare yasasını Kepler Kuralına bağlamıştı ve "Kepler Kuralı geçerliyse ters kare ilişkisi vardır", diyordu veya, "Kepler Kuralına göre hareket eden yörüngelerin hareketi ters kare yasasına göre olur" diyordu.
+</p>
+
+<p>
+Ama Newton'un bulduğunu iddia etteği "ters kare" yasası zaten Kepler Kuralı'nın terimlerinden biridir, yani Newton
+</p>
+
+\begin{equation*}
+\frac{1}{R^2} = \frac{R}{T^2}
+\end{equation*}
+
+<p>
+orantısından \(1/R^2\) oranını kopartıp alıyor ve buna \(R\) ile değişen bir gücün oranı olarak yazıyor
+</p>
+
+\begin{equation*}
+F = \frac{1}{R^2}
+\end{equation*}
+
+<p>
+Ama tabii, böyle bir oran yok, \(F\) sadece bir etiket, Newton da zaten güç masallarını anlattıktan sonra \(F\) terimlerini eliyor ve hesapları \(F\) terimi içermeyen
+</p>
+
+\begin{equation*}
+\frac{1}{R^2} = \frac{R}{T^2}
+\end{equation*}
+
+<p>
+orantısı ile yapıyor. Zaten yörüngleri hesaplamak için bundan başka bilinen bir arontı veya formül yok.
+</p>
+
+<p>
+Bu sebepten, Newton'un uydurma "terk kare yasası" zaten Kepler Kuralından ayrılamaz, Kepler'in orantısında bir orandır.
+</p>
+
+<p>
+Newton, Kepler Kuralının yoğunluğun tanımı olduğunu ve evrensel olduğunu anlayan ilk kişidir. Ama Newton bir Alman astronomun bulduğu bir orantı üzerine "Newton'un" dünya sistemini kuramazdı, onun için bu şekilde, eski skolastik yöntemler ve kelime oyunları ile Kepler Kuralını sahiplenmeyi seçti ve bunu da çok ustaca yaptı çünkü bütün dünyayı bu deli saçması mucize çekim gücü palavrasına inandırmayı başardı.
+</p>
+
+<p>
+Bütün kozmolojiler, bütün dünya sistemlir ve bütün markalaşmış genellemeler, siyasi şeylerdir ve egemenler tarafından benimsenir, kendi sembolleri ile markalaştırılır ve resmi dünya algısı olarak insanalara dayatılır. Neden egemenler böyle bir şey yaparlar? Neden herkes istediği dünya sistemini inananamaz, buna hakları yoktur? Herhalde, çok eskilerden kalma bir gelenekle, egenem güçler, resmi kozmoloji yaratarak kendilerini tanrılara ne kadar yakın olduklarını halka göstermek istiyorlar. Egemen güç, sahte bir kozmolojiye inanamazdı herhalde.
+</p>
+
+<p>
+Bir zamanlar üzerinde güneş batmayan Britanya imparatorluğu, günümüzde de Newtoncu maadeci, materyalist, dinamik dünya görüşünü bütün dünyü halklarına tek doğru gerçek doğa modeli olarak dayatmayı başarmıştır. Coğrafi dünyayı sömürmekten çekilen Britanya artık insanlığın zihnini Newtonculuğun kölesi yapmıştır. ]
+</p>
+
+<p>
+Devam:
+</p>
+
+<p>
+Kepler Kuralı'nın [ yani 1.5 kat ilişkisinin] devamlı olarak değişen ters kare çekim gücü yasasının sonucu olduğunu göstermenin en kolay yolu, bir cismi yörüngeye yerleştirmek ve döneminin merkezden uzaklığı ile nasıl ilişkili olduğunu bulmak olurdu.
+</p>
+
+<p>
+[ Densmore burada Kepler Kuralını Newtoncu çekim gücünün sonucu yapmış oldu. Yani asıl ilişki newtoncu çekim gücü ilişkisi, bütün yörüngelerin varlık sebebi Newtoncu çekim gücü ama her nedense yörüngeler Newtoncu çekim gücüyle değil Kepler Kuralı ile hesaplanıyor. ]
+</p>
+
+<p>
+Kepler, Newton'un aksine, 1.5 kat ilişkisinin değişik faktörlerin sonucuna bağlı olduğunu düşünüyordu.
+</p>
+
+<p>
+[ Peki Kepler Kuralı bir açıklama gerektiriyor mi? Kepler Kuralını bir güç yasası ile açıklamak gerekiyor mu? Kepler Kuralını bir çekim gücüne dayandırmak gerekiyor mu? Bence hayır. Değişik yoğunlukta sıvıları aynı dar kabın içine koyarsanız, yoğunluğu değişik olan sıvılar yoğunluklarına göre sıralanmak için hareket edecekler ve yer değiştireceklerdir. Yörünge hareketi de bundan farklı bir şey değildir. Tabii fizikçiler değişik yoğunluğu olan sıvıların birbirlerini Newtoncu ters kare çekim gücü ile çektikleri için hareket edeceklerini söyleyeceklerdir çünkü onlar Newton'un müritleridir ve dünyanın Newton'un ruhu, ters kare çekim gücü ile kaplı olduğuna inanırlır. ]
+</p>
+
+<p>
+Devam:
+</p>
+
+<p>
+Fakat, yörüngeye uydu yerleştirmek Newton'un yapabileceği bir şey değildi, onun için Newton, birçok başka deliller sundu ve Kepler'in ki gibi bir görüşün III.4'te sunulan delilleri terk etmemizi gerektireceğini ve yörünge oluşturabilmek için inanılmaz sayılarda rastlantıların bir araya gelmesinin gerekeceğini söyledi.
+</p>
+
+<p>
+(s.378)
+</p>
+
+<p>
+Ters kare ilişkisinin devamlı (continuous) olması, basit ve şık ve inandırıcı bir doğal yasa olurdu.
+</p>
+
+<p>
+[ Densmore'un "ters kare" ilişkisi dediği şeyin en önemli özelliği, olmazsa olmaz özelliği, mesafeleri zaman geçmeden geçebilme özelliğidir. Densmore bunu unutuyor nedense. İçinde yaşadığımız dünyada hiçbir şey zaman geçmeden mesafe geçemez. Zaten Kepler Kuralı da bize bunu söylüyor, \(R \propto T^{1.5}\), eğer mesafe \(R\) değişecekse, zaman \(T\) de değişcektir. Ama Newtoncu güç, \(R\) mesafesini zaman geçmeden aşıyor. Işık güneşten dünyaya 4 dakikada geliyor ama Newtoncu mucize güç 0 dakikada geliyor. Eğer Newtoncu çekim gücünün zaman içinde mesafeleri katettiğini varsayarsanız hiçbir hesabınız tutmaz ama fizikçiler buna da çözüm getirmişlerdir, Newtoncu güç aslında zaman içinde hareket eder ama o kadar hızlıdır ki biz bu zamanı ölçmeyiz derler. Bravo size Newton kültünün müritleri.
+</p>
+
+<p>
+Aslında, bu konunun Kepler Kuralı ile de ilgisi yok, içinde yaşadığımız dünyanın temel ve değişmez ve istisnası olmayan bir kuralıdır, zaman geçmeden mesafe katedilemez. Eğer Newtoncu çekim gücü denen şey \(A\) cisminden çıkıp, \(R\) mesafesini zaman geçmeden aşıp \(B\) cismini kendine doğru çekebiliyorsa bu bir mucize demektir ve bu güç dinlerin alanına girer ne fizikte ne de içinde yaşadığımız dünyada var olamaz.
+</p>
+
+<p>
+Eğer varsa ancak dinî, doğa üstü, tanrısal bir güç olark vardır. Böyle bir gücün fizikte ne işi var. Böyle doğa dışı mucizevi yörüngeler bağlamında neden konuşuyoruz ki? Mucizeler mi yörüngeleri hareket ettiriyor? ]
+</p>
+
+<p>
+[ Yani Densmore'a ve bütün Newtonculara göre, Newtoncu çekim gücü denen şey hem de devamlıymış zaman dışı ve devamlı bir saçmalık için şık ve basit bir doğa yasası diyor. Basit mucize olabilir mi? ]
+</p>
+
+<p>
+Devam:
+</p>
+
+<p>
+Fakat bazen doğada öyle durumlar olur ki, bir sonucu belirleyen şartlar karmaşıktır (complex) ve bağlama özeldir.
+</p>
+
+<p>
+Bu sebepten, eğer ay dünyanın yüzeyine getirilseydi, onun üzerinde etkili olan gücün, mesafenin karesi alınarak hesaplanabileceğini varsaymak aceleci davranmak olurdu.
+</p>
+
+<p>
+[ İyi de dikkatli bakmam lazım, acaba Newton dünyanın yüzeyine getirdiği ayın üzerinde etki eden gücü \(1/R^2\) ile mi hesaplıyor? Zaten ayın üzerinde bir güç var mı? Yani Newton'un çekim gücü var mı? Bence yok. ]
+</p>
+
+<p>
+Fakat, bir deney hayal ederek, "ters kare" yasasının devamlı olduğunu varsayarsak sonuçların ne olacağına bakabiliriz.
+</p>
+
+<p>
+Newton'un bu konuda yaptığı da tam budur.
+</p>
+
+<p>
+Newton ters kare yasasının devamlı olduğunu varsayıp hesaplarını yapınca bir taşın dünyada düşme oranı ile ayın yörüngesinde düşme oranının aynı olduğunu buluyor; iki cismin düşüşündeki bu benzerlik Newton'a ayla taşın aynı olduğunu ve merkezcil güçle yerçekimi gücünün aynı olduğunu onaylatıyor ve ek olarak da ters kare yasasının devamlı olduğunu onaylatmış oluyor.
+</p>
+
+<p>
+Yani bir kere daha, III.4'ün olağanüstü önemi ile karşılaşmış oluyoruz.
+</p>
+
+<p>
+Şimdi III.4'ün mantığını tersten alarak onun gücünün başka bir boyutunu keşfetmiş oluyoruz. Ayı yörüngesinde; yeryüzünde cisimlere ağırlıklarını veren gücün (power), tuttuğunu varsaydıımızı düşünün.
+</p>
+
+<p>
+[ "Force" ve "power" arasında bir fark olmalı. Newtoncu çekim gücü için "power" diyebilir miyiz? ]
+</p>
+
+<p>
+O zaman, gök cisimlerinin sadece bulundukları bölgede merkezdeki cisimden uzaklıklarının karesi olarak ivmelendirildiklerini değil, ama "oradan aşağıya kadar ters kare" olabilir mi diye düşünebiliriz.
+</p>
+
+<p>
+[ Ne demek istiyor ki? İngilizcesini de yazalım. Anladığım kadar diyor ki, tamam, gök cisimlerinin de, dünyada cisimlere ağırlıklarını veren şeyin (güç veya "power", her neyse) bu gök cisimlerinin olduğu bölgelere uzanıp onları da, mulundukları yerde, merkezdeki cisimlerden olan uzaklıklarının karesine ters orantılı olarak çektiğini düşünebiliriz ama bi ters kare şeysinin sadece bu bölgelere mahsus olmadığını fakat bütün evrene yayıldığını düşünebiliriz. İngilizcesini yazıyorum, herkes kendi karar versin. Olmayan bir gücün bütün evrene nasıl yayıldığını tartışıyoruz! ]
+</p>
+
+<p>
+Bu paragrafın İngilizcesi: "So once again, we are struck by the extraordinary significance of III.4. Now we discover another dimension to its power by taking its reasoning conversely. Suppose we assume that the moon is held in its orbit by gravity, that is, by the power that makes terrestrial bodies heavy. We then consider whether the celestial bodies are not jst being accelerated inversely as the square of their distances from their central bodies out there at those particular, and celestial, distances, but whether it might be "inverse square all the way down."
+</p>
+
+<p>
+Devam: (s.378)
+</p>
+
+<p>
+Bu, Newton'un III.6 ve sonrasında yaptığı çalışma için gerekli bir adımdır. III.6 ve daha sonrasında bize ivmelendirici gücün eşit mesafede sabit olduğunu ve dolayısıyla ağırlıkların eşit mesafelerde madde miktarlarına oranlı olarak değiştiğini söyleyebilmemizi sağlayacaktır; bu da bizi eylemsiz kütle ile yerçekimsel güç kütlesi rastlantısına götürecektir.
+</p>
+
+<p>
+<b>Yerçekimi gücünün evrenselliği</b>
+</p>
+
+<p>
+Aceleci olarak davranırsak ayın yörüngesinde yerçekimi gücü ile tutulduğunu ispatladığımız için; yerçekimi gücünün evrensel olduğunu iddia edebiliriz.
+</p>
+
+<p>
+(s.379)
+</p>
+
+<p>
+nasılsa, dünyevi ve göksel madde arasındaki bariyeri kaldırmış olduk ve herşeyin önümüzde ortaya çıktığını görebiliyoruz.
+</p>
+
+<p>
+Gerçekte, ayı dünyevi madde ile birlikte tutmak sadece ilk adımdı.
+</p>
+
+<p>
+Newton kendisi, <i>İlkeler</i>'deki resmi (usule uygun, "formal") ispattan çok önce yerçekimininin ayı yörüngesinde tuttuğunu tahmin etmişti. Fakat, Newton'un elipsleri ters kare yasasından türettikten sonra bile, ters kare çekiminin evrensel olduğu hakkında şüpheleri vardı, ve ters kare yasasının evrensel olduğunu söylemeye direnmek için geçerli sebepler vardı.
+</p>
+
+<p>
+Newton önce içinde yaşadığımız dünyada eşit alanların eşit zamanlarda geçildiği, sabit elips yörüngeler vardır.
+</p>
+
+<p>
+Fakat, birçok gök cisminin hareketine baktığımızda, evrensel çekim gücü karmaşık ilişkilere sebep olacaktır, ve basit ters kare ilişkileri geçersiz olacaktır ve da görünüşe göre evrenin istikrarını (stability) bozacaktır.
+</p>
+
+<p>
+I.66'ıncı önerme ve Doğal Sonuçlarındı, Newton bu konuyu işliyor, ve cisimlerin evrenin her yerinde, birbirlerini çektiklerini varsaydığımız halde, gezegenlerin yörüngelerinin neden elips şekillerini bozmadan kalabildiğini ve evrenin nasıl istikrarlıymış gibi göründüğünü inceliyor. (Ek B'ye bakınız.)
+</p>
+
+<p>
+[ Evet, eğer Newtoncu çekim gücü gerçekten bu dünyada aktif olsaydı gezegenlerin yörüngeleri stabil kalamazlardı ve evren de gözlemlediğimiz uyumlu düzenini devam ettiremezdi. ]
+</p>
+
+<p>
+[ Yani Newton delisi kuyuya "güç" yalanını atıyor sonra o yalanını kuyudan çıkartmak için yüzlerce yalan daha uyduruyor. Yani, Newton, bütün hareketleri, bütün evreni dolduran "güç" dediği doğa üstü bir şeyle açıklamakta ısrar ettiği için, doğanın dinamik ve "güçlü" olduğunu ispatlamak için giderek daha da büyük, destekleyici yalanlar söylemek zorunda kalıyor. Biliyoruz ki, eğer Newton'un dediği gibi bütün madde birimleri diğer madde birimlerini ters kare gücüyle çekiyor olsaydı, kısa zamanda bütün evren koca bir top parçası olurdu, yörünge falan olmazdı. Ama Newtoncu güç eğer evrende olsaydı evrenin bildiğimiz bütün düzenini bozacağı ve evrenin çok kısa zamanda işlemez hale geleceği gerçeği, &#x2013;Newtoncu gücün kaçınılmız sonucu bu ve bunu fizikçiler bile kabul ediyorlar&#x2013; ama fizikçiler için Newton'un yanlış olması söz konusu olamaz, bu sebepten de Newton'un çekim gücünü binbir türlü skolastik okulcu kelime oyunları ile "kurtarmaya" çalışıyorlar. Yani doğayı Newton'a uyduruyorlar, buna da "Newtoncu mekanik" deniyor. ]
+</p>
+
+<p>
+İkinci olarak, bütün madde birimlerinin (particles) diğer madde birimlerini birbirlerini çektiğinin ispatının önünde önemli bir engel var: madde birimlerinin meydana gelmiş bir kürenin bütün Newtoncu çekim gücünün merkezde toplanmış <i>gibi</i> çekim uygulaması gerekirdi. Newton bunu I.71 ve I.75'de ispatlamıştır ve bizde bu gelişmeye bakacağız.
+</p>
+
+<p>
+Öyleyse, haydi III.4'ün analizi ile heyecanlanalım ve takip eden gelişmeleri bekleyelim, fakat Newton'un ilerde daha çok ince buzda hareket etmesi gerektiğini bilelim.  
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-01 Sun 20:04</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

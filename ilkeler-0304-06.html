@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-01 Sun 20:03 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+
+
+<div id="outline-container-org0222019" class="outline-2">
+<h2 id="org0222019">III.4'te Newton'un hesapları</h2>
+<div class="outline-text-2" id="text-org0222019">
+<ul class="org-ul">
+<li><a href="kaynakca.html#MissingReference">Densmore</a>'dan okumaya devam, sayfa 367.</li>
+</ul>
+
+<p>
+** Newton'un III.4'ü açıklamasının açılımı
+</p>
+
+<p>
+<i>Ay, yerçekimi gücünün çekimi ile; dünyaya yönelir, düz çizgi hareketinden devamlı geri çekilir ve yörüngesinde tutulur.</i>
+</p>
+
+<p>
+Densmore:
+</p>
+
+<p>
+<b>İspatlanacak</b>
+</p>
+
+<p>
+Yeryüzünde ağırlık gücü ve merkezcil güç aynı mesafede aynı etkiyi yapıyorlar, öyleyse aynı şey oldukları sonucuna varılabilir.
+</p>
+
+<p>
+[ III.4'da Newton'un ispatlamak istediği bu mu? ]
+</p>
+
+<p>
+[ «Ağırlık gücü.» Neden ağırlığın bir güç olduğunu varsayıyoruz? Ağırlık hareket sonucu da olabilir. Havalanmak için hızlanan bir uçakta insanlar kendilerini koltuğa yapıştıran bir ağırlık hissederler. Bu ağırlığı uçağın kuyruğunda bulunan bir çekim gücü ile mi açıklıyoruz? Hayır. O zaman, yeryüzündeki ağırlığın hareketten kaynaklanmadığına dair nasıl bir delilimiz var? ]
+</p>
+
+<p>
+Densmore:
+</p>
+
+<p>
+<b>İspat</b>
+</p>
+
+<p>
+<i>Ayın sizigilerde dünyadan ortalama uzaklığı, dünyanın yarıçapı olarak, Batlamyus ve birçok astronoma göre 59; Wendelin ve Huygens'e göre 60; Kopernik'e göre \(60\frac{1}{3}\); Streete'e göre \(60\frac{2}{5}\); ve Tycho'ya göre \(56\frac{1}{2}'dir\).</i>
+</p>
+
+<p>
+[ Densmore, Newton'un aynı ortalama uzaklağını bulmak hangi kaynakları kullandığı hakkında detaylara giriyor ama bizim bilmemiz gereken Newton'un ayın dünyadan ortalama uzaklığı için 60 dünya yarıçapını seçmiş olması. Newton ayrıca, ayın dünya etrafındaki dönemini, ve dünyanın çevresini veriyor. Fakat, hesaplarda ayrıca, dünyanın çapını, ayın yörüngesinin çapını ve dünyanın yörüngesinin çapını bilmemiz gerekiyor. Bu bilgiler toplu olarak <a href="ilkeler-0304-03.html">bu sayfada</a> bulunabilir. ]
+</p>
+
+<p>
+Densmore:
+</p>
+
+<p>
+<b>1. Bölüm: Önce ivmelendirici merkezcil gücün yörüngedeki aya olan etkisini hesaplıyoruz</b>
+</p>
+
+<p>
+<i>If the moon be supposed to be deprived of all motion and dropped, so as to descend towards the earth, under the influence of all that force by which (by Proposition 3 Corollary) it is held back in its orbit, it will in falling traverse \(15\frac{1}{12}\) Paris feet in the space of one minute.</i>
+</p>
+
+<p>
+[ Newton'un bu cümlesindeki gizli varsayımları belirtmekte fayda var. Newton, ayın ve yeryüzündeki bir taşın; bütün gücü dünyanın merkezinde toplanmış gibi etki eden Newtoncu çekim gücü tarafından çekildiğini varsayıyor. Böyle bir güç yok. Böyle bir etken yok. ]
+</p>
+
+<p>
+Densmore:
+</p>
+
+<p>
+Bu, üç adımlık sunumumuzun birinci bölümünün ifadesidir; yörüngedeki ayın ivmelendirici gücünü veren bölüm.
+</p>
+
+<p>
+[ İvmelendirici güç neymiş? "Düşürücü güç" de diyebiliriz. Nasıl olsa olmayan bir gücü, ve yörünge hesaplarına girmeyen bir gücü isimlendirmiş oluyoruz.]
+</p>
+
+<p>
+Densmore:
+</p>
+
+<p>
+Bu gücü, ayın, yörüngesinin mesafesinden başlayarak bir dakika içinde düşeceği mesafenin ölçüsü olarak kullanacağız.
+</p>
+
+<p>
+[ Yani, ne demek istiyor? Ayı yörüngesinde tutan da, dünyaya doğru çeken de bu "ivmelendirici merkezcil güç" dediğimiz şeydir; ayın yörüngesinde bir dakikada düştüğü mesafe, bu gücün aya ne kadar etki ettiğinin ölçüsü olacaktır. Yani diyorlar ki, biz bir mesafe ölçüyoruz ve bu mesafenin, Newtoncu çekim gücünün etkisinin sonucu olduğuna inanıyoruz.]
+</p>
+
+<p>
+<i>Bu sonuç, ya 1. Kitabın 36. önermesi, veya, aynı hesaba gelen, yine 1. kitaptadaki 4. Önermenin 9. Doğal Sonucunda yapılan hesaplardan çıkmaktadır.</i>
+</p>
+
+<p>
+(s.369)
+</p>
+
+<p>
+I.36, daha karmaşık bir yoldan giderek (Newton'un daha sonra konik kesitlerden geliştireceği sonuçlara dayanarak), I.4, Doğal Sonuç 9'la tamamen aynı sonuca varıyor.
+</p>
+
+<p>
+Biz daha önce 174. sayfada ispatladığımız I.4'ün Doğal Sonuç 9'u kullanacağız.
+</p>
+
+<p>
+<i>Çünkü ayın 60 dünya yarıçapı mesafesindeki yörüngesinde bir dakikada çizdiği yayın (versed sine)'ı, \(15\frac{1}{12}\) Paris feet'dir veya daha kesin olarak, 15 feet 1 inch ve \(1\frac{4}{9}\) lines'dır.</i>
+</p>
+
+<ol class="org-ol">
+<li>Adım: Ayın yörüngesinde bir dakikada geçtiği mesafe ne kadardır?</li>
+</ol>
+
+\begin{align*}
+\frac{\text{tüm yörüngenin mesafesi}}{\text{tüm yörüngenin zamanı}} &= \frac{\text{1 dakikada geçilen mesafe}}{\text{1 dakika}}\\
+\\
+\frac{7,394,976,000 \; \text{Paris feet}}{39,343 \;\text{dakika}} &= \frac{x}{1 \; \text{dakika}}
+\end{align*}
+
+<p>
+\(x = 187,961 \; \text{Paris feet}\)
+</p>
+
+<p>
+Yörüngede 1 dakikada geçilen mesafe = 187,961 Paris feet
+</p>
+
+<ol class="org-ol">
+<li>Adım: Teğetsel hareketi olmazsa, ay, aynı merkezcil gücün etkisi altında, bir dakikada ne kadar düşerdi?</li>
+</ol>
+
+
+<div id="orgf1aee81" class="figure">
+<p><img src="img/ay-yörünge.png" alt="Ayın yörüngesinde düşüşü" width="25%" height="25%" title="Ayın yörüngesinde düşüşü" align="center" />
+</p>
+<p><span class="figure-number">Şekil 1: </span>Ayın yörüngesinde düşüşü</p>
+</div>
+
+
+<p>
+I.4'ün 9. Doğal Sonucuna göre, eğer ay yörüngesinin bir noktasından bırakılmış olsaydı, ve onu yörüngesinde tutan aynı gücün etkisi altında dünyaya doğru düşseydi, düşeceği mesafe
+</p>
+
+\begin{align*}
+    \frac{AL}{AF} = \frac{AF}{AD}
+\end{align*}
+
+<p>
+orantısıyla verilirdi, yani,
+</p>
+
+\begin{align*}
+    \frac{\text{Düşeceği mesafe}\;AL}{\text{Yörüngede geçilen mesafe}\; AF} = \frac{\text{Yörüngede geçilen mesafe}\; AF}{\text{Yörüngenin çapı} \; AD}
+\end{align*}
+
+<p>
+Bir dakika için:
+</p>
+
+\begin{align*}
+    \frac{AL}{187,961 \;\text{Paris feet}} = \frac{187,961 \; \text{Paris feet}}{2,353,890,000 \; \text{Paris feet}}
+\end{align*}
+
+
+<p>
+\(AL = 15.0089161 \text{Paris feet}\), veya,
+</p>
+
+<p>
+\(15\) Paris feet, 0 inch, \(1\frac{3}{11}\) lines.
+</p>
+
+<p>
+Bu sayı, ayın, kendisini yörüngede tutan gücün etkisi altında bir dakikada düşeceği mesafedir.
+</p>
+
+<p>
+Bu sayı, aynı zamanda, yörüngedeki ayın üzerinde etkili olan ivmelendirici gücün ölçüsüdür.
+</p>
+
+<p>
+Birinci bölümün sonu.
+</p>
+
+<p>
+[ s.370, Densmore, şimdi de güneşin ay üzerindeki etkisini hesaplıyor. Newton da aynı yörüngesine güneş tarafından etki ettiğini düşünüp bu etkiyi hesaplamış ama bu o kadar küçük bir etki ki, vakit apırmayı şimdilik gerekli görmüyorum. ]
+</p>
+
+<ol class="org-ol">
+<li>Bölüm: Şimdi aya etki eden ivmelendirici gücün yeryüzünde ayı nasıl etkileyeceğini araştıracağız.</li>
+</ol>
+
+<p>
+<i>Bundan dolayı, dünyaya yaklaşırken, o güç, mesafenin karesinin tersi ile arttığına göre, ve dünyanın yüzeyinde ayın mesafesinde olduğundan \(60 \times 60\) kere daha büyük olacağına göre, bizim bölgemizde o gücün etkisi altında düşen bir cisim 1 dakika içinde \(60 \times 60 \times 15\frac{1}{12}\) Paris feet'i kadar mesafe geçmiş olur; veya 1 saniye içinde \(15\frac{1}{12}\) feet veya daha kesin olarak, 15 feet 1 inch ve \(1\frac{4}{9}\) lines geçmiş olur.</i>   
+</p>
+
+<p>
+Burada hayalî bir deney yapacağız.
+</p>
+
+<p>
+III.3'te ispat edildiği gibi, ayı yörüngesinde tutan merkezcil gücün ters kare yasasına uyduğunu varsayalım.
+</p>
+
+<p>
+Eğer \(f \propto \frac{1}{r^2}\) ilişkisi, ayın değişik yarıçaptaki değişik yörüngelerinde geçerli olduğu hayal edilirse, o değişik mesafelerde, değişik ivmelendirici güçlerin etkili olduğunu bulabilirdik.
+</p>
+
+<p>
+Yani, ayın şimdik yörüngesinini iki katı büyük çapı olan bir yörüngesi olsaydı, ayın üzerinde etkili olan merkezcil gücün ivmelendirici miktarı, 60 dünya çapında olan etkisinden \(\frac{1}{4}\) daha az olacaktır.
+</p>
+
+<p>
+Fakat Newton, hayal gücümüzü zorlayıp teri durumu düşünmemizi istiyor.
+</p>
+
+<p>
+Ayı, sadece bir dünya yarıçapı olan bir yörüngeye getirdiğimizi düşünelim.
+</p>
+
+<p>
+Yani, ayın dünya yüzeyinin hemen üstünde bir yörüngede olduğunu düşünelim.
+</p>
+
+<p>
+Ondan sonra 1. Bölümde uyguladığımız sürecin aynısın tekrarlayacağız, ve ayın teğetsel eylemsiz hareketinden yosun olduğunu düşünün ve ayı, aynı ivmelendirici merkezcil gücün etkisi altında düşmesine izin verelim.
+</p>
+
+<p>
+Birinci bölümde, ayın, 60 dünya yarıçapı yörüngesinden belli bir zaman içinde ne kadar düşeceğini hesapladığımız gibi, bir dünya yarıçapındaki yörüngesinde de ne kadar düşeceğini hasaplayabiliriz.
+</p>
+
+\begin{align*}
+    \frac{\text{yörüngede güç}}{\text{dünyanın yüzeyinde güç}} = \frac{(\text{yüzeyde yarıçap})^2}{(\text{yörüngede yarıçap})^2}\\
+\\
+\end{align*}
+
+
+\begin{align*}
+    \frac{f_o}{f_s} \quad \quad \quad = \quad \quad \quad \frac{r^2}{(60r)^2} \quad \quad \quad = \quad \quad \quad \frac{1}{60^2}
+\end{align*}
+
+<p>
+Öyleyse, dünyanın yüzeyinde güç \(60^2\) kadar daha büyük olacaktır.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-01 Sun 20:03</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

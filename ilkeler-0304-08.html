@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-01 Sun 20:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org228dc89" class="outline-2">
+<h2 id="org228dc89">III.4, Densmore, son bölüm</h2>
+<div class="outline-text-2" id="text-org228dc89">
+<p>
+(s.373)
+</p>
+
+<p>
+\(3\). Bölüm: Dünyanın yüzeyinde bir taşa etki eden ivmelendirici güç nedir?
+</p>
+
+<blockquote>
+<p>
+<i>Ve dünya üzerindeki ağır cisimler gerçekten de bu güçle aşağı inerler&#x2026;</i>
+</p>
+</blockquote>
+
+<p>
+&#x2026; demiş Newton. "Ve dünyada ağır cisimler [ sanki ağırlığı olmayan cisimler varmış gibi ] gerçekten de aynı gücün etkisi dünyaya dğru inerler."
+</p>
+
+<p>
+[ Burada Newton "fall" demiyor "descend" diyor, "descend" aşağı doğru inmek demek, neden "düşer" yani "fall" dememiş. ]
+</p>
+
+<p>
+Densmore:
+</p>
+
+<p>
+[ Yeryüzünde ağır cisimlerin ayı yörüngesinde tutan güç tarafından aşağıya düğru hareket ettirildiklerini ] dünyanın yüzeyinde bir sarkaç topu kullanarak göstereceğiz.
+</p>
+
+<p>
+Sarkacın, serbest düşüşte olan cisimlerin doğru düşüş zamanlarını ölçmek için nasıl kullanıldığını  açıkladığımız 7. Nat'a bakınız.
+</p>
+
+<blockquote>
+<p>
+<i>Çünkü Huygens'in gözlemlediği gibi, bir saniye sarkacının uzunluğu Paris'in enleminde, 3 Paris feet ve \(8\frac{1}{2}\) lines'dır.</i>
+</p>
+</blockquote>
+
+<p>
+Newton bize listelemediği bir olgudan, bir gözlemden bahsediyor; en azından, dünyanın yüzeyinde, deniz seviyesine yakın bir yerde, dönemi 2 saniye olan bir sarkacın kolunun uzunluğu 3 Paris feet \(8\frac{1}{2}\) lines olduğunu gözlemlemiş.
+</p>
+
+<p>
+Bunu ondalık sisteme çevirirsek, L = 3.059 Paris feet.
+</p>
+
+<blockquote>
+<p>
+<i>Ve ağır bir cismin bir saniyede düştüğü yüksekliğin : sarkaç kolunun uzunluğunun yarısına olan oranı :: dairenin çevresinin : çapına olan oranının iki katı oranına (duplicate ratio, yani karesine), eşittir.</i>
+</p>
+</blockquote>
+
+<p>
+Newton tarif ettiği orantı, sarkaç yasasından,
+</p>
+
+\begin{align*}
+\\
+\frac{\text{cismin 1 saniyede düştüğü mesafe}}{\text{sarkaç kolunun yarısı}} &= \frac{(\text{dairenin çevresi})^2}{(\text{dairenin çapı})^2}\\
+\\
+\frac{d}{L/2} &= \frac{2\pi\;r}{2\;r} =\pi^2\\
+\\
+d &= \frac{L}{2}\pi^2\\
+\end{align*}
+
+<p>
+[ Neden böyle bir ilişki var? Cisim de dairesel düşüyor olabilir. ]
+</p>
+
+<p>
+[ Yani, benzeşim (analogy) kullanırsak, düşen cisimle sarkaç geometrisi arasında bir benzeşim olmalı çünkü sarkaçla cisim arasında orantı var. ]
+</p>
+
+<p>
+Devam:
+</p>
+
+<p>
+L = 3.059 Paris feet olduğuna göre
+</p>
+
+<p>
+d = 15.0956 Paris feet.
+</p>
+
+<p>
+Öyleyse, 1 saniyed dünyanın yüzeyinde bulunan bir taş 15.0956 Paris feet'i düşer (veya 15 feet, 1 inch, 1\(\frac{7}{9}\) lines.
+</p>
+
+<p>
+İngiliz feet'i olarak, taş 1 saniyede 16.09 feet düşüyor. (16.09 feet = 4.904 metre)
+</p>
+
+<blockquote>
+<p>
+<i>Ve çünkü ayı yörüngesinde tutan güç, eğer ay dünyanın yüzeyine inecek olsaydı, bizim yerçekimi gücümüzle aynı olduğu için, dolayısıyla (1. ve 2. kurallar gereği) o bizim yerçekimi demeye alıştığımız gücün ta kendisidir.</i>
+</p>
+</blockquote>
+
+<p>
+Dünyanın yüzeyinde, ay onu yörüngesine çeken merkezcil gücün etkisi altında, (2. Bölüme göre) bir saniyede 15 Paris feet, 1 inch, 1\(\frac{4}{9}\) lines düşerdi.
+</p>
+
+<p>
+Dünyanın yüzeyinde bulunan bir taş, dünyevi (terrestrial) ağırlık gücünün etkisi altında, (3. Bölüme göre) bir saniyede 15 Paris feet, 1 inch, 1\(\frac{7}{9}\) düşerdi.
+</p>
+
+<p>
+\(2\). Kural gereği, aynı sonuca aynı sebebi gösteriyoruz.
+</p>
+
+<p>
+Öyleyse ikinci kural gereği, ayın, bir taşı ivmelendirici gücün etkisi altında düşeceğini düşünüyorsak, ay yerçekimi gücü (dünyevi ağırlık) ile düşüyor olacaktır.
+</p>
+
+<p>
+[ Çok uyduruk bir mantık yürütme gibi geliyor bana. ]
+</p>
+
+<p>
+[ Neymiş, ne demek istiyorlar, dünyada taşı düşüren ve dünyevi ağırlık gücü (yani yerçekimi gücü) ayı da düz çizgi hareketinden çekip yörüngede tutuyor. Ayı yörüngesinden alıp dünyanın yüzeyine getirsek, ay da aynı gücün etkisi altında düşer. ]
+</p>
+
+<p>
+[ İyi de böyle bir güç yok. ]
+</p>
+
+<p>
+(s.374)
+</p>
+
+<p>
+Dikkat ederseniz, Newton en başından 2. Kuralı uygulayıp "bir şey ayı dünyaya doğru çekiyor ve bir şey taşları dünyaya doğru çekiyor, öyleyse aynı sonuca aynı sebebi veriyoruz," demedi. Newton, sonucun (effect) sadece genel olarak aynı olduğunu değil, Huygens'in ölçebildiği kadar aynı olduğundan emin olmak istedi.
+</p>
+
+<p>
+Newton'un 2. Kuralı kullanması dikkatsizce veya üstünkörü değildir; fakat iyi düşünülmüştür, ve bizim "Evet, burada sebebin aynı olduğunu reddetmek mantığa aykırı olurdu" diye düşünmemize sebep olan savlar ile desteklenmektedir. [ Ama böyle bir güç yok. ]
+</p>
+
+<p>
+[ Tartıştıkları nedir? Newton aynı sonucun sebepleri de aynı olur demiş. Yani "güç"ten bahsediyor. Yeryüzünde taşla ayı düşüren güç aynı diyor ve bu sonuç Newton'un 2. Kuralından çıkar mı çıkmaz mı, onu tartışıyorlar ama problem orada değil ki. Problem, Newton'un uydu masalının masal olmasında. Yeryüzünde taşlar dünyanın merkezine doğru Newtoncu güç tarafından çekildiği için düşmüyor. Aynı güç, zaten olmadığı için, ayı da yörüngesinde tutmayor. Ama Newton'un hakkını teslim etmek gerekir, gerçekten güzel bir masal uydurmuş ve masalını dünyaya gerçek diye kabul ettirmiş. ]
+</p>
+
+<p>
+(s.374)
+</p>
+
+<p>
+[ Burada Newton'un sonuçlarının mantıklı olup olmadığını tartışıyor. ]
+</p>
+
+<p>
+Devam:
+</p>
+
+<p>
+Öte yandan, 4. Kural'a başvurabiliriz ve şöyle mantık yürütebiliriz:
+</p>
+
+<p>
+bu savın doğru olmadığını gösterecek savlar ileri sürülebilir ama, tümevarım ile mantık yürüterek bu sonucun doğru olduğuna inanabiliriz.
+</p>
+
+<p>
+Bunu yapmamız gerekebilir çünkü birisi çıkıp ayın maddesinin gerçekten de farklı olduğunu iddia edebilir, ve eğer dünyanın yüzeyine yaklaştırılırsa merkezcil gücün etkisiyle 15\(\frac{1}{12}\) feet düşebilir, ama ayın maddesi dünyaya ait olmadığı için dünyevi ağırlığın etkisi ile düşmez.
+</p>
+
+<p>
+Ve bir taş dünyadan alınıp ayın yörüngesine götürülürse o da bir dakikada dünyevi ağırlıkla 15\(\frac{1}{12}\) feet düşerdi, fakat gök cisimlerini etkileyen merkezcil gücün etkisi altında kalmazdı.
+</p>
+
+<p>
+[ Fakat Galileo'dan ve hatta Newton'un araştırmalarından biliyoruz ki, yeryüzünde serbest düşüşte olan cisimlerin maddesi düşüşü etkilemez. Ama burada dünyanın maddesi ile ayın maddesinin farklı olduğu varsayımandan bahsediyorlar. ]
+</p>
+
+<blockquote>
+<p>
+<i>Çünkü eğer yerçekimi ondan farklı olsaydı, cisimler, dünyaya doğru düşerken, birleşmiş iki gücün etkisi altında, 2 katı daha hızlı düşerlerdi, ve düşerken 1 saniye içinde \(30\frac{1}{6}\) Paris feet'i mesafe geçerlerdi, gözlemlerin tam aksi olan bir durum.</i>
+</p>
+</blockquote>
+
+<p>
+[ Densmore'un pek aklı yatmamış Newton'un bu anlatımına. ]
+</p>
+
+<p>
+\(2\). Bölümde ayın yörüngesinden alınıp dünyanın yüzeyine yakın bir mesafeye getirilirse, merkezcil gücün etkisi altında saniyede 15\(\frac{1}{12}\) feet gibi bir mesafe düşerdi; ve 3. Bölümde, bir taşın, dünyevi ağırlığından dolay, aynı zamanda aynı mesafeyi düşeceğini gördük; eğer bu gücün aynı olduğunu kabul etmek istemiyorsak, ayın 2 kat daha hızlı düşeceğinin varsaymamış gerekirdi, hem merkezcil güç hem de dünyevi ağırlığın etkisi ile iki kat daha hızlı düşeceğini varsaymamış gerekirdi.
+</p>
+
+<p>
+[ Aslında Newton burada ay ile dünyanın aynı şeyin (bu şey ne ise) etkisi altında düştüklerini ispat eder gibi yapıyor fakat asıl derdi, asıl amacı, bu kendi tanımladığı Newtoncu çekim gücünün doğada var olduğunu ispatlamak. Yani, bu çekim gücünü varsayıyor ve bu güçle yörünge hesapları yaptığını söylüyor ve yörünge hesapları doğru çıktığına göre, bu Newtoncu çekim gücünün de evrende varolan ve bütün hareketlerin ve bütün yörüngelerin sebebi olduğunu ispatladığını söylüyor. Fakat Newton önce bir masal anlatıyor ondan sonra Kepler'in bulduğu orantıyı kullanarak yörüngeleri hesaplıyor. Yörünge hesaplarında masalında anlattığı bu çekim gücünü kullanmıyor. Sonçu olarak, Newton, bu önermede ve <i>İlkeler</i> kitabında ve başka hiçbir yerde "ters kare" bir güç yasasının varlığını ispatlamıyor. ]
+</p>
+
+<p>
+Newton burada tam tersi bir hayalî deney tavsiye ediyor olabilir, yani dünyevi ağırlığı olan cisimleri alıp, onları ayın yörüngesine götürdüğümüzü hayal edebiliriz.
+</p>
+
+<p>
+O zaman, büyük ihtimalle, dünyevi ağırlığı olan cisimlerde aynı ay gibi merkezcil güç tarafından harekete geçirilmiş olurlardı.
+</p>
+
+<p>
+Ve onları tekrar dünyaya getirsek, deneyimlerimizin bize söylediği gibi, bu taşlar, sadece bu ivmelerden birine tekabül eden bir hızla düşerler.
+</p>
+
+<p>
+Tabii, burada fiziksel bir deney yok ve Newton "deneyimlerin tam zıttı" derken, çok abartmış oluyor.
+</p>
+
+<p>
+Belki bu önermeyi takip eden yorumda Newton'un anlattığı hayali deneyin bu savını destekleyeceğini düşünmüş olabilir.
+</p>
+
+<p>
+[ Bundan sonrası gereksiz tartışmalar. ]
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-01 Sun 20:04</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

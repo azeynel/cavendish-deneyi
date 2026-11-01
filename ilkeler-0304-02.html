@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-01 Sun 20:02 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org79636f4" class="outline-2">
+<h2 id="org79636f4"><i>İlkeler</i>: III.4, Scholium (Tercüme)</h2>
+<div class="outline-text-2" id="text-org79636f4">
+<ul class="org-ul">
+<li><a href="ilkeler-0304-01.html">III.4 Önermesinin Yorum bölümü</a> (Scholium).</li>
+
+<li>Newton, III.4 sayılı Önerme'den sonra gelen bu yorumda, sözlü açıklamalar yapıyor, ve bir uyduyu yörüngesinde tutan sebep ile dünya üzerinde serbest düşüşte olan bir cismin hareketinin sebebinin Newton'un tanımladığı "Newtoncu yerçekimsel çekim gücü" olduğunu tekrar vurguluyor.</li>
+
+<li><p>
+Burada ilginç olan Newton'un yörünge hesaplarında kullandığı formülü Kepler'in bulduğunu itiraf etmesi, ama Newton Kepler'in formülünü ikiye bölüp <a href="newton-kalpazan.html">sanki kendi bir buluş yapmış gibi</a> anlatıyor.
+</p>
+
+<p>
+\(* * *\)
+</p></li>
+</ul>
+<ol class="org-ol">
+<li><i>The demonstration of the proposition can be more amply displayed thus.</i></li>
+</ol>
+
+<p>
+Bu önermenin ispatı daha etraflıca şu şekilde ifade edilebilir.   
+</p>
+
+<ol class="org-ol">
+<li value="2"><i>If many moons were to revolve around the earth, exactly as in the system of Saturn or Jupiter, their periodic times (by an argument of induction) would observe the law of the planets discovered by Kepler, and therefore, their centripetal forces would be inversely as the squares of the distances from the center of the earth, by Proposition 1 of this Book.</i></li>
+</ol>
+
+<p>
+Eğer dünyanın etrafında birçok ay dönüyor olsaydı, aynı Saturn ve Jupiter sistemlerinden olduğu gibi, onların dönemleri (tümevarım yolu ile) Kepler'in bulduğu gezegenler yasasına uygun olurdu ve dolayısıyla, merkezcil [centripetal] güçleri, bu Kitabın 1. önermesine göre, dünyanın merkezinden mesafelerinin karesi ile ters orantılı olurdu.   
+</p>
+
+<ol class="org-ol">
+<li value="3"><i>And if the lowest of these were small, and were nearly to touch the peaks of the highest mountains, its centripetal force, which keep it in its orbit, would (by the foregoing computation) be very nearly equal to the gravities of bodies on the peaks of those mountains.</i></li>
+</ol>
+
+<p>
+Ve eğer bu ayların en aşağıda olanı küçük olsaydı ve yörüngesi neredeyse en yüksek dağların zirvelerine dokunacak gibi olsaydı, onu yörüngesinde tutan merkezcil gücü, (yukarda yapılan hesaplamalara göre) bu dağların zirvelerinde bulunan cisimlerin ağırlıkları ile hemen hemen aynı olurdu.   
+</p>
+
+<p>
+Yorum:
+</p>
+
+<p>
+[ Newton, dağların zirvesinde dünyaya ait bir cisim ile, mesela bir taş, yörüngesi aynı dağların zirvelerine dokunacak kadar yakın olan bir uydunun hareketlerini belirleyen güçleri mukayese ediyor ve hem uydunun hem de taşın hareketlerini Newtoncu çekim gücünün belirlediği sonucuna varıyor. ]
+</p>
+
+<p>
+[ Newton burada "gravity" kelimesi ile kelime oyunu yapıyor. "Gravity" ağırlık demek ama Newton gravity kelimesinin anlamını "Newtoncu yerçekimsel çekim gücü olark tanımlamaya çalışıyor. Dağların tepesindeki bir taşın ağırlığından mı yoksa, onun etkisi altında olduğu Newtoncu yerçekimsel çekim gücünden mi bahsediyor, bu açık değil. Newton çok usta bu skolastiktir ve bu kelime oyunları çok iyi yapar. ]
+</p>
+
+<ol class="org-ol">
+<li value="4"><i>It would thus come to pass that if the same small moon were deprived of all the motion by which it proceeds in its orbit, it would descend to earth because of the loss of the centrifugal force by which it had remained in its orbit, and would do this with the same velocity with which heavy bodies fall on the peaks of those mountains, because of the equality of the forces with which they descend.</i></li>
+</ol>
+
+<p>
+Dolayısıyla, çok açıktır ki, aynı küçük ay yörünge hareketlerinden soyutlanırsa [yörünge hareketi olmasa] onu yörüngesinde tutan merkezkaç gücü [dışarıya doğru uzaklaşan güç] kaybettiği için, dünyaya doğru düşecektir, ve hızı da dağların zirvesinde düşen cisimlerle aynı olacaktır, çünkü onların düşmesini sağlayan aynı güçtür.
+</p>
+
+<ol class="org-ol">
+<li value="5"><i>And if that force by which that small lowest moon descends were different from gravity, and that small moon were also heavy towards the earth in the manner of the bodies on the peaks of the mountains, the same small moon under the two conjoined forces would descend twice as fast.</i></li>
+</ol>
+
+<p>
+Ve eğer, o küçük ayın düşmesine sebep olan güç, yerçekiminden farklı olsaydı ve o küçük ayın, dağların zirvesindeki cisimler gibi, dünyaya doğru ağırlığı olsaydı, aynı küçük ay, birleşmiş iki gücün etkisinde kalacağı için 2 kat hızlı düşecektir.
+</p>
+
+<ol class="org-ol">
+<li value="6"><i>Therefore, since both forces&#x2013;the latter ones, of the heavy bodies, and the former ones, of the moons&#x2013;look to the center of the earth, and are similar and equal to each other, these same [forces] (by Rules 1 and 2) will have the same cause.</i> [But that cause is not what Newton says it is. That cause is Kepler's Rule.]</li>
+</ol>
+
+<p>
+Dolayısıyla, iki güç de &#x2013;sonrakiler, ağır cisimlerinkiler, ve öncekiler, aylara ait olanlar&#x2013; dünyanın merkezine doğru baktıkları ve birbirlerine benzer oldukları ve eşit oldukları için, bu aynı [güçlerin] (1. ve 2. Kurallardan) sebepleri de aynı olacaktır.
+</p>
+
+<ol class="org-ol">
+<li value="7"><i>And consequently, that force by which the moon is kept back in its orbit, will be that very force we usually call "gravity", and this must above all be true lest the small moon at the peak of the mountain either lack gravity, or fall twice as fast as heavy bodies usually fall.</i></li>
+</ol>
+
+<p>
+Ve sonuç olarak, ayı yörüngesinde tutan güç, bizim genellikle "yerçekimi" ["gravity"] dediğimiz gücün ta kendisi olacaktır, bu doğru olmalıdır, eğer tersi olsaydı, ya yüksek dağların zirvelerine yakın yörüngesi olan ayın ağırlığı olmazdı veya ağır cisimlerin düştüğü hızın iki katında düşerdi.
+</p>
+
+<p>
+Yorum:
+</p>
+
+<p>
+[ Newton, burada da "gravity" kelimesinin "ağırlık" ve "Newtoncu yerçekimsel güç" anlamları ile kelime oyunları yapıyor. Newton'dan önce "gravity" ağırlık demekti ve "Newtoncu yerçekimsel çekim gücü" anlamı yoktu. Ama Newton "gravity" kelimesini sahiplenip anlamını değiştirmekte o kadar başarılı olmuştur ki, bugün, "gravity" kelimesini "Newtoncu yerçekimsel çekim" anlamından ayrı düşünemeyiz. Ağırlık anlamı ikinci plana düşmüştır. ]
+</p>
+
+<p>
+Genel Yorum:
+</p>
+
+<p>
+[ Newton, merkezcil ve merkezden uzağa giden iki ayrı güç tanımlamış. Bu iki hayali güç hakkında 300 yıldır yorumlar yazılıyor, burada nerede bulunur, nasıl böyle, Newton'un keyfine göre, ve Newton'un doktrinleri doğrulansın diye, gerektiği zaman çıkıp, gerektiği zaman kaybolurlar, kimse bilmiyor. Bu iki güç de sadece Newton'un masallar dünyasında varolan şeyler. ]
+</p>
+
+<p>
+[ Cümle (2)'de, Newton uyduların Kepler'in bulduğu yasaya göre hareket ettiklerini kabul ediyor ama sonra bu yasayı uymayan "merkezcil güç" diye bir şey uyduruyor ve uyduların merkezcil güç tarafından yörüngede tutulduklarını söylüyor. Fakat, Newton'un uydu hesaplarına "merkezcil güç" diye bir terim veya bir miktar girmiyor, Newton yörünge hesaplamak için sadece dönem ve yarıçap terimlerinden meydana gelmiş olan Kepler Kuralı'nı kullanıyor. ]
+</p>
+
+<p>
+[ Cümle (3) çok önemli. Newton Kepler Kuralı'ndan \(1/r^2\) terimini kesip aldığını ve \(1/r^2\) oranını "Newtoncu çekim gücü" olarak etiketlediğini itiraf ediyor. Kepler Kuralında, \(\text{Güç} = F = 1/R^2\) diye bir ilişki yok. Kepler Kuralı'nda, \(1/R^2 = R/T^2\) diye bir ilişki var. Görüldüğü gibi, bu ilişkinin iki tarafında da \(R\) olduğu için, \(F=1/R^2\) ilişkisi doğru olamaz. Kepler Kuralı'nı \(R \propto T^{1.5}\) olarak da yazabiliriz, veya \(1/R \propto 1/T^{1.5}\) veya \(1/R^2 \propto 1/T^3\) olarak yazabiliriz. Yani, Kepler Kuralı'nda \(1/R^2\) oranının "Çekim gücü" diye bir şeye orantılı olduğu Newton'un Kepler Kuralı'nı sahiplenmek için uydurduğu bir yalandır. ]
+</p>
+
+<p>
+[ Newton'a göre bir uyduyu yörüngede tutan onun merkezcil gücüymüş. Fizikte bile bu güce "hayali güç" diyorlar, doğada yok böyle bir güç. Ama 300 yıllık Newton tarikatının Newton'un masallarına sorgulamadan inanması gayet doğal bence. ]
+</p>
+
+<p>
+[ Cümle (3)'de Newton dünya üzerinde serbest düşüş hareketinin sebebinin de Newtoncu çekim gücü olduğunu varsayıyor ama bunu ispat etmek gereğini duymuyor. Newton uzun yıllar İlkeler kitabını yayınlamayı geciktirdi çünkü dünyanın ve diğer gök cisimlerinin çekim gücünün nerede olduğunu bilmiyordu. Newtoncu çekim gücünün işlemesi için gücün merkezden etki etmesi gerekiyordu. Sonunda Newton gücün merkezde konuşlanmış gibi etki ettiğini bir geometrik ispat ile ispatladığını söyledi ve o günden beri de Newtoncu gücün sanki cisimlerin merkezindeymiş gibi etki ettiğine inanılır. ]
+</p>
+
+<p>
+[ Dünyada serbest düşüşte olan bir taş ile dünya etrafında yörüngede olan bir uydu, evet, aynı hareket yasasına göre hareket eder ama bu yasa Newtoncu çekim gücü değildir, Kepler Kuralı'dır, yani serbest düşüşü de, uydu yörüngelerini de belirleyen sadece R ve T'dir, çünkü yörüngeleri sadece R ve T ile hesaplıyoruz, başka bir terim kullanmıyoruz. Yörünge hareketi hacım ve yoğunlukla ilgilidir çünkü Kepler Kuralı yoğunluğun tanımıdır. ]
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-01 Sun 20:02</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
