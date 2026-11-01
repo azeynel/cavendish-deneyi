@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-01 Sun 20:36 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org4b82997" class="outline-2">
+<h2 id="org4b82997">Cavendish deneyi ve Newtoncu çekim gücü</h2>
+<div class="outline-text-2" id="text-org4b82997">
+<ol class="org-ol">
+<li>Cavendish deneyini Newtoncu çekim gücünden ayıramayız. Cavendish sarkaç kolunun Newtoncu çekim gücü tarafından oynatıldığını gözlemliyor ve bu hareketi ölçüp dünyanın yoğunluğunu hesaplıyor. Newtoncu çekim gücü sarkaç kolunu oynatmamış olsa, bu deney ile dünyanın yoğunluğunu hesaplayamazdık.</li>
+
+<li>Sarkaç kolunu oynatan bu Newtoncu çekim gücü nedir? Newton, "çekim gücü yasası" dediği bu şeyi nasıl tanımlamış?</li>
+
+<li>Çocukluğumuzdan itibaren Newtoncu tarikatın propagandası ile büyüdüğümüz için biz de bütün dünyayı bir güçler ilişkisi ve çekim güçlerinin kavgası olarak görüyoruz. Dünya düşen taşı çekiyor, güneş gezegenleri çekiyor, atomlar birbirlerini çekiyor, vs. vs. Bir çekim olduğunu biliriz ama işin aslını merak edip soruşturmayız.</li>
+
+<li>Okulda bu yasa bize gelmiş geçmiş en üstün deha SİR İSAAC NEWTON tarafından bulunmuş gerçek doğa yasası olarak öğretilir, biz de bu absürd çekim gücüne sorgulamadan inanırız. Zaten eğitim sistemi bize profesyonel sınıflara sorgulamadan inanmamızı öğretir. Karşımıza çıkan ilk profesyonel de işte bize bu Newtoncu doktrini dayatan öğretmenlerdir. Onların her dediğine inanınırız.</li>
+
+<li>"Çekim gücü" doğaüstü ve içinde yaşadığımız bu dünyada olmayan bir şeydir. Neden? Çünkü, bu dünyada Newton'un tanımladığı gibi bir absürd etken var olamaz. Neden absürd? Çünkü dünyada hiçbir şey zaman geçmeden mesafe kat edemez. Daha genel olarak, zaman geçmeden hiçbir değişim olamaz. Bu benim temel bir varsayım olarak kabul ettiğim bir ilkedir, aslında bir totolojidir, çünkü “doğa doğaüstü değildir” demektir. Doğa, hem doğa hem de doğa olmayan olamaz. Doğanın içinde doğaüstü şeylerin olduğuna inanmak mucizelere inanmaktır, çünkü mucize doğaüstü şey demektir. Belki siz mucizelere inanınırsınız ve “doğa doğa üstüdür” dersiniz yani “doğa hem doğadır hem doğa değildir” dersiniz ve zaman geçmeden değişim olabileceğine inanırsınız, dolayısıyla Newton’un tanımladığı mucizevi güce de inanırsınız. Newton da zaten aynen böyle düşünmüş ve tanrının Newtoncu mucizelerin geçerli olduğu bir dünya yarattığını söylemiştir. Tanrı sonra da Newton'u yaratmış ve onu Newtoncu dünyayı insanlığa bildirmekle görevlendirmiştir. Newton tarikatının temel öğretisi budur.</li>
+
+<li>Fakat, aynı doğaüstü çekim gücü teorisini ben ortaya atsam ve hiç zaman geçmeden sizi işinizden alıp evinize götürecek bir araç icad ettim desem, gülerdiniz, "saçmalıyor, ne dediğinin farkında değil" derdiniz. Çocuklar bile hiçbir şeyin zaman geçmeden bir noktadan bir noktaya gidemeyeceğini bilir. Zaten zaman geçmeden mesafeleri geçen bir şey olsaydı o şey hem başlangıç noktasında hem de varış noktasında aynı anda var olurdu. İki yerde aynı anda varolan bir şey biliyor musunuz bu dünyada? Ben bilmiyorum. Ama Newton aynı şeyin iki yerde aynı anda varolabileceğine inanıyordu ki, bu özellikleri olan bir gücün doğada olduğunu iddia edebilmiş. Böyle bir şey iddia etmek bizim dünyamızda absürd ve gülünç olurdu. Newton’un uydurduğu masal dünyasında varsa onu bilemem.</li>
+
+<li>Zaman geçmeden mesafeleri katedebilen bu şey sadece iki yerde değil evrenin her yerinde aynı anda var olurdu. Yani Newton her yerde varolduğuna inanılan Hırıstiyan tanrısını tanımlayıp adına “güç” demiş! Newton'un çağdaşları zaten güç ile tanrı ilişkisini görmüşler; Huygens, Newton'un bir megalomanyak olduğunu ve "güç" diye tanımladığı ve bütün evreni saran şeyin aslında "Newton'un ruhu" olduğunu söylemiştir. Newton kendini "Mekanik peygamberi" olarak görmüş ve tanrılardan aldığı bilgileri insanlığa sunduğunu söylemiş ve bu propagandasını da bütün dünyaya kabul ettirmeyi başarmıştır.</li>
+
+<li>Zaman geçmeden A'dan B'ye gidebilen bir şey aynı anda hem A'da, hem B'de ve evrenin her yerinde var olurdu ama biz böyle bir evrende yaşamıyoruz.</li>
+
+<li>Peki neden bu absürd güç kavramını tanımlayan Newton'a inanıyorsunuz da aynı saçmalığı başkası tanımlasa ona inanmıyorsunuz? Newton, hiçbir fizik yasasına uymayan ve zaman geçmeden hareket edip uzaktaki cisimleri temas etmeden hareket ettiren bir güç bulduğunu iddia etmiş ve bütün insanlığı bu saçmalığa inandırmış</li>
+
+<li>Newton'un tanımladığı, daha doğrusu, buldum dediği, bu çekim gücünün mesafeleri zaman geçmeden katettiğine neden inanıyorsunuz? Newton efsanesi bu kadar güçlü mü?</li>
+
+<li>Newton'un tanımladığı ve bütün fizik yasalarını ihlal eden bu “çekim gücü” denen şeyin doğaüstü olduğu konusunda bir şüphe yok. En koyu Newtoncu fizikçi bile bu gücün doğaüstü gizemli bir şey olduğunu kabul eder. Fizikçiler "Newton'un bu gücü kullanarak yörüngeleri hesapladığını ve gizemli olsa da bu gücün varolmasını gerektiğini" söylerler; "bu gücün nasıl işlediğini bilmiyoruz ama bu güçle yapılan hesaplar doğru sonuçlar verdiğine göre bu gücün varlığına inanmalıyız," derler.</li>
+
+<li>Dokunmadan, temas olmadan ve zaman geçmeden uzaktaki cisimleri yerinden oynatabilen bu "Newtoncu çekim gücü” denen mucizeye inanıyorsunuz ama aynı tip doğaüstü mucizeleri anlatan kitap dinlerine inanmıyorsunuz.</li>
+
+<li>Evrende bildiğimiz en hızlı şey olan ışık bile güneşten çıkıp dünyaya gelmek için 4 dakika harcarken, güneşten aynı anda yola çıkan Newtoncu güç aynı mesafeyi 0 (sıfır) dakikada kat edip dünyaya ulaşıyor. Yani Newtoncu güç aynı anda hem güneştedir hem de dünyadadır. Ve hiçbir fizikçi de bu saçmalığı sorgulamak cesaretini gösteremiyor, Newton'un emirlerine sorgulamadan inanıyor. Fizikçiler hem fiziğin kutsal enerji koruma yasalarına inanıyorlar hem de Newton'un tanımladığı ve bütün enerji koruma yasalarını ihlal eden Newtoncu çekim gücüne inanıyorlar. Newtoncu absürd çekim gücünü eleştirme cesareti gösteren tek istisna Einstein'dır. Einstein Newton'un çekim gücü masalını sorguluyor ve içinde doğaüstü bir çekim gücü olmayan bir gravitasyon teorisi tasarlıyor. Genel İzafiyet teorisiniz amacı budur, Newtoncu çekim gücünü fizikten atmak. Ama Einstein başarılı olamıyor. Newton kültü o kadar güçlü ki, Einstein'ın teorilerini de yozlaştırıp onu Newtonculuğun bir parçası yapıyor.</li>
+
+<li>Kendilerine "fizikçi" diyen ama aslında Newtonun müritleri olan okulcu profesyonellerin Newton'un dediği her söze sorgulamadan inanmalarını doğal karşılıyoruz ama Newton kültüne ait olmayan bizler neden Newton'un bu saçmalıklarına inanmak zorundayız?</li>
+
+<li>Newtoncu çekim gücünün bir mucize olduğunu gizlemek için fizikçiler şeyhlerinin kutsal adını bir sürü dekoratif terimlere vermişler ve bütün fizik Newton'a ibadet şeklini almış.</li>
+
+<li>Mucizelere inanıyor musunuz? Deniz yarılıyor, güneş duruyor falan, kitap dinlerinin bu mucizelerine inanmıyorsunuz ama Newtoncu tarikatın güç denen mucizesine inanıyorsunuz. Newtoncu çekim gücü, en az kitap dinlerinin mucizeleri kadar bir mucizedir, onlar gibi doğaüstü bir etkendir. Mucizeye sadece o dine inananlar inanır, Newtoncu güç mucizesine de sadece Newtoncu kültün inananları inanır.</li>
+
+<li>Newtoncu tarikatın jargonunu dilimize bile monte etmişler. İngilizce’de “gravity”, Fransızca'da “pesenteur” olarak ağırlıkla ilişkili olan kavram Türkçeye "yer çekimi" diye tercüme edilmiş. Yani Türkçe'de serbest düşüş hareketinin Newtoncu çekim gücünün sonucu olup olmadığını sorgalayamayız çünkü dilimiz serbest düşüşün Newtoncu çekim gücünün sonucu olduğuna karar vermiş.</li>
+
+<li>Düşen taşı çeken dünyadır, daha doğrusu, dünyanın merkezinde konuşlanmış gibi yapan Newtoncu çekim gücüdür. Bu güç, hiç zaman geçmeden dünyanın yarıçapını aşıp taşa ulaşır ve onu çeker. Bunu sorgulayamayız bile çünkü dilimize bu olay "çekim" olarak geçmiş. Galileo için serbest düşüş olayı ağırlıkla ilgiliydi, çekimle değil; Kepler için de öyle, Newton'dan önce bilimsel düşünceyi benimsemiş insanlar temas olmadan uzaktan etki olamayacağını biliyorlardı.</li>
+
+<li>Newton'un kendisi tanımladığı bu gücün absürd ve doğaüstü olduğunu biliyordu ama Newton'un mazereti de hazırdı, "evet, doğada böyle bir şey belki yok, uzaktan temassız eylem yok, mesafeleri zaman geçmeden katetmek yok, ama ben bu gücü kullanarak yörüngeleri hesapladım ve doğru sonuçlar aldım, doğru sonuçlar aldığıma göre, bu güç vardır, ama nasıl işlediğini bilmiyoruz" gibi kelime oyunları ve yalanlarla bütün dünyayı kandırdı.</li>
+
+<li>Evet. Newton yalan söylüyor. Eğer bu Newtoncu çekim gücü zaman geçmeden mesafeleri geçiyorsa, böyle bir şey doğada yoktur, nasıl çalıştığını bilmiyoruz diyemeyiz; doğada olmayan birşeyin nasıl çalıştığını bilmiyoruz diyemeyiz. Tanım olarak, yoktur. Olamaz. Newton’un hesapladığı yörüngelerin çekim gücü ile ilgisi yok.</li>
+
+<li>Böyle bir güç doğada olmadığına göre ve olamayacağına göre, tanım olarak doğa üstü olduğuna göre, demek ki, Newton yörüngeleri bu uydurduğu güçle hesaplamamış sadece bir takım laf cambazlığı ile insanlığı kandırmış.</li>
+
+<li>Newton’un müritlerinin yarattığı “Newtoncu mekanik” diye bir şey var. Bu Newtoncu mekaniğe “Newtoncu” deniyor çünkü içinde Newtonun kutsal adına adanmış bir sürü dekoratif ve göstermelik terimler var. Newton'un müritleri bir Newtoncu jargon yaratıp "mekanik" diye satmışlar. Mekanik nedir? Newtoncular kadim mekanik bilimini almışlar ve yozlaştırmışlar. En eski bilimlerden biri olan ve çarpışmalar gibi temaslı güçleri inceleyen, (ve sadece temaslı güçleri inceleyen), mekanik bilimini Newtoncular çalmışlar ve Newton’un temassız ve zaman geçmeden etki edebilen absürd güçlerini inceleyen bilim dalı olarak tanımlamışlar. Mekanikle ilgisi olmayan Newton gizemciliğini mekanik bilimi ile ilişkilendirerek Newtoncu tarikatı kadim mekanik biliminin devamı gibi göstermeye çalışmışlar.</li>
+
+<li>Newtoncular, “Newton’un evrensel çekim gücü sabiti G” diye bir şey uydurmuşlar mesela. Newton'un böyle bir sabitten haberi bile yoktu çünkü Newton denklem değil oran ve orantılarla çalışıyordu. G ise denklemlerin bir ürünüdür, yani doğada olan bir şey değildir, orantılarla çalışırsanız G elenir, “doğanın temel bir sabiti” diye pazarlanan bir şey doğa sabiti olsaydı elenir miydi?</li>
+
+<li>Zaman geçmeden, uzaktan anında etki eden absürd “çekim gücü”ne Newton’un adı ile kutsanmış bir birim verilmiş. Doğa olaylarını inceleyen fizik bilimi doğaüstü bir gücü fiziğin temel etkeni yapmış ve birimine de "Newton" demiş.</li>
+
+<li>Newton sabiti \(G\) de, birim mesafede, birim maddenin, birim çekimi olarak tanımlanmış ve Newton'a adanmış. Newton’un ismi ile kutsanmış bütün bu terimlerin propaganda terimleri olduğu çok açık değil mi?</li>
+
+<li>Newton’un uydurduğu diğer kavram da kütledir. Newton, “çekim karşılıklıdır” demiş ve \(m\) ve \(M\) kütlelerinin birbirlerini çektiğini söylemiş. Ama siz hiçbir Newtoncu formülde veya hesapta karşılıklı birbirini çeken \(m\) ve \(M\)'yi görmüşlüğünüz var mı? Yani, Newtoncuların yazdıkları bütün dekoratif terimleri eledikten sonra \(m\) ve \(M\)’nin birbirini çektiği bir denklemi görmüşlüğünüz var mı? Yok, çünkü Newtoncular \(m\)'yi Newton'a dua olarak yazarlar ama sonra elerler, \(m\) hep elenir, bir mazaret uydurup elerler. Yani, \(M\) harfinin çektiği \(m\) harfi artık Newtoncu denklemlerde yoktur ama Newton'un müretleri şeyhlerini utandıracak değiller ya \(m\) sanki hâlâ denklemlerde varmış gibi davranırlar, inanç denen şey budur işte, denklemde olmayan bir terimi varmış gibi görmektir. İnanç, \(M\)'nin olmayan \(m\) kütlesini çektiğine inanmaktır. \(M\) olmayan bir şeyi çekmektedir çünkü \(m\) elendi, artık denklemlerde yok. Ama \(m\) zaten dekoratif bir terimdi ve göstermelik olarak yazılmıştı, Newton'a dua etmek için yazılmıştı. Newton yasalarına göre \(M\) ile \(m\) harfi arasında bir çekim yok, olamaz çünkü \(m\) denklemlerde yok. Ama eğer Newtoncu bir inanan iseniz o elenen \(m\) mucizevi bir şeklide size görünür, bize görünmez ama inananlara görünür. Newton kültü budur. Newton'un sattığı çekim gücü propagandası sadece lafta kalıyor çünkü hesapların yapıldığı matematiksel ifadelerde Newtoncu çekim gücü temsil edilmiyor.</li>
+
+<li>Newton mekaniği denen şey Newton’un müritlerinin 350 yılda adım adım geliştirdikleri bir aldatmacadır. Neden aldatmacadır? Çünkü Newton mekaniği denen şey Kepler Kuralının Newtoncu marka terimlerle yazılmış halidir.</li>
+
+<li>Newton'un Newton mekaniğinden haberi yoktu. Newton'un, "Newton'un evrensel sabiti G"den haberi yoktu, çünkü bu terim 19. yüzyılda tanımlanmıştı. G bir birim dönüştürücüdür. Newtoncu denklemler uydurma olduğu için birimler uyuşmaz, bu sebepten fizikçiler G terimini uydurmuşlardır. Açın G teriminin birimlerine bakın ve Newton kültünün nasıl matematik ve fizikle alay ettiğini görün.</li>
+
+<li>Öyleyse, Newton'un müritlerinin uydurduğu "Newton mekaniği" denen sahtekarlığı unutup Newton'un kendisinin ne yaptığına bakalım.</li>
+
+<li>Yörüngeleri hesaplamak için sadece 2 yöntem vardır. Bu 2 yöntem dışında bir yöntem kullanarak yörünge hesapladığını söyleyen birisi, ismi Newton da olsa, şarlatandır. Yörüngeleri kendi bulduğu çekim gücü ile hesapladığını iddia eden Newton da gelmiş gelmiş en büyük okulcu şarlatandır.</li>
+
+<li>Yörüngeleri hesaplamak için bilinen en eski yöntem gözlemleri bir tabloda toplamaktır. Yaptığınız gözlemleri bir tabloda toplarsınız ve gezegenlerin yerlerini bu tablodan bakarak bulursunuz. Matematik yöntemleriniz geliştikçe de tabloda topladığınız verileri daha detaylı analiz edebilirsiniz. Mesela, veri noktalarını matematiksel yöntemlerle bir çizgi üzerinde birleştirirsiniz, yani bütün noktaların en yakınından geçen bir çizgi çizersiniz. Ayrıca trigonometri formülleri de uygulayabilirsiniz. Sümerlerden başlayarak yörüngeler hep böyle hesaplanmıştır, başka yolu da yoktur. Veya yoktu. Kepler 2. yöntemi bulana kadar, o da Kepler Kuralıdır. Kepler Kuralını Kepler bulmuştur Newton bulmamıştır, bu tarihsel bir gerçektir. Kısaca, yörüngeleri ya bir tablodan ya da bir formül kullanarak hesaplayabilirsiniz. Yörünge hesaplamak için de sadece bir formül vardır o da Kepler Kuralıdır.</li>
+
+<li>Newton da Kepler Kuralını kullanarak yörüngeleri hesaplamıştır. Ama bunu direk olarak ve açıkca Kepler Kuralını kullanarak yapsa o zaman Newton olmazdı, Kepler Kuralını uygulayan herhangi bir astronom olurdu, bu da süper megalomanyak okulcu doktor ve Newton tarikatının kurucu şeyhi Newton'a hiç uymazdı.</li>
+
+<li>Onun için Newton Kepler kuralını kendi uydurduğu Newtoncu jargon ile yazdı ve yörüngeleri bu Newtoncu jargon ile hesapladığını ileri sürdü. Olay budur. Newtoncu jargon kullanarak Newton'un hesapladığı yörüngeleri Kepler Kuralını en yalın hali ile kullanarak biz de hesaplarız ve Newton'la aynı sonuçları alırız.</li>
+
+<li>Eğer yörüngeleri tablolarla değil de bir formül ile hesaplamak istiyorsanız kullanabileceğiniz tek bir formül vardır o da \(K=R^3/T^2\)'dır veya \(T=R^{1.5}\)'tur. Bu orantıya da Kepler Kuralı denir. Newtoncular Kepler Kuralını aşağılamak için ona "Kepler'in 3. yasası" demişlerdir. Newtonculara göre, Kepler bu yasayı Newton, bu yasanın altında yatan Newtoncu çekim gücü yasasını bulsun diye bulmuştur.</li>
+
+<li>Newton ne bulmuş ki? Newton yeni bir doğa yasası bulmamıştır. Newton Kepler kuralını \(1/R^2 = R/T^2\) olarak yazmış ve \(1/R^2\)'ın üstüne "Newtoncu çekim gücü" etiketini yapıştırmış. Yani, Newtoncuların "ters kare çekim yasası" dedikleri şey Newton'un Kepler Kuralını cebir kuralları uygulayarak değişik bir şekilde düzenlemesinden kaynaklanan bir etikettir. Bir etikettir başka bir şey değildir. Çünkü, matematik kuralları Newton'u da kapsar. Newton matematik kurallarının üstünde değildir. Bu orantıya dikkatli bakın, Newton orantıyı yeniden düzenleyip \(R\) terimlerini ayırıp orantının iki tarafına yazdı diye \(R^3\) terimi yok olmadı. Keplerin orantısında \(1/R^2\) ile değişen bir nicelik yok. Bu denklemin iki tarafında da \(R\) terimi var, ama Newton'un otoritesi o kadar güçlü ki, Newton bize, "soldaki \(R\) değişirken sağdaki \(R\) sabit kalıyor” diye matematik yasalarına aykırı bir şey söylüyor (çünkü, \(1/R^2\) diye değişen bir nicelik olduğunu söylemek bu anlama geliyor) ve bu matematiksel saçmalığı Newton bütün dünyaya kabul ettiriyor. Olmayan bir gücün \(1/R^2\) olarak değiştiği yalanını bütün insanlığa dayatıyor ve bunu da Kepler Kuralını yanlış yazarak yapıyor.</li>
+
+<li>Kepler'in bulduğu orantı, \(K=R^3/T^2\) olduğuna göre, siz bunu \(1/R^2 = R/T^2\) olarak yazarak \(R^3\) terimini yok edemezsiniz. O zaman yazdığınız başka bir orantı olur. Veya, Newton'un ve Newtoncuların yaptığı gibi önce Kepler Kuralını ikiye bölüp \(1/R^2\) ve \(R/T^2\) olarak ayrı ayrı, sanki iki ayrı orantı yazıyormuş gibi yazarsınız ve ikisine de "Güç" dersiniz, ve Newton'a duanızı yaptıktan sonra, yörünge hesaplama işine gelince Güç = Güç diyip ayırdığınız Kepler orantısını birleştirip hesaplarınızı Kepler Kuralı ile yaparsınız. Ama hesapları yapmadan "Güç" kelimesini kullandınız ya, hesapları yaparken güç terimlerini kullanmasanız bile, yörüngelerin Newtoncu güç ile varolduklarını iddia edersiniz. Böyle bir aldatmaca bilim tarihinde görülmemiştir.</li>
+
+<li>Sol taraftaki \(1/R^2\) değişirken sağ taraftaki \(R\) değişmeden duramaz. \(R\) yörüngenin yarıçapıdır, yörüngenin yarıçapı değişince değişen tek bir nicelik var o da \(T\) yani yörüngenin dönemi. Kepler Kuralında Newtoncu güç terimi yok. Yörüngeler Newtoncu güç ile varolmuyorlar. Ama eğer Newton kültünün bir inananı iseniz o zaman yörüngeleri Kepler Kuralı ile hasaplayıp şeyhiniz Newton'un doktrinleri ile hesapladığınızı söyleyeceksiniz. Bunu kimse değiştiremez. Gözlemler ve deneyler inançları değiştiremez.</li>
+
+<li>Bu kadar basit bir sahtekarlığı, yani bilinen bir orantıyı alıp bu orantının terimlerine idelojik isimli etiketler yapıştırıp sahiplenmeyi, Newton bütün dünyaya Newton'un çekim gücü yasası diye satabilmiş. Bu pazarlama dehası önünde saygıyla eğiliyoruz.</li>
+
+<li>Ve Cavendish deneyi. Sahtekar Newtoncu tarikatçılar, Cavendish deneyinden 150 yıl sonra Cavendish'in henüz tanımlanmamış olan \(G\) sabitini hesapladığını söylemişler ve bu yalanı fizik kitaplarına koymuşlar ve gerçekmiş gibi tekrarlayıp duruyorlar. Fiziğin bir tarikat kültü olduğunun bundan daha iyi bir ispatı olabilir mi?</li>
+
+<li>Cavendish deneyini Newtoncu gücü ölçmek için yapmamıştır, dünyanın yoğunluğunu hesaplamak için yapmıştır ve Newtoncu gücü varsaymıştır. Bu sebeplerden Cavendish deneyini Newtoncu çekim gücü doktrininden ayıramayız. Deneyi aslına uygun olarak tekrarladığımız zaman Cavendish'in sarkacının Newtoncu absürd güç altında oynayıp oynamadığını göreceğiz. Bence Cavendish deneyini tekrarlamak için en önemli sebep budur.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-01 Sun 20:36</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

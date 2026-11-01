@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-01 Sun 20:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org96c852d" class="outline-2">
+<h2 id="org96c852d">The building housing the experiment</h2>
+<div class="outline-text-2" id="text-org96c852d">
+<p>
+[Related: <a href="https://history.stackexchange.com/questions/68870/what-kind-of-building-materials-did-cavendish-use-in-determining-the-density-of">What kind of building materials did Cavendish use in determining the density of the earth?</a> and <a href="https://hsm.stackexchange.com/questions/14405/the-housing-of-the-cavendish-experiment">The housing of the Cavendish Experiment</a>]
+</p>
+
+
+
+<div id="orgc7f5b7c" class="figure">
+<p><img src="file:///Users/a/org/img/Cavendish-outbuilding-01.png" alt="Cavendish-outbuilding-01.png" />
+</p>
+</div>
+
+<p>
+On page 490 of his <a href="https://royalsocietypublishing.org/doi/pdf/10.1098/rstl.1798.0022">article</a>, Cavendish writes:
+</p>
+
+<blockquote>
+<p>
+My next trials were, to see whether this effect was owing to magnetism. Now as it happened, the case in which the arm was insclosed, was placed nearly parallel to the magnetic east and west, and therefore, if there was any thing magnetic in the balls and weights, the balls would acquire polarity from the earth&#x2026;
+</p>
+</blockquote>
+
+<p>
+The plan of Cavendish's house above shows an outbuilding with east-west alignment.
+</p>
+
+<p>
+The plan is from <a href="https://www.jstor.org/stable/3152241?read-now=1&amp;refreqid=excelsior%3A6494d878a67208a894db20fbadf71a13&amp;seq=9">Mr. Cavendish Weighs the World
+Russell McCormmach</a>.
+</p>
+
+<p>
+McCormmach writes (p.362),
+</p>
+
+<blockquote>
+<p>
+There is reason to think that the world was weighed not in the house but in a separate building. In his paper Cavendish referred to the magnetic orientation of the arm of his apparatus. A plan of Clapham Common made twenty-nine years after Cavendish’s experiment reveals a separate building aligned with respect to magnetic north-south.
+</p>
+</blockquote>
+
+<p>
+The caption reads:
+</p>
+
+<blockquote>
+<p>
+Figure 7. Plan of Cavendish’s Clapham Property. This detail from “Batten’s Plan of Clapham” of 1827 shows Cavendish’s house seventeen years after his death and twenty-nine years after his experiment on the density of the earth. To the right of the house is an outbuilding about 58 by 26 feet, [17.67 by 7.92 meters] the long dimension of which is oriented in the east-west direction. P.F. Titchmarsh, “The Michell-Cavendish Experiment,” The School Science Review 162 (March 1966): 321-22.
+</p>
+</blockquote>
+
+<p>
+[It looks like McCormmach made a mistake regarding the alignment of the house. In the text he writes, "a plan of Clapham Common made twenty-nine years after Cavendish’s experiment reveals a separate building aligned with respect to magnetic north-south." But in the caption he writes, "to the right of the house is an outbuilding about 58 by 26 feet, the long dimension of which is oriented in the east-west direction." I believe the caption is correct.]
+</p>
+
+<p>
+But there is a problem with the dimensions of the outhouse. In the cross section of the experiment, the building has dimensions of no more than 3.5 meters. 
+</p>
+
+
+<div id="orgc8cdd66" class="figure">
+<p><img src="file:///Users/a/org/img/cavendish-image.jpeg" alt="cavendish-image.jpeg" />
+</p>
+</div>
+
+<p>
+The dimensions of the outhouse do not match the dimensions Cavendish gave in his article. The building indicated in the map is far too big.
+</p>
+
+<p>
+Cavendish clearly indicates in his article that his cross section is done to scale (p.473):
+</p>
+
+<blockquote>
+<p>
+In these two figures, the different parts are drawn nearly in the proper proportion to each other, and on a scale of one to thirteen.
+</p>
+</blockquote>
+
+<p>
+In my printout of the cross section, the building measures, wall to wall, 317 mm. I multiply this by 11 (not by 13 as Cavendish says) and the long side of the building turns out to be about 3.5 meters. Not knowing the scale of the map showing the outhouse I cannot confirm that the long side of the outhouse is over 17 meters.
+</p>
+</div>
+
+<div id="outline-container-org855c303" class="outline-3">
+<h3 id="org855c303">Another map of Clapham Common showing Cavendish's house (1877)</h3>
+<div class="outline-text-3" id="text-org855c303">
+<p>
+(Shared by <a href="https://hsm.stackexchange.com/a/14407/16575">njuffa</a>):
+</p>
+
+
+<div id="org1c37180" class="figure">
+<p><img src="file:///Users/a/org/img/Lambeth-map.png" alt="Lambeth-map.png" />
+</p>
+</div>
+
+<p>
+It would have been nice to know the scale of this map to calculate the size of the house. Unfortunately, they printed "Cavendish House" right on the garden so we do not see what is on the garden. This map is from 79 years after the experiment.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-01 Sun 20:25</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
