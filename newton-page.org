@@ -1,0 +1,9 @@
+#+SETUPFILE: ~/.emacs.d/org-templates/level-0.org
+
+* Articles on Newton
+
+- [[file:newton-def-5--01.org][Newton's Definition 5]]  
+
+- [[file:ilkeler-newton.org][Newton'un yörünge hesapları]]
+
+- [[file:newton-guc-sayfa.org][Newtoncu çekim gücü]]
