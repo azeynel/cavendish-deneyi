@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-02 Mon 09:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org3b7bc5a" class="outline-2">
+<h2 id="org3b7bc5a">Linkler</h2>
+<div class="outline-text-2" id="text-org3b7bc5a">
+<ol class="org-ol">
+<li>Physics Stackexchange (Cavendish experiment questions)
+<ol class="org-ol">
+<li><a href="https://physics.stackexchange.com/questions/226085/question-about-cavendish-experiment">Question about Cavendish experiment</a>
+<ul class="org-ul">
+<li>I got a question. In Cavendish experiment was used lead in both of spheres. Can we repeat that experiment with balls made from stone or anything else. Because lead could be a byproduct of radioactive decay and by that emit ionizing radiation. And by ionizing lead it can create positive charge and to be attracted.</li>
+<li>What would a video prove? The Cavendish experiment is only being done in high schools and on the college level these days, there are far more precise experiments of its kind. Some of the best versions are being done at the University of Washington: npl.washington.edu/eotwash – CuriousOne Dec 28, 2015 at 15:17</li>
+<li>What, exactly, did you want? The Cavendish experiment is pretty much obsolete except as a high school or college level physics lab experiment. Even there it's controlled for charge, even if you didn't notice. – CuriousOne Dec 26, 2015 at 21:59</li>
+</ul></li>
+<li><a href="https://physics.stackexchange.com/questions/187844/the-torsion-balance-of-the-cavendish-experiment">the torsion balance of the Cavendish experiment</a>
+<ul class="org-ul">
+<li>I need to perform the Cavendish experiment and build a torsion balance but I can't find metallic spheres with enought mass so I was thinking about using a pair of dumbbells instead. My question is if that would be convinient because of the lack of symmetry and what changes would I need to use for the calculations</li>
+</ul></li>
+<li><a href="https://physics.stackexchange.com/questions/686874/moment-of-inertia-of-the-cavendish-balance">Moment of inertia of the Cavendish balance</a>
+<ul class="org-ul">
+<li>Ben sormuşum</li>
+</ul></li>
+<li><a href="https://physics.stackexchange.com/questions/526719/newtonian-gravity-in-small-objects-and-cavendish-experiment">Newtonian gravity in small objects and Cavendish Experiment</a>
+<ul class="org-ul">
+<li>Cavendish used two lead spheres weighing 158kg as his large masses, and even though gravity is a weak force this mass is large enough to produce a detectable force. But suppose the masses were 158g, 158mg or 158𝜇g. At some point the gravitational force is going to get too small to be measured, and if we cannot measure the force we cannot know for certain that it obeys Newton's equation.</li>
+<li>However barring the aforementioned string theorists I know of no physicists who seriously believe Newton's law fails for small masses.</li>
+</ul></li>
+<li><a href="https://physics.stackexchange.com/questions/526088/why-was-the-metal-lead-used-in-the-cavendish-experiment">Why was the metal lead used in the Cavendish experiment?</a>
+<ul class="org-ul">
+<li>IIRC Cavendish did use gold for the small weights on the torsion balance. However, even for a wealthy man like Cavendish, several hundred kilos of gold for the big weights was economically infeasible. – nigel222 Jan 21, 2020 at 15:19</li>
+<li>nigel222 iyi sallamış. Yorum bırakcaktım ama 50 reputation olması lazımmış bende 44 var</li>
+</ul></li>
+<li><a href="https://physics.stackexchange.com/questions/135966/what-is-the-simplest-way-to-perform-a-cavendish-experiment">What is the simplest way to perform a Cavendish experiment?</a>
+<ul class="org-ul">
+<li>İlginç linkler var</li>
+</ul></li>
+<li><a href="https://physics.stackexchange.com/questions/670418/has-the-cavendish-experiment-ever-been-conducted-in-zero-gravity">Has the Cavendish Experiment ever been Conducted in Zero Gravity?</a>
+<ul class="org-ul">
+<li>I do not know if the Cavendish experiment has been duplicated in free-fall, but since the rotational plane of the weights originally used by Cavendish was horizontal, and the weights themselves were vanishingly small compared to the earth, you'd get the correct result even in the presence of gravity.</li>
+</ul></li>
+<li><a href="https://physics.stackexchange.com/questions/210511/inaccuracy-at-measuring-gravity-constant-with-cavendish-experiment">Inaccuracy at measuring gravity constant with Cavendish experiment</a>
+<ul class="org-ul">
+<li>İlginç bir takım hesaplar var</li>
+</ul></li>
+<li><a href="https://physics.stackexchange.com/questions/305462/trouble-deriving-the-gravitational-force-of-opposing-mass-in-cavendish-experimen">Trouble deriving the gravitational force of opposing mass in cavendish experiment</a>
+<ul class="org-ul">
+<li>I'm currently working on doing the cavendish experiment to determine G and I'm done with most derivations so have reached the point of corrections. One of the major corrections I have to make has to do with the gravitational force supplied by the other mass. Image for clarification:</li>
+</ul></li>
+<li><a href="https://physics.stackexchange.com/questions/457706/how-did-the-cavendish-experiment-to-measure-g-work">How did the Cavendish experiment to measure 𝐺 work?</a>
+<ul class="org-ul">
+<li>Çok ilginç ama bütün bunları okumaya kalksam yıllar geçer!</li>
+</ul></li>
+<li><a href="https://physics.stackexchange.com/questions/556589/the-cavendish-experiment">The Cavendish Experiment</a>
+<ul class="org-ul">
+<li>I do not get the idea that how does the torsion balance result in a damped oscillation. Two big and small masses separately attract each other. I naively think that after a while big and small masses stick together, which stops the motion. But it is wrong. Where is my mistake?</li>
+</ul></li>
+<li></li>
+</ol></li>
+<li>YÖRÜNGE
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Low_Earth_orbit">Low earth orbit</a> (Wikipedia)</li>
+</ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Cavendish_experiment">Cavendish Deneyi</a> (Wikipedia)
+<ul class="org-ul">
+<li>Ne yazık ki, işgüzar birileri deneyin gerçek resmini kaldırıp uyduruk modern bir resim koymuşlar</li>
+<li>Onun dışında deney hakkında iyi bir kaynak</li>
+</ul></li>
+<li><a href="https://www.compadre.org/nexusph/course/The_Cavendish_Experiment_-_weighing_the_earth">The Cavendish Experiment - weighing the earth</a>
+<ul class="org-ul">
+<li>Testing universal gravitation</li>
+<li>In 1797, British scientist Henry Cavendish set up a precise experiment to measure gravity. Conceptually, the experiment looked like the figure at the right.</li>
+</ul></li>
+<li><a href="https://wiki.tfes.org/Cavendish_Experiment">Flat Earth Society - Cavendish Experiment</a>
+<ul class="org-ul">
+<li>Cavendish deneyinden ve G'nin ölçülmesinden şüphe eden bir yazı.</li>
+<li>İlginç referanslar var</li>
+<li>„The Cavendish Experiment, performed in 1797–1798 by British scientist Henry Cavendish, was alleged to be the first experiment to measure the force of gravity between masses in the laboratory. The results of the experiment were used to determine the masses of the Earth and celestial bodies. The Cavendish Experiment is often held up as evidence for the universal attraction of mass, and as a proof for gravity. The experiment involves two spherical lead balls attached to a torsion balance, which is alleged to detect the faint gravitational attraction between the masses.</li>
+<li>„When institutions have reproduced this experiment with modern methods involving lasers and instruments of the highest precision, however, the detection of gravity has been fraught with difficulty, giving erratic results. Oddly, modern repetitions of the Cavendish Experiment tell us that the readings deviate over ten fold from their expected uncertainties when observed at different times.1, 2 It is admitted that the experiment is dominated by effects which are not gravity.3, 4</li>
+</ul></li>
+<li><a href="https://www.school-for-champions.com/science/gravitation_cavendish_experiment.htm#.YYfIG71Bw3Q">Cavendish Experiment to Measure Gravitational Constant</a>
+<ul class="org-ul">
+<li>Benim zamınmdan beri çok değişmiş, Cavendish deneyi ile ilgili çok kaynak var.</li>
+<li>Hepsi de G ile ilişkilendiriyor</li>
+<li>Cavendish G'yi ölçmedi ama sonradan ölçlüdü diyorlar</li>
+<li>„The Cavendish Experiment is a clever way to measure the Gravitational Constant that is stated in the Universal Gravitation Equation. The constant was not determined until many years after Isaac Newton first formulated his equation.</li>
+</ul></li>
+<li><a href="https://www.npl.washington.edu/eotwash/gravitational-constant">Gravitational Constant</a>
+<ul class="org-ul">
+<li>Eöt-Wash Group, Büyük G'yi ölçmek için deneyler yapıyorlar</li>
+<li>Burada da kısaca Cavendish deneyinden bahsetmişler.</li>
+<li>Ne güzel bir masal anlatmışlar:</li>
+<li>In 1686 Isaac Newton realized that the motion of the planets and the moon as well as that of a falling apple could be explained by his Law of Universal Gravitation, which states that any two objects attract each other with a force equal to the product of their masses divided by the square of their separation times a constant of proportionality. Newton estimated this constant of proportionality, often called Big G, perhaps from the gravitational acceleration of the falling apple and an inspired guess for the average density of the Earth. However, more than 100 years elapsed before G was first measured in the laboratory; in 1798 Cavendish and co-workers obtained a value accurate to about 1%. When asked why he was measuring G, Cavendish replied that he was "weighing the Earth"; once G is known the mass of the Earth can be obtained from the 9.8 m/s2 gravitational acceleration on the Earth surface and the Sun's mass can be obtained from the size and period of the Earth orbit around the sun. Early in this century Albert Einstein developed his theory of gravity called General Relativity in which the gravitational attraction is explained as a result of the curvature of space-time. This curvature is proportional to Big G.</li>
+<li>Newton Big G dedikleri bu "sabitin" değerini tahmin etmiş diyorlar. Newton'un, kendinden bir asır sonra uydurulmuş bu G denen "birimden" haberi yoktu ki değerini tahmin etsin.</li>
+<li>Ama fizikçiler tarihi kendi işlerine gelecek şekilde yazmayı çok severler.</li>
+</ul></li>
+<li><a href="http://web.archive.org/web/20060429211238/http://web.mit.edu/8.251/www/handouts/hoyle.pdf">The weight of expectation</a>
+<ul class="org-ul">
+<li>C.D. Hoyle diye bir fizikçi Cavendish deneyinde sicim teorisine delil buluyor!</li>
+<li>2003'ten, yani eski bir yazı, sicim teorisinin popüyer olduğu zamanlardan kalma.</li>
+</ul></li>
+<li><a href="http://large.stanford.edu/courses/2007/ph210/chang1/">Weighing the Earth in 1798: The Cavendish Experiment</a>
+<ul class="org-ul">
+<li>Cavendish'in makalesini incelemiş. Faydalı olabilir.</li>
+</ul></li>
+<li><a href="https://tr.wikipeluangusaha.com/wiki/Cavendish_experiment">Cavendish deneyi</a>
+<ul class="org-ul">
+<li>Spam sitesine benziyor ama hesaplar var içinde, bir yerden tercüme galiba</li>
+<li>wikipeluangusaha.com diye bir site!</li>
+</ul></li>
+<li><a href="https://royalsocietypublishing.org/doi/10.1098/rstl.1798.0022">XXI. Experiments to determine the density of the earth</a>
+<ul class="org-ul">
+<li>Royal Society site.</li>
+<li>Original paper, but poor quality PDF.</li>
+</ul></li>
+<li><a href="http://bennettscienceblog.blogspot.com/2018/06/cavendish-gravity-experiment-part-2.html">Get to Know the Math Behind the Cavendish Gravity Experiment</a>
+<ul class="org-ul">
+<li>Cavendish deneyini tekrarlamak için çalışan birisi</li>
+<li>Aslına uygun olarak yapmıyor ama olsun, iyi bilgiler var</li>
+</ul></li>
+<li><a href="https://hextobinary.com/unit/density/from/water/to/grpin3">How many Grain/Cubic Inch are in a Water Density?</a>
+<ul class="org-ul">
+<li>Cavendish <i>Memoirs</i> sayfa 90'da Cavendish'in giriştiği ağırlıkları suyun hacmi ile anlatma işini açıklayan bilgiler var</li>
+<li>H2O suyun yoğunluğudur diyor. Yani kimya da yoğunlukla mı ilgili??</li>
+</ul></li>
+<li><a href="https://www.britannica.com/science/grain-unit-of-weight">Grain unit of weight</a>
+<ul class="org-ul">
+<li>Cavendish ağırlık birimi olarak kullandığı <i>grains</i> ile ilgili</li>
+<li>« grain, unit of weight equal to 0.065 gram »</li>
+</ul></li>
+<li><a href="https://catalogue.bnf.fr/index.do">BnF Catalogue Général</a>
+<ul class="org-ul">
+<li>COMPTES RENDU eski sayıları bulunamıyorsa, ne işe yarıyor ki, Biblioteque National?</li>
+</ul></li>
+<li><a href="https://babel.hathitrust.org/cgi/pt?id=mdp.39015075985450&amp;view=1up&amp;seq=1&amp;skin=2021">University of Michigan Comptes Rendu</a></li>
+<li><a href="https://www.scienceandsociety.co.uk/results.asp?image=10314095">Cavendish Deneyi Maketi</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-02 Mon 09:19</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
