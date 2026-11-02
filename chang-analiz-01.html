@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2022-09-23 Fri 17:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="/css/worg-classic-new.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="navbar"> <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="/iletisim.html">Contact</a></li>
+  <li><a href="/hakkinda.html">About</a></li>
+  <li><a href="/the-book.html">Work In Progress</a></li>
+</ul>
+<hr>
+</div>
+</div>
+<div id="content" class="content">
+
+<div id="outline-container-org7d63644" class="outline-2">
+<h2 id="org7d63644">Weighing the Earth in 1798: The Cavendish Experiment, Victoria Chang</h2>
+<div class="outline-text-2" id="text-org7d63644">
+<ol class="org-ol">
+<li>Cavendish dünyayı tartmış&#x2026; bir de böyle yorumlayanlar var.</li>
+<li>Özetleyerek tercüme ediyorum.</li>
+<li>Cavendish, bir burulmalı sarkacın koluna astığı kurşun toplarla, onların yakınına getirdiği daha ağır kurşun gülleler arasındaki "Newtoncu yerçekimsel çekim gücü"nü ölçerek dünyanın yoğunluğunu hesaplıyor.</li>
+<li>Cavendish'in Newtoncu yerçekimsel çekim gücünü gözlemlediği ve ölçtüğü doğru mu? doğru değil. Burada bir aldatmaca var.</li>
+<li>Bu Newtoncu aldatmacanın, Cavendish'in zamanında bile tamamen yerleşmiş olduğunu anlıyoruz. Astronomi ve fizik alanında çalışan insanlar zaten "Newtoncu çekim gücü gök cisimleri arasında şüphe götürmez bir şekilde ispatlanmıştı ama yeryüzünde, küçük ağırlıklar ve kısa mesafeler için gözlemlenmemişti" diyorlardı, yani kimse Newtoncu güç var mı yok mu diye sormuyordu, herkes Newtoncu gücün bütün evreni doldurduğunu varsayıyorlardı.</li>
+<li>Fakat Newtoncu gücün varlığı gök cisimleri için de ispatlanmamıştı, gök cisimlerinin hareketlerini tanımlayan Kepler'in bulduğu orantıdır, ve ispatlanan Kepler'in orantısıdır, ama Newtoncular Kepler'in orantısını Newton'un ismi ile markalanmış birimler ile süsleyerek hesaplarını yaptıkları için Newton'un "ters kare çekim yasası" ispatlandı derler. Yani sorun bir dil sorunudur. Kelime cambazlığı ile yapılan bir aldatmaca vardır.</li>
+<li>Neyse Chang'ın makalesine geri dönelim.</li>
+<li>Cavendish yeryüzünde iki cisim arasında varolan Newtoncu çekim gücünü hesaplayarak, dünyanın kütlesini hesaplamış oldu, sonra da güneşin ve ayın kütlelerini hesapladı; böylece Newton'un yerçekimsel çekim gücünün evrensel olduğunu göstermiş oldu. Burada da fizikçiler "evrensel" kelimesini yozlaştırıyorlar ve gezegenler ve ay ve güneş için doğur olan bir şeyin bütün evren için doğru olduğu iddiasında bulunuyorlar. Newton dediyse evrenseldir tabii çünkü Newton bunları peygamberidir.</li>
+<li>Evet, Chang da burada yukarda bahsettiğimiz konudan bahsediyor. Cavendish'in zamanında Newtoncu yasalar gezegenlerin hareketlerini öngörebilmek için sıkça kullanılıyordu, diyor. Kullanılan Kepler Kuralıdır, Newton'un yasaları falan değildir, bu aldatmacayı düzeltme şansımız olabilir mi? Olamaz. Hiç zannetmiyorum.</li>
+<li>Cavendish'in de dediği gibi bu deneyin önemi küçük cisimler arasında varolan Newtoncu çekim gücünü ölçmeyi mümkün kılmasıdır. Böylece "ters kare yasasının" gök cisimlerinde olduğu gibi, laboratuar boyutunda objeler arasında da geçerli olduğunu göstermesidir.</li>
+<li>Chang "Newton'un evrensel yerçekimsel çekim gücü sabiti" \(G\)'den de bahsediyor.</li>
+<li>Cavendish'in sonuçlarını kullanarak yerçekimsel çekim gücü sabiti \(G\)'yi hesaplayabiliriz. Zaten fizikçiler Cavendish deneyini \(G\) sabitinin ilk deneysel ölçümü olarak tanımlamışlardır, tabii Cavendish \(G\)'yi ölçmemiştir, böyle bir amacı da yoktur. Cavendish'in \(G\) diye bir birimden haberi yoktu çünkü \(G\) henüz tanımlanmamıştı. Cavendish'in \(G\)'yi ölçtüğü fizikçilerin uydurdukları bir yalan ve tarihte yaptıkları bir tahriftir. Geriye dönük bir Newtoncu fizik tarihi yazma çabasıdır. Tarihin başlangıcından beri bütün bilimlerin Newton denen zirveye ulaşmak için birer hazırlık olduğunu ve Newton'un yapılmış yapılacak bütün buluşları yaptığı bir tarih yazma çabasıdır. Çünkü Newtonculuk bir tarikattır, bir dindir.</li>
+<li>Cavendish denklem kullanmaz, bütün hesaplar oranlarla yapılmıştır, bu sebepten orantı sabitleri kullanılmaz, diyor Chang. "Orantı sabiti" denen şey fizikçilerin uydurduğu bir şeydir ve fizik denkleminin daha detaylı olarak incelemek ve nasıl bir sahtekarlık aleti olduğunu anlamak gerekmektedir.</li>
+<li>Chang, Cavendish zamanında standart birimler yoktu, diyor. Aslında, vardı, çünkü Cavendish, saniye, inch, foot ve grains gibi standart birimler kullanıyor. Fizik merkezli yazan Chang'ın demek istediği, henuz Newton'un kutsal adı ile markalanmış fizik birimlerinin henüz tanımlanmamış olmasıydı. Newton'un kutsal adı ile tanımlanmış bir güç birimi yoktu mesela.</li>
+<li>Fizikçiler 19. yüzyılda \(G\)'yi Newtoncu marka terimlerin ve etiketlerin uyuşmayan birimlerini dönüştürüy uyumlu hale getirsin diye tanımladıkları \(G\) henüz yoktu.</li>
+<li>Hook'un yasasından bahsediyor. Simple harmonic motion. Yatay burulmalı sarkaçta da geri döndürücü güç kolun döndüğü açıya orantılı olduğu için salınım simple harmonic motion şeklindedir.</li>
+<li>Chang deneyin basit bir analizini sunacağını söylüyor ama Cavendish'in analizini tam olarak takip etmiyor, yer yer Cavendish'e başvuruyor, daha çok modern analizi tekrarlıyor.</li>
+<li>Chang burulmalı sarkacın Hook'un yasasına uyduğunu söyleyerek başlıyor.</li>
+<li>Burulmalı sarkaç, Hook'un yasası için kullandığımız, bir yaya asılmış kütleye çok benzer. Hook'un yasasını</li>
+</ol>
+
+\begin{equation*}\tau = -k\theta\end{equation*}
+
+<p>
+şeklinde yazabiliriz.
+</p>
+
+<ol class="org-ol">
+<li value="20">\(\tau\) = dönme momenti (torque); döndürme momenti, sıkıştırmak, bükmek&#x2026; gibi anlamları varmış.</li>
+<li>Chang, "restoring force" demiyor "restoring torque" diyor. Ne fark var arada?</li>
+<li>Yay tarafından uygulanan geri döndürücü moment&#x2026; Kolun dönüşüne de "açısal yer değiştirme" diyor. \(k\) de yay sabiti oluyor.</li>
+<li>Yani, fizikçe laf kalabılığı arasında söylemek istediği, telin sertliği kolun döndüğü açı ile düz orantılıdır. Açı arttıkça telin sertliği artmaktadır. \(k\) da telin sertliğinin maksimum değeridir.</li>
+<li>Burulmalı sistemlerde kütlenin karşılığı eylemsizlik momenti \(I\)'dır ve salınım dönemi \(T\),</li>
+</ol>
+
+\begin{equation*}T=2\pi \sqrt{\frac{I}{k}}\end{equation*}
+
+<p>
+ilişkisi ile verilir.
+</p>
+
+<ol class="org-ol">
+<li value="25">Cavendish bu ilişkiyi daha basit bir şekilde,</li>
+</ol>
+
+\begin{equation*}\frac{t^2}{T^2}=\frac{l}{L}\end{equation*}
+
+<p>
+olarak yazmıyor mu?
+</p>
+
+<ol class="org-ol">
+<li value="26">resonant frequency = çınlanım sıklığı</li>
+<li>Ne demekse, sarkacın doğal döneminden bahsediyor herhalde.</li>
+<li>Öyleyse, sarkacın doğal frekansı (resonant frequency) \(1/T\) ile sallanmaya bırakırsak, sertlik sabiti veya burulma sabiti \(k\)'yi bulabiliriz.</li>
+<li>Cavendish \(k\)'yi bulmuyor, aramıyor bile.</li>
+<li>Tamam, sarkacı doğal frekansı ile salındırdık ve burulma sabiti \(k\)'yi bulduk. Nasıl?</li>
+<li>Ondan sonra, bilinmeyen bir dış dönme momenti (torque) uygularsak, \(k\)'yi bulabiliriz. Sistemin dengeye gelmesini bekleyerak ve sonra dengenin açısal yer değiştirmesi \(\theta_{eq}\)'u, ölçerek, çünkü o zaman dış tork \(\theta_{eq}\)'a eşit olacaktır.</li>
+<li>\(\theta_{eq}\)&#x2026; ne bu?</li>
+<li>Dengeye gelecek dediği kol duracak mı? Duracaksa, durmuşsa, neyin açısını ölçüyor?</li>
+<li>Şimdi eylemsizlik momenti \(I\)'yı tanımlıyor. Burulmalı sarkacın eylemsizlik momenti kütleleri \(m_b\) olan iki nokta kütleden ibarettir.</li>
+<li>Nokta kütleden bahsetmeden bir fizikçi konuşamaz zaten&#x2026;</li>
+<li>Kolun iki ucunda \(b\) etiketli iki top asılı. Eğer, \(W\) etiketli büyük toplar yoksa, sistemde dış tork yoktur ve açısal yer değiştirme sıfırdır.</li>
+<li>Bu gerçek bir varsayım değil. Deneyi yapmamış fizikçiler, kolun sabit durduğunu ve bu sabit noktanın denge noktası olduğunu hayal ediyorlar. Halbuki gerçek hayatta kol hiçbir zaman sabit durmuyor.</li>
+<li>Büyük ağırlıklar topların yakınına getirilnce küçük toplarla büyük ağırlıklar arasında (bilinmeyen) bir dış tork oluşacaktır. Bu tork çok küçüktür! Bu deneyin başarısı için telin sertlik sabiti \(k\) de küçük olmalıdır ki, toplar arasındaki çekim gücü yeteri kadar büyük olsun ve kol ölçülebilecek kadar dönsün. Daha uzun kolun dönüşünü ölçmek daha kolay olacaktır çünkü aynı açının yayı uzun kolda daha büyük olacaktır.</li>
+<li>Toplar ve ağırlıklar arasındaki çekimi belirleyen denklem (sistem dengede olduğu an)</li>
+</ol>
+
+\begin{equation*}\frac{G m_W m_b}{r_Wb^2} = \frac{k\theta_{eq}}{L}\end{equation*}
+
+<ol class="org-ol">
+<li value="40">Chang'ın dengede dediği \(\theta\)'nın maksimum olduğu nokta mı? Yoksa kolun sabit durduğu nokta mı? Belirsizlik var. Burada telin geri döndürücü gücü ile sözde Newtoncu çekim gücünün dengede olduğu uç noktadan bahsediyor sanki. Halbuki kolun tam geri döneceği uç noktada böyle bir denge durumu yok.</li>
+<li>\(r_Wb\) gibi gereksiz detaya giren bir terime gerek yok. \(r\)'nin \(b\) ve \(W\) topları arasındaki sözde Newtoncu çekim olduğunu biliyoruz, bunu aklımızda tutabiliriz.</li>
+</ol>
+
+\begin{equation*}
+\frac{G m_W m_b}{r^2} = 
+\frac{k\theta_{eq}}{L}
+\end{equation*}
+
+<ol class="org-ol">
+<li value="42">Zaten, sarkacın dönemi \(m_b\) ile ilgili değil, bu terim elenecek.</li>
+<li>\(L\) sarkaç kolunun uzunluğu. Yarısı olması gerekmez mi? Belki gerekmez.</li>
+<li>\(k\theta_{eq}/L\)&#x2026; nerden çıktı bu?</li>
+<li>Bu denklemde \(G\) hariç bütün değerleri biliyoruz, diyor Chang. Aslında \(G\)'yi de biliyoruz. Büyük ihtimal \(G\) Cavendish deneyinden bu şekilde tanımlanmış.</li>
+<li>Hangi dünyada geçerli bu denklem? Alice Newtoncu çekimler diyarında geçerli, ama Cavendish deneyi ile bir ilgisi yok çünkü Cavendish deneyinde böyle bir denge durumu yok.</li>
+<li>Peke, bu denklemde \(G\)'yi hesaplarsak ne çıkıyor? Eminim "doğru" değeri çıkıyordur, danışıklı dövüş çünkü zaten \(G\) bu denklem ile tanımlanmış, Boys'un makalesine bakmak lazım.</li>
+<li>Neyse devam edelim.</li>
+<li>Deneyin detayları. Resonant frequency nedir bakmam lazım.</li>
+<li>Sarkacın sabitlerini bir tablode veriyor.</li>
+<li>Analiz yöntemi. Cavendish ağırlıkları bir o tarafa bir bu tarafa getirerek kolun Newtoncu çekim gücü ile oynadığını görüyormuş. Deneyi incelerken buna bakacağız.</li>
+<li>"Equilibrium position" dediği kolun hareketsiz durduğu yer mi, yoksa kolun uç noktada tam geri dönmeden önce durduğu yer mi? İki anlamda da kullanıyor gibi.</li>
+<li>Cavendish, kolun salınım zamanını, yani dönemi, \(N\)'yi ölçüyor. Ve kolun ne kadar oynadığını ölçekte döndüğü dereceleri sayarak ifade ediyor buna da \(B\) demiş.</li>
+<li>Peki Cavendish ölçtüğü bu dönemden dünyanın yoğunluğunu nasıl hesaplamış?</li>
+<li>Bundan sonrası karışık, Cavendish'ten takip etmek daha iyi. Biraz daha devam edelim.</li>
+<li>Telin burulma sabiti \(k\)'yi belirlemek yerine Cavendish sarkacın salınımını, kolunun uzunluğu \(L/2\) olan bir dikey sarkacın salınımı ile modelliyor. \(L/2\) sarkaç kolunun yarısı. O zaman, yatay sarkacın salınım dönemi ya</li>
+</ol>
+
+\begin{equation*}T=2\pi \frac{L}{2g}\end{equation*}
+
+<p>
+veya,
+</p>
+
+\begin{equation*}T=2\pi \frac{I}{k}\end{equation*}
+
+<p>
+ile verilecektir.
+</p>
+
+<p>
+\(I=m \times l^2\)
+</p>
+
+<p>
+\(l\) = \(L/2\)
+</p>
+
+<p>
+\(m\) = sarkaca asılı top
+</p>
+
+<ol class="org-ol">
+<li value="56">Herneyse son iki denklemi eşitleyip \(\theta\) ile çarpıyormuş ve şöyle bir şey buluyormuş</li>
+</ol>
+
+\begin{equation*}\frac{F_\theta}{mg}= \theta l\end{equation*}
+
+<p>
+\(F_\theta = k\theta\), kolu \(\theta\) açısı kadar döndürmek için gerekli olan güç.
+</p>
+
+<ol class="org-ol">
+<li value="57">Cavendish'in makalesindeki \(A\) açısını \(\theta\) yapmış ve topun ağırlığı \(W_b\) yerine \(mg\) yazmış. Ama fikir aynı.</li>
+<li>En sonunda ağırlığın topu çeken gücü ile dünyanın topu çeken gücünü oranlıyor Cavendish, o ilişkiyi yazmış, son olarak onu kopyalıyorum:</li>
+</ol>
+
+\begin{align*}
+    \frac{F_W}{F_E} = \left [ \frac{\rho_E}{10.66 \;gm.\; cm^{-3}}\right ] \; \left [ \frac{d_E}{1 foot}\right ] \; \left [ \frac{6 \; inch}{8.85\; inch}\right ]
+\end{align*}
+
+<ol class="org-ol">
+<li value="59">Burada çekimden falan bahsediyorlar mı? Basit oranlar görüyorum burada. Mesafe ve hacım birimleri var, o kadar. Güç birimi göremiyorum.</li>
+<li>The End. Tatsız bir analizmiş. Vakit kaybı oldu.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2022-09-23 Fri 17:25</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2022-09-23 Fri 17:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="/css/worg-classic-new.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="navbar"> <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="/iletisim.html">Contact</a></li>
+  <li><a href="/hakkinda.html">About</a></li>
+  <li><a href="/the-book.html">Work In Progress</a></li>
+</ul>
+<hr>
+</div>
+</div>
+<div id="content" class="content">
+
+<div id="outline-container-org2e6aaf1" class="outline-2">
+<h2 id="org2e6aaf1">Cavendish analiz (18.1.22)</h2>
+<div class="outline-text-2" id="text-org2e6aaf1">
+<ol class="org-ol">
+<li>Cavendish'in analizi ile, analizin eleştirisini ayırmak gerekiyor belki de.</li>
+
+<li>Bu deneyde Cavendish iki şey ölçüyor, birisi sarkacın doğal dönemi, \(N\) diğeri kolun orta noktasının, Newtoncu çekim gücünün sonucu olarak, doğal noktasından kaydığı miktar olan \(B\) derece. Burada, \(B\) derece Cavendish'in sarkaç düzeneğine taktığı ve her derecesi 1/20 inch olan, cetvele göre ölçülüyor.</li>
+
+<li>Bu cetvel, kolun merkezinden 38.3 mesafede bulunuyor ve merkezle 1/766 radyanlık bir açı yapıyor.</li>
+
+<li>Cavendish deneyini dünyanın yoğunluğunu hesaplamak için yapıyor. Newtoncu çekim gücünü varsayıyor, bu deney Newtoncu çekim gücü var mı yok mu? sorusunu cevaplamak için yapılmıyor. Deneyin yapıldığı 18. yüzyılda çoktan Newtoncu tarikat kurulmuş ve çekim gücü Newton'un kutsal ismi ile özdeşleşmiş ve hiç gözlemlenmediği halde, kimsenin gözlemleneceğinden şüphesi yok.</li>
+
+<li>Cavendish'in deneylerinde, topları çektiği varsayılan ağırlıklar bir taraftan diğer tarafa geçirilince kol da ağırlığın gittiği yere doğru B derece kayıyor ve deneylerde bu kayma açık olarak görülüyor. Yani Cavendish'e göre Newtoncu çekim gücü de gözlemlenmiş oluyor.</li>
+
+<li>Ayrıca, Cavendish telin geri döndürücü gücü F(R) ile Newtoncu güç F(N)'yi eşitliyor. Yani, F(N) topları çekince, kol, F(R) altında doğal uç noktasına geliyor fakat o esnada Newtoncu güç F(N) devreye giriyor ve kolu B derece daha çekiyor. Daha doğrusu, kolun doğal uç noktasından öteye gitmesi, kolun orta noktasına B derece olarak yansıyor, çünkü Cavendish orta noktayı ölçüyor. Peki, F(N), sadece kol uç noktasına yaknı olduğu zaman mı devreye girip kolu çekiyor, neden devalmı çekmiyor?</li>
+
+<li>Newtoncu güç kolu doğal uç noktasının ötesine çekiyor fakat ondan sonra telin geri döndürücü gücüne karşı gelemiyor ve kol F(N)'nin etkisinden kurtulup salınım yapmaya geri dönüyor. Öteki uç noktaya gidiyor, sadece F(R)'nin etkisi altında, sonra, ağırlığa yakın uç noktaya gelince, tekrar F(N)'nin etki alanına giriyor ve uç noktasını aşıyor. Sonra F(N) bırakıyor ve salınım yeniden başlıyor. Bize anlatılan masal bu.</li>
+
+<li>Dünyanı yoğunluğu, \(B\) ve \(N\)'nin bulunduğu bu ifadeden hesaplanıyor,</li>
+</ol>
+
+\begin{equation*}
+D=\frac{N^2}{10,683 \,B}
+\end{equation*}
+
+<p>
+Burada aynı tel için, \(N\) sabit (ölçüm hatası dahilinde) çünkü sarkacın dönemi Newtoncu güç F(N)'den bağımsız, sadece telin geri döndürücü gücü F(R) ile belirleniyor.
+</p>
+
+<ol class="org-ol">
+<li value="9">Dünyanın dönemi bu \(B\) ile ters orantılı. \(B\) arttıkça dünyanın yoğunluğu da azalıyor.</li>
+
+<li>Newtoncu inanca göre, bir cismin çekim gücü ağırlığına ve yoğunluğuna oranlı olduğu için, burada \(B\) ile dünyanın yoğunluğu artmış oluyor. Gerçi burada topu çeken dünya değil, kurşun ağırlıklar. Öyleyse, bu deneyin, kurşun ağırlığın yoğunluğunu vermesi gerekmez mi? Evet, Cavendish, ağırlığın topu çekimi ile dünyanın topu çekimini oranladı ama dünyanın topu çekimi terime elendi.</li>
+
+<li>Peki, bu ifadeye göre, \(B\) arttıkça dünyanın yoğunluğunun azalması garip değil mi? Sanki, \(B\) arttıkça, yani çekim gücü arttıkça, yani Newtoncu jargon ile söylersek, kütle arttıkça, çekim arttığına göre, ve daha yoğun kütle daha çok çektiğine göre, \(B\) arttıkça, dünyanın yoğunluğunun da artması gerekir gibi geliyor bana.</li>
+
+<li>Cavendish analizi boyunca ağırlığın çekimi ile dünyanın çekimini oranlıyor. Cavendish için, ve Newtoncular için, topun ağırlığı demek dünyanın topu çekimi demek. Fakat, dünya ve ağırlıklar topu çekmiyorlar çünkü Cavendish ağırlıkların topun merkezinde bulunan bir matematiksel bir noktayı çektiğini söylüyor. Yani, sadece mesafe belirlemek için kullanılan bir nokta. Çünkü, top top olarak kalsa ve bir çapı olsa, ağırlığı olsa, o zaman, Newtoncu çekim formülleri çalışmayacak,  denklemler tutmayacak.</li>
+
+<li>Sarkaçla ve Newtoncu çekim gücü ile dünyanın yoğunuluğunu bağlayan şey</li>
+</ol>
+
+\begin{equation*}
+F(N) \propto \text{AĞIRLIK}
+\end{equation*}
+
+<p>
+ağırlık ilişkisi.
+</p>
+
+<ol class="org-ol">
+<li value="14">Ağırlık da</li>
+</ol>
+
+\begin{equation*}
+\text{AĞIRLIK} = \text{BİRİM HACİM} \times \text{YOĞUNLUK}
+\end{equation*}
+
+<p>
+olduğu için. Öyleyse, bir cisim ne kadar yoğun olursa, birim ağırlığı artmış olacak ve daha fazla çekecek. Bu çekimi ölçerek de yoğunluk bulunacak. 
+</p>
+
+<ol class="org-ol">
+<li value="15">Ama yoğunluğun \(B\) ile ters orantılı olması, işleri karıştırmıyor mu? Çekim arttıkça yoğunluğun artması lazım.</li>
+
+<li>Peki bu</li>
+</ol>
+
+\begin{equation*}
+\frac{N^2}{10,683\,B}
+\end{equation*}
+
+<p>
+gerçekte nedir?
+</p>
+
+<ol class="org-ol">
+<li value="17">\((Ağırlığın topu çektiği güç) : (Kolu 1 derece oynatacak güç) :: F(W) : F(1°) :: N^2 : 10,683\,B\)</li>
+
+<li>\(F(W) \equiv F(W)\) yani (Weight = Ağırlık) ve F(W) = AĞırlığın topu Newtoncu çekim gücü ile çektiği güç.</li>
+
+<li>Bir önceki adımda dünyanın topu çekim elendiği için, biz burada, kurşun ağırlığın topu çektiği güçler dünyanın yoğunluğunu hesaplamış oluyoruz.</li>
+
+<li>Dünyanın topu çekimi daha önce bu iki orantıda vardı,</li>
+</ol>
+
+\begin{equation*}
+\frac{\text{Topu 1° döndürmek için gerekli güç}}{\text{Topun ağırlığı (dünyanın topu çekimi)}}=\frac{1}{818\,N^2}
+\end{equation*}
+
+<p>
+ve
+</p>
+
+\begin{equation*}
+\frac{\text{Ağırlığın topu çekimi}}{\text{Topun ağırlığı (dünyanın topu çekimi)}}=\frac{1}{8,739,000\,D}
+\end{equation*}
+
+<p>
+Bu ikisini birbirine bölünce, dünyanın topu çekimi eleniyor. Peki, elenince, dünyanın topu çekiminin etkisi kayboluyor mu?
+</p>
+
+<ol class="org-ol">
+<li value="21">Belki, "dünyanın topu çekimi" eleniyor ama sayısal değeri kalıyor? Çünkü, Cavendish</li>
+</ol>
+
+\begin{equation*}
+\frac{F(R)}{W(B)}=\frac{\text{yay}}{\text{yarıçap}}
+\end{equation*}
+
+<p>
+yazdı ve (yay/yarıçap = 1/766 radyan) değişimini yaptı. Topun ağırlığı terimi elense bile bu sayılar kalıyor. Gerçi bu sarkaçla ilgili bir sayı, dünyanın çekimi ile ilgili bir sayı değil.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2022-09-23 Fri 17:25</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

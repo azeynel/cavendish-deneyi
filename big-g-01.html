@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2022-09-23 Fri 17:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="/css/worg-classic-new.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="navbar"> <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="/iletisim.html">Contact</a></li>
+  <li><a href="/hakkinda.html">About</a></li>
+  <li><a href="/the-book.html">Work In Progress</a></li>
+</ul>
+<hr>
+</div>
+</div>
+<div id="content" class="content">
+
+<div id="outline-container-orgdba5128" class="outline-2">
+<h2 id="orgdba5128">Computing Gravitational Constant G from Cavendish's data</h2>
+<div class="outline-text-2" id="text-orgdba5128">
+<ol class="org-ol">
+<li>I use this formula (From <a href="https://en.wikipedia.org/wiki/Cavendish_experiment#Derivation_of_G_and_the_Earth's_mass">Wikipedia</a>)</li>
+</ol>
+
+\begin{equation*}
+G = \frac{2\; \pi^2 \;L \;r^2 \;\theta}{M \;T^2}
+\end{equation*}
+
+<p>
+G = Gravitational constant
+</p>
+
+<p>
+L = Length of torsion balance (the distance between the centers of balls)
+</p>
+
+<p>
+r = The distance of attraction (between weights and balls)
+</p>
+
+<p>
+&theta; = Deflection of the arm from its rest position due to gravitational attraction
+</p>
+
+<p>
+M = Mass of attracting lead weight
+</p>
+
+<p>
+T = Natural period of oscillation of the balance
+</p>
+
+<ol class="org-ol">
+<li value="2">I take \(\theta\) and \(N\) from the 4th experiment, the rest are constants,</li>
+</ol>
+
+<p>
+L = 1.862 m
+</p>
+
+<p>
+r = 0.2248 m
+</p>
+
+<p>
+\(r^2\) = 0.05053 \(m^2\)
+</p>
+
+<p>
+\(\theta\) = 0.00806788 radians
+</p>
+
+<p>
+M = 158.04 kg
+</p>
+
+<p>
+T = 421 s
+</p>
+
+<p>
+\(T^2\) = 177241 \(s^2\)
+</p>
+
+<ol class="org-ol">
+<li value="3"><p>
+Cavendish gives the displacement of the arm due to attraction in terms of \(B\) which is the number of scale divisions. The scale is 38.3 inches away from the center. Each scale division is 0.050 inches. Therefore, each degree subtends an angle of 1/766 = 0.0013054 radians at the center.
+For this experiment,
+</p>
+
+<p>
+\(B\) = 6.18 and
+</p>
+
+<p>
+\(\theta\) = 6.18 * 1/766 = 0.008067 radians
+</p></li>
+
+<li>Substituuting in the numbers,</li>
+</ol>
+
+\begin{equation*}
+G = \frac{2 \times \pi^2 \times 1.836 \times 0.05053504 \times 0.00806788}{158.04 \times 177241} = 5.27501\times 10^{-10}
+\end{equation*}
+
+<p>
+This value of G computed from Cavendish's experimental data is 8 times bigger than the accepted value of \(G = 6.67430 \times 10^{-11}\)
+</p>
+</div>
+
+<div id="outline-container-org47e5a87" class="outline-3">
+<h3 id="org47e5a87">Notes</h3>
+<div class="outline-text-3" id="text-org47e5a87">
+<ol class="org-ol">
+<li>References are from <a href="https://royalsocietypublishing.org/doi/pdf/10.1098/rstl.1798.0022">Cavendish's article of 1798</a>.</li>
+
+<li>On page 509, Cavendish gives the distance of the ivory scale from the center of motion: "But the ivory scale at the end of the arm is 38.3 inches from the center of motion." On the same page he says that each division of the ivory scale is 1/20 of an inch, that is, 0.050 inch. By the radian rule, \(\theta = \frac{l}{r} = \frac{0.050}{38.3}= 0.0013054\).</li>
+
+<li>The distance between centers of ball (the length of the arm) is given on page 509 as 73.3 inches, which is, 1.862 meters.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org18d7cdd" class="outline-3">
+<h3 id="org18d7cdd">Table of values computed from Cavendish's data</h3>
+<div class="outline-text-3" id="text-org18d7cdd">
+<ol class="org-ol">
+<li>On the last column I divided the value of G computed from Cavendish's data (G<sub>cav</sub>) to the accepted value of G (G<sub>true</sub>).</li>
+<li>First 4 experiments were done  with a soft wire. These give a G about 4 times greater than the modern value.</li>
+<li>The rest of the experiments are done with a stiffer wire. These give a G about 8 times greater than the accepted value.</li>
+<li>But the density of the earth computed from soft wire and the stiffer wire give the same 5.5 value.</li>
+<li>So it seems that G is tied to the stiffness of the wire but not the density of the earth.</li>
+</ol>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Exqeriment</th>
+<th scope="col" class="org-right">B</th>
+<th scope="col" class="org-right">B in Radian</th>
+<th scope="col" class="org-right">N (sec)</th>
+<th scope="col" class="org-right">G<sub>Cav</sub></th>
+<th scope="col" class="org-right">G<sub>Cav</sub>/ G<sub>True</sub></th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">#1</td>
+<td class="org-right">14.1</td>
+<td class="org-right">0.0184</td>
+<td class="org-right">895</td>
+<td class="org-right">2.7E-10</td>
+<td class="org-right">4.0</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#2</td>
+<td class="org-right">15.45</td>
+<td class="org-right">0.0201</td>
+<td class="org-right">882</td>
+<td class="org-right">3.0E-10</td>
+<td class="org-right">4.5</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#3</td>
+<td class="org-right">15.22</td>
+<td class="org-right">0.0198</td>
+<td class="org-right">879</td>
+<td class="org-right">3.0-10</td>
+<td class="org-right">4.5</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#3</td>
+<td class="org-right">14.50</td>
+<td class="org-right">0.0189</td>
+<td class="org-right">894</td>
+<td class="org-right">2.7E-10</td>
+<td class="org-right">4.1</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">#4</td>
+<td class="org-right">6.18</td>
+<td class="org-right">0.0080</td>
+<td class="org-right">421</td>
+<td class="org-right">5.3E-10</td>
+<td class="org-right">7.9</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#4</td>
+<td class="org-right">5.92</td>
+<td class="org-right">0.0077</td>
+<td class="org-right">423</td>
+<td class="org-right">5.0E-10</td>
+<td class="org-right">7.5</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#5</td>
+<td class="org-right">5.90</td>
+<td class="org-right">0.0077</td>
+<td class="org-right">425</td>
+<td class="org-right">5.0E-10</td>
+<td class="org-right">7.4</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#5</td>
+<td class="org-right">5.98</td>
+<td class="org-right">0.0078</td>
+<td class="org-right">425</td>
+<td class="org-right">5.07E-10</td>
+<td class="org-right">7.5</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#7</td>
+<td class="org-right">3.15</td>
+<td class="org-right">0.0041</td>
+<td class="org-right">424</td>
+<td class="org-right">2.68E-10</td>
+<td class="org-right">3.9</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#9</td>
+<td class="org-right">6.32</td>
+<td class="org-right">0.0082</td>
+<td class="org-right">418</td>
+<td class="org-right">5.54E-10</td>
+<td class="org-right">8.2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#10</td>
+<td class="org-right">6.15</td>
+<td class="org-right">0.0080</td>
+<td class="org-right">419</td>
+<td class="org-right">5.37E-10</td>
+<td class="org-right">7.9</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#11</td>
+<td class="org-right">6.07</td>
+<td class="org-right">0.0079</td>
+<td class="org-right">421</td>
+<td class="org-right">5.25E-10</td>
+<td class="org-right">7.7</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#12</td>
+<td class="org-right">6.09</td>
+<td class="org-right">0.0079</td>
+<td class="org-right">423</td>
+<td class="org-right">5.22E-10</td>
+<td class="org-right">7.7</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#13</td>
+<td class="org-right">6.12</td>
+<td class="org-right">0.0079</td>
+<td class="org-right">426</td>
+<td class="org-right">5.17E-10</td>
+<td class="org-right">7.6</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#13</td>
+<td class="org-right">5.97</td>
+<td class="org-right">0.0077</td>
+<td class="org-right">427</td>
+<td class="org-right">5.02E-10</td>
+<td class="org-right">7.4</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#14</td>
+<td class="org-right">6.27</td>
+<td class="org-right">0.0081</td>
+<td class="org-right">426</td>
+<td class="org-right">5.30E-10</td>
+<td class="org-right">7.8</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#14</td>
+<td class="org-right">6.13</td>
+<td class="org-right">0.0080</td>
+<td class="org-right">426</td>
+<td class="org-right">5.18E-10</td>
+<td class="org-right">7.6</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#15</td>
+<td class="org-right">6.34</td>
+<td class="org-right">0.0082</td>
+<td class="org-right">427</td>
+<td class="org-right">5.33E-10</td>
+<td class="org-right">7.9</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#16</td>
+<td class="org-right">6.10</td>
+<td class="org-right">0.0079</td>
+<td class="org-right">436</td>
+<td class="org-right">4.92E-10</td>
+<td class="org-right">7.3</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#17</td>
+<td class="org-right">5.78</td>
+<td class="org-right">0.0075</td>
+<td class="org-right">422</td>
+<td class="org-right">4.97E-10</td>
+<td class="org-right">7.3</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">#17</td>
+<td class="org-right">5.64</td>
+<td class="org-right">0.0073</td>
+<td class="org-right">423</td>
+<td class="org-right">4.83E-10</td>
+<td class="org-right">7.1</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2022-09-23 Fri 17:25</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

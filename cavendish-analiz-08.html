@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2022-09-23 Fri 17:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="/css/worg-classic-new.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="navbar"> <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="/iletisim.html">Contact</a></li>
+  <li><a href="/hakkinda.html">About</a></li>
+  <li><a href="/the-book.html">Work In Progress</a></li>
+</ul>
+<hr>
+</div>
+</div>
+<div id="content" class="content">
+
+<div id="outline-container-org677b3b1" class="outline-2">
+<h2 id="org677b3b1">Cavendish tekrarı (27.12.21)</h2>
+<div class="outline-text-2" id="text-org677b3b1">
+<ol class="org-ol">
+<li>Cavendish ne diyor? Nasıl başlıyor? <a href="pdf/The_laws_of_gravitation;_memoirs_by_Newton,_Bouguer_and_Cavendish,_together_with_abstracts_of_other_important_memoirs_(IA_bub_gb_O58mAAAAMAAJ).pdf">Sayfa 88</a>. Kolu ve ağırlıkları tutan bakır çubukların ağırlıklarının olmadığını varsayacağım diyor. Cavendish bugün Newtoncuların tercih ettiği "kütle" kelimesini değil de "ağırlık" kelimesini kullanıyor. Sarkaç kolunun ve büyük ağırlıkları tutan bakır çubukların ağırlıkları olmadığı için de hiçbiri şeyi çekemiyorlar. Ve ağırlıklar da sadece en yakın topu çekiyorlar, başka bir şey üstüne çekim uygulamıyorlar. Böylece durumu basitleştirmiş oluyor. Gerekli düzeltmeleri sonra yapacağım diyor.</li>
+
+<li>Aslında, acaba Cavendish ağırlıklar toplara Newtoncu çekim gücünün uyguluyorlar mı diye sorsaymış daha iyi olurmuş. Ama Cavendish Newtoncu gücü varsayıyor, Newton'un otoritesine karşı çıkıp Newton'un kutsal gücünü sorgulamak bir Newtoncuya hiç yakışmazdı.</li>
+
+<li>Cavendish zaten ölçüm işini çok iyi biliyor, çağının en iyi deney yapan insanı. Tartmak ve öçmek işi Cavendish'ten soruluyor, mesela Royal Society'de aletlerin bakımını ve ayarlarını yapmaktan sorumlu kişi odur.</li>
+
+<li>Bu sarkaçla dünyanın yoğunluğunu hesaplamak için yapmamız gereken ilk iş, sarkaç kolunu çevirmek için gerekli olan gücü bulmaktır, diyor.</li>
+
+<li>Bu sarkaçta kolu çeviren bildiğimiz tek bir güç var o da telin geri döndürücü gücü, \(F_R\) (yani "restoring force"). Veya telin sertliği veya telin burulma ve bükülme sabiti. Kolun asılı olduğu incecik bir tel, ağırlıklar aşağıya doğru çektiği için bükülüyor ve bükülme de 1 metre uzunluğundaki kolu harektlendiriyor. Ve bu güç, kolun döndüğü açıya oranlı olduğu için de, sarkaç basit harmonik hareket ile salınıyor.</li>
+
+<li>Fakat Cavendish bir de "ağırlık" olarak adlandırdığı büyük güllerin sarkaç koluna asılı olan küçük topları çektiği bir Newtoncu güç \(F_N\) dile bir gücün sarkaç kolunu hareket ettirdiğini varsayıyor.</li>
+
+<li>Cavendish burada bir kelime oyunu yapıyor. Kolu çevirmek için gerekn gücü bulmak istediğini söylüyor yani kolu çeviren \(F_R\) gücünü bulacağını söylüyor ama Cavendish \(F_R = F_N\) diye iki gücü eşitlemiş ve sanki Newtoncu güç \(F_N\)'yi buluyormuş gibi anlatıyor. Ben şimdilik, \(F_R\) terimini kullanmaya devam edeceğim.</li>
+
+<li>Cavendish kolun dönmesi için toplara uygulanması gereken güçten bahsediyor, bu gücü de uygulayan \(F_R\) değil, \(F_N\). Daha en başından Cavendish açıkça söylemeden \(F_R = F_N\) diye bir gizli varsayım yapmış.</li>
+
+<li>Bu kolu döndüren güç de kendini sarkacın dönemi ile belli ediyormuş. Sarkacın dönemini ölçerek kolu döndüren gücün değerini bulabiliriz diyor.</li>
+
+<li>Kolu döndüren güç kendini sarkacın dönemi olarak belli ediyormuş.</li>
+
+<li>Yani güç frekansın karesine orantılı,</li>
+</ol>
+
+\begin{equation}
+ F_R \propto 1/T^2
+\end{equation}
+
+<ol class="org-ol">
+<li value="12">Cavendish bir de sarkaç kolunun uzunluğu ile dönemi arasında bulunan ilişkiyi kullanıyor, yani, sarkaç kolu dönemin karesine orantılıdır,</li>
+</ol>
+
+\begin{equation}
+ l \propto t^2
+\end{equation}
+
+<ol class="org-ol">
+<li value="13">Şimdi, Cavendish yatay burulmalı sarkacı bir saniye sarkacı ile ilişkilendiriyor. Saniye sarkacının kolunun uzunluğu \(L\) = 39.14.</li>
+
+<li>Yatay sarkaçla dikey saniye sarkacının geri döndürücü gücü aynı deği, çünkü telin sertliğini bilmiyoruz, onun için Cavendish yatay sarkacın da telinin sertliği öyle olsun ki, sarkaç sanki yerçekimi altında sallanıyor gibi sallansın diyor. Bu mümkün, çünkü, öyle bir tel seçilir ki, kolu \(l\) = 36.65 olan dikey bir sarkaçla aynı dönemde sallanabilir.</li>
+
+<li>Bu şartı da Cavendish şöyle ifade ediyor,</li>
+</ol>
+
+\begin{equation}
+\frac{F_R}{W_b} = \frac{\text{yay}}{\text{yarıçap}}
+\end{equation}
+
+<p>
+bu bildiğimiz sarkaç hareketi, bugün
+</p>
+
+\begin{equation}
+ F_R = mg \sin A
+\end{equation}
+
+<p>
+şeklinde yazılan.
+</p>
+
+<ol class="org-ol">
+<li value="16">Yatay sarkacın da yerçekimi altındaymış gibi salındığını varkayarsak o zaman \(l \propto t^2\) ilişkisini kullanabiliriz ve</li>
+</ol>
+
+\begin{equation}
+\frac{l}{L} = \frac{t^2}{T^2}
+\end{equation}
+
+<p>
+\(l\) = 36.65 inch = yatay sarkacın kolu
+</p>
+
+<p>
+\(L\) = 39.14 inch = saniye sarkacının kolu
+</p>
+
+<p>
+\(t\) yatay sarkacın dönemi
+</p>
+
+<p>
+\(T\) = 1 saniye = saniye sarkacının dönemi
+</p>
+
+<ol class="org-ol">
+<li value="17">Öyleyse, bu şartlar altında, saniye sarkacının dönemi,</li>
+</ol>
+
+\begin{equation}
+t^2 = \frac{36.65}{39.14} (\text{saniye})^2
+\end{equation}
+
+<p>
+olacaktır.
+</p>
+
+<ol class="org-ol">
+<li value="18">Herhangi bir tel sertliği için \(t\)'yi bulmak için de \(F'_R\) geri döndürücü gücü ile sallanan bir sarkaç hayal ediyoruz, o zaman, (1)'i kullanarak</li>
+</ol>
+
+\begin{equation}
+\frac{F'_R}{F_R} = \frac{t^2}{N^2}
+\end{equation}
+
+<p>
+veya,
+</p>
+
+\begin{equation}
+F'_R = F_R \frac{t^2}{N^2}
+\end{equation}
+
+<p>
+\(N\) = deneyde kullanılan telin geri döndürücü gücü ile sallanan sarkacın dönemi. Cavendish bu \(N\)'yi ölçüyor.
+</p>
+
+<ol class="org-ol">
+<li value="19">(3)'ten ve (5)'ten yararlanarak,</li>
+</ol>
+
+\begin{equation}
+F'_R = W_b \frac{\text{yay}}{\text{yarıçap}} \;\frac{36.65}{39.14} \;\frac{1}{N^2}
+\end{equation}
+
+<p>
+ilişkisini buluyoruz.
+</p>
+
+<ol class="org-ol">
+<li value="20">Cavendish bunu \(F_R\)'nin topun ağırlığına oranı olarak yazıyor,</li>
+</ol>
+
+\begin{equation}
+\frac{F'_R}{W_b} = \frac{\text{yay}}{\text{yarıçap}} \;\frac{36.65}{39.14} \;\frac{1}{N^2}
+\end{equation}
+
+<ol class="org-ol">
+<li value="21">Fakat, Cavendish kolun kaç derece döndüğünü ölçmesi lazım, bunun için de kolun ucuna bir ölçek takıyor. Bu ölçek, topların 1.65 inch önünde, merkezden 38.30 inch uzaklıkta bulunuyor. Her ölçek derecesi 1/20 inch. Cavendish radyan hesabı ile, (yani, 1/20 inch olan bir derecenin, 38.30 inch öteden göründüğü açı, yani 0.05/38.30 radyan), yani, 1/766 olarak hesaplıyor.</li>
+</ol>
+
+\begin{equation}
+0.05 \div 38.30 = 0.00130 = \frac{1}{766}
+\end{equation}
+
+<ol class="org-ol">
+<li value="22">Bu değeri, (1/766) (10)'daki yay/yarıçap'ın değeri olarak değiştiriyoruz ve</li>
+</ol>
+
+\begin{equation}
+\frac{F'_R}{W_b} = \frac{1}{766}\; \frac{36.65}{39.14} \;\frac{1}{N^2}
+\end{equation}
+
+<p>
+ilişkisini buluyoruz. Sayılar sadeleştirilince,
+</p>
+
+\begin{equation}
+\frac{F'_R}{W_b} = \frac{1}{818\,N^2}
+\end{equation}
+
+<p>
+ilişkisini buluyoruz.
+</p>
+
+<ol class="org-ol">
+<li value="23">Neymiş bu? Kolu bir ölçek derecesi döndürmek için gereken tel gücünün topun ağırlına oranı.</li>
+
+<li>Aslında biz \(F'_R\)'yi bulmuştuk, yani kolu bir ölçek derecesi döndürecek tel gücünü bulmuştuk ama Cavendish gizli olarak \(F_R = F_N\) varsayımını yaptığı için biz de \(F_R ==> F_N\) değişimini yapıyoruz,</li>
+</ol>
+
+\begin{equation}
+\frac{F_N}{W_b} = \frac{1}{818\,N^2}
+\end{equation}
+
+<ol class="org-ol">
+<li value="25">Öyleyse, Cavendish'in Newtoncu çekim gücünün büyüklüğünü, sayısal değerini bulduğunu farzedelim ve devam edelim. Fakat bir sorun daha var, (13)'de \(F_N\) ve \(W_b\)'nin oranı \(1/818N^2\) olarak gözüküyor veya \(F_N = W_b \times 1/818N^2\), yani topun ağırlığı sanki \(F_N\)'yi etkiliyor gibi duruyor, halbuki, sarkacın simetrisinden dolayı toplar ağırlıkları yokmuş gibi davranıyorlar ve ne gücü ne de dönemi etkiliyorlar. Aynı geri döndürücü güç için, topun ağırlığı 1 kg da olsa, 100 kg da olsa, kolu çevirmek için gerekli olan \(F_N\) gücü aynı olacaktır. Yani, aynı \(F_N\) kolu topun ağırlığından bağımsız olarak döndürecektir. Ama Cavendish'in bulduğu bu ilişki topun ağırlığı ile topu oynatan gücün orantılı olduğunu söylüyor.</li>
+
+<li>Topun ağırlığı arttıkça, kolu döndürmek için daha fazla güç gerekir diyor bu ifade ama zaten Cavendish kendisi biraz sonra bunu yalanlıyor çünkü zaten analizin sonunda topun ağırlığı terimi \(W_b\) eleniyor, çünkü topun ağırlığı ile dünyanın topu çekimi aynı şey. Ve ayrıca, daha önce Cavendish, ağırlığın topu çekişini hesaplarken topun ağırlığını hesaba katmıyor, ağırlığın, topun merkezinde olan bir birim maddeyi çektiğini söylüyor yani sonuç olarak \(W_b\) = 1 demiş oluyor. Günümüzde fizikçiler, kütlesi olmayan kütle "masslass mass" ve "test mass" yani test kütlesi diyerek bu elenecek dekoratif siyasi Newtoncu marka terimlere çekici isimler vermişler. Yani, topun ağırlığı \(W_b\) sadece Newton'un kutsal otoritesi zedelenmesin diye var, analizin sonuna gelindiğinde hiç acımadan eleniyor ve çöpe gidiyor. Madem topun ağırlığı sarkacın harketini etkilemiyor ve sonunda elenip gidiyor o zaman neden yazıyorsunuz ve bütün analiz boyunca taşıyorsunuz? Newton'un otoritesi öyle emrediyor da ondan.</li>
+
+<li>Newtoncular, güç gibi, kütle gibi kendi uydurdukları Newtoncu etiketleri sanki nicelikmiş gibi bize yutturmaya çalışıyorlar.</li>
+
+<li>Neyse, Cavendish'e geri dönelim. Cavendish ilk aşamada ağırlığın topu nasıl çektiğini hesaplıyor ve \(F_N / W_b = 1 / 818N^2\) ilişkisini buluyor.</li>
+
+<li>Şimdi ağırlığın topun üzerindeki çekimi ile dünyanın aynı top üzerindeki çekimini oranlayacak. Bunun için Cavendish'in bir şartı var, topların içinde bulundukları kasanın tam ortasında bulunduklarını varsayıyor. Burada bir hata yapılmış ve toplarla ağırlıkların merkezleri tam olarak aynı çizgide değilmiş, onun için Cavendish 0.9779 kat sayılı bir düzeltme uyguluyor ama bu o kadar küçük bir değer ki, şimdilik ben uygulamıyorum.</li>
+
+<li>O zaman şimdi, dünyanın yoğunluğunu arıyoruz ya, dünyayı işin içine bir şekilde katmamız gerekiyor, işte şimdi bunu yapıyoruz.</li>
+
+<li>(Ağırlığın topu çekimi : Dünyanın topu çekimi) oranını hesaplayacak. İlk olarak ağırlıkların ağırlığın suyu birim alarak veriyor. Daha sonra da Newton'un bilindik çekim gücü ilişkisini kullanarak içinde dünyanın yoğunluğu \(D\) olan bir ifade elde ediyor.</li>
+
+<li>Bir de (kütle = yoğunluk \(\times\) hacım) ilişkisini kullanıyor. Daha doğrusu (ağırlık = yoğunluk \(\times\) hacım) ilişkisini kullanıyor çünkü Cavendish kütle kavramını kullanmıyor.</li>
+
+<li>Cavendish burada ne yaptığını tam açıklamadığı için, 90. sayfadaki dipnotla devam ediyoruz.</li>
+
+<li>İlk önce Cavendish ağırlıkların ağırlığını "grains" birimi ile veriyor. Ağırlıklar, 2,439,000 grains ağırlığındaymış. "Grains"in nasıl bir ölçü olduğu önemli değil, çünkü Cavendish ağırlığı suyu birim alarak verecek.</li>
+
+<li>Cavendish ağırlıklarının çapı 1 foot olan bir su küresinin ağırlığının 10.64 katı olduğunu hesaplıyor.</li>
+
+<li>O zaman, ağırlığın 8.85 inch mesafede topun merkezinde bulunan bir birim maddeyi çekimi ile, aynı birim maddeyi su küresinin çekimi ile oranlıyor. Yani, birim maddeyi getirip su küresinin yüzeyine yerleştirdiğini hayal ediyoruz.</li>
+
+<li>Su küresinin yarıçapı 6 inch olduğu için</li>
+</ol>
+
+\begin{equation}
+\frac{F_{\text{weight}}}{F_{\text{water}}} = 10.64 \left ( \frac{6}{8.85} \right )^2
+\end{equation}
+
+<p>
+veya
+</p>
+
+\begin{equation}
+F_{\text{weight}} = F_{\text{water}} \; 10.64 \left ( \frac{6}{8.85} \right )^2
+\end{equation}
+
+<ol class="org-ol">
+<li value="38">Ağırlığın topu, su küresinin çekiminden \(10.64 (6/8.85)^2\) katı daha fazla bir güç ile çektiğini bulmuş olduk.</li>
+
+<li>Burada Newton formüllerini kullanıyoruz. Neydi bu Newton'un meşhur güç tanımı?</li>
+</ol>
+
+\begin{equation}
+F_N = \frac{G \times \text{(çeken kütle)} \times \text{(çekilen kütle)}}{(\text{aradaki mesafe})^2}
+\end{equation}
+
+<ol class="org-ol">
+<li value="40">Burada bir de</li>
+</ol>
+
+\begin{equation}
+\text{kütle} = \text{yoğunluk} \times \text{hacım} 
+\end{equation}
+
+<p>
+ilişkisini kullanacağız. Yani, dünyanın su küresi gibi tek düze (uniform), her noktada aynı yoğunluğu olduğunu varsaymış oluyoruz.
+</p>
+
+<ol class="org-ol">
+<li value="41">Ayrıca bu tanımları yapıyoruz:</li>
+</ol>
+
+<p>
+\(d\) = 1 = suyun yoğunluğu
+</p>
+
+<p>
+\(d'\) = dünyanın yoğunluğu
+</p>
+
+<p>
+\(D=d'/d\)
+</p>
+
+<p>
+\(m\) = topun kütlesi (ağırlığı) [elenen dekoratif terim]
+</p>
+
+<p>
+\(G\) = Yerçekimsel sabit [elenen dekoratif terim]
+</p>
+
+<ol class="org-ol">
+<li value="42">Topu çeken güllenin kütlesini 10.64 \(\times\) d olarak yazıyoruz. Yani, bu güllenin ağırlığının suyun yoğunluğunun 10.64 katı olduğunu bulmuştuk. Aradaki mesafenin de 8.85 inch olduğunu biliyoruz, öyleyse,</li>
+</ol>
+
+\begin{equation}
+\text{Ağırlığın topu çekimi} = \frac{G \times 10.64 \times d \times m}{(8.85)^2}
+\end{equation}
+
+<ol class="org-ol">
+<li value="43">Dünyanın çapı 41,800,000 feet ve küresel birim olarak dünyanın hacmi \((41,800,000)^3\) olarak yazıyoruz. Dünyanın yarıçapı da 6 \(\times\) 41,800,000 oluyor.</li>
+</ol>
+
+\begin{equation}
+\text{Dünyanın topu çekimi} = \frac{G \times (41,800,000)^3 \times d' \times m}{(6 \times 41,800,000)^2}
+\end{equation}
+
+<ol class="org-ol">
+<li value="44">Öyleyse,</li>
+</ol>
+
+\begin{equation}
+\frac{\text{Ağırlığın topu çekimi}}{\text{Dünyanın topu çekimi}} = \frac{10.64  \times \left ( \frac{6}{8.85}\right )^2}{41,800,000 \frac{d'}{d}}
+\end{equation}
+
+<p>
+ve sadeleştirdikten sonra,
+</p>
+
+\begin{equation}
+\frac{\text{Ağırlığın topu çekimi}}{\text{Dünyanın topu çekimi}} = \frac{1}{8,739,000\,D}
+\end{equation}
+
+<ol class="org-ol">
+<li value="45">Şu "6" faktörünün su küresinin yarıçapı iken (6 \(\times\) 41,800,000)'den gelmesi ilginç değil mi? Neden?</li>
+
+<li>Daha önce, kolu bir ölçek derecesi döndürmek için gerekli olan gücün \(1/818N^2\) olduğunu bulmuştuk.</li>
+</ol>
+
+<p>
+Şu oranları yazıyoruz:
+</p>
+
+\begin{equation}
+\frac{\text{Ağırlığın topu çekimi}}{\text{Dünyanın topu çekimi}} = \frac{1}{8,739,000\,D}\\
+\\
+\end{equation}
+
+\begin{equation}
+\frac{\text{Kolu bir ölçek derecesi döndüren güç}}{\text{Topun ağırlığı}} = \frac{1}{818\,N^2}
+\end{equation}
+
+<p>
+(23) ve (24)'ün oranını alarak ve (Dünyanın topu çekimi) ve (Topun ağırlığı) aynı şey olduğu için eleyerek,
+</p>
+
+\begin{equation}
+\frac{\text{Ağırlığın topu çekimi}}{\text{Kolu 1 cetvel derecesi döndüren güç}} = \frac{818\,N^2}{8,739,000\,D} = \frac{N^2}{10683\,D}
+\end{equation}
+
+<ol class="org-ol">
+<li value="47">Yukarda, \(1/8,739,000\,D\) oranını bulmuştuk. Cavendish bu oranı nasıl açıklıyor, şöyle diyor, "topu doğal pozisyonundan 1 ölçek derecesi döndürmek için gerekli olan gücün \(F_N/W_b = 1/818\,N^2\) olduğunu göstermiştik, diyor. Öyleyse, eğer dünyanın yoğunluğu suyun yoğunluğuna oranı \(D : 1\) ise, ağırlığın topu çekim gücü, \(F_N / W_b = 1 / 8,739,000\,D\) dir, diyor. Ve öyleyse bu çekim gücü kolu doğal pozisyonundan $818\,N<sup>2</sup>/8,739,000\,D oranında döndürecektir, veya, \(N^2/10683\,D\). Yani, Cavendish burada yukardaki (21)'den başlayıp (25)'e kadar giden işlemleri yapmış oluyor.</li>
+
+<li>Ve öyleyse ağırlıkları orta noktasından yakın noktaya taşıdığımızda kol \(B\) ölçek bölümü oynadıysa veya ağırlıkların bir yakın pozisyondan diğer yakın pozisyona değiştirdiğimizde \(2B\) ölçek derecesi dünyanın yoğunluğu \(D\), \(N^2 / 10683\,B\) olacaktır.</li>
+
+<li>İşte Cavendish dünyanın yoğunluğunu böyle hesaplıyor.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2022-09-23 Fri 17:25</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

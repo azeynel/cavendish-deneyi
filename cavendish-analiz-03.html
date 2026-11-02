@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2022-09-23 Fri 17:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="/css/worg-classic-new.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="navbar"> <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="/iletisim.html">Contact</a></li>
+  <li><a href="/hakkinda.html">About</a></li>
+  <li><a href="/the-book.html">Work In Progress</a></li>
+</ul>
+<hr>
+</div>
+</div>
+<div id="content" class="content">
+
+
+
+
+
+<div id="outline-container-org194f94e" class="outline-2">
+<h2 id="org194f94e">Cavendish'in analizi (s.89'dan devam)</h2>
+<div class="outline-text-2" id="text-org194f94e">
+<p>
+(daha önceki yazılar [[<a href="cavendish-analiz-01.html">cavendish-analiz-01.html</a>][1.yazı], [[<a href="cavendish-analiz-02.html">cavendish-analiz-02.html</a>][2. yazı]
+</p>
+
+<ol class="org-ol">
+<li>Bundan sonra yapmamız gereken, ağırlığın topa uyguladığı çekim ile, dünyanın topa uyguladığı çekimin orantısını bulmak. Topun kutunun tam ortasında olduğunu ve kenarlardan birine veya diğerine daha yakın olmadığını varsayıyoruz.</li>
+
+<li>Ağırlıklar toplara yaklaştırılınca, merkezleri kutunun orta çizgisinden 8.85 inç uzaklıktadır; fakat bir dikkatsizlik yüzünden, bu ağırlıkların asılı olduğu çubukların birbirleri arasındaki mesafe, topların merkezlerinin arasındaki mesafe ile aynı yapılmıştı, oysa biraz daha büyük olmalıydı.</li>
+
+<li>Bunun sonucu olarak, ağırlıklar toplara yaklaştırılınca, ağırlıkların merkezi topların merkezinin tam karşısına gelmiyordu.</li>
+
+<li>ve ağırlıkların topları çeken etkisi olması gerekenden daha az oluyordu.</li>
+
+<li value="5">\(\frac{8.85}{36.65}\)'in, sinüsü \(\frac{8.85}{36.65}\) olan açının kirişine üçüncü oranı (triplicate ratio) kadar&#x2026;</li>
+
+<li>veya, bu açının yarısının kosinüsünün yarıçap ile üç kat oranı kadar&#x2026;</li>
+
+<li>veya, 0.9779'un 1 ile oranı kadar. [Yani, 0.9779 gibi çok ufak bir düzeltmeye takmış kafayı Cavendish!]</li>
+
+<li>Her ağırlık 2,439,000 grains ağırlığındadır,</li>
+
+<li>dolayısıyla, 10.64 küresel feet suyun ağırlığı ile aynı ağırlıktadır,</li>
+
+<li>ve dolayısıyla,</li>
+
+<li>bu ağırlığın topun merkezinde bulunan bir parçacığa uygulayacağı gücün :</li>
+
+<li>çapı bir foot olan bir su küresinin yüzeyinde olan bir parçacığa uyguladığı güce oranı ::</li>
+
+<li>\(10.64 \times .9779 \times \left ( \frac{6}{8.85} \right )^2\)'ın : 1'e oranı ile aynı olacaktır.</li>
+
+<li><p>
+Bunu biraz basitleştirebiliriz belki:
+</p>
+
+<p>
+A = Ağırlığın topun merkezine uyguladığı güç
+B = Birim su küresinin yüzeyine uyguladığı güç
+C = \(10.64 \times .9779 \times \left ( \frac{6}{8.85} \right )^2\)
+</p>
+
+<p>
+Öyleyse,
+</p>
+
+<p>
+A : B :: C : 1
+</p>
+
+<p>
+demiş oluyor Cavendish.
+</p>
+
+<p>
+Dikkat edilirse, Cavendish topun merkezindeki bir parçacıktan ve aynı parcacığın birim su kütlesinin yüzeyinde olduğunu söylüyor, yani Newtoncu gücü zorla ve açıkça onaylatmak istiyor ama oranlarda sadece mesafeler var, oranlarda Newtoncu dekoratif kütle terimleri yok. Zaten, yazsanız bile bütün kütle terimleri eleniyor.
+</p>
+
+<p>
+Cavendish dünyanın yoğunluğunu suyun yoğunluğunu birim alarak verdiği için (dünyanın yoğunluğunun suyun 5 katı gibi olduğunu buluyor), kurşun ağırlıkların yoğunluğunu da suya oranlı olarak vermek istiyor. Zaten burada gecerli olan değerler mesafeler ve yoğunluk, kütle ve çekim değil.
+</p></li>
+
+<li value="14">Şimdi de, dipnottaki açıklamalara bakalım. İlk önce Cavendish'in küresel su birimi ile ilgili açıklamalar:</li>
+
+<li>Cavendish, "Her ağırlık 2,439,000 grains ağırlığındadır, dolayısıyla, 10.64 küresel feet suyun ağırlığı ile aynı ağırlıktadır," demişti.</li>
+
+<li>Yani, her kurşun ağırlık; hacmi 10.64 olan bir kübün içine yerleştirilebilen bir su küresi ile aynı ağırlıktadır,</li>
+
+<li>veya, eğer çapı 1 foot olan bir kürenin hacmini birim olarak alırsak, bu kürenin hacmini 10.64 sayısı ile ifade edebiliriz,</li>
+
+<li>ve, birim küresinin hacmi \(\frac{\pi}{6}\) cubic feet'tir.</li>
+
+<li>Çapı bir foot olan su küresinin, dolayısıyla, yarıçapı 6 inçtir.</li>
+
+<li>Cavendish'in Kirwan'ın bir cubic foot su küresinin 253.35 grains ağırlığında olduğu bilgisini kullandığını anlıyoruz.</li>
+
+<li>Bundan sonraki bölümde, Cavendish'in ağırlıkların topları çekimi ile dünyanın topları çekimini mukayese ederek dünyanın yoğunluğunu hesaplaması daha detaylı olarak açıklanıyor.</li>
+
+<li>Suyun yoğunluğunu \(d\), dünyanın yoğunluğunu \(d'\), topun kütlesini \(m\) ve \(G\)'yi de yerçekimsel sabit olarak isimlendirelim.</li>
+
+<li>Küresel birim ile ifade edersek dünyanın hacmi \((41800000)^3\) ve yarıçapı da \(6 \times 4180000\) inçtir.</li>
+
+<li><p>
+Eğer, \(A\) ve \(B\)'yi,
+</p>
+
+<p>
+\(A\) = Ağırlığın 8.85 mesafeden topa uyguladığı Newtoncu yerçekimsel çekim gücü ve
+</p>
+
+<p>
+\(B\) = Dünyanın topa uyguladığı Newtoncu yerçekimsel çekim gücü,
+</p>
+
+<p>
+olarak tanımlarsak,
+</p></li>
+</ol>
+
+
+\begin{align*}
+\require{cancel}
+A &= \frac{\text{G} \times 10.64 \times d \times m}{(8.85)^2}\\
+\\
+B &= {\frac{\text{G} \times (41,800,000)^3 \times d' \times m}{(6.41 \times 41,800,000)^2}}\\
+\\
+\frac{A}{B} &= \frac{\text{G}\times 10.64 \times d \times m}{(8.85)^2} \cdot \frac{(6\times 41,800,000)^2}{\text{G} \times (41,800,000)^3 \times d'\times m }\\
+\\
+\frac{A}{B} &= \left (\frac{6}{8.85}\right )^2 \times \frac{10.64}{41,800,000} \times \frac{d}{d'}\\
+\\
+\frac{A}{B} &=1.16998e^{-7}\frac{d}{d'}\\
+\\
+\frac{B}{A} &=\frac{1}{1.16998e^{-7}} = 8547088\times\frac{d'}{d}\\
+\\
+\frac{B}{A} &= 8547088 \cdot \frac{d'}{d}
+\end{align*}
+
+<ol class="org-ol">
+<li value="25"><p>
+Fakat, daha önce, kolu 1 ölçek derecesi döndürmek için gereken gücün topun ağırlığına oranını bulmuştuk, eğer \(C\) ve \(D\)'yi
+</p>
+
+<p>
+C = Kolu bir ölcek derecesi döndürmek için güç,
+</p>
+
+<p>
+D = Topun ağırlığı
+</p>
+
+<p>
+olarak tanımlarsak,
+</p></li>
+</ol>
+
+\begin{align*}
+    \frac{C}{D} = \frac{1}{818\cdot N^2}
+\end{align*}
+
+<p>
+olduğunu bulmuştuk.
+</p>
+
+<ol class="org-ol">
+<li value="26">Son iki orantıyı birbirleri ile bölersek,</li>
+</ol>
+
+\begin{align*}
+\frac{\text{ağırlığın topa uyguladığı çekim}}{\text{kolu bir derece döndüren güç}} = \frac{A}{B} \cdot \frac{D}{C} = (1.16998\times 10^{-7}) \cdot 818 \cdot N^2 \cdot \frac{d}{d'} \cdot 
+\end{align*}
+
+<ol class="org-ol">
+<li value="27">Son olarak,</li>
+</ol>
+
+\begin{align*}
+    = \text{kolun kaç ölçek derecesi döndüğü} \equiv \text{B derece}
+\end{align*}
+
+<p>
+ama bunun ne demek olduğunu anlayamadım.
+</p>
+
+<ol class="org-ol">
+<li value="28">Cavendish'in tercümesi ile devam:</li>
+
+<li>Daha önce; kolu doğal pozisyonundan bir ölçek derecesi oynatması için her topa uygulanması gereken gücün, topun ağırlığının, \(\frac{1}{818 \cdot N^2}\) katı kadar olduğunu göstermiştik, ve</li>
+
+<li>eğer dünyanın ortalama yoğunluğu : suyun yoğunluğu :: D : 1,</li>
+
+<li>ağırlığın top üzerindeki çekim gücü, topun ağırlığının \(\frac{1}{8,739,000 \cdot D}\) katı kadar olacaktır;</li>
+
+<li>ve dolayısıyla, ağırlığın çekim gücü kolu doğal pozisyonundan \(\frac{818 \cdot N^2}{8,739,000 \cdot D}\) ölçek derecesi, veya \(\frac{N^2}{10,683 \cdot D}\)  ölçek derecesi oynatabilecektir;</li>
+
+<li>ve dolayısıyla, ağırlıkları orta pozisyondan yakın pozisyona değiştirirken kolun B ölçek derecesi oynadığı gözlenmişse,</li>
+
+<li>veya, eğer, ağırlıkları bir yakın pozisyondan diğer yakın pozisyona getirken, kolun 2B ölçek derecesi kadar oynadığı görülürse,</li>
+
+<li>dünyanın yoğunluğu, veya, D, \(\frac{N^2}{10,683 \cdot B}\) olacaktır.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2022-09-23 Fri 17:25</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

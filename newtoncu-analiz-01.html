@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2021-11-12 Fri 16:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="/css/worg-classic-new.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="navbar"> <ul>
+  <li><a href="index.html">Home</a></li>
+ <li><a href="/iletisim.html">İletişim</a></li>
+  <li><a href="/hakkinda.html">Hakkında</a></li>
+</ul>
+<hr>
+</div>
+</div>
+<div id="content">
+
+<div id="outline-container-orgd31370b" class="outline-2">
+<h2 id="orgd31370b">Cavendish deneyinin Newtoncu analizi</h2>
+<div class="outline-text-2" id="text-orgd31370b">
+<p>
+<a href="http://cavendish-deneyi.com/deneyin-modern-bir-aciklamasi.html">Bu yazının</a> tercümesi ve yorumu:
+</p>
+
+<ol class="org-ol">
+<li>Newtoncu analiz, büyük ve küçük topların karşılıklı çekimi ile; dünyanın küçük topları çekimini mukayese ederek dünyanın yoğunluğunu hesaplıyor.
+
+<ol class="org-ol">
+<li>Newtonculuk bu okült güç üzerine kurulduğu için bu analiz de doğada olmayan bu Newtoncu gücün varolduğunu varsayıyor.</li>
+
+<li>Newtoncular, dünyanın merkezinden, zaman geçmeden, sarkaca asılı küçük kurşun topa ulaşan Newtoncu çekim gücünün topları merkeze doğru çektiğine inanıyorlar. Dünyanın merkezinde konuşlanmış olduğu varsayılan bu çekim gücü, üstelik çok da akıllı çünkü topların kütlesini biliyor ve onları kütlelerine uygun olan güç neyse tam da o gücü yolluyor ve de bütün bunları hiç zaman geçirmeden yapmayı başarıyor! Böyle fantastik ve doğaüstü, tanrının bile yaratmaktan korkacağı, batıl bir güce, Newtoncular gayet doğal bir şeymiş gibi inanıyorlar.</li>
+
+<li>Aristocu eski skolastiklerle alay ediyoruz ya, hani Galieo "gelin teleskobumdan bakın da ayın yüzeyinin Aristocu doktrinin aksine dağlarla kaplı olduğunu görün" demiş ama onlar da bakmamışlar ya; ama Newtoncuların Newton çekim gücüne olan bu akıldışı inançlarını kabul ediyoruz. Ben etmiyorum. Aristocu okulcularlar kendilerini fizikçi diyen Newtoncu okulcular arasında hiçbir fark yok.</li>
+
+<li>Newton çekim gücü zaman geçmeden bir objeden diğerine gidip onu kendine doğru çekiyormuş ve bu da karşılıklı bir olaymış. Hayır. Yok böyle bir şey ve şimdiye kadar da bir fizik deneyi ile ölçülmemiştir. Cavendish deneyi de bu gücü ölçmemiştir.</li>
+</ol></li>
+
+<li>Newtoncular, bu çekim gücü masalını kullanarak aslında Cavendish deneyinin güç ile bir ilişkisi olmadığını göstermiş oluyorlar.</li>
+</ol>
+
+<blockquote>
+<p>
+Kurşun topların karşılıklı çekimi ile dünya ile toplar arasındaki çekimi mukayese ederek, Cavendish dünyanın ağırlığını ve ortalama yoğunluğunu hesapladı.
+</p>
+</blockquote>
+
+<ol class="org-ol">
+<li value="3">Dünyanın ağırlığı ne demek acaba?</li>
+
+<li>Dünyanın merkezinden toplara ulaşan bir çekim gücü varmış. Newtoncular böyle bir iddiada bulunuyorlar ama hesapları yapmadan önce, çekim terimlerini eliyorlar. Terimler elendiğine göre ve dünyanın yoğunluğu Newtoncu güc terimleri kullanılmadan hesaplandığına göre, Cavendish deneyi Newton gücünü ölçmemiştir; Cavendish deneyinin analizinde Newtoncu güç kullanılmamaktadır.</li>
+</ol>
+
+
+<blockquote>
+<p>
+Cavendish dünyanın yoğunluğunu suyun yoğunluğu ile ifade ediyor. Yani suyun yoğunluğunu birim olarak alıyor. Bu şekilde Cavendish bu deneyi ile dünyanın ortalama yoğunluğunun suyun yoğunluğunun 5.48 katı olduğunu buluyor. Bugün kabul edilen değer, suyun 5.52 katıymış, bu da Cavendish'in bulduğu değerin bugün kabul edilen değerden sadece yüzde bir farklı olduğunu gösteriyor.
+</p>
+</blockquote>
+
+<ol class="org-ol">
+<li value="5">Dünyanın ortalama yoğunluğu günümüzde nasıl hesaplanıyor?</li>
+
+<li>[ İngilizce'de <i>average</i> ve <i>mean</i> arasındakı anlam farkı Türkçe'de nasıl ifade ediliyor? ] Dünyanın ortalama yoğunluğu konusunda anlamlı bir farklılık olacağının zannetmiyorum.</li>
+</ol>
+
+<blockquote>
+<p>
+Cavendish yaptığı ölçümlerin farklılığına bakarak ortalama yoğunluğun, gerçek yoğunluktan bütünün 14'te biri olarak değiştini söylüyor. [İngilizcesi şöyle: "From the small variation in the computed density from one experimental run to another, Cavendish estimated that the true density does not differ from the mean by as much as 1/14th part of the whole."]
+</p>
+</blockquote>
+
+<ol class="org-ol">
+<li value="7">Dünyayı 14 parçaya bölüyorsa nasıl bölüyor? Yatay? Dikey? Küresel? "Gerçek yoğunluk" diye bir şey yok. Dünyanın yoğunluğu bir devamlılıktır ve Kepler Kuralına göre değişir.</li>
+</ol>
+
+<blockquote>
+<p>
+Cavendish dünyanın ortalama yoğunluğunu büyük bir kesinlikle bulduğunu söylemiş.
+</p>
+</blockquote>
+
+<ol class="org-ol">
+<li value="8">"Ortalama yoğunluk" konusunu ayrı bir yazıda incelemek gerekecek.</li>
+</ol>
+
+<blockquote>
+<p>
+Cavendish'in ölümünden sonra hesaplarında aritmetik hatalar bulunmuş, bunlar düzletilince Cavendish'in değeri günümüz değerine daha da yaklaşmış.
+</p>
+</blockquote>
+
+<ol class="org-ol">
+<li value="9">Önemsiz bir detay bence. Toplar arasında ve dünya ile toplar arasında varolmayan hayalî bir çekim gücünü varsayıyorsunuz, bu çekim gücünü doğaya dayatmak için dekoratif ve ideolojik terimlerle doldurduğunuz denklemler yazıyorsunuz, sonra da önemsiz aritmetik hatalara takılıyorsunuz!</li>
+
+<li>Şimdi de deneyin teorisini bakalım. Bir tel ile tavana asılmış bir çubuğun salınımlarından nasıl oluyor da dünyanın ortalama yoğunluğunu hesaplayabiliyoruz? Cavendish nasıl hesaplamış. Cavendish'ten bir asır sonra Newtoncular Cavendish deneyini nasıl sahiplenmişler, bunlara bakalım.</li>
+</ol>
+
+
+<blockquote>
+<p>
+Fizik bilgisi olan insanlar dışında, dünyanın yoğunluğunun hesaplandığı bu deneyin mantığını anlamak zordur. Nasıl oluyor da bu düzenekle dünyanın ortalama yoğunluğu hesaplanabiliyor?
+</p>
+</blockquote>
+
+
+<ol class="org-ol">
+<li value="11">Daha önce da, belirttiğimiz gibi, bu makalede, "dünyanın <i>ortalama</i> yoğunluğu" ve "dünyanın yoğunluğu" aynı şeymiş gibi kullanılıyor, ama değil.</li>
+
+<li>Bir de, bu deneyi "dünyayı tartmak" olarak tanımlıyorlar. Bu da sorunlu. Tartılan bir şey mi var? Ne tartılmış? Newtoncu fizik, Newtoncu çekim gücü doktrinini doğaya dayatmak için ağırlıktan ayrı olarak bir de "kütle" diye bir şey tanımlamış ve bu ikisinin aynı olduğunu söylemiş! Aynıysa neden iki ayrı kelime tanımlıyarak kafaları karıştırıyorsunuz?</li>
+</ol>
+
+<blockquote>
+<p>
+Daha önce bu Newton gücünü deneysel olarak ölçmek isteyen insanlar, bir sarkacın ucuna bağlı bir ağırlığın, bir dağ tarafından nasıl çekildiğini ölçmeye çalışmışlar, tabii bir sonuç alamadan.
+</p>
+</blockquote>
+
+<ol class="org-ol">
+<li value="13">Dağın sarkacın salınımını etkileyebileceğini düşünmek bir mucize beklemekten farksız. Newtonculuk tarikatına <i>Vis</i>'e tapan Newtoncuların dini olarak bakmak lazım.</li>
+</ol>
+
+<blockquote>
+<p>
+Ne Cavendish'in deneyi ne de bir dağın yamacında bir sarkaç sallandırıp, dağın sarkacı çekeceğini beklemek, bir şeyin tartıldığı deneyler olarak gözükmüyor. Ortada bildiğimiz tarzda bir terazi yok; yani bir tarafta standart bir ağırlık öteki tarafta tartmak istediğimiz şey&#x2026; böyle bir terazi yok.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+Ve Cavendish'in bu deneyde yaptığı gözlemlerden dünyanın ortalama yoğunluğunu nasıl hesapladığı bölümler, modern okuyucu için anlaşılması zordur çünkü Cavendish standart birimler ve standart fizik denklemleri kullanmamıştır. Zaten o zamanlar, modern fiziğin temeli olan denklem formatı henüz icad edilmemişti, sadece orantı kullanıyordu. Temel olan orantıdır. Doğa orantıya uyar, fizik denklemine değil. Denklem, orantının bir sabit eklenerek, fizik hukukunda kabul edilmiş standard birimlere uyumlu hale getirilmesi ile elde edilmiş orantının süslü halidir. Denklem eşitlik işareti ile yazılır. Denklem, hesap yapmayı kolaylaştırır ama gerçeği gizler. 
+</p>
+</blockquote>
+
+<ol class="org-ol">
+<li value="14">Cavendish'in deneyinin modern Newtoncu analizini genel hatlarıyla verilim:</li>
+</ol>
+
+
+<blockquote>
+<p>
+Cavendish dünyanın yoğunluğunu iki adımda buluyor. İlk adımda sarkaç hareketinin kurallarını varsayıyor; ikinci adımda, Newton'un ters kare yerçekimi yasasını varsayıyor, yani Newton'un mesafenin karesi ile azaldığını söylediği çekim gücü "yasası".
+</p>
+</blockquote>
+
+<ol class="org-ol">
+<li value="15">Sarkacın salınım dönemi \(T\), sarkacın kolunun uzunluğu \(L\)'nin kare köküne orantılıdır:</li>
+</ol>
+
+\begin{align*}
+T \propto \sqrt{L}
+\end{align*}
+
+<p>
+ve
+</p>
+
+<p>
+sarkacın dönemi, dengeleyici kuvvet'in ("restoring force") kare kökü ile ters orantılıymış, şöyle herhalde,
+</p>
+\begin{align*}
+T \propto \sqrt{\frac{1}{F_{restoring}}}
+\end{align*}
+
+<ol class="org-ol">
+<li value="16">Burgulu sarkaçta dengeleyici kuvvet telin sertliğine orantılı oluruyr, telin sertliği arttıkça dönem küçülüyor ve frekans artıyor yani salınım hızlanıyor. Sarkacın ipi uzadıkça da dönemi artıyor, yani frekans azalıyor, sarkaç yavaşlıyor.</li>
+</ol>
+
+<blockquote>
+<p>
+Cavendish normal, dikey sarkaçla, deneyinde kullandığı yatay burulmalı sarkaç arasındaki benzerlikleri kullanmış.
+</p>
+</blockquote>
+
+<ol class="org-ol">
+<li value="17">Modern analizlerde kullanılmıyor ama aslında Cavendish bir "saniye sarkacı" fikrini kullanıyor. Saniye sarkacı, dönemi bir saniye olan bir sarkaç.</li>
+</ol>
+
+<blockquote>
+<p>
+[ With the aid of an analogy between the horizontal torsion pendulum and an imagined vertical simple pendulum beating seconds, the length of which is known, Cavendish expresses the force required to move the small balls at the ends of the torsion arm, with its observed period of vibration, through any observed angle of deflection of the arm in terms of the weight of a ball.]
+</p>
+</blockquote>
+
+
+<ul class="org-ul">
+<li>{ Periyodu bir saniye olan ve kolunun uzunluğu bilinen (hayali) bir basit dikey sarkaçla (saniye sarkacı); Cavendish'in deneyinde kullandığı yatay burulmalı sarkaç arasında bir benzerlik (analogy) var; Cavendish yatay sarkacın kolunun uçlarına asılmış topları hareket ettirmek için gerekli olan gücü (sarkacın salınım dönemi ile) kolun harhangi bir dönme açısını, topun ağırlığı ile ifade ediyordu. }</li>
+
+<li>Özet olarak, "Cavendish, sarkacı döndürmek için gerekli olan gücü topların ağırlığı ile ifade ediyordu," bunu demek istiyor?</li>
+</ul>
+
+<p>
+Cümlede geçen fikirlerin listesi, belki tercümede yardımcı olur:
+</p>
+
+<ol class="org-ol">
+<li>Dikey saniye sarkacı ile yatay burulmalı sarkaç arasında benzerlikler vardır.</li>
+<li>Cavendish gerçek bir saniye sarkacı kullanmıyor fakat hayali bir saniye sarkacı kullanıyor.</li>
+<li>Saniye sarkacının kolunun uzunluğu biliniyor.</li>
+<li>Deneyde kullanılan yatay sarkacın uçlarına toplar asılmıştır.</li>
+<li>Cavendish, toplar asılı olan sarkacın kolunu döndürmek için gerekli olan gücü ifade ediyor (ama nasıl onu anlayamadık)</li>
+<li>Sarkacın salınım dönemi biliniyor</li>
+<li>Sarkacın kolu dönemine uygun olarak herhangi bir açıda oynuyor, Cavendish de bunu açıları ölçüyor</li>
+<li>Cavendish [galiba, sarkacı oynatmak için gerekli olan gücü] topun ağırlığı üzerinden ifade ediyor. [Bunu nasıl yapıyor?]</li>
+</ol>
+
+<p>
+{ Tam bir akademik cümle. }
+</p>
+
+<p>
+Galiba, araya sıkıştırdığı parantez cümlesini çıkartabiliriz: "Cavendish expresses the force required to move small balls at the ends of the torsion arm, [&#x2026;] in terms of the weight of a ball."
+</p>
+
+<p>
+"Cavendish, sarkıcın kolunu oynatmak için gerekli kuvveti topların ağırlığı üzerinden açıklıyor" diye kısaca tercüme edebiliriz belki.
+</p>
+
+<ol class="org-ol">
+<li value="18">Çözemedim bu cümleyi. Galiba pek de önemi yok, çünkü analizin devamında kullanılmıyor. Daha sonra anlamaya çalışırız.</li>
+</ol>
+
+<blockquote>
+<p>
+İkinci adımda Cavendish Newton'un çekim yasasına iki defa başvuruyor: İlkinda, küçük toplardan birisi ile büyük topun arasındaki çekimi ifade etmek için ve 2. olarak, küçük topla dünya arasındaki çekimi ifade etmek için.
+</p>
+</blockquote>
+
+
+<ol class="org-ol">
+<li value="19">Büyük güllelere "ağırlık" diyorlar, Cavendish de öyle demiş, büyüklere ağırlık yani, "weight"; küçüklere top yani, "ball" diyor.</li>
+</ol>
+
+<blockquote>
+<p>
+Önce, klasik Newtoncu dekoratif çekim formülünü yazarak başlayalım; bütün Newtoncu analizler böyle başlar zaten:  \(w = GmM/r^2\). Burada \(w\) topun ağırlığı oluyor ama Newtoncular bunu "dünyanın topa uyguladığı çekim gücü" olarak yorumlamayı severler. Dünyanın yarıçapı da \(r\) oluyor tabii. \(G\) de Newton tarikatının evrensel çekim bayrağı, buraya diktik ama biraz sonra elenip gidecek, yani sadece dekoratif bir terim.
+</p>
+</blockquote>
+
+
+<ol class="org-ol">
+<li value="20">Aslında \(w\) bildiğimiz küçük \(g\) (jeolojik yerçekimi) değil mi?</li>
+</ol>
+
+<blockquote>
+<p>
+Şimdi, (yoğunluk = kütle / hacım), ilişkisini kullanarak, \(M\) harfini yoğunluk \(D\) ile değiştirelim:
+</p>
+
+\begin{align*}
+ w = \frac{Gm(4/3 \; \pi r^3 D)}{r^2} = G m (4/3 \;  \pi r D)
+\end{align*}
+</blockquote>
+
+<ol class="org-ol">
+<li value="21">Yine Newtoncu dekoratif çekim denklemlerini kullanarak küçük topla büyük ağırlık arasındaki çekim gücünü yazalım:</li>
+</ol>
+
+\begin{align*}
+f = \frac{G m \mu}{d^2}
+\end{align*}
+
+<ol class="org-ol">
+<li value="22">Burada \(\mu\) büyük topun kütlesi olarak tanımlanmış. \(G\) ve \(m\) zaten yolcu, birazdan elimine edilecekler onun için ne olduklarının hiç önemi yok. Topla ağırlık arasındaki mesafe \(d\) olarak tanımlanmış. Newtoncu hikayeye göre, sarkacın kolu, büyük ağırlığın küçük topu çekmesi sonucu \(d\) mesafesi kadar hareket ediyor, (ölçülen değer bu), sonra teldeki dengeleyici kuvvet, veya burulma kuvveti, bu gücü dengeliyor. Bir de iki çift top olduğuna göre, gücü \(2f\) olarak yazıyoruz.</li>
+</ol>
+
+
+<blockquote>
+<p>
+Yazdığımız bu iki denklemden birincisini ikincisine bölerek, aşağıdaki sonucu elde ediyoruz:
+</p>
+
+\begin{align*}
+ D = \frac{3\mu}{4\pi r d^2} \; \frac{w}{2f}
+\end{align*}
+</blockquote>
+
+
+<ol class="org-ol">
+<li value="23">Bu denklemden yoğunluk \(D\)'yi <i>teorik</i> olarak bulabiliriz ama deneyin birimlerini bilmediğimiz için, ve \(d\)'nin değerini bilmediğimiz için bu denkleme sadece Newtonculuğun propaganda zaferi olarak bakabiliriz, o kadar.</li>
+
+<li>\(G\) ve \(m\) elendi gitti. Makale içinde kaç kere tekrarladılar, \(m\) ile \(M\) arasındaki çekim gücünden bahsettiler ama \(m\) elendi, hesapları yaptığımız en son denklemde bir \(m\) harfi yok, yani "\(M\) \(m\)'yi çekiyor" diyerek Newton'dan masallar anlatıyorlarmış. \(M\) olmayan \(m\)'yi nasıl çekiyor acaba?</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2021-11-04 Thu 00:00</p>
+<p class="date">Created: 2021-11-12 Fri 16:33</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

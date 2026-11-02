@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2022-09-23 Fri 17:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="/css/worg-classic-new.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="navbar"> <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="/iletisim.html">Contact</a></li>
+  <li><a href="/hakkinda.html">About</a></li>
+  <li><a href="/the-book.html">Work In Progress</a></li>
+</ul>
+<hr>
+</div>
+</div>
+<div id="content" class="content">
+
+<div id="outline-container-orgad16b2b" class="outline-2">
+<h2 id="orgad16b2b">Babinet'in analizi</h2>
+<div class="outline-text-2" id="text-orgad16b2b">
+<ul class="org-ul">
+<li><a href="https://books.googleusercontent.com/books/content?req=AKW5Qac3QA1coDcI0C511L0NNLLLV3eXAdwOt1Jj3PenF9syxkJxGw6kII5avbxmp7qSAYgEZ7k84TYeWchE7YetBV5SVasCESFqEk1iJmisnwWz0m8hNzgZNYC6Y2b---bi6xdi15ZcNnTO8APSBTsE2wsVu3Nz4q9gD7nWENoWwa60y8Ew2P2tx0Gr2E-fnCsqLE-QpJkxraQXDSB-fe2WJB5XDkZ2qFonY60DYfZS_YvEPh2nR5wBfPHpsXQobXC3fZJFefa7q7NuqRdnV2yinfQ8a7SadoN527CvMcrlOwxwYS1l9Cc">Tam metin, sayfa: 543-545.</a></li>
+</ul>
+
+
+<ol class="org-ol">
+<li>Makalenin adı: Cavendish deneyinin analizi hakkında bir not; dünyanın kütlesi ve ortalama yoğunluğu hakkında.</li>
+</ol>
+
+<p>
+İlgili terimler:
+</p>
+
+<p>
+\(L\) = Yatay sarkacın kolunun tam uzunluğu
+</p>
+
+<p>
+\(l\) = \(L/2\), yatay sarkacın kolunun yarısı (yarım sarkaç)
+</p>
+
+<p>
+\(f\) = Yatay yarım sarkacı sallandıran burulma gücü
+</p>
+
+<p>
+\(T\) = Yatay sarkacın, \(f\) ile salınırken doğal dönemi
+</p>
+
+<p>
+\(g\) = Dünya yüzeyinde dikey sarkacı sallandıran güç (yerçekimi)
+</p>
+
+<p>
+\(t\) = Yatay sarkacın \(g\) ile sallanıyor olsaydı, dönemi
+</p>
+
+<p>
+\(K\) = Sarkaca asılı olan topları çeken ağırlıkların ağırlığı
+</p>
+
+<p>
+\(d\) = Ağırlıklarla sarkaca asılı topların arasındaki mesafe
+</p>
+
+<p>
+\(\alpha\) = Ağırlıkların toplara Newtoncu güç uygulayarak sarkacın kolunu döndürdükleri açı
+</p>
+
+<p>
+\(R\) = Dünyanın yarıçapı
+</p>
+
+<p>
+\(e\) = \(\alpha\) açısının yayı
+</p>
+
+
+<ol class="org-ol">
+<li>İlk bölümde Cavendish sarkacını anlatıyor, bu bölümleri tercüme etmiyorum. Fakat ilginç bir şey söylüyor, "telin burulma gücü, sarkaca asılı toplara etki edip sarkacı hareket ettiriyor" diyor, ama telin burulma gücünün toplarla bir ilgisi yok.</li>
+
+<li>Fakat sarkacın salınımının telin burulma sabiti veya burulma gücü ile ilgili olduğu kesin. Babinet: Kurşun ağırlıklar, sarkaca asılı iki topu çekip hareket ettiriyor; telin burulması sonucunda, kol bir yere kadar hareket edip duruyor. Telin burulma gücünü biliyorsak, ağırlıklar ve toplar arasında varolan çekim gücü ile yerçekiminin oranını alabiliyoruz, bu da dünyanın kütlesi ile kurşun ağırlıkların kütlesinin oranını veriyor; oradan da dünyanın kütlesini bulabiliriz.</li>
+
+<li>Dünyanın hacmini boyutlarından biliyoruz.</li>
+
+<li>Dünyanın hacmı kadar olan su kütlesinin kütlesini biliyoruz çünkü 1 metre küp hacmi olan suyun 1000 kilogram olduğunu biliyoruz. Dünyanın kütlesini aynı hacımda su kütlesi ile mukayese ederek buluyoruz, bu kütlenin yoğunluğu dünyanın ortalama yoğunluğu olmuş oluyor. [Le rapport de la mass trouvée pour la terre a cette masse d'eau est la densité moyenne de la terre.]</li>
+
+<li>Telin burulma gücünü yerçekimi ile mukayese edelim.</li>
+
+<li>Sarkaca asılı topların her biri, iki topun arasındaki mesafenin yarısı kadar uzunluğu olan bir sarkaç gibi salınan bir sarkaç olarak düşünülebilir. (Sarkacın kolunun kütlesini dikkate almazsak.)</li>
+
+<li>Ve bu sarkacın, burulma gücünün yarısına eşit olan \(f\) gücü ile salındığı düşünülebilir.</li>
+
+<li>Öyleyse, sarkacın yanına kurşun ağırlıkları getirmeden salınmasına izin verirsek, \(f\) gücünün etkisi altında \(\text{T}\) dönemi ile salındığını göreceğiz.</li>
+
+<li>Aslında, "sous l'empire de la faible force \(f\) agissant sur chaque sphères", yani \(f\)'ye zayıf bir güç diyor ve "topları hareket ettiriyor" diyor, evet topları hareket ettiriyor çünkü kolu döndürüyor yoksa toplarla bir ilişkisi yok.</li>
+
+<li>Sarkaç kolunun yarısını, uzunluğu \(l\) olan bir sarkaç gibi düşünebiliriz, sarkaç yasasından da bu sarkacın dönemini bulubiliriz,</li>
+</ol>
+
+\begin{equation}
+    f = \frac{\pi^2 \cdot l}{T^2}
+\end{equation}
+
+<p>
+ve,
+</p>
+
+\begin{equation}
+    T = \pi \cdot \sqrt{\frac{l}{f}}
+\end{equation}
+
+<ol class="org-ol">
+<li value="12">Aynı sarkaç, dünyanın yerçekimi gücü \(g\) ile salınıyor olsaydı, dönemi \(t\) şöyle olacaktı,</li>
+</ol>
+
+\begin{equation}
+    g = \frac{\pi^2 \cdot l}{t^2}
+\end{equation}
+
+<p>
+ve,
+</p>
+
+\begin{equation}
+t = \pi \cdot \sqrt{\frac{l}{g}}
+\end{equation}
+
+<ol class="org-ol">
+<li value="13">\(f\) ve \(g\)'nin oranını alırsak,</li>
+</ol>
+
+\begin{equation}
+    \frac{f}{g} = \frac{t^2}{T^2}
+\end{equation}
+
+<p>
+ve,
+</p>
+
+\begin{equation}
+    f = g \cdot \frac{t^2}{T^2}
+\end{equation}
+
+<ol class="org-ol">
+<li value="14">Yatay burulmalı sarkacı sallandıran telin burulma gücü \(f\)'yi \(g \cdot \frac{t^2}{T^2}\) ile değiştirirsek, azaltılmış yerçekimi ile sallanan bir yatay sarkaç elde etmiş oluruz. Aynı dikey sarkacı sallandıran \(g\) gücü gibi, ama yatay düzeyde sallanan bir sarkaç elde etmiş oluruz.</li>
+
+<li>Şimdi, her biri \(K\) kilogram olan kurşun ağırlıkları sarkaçta asılı olan toplara yaklaştıralım ve ağırlıklarla topların merkezleri arasındaki mesafe \(d\) olsun, ve ağırlıklar toplara Newtoncu çekim gücünü uygulayarak \(\alpha\) açısı kadar kolu döndürsün.</li>
+
+<li>Şimdiye kadar yazdıklarımıza göre, telin burulma gücü her topu \(f\cdot \sin{\alpha}\) gücü ile geri döndürmeye çalışıyor olacaktır, veya,</li>
+</ol>
+
+\begin{equation}
+    g\cdot \frac{t^2}{T^2} \sin{\alpha}
+\end{equation}
+
+<ol class="org-ol">
+<li value="17">bu ifade, \(K\) kütlesinin, \(d\) mesafesinde bulunan toplara uyguladığı gücün ölçüsüdür.</li>
+
+<li>Şimdi, \(K\) kütlesinin, sarkaca asılı topun merkezinden, dünyanın yarıçapı \(R\) uzaklığa taşındığını düşünelim; bu çekim, \(\left (g\cdot \frac{t^2}{T^2}\cdot \sin{\alpha}\right )\) ifadesinin, \(\left ( \frac{d^2}{R^2}\right )\) oranı kadar azaltılmış hali olacaktır, veya,</li>
+</ol>
+
+\begin{equation}
+    g\cdot \frac{t^2}{T^2} \sin{\alpha} \cdot \frac{d^2}{R^2}
+\end{equation}
+
+<ol class="org-ol">
+<li value="19">Fakat, aynı \(R\) mesafesinde, dünya \(g\) ile ifade edilen bir yerçekimsel güç uygulamaktadır; \(g\)'yi, (8) sayılı denkleme bölerek, dünyanın kütlesinin, kurşun ağırlıkların kütlesini olan oranını bulmuş oluruz:</li>
+</ol>
+
+\begin{equation}
+    \frac{T^2 \cdot R^2}{t^2 \cdot d^2 \sin{\alpha}}
+\end{equation}
+
+<ol class="org-ol">
+<li value="20">Öyleyse dünyanın kütlesi,</li>
+</ol>
+
+\begin{equation}
+   K \times \frac{T^2 \cdot R^2}{t^2 \cdot \sin{\alpha}\cdot d^2}
+\end{equation}
+
+<p>
+olacaktır. 
+</p>
+
+<ol class="org-ol">
+<li value="21">Eğer \(e\) kolun hareketinin yayı ise,</li>
+</ol>
+
+\begin{equation}
+    \sin{\alpha} = \frac{e}{l}
+\end{equation}
+
+<p>
+dünyanın kütlesi kilogram olarak,
+</p>
+
+\begin{equation}
+    K\cdot \frac{T^2\cdot R^2\cdot l}{t^2\cdot d^2\cdot e}
+\end{equation}
+
+<p>
+olacaktır.
+</p>
+
+<ol class="org-ol">
+<li value="22">[Yani, ağırlıkların kütlesi \(K\)'yi birim olarak almış oldu.]</li>
+
+<li>Dünyanın ortalama yoğunluğu.</li>
+
+<li>Dünyanın yarıçapı \(R\) metre olarak ifade edilirse, dünyanın hacmi,</li>
+</ol>
+
+\begin{equation}
+    \frac{4}{3} \cdot \pi \cdot R^3 \cdot \text{metre küp}
+\end{equation}
+
+<p>
+olacaktır.
+</p>
+
+<ol class="org-ol">
+<li value="25">Ve bir metre küp su, 1000 kilogram olduğuna göre, aynı hacımda suyun kütlesi, kilogram olarak,</li>
+</ol>
+
+\begin{equation}
+    1000\cdot \frac{4}{3}\cdot \pi\cdot R^3
+\end{equation}
+
+<p>
+olacaktır.
+</p>
+
+<ol class="org-ol">
+<li value="26">Fakat, dünyanın kütlesi, kilogram olarak,</li>
+</ol>
+
+
+\begin{equation}
+    K \; \frac{T^2}{t^2}\; \frac{R^2}{d^2}\; \frac{l}{e}
+\end{equation}
+
+<p>
+veya, yeniden düzenleyerek,
+</p>
+
+\begin{equation}
+    K \; \frac{l}{e} \; \frac{T^2}{d^2}\; \frac{R^2}{t^2}
+\end{equation}
+
+<p>
+olduğuna göre, bu ikisinin oranı,
+</p>
+
+\begin{equation}
+    \frac{3\cdot K\cdot T^2\cdot l}{4000\cdot \pi\cdot t^2\cdot d^2\cdot e\cdot R}
+\end{equation}
+
+<ol class="org-ol">
+<li value="27">olacaktır ve da sayı olarak dünyanın ortalama yoğunluğunu 5.5 olarak vermektedir.</li>
+
+<li>Fakat, Denklem (16)'nın Kepler Kuralı'nın yarısı olduğunu görüyoruz, diğer terimi de eklersek,</li>
+</ol>
+
+\begin{equation}
+    K \; \frac{l}{e} \; \frac{T^2}{d^2}\; \frac{R^2}{t^2} = \frac{R}{1}
+\end{equation}
+
+<ol class="org-ol">
+<li value="29">Yoksa,</li>
+</ol>
+
+\begin{equation}
+    K \; \frac{l}{e} \; \frac{T^2}{d^2}\; \frac{R^2}{t^2} = \frac{d}{1}
+\end{equation}
+
+<p>
+mi olacak?
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2022-09-23 Fri 17:25</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

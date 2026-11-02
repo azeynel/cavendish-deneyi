@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2022-09-23 Fri 17:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="/css/worg-classic-new.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="navbar"> <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="/iletisim.html">Contact</a></li>
+  <li><a href="/hakkinda.html">About</a></li>
+  <li><a href="/the-book.html">Work In Progress</a></li>
+</ul>
+<hr>
+</div>
+</div>
+<div id="content" class="content">
+
+<div id="outline-container-orgaf5a15d" class="outline-2">
+<h2 id="orgaf5a15d">Cavendish ve sarkaçları (17 Kasım 2021)</h2>
+<div class="outline-text-2" id="text-orgaf5a15d">
+<ol class="org-ol">
+<li>Sayfa 88'den devam.</li>
+<li>Cavendish, açıkça, «her topa uygulanması gereken güç» diyor. Yani, telin geri döndürücü gücü ile topları çektiği varsayılan Newtoncu gücü eşitliyor.</li>
+<li>Açıkca belirtmiyor ama iki gücü eşitlemiş.</li>
+<li>«Kolu A açısı kadar döndürmek için her topa uygulanması gereken güç&#x2026;» diyor, yani burada Cavendish bizim \(F_N\) dediğimiz güçten bahsediyor. Bu güç \(F_R\)'dan farklı, \(F_R\) telin geri döndürücü gücü.</li>
+<li>Mesela, topu mekanik olarak da oynatabiliriz. Yani kol sabit duruyor diyelim. Bir engel koyduk kolun önüne ve geldi dayandı ve bu durumda \(F_R\) en güçlü durumda çünkü \(A\) maksimum değerinde, kolu ve topu oynatmak için, telin gücü kadar, belki çok az daha fazla bir, güçten daha fazlası gerekmemektedir, yani parmağımızla itebiliriz.</li>
+<li>Cavendish bir gizli varsayım olarak \(F_N=F_R\) diyor. Fakat bu şekilde Newtoncu güç \(F_N\)'yi belirleyemezsiniz, çünkü sertliği değişik olan bir tel koyarsanız başka bir \(F_N\) için o telin sertliği ile eşitlemiş olursunuz.</li>
+<li>Bu Newtoncu güç ne Cavendish tarafından ne de daha önce gözlemlenmediği için, Cavendish'in bu gücü varsaymak yerine, değişik sertlikte tellerle, bu gücün değerini bulması gerekirdi. Hangi tel sertliğinin Newtoncu güce eşit olduğunu deneyerek bulması gerekirdi.</li>
+<li>Deney süresinde böyle bir şey gerçekleşiyor aslında, Cavendish'in ilk kullandığı tel çok gevşek çıkıyor ve Newtoncu çekim gücü o kadar çok çekiyor ki, telin geri döndürücü gücü \(F_R\), \(F_N\)'ye karşı gelip kolu geri çeviremiyor ve toplar içinde bulundukları kasanın kenarlarına çarpıyorlar.</li>
+<li>Fakat ikinci kullandığı daha sert tel, müthiş bir tesadüf eseri olmalı harhalde, Newtoncu güç \(F_N\)'yi tam olarak dengeliyor.</li>
+<li>Burada bir gariplik var.</li>
+<li>Cavendish'in kurduğu oran da geçerli değil. Şimdiye kadar Cavendish'in analizini inceleyenler neden bu konuya takılmamışlar?</li>
+<li>Cavendish önce üstü kapalı olarak, \(F_R=F_N\) diyor ve ayrıca yine üstü kapalı olarak, dikey sarkaçla yatay sarkacın tamamen aynı şekilde hareket, aynı hareket yasalarına göre hareket ettiklerini varsayıyor yani dikey sarkaç için geçerli olan, \(F_R=mg \sin A\) ilişkisinin yatay sarkaç için de geçerli olduğunu varsayıyor.</li>
+<li>Fakat, yatay sarkaçta geri döndürücü güç kolun döndüğü açıya oranlı olduğu için, \(F_R \propto A\); yatay sarkaçta \(F_R \propto mg \sin A\) diye bir ilişki yok.</li>
+<li>Olsa olsa \(F_R = k \sin A\) diye bir ilişki olabilir, o da telin sertliğidir.</li>
+<li>Zaten Cavendish \(k=g\) diye bir varsayım yapıyor. (\(k\) telin burulma sabiti.)</li>
+<li>Fakat \(F_R\)'nin \(\sin A\) ile değiştiği bizi ilgilendirmiyor çünkü, \(F_N = k\) diyoruz, yani Newtoncu güç telin sertlik sabitine eşitleniyor.</li>
+<li>Güçlerin büyüklüğü sarkacın dönemine yansıyor, yani ölçülen sarkacın dönemi, güç diye bir şey değil.</li>
+<li>Fakat gerçekler başka. Sarkaç kolu, \(F_R\) altında devamlı salınım halinde olduğu için, eğer bir Newtoncu çekim gücü varsa bu telin gücü \(F_R\) ile karışmış olacaktır.</li>
+<li>Ayrıca \(F_N\) mesafenin karesi ile arttığı için \(F_R\)'yi her zaman yenecektir ve salınım olmayacaktır. Zaten bu çok açık, \(F_N\) altında salınım olamaz.</li>
+<li>Telin gücü \(F_R\) ile \(F_N\)'nin karşılıklı etki içinde olmaları gerekir ama \(F_R\) açı ile düz olarak değiştiği için mesafenin karesi ile değişen \(F_N\)'den her zaman daha az olacaktır, ve salınım olmayacaktır.</li>
+<li>Cavendish ve Newtoncular \(F_N\)'yi ölçtük diye bize masal anlatıyorlar.</li>
+<li><p>
+Fakat önemli olan Cavendish'in ne yaptığını anlamak.
+</p>
+
+<p>
+\(* * *\)
+</p></li>
+
+<li value="23">Kolunun uzunluğu l= 36.65 inch olan bir yatay sarkaç var. Deneyin yapıldığı sarkaç bu. Bu sarkacın asılı olduğu telin sertliğini bilmiyoruz. İlk etapta Cavendish, sarkaç telinin sertlik sabitinin \(g\) ile eşdeğer olduğunu varsayıyor, yani, bu yatay sarkacın kolunun uzunluğu \(L=39.14\) inch olsaymış, bu yatay sarkaç da aynı bir dikey saniye sarkacı gibi salınacak ve dönemi 1 saniye olacaktır. Yani, saniye sarkacı gibi bir uç noktadan diğer uç noktaya gidişi 1 saniye olacakmış.</li>
+
+<li>Fakat, dikey sarkaçların uzunluğu ile dönemi arasında bir ilişki var, \(L \propto T^2\), yani sarkaç kolunun uzunluğu \(L\), dönemin karesi ile artıyor. O zaman,</li>
+</ol>
+
+\begin{equation*} \frac{l}{L}=\frac{t^2}{T^2}\end{equation*}
+
+<p>
+ilişkisi var, yatay sarkaçla, dikey sarkaçlar arasında.
+</p>
+
+<ol class="org-ol">
+<li value="25">Fakat \(T=1\) o zaman, bu şartlar altında yani \(k=g\) şartı altında, yatay sarkaçın dönemi \(t^2= l / L\) olmuş oluyor.</li>
+<li>Yani,</li>
+</ol>
+
+\begin{equation*} t = \sqrt{\frac{l}{L}}=\frac{36.65}{39.14}\end{equation*}    
+
+<ol class="org-ol">
+<li value="27">Fakat, Cavendish \(k=g\) diye açıkca yazmıyor,</li>
+</ol>
+
+\begin{equation*} \frac{F_R}{W_b}=\frac{\text{A'nın yayı}}{\text{Sarkaç kolu}}\end{equation*}
+
+<p>
+şartını yazıyor. (Bu \(k=g\) mi demek?
+</p>
+
+<ol class="org-ol">
+<li value="28">Cavendish kütle değil de ağırlık ile çalıştığı için,</li>
+</ol>
+
+\begin{equation*} W_b = mg \end{equation*}
+
+<p>
+ve
+</p>
+
+\begin{equation*}
+\frac{\text{A'nın yayı}}{\text{Sarkaç kolu}}=\sin A
+\end{equation*}
+
+<p>
+küçük açılar için, Cavendish,
+</p>
+
+\begin{equation*}F_R = mg \sin A\end{equation*}
+
+<p>
+ile salınıyorsa diyor.
+</p>
+
+<ol class="org-ol">
+<li value="29">Hangi sarkaç bu? Yatay sarkaç, çünkü toplara uygulanacak güçten bahsediyor.</li>
+<li>Kolun asıldığı telin sertliği öyle olsun ki diyor&#x2026;</li>
+<li>Her topa uygulanacak  güç, \(A\) açısı kadar döndürmek için,</li>
+</ol>
+
+\begin{equation*}mg \sin A\end{equation*}    
+
+<ol class="org-ol">
+<li value="32">Yani tercüme edersek bunu söylüyor.</li>
+<li>Eğer geri döndürücü güç \(mg\;\sin A\) ise (\(k=g\)), o zaman yatay sarkacın dönemi,</li>
+</ol>
+
+\begin{equation*}L \propto T^2\end{equation*}
+
+<p>
+olacaktır.
+</p>
+
+<ol class="org-ol">
+<li value="34">Tamam, o zaman, yatay sarkaç da \(g\)'nin etkisi altında salınan sarkaç gibi sallanırsa dönemi</li>
+</ol>
+
+\begin{equation*}t = \sqrt{\frac{36.65}{39.14}}\end{equation*}
+
+<ol class="org-ol">
+<li value="35">Fakat, Cavendish, sözlü olarak, bu gücü toplara uygulanacak güç olarak söylese de burada toplarla ilgili bir güç değil bu, toplara uygulanacak gücü bilmiyoruz. \(F_R=mg\;sin A\), fakat Cavendish \(F_N=F_R=mg\;\sin A\) diyor.</li>
+<li>Cavendish'in amacı sarkaca astığı topla büyük ağırlık arasında olduğu varsayılan Newtoncu gücü ölçmek. Sorun şu ki, böyle bir güç yok. Ama bu Cavendish için sorun değil, kolu \(A\) açısı kadar çevirmek için gerekli olan gücün kolu hangi dönemle oynatacağını bulması gerikiyor. Bu işler sözle olmuyor.</li>
+<li>Yatay sarkaçla dikey sarkacı ilişkilendiriyor ve \(t=\sqrt{\frac{l}{L}}\) yazıyor.</li>
+<li>Bu \(t\)'nin güçle ne ilgisi var?</li>
+<li>Bundan sonra Cavendish ne yapıyor?</li>
+<li>\(k=g\) değil, \(k'=a\,g\) olsun diyor, \(k'\) = herhangi bir sertliği olan telin bükülme sabiti. Yani bu telin sabiti \(g\) olmayacak ama \(g\)'nin \(a\) katı kadar olacak.</li>
+<li>Fakat \(g\) ile \(k\) birbirlerine eşit mi ki? Zaten, \(g\)'nin Newtoncu çekim gücü olduğunu kabul etmiyorum.</li>
+<li>Peki, \(k\) bu \(g\) ile salınan sarkacın \(k\)'sinden daha mı sert, daha mı yumuşak? \(k < k'\) veya \(k > k'\) olabilir.</li>
+<li>Cavendish bu yeni \(k'\) ile salınan sarkacın dönemini ölçecek. Aslında Cavendish Newtoncu gücün sebep olduğu bir dönem ölçmüyor, sadece sarkacın doğal dönemini ölçüyor. Arada ne kadar fark var? Ne kadar fark olması lazım?</li>
+<li>Zaten, Cavendish \(F_R=F_N\) varsayımını yaptığı için telin sebep olduğu dönem ile Newtoncu güç \(F_N\)'nin sebep olduğu güç aynı olacaktır. (Bu doğru olabilir mi? Telin geri döndürme gücü koskoca kolu çeviriyor fakat Newtoncu güç üfürmek dönecek kadar kolay döndürülebilen kolu ancak hareket ettirebiliyor.</li>
+<li>Cavendish'le devam edelim.</li>
+<li>Eğer telin sertliği \(g\) gibiyse, dönemi \(\sqrt{(36.65/3914)}\) saniye oluyor. (Bu, 0.967 saniye ediyor. Yani, yatay sarkacın kolu saniye sarkacından biraz daha kısa olduğu için saniyeden biraz daha kısa bir dönemi oluyor.)</li>
+<li>Burada Cavendish dikey sarkacın geri döndürücü gücü ile dönemi arasında olan \(F_R \propto 1/T^2\) ilişkisini kullanıyor.</li>
+<li>Cavendish dönemi, geri döndürücü gücü \(F_R'\) ile salınan yeni bir sarkaç tanımlıyor. Bu sarkacın dönemini de \(T'\) olarak tanımlıyoruz. O zaman,</li>
+</ol>
+
+\begin{equation*}
+\frac{F_R'}{F_R}=\frac{T^2}{T'^2}
+\end{equation*}
+
+<p>
+veya
+</p>
+
+\begin{equation*}F_R \times T^2 = F_R' \times T'^2\end{equation*}
+
+<ol class="org-ol">
+<li value="49">Daha önceden</li>
+</ol>
+
+\begin{equation*}F_R = W_b \frac{\text{yay}}{\text{kol}}\end{equation*}
+
+<p>
+diye yazmıştık. Ve dönemi
+</p>
+
+\begin{equation*}t^2 = \frac{36.65}{39.14}\end{equation*}
+
+<p>
+saniye olarak yazmıştık.
+</p>
+
+<ol class="org-ol">
+<li value="50">Bunları \(F_R\) ve \(T^2\) ile değiştiriyoruz,</li>
+</ol>
+
+\begin{equation*}W_b \frac{\text{yay}}{\text{kol}}\frac{36.65}{39.14} = F_R' \times T'^2\end{equation*}    
+
+<p>
+ve
+</p>
+
+\begin{equation*}W_b \frac{\text{yay}}{\text{kol}}\,\frac{1}{T^2} = F_R'\end{equation*}
+
+<ol class="org-ol">
+<li value="51">Fakat Cavendish'in makalesinde \(T = N\) olduğu için,</li>
+</ol>
+
+\begin{equation*}\frac{F_R}{W_b}= \frac{\text{yay}}{\text{kol}}\,\frac{36.65}{39.14}\,\frac{1}{N^2} = F_R'\end{equation*}
+
+<ol class="org-ol">
+<li value="52">(Denklemleri düzelt)</li>
+<li>Cavendish sarkacın dönemi \(N\)'yi ölçüyor, diğer bütün değerleri biliniyor.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2022-09-23 Fri 17:25</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

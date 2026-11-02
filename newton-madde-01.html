@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2022-09-23 Fri 17:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="/css/worg-classic-new.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="navbar"> <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="/iletisim.html">Contact</a></li>
+  <li><a href="/hakkinda.html">About</a></li>
+  <li><a href="/the-book.html">Work In Progress</a></li>
+</ul>
+<hr>
+</div>
+</div>
+<div id="content" class="content">
+
+<div id="outline-container-orgd39e501" class="outline-2">
+<h2 id="orgd39e501">Newton'un madde kavramı</h2>
+<div class="outline-text-2" id="text-orgd39e501">
+<ol class="org-ol">
+<li>Cavendish analizine sarkacın dönemini hesaplamakla başlıyor ve kolu 1 ölçek derecesi çevirecek gücü hesaplıyor.</li>
+
+<li>Sarkaç telinin geri döndürücü gücünü biliyoruz, daha doğrusu telin bükülme sabitini biliyoruz ama Newtoncu çekim gücünü bilmiyoruz, Newtoncu güç, telin sertlik sabitine eşitlenerek bulunmuş oluyor. Yani, telin geri döndürücü gücü F(R) ile Newtoncu çekim gücünün F(N) dengede oldukları varsayılıyor. Sarkaç kolu hareket ederken, topu çeken ağırlığa yaklaşıyor ve ağırlık topu Newtoncu güç uygulayarak çekiyor ve doğal uç noktasından biraz daha öteye çekiyor, fakat, sonra F(R) &gt; F(N) durumu oluşuyor ve kol kendisini Newtoncu gücün etkisinden kurtarıyor ve salınım devam ediyor.</li>
+
+<li>Cavendish sadece orantılarla çalıştığı için Newtoncu gücü «F(N) = \(x\) Newtons» gibi birimli bir sayı olarak vermiyor, ağırlığın topu çekimi ile dünyanın topu çekimini oranlıyor, yani,</li>
+</ol>
+
+\begin{equation*}
+\frac{F(N)}{W(B)} = \frac{1}{8,739,000\,D}
+\end{equation*}
+
+<p>
+W(B) = topun ağırlığı yani Newtoncuların dünyanın topu çekimi dedikleri şey veya \(mg\) diye yazılan şey. Bu \(mg\)'yi bildiğimize göre ağırlığın topu çekimini de bilmiş oluyoruz.
+</p>
+
+<ol class="org-ol">
+<li value="4">Dünyanın yoğunluğu \(D\)'yi birim olarak alırsak, dünya topu ağırlığın çektiğinden 8,739,000 kat daha fazla çekmiş oluyor. Tabii, Newton jargonunda dünya sanki bütün çekim gücü merkezinde toplanmış gibi çeker, aslında bütün çekim gücü merkezde yoğunlaşmamıştır, ama dünya mış gibi yapar ve Newtonun kutsal otoritesi zedelenmesin diye sadece merkezden çekermiş gibi davranır.</li>
+
+<li>Aslında çekim gücü falan yok, yörünge var ve \(mg\) sahtekarlık, sahtekarlık çünkü burada \(m\) harfi bir süs, ideolojik bir süs, Newton «çekim gücü karşılıklıdır» dedi diye çekilen güç \(m\) denklemlere yazılır ama herkes bilir ki \(m\) denklemi süsleyen bir dekorasyondur ve bir sonraki adımda elenecektir. Ancak Newtonun okulcu müritleri şeyhlerinin kutsal sözlerini doğrulamak için bir denklemin iki tarafına da aynı harfi yazarlar. Bir denklemin iki tarafına aynı harf yazılmaz çünkü bu bir aptallıktır, iki tarafa da yazılan terimin denkleme hiçbir etkisi yoktur.</li>
+
+<li>Denklem süsü \(m\)'yi eleyince zaten geriye \(g\) kalıyor, \(g\) de bir ivmedir yani \(R/T^2\)'dır yani \(1/R^2\)'ın diğer yarısıdır. Newton bir orantının iki oranını ayırıp onlara ideolojik etiketler yapıştırmış ve etiket yapıştırdığı için de bir doğa kanunu bulduğunu söylemiştir.</li>
+
+<li>Bir taşı havaya atınca yere düşmesi dünyanın taşı çekmesinden değil taşın yörüngeye çıkamamasından kaynaklanıyor.</li>
+
+<li>Deneyin varsayımlarını yazalım.
+
+<ul class="org-ul">
+<li>Newtoncu çekim gücü diye bir şey var ve bu şey kurşun gülleden çıkıp zaman geçmeden aradaki mesafeyi katedip sarkaç koluna asılı topa ulaşıyor ve topu kendine doğru çekiyor ve sarkaç kolunu hareket ettiriyor.</li>
+
+<li>Bu deney Newtoncu çekim gücü var mı yok mu diye sormuyor, olduğunu varsayıyor. Newtoncu çekim gücünü sorgulayan bir deney çok daha değişik olurdu.</li>
+
+<li>Newtoncu çekim gücü ile telin geri döndürücü gücü dengede durabilir varsayımı de gerçekçi değil bence çünkü F(R) Newtoncu güce mutlaka yenilecektir, çünkü Newtoncu güç mesafenin karesi olarak değişiyor ama telin gücü sarkaç kolunun döndüğü açı ile düz olarak değişiyor. 1, 2, 3, 4 diye değişen telin gücü, 1, 4, 9, 16 olarak değişen Newtoncu güce her zaman yenilecektir. Ama Cavendish ağırlıkla top arasındaki 8.85 inch mesafeyi sabit kabul ediyor, (bu da başka bir varsayım) ve mesafe değişmediği için bu bahsettiğimiz problem oluşmuyor. Ama gerçekte bu iki gücün dengede durması olasılığı yok.</li>
+</ul></li>
+
+<li value="9">Newtoncu gücün a priori, sorgulanmadan ve sadece Newton dedi diye kabul edilmesi, ve Newtoncu çekim gücü ile telin geri döndürücü gücünün dengede durabileceği&#x2026; Dünyanın da çekim gücü olduğu ve yeryüzünde g ivmesi ile düşen cisimlerin dünyanın çekimi yüzünden düşüyor olmaları&#x2026; bu varsayımlar sorgulanmalı.</li>
+
+<li>Çekimin ağırlığa oranlı olduğu varsayımı, yani,</li>
+</ol>
+
+\begin{equation*}
+F(N) = \text{AĞIRLIK}
+\end{equation*}
+
+<p>
+yani,
+</p>
+
+\begin{equation*}
+\frac{F(W)}{F(E)} = \frac{\text{GÜLLENİN AĞIRLIĞI}}{\text{DÜNYANIN AĞIRLIĞI}}
+\end{equation*}
+
+<p>
+Dünya gülleden daha ağır olduğu için daha çok çekiyor. Newtoncu inanışta "daha ağır" demek, daha fazla birim madde demektir, yani 150 kg güllede \(x\) sayıda birim madde varsa, dünyada, gülleye göre sonsuz sayıda birim madde var demektir ama dünya taa (6 \(\times\) 41,800,000 inch) mesafeden çekiyor ama bizim küçük gülle sadece 8.85 inch mesafeden çekiyor, yani mesafeden kazanıyor.
+</p>
+
+<ol class="org-ol">
+<li value="11">Mesafenin çekim gücü ile ilgisi yok, yani çekim gücünün kaynağı mesafe değil, çekim gücü ağırlıkta konuşlanmış, yani çekim gücü ağırlığın özelliği. Newton ağırlığa çekim gücü atfetmenin saçmalığını gördüğü için bir de "kütle" kavramı icat etmiş ve çekim gücü kütlededir demiş. Ama dikkatli bakınca görüyoruz ki, ağırlık ve kütle eşanlamlı kelimeler. Bir araya gelerek bir cisim oluşturan bir birim maddelerin sayıları arttıkça çekim güçleri de artıyor. Bu da ilginç bir şey, bu birim maddeler birbirlerini çekip giderek sıkışıp yoğunlaşacakları yerde, kendi aralarında anlaşıp "kendi dışımızdaki şeyleri çekelim" diyorlar çünkü Newton öyle buyurmuş, doğa Newtona uymak zorunda.</li>
+
+<li>Ağırlıkta konuşlanmış çekim gücü, aynı bır ışık hüzmesi gibi, mesafenin karesi ile yoğunluğunu kaybediyor. Yani ağırlık etrafında bir çekim alanı var ve bu çekim alanının çekme gücü mesafenin karesi ile azalıyor. Ama Newtoncular çekim yasasının "ters kare yasası" olduğunu söylerler sanki çekimi yapan mesafeymiş gibi.</li>
+
+<li>Bu da bir varsayım, yani, çekim gücünün ağırlığa oranlı olduğu&#x2026; ama varsayımın temelinde de Newtonun maddece doktrini var.</li>
+
+<li>Newtoncu dünya modeli maddeci bir dünya modelidir. Maddeci ne demek? Newton'un temel varsayımı bu dünyanın madde birimlerinden meydana gelmiş olmasıdır. Yani eskiden atomculuk denen doktrini Newton canladırıp bütün dünyaya gerçek doğa modeli olarak dayatmış ve kabul ettirmiştir.</li>
+
+<li>Newton, dünyanın bölünmez parçalardan meydana geldiğini söylüyor. Üstelik Newton kendini peygamber olarak gördüğü için de Tanrının dünyayı Newtoncu yasalara göre yarattığını söylüyor, yani Tanrı dünyayı Newtoncu doktrinlere uygun olarak bölünemez birimler olarak yaratmış ve bu bölünemez birimlere madde demiş. Newton tanrıdan aldığı bu bilgiyi <i>Optics</i> kitabında insanlığa sunuyor ve bu Newtoncu maddeci düzenin zaten Tanrı tarafından yaratıldığını ve değiştirilemeyeceğini söylüyor. Ne güzel değil mi, gelmiş geçmiş en büyük bilimsel deha olarak kabul edilen Newton Tanrıyı kendi doktrinlerine destek olarak kullanıyor ve bunu da bütün insanlık kabul ediyor.</li>
+
+<li>Newton'un tanımladığı bu madde birimleri nasıl şeyler acaba? Madde birimi veya kısaca madde denen bu hayali ve doğa üstü şeylerin temel özelliği bölünemez olmaları, tanım olarak bölünemezler, yani sadece bugünkü teknoloji ile bölünemez değiller, hiçbir zaman hiçbir teknoloji ile bölünemeyecekler çünkü tanrı onları Newtonun dediğine göre bölünemez olarak yaratmış.</li>
+
+<li>Bölünemez ne demek? Bölünümez olan şey mutlak yoğun ve mutlak sert demektir. Yani, sertliği ve yoğunluğu görece olmayan şey demektir. Bizim bu dünyamızda mutlak katı madde yoktur çünkü bütün yüzeyler görecedir yani yüzey sadece tanımlanınca vardır zaten yüzey delikli ve geçirgen olan şey demektir, deliksiz ve geçirgen olmayan yüzey yoktur. Ama Newton mutlak katı, mutlak yoğun, ve deliksiz bir yüzeyi olan bu absürd şeyleri tanımlayıp onlara madde demiş. Adamın hayal gücü müthiş bunu kabul etmemiz gerekiyor. Çünkü bizim gibi hayal gücü sınırlı olan insanlar bu mutlak ağır ve mutlak yoğun cisimlerin nasıl hareket edeceğini düşünemeyiz, aklımız yetmez. Ancak Newton mutlak ağır bir cismin diğer cisimlerle etkileşime girebileceğini söyleyibilir.</li>
+
+<li>Bölünemez ne demek? Mutlak yoğun, mutlak sert yani aşınamaz demektir. Aşınmayan ve sürtünme yasalarına dahil olmayan bir cisim zamanın da dışındadır ve böylece fiziğin bütün kutsal termodinamik yasalarını ve enerji koruma yasaları ile alay eder ve onlara nanik yapar. Newton bütün fizik yasalarına nanik yapan zaman ve fizik yasaları dışında temel birimler tanımlıyor ve bu birimlerin hareketlerini inceleyen bilim dalına da "mekanik" diyor!! Bin yıllık makanik kelimesi bir anda Newton tarafından yozlaştırılıyor ve doğa üstü mutlak sert ve hareket edemeyen cisimlerin hareket yasalarını bildiren bilim dalı olarak tanımlanmış oluyor.</li>
+
+<li>Bölünemeyen şey zaman dışındadır. Yani bildiğimiz dünyanın dışındadır, doğa üstüdür. Bu dünyada yoktur. Bölünemeyen şey aşınmaz. Sürtünme yasalarına uymaz. Enerjisi hiç bitmez. Hiçbir açığı olmayan bir yüzeyi vardır ve mutlak sert olduğu için elastikliği yoktur. Yani bu cisme çarpan yandı, zaten çarpamaz, fizik yasalarına aykırı, düşünülemez bile, mutlak yoğunluk kara delik dedikleri imkansızlığın tam tersi bir imkansızlık ve daha da absürd bir şey. Nasıl ki fizikçiler madde ve anti-madde diye şeşler üretmişler, madem imkansızlık var o zaman anti-imkansızlık da olmalı diye işi simetriye bağlamışlar. Okulculuk işte böyle harika bir şeydir, şeyhinizin her uyduruk lafına tanrı sözüymüş gibi inanıp doğrulamak zorundasınızdır.</li>
+
+<li>Mutlak ağır bir madde hareket edemediği gibi, başka hiçbir cisim ile etkileşim kuramaz, çünkü mutlak sert olduğu için elastikliği yoktur, elastikliği olmayan hiçbir şey çarpışamaz yani hiçbir şeyi yansıtamaz.</li>
+
+<li>Fakat Newton bu mutlak ağır maddelere hareket etme özelliği verdiği gibi bir de çekim gücü özelliği veriyor. Bu hiçbir deliği olmayan ve mutlak yoğun olan şeyler kendi aralarında birleşip başka maddelere çekim gücü yolluyorlar. Newton'dan çekim masalları&#x2026;</li>
+
+<li>A cisminden B cismine zaman geçmeden gidebilen doğa üstü bir şey. Bizim bildiğimiz bu dünyada mesafeleri zaman geçmeden aşan bir şey olamaz. Einstein'ın ışık hızına koyduğu hız sınırı fiziğin en kutsal kavramı olarak kabul eden fizikçiler, Newtoncu yerçekiminin sonsuz hızla mesafeleri katetmesine seslerini çıkarmazlar çünkü fizik okulculuğunda Newton'un otoritesi lerkesten ve herşeyden üstündür. Güneşten çıkan bir ışık hüzmesi tıngır mıngır dünyaya 4 dakikada gelirken; yine güneşten çıkan ve dünyayı yörüngesinde tuttuğu söylenen yerçekimi anında, hiç zaman geçmeden dünyaya ulaşır. Fizikçiler bu absürd durumu görmezden gelirler çünkü şeyhleri Newton böyle buyurmuştur. Newtonun müritleri Newtonun yerçekimi masallarını kelimesi kelimesine tekrarlarlar. Newton "ben de bilmiyorum bu güç mesafeleri nasıl zaman geçmeden geçiyor ama geçiyor işte&#x2026;" dediği için müritler de aynı mazereti tekrarlayıp dururlar.</li>
+
+<li>Newton yörünge hesaplarında güç diye bir şey kullanmıyor ki, Kepler Kuralını kullanıyorlar. Yörüngeler \(R \propto T^{1.5}\) orantısı ile hesaplanır, Newton da bu hesabı kullanır, müritleri de ama bir sürü ideolojik marka terimler eklerler. Bunlardan biri de \(F\) terimleridir bu \(F\) terimleri de dekoratiftir çünkü hepsi de elenir, \(F\) terimleri, Newton kopartıp ayırdığı Kepler Kuralının oranlı için yer tutan boş terimlerdir.</li>
+
+<li>Kepler Kuralında güç diye bir terim yoktur ama Newton $R=T<sup>1.5</sup> orantısını \(R/T^2 = 1/R^2\) olarak yazıp \(1/R^2\) terimine de "güç" etiketini yapıştırmış. Newton'un sahtekarlığı bu.</li>
+
+<li>Keplerin orantısına baktığımızda denklemin iki tarafında da \(R\) harfinin olduğunu görüyoruz, yani \(1/R^2\) olarak değişen bir orantı yok, çünkü öteki tarafta da bir R var, ama sahtekar Newtoncular \(F=m\, R/T^2\) ve \(F=m/R^2\) deyip sanki güç terimleri ile hesaplar yapıyorlarmış gibi yapıp sonra \(F=F\) deyip \(F\) terimlerini elerler, eğer \(F\) terimleri olmadan yörünge hesapları yapıyorsanız o zaman yörünge hareketinin Newtoncu güç ile bir ilgisi yok demektir.</li>
+
+<li>Olmayan terimlerle hesaplar yaptığını söylemek skolastik geleneğin klasik bir sahtekarlığıdır. Newtonculuk bir tarikattır. Bu \(F=F\) ibadeti fizikçilerin isteseler de istemeseler de yapmaları gereken bir ibadettir ve hiçbir fizikçi Newton'a olan ibadetini ihmal edemez.  tarikatçılık budur. Tarikat şeyhinin sözleri kutsaldır ve korunmalıdır. Eğer deneyler şeyhin sözleri ile çelişiyorsa o zaman deneyler yanlıştır ve şeyhin kutsal sözlerine uyarlanmalıdır. Bu sahtekarlığı Cavendish deneyinde açıkca görüyoruz.</li>
+
+<li>O zaman Cavendish deneyini aslına uygun olarak tekrarlayarak işin aslını anlamış olacağız.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2022-09-23 Fri 17:25</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
