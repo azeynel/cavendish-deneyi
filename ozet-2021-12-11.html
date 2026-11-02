@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-02 Mon 09:26 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org908d25a" class="outline-2">
+<h2 id="org908d25a">Cavendish deneyi, özet (11 Kasım 2021)</h2>
+<div class="outline-text-2" id="text-org908d25a">
+<p>
+Çok çeşitli katmanları olan bir konu bu. Ama her şeyden önce karşımızda, Cavendish'in deneyini yapmak için kullandığı yatay burulmalı sarkaç var.
+</p>
+
+<p>
+Bu sarkacın kolunun uzunluğunu biliyoruz ama sarkaca doğal salınımını veren telin sertliğini bilmiyoruz. Telin sertliğine "geri döndürücü güç" diyorlar. Newtoncular dünyayı Newtoncu gücün bütün evreni kapladığı ve madde birimlerinin birbirlerini zaman geçmeden çektiği, yani madde birimlerinin akıllı olduğu, böyle masalsı, Alice Newtoncu harikalar diyarında, aynanın ötesinde, bir dünya olarak gördükleri için yörüngeleri de, sarkaçları da, inert kurşun gülleleri de birbirlerini çeken dinamik Newtoncu cisimler olarak gördükleri için; bu deneye de aynı kafayla bakarlar. Biz de onların bu "Newtoncu güç" ve "madde" ve "kütle" marka terimlerini kullanarak ne yaptıklarını anlamaya çalışıyoruz. Aslında, okulcu Grand Master Newton'un uydurduğu, okulcu skolastik, bir işe yaramayan dekoratif etiketlere hiç gerek yok, bütün deneyin zaten Kepler Kuralının bir uygulaması olduğu gösterilebilir.
+</p>
+
+<p>
+Neyse, resmi Cavendish analizini takip edelim. Telin sertliğine geri döndürücü güç diyorlar. Bu güç kolun döndüğü açıya oranlı, açı arttıkça güç de artıyor ve bir noktada, kol \(A\) açısı kadar döndükten sonra, telin burulma gücü kolu durduruyor ve kol bu sefer geri dönüyor. Bu hareket kolun denge noktasından başlıyor, yani \(A\) açısı denge noktasından maksimum açıya kadar olan açı. Kolu \(A\) açısından geri döndüren güç \(F_0\), maksimum değerine ulaşınca kol geri dönüyor.
+</p>
+
+<p>
+\(F_0\) ile sarkacın dönemi arasında şöyle bir ilişki var; \(F_0\), dönemin ters karesi ile orantılı, yani, \(F_0 \propto \frac{1}{T_0^2}\).
+</p>
+
+<p>
+Cavendish sarkaç kolunun uçlarına yarıçapı [ 2.54 cm ] olan kurşun toplar asmış (ağırlığı 0.73 kg). Bir de ağırlığı 158.04 kg. olan daha büyük kurşun ağırlıklar var. Bu büyük güllelere Cavendish "ağırlık" diyor çünkü bunlar topların yakınına getirilince topları Newtoncu çekim gücü ile çekerek sarkaç kolunu oynattığı varsayılıyor. Sarkacın hareketi yani dönemi bu varsayıma göre hesaplıyor.
+</p>
+
+<p>
+Deney bu yatay burulmalı sarkaçla yapılıyor. Cavendish bu sarkacın dönemini ölçüp dünyanın yoğunluğunu bu dönemden hesaplıyor. Fakat sarkaç kolunun bir de doğal salınımı olduğunu belirtmek gerekir. Sarkacın geri döndürücü gücü \(F_0\)'ın etkisi ile sürekli salınım halinde, yani Cavendish'in sarkacın bu doğal salınımını varsayılan Newtoncu çekim gücünün sebep olduğu salınımdan ayırması gerekiyor. Cavendish, deneyde, ağırlıkları topların bir bu tarafına bir de diğer tarafına getirerek ölçüm yapıyor ve bu şekilde Newtoncu güce ait salınımı ayırt edebildiğini söylüyor. Bunu Cavendish'in ölçümlerine detaylı olarak baktığımız zaman inceleyeceğiz.
+</p>
+
+<p>
+Cavendish'in dünyanın yoğunluğunu sarkacın salınımına bağlayan bir orantı bulması gerekiyor. Cavendish sarkacın dönemini ölçtüğüne göre, bu dönemden dünyanın yoğunluğunu hesaplayabilmeli. Cavendish de böyle bir oran, böyle bir ifade bulduğunu söylüyor, yani, dünyanın yoğunluğu \(D =\frac{N^2}{10,683\;B}\). \(N\) = Cavendish'in ölçtüğü dönem ve \(B\) = kolun döndüğü ölçek derecesi sayısı.
+</p>
+
+<p>
+Bu hesabı yapınca 5.5 sayısını elde ediyor, bu da dünyanın yoğunluğunun suyun yoğunluğunun 5.5 katı olduğunu söylüyor.
+</p>
+
+<p>
+Sihirbazlık gibi geliyor. Bir sarkacın dönemini ölç ve bu sayıdan dünyanın yoğunluğunu bul. Tabii, dünyanın yoğunluğu veya dünyanın ortalama yoğunluğu konuları ayrıca incelenmesi gereken kavramlar.
+</p>
+
+<p>
+Cavendish dünyanın yoğunluğundan ne anladığını açıklamıyor. Zaten ne tesadüftür ki 5.5 sayısı Newton'un bir tahmini, ama Newtoncular Newton'un sözünü tanrı sözü gibi alıp bu sayıyı sarkaçları yalancı şahit olarak göstererek onaylatmayı seçmişler.
+</p>
+
+<p>
+Cavendish aslında çok ilginç bir analiz yapıyor. Önce, telinin sertliğini ve dönemini bilmediğimiz yatay sarkacı; hem dönemi hem de geri döndürücü gücü bilinen bir dikey sarkaçla ilişkilendiriyor. Cavendish, çok ince ölçümler gerektiren belki de henüz bilinmeyen teknolojiler gerektiren telin burulma sabitini hiç bulmaya çalışmıyor.
+</p>
+
+<p>
+Bu dikey sarkaç, saniye sarkacı dediğimiz ve tam dönemi 2 saniye olan sarkaç.
+</p>
+
+<p>
+Burada yeryüzünde sarkaçların geri döndürücü gücü görevini yapan "yerçekimi ivmesi" \(g\) ile yatay sarkaçta aynı görevi yapan telin sertliğini ilişkilendiriyor. Bunu da şöyle yapıyor. Yerçekimi ivmesi altında salınan bir dikey sarkacın kolunun uzunluğu ile dönemi arasında \(l \propto t^2\) ilişkisi var, kol uzadıkça dönem kare olarak artıyor. Cavendish, yatay sarkacın telinin \(g\) ile aynı olduğunu varsayıyor, yani eğer yatay sarkaçın kolu saniye sarkacının kolu ile aynı uzunlukta olsaydı, onun da tam dönemi 2 saniye olurdu diyor. Fakat deney sarkacının kolu \(l\) fakat saniye sarkacının kolu \(L\).
+</p>
+
+<p>
+O zaman, 
+</p>
+
+\begin{align*}
+    \frac{l}{L} = \frac{t^2}{T^2}
+\end{align*}
+
+<p>
+ilişkisi yatay sarkaçla dikey sarkaç arasında ilişkiyi veriyor. Saniye sarkacının dönemi 1 saniye olduğuna göre yani \(T\) = 1 saniye (bir uçtan diğer uca 1 saniye, ama başladığı uca geri dönüşü 2 saniye). Öyleyse, \(t^2 = \frac{l}{L}\) ve  Cavendish bu \(g\)'yi kopyalayan özel tel olsaydı, yatay sarkacın döneminin \(t^2 = \frac{l}{L}\) olacağını buluyor fakat bu yeterli değil, şimdi herhangi bir tel sertliği için yatay sarkacın dönemini bulması gerekiyor, bunu da \(F_0 \propto \frac{1}{T_0^2}\) ilişkisini kullanarak buluyor.
+</p>
+
+<p>
+yani,
+</p>
+
+\begin{align*}
+    \frac{F_0}{F} = \frac{T^2}{T_0^2}
+\end{align*}
+
+<p>
+ilişkisini kullanarak buluyor.
+</p>
+
+<p>
+\(F_0\) = \(g\) ile sallanan sarkacın geri döndürücü gücü
+</p>
+
+<p>
+\(F\) = herhangi bir geri döndürücü güç ile sallanan sarkacın geri döndürücü gücü. Bu aynı boyutlarda yatay sarkacın telinin geri döndürücü gücü olabilir.
+</p>
+
+<p>
+\(F_0\) ve \(T_0\) biliniyor, \(T\)'yi Cavendish ölçüyor, \(F\) de bulunmuş oluyor.
+</p>
+
+<p>
+Fakat bu da yetersiz, çünkü Cavendish telin geri döndürücü gücünü, ağırlıkların Newtoncu çekim gücüne eşitlemesi gerekiyor. Bunu nasıl yapıyor? Tam anlamış değilim.
+</p>
+
+<p>
+Ama sarkaç kolu denge noktasında ve ağırlıklardan en uzakta olduğu zaman, kolu çeken Newtoncu gücün, telin geri döndürücü gücüne eşit olduğunu varsayıyor olmalı.
+</p>
+
+<p>
+Ama deneysel olarak bu gerçekçi değil çünkü kolu çeken sadece Newtoncu güç değil, kol zaten telin geri döndürücü gücü altında geri dönüp doğal salınım hareketini yapacaktı. Kolu geri döndüren Newtoncu güç olmadığına göre, Cavendish Newtoncu gücü ölçmüyor sadece telin geri döndürücü gücü sonucu olan dönemi biliyor. Peki Cavendish'in dünyanın yoğunluğunu hesaplamak için Newtoncu gücü ölçmesi veya bilmesi gerekiyor mu? Bence gerekmiyor, ama Cavendish de bütün Newtoncular gibi cisimler arasındaki mesafenin ters karesini "Newtoncu güç" olarak tanımladığı için bu deneyin analizini de bu açıdan yapıyor.
+</p>
+
+<p>
+Peki Cavendish bundan sonra ne yapıyor? Yatay sarkacı saniye sarkacı ile ilişkilendirip dönemini buldu; sonra da herhangi tel sertliğine göre geri döndürücü gücü buldu. Yani, sarkaca herhangi bir tel takıp dönemi ölçtüğünde telin sertliğini bulabiliyor.
+</p>
+
+<p>
+Sonra da, biraz şüpheli olarak, telin geri döndürücü gücünün ağırlıkların topa uyguladığı çekim gücüne eşit olduğunu varsayıyor.
+</p>
+
+<p>
+Şimdi de bu güçten dünyanın yoğunluğunu hesaplayabileceği bir oran bulması gerekiyor. Cavendish, dünyanın yoğunluğunu suyun yoğunluğunu birim alarak ifade ettiği için bu aşamada çapı 1 foot olan (yarıçap 6 inch) olan bir su küresi tanımlıyor.
+</p>
+
+<p>
+(<i>Devamı var</i>&#x2026;)
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-02 Mon 09:26</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
