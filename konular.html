@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-02 Mon 09:12 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>İçindekiler</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org6f4e3f0">Analoji (Benzeşim)</a></li>
+<li><a href="#org09c827d">Ağırlık ve kütle</a></li>
+<li><a href="#org7c687a3">Ağırlıksızlık</a></li>
+<li><a href="#org1e6a9c9">Belgesel</a></li>
+<li><a href="#orga1a4795">Birim</a></li>
+<li><a href="#org1532cb5">Boyut analizi</a></li>
+<li><a href="#org4037a21">Büyüklük (Magnitude)</a></li>
+<li><a href="#orgd750c6c">Cavendish deneyi</a></li>
+<li><a href="#orge88f2ba">Cavendish deneyi sorular</a></li>
+<li><a href="#orgcad82df">Cavendish evi (Clapham Common)</a></li>
+<li><a href="#org5995cd5">Cavendish deneyi bir mucize mi?</a></li>
+<li><a href="#org8b89914">Cavendish deneyi hedefleri</a></li>
+<li><a href="#org7dbe7fc">Denklem</a></li>
+<li><a href="#orgbaeac0f">Derivation (Derivasyon)</a></li>
+<li><a href="#org9662c32">Fizik ve matematik</a></li>
+<li><a href="#orgc9a4040">Frekans</a></li>
+<li><a href="#org7bcc1c8">G (Newton'un Evrensel Çekim Gücü Sabiti)</a></li>
+<li><a href="#orgdd831ae">g</a></li>
+<li><a href="#org35ac222">Gaussian constant k</a></li>
+<li><a href="#org20ac83a">Girdaplar teorisi</a></li>
+<li><a href="#orgd81d3a3">Gravity</a></li>
+<li><a href="#org0a3ac66">Güç (burulma)</a></li>
+<li><a href="#org08bd87b">Güç (Centrifugal, dışa doğru)</a></li>
+<li><a href="#orga1cef59">Güç (Merkezcil)</a></li>
+<li><a href="#org167f7f9">Güç (Mesafenin karesine ters orantılı)</a></li>
+<li><a href="#orgd9bc4d0">Güç (Newtoncu)</a></li>
+<li><a href="#orgfee4a58">Güç (Yerçekimsel)</a></li>
+<li><a href="#org20a17f6">Güç (Zaman geçmeden)</a></li>
+<li><a href="#orgefb1197">Güç (Çekim)</a></li>
+<li><a href="#orgae792bf">Güç (Yörünge)</a></li>
+<li><a href="#orgd1bbf3e">Gyroscope</a></li>
+<li><a href="#org11fd703">Hareket</a></li>
+<li><a href="#orgfbcf538">Hareket (Dairesel)</a></li>
+<li><a href="#org532b320">Hareket (Doğal)</a></li>
+<li><a href="#orgf431dad">Huygens</a></li>
+<li><a href="#orgf683411">Hareket (Düz çizgi üzerinde)</a></li>
+<li><a href="#org04d7c5d">Hedefler</a></li>
+<li><a href="#org64aba78">İlişkiler</a></li>
+<li><a href="#org33a0009">Kepler</a></li>
+<li><a href="#orgffb2ea5">Kepler Kuralı</a></li>
+<li><a href="#orge7d2644">Konular</a></li>
+<li><a href="#org394ad3b">Kütle</a></li>
+<li><a href="#org07b640f">Kütle ve ağırlık</a></li>
+<li><a href="#org7b8d56a">Maddecilik</a></li>
+<li><a href="#org11e1143">Moment of Inertia</a></li>
+<li><a href="#org5eb7f01">Newton</a></li>
+<li><a href="#org5197a55">Newton kültü (Newtonculuk)</a></li>
+<li><a href="#org0944fb7">Newton mekaniği</a></li>
+<li><a href="#orga484098">Newton'un ruhu</a></li>
+<li><a href="#orgffb1da1">Newton'un sihirli astronomisi</a></li>
+<li><a href="#orgfa5203b">Newtoncu güç</a></li>
+<li><a href="#org4cd78cf">Newton (İlkeler)</a></li>
+<li><a href="#org2e5f93a">Okulculuk</a>
+<ul>
+<li><a href="#orgc4942ad">Newtoncu okulculuk</a></li>
+<li><a href="#orgf9c3388">Okulculuğun genel tanımı</a></li>
+</ul>
+</li>
+<li><a href="#orgb72ba74">Oran</a></li>
+<li><a href="#orgdf41fe1">Orantı</a></li>
+<li><a href="#org404b657">Para</a></li>
+<li><a href="#org6f737f3">Saniye sarkacı (Seconds pendulum)</a></li>
+<li><a href="#org60f3129">Simple harmonic motion (Yalın uyumcul devinim)</a></li>
+<li><a href="#org968720e">Süredurum (Atalet, eylemsizlik)</a></li>
+<li><a href="#orgf15c4ca">Tanım</a></li>
+<li><a href="#org3576c1d">Torque</a></li>
+<li><a href="#orgc6d13f8">Uydu</a></li>
+<li><a href="#org77ffdc6">Uydu ve vv/r</a></li>
+<li><a href="#org7a3f081">Uydu ve yoğunluk</a></li>
+<li><a href="#org40159fb">Yer çekimi</a></li>
+<li><a href="#org19c40cd">Yoğunluk</a></li>
+<li><a href="#orgb8dcfd4">Yoğunluk (dünyanın)</a></li>
+<li><a href="#org9a6dcac">Yoğunluk (tanım)</a></li>
+<li><a href="#orgc990343">Yoğunluk (frekansın karesi)</a></li>
+<li><a href="#org57fe73c">Yörünge</a></li>
+<li><a href="#org974c623">Yörünge (Geostationary)</a></li>
+<li><a href="#orgc463e17">Yüzey</a></li>
+</ul>
+</div>
+</div>
+<p>
+<b>Konular</b>
+</p>
+
+<div id="outline-container-org6f4e3f0" class="outline-2">
+<h2 id="org6f4e3f0">Analoji (Benzeşim)</h2>
+</div>
+<div id="outline-container-org09c827d" class="outline-2">
+<h2 id="org09c827d">Ağırlık ve kütle</h2>
+<div class="outline-text-2" id="text-org09c827d">
+<ul class="org-ul">
+<li>Bakınız "Kütle ve ağırlık"</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7c687a3" class="outline-2">
+<h2 id="org7c687a3">Ağırlıksızlık</h2>
+<div class="outline-text-2" id="text-org7c687a3">
+<ul class="org-ul">
+<li>Ağırlıksız ortamda Newtoncu güce ne oluyor? Çünkü \(F(N) \propto \text{AĞIRLIK}\). Ağırlık olmayınca Newtoncu gücün de yok olması lazım. Ama mutlaka bir Newtoncu açıklama vardır, basit kelime oyunları ile Newtoncu müritlerin çözemeyeceği sorun yoktur.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1e6a9c9" class="outline-2">
+<h2 id="org1e6a9c9">Belgesel</h2>
+<div class="outline-text-2" id="text-org1e6a9c9">
+<ul class="org-ul">
+<li>Deney sürecini belgelemek istiyorum ama henüz ekip kuramadım</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga1a4795" class="outline-2">
+<h2 id="orga1a4795">Birim</h2>
+<div class="outline-text-2" id="text-orga1a4795">
+<ul class="org-ul">
+<li>Ölçebilmek için bir birim seçmemiz gerekir ve istediğimiz birimi seçebiliriz.</li>
+<li>Fizikçiler seçtikleri ve tanımladıkları birimleri kutsayıp doğa sabiti olarak satmayı severler.</li>
+<li></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1532cb5" class="outline-2">
+<h2 id="org1532cb5">Boyut analizi</h2>
+</div>
+<div id="outline-container-org4037a21" class="outline-2">
+<h2 id="org4037a21">Büyüklük (Magnitude)</h2>
+<div class="outline-text-2" id="text-org4037a21">
+<ul class="org-ul">
+<li>Sayılarla ifade edilebilen büyüklük.</li>
+<li>Fizikte büyüklük olarak görülen çok şey aslında etikettir.</li>
+<li>Sadece büyüklükler oran ve orantılara girebilirler.</li>
+<li>Magnitude ==&gt; Büyüklük, boy, boyut, cesamet</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd750c6c" class="outline-2">
+<h2 id="orgd750c6c">Cavendish deneyi</h2>
+<div class="outline-text-2" id="text-orgd750c6c">
+<ul class="org-ul">
+<li>Cavendish deneyi Newton'dan 110 yıl sonra yapılmış, bu 110 yıl içinde Newtoncu güç ölçülmemiş, ölçülememiş.</li>
+<li>Bir sarkaçla dünyanın yoğunluğu nasıl hesaplanabilir?</li>
+<li>Cavendish deneyi neyi hesaplıyor?</li>
+<li>Cavendish deneyinle ilgilenen herkes Cavendish dahil sarkaca asılı olan kurşun topların onların yakınına getirilen kurşun gülleler tarafından Newtoncu çekim gücü ile çekip sarkacın kolunu oynattığını varsayıyorlar.</li>
+<li>Yani Newtoncu çekim gücünün oluduğunu varsayıyorlar ve bu gücü de deneyde gözlemlediklerini iddia ediyorlar.</li>
+<li>Büyük ve küçük gülleler arasında Newtoncu çekim gücü olduğunu varsayıyorlar.</li>
+<li>Newtoncu çekim gücü sarkacın kolunu A açısı kadar döndürüyor. Sarkaç hiç sabit durmadığı için</li>
+<li>Cavendish deneyinde telin burulma gücü kolun döndüğü açıya direk oranlıdır, açı arttıkça burulma sertliği artıyor</li>
+<li>Ama telin burulma gücünün durdurduğu çekim gücü mesafenin karesine ters orantılı olduğu için ve hem çeken hem de çekilen toplardan yayıldığı için burulma gücünü durdurabileceğini zannetmiyorum.</li>
+<li>Telin sertliği sözde çekim gücünü durdurunca, Newtoncular çekim gücünü bulduk diyorlar, bundan da yoğunluğu hesaplıyorlar.</li>
+<li>Cavendish deneyinde telin sertliğinin önemi ve sonuçları, çekim gücü ile olan ilişkisi.</li>
+<li>Cavendish deneyi 224 yıl önce yapılmış.</li>
+<li>Cavendish deneyi zaten başka bir sonuç veremez</li>
+<li>Sarkacın koluna kurşun gülleler asıyorlar sonra bu güllelerin yakınına daha büyük, daha ağır kurşun gülleler getiriyorlar ve bu büyük topların sarkacın koluna asılı topları Newtoncu gücün çektiğini varsayıyorlar ve bunu da deneyle gözlemlediklerini söylüyorlar. Yani, bütün doğa yasalarını ihlal eden doğa üstü bir mucize, Newton "güç" dedi diye bu mucize sarkaç kolunu oynatıyormuş. Yok böyle bir şey. Bu sebepten deneyi tekrarlamak istiyorum.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge88f2ba" class="outline-2">
+<h2 id="orge88f2ba">Cavendish deneyi sorular</h2>
+<div class="outline-text-2" id="text-orge88f2ba">
+<ol class="org-ol">
+<li>Cavendish bu deneyde Newtoncu çekim gücünü ölçmüş mü?</li>
+<li>Cavendish deneyi, o zamana kadar gözlemlenmemiş olan, Newtoncu çekim gücünü, bir deneyle gözlemlemiş olmak için mi, bir proje olarak mı yapılmış acaba?</li>
+<li>Cavendish deneyinin Newtoncu çekim gücünü ölçmesi bir mucize mi?</li>
+<li>Cavendish'in 1.5 yıl içinde sadece 17 deney yapmış olması ve bütün deneylerin iyi sonuç varmesi göze hoş görünmüyor.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgcad82df" class="outline-2">
+<h2 id="orgcad82df">Cavendish evi (Clapham Common)</h2>
+<div class="outline-text-2" id="text-orgcad82df">
+<p>
+<a href="https://boroughphotos.org/lambeth/cavendish-house-clapham-common-south-side-23/">https://boroughphotos.org/lambeth/cavendish-house-clapham-common-south-side-23/</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org5995cd5" class="outline-2">
+<h2 id="org5995cd5">Cavendish deneyi bir mucize mi?</h2>
+<div class="outline-text-2" id="text-org5995cd5">
+<ol class="org-ol">
+<li>Cavendish deneyini anlamak için Newtoncu çekim gücünü anlamamız gerekiyor.</li>
+<li>Newtoncu çekim gücü denen şey doğaüstü ve absürd bir şey olduğuna göre bir deneyle ölçülemez. Newtoncu çekim gücü içinde yaşadığımız dünyada varolmayan bir şey olduğuna göre bir sarkacın kolunu oynatamaz. Ama Cavendish sarkacın kolunun Newtoncu çekim gücü tarafından oynatıldığını gözlemlemiş. O zaman, Cavendish deneyi bir fizik deneyi değil, bir mucizedir. Ancak mucizelerde doğaüstü etkenler dünyada bir sarkacın kolunu oynatabilir. Veya, bir sihirbazlık ve el çabukluğu vardır. Öyleyse, Cavendish deneyi ya bir mucizedir veya bir sahtekarlıktır.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org8b89914" class="outline-2">
+<h2 id="org8b89914">Cavendish deneyi hedefleri</h2>
+<div class="outline-text-2" id="text-org8b89914">
+<ol class="org-ol">
+<li>Küçük toplar çekim gücünün hesaplandığı denklemlere girmediğine göre bu ağırlıkları çıkartabiliriz ve toplar olmadan da aynı sonuçları almamız gerekir. Toplar hesapların yapıldığı denklemlerde bulunmuyor çünkü eleniyorlar.</li>
+<li>Cavendish'in sarkacının kolu Newtoncu çekim gücü tarafından çekilmiş mi? Yani sarkacın kolu Cavendish'in 17 deneyindeki gibi ağırlıkların yeri değiştirilince ağırlıklara doğru kaymış mı? (Sarkacın orta noktası ağırlıkların yeni yerine doğru kaymış mı?)</li>
+<li></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org7dbe7fc" class="outline-2">
+<h2 id="org7dbe7fc">Denklem</h2>
+<div class="outline-text-2" id="text-org7dbe7fc">
+<ol class="org-ol">
+<li>Denklemlerden elenen terimler iz bırakır mı?</li>
+<li>Elemek ile terimi sıfıra eşitlemek arasındaki fark nedir?</li>
+<li>Mesela, fizikte çekilen kütleyi temsil eden \(m\) harfini yazıp sonra elemek gelenekleşmiş bir uygulamadır. Fakat, \(m\) elenince geriye bir boşluk kalıyor ve \(m\) ile ilişkisi olan diğer terimler anlamsızlaşıyor. Mesela, \(M\) ile \(m\)'nin arasındaki mesafe \(r\)'ın bir ucu boşlukta kalmış oluyor.</li>
+<li>Elenen terimin bu denklemde işi yok demektir, o zaman baştan itibaren yazılmamalıdır.</li>
+<li>Aynı terimin denklemin iki tarafına da yazılması.</li>
+<li>Aynı terimi denklemin iki tarafına yazmak sadece bir matematiksel sahtekarlık olabilir.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgbaeac0f" class="outline-2">
+<h2 id="orgbaeac0f">Derivation (Derivasyon)</h2>
+<div class="outline-text-2" id="text-orgbaeac0f">
+<ul class="org-ul">
+<li>Fizikte, derivasyon Newton'a ibadettir. Newtoncu terimleri yazıp, Newton'a ibadet edip sonra derivasyon denen bu ritüelle bu Newton'un marka terimlerini elemektir.</li>
+<li>Newton denklemlerinin ve Newton marka terimlerinin olduğu yerde Kepler Kuralı vardır.</li>
+<li>Olay şu: Gezegenlerin yörüngelerini hesaplamak için kullanılan sadece bir formül vardır.</li>
+<li>Bu formül Kepler Kuralıdır, yani \(T\propto R^{1.5}\). Dönem yarıçapın 1.5 katına oranlıdır.</li>
+<li>Yarıçap arttıkça dönem 1.5 katı olarak artar. Yani merkezden uzaklaştıkça yörünge hareketi yavaşlar, yani dönem artar.</li>
+<li>Newton bu formülü böyle açık açık kullanamzdı çünkü onu Newton değil Kepler bulmuştur, Newton bu kuralı Kepler'den çalmıştır.</li>
+<li>Newton Kepler Kuralı'nı ikiye bölüp \(1/RR = R/TT\) olarak yazdı ve \(1/RR\) için yarıçapın karesi ile azalan, kendi bulduğunu iddia ettiği çekim gücü olarak ilan etti.</li>
+<li>Fakat \(1/RR\) ile yörünge hesaplanamaz yani Newton'un çekim gücü kullanılarak yörünge hesaplanamaz çünkü oran \(1/RR=güç\) değildir, oran \(1/RR = R/TT\) dir.</li>
+<li>Yani Newton'un böldüğü oran yeniden birleştirilmelidir ve birleştirilince de Newton'un güç terimleri elenir, yörünge hesapları güç terimleri olmadan yapılır.</li>
+<li>Newtonculuk bir tarikattır, bir okulcu tarikattır. Bu tarikat hala aktiftir.</li>
+<li>Newton öldükten sonra Newton'un müritleri Newton mekaniğini geliştirmişlerdir.</li>
+<li>Newton mekaniği Kepler Kuralı'nın Newton marka kelimeleri ile yazılmış halidir.</li>
+<li>Newton'un müritleri \(1/RR\) terimini, yani tek başına hiçbir anlamı olmayan \(1/RR\) terimini Kepler Kuralının öksüz kalmış yarısını, \(GmM/R^2=\text{Güç}\) olarak yazmıştır.</li>
+<li>Esas olan orandır, sabitler ve birimler değildir.</li>
+<li>Burada oran \(1/R^2\) ifadesidir, \(G, m, M\) süstür, dekoratif ve siyasi, hatta dini terimlerdir çünkü Newton'un müritleri bu terimleri efendileri Newton'a ibadet etmek için yazarlar.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9662c32" class="outline-2">
+<h2 id="org9662c32">Fizik ve matematik</h2>
+<div class="outline-text-2" id="text-org9662c32">
+<ul class="org-ul">
+<li>Strassler <a href="https://profmattstrassler.com/2022/02/23/celebrating-2-22-22-or-was-it-22-2-22/">bir yazısında</a> fiziğin matematikten önce geldiğini söylüyor. Ben matematiğin fizikten önce geldiğini düşünüyorum.</li>
+<li>Örnek olarak: Fizikçiler matematiği önemsemedikleri için \(m\) harfini yazarlar ve sonra da elerler ama \(m\) harfi sanki hala denklemlerde varmış gibi davranırlar. Yani matematiği önemsememek fiziği okulculuk seviyesine düşürmüştür.</li>
+<li>Bir terim denklemlerde yoksa o terim denklemlerde yok demektir. Bilimsel yöntem budur. Denklemlerde olmayan terimler görmek, yani doktrini kurtarmak gibi denklemlerde görünmez terimler olduğunu varsaymak okulculuktur. Daha da önemlisi sahtekarlıktır.</li>
+<li>Zaten denklem denen şey fizikçilerin bu sahtekarlıklarını yapabilmek için uydurdukları bir şeydir. Temel olan orantılardır. Fizikçiler için orantılarla, yani has matematikla, sahtekarlık yapmak çok daha zordur.</li>
+<li>Newtoncu mekanikte "Newtoncu evrensel çekim gücü" \(F=Gmm'/r^2\) palavrası ile başlayan süreç fiziğin matematiksel bir bilim dalı olmadığının ispatıdır.</li>
+<li>Fizikçiler matematiği kendi Newtoncu doktrinlerini kurtarmak için kullanılarlar, matematiği Newtoncu doktrine alet ederler.</li>
+<li>Newton'un kutsal otoritesini kurtarmak için matematiği yalancı şahit olarak kullanırlar.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc9a4040" class="outline-2">
+<h2 id="orgc9a4040">Frekans</h2>
+<div class="outline-text-2" id="text-orgc9a4040">
+<ul class="org-ul">
+<li>Angular frequency \(\omega\) = 2 pi / T = 2 pi f rad/sec</li>
+<li>\(\omega^2\) = 4 pi<sup>2</sup> / TT</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7bcc1c8" class="outline-2">
+<h2 id="org7bcc1c8">G (Newton'un Evrensel Çekim Gücü Sabiti)</h2>
+<div class="outline-text-2" id="text-org7bcc1c8">
+<ul class="org-ul">
+<li>Ne Newton'un, ne sabit, ne de çekim gücü, tamamen uydurma, 19. yüzyılda fizikçilerin uydurduğu Newton çekim denklemlerinin birimlerini uyumlu hale getirmek için uydurulmuş bir birim.</li>
+<li>Doğada olmayan bir gücün birimi.</li>
+<li>Newton standart birimlerle ve denklemlerle çalışmadı, sadece oranlarla çalıştı.</li>
+<li><a href="https://en.wikipedia.org/wiki/Gravitational_constant">Wikipedia page</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdd831ae" class="outline-2">
+<h2 id="orgdd831ae">g</h2>
+<div class="outline-text-2" id="text-orgdd831ae">
+<ul class="org-ul">
+<li>g'yi Kepler hareketi olarak açıklamamız lazım</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org35ac222" class="outline-2">
+<h2 id="org35ac222">Gaussian constant k</h2>
+<div class="outline-text-2" id="text-org35ac222">
+<ul class="org-ul">
+<li>Aslında Kepler Kuralının sabit terimi</li>
+<li><a href="https://en.wikipedia.org/wiki/Gaussian_gravitational_constant">Wikipedia sayfası</a></li>
+<li><a href="https://articles.adsabs.harvard.edu/pdf/1970SvA....13..712S">Current status of determinations of the gravitationl constant</a> and the mass of the earth, M.U. Sagitov, 1970</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org20ac83a" class="outline-2">
+<h2 id="org20ac83a">Girdaplar teorisi</h2>
+<div class="outline-text-2" id="text-org20ac83a">
+<ul class="org-ul">
+<li>Newton III. Kitabın sonundaki yorumununda bu konuya değinmiş (Densmore, s,485)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd81d3a3" class="outline-2">
+<h2 id="orgd81d3a3">Gravity</h2>
+<div class="outline-text-2" id="text-orgd81d3a3">
+<ul class="org-ul">
+<li>Newton'dan önce "gravity" ağırlık anlamına geliyordu.</li>
+<li>Yani, insanlar bugün Newtoncu çekim gücü olarak gördüğümüz şeyi sadece ağırlık olarak görüyorlardı.</li>
+<li>Ağırlık kavramını Newton kendi tanımladığı çekim gücü olarak tanımlamayı başarmış.</li>
+<li>Peki Newton haklı mı? Bu gördüğümüz serbest düşüş hareketi Newtoncu çekim ile ilgili mi?</li>
+<li>İngilizce "gravity" Türkçeye "yerçekimi" olarak çevrilmiş. Ama Newtoncu doktrine göre, dünya ile taş arasında da aynı çekim vardı, ay ile dünya arasında da ve iki taş arasında da.</li>
+<li>Gravity kelimesini Türkçeye çevirenler Newtondan daha Newtoncu oldukları için ağırlık kelimesini Newtoncu çekimin sebep olduğunu varsaymışlar</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0a3ac66" class="outline-2">
+<h2 id="org0a3ac66">Güç (burulma)</h2>
+<div class="outline-text-2" id="text-org0a3ac66">
+<ul class="org-ul">
+<li>Bu güç, güç de değil, telin sertliği, kolun döndüğü açıya direk olarak oranlı, açı arttıkça telin sertliği açıya direk oranlı olarak artıyor.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org08bd87b" class="outline-2">
+<h2 id="org08bd87b">Güç (Centrifugal, dışa doğru)</h2>
+</div>
+<div id="outline-container-orga1cef59" class="outline-2">
+<h2 id="orga1cef59">Güç (Merkezcil)</h2>
+</div>
+<div id="outline-container-org167f7f9" class="outline-2">
+<h2 id="org167f7f9">Güç (Mesafenin karesine ters orantılı)</h2>
+</div>
+<div id="outline-container-orgd9bc4d0" class="outline-2">
+<h2 id="orgd9bc4d0">Güç (Newtoncu)</h2>
+<div class="outline-text-2" id="text-orgd9bc4d0">
+<ul class="org-ul">
+<li>Newtoncu güç ile manyetik güç aynı \(1/r^2\) çekimi ile me hareket ediyor diye araştırınca direk fizik safsatası çıktı karşıma</li>
+<li><a href="https://physics.stackexchange.com/questions/437723/isnt-magnetism-governed-by-the-inverse-square-law">Isn't magnetism governed by the inverse square law? [duplicate]​</a></li>
+<li>Yok efendim monopolmuş yok dipole falan filan</li>
+<li>neyse soru manyetism değil de bu sarkaç kolunu oynatan Newtoncu gücün bir kere kolu oynattı mı bir daha bırakır mı? sorusu</li>
+<li>Bırakmaz çünkü Newtoncu güç \(1/d^2\) olarak artıyor telin burulma sertliği açı ile direk olarak artıyor</li>
+<li>Bu da Newtoncu gücün Cavendish tipi bir deneyde gözlemlenemeyeceğinin başka bir delili</li>
+<li>Ama fizikçileri iyi tanıdığım için eminim bir mazaret uydururlar mesela Cavendish deneyine uygun ve açıya oranlı bir Newtoncu güç tanımlayabilirler</li>
+<li>Bu güç zaten akıllı ya, eğer bir sarkacın kolunu çekecekse, ne Newton ne de Cavendish rezil olmasınlar diye ona göre uygun bir şekilde telin gücüne saygı gösterip gel tel kardeş ben bu deneyde \(1/d^2\) olarak çekmiycem sen istediğin gibi çek, diyen bir güç tanımlayabilirler ve bunu da gayet doğal bir şeymiş gibi yaparlar</li>
+<li>Newton'un çekim gücü, (force, F) olarak tanımladığı şey, doğada varolamaz çünkü bu güç, mesafeleri zaman geçmeden kateden, aralarında mesafe olan iki kütleyi iletişime geçip hareket ettiren, hatta karşıdaki kütlenin kütlesini sorgulayıp tam da o kütleye uygun güç gönderen süper akıllı bir şey&#x2026;</li>
+<li>Objelerin içinde varolduğu varsayılan ama nerede olduğu bilinmeyen, absürd, okült ve gizemli ve ne olduğu belli olmayan bir şey doğada var olamaz.</li>
+<li>Zaten, mesafeleri zaman geçmeden aşan bir şey fiziğin en kutsal yasası olan termodinamik yasalarını da ihlal etmiş olur.</li>
+<li>Hiçbir şey termodinamik yasalarına istisna olarak tanımlanamaz.</li>
+<li>Fakat, Newton mekaniği denen resmi fizik algoritmalar sistemine bakıyoruz ve bu sistemde Newton'un çekim gücünün başarı ile kullanıldığını görüyoruz. Force, F ve onun birimi G bütün denklemlerde var.</li>
+<li>Sözde bu denklemleri kullanarak Newtoncular gezegenlerin yörüngelerini hesaplıyorlarla. Bu iş nasıl oluyor.</li>
+<li>Newton'un tanımladığı bu absürd doğa dışı, fizik yasalarına aykırı güç yörünge hesaplamakta kullanılamaz.</li>
+<li>Şapkadan tavşan çıkartan, bir sihirbazın nasıl el çabukluğu ile bizi kandırdığını biliyorsak Newtoncların da bizi kandırdıklarını biliyoruz.</li>
+<li>Bunu anlamak için yapılacak en iyi şey, ana kaynaklara gitmek ve Newton'un bu konuda yazdıklarını okumaktır.</li>
+<li>Bunu yapınca da Newton'un sahtekarlığını açıkça görüyoruz.</li>
+<li>Zaten Newton mekaniği denen şey, Newton'un</li>
+<li>Newton yeni bir güç bulmamıştır.</li>
+<li>Newton doğada varolan ve cisimler arasında zaman geçmeden iletişim kuran bir bulmamıştır çünkü böyle tanımlanan bir güç zaten doğada olamazdı.</li>
+<li>Eğer Kepler Kuralı olmasa Newton hiçbir yörünge hesabı yapamazdı.</li>
+<li>Newton'un buldum dediği güç nedir? Mesafenin karesi ile ters orantılı olan hareket ettirici bir sebep. Fakat bu güçle yörünge hesaplanamaz çünkü Kepler Kural'ında böyle bir ilişki yok ve yörüngeler sadece Kepler Kuralı ile hesaplanabilir.</li>
+<li>Newtoncu güç ağırlığa oranlı olduğuna göre ağırlıksız ortamda bu güç nereye gizleniyor?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfee4a58" class="outline-2">
+<h2 id="orgfee4a58">Güç (Yerçekimsel)</h2>
+</div>
+<div id="outline-container-org20a17f6" class="outline-2">
+<h2 id="org20a17f6">Güç (Zaman geçmeden)</h2>
+</div>
+<div id="outline-container-orgefb1197" class="outline-2">
+<h2 id="orgefb1197">Güç (Çekim)</h2>
+</div>
+<div id="outline-container-orgae792bf" class="outline-2">
+<h2 id="orgae792bf">Güç (Yörünge)</h2>
+<div class="outline-text-2" id="text-orgae792bf">
+<p>
+-<a href="https://www.jstor.org/stable/24569629">Newton'un yörünge anlayışı üzerine bir yazı</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgd1bbf3e" class="outline-2">
+<h2 id="orgd1bbf3e">Gyroscope</h2>
+<div class="outline-text-2" id="text-orgd1bbf3e">
+<ul class="org-ul">
+<li>Gyroscope'la yoğunluğun ne ilgisi var?</li>
+<li>Gyroscope döndükçe yoğunluğu azalıyor gibi <a href="https://youtu.be/ty9QSiVC2g0?t=31">video</a></li>
+<li>Dünya bir gyroscope mu?</li>
+<li>Dünyanın dönüş hızını gyroscope ile ölçebilir miyiz?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org11fd703" class="outline-2">
+<h2 id="org11fd703">Hareket</h2>
+</div>
+<div id="outline-container-orgfbcf538" class="outline-2">
+<h2 id="orgfbcf538">Hareket (Dairesel)</h2>
+</div>
+<div id="outline-container-org532b320" class="outline-2">
+<h2 id="org532b320">Hareket (Doğal)</h2>
+</div>
+<div id="outline-container-orgf431dad" class="outline-2">
+<h2 id="orgf431dad">Huygens</h2>
+<div class="outline-text-2" id="text-orgf431dad">
+<ul class="org-ul">
+<li>Küçük g'nin değerini bulmuş doğru olarak sarkaçla</li>
+<li>Bu küçük g'ye nasıl isim taktığınız önemli</li>
+<li>Densmore mesela "constant of gravitational acceleration" diyor</li>
+<li>Huygens'in araştırmaları ile ilgili bir makale researchgate.net'te çıktı</li>
+<li>"Linking 'The Book of Nature' and 'The Book of Science': Using Circular Motion as an Exemplar beyond the Textbook" by Arthur Stinner</li>
+<li></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf683411" class="outline-2">
+<h2 id="orgf683411">Hareket (Düz çizgi üzerinde)</h2>
+</div>
+<div id="outline-container-org04d7c5d" class="outline-2">
+<h2 id="org04d7c5d">Hedefler</h2>
+<div class="outline-text-2" id="text-org04d7c5d">
+<ol class="org-ol">
+<li>Newton aldatmacasını deşifre etmek</li>
+<li>Cavendish deneyini aslına uygun olarak tekrarlamak</li>
+<li>Newtonculuğun saçmalığını göstermek</li>
+<li>Kepler Kuralını öne çıkarmak</li>
+<li>Kepler Kuralının yoğunluğun tanımını olduğunu göstermek</li>
+<li>Yoğunluk kavramının esas olduğunu göstermek</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org64aba78" class="outline-2">
+<h2 id="org64aba78">İlişkiler</h2>
+<div class="outline-text-2" id="text-org64aba78">
+<ol class="org-ol">
+<li>Cavendish deneyi</li>
+<li>Güçlü yörünge</li>
+<li>Doğal hareket
+<ol class="org-ol">
+<li>düz çizgi üzerinde eylemsiz enerjisiz hareket</li>
+<li>dairesel hareket</li>
+</ol></li>
+<li>Newtoncu güç
+<ol class="org-ol">
+<li>doğa üstü</li>
+<li>mucizevi</li>
+<li>henüz gözlemlenmemiş</li>
+<li>yörünge ile ilgisi yok</li>
+</ol></li>
+<li>Sarkaç
+<ol class="org-ol">
+<li>Önemli bir alet</li>
+</ol></li>
+<li>Oran/orantı
+<ol class="org-ol">
+<li>Doğanın temelinde denklem değil orantı var</li>
+</ol></li>
+<li>Serbest düşüş
+<ol class="org-ol">
+<li>Serbest düşüş de yörünge hareketi</li>
+</ol></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org33a0009" class="outline-2">
+<h2 id="org33a0009">Kepler</h2>
+<div class="outline-text-2" id="text-org33a0009">
+<ul class="org-ul">
+<li>İlkeler'de Kepler
+<ul class="org-ul">
+<li>Cohen s.131
+<ul class="org-ul">
+<li>I.15'e bak diyor, Newton Kepler'den bahsetmeden Kepler Kuralını elips yörüngeler için "ispatlıyor".</li>
+</ul></li>
+<li>I.15: Under the same suppositions as in prop. 14, I say that the squares of the periodic times in ellipses are as the cubes of the major axes.</li>
+<li>Cohen'de incele&#x2026;</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgffb2ea5" class="outline-2">
+<h2 id="orgffb2ea5">Kepler Kuralı</h2>
+</div>
+<div id="outline-container-orge7d2644" class="outline-2">
+<h2 id="orge7d2644">Konular</h2>
+</div>
+<div id="outline-container-org394ad3b" class="outline-2">
+<h2 id="org394ad3b">Kütle</h2>
+<div class="outline-text-2" id="text-org394ad3b">
+<ul class="org-ul">
+<li><a href="https://www.mathpages.com/home/kmath582/kmath582.htm">Yerçekimsel ve eylemsiz</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org07b640f" class="outline-2">
+<h2 id="org07b640f">Kütle ve ağırlık</h2>
+<div class="outline-text-2" id="text-org07b640f">
+<ol class="org-ol">
+<li>AĞIRLIK = HACİM X YOĞUNLUK</li>
+<li>KÜTLE   = HACİM X YOĞUNLUK</li>
+<li>yazabildiğimize göre AĞIRLIK VE KÜTLE eşanlamlı kelimeler oluyor.</li>
+<li>Birbirlerine oranlı değil, eşanlamlı.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org7b8d56a" class="outline-2">
+<h2 id="org7b8d56a">Maddecilik</h2>
+</div>
+<div id="outline-container-org11e1143" class="outline-2">
+<h2 id="org11e1143">Moment of Inertia</h2>
+<div class="outline-text-2" id="text-org11e1143">
+<ul class="org-ul">
+<li><a href="https://youtu.be/fVmd3wM9zmA">Moment of inertia of torsion pendulum</a></li>
+<li>He includes the rod too, Cavendish neglects</li>
+<li>$I=2(m)(L/2)<sup>2</sup> [+ 1/12 M L<sup>2</sup>]</li>
+<li>Wikipedia ile aynı.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5eb7f01" class="outline-2">
+<h2 id="org5eb7f01">Newton</h2>
+</div>
+<div id="outline-container-org5197a55" class="outline-2">
+<h2 id="org5197a55">Newton kültü (Newtonculuk)</h2>
+<div class="outline-text-2" id="text-org5197a55">
+<ul class="org-ul">
+<li>Newtonculuk bir tarikattır.</li>
+<li>Newton siyasi bir kişiliktir</li>
+<li>Dünya sistemi ve kozmoloji hep siyasi konular olmuştur</li>
+<li>Çünkü Newton doğayı tanımlayan yasalar tanımlamıştır.</li>
+<li>Nedense kozmoloji her zaman siyasi bir konu olmuştur.</li>
+<li>Egemenler halkın resmi kozmolojiye sorgulamadan inanmasını ister.</li>
+<li>Binlerce yıl egemenler dünyanın evrenin merkezinde sabit durduğunu resmi ideolojileri olarak tanımlamışlardır ve halka da bu ideolojiyi dayatmışlardır.</li>
+<li>Bu konuda egemen güçler o kadar hassas ve alıngandırlar ki dünyanın hareket etme ihtimalini dillendiren herkesi anında yakalayıp işkence ile öldürmüşlerdir.</li>
+<li>Bugün egemen güçlerin resmi ideolojisi, yani okullarda okutulan ve tek gerçek doğru doğa yasaları çocuklara öğretilen Newtoncu maddeci ve okült çekim gücü doktrinidir.</li>
+<li>Bugün egemen güçler Newtonculuğa karşı çıkanlarla uğraşmaz çünkü böyle bir Newton karşıtı tezin başarılı olma ihtimali yoktur.</li>
+<li>Newton'un müritleri fizikçiler efendileri Newton'u çok iyi korurlar. Newton'un en temel seviyede siyasi bir figür olduğunu İlkeler'in Latince tercüme ederken Newtoncu tercümanların nasıl Newton'u koruduklarından belli oluyor.</li>
+<li>İşte bir örnek. Newton, felsefe yapmanın kurallarını yazıyor Latince. Newtoncu tercümanlar Newton böyle bir şey söylemez deyip onu "Doğa Felsefesinin kuralları" şeklinde tercüme ediyorlar.</li>
+<li>Bizim Diyanet işlerinin Kuran'ı tercüme ederken parantez içinde Kuran'da olmayan kelimeler eklemesi gibi.</li>
+<li>Önemsiz bir detay gibi görünüyor ama bunu yapan insanları yani Newton'un müritleri, doğada olmayan ve 19. yüzyıla gelindiğinde hala bir deneyle gözlemlenmemiş olan Newton'un uydurduğu çekim gücünü 300 yıl önce yapılmış ve dünyanın ortalam yoğunluğunu ölçmek için tasarlanmış bir deneye yamamaya çalışır.</li>
+<li>Pani Newtonculuk siyasidir. Kendi maddeci dünya doktrinini insanlığa dayatır.</li>
+<li>Newton İngiliz propaganda makinesinin bir ürünüdür.</li>
+<li>Newton'u kült yapan, Newton efsanesini canlı tutan, onu durmadan parlatan İngilizlerdir.</li>
+<li>Zaten okulculuk siyasi bir kurumdur. Akademik kariyerlerini Newton doktrini üzerine kurmuş olan insanlar yani fizikçiler Newton'u her ne pahasına olursa olsun savunurlar.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0944fb7" class="outline-2">
+<h2 id="org0944fb7">Newton mekaniği</h2>
+<div class="outline-text-2" id="text-org0944fb7">
+<ul class="org-ul">
+<li>Cavendish deneyini yaptığı zaman Newton mekaniği yoktu (bugünkü haliyle)</li>
+<li>Newton’un müritlerinin yarattığı “Newtoncu mekanik” diye bir şey var. Bu Newtoncu mekaniğe “Newtoncu” deniyor çünkü içinde Newtonun kutsal adına adanmış bir sürü dekoratif ve göstermelik terimler var. Newton'un müritleri bir Newtoncu jargon yaratıp "mekanik" diye satmışlar. Mekanik nedir? Newtoncular kadim mekanik bilimini almışlar ve yozlaştırmışlar. En eski bilimlerden biri olan ve çarpışmalar gibi temaslı güçleri inceleyen, (ve sadece temaslı güçleri inceleyen), mekanik bilimini Newtoncular çalmışlar ve Newton’un temassız ve zaman geçmeden etki edebilen absürd güçlerini inceleyen bilim dalı olarak tanımlamışlar. Mekanikle ilgisi olmayan Newton gizemciliğini mekanik bilimi ile ilişkilendirerek Newtoncu tarikatı kadim mekanik biliminin devamı gibi göstermeye çalışmışlar.</li>
+<li>Newton mekaniği denen şey Newton’un müritlerinin 350 yılda adım adım geliştirdikleri bir aldatmacadır. Neden aldatmacadır? Çünkü Newton mekaniği denen şey Kepler Kuralının Newtoncu marka terimlerle yazılmış halidir.</li>
+<li>Newton'un Newton mekaniğinden haberi yoktu. Newton'un, Newton mekaniğinin temeline yerleştirilmiş "Newton'un evrensel sabiti G"den de haberi yoktu, çünkü bu terim 19. yüzyılda tanımlanmıştı.</li>
+<li>Fizikçilerin bu kadar büyüttükleri ve kutsallaştırdıkları mesele nedir ki? Ne yapmış Newton? Mesele nedir? Newton için mesele çok basit. Bir kere Newton'un müritlerinin sonradan uydurduğu çekim yasasının evrenselliği söz konusu değil. Newton sadece gezegenler ve ayları ile ilgili bazı astronomik değerler hesaplıyor, o kadar. Eğer evren güneş sistemi ve gezegenlerse o zaman bir evrensellik iddiası olabilir, ama değil.</li>
+<li>Newton zaten bütün yörünge hesaplarını Kepler Kuralını kullanarak yapıyor. Ondan Newton'un ve Newtoncuların yaptıklarına sahtekarlık diyoruz. Kepler Kuralını kullanıp Newton'un doğada olmayan absürd çekim gücünü kullanarak yörüngeleri iddia etmiş olmaları.</li>
+<li>Oratada büyütülecek ve kutsallaştırılacak evrensel bir buluş yok. Ama Newtonculuk bir okulcu tarikat olduğu için ve Newton'da bu tarikatın kurucu şeyhi olduğu için, Newton'un her söylediği kutsallaştırılacaktır. Tarikatların yasası budur.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga484098" class="outline-2">
+<h2 id="orga484098">Newton'un ruhu</h2>
+</div>
+<div id="outline-container-orgffb1da1" class="outline-2">
+<h2 id="orgffb1da1">Newton'un sihirli astronomisi</h2>
+<div class="outline-text-2" id="text-orgffb1da1">
+<ul class="org-ul">
+<li>Newton'un gelmiş geçmiş en büyük dahi, bir yarıtanrı olarak tanrılaştırılmasının pazarlanmasının sebebi nedir acaba?</li>
+<li>Newton'un buluşlarından dolayı mı? Hayır.</li>
+<li>Leibniz, Newton'la aynı zamanda kalkülü bulmuştur ve bugün Leibniz'in işaret kullanarak kalkül öğretilir, Newton'un nokta sistemi kullanılmaz, ama Leibnitz Newton gibi kendini tanrılaştırmayı başaramamıştır.</li>
+<li>Başka bir sebei olmalı.</li>
+<li>Newton'un yarı tanrı statüsüne yükseltilmesinin en önemli sebebi bir formül kullanarak gezegenlerin yörüngelerini hesaplamasından kaynaklanıyor.</li>
+<li>Newton'un çağdaşlarını şaşırtan ve Newton'un hesaplarını onlara sihirli işlemler olarak göstermiştir.</li>
+<li>Newton doğada yeni bir etken, yeni bir sebep bulduğunu söylemiştir. Bütün evrene nüfuz etmiş olan ve gözlemlenen bütün hareketlerin sebebi olan şeyi Newton bulduğunu iddia etmiştir.</li>
+<li>Bu iddiasını desteklemek için de İlkeler olarak bilinen meşhur kitabını yazmıştır.</li>
+<li>Bu kitapta, bu gücü varsayarak bir takım aksiyomlar tanımlamıştır. Bu aksiyomlara da yasalar demiştir.</li>
+<li>Ama bu aksiyomlar yasa falan değildir, aksiyomdur.</li>
+<li>Newton'un güç varsayımını desteklemek için uydurduğu aksiyomlardır.</li>
+<li>Newton yarı tanrı değildi, bilimsel düşünce dehası da değildi, matematik dehası da değildi, bütün bu alanlarda çalışmış ve önemli eserler bırakmıştır ama yarı tanrı statüsüne ulaşacak bir eser bırakmamıştır</li>
+<li>Newton kendini pazarlama konusunda yarı tanrı statüsünde olduğunu söyleyebiliriz.</li>
+<li></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfa5203b" class="outline-2">
+<h2 id="orgfa5203b">Newtoncu güç</h2>
+<div class="outline-text-2" id="text-orgfa5203b">
+<ul class="org-ul">
+<li>İşin en temelinde bu Newtoncu güç var, yani Cavendish deneyinde dünyanın yoğunluğunu Newtoncu güç sayesinde hesaplıyorlar, yani sarkacın kolunu oynatan Newtoncu güç, yoksa dünyanın yoğunluğunu hesaplayamayacaklar.</li>
+<li>İngilizcesi force Latincesi Vis olan şey.</li>
+<li>doğada böyle bir güç var mı? Hayır.</li>
+<li>Deney yapmaya gerek yok.</li>
+<li>Bu güç aksiyomatik olarak yok, olamaz. Perpetual motion machine olabilir mi? Olamaz. Bunun için deney yapmaya gerek var mı? Yok.</li>
+<li>Newtoncu güç doğada var olsaydı, devridaim makinesi yapmak mümkün olur muydu? Mümkün olurdu.</li>
+<li>Devridaim makinesi, zaman geçmeden hareket, bunlar bildiğimiz dünyanın en temel yasalarına aykırıdır, güç sadece bir mucize olabilir zaten Newton'un müritleri de efendileri Newton'un tanımladığı bu gücü bir mucize olarak kabul ediyorlar.</li>
+<li>Birisi "ben devridaim makinesi yaptım" dese güler geçeriz. Ama Newton bize devridaim makinesi yapmayı mümkün kılan bir güç veriyor, Newton'a gülmüyoruz, tapıyoruz.</li>
+<li>Ame eğer Newton gücünü kabul ediyorsanız, Newton gücü olsaydı elinizde devridaim makinesi yapabilirdiniz çünkü Newton gücü mesafeleri zaman geçmeden yani hiçbir sürtünmeye maruz kalmadan başka cisimleri hareket ettirilebilen bir etkendir.</li>
+<li>Mesafeleri zaman geçmeden aşan bir şey olduğunu söylemek sahtekarlıktır.</li>
+<li>Doğada zaman ve mesafe aynı şeydir. Zamanı da mesafe olarak ölçeriz zaten.</li>
+<li>Ölçülebilir tek değer vardır o da mesafedir. Ölçülen  mesafeyi salınan bir şeyin mesafesi ile kıyasladığınzda zamanı ölçtük deriz ama ölçülen yine mesafedir.</li>
+<li>Newton'un gücü, İngilizcesi ile söylersek, "action-at-a-distance" yani uzaktan zaman geçmeden başka objeleri hareket ettirebilen bir şeydir. Doğada yoktur. Fakat ben bilimsel olarak düşünüyorum ve termodinamiğin yasalarına saygı duyuyorum ve zaman geçmeden mesafe katedilmez diyorum.</li>
+<li>Ama Newtoncu fizikçiler, yani Newton tarikatının üyeleri, müritleri, mesafenin zaman geçmeden geçilebileceğine inanmışlar çünkü efendileri Newton öyle emretmiş.</li>
+<li>Zamana ve termodinamik yasalarına saygısı olmayan Newton'un tanımladığı bu hayali gücün varolabilmesi ve Newton'un kutsal otoritesinin korunması için uzaktan zaman geçmeden hareket ettirebilme yetisinin doğada olabileceğini varsayıyorlar ve bu konuda efendileri Newton'un uyduruk bahanesini tekrarlıyorlar.</li>
+<li>Neymiş o bahane? Newton da bu uydurduğu gücün doğada olmadığını biliyordu onun için "evet bu garip bir güç, uzaktan etki yeteneği var, bu da saçma bir şey, skolastiklerin uydurabilceği bir kavram, ama bakın ben bu gücü kullanarak yörünge hesapları yapıyorum, bu gücün yasalarını yazmışım, demek ki bu güç saçma olduğu halde bir şekilde var olmalı, onun için sorgulamayı bırakın da benim dediğimi yapın" demiş ve müritleri de aynen Newton'un dediklerini yapıp duruyorlar.</li>
+<li>Hayır, bu yalan. Çünkü Newton yörünge hesapları bir güç terimi kullanmıyor. Sadec Kepler Kuralını kullanıyor yani yörüngeleri dönem ve parıçap terimleri kullanarak hesaplıyor. Yani Newton sahtekarlık yapıyor.</li>
+<li>O zaman, Newton'un çekim gücünü ilkesel olarak reddediyoruz çünkü Newton'un çekim gücü fiziğin temel yasası termodinamik yasalarını ihlal ediyor. Newtonun otoritesi zedelenmesin diye böyle saçma bir gücü kabul edemeyiz çünkü biz Newton'un müritlerinden değiliz.</li>
+<li>Newton7un müritleri fizikçiler efendilerinin yanlış bir şey söylemiş olabileceğini kabul edemezler ve Newton'un doğada olmayan gücünü okulcu laf cambazlığı ile fiziğe monte ederler, doğaya monte edemezler ama fiziğe monte edebilirler.</li>
+<li>Doğa Newto yasalarına uymalıdır, Newton yasaları doğaya değil.</li>
+<li>Newton mekaniği denen şey, Newtonun kitabında yaptığı sadece altı adet yörünge hesaplarının, Newtoncu çekim gücünü kullanmadan yaptığı, yörünge hesaplarının Newton'un kutsal ismi ile markalaştırılmış terimler ile süslenmiş halidir. Bu dekoratif terimler kaldırılınca altında Kepler Kuralı kalır.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4cd78cf" class="outline-2">
+<h2 id="org4cd78cf">Newton (İlkeler)</h2>
+<div class="outline-text-2" id="text-org4cd78cf">
+<ul class="org-ul">
+<li><a href="https://www.academia.edu/27561365/Sir_Isaac_Newtonun_Principias%C4%B1n%C4%B1n_T%C3%BCrk%C3%A7eye_%C3%87evirisinin_Taslak_Metni_K%C4%B1smi_%C3%A7eviri">Türkçe çevirisi</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2e5f93a" class="outline-2">
+<h2 id="org2e5f93a">Okulculuk</h2>
+<div class="outline-text-2" id="text-org2e5f93a">
+</div>
+<div id="outline-container-orgc4942ad" class="outline-3">
+<h3 id="orgc4942ad">Newtoncu okulculuk</h3>
+<div class="outline-text-3" id="text-orgc4942ad">
+<ol class="org-ol">
+<li>İnanç denen şey böyle bir şeydir, Newtonculuk tarikatçılıktır, bir inançtır.</li>
+
+<li>Peki diyelim ki, Cavendish deneyini aslına uygun olarak tekrarladık ve Cavendish'in Newton gücünü ölçmediğini, yani sarkacın kolunun Newtoncu çekim gücü tarafından oynatılmadığı ortaya çıktı, yani deneysel olarak Newtoncu gücün bir deneyde ölçülmediğini gösterdik.</li>
+
+<li>Bu fizikte bir şey değiştirir mi? Tabii ki değiştirmez. Fizik okulculuktur ve okulculuk dışardan değiştirilemez.</li>
+
+<li>Okulculuk değiştirilemez, okulculuk kurumu insanların yarattığı en eski kurumdur ve insanlık var oldukça da kalacaktır; okulculuğun sadece kitabı değişir.</li>
+
+<li>Aristo okulculuğu nasıl yıkıldı? Newton'un kitabı Aristo'nun kitabının yerini aldı.</li>
+
+<li>Newton skolastik eğitim almış birisiydi, zaten o zamanlar başka tür bir eğitim yoktu.</li>
+
+<li>Newton Avrupa okulculuğunun önemli bir merkezinde faaliyet gösteren bir okulcu akademekti.</li>
+
+<li>Newton zaten Aristo'dan sıkılmış olan Avrupa okulculuğuna yeni bir kitap sundu. Okulculuk için çok uygun ve çok çekici bir kitaptı bu. Okunmazdı. Hatalarla doluydu. Kalındı. Çok havalı bir ismi vardı. Üstelik Newton tarihin en yetenekli propagandacılarından biriydi.</li>
+
+<li>Okunmaz olması ve hatalarla dolu olması bir kitap için avantajdır okulculuk bağlamında çünkü müritler hataları düzelterek ve kitaba yorumları yazarak kariyer yaparlar yüzyıllar boyu yaza yaza yorumlarını bitiremezler.</li>
+
+<li>Bir de okulculuk bir hukuk sistemidir Newton da kitabını bir hukuk kitabı olarak bir yasalar kitabı olarak yazmıştır. Bu da okulculuk için dayanılmız çekicidir.</li>
+
+<li>Görünüşte Öklid'in kitapları gibi geleneksel geoketrik şekillerle yazılmış gibi bir havası vardır ama Newton Öklid'e saygı duymamıştır.</li>
+
+<li>Tanımlar, aksiyomlar, ispatlar sırayla giderler hepsi birbirlerine bağlanmıştır sanki sağlam ve mantıksal bir bütün oluşturulmuştur. Ama kitabın içi tamamen koftur.</li>
+
+<li>Newton'dan sonra Newton'un müritleri bu garip kitaptan bir Newton mekaniği geliştirmişlerdir. Newton mekaniği demek Newton ismi ile şanlandırılmış birimler ve Newtoncu kavramlar ile markalaştırılmış denklemler yazmak ve sonra da bu işe yaramayan Newtoncu süs terimlerini elemek işine Newton mekaniği demişlerdir.</li>
+
+<li>Newton mekaniğinden, Newtoncul süsleri atınca geriye Kepler Kuralı kalır.</li>
+
+<li>Yörünge hesapları Kepler Kuralı ile yapılır.</li>
+
+<li>Yörünge hesapları Newton'un uydurduğu güç terimi ile yapılmız çünkü Newton'un müritleri bir Güç terimini F diye yazarlar Newton'a ibadet etmek için ama sonra bütün Güç terimlerini elerler.</li>
+
+<li>Peki bu gerçeği Newton'un müritleri fizikçilerin kabul etme ihtimali var mı? Madem eleyeektin neden yazıyorsun bu dekoratif terimleri diye sorarsak ne cevap verirlerdi. Eminim çok sağlam bir mazeretleri vardır.</li>
+
+<li>Newton'un müritleri 300 yıldır "derivasyon" dedikleri bu törensel ibadet şeklini geliştirmişler ve bu ibadetleri ile efendileri Newton'u kutsuyorlar.</li>
+
+<li>"Kutsal efendimiz Newton bak senin yüce isminin denklemlerimize yazdık" diyorlar, sonra da "eyy efendimiz Newton, şimdi de gözlerini kapa çünkü yazdığımız terimleri eleyeceğiz" diyorlar mı? Demiyorlar.</li>
+
+<li>Törenle Newton terimlerini eliyorlar. Bye bye Newton'un evrensel sabiti Büyük G diyorlar, evrensel sabit elenip gidiyor.</li>
+
+<li>Çünkü Newton öyle yapmış. Müridlerine yol göstermiş siz de benim gibi yapın demiş, müritleri de aynen Kepler kuralını Newtonu terimlerle süsleyip duruyorlar.</li>
+
+<li>Fakat Newton'un otoritesi o kadar güçlüdür ki, Newton yarı-tanrıdır zaten, onun için bir denkleme bir kere Newtoncu bir terim yazıldı mı o terim daha sonra elense bile izi o denklemde kalır. Mesela bir denklemde F terime var Newtoncu gücü ifade eden, ama sonra bu F terimini sildiniz zannetmeyin ki o denklemden o F terimi gitti ve F teriminin etkisi o denkmlemde kalmadı, hayır, bir kere yazdınız mı o denklem artık Newtoncu olmuştur siz o F harfini o denklemde görmeseniz bile Newton'un müritleri görür onları gözleri çok keskindir.</li>
+
+<li>Cavendish deneyi Newton kitabını yayınladıktan 110 yıl sonra yapılıyor ve aradan bir asırdan fazla bir zaman geçtiği halde bu Newtoncu güç bir türlü gözlemlenemiyor. Gözlemlenememiş.</li>
+
+<li>Cavendish deneyinden sonra da bir yüzyıl daha geçiyor ve hala Newton'un uydurduğu ve fizikçilerin taptığı bu çekim gücü doğru dürüst bir deneyde ölçülememiş. Fizik ve fizikçiler için utunaç verici bir durum. Fizik okulculuktur diyoruz ya işte ispatı. Okulcu ne yapar efendisinin doktrinlerini doğaya dayatır. Doktrin kutsaldır ve doktrin mutlak doğrudur. Newton çekim vardır dediyse çekim vardır ve bir türlü bulunamıyorsa doğada o zaman bir şekilde sahtekarlıkla tanımlanacaktır.</li>
+
+<li>Cavendish deneyinden bir asır sonra fizikçiler aynen bunu yapmışlardır. Newton'un evrensel yerçekimsel çekim gücü diye bir birim tanımlayıp bu birimi de evrensel doğa sabiti olarak tanımlayıp böyle bir birimden haberi bile olmayan Cavendish'in bu birimi ölçmek için deneyini yaptığını ve ölçtüğünü söylemişlerdir. Sahtekarlığa bakın. Tarihi yeniden yazmışlar.</li>
+
+<li>Artık fizikçilerin işi bu evrensel sabit büyük G'yi hep daha yüksek bir kesinlikle ölçmek olacaktır. Öyle de olmuştur.</li>
+
+<li>Büyük G Newton tarikatının kutsal bayrağıdır, G'yi gördüğünüz yerde Newtonculuğun hakim olduğunu anlayabilirsiniz.</li>
+
+<li>G'yi gördüğünüz yerde Newtonculuk aldatmacasının geçerli olduğunu anlayabilirsiniz.</li>
+
+<li>Üstelik kitap anlaşılmasın diye yazılmıştır ve yanlışlarla ve eksiklerle doludur, yani bri okulun kutsal kitabı olmak için ideal bir kitaptır.</li>
+
+<li>Müritler yüzyıllar boyu bu yanlışları düzeltir ve eksikleri tamamlar ve bitmez tükenmez yorumlar yazarak kariyer yaparlar.</li>
+
+<li>Yüzyıllardır Aristo'ya yorum yazan Avrupa skolastikleri bir gecede Newtoncu oldular ve Newton'un kitabına yorum yazar oldular.</li>
+
+<li>Avrupa üniversitelerinde konuşlanmış proflar için Newton'un kitabının önemli bir çekimi de matematik dili ile yazılmış olmasıydı. Matematik yeni bir alandı o zamanlar.</li>
+
+<li>Ve tabii Newton'un tablolar kullanmadan gezegenlerin yörüngelerini hesapladığını iddia etmesiydi.</li>
+
+<li>Görünüşe göre de gerçekten yörüngeleri tablolara bakmadan hesaplıyordu. Bu da Newton'u çağdaşlarının gözünde yarı tanrı seviyesine yükseltiyordu.</li>
+
+<li>Herkes Newtonun tanımladığı ve güç dediği şeyin okült olduğunu, zaman geçmeden etki ettiğini yani doğada olamayacağını biliyordu, doğada zaman geçmeden hiçbir şey olmaz bun kurala Newton'un uydurduğu güç de dahildir ama Newton evet haklısınız bu güç doğa üstü ve ben gücün nasıl çalıştığını bilmiyorum ama işte güç kavramını kullanarak yörüge hesaplıyorum ve yörüngeler doğru çıkıyor, demek ki bu güç bir şekilde doğada var diye herkesi bu basit yalanla kandırmayı başardı.</li>
+
+<li>Yalan çünkü Newton'un hesaplarına bakan herkes yörünge hesaplarında bir güç terimi kullanmadığını görür.</li>
+
+<li>Newtoncular kendilerini Aristocu felsefe geleneğinden ayrımak istediler ve bu sebepten matematiği yücelttiler.</li>
+
+<li>Latin felsefe diliydi, şimdi matematik okulculuğun kutsal dili oldu.</li>
+
+<li>Yani bugün kendilerin fizikçi diyenler eski Aristocu skolastiklerin direk torunlarıdır.</li>
+
+<li>Fizikçiler sadece Newton dedi diye doğada olmayan güç diye bir şeye inanırlar.</li>
+
+<li>Newtonculuk o kadar güçlüdür ki insanlık var oldukça varolacaktır gibi görünüyor.</li>
+
+<li>İlelebed insanlık varoldukça Newtonculuk da var olacaktır.</li>
+
+<li>Her fizik öğrencisi daha ilk yılında Cavendish deneyi denen bir oyuncak aletle Newton'cu gücün birimi G'yi deney yaparak gözlemlediğine inanır ve Newtoncu tarikata kabul edilir. Hayatı boyunca Newtoncu olacaktır.</li>
+
+<li>Zaman geçmeden iki obje arasında ilişki kuran bir şeyi doğada olmayan bir şeyi gözlemlediğine inanır. Newtoncu dinin tanrısı Newtoncu güçtür doğada yoktur ama bütün fizikçiler ona inanır.</li>
+
+<li>Buna inanç denir işte. Bir mucize olmuştur. Tarikat şeyhinin kutsal ruhu sarkacın kolunu oynatmıştır. Mürit sarkacın kolunun bir mucize tarafından oynatıldığına inanır ve Newton'u tanrısı olarak görür.</li>
+
+<li>İşte, doğada olmayan bir şey, fiziğin bütün yasalarını ihlal eden bir şey, sarkacın kolunu oynatarak talebeye kendini göstermiştir. Bu inanç hayatı boyunca onunla olacaktır o artık bir Newtoncu fizikçidir.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgf9c3388" class="outline-3">
+<h3 id="orgf9c3388">Okulculuğun genel tanımı</h3>
+<div class="outline-text-3" id="text-orgf9c3388">
+<ol class="org-ol">
+<li>"Fiziğin bir tarikat olduğunun bundan daha iyi bir ispatı olabilir mi?"</li>
+<li>"Tarikat kültü" nedir?</li>
+<li>Okulculuk bir külttür.</li>
+<li>Kült nedir peki? Kült okulculuğun başka bir ismidir.</li>
+<li>Okulculuk nedir? Okulculuk, "skolastiklik" diye bildiğimiz kurumdur.</li>
+<li>Skolastiklik nedir? Skolastiklik akademik kült demektir.</li>
+<li>Skolastiklik veya okulculuk, sabit tutulan bir metin etrafında hiyerarşik olarak örgütlenmiş profesyonel rahipler sınıfına denir. Burada "rahip" doktrinin temeli olan sabit tutulan metni (yani kutsal metni) öğretmek için lisans verilmiş kişi demektir. "Rahip" sadece "din" olarak tanımlanmış sabit metinlerin lisanslı çalışını değildir, sabit tutulan metin etrafında oluşmuş hiyerarşinin bir elamanına "rahip" denir. Yani rahip dinî de olabilir, seküler de olabilir.</li>
+<li>Okulculuk eğitimden ve okuldan ayrılamaz, zaten ismi üstünde "okulculuk". Okullarda, sabit tuttukları ve kutsallaştırdıkları bir metin üzerine uzmanlaşmış kişilerin hiyerarşik olarak örgütlenmesini okulculuk deniyor.</li>
+<li>Sabit tutulan metnin doğaüstü bir varlık tarafından insanlığa gönderilmiş olması gerekmez, sadece, metnin sabit tutulması şartı vardır. Okulculuk tarikatı budur. Tarikat sadece İslam'a özgü bir kurum değildir. Tarikat, bu sabit metin etrafında örgütlenmiş hiyerarşinin ismidir.</li>
+<li>Kutsal metmin konusu önemli değildir, bu metin Aristo'nun yazdıkları olabilir; Newton'un kutsal kitabı <i>İlkeler</i> olabilir veya İncil gibi insanlığa doğaüstü bir varlığın yolladığı doğru yaşama kılavuzu olabilir. Bütün bu kitapların etrafında örgütlenmiş profesyonel bir rahipler sınıfı vardır.</li>
+<li>Özetlersek: 1) Sabit tutulan kutsal metin; 2) Kutsal metin etrafında hiyerarşik olarak örgütlenmiş profesyonel rahipler sınıfı; 3) Kutsal metnin yeni müritlere öğretildiği okullar. Bunlar varsa orada okulculuk belası vardır demektir. Sabit metnin konusu önemli değildir çünkü rahipler konu ne olursa olsun bu sabit metni kullanarak halkı sömürmekte ve kendilerine güç sağlamaktadırlar.</li>
+<li>Temel olan kitaptır, yani sabit tutulan bir metin olmasıdır. Sabit tutulan metin kutsallaştırılmış metindir. Bu sabit tutulan metnin konusu ve içeriği, okulculuk açısından, önemli değildir. Sayfaları boş olan bir kitap etrafında da profesyoneller örgütlenip bir okulculuk sistemi kurabilirler. Sonuç olarak, metin sabittir, sadece yorum yazılabilir, yorumlarla da istenilen metin yazılabilir. Yani okulculuk bir hukuk sistemidir.</li>
+<li>İnsanlığın bilgi birikimi okulcu rahiplerin tekelindedir. Düzen böyle kurulmuş</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb72ba74" class="outline-2">
+<h2 id="orgb72ba74">Oran</h2>
+<div class="outline-text-2" id="text-orgb72ba74">
+<ul class="org-ul">
+<li>Sadece oran olarak yazılabilen şeyler değişir</li>
+<li>Etiketler değişmez</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdf41fe1" class="outline-2">
+<h2 id="orgdf41fe1">Orantı</h2>
+<div class="outline-text-2" id="text-orgdf41fe1">
+<ul class="org-ul">
+<li>Esas olan orantıdır, sabitler ve birimler değildir</li>
+<li>Sabitler ve birimler tanımlanmıştır</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org404b657" class="outline-2">
+<h2 id="org404b657">Para</h2>
+<div class="outline-text-2" id="text-org404b657">
+<ul class="org-ul">
+<li>Toplumda para neyse fizikte de güç odur.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6f737f3" class="outline-2">
+<h2 id="org6f737f3">Saniye sarkacı (Seconds pendulum)</h2>
+<div class="outline-text-2" id="text-org6f737f3">
+<ul class="org-ul">
+<li><a href="https://youtu.be/xQcJ0L1UGzo">Saniye sarkacının kolunun uzunluğunu hesapla</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Seconds_pendulum">Saniye sarkacı (Wikipedia)</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org60f3129" class="outline-2">
+<h2 id="org60f3129">Simple harmonic motion (Yalın uyumcul devinim)</h2>
+</div>
+<div id="outline-container-org968720e" class="outline-2">
+<h2 id="org968720e">Süredurum (Atalet, eylemsizlik)</h2>
+</div>
+<div id="outline-container-orgf15c4ca" class="outline-2">
+<h2 id="orgf15c4ca">Tanım</h2>
+</div>
+<div id="outline-container-org3576c1d" class="outline-2">
+<h2 id="org3576c1d">Torque</h2>
+</div>
+<div id="outline-container-orgc6d13f8" class="outline-2">
+<h2 id="orgc6d13f8">Uydu</h2>
+<div class="outline-text-2" id="text-orgc6d13f8">
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Low_Earth_orbit">Low earth orbit (Wikipedia)</a></li>
+<li>A low Earth orbit (LEO) is an Earth-centered orbit near the planet, often specified as having a period of 128 minutes or less (making at least 11.25 orbits per day) and an eccentricity less than 0.25.[1] Most of the artificial objects in outer space are in LEO, with an altitude never more than about one-third of the radius of Earth.[2]</li>
+<li><a href="https://solarsystem.nasa.gov/basics/chapter3-4/">Nasa solar system exploration</a></li>
+<li>The period of the space shuttle's orbit, at say 200 kilometers, used to be about 90 minutes. Vanguard-1, by the way, has an orbital period of 134.2 minutes, with its periapsis altitude of 654 km, and apoapsis altitude of 3,969 km.</li>
+<li><a href="https://en.wikipedia.org/wiki/STS-74">Space shuttle STS-74</a></li>
+<li>Perigee altitude = 391 km</li>
+<li>Apogee altitude = 396</li>
+<li>Period = 92.4 min = 5544 sec</li>
+<li><a href="https://en.wikipedia.org/wiki/International_Space_Station">International Space Station</a></li>
+<li>Perigee altitude = 418 km</li>
+<li>Apogee altitude = 422 km</li>
+<li>Period = 92.68 min = 5560.8 sec</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org77ffdc6" class="outline-2">
+<h2 id="org77ffdc6">Uydu ve vv/r</h2>
+<div class="outline-text-2" id="text-org77ffdc6">
+<ul class="org-ul">
+<li>Newton ve Huygens'in bu ilişkiyi eş zamanlı olarak buldukları söyleniyor</li>
+<li><a href="https://link.springer.com/chapter/10.1007/978-94-009-2809-1_2">I.B. Cohen yazısı</a> var bu konuda</li>
+<li>Bence vv/r yani sapan yörüngesi radyan kuralına uygun hareket ediyor yani S::Yarıçap halbuki gezegen yörüngesi veya uydu yörüngesi S::R<sup>(1.5)</sup> kuralına göre hareket ediyor.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7a3f081" class="outline-2">
+<h2 id="org7a3f081">Uydu ve yoğunluk</h2>
+<div class="outline-text-2" id="text-org7a3f081">
+<ul class="org-ul">
+<li><a href="https://www.numerade.com/ask/question/problem-103-surface-skimming-satellite-is-in-circular-orbit-about-spherical-planet_-the-radius-of-this-hypothetical-orbit-is-the-same-a8-the-radius-of-the-planet-prove-that-the-period-of-suc-26864/">Surface skimming satellite and density</a></li>
+<li>Uydunun yoğunluğunu yörünge mi belirliyor?</li>
+<li>Yoksa uydunun yoğunluğunun önemi yok mu?</li>
+<li>Uyduyu "sıkıştıran" nedir? Çünkü bir sıkışma oluyor. Giderek yoğunlaşıyor dünya.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org40159fb" class="outline-2">
+<h2 id="org40159fb">Yer çekimi</h2>
+<div class="outline-text-2" id="text-org40159fb">
+<ul class="org-ul">
+<li>Ben "yerçekimi" olarak yazıyordum ama iki kelime olarak yazılıyormuş</li>
+<li>TDK'dan: Yer kütlesinin çekimi etkisiyle bir cismin, türlü bölümlerine uygulanan güçlerin bileşkesi, arz cazibesi: Cisimlerin ağırlığı yer çekiminin bir sonucudur.</li>
+<li></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org19c40cd" class="outline-2">
+<h2 id="org19c40cd">Yoğunluk</h2>
+</div>
+<div id="outline-container-orgb8dcfd4" class="outline-2">
+<h2 id="orgb8dcfd4">Yoğunluk (dünyanın)</h2>
+<div class="outline-text-2" id="text-orgb8dcfd4">
+<ul class="org-ul">
+<li>Dünyanın yoğunluğu kavramı anlamsız bir kavramdır</li>
+<li>Dünyanın ortalam yoğunluğu kavramı var o da Gökkuşağının ortalama rengi gibi bir şey olurdu</li>
+<li>Dünyanın yoğunluğu anlamlı bir kavram değilsi, Cavendish deneyi neyi ölçüyor?</li>
+<li>Dünyanın yoğunluğu Kepler Kuralına göre değişiyor (hesapla)</li>
+<li>Dünyanın yüzeyi dediğimiz bölgeyi birim olarak alabiliriz çünkü burası su yoğunluğu olarak alınabilir.</li>
+<li>Taşın, gazın, suyun yoğunluğu hesaplanabilir çünkü bunların yoğunluğu tekdüze ama dünyanın yoğunluğu değil.</li>
+<li>Taş, su, gaz zaten yoğunlukları ile tanımlanmış şeylerdir.</li>
+<li>Cavendish suyun yoğunluğunu birim olarak alıyor ve dünyanın yoğunluğunu suyun yoğunluğunun 5.5 katı olarak buluyor.</li>
+<li>Nereden geliyor bu 5.5 sayısı. Babinet'nin makalesinde bu belirtiliyor.</li>
+<li><a href="https://sciencenotes.org/table-of-density-of-common-materials/">Densities of common materials tablosu</a></li>
+<li>Bu tabloda Dünya 5.5 yoğunluğu ile Pırlanta 3.5 ve çelik 7.8 arasında</li>
+<li>İlginç dünya pırlanta ve çelik arasında, bu kadar sert mi dünyanın ortalama yoğunluğu</li>
+<li>Buz 0.9 muş, ne garip, sert ama sudan daha az yoğun</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9a6dcac" class="outline-2">
+<h2 id="org9a6dcac">Yoğunluk (tanım)</h2>
+<div class="outline-text-2" id="text-org9a6dcac">
+<ul class="org-ul">
+<li>Yoğunluk nedir açıkça tanamlamak gerekiyor.</li>
+<li>Birkaç tanımı var</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc990343" class="outline-2">
+<h2 id="orgc990343">Yoğunluk (frekansın karesi)</h2>
+<div class="outline-text-2" id="text-orgc990343">
+<ul class="org-ul">
+<li>Frekansın karesi yoğunluksa bir kurşun güllenin yoğunluğunu \(1/T^2\) ile nasıl hesaplayacağız?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org57fe73c" class="outline-2">
+<h2 id="org57fe73c">Yörünge</h2>
+<div class="outline-text-2" id="text-org57fe73c">
+<ul class="org-ul">
+<li><a href="https://www.softschools.com/formulas/physics/orbital_velocity_formula/76/#:~:text=The%20orbital%20velocity%20formula%20contains,6.38%20x%20106%20m.&amp;text=The%20orbital%20velocity%20of%20the,Station%20is%207672%20m%2Fs.">Yörünge hızı (orbital velocity)</a></li>
+</ul>
+\begin{equation*}
+v = sqrt{\frac{GM}{r}}
+\end{equation*}
+</div>
+</div>
+<div id="outline-container-org974c623" class="outline-2">
+<h2 id="org974c623">Yörünge (Geostationary)</h2>
+</div>
+<div id="outline-container-orgc463e17" class="outline-2">
+<h2 id="orgc463e17">Yüzey</h2>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-02 Mon 09:12</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
