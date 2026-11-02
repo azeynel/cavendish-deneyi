@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-02 Mon 08:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<p>
+( <a href="blog-arsiv.html">Blog Arşiv</a> )
+</p>
+
+<div id="outline-container-orgaa42036" class="outline-2">
+<h2 id="orgaa42036"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-02 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-orgaa42036">
+<ul class="org-ul">
+<li>Toplar için kalıplar ve sarkacın kolunun yapımı ile ilgilendim.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga7c8e44" class="outline-2">
+<h2 id="orga7c8e44"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-01 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-orga7c8e44">
+<ul class="org-ul">
+<li>İzmir hardacılar çarşısında <i>Kurşun Metal</i> ile topların dökülmesi ile ilgili konuştum. Kalıp olmasını söylediler. Demir döküm kalıp çok pahalı olurmuş ama alçı kalıp ile de yapılabilirmiş. Şimdi alçı kalıbı yapacak bir yer arıyorum.</li>
+<li>Belgesel konusunda düşündüm.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5e764a9" class="outline-2">
+<h2 id="org5e764a9"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-28 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-org5e764a9">
+<ul class="org-ul">
+<li>Yapılacaklar listesi yaptım
+<ol class="org-ol">
+<li>Sarkaç kolunun inşası</li>
+<li>Kurşun topları dökecek atölye bulunması</li>
+<li>Binanın ölçülerinin çıkartılması</li>
+<li>Cavendish'in verilerinden \(G\)'nin hesaplanması</li>
+<li>Maket yaptırmak iyi olur mu?</li>
+<li>Uydulardan yoğunluk hesapları</li>
+</ol></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org718d451" class="outline-2">
+<h2 id="org718d451"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-27 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-org718d451">
+<ul class="org-ul">
+<li><a href="olculer.html">Kolun ölçülerini yeniledim</a>. Kolun kalınlığını 6 mm olarak ölçtüm.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org488b897" class="outline-2">
+<h2 id="org488b897"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-27 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-org488b897">
+<ul class="org-ul">
+<li><a href="parcalar.html">Parçaların resimlerini</a> değiştirdim. Şimdi yeniden ölçeceğim.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbf42961" class="outline-2">
+<h2 id="orgbf42961"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-26 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-orgbf42961">
+<ul class="org-ul">
+<li>Ben Cavendish'in makalesini <a href="http://cavendish-deneyi.com/pdf/The_laws_of_gravitation;_memoirs_by_Newton,_Bouguer_and_Cavendish,_together_with_abstracts_of_other_important_memoirs_(IA_bub_gb_O58mAAAAMAAJ).pdf">bu kitaptan</a> okuyordum, ama <a href="https://royalsocietypublishing.org/doi/pdf/10.1098/rstl.1798.0022">Phihosophical Transaction</a>'da orijinal görseller çok daha iyiymiş, aşağıda ki gibi, çok güzel gravürler.</li>
+</ul>
+
+
+<div id="org7ae7bde" class="figure">
+<p><img src="file:///Users/a/org/img/parts/kolun-ucu.png" width="40%" height="40%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 1: </span>Sarkaç kolunun ucu</p>
+</div>
+
+<ul class="org-ul">
+<li>Yukardaki resimle aradaki fark çok açık.</li>
+</ul>
+
+<div id="org957181c" class="figure">
+<p><img src="file:///Users/a/org/img/plan-02.png" width="70%" height="70%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 2: </span>Plan</p>
+</div>
+
+<ul class="org-ul">
+<li>Kolun boyutlarını yeniden ölçmem gerekecek çünkü orijinal resimde kolun ucu çok daha ince görünüyor.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0ef9a3d" class="outline-2">
+<h2 id="org0ef9a3d"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-25 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-org0ef9a3d">
+<ul class="org-ul">
+<li><a href="cavendish-newton.html">Cavendish/Newton yazısını</a> okudum tekrar, düzeltmeler yaptım.</li>
+<li><a href="https://profmattstrassler.com/2022/02/23/celebrating-2-22-22-or-was-it-22-2-22/">Strassler'in yazısını</a> okudum, yorum yazdım. Cavendish deneyi ile direk ilgisi yok ama fizikçilerin felsefe yapmamaları gerektiğinin iyi bir örneği.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7255013" class="outline-2">
+<h2 id="org7255013"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-24 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-org7255013">
+<ul class="org-ul">
+<li><a href="cavendish-newton.html">Cavendish deneyi ve Newtoncu çekim gücü</a>.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge1fda4e" class="outline-2">
+<h2 id="orge1fda4e"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-23 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-orge1fda4e">
+<ul class="org-ul">
+<li>Cavendish deneyini Newtoncu çekim gücünden ayıramayız çünkü Cavendish Newtoncu çekim gücünü gözlemliyor ve kolun Newtoncu çekim gücü altında kaç derece oynadığını ölçüyor ve bu açıdan dünyanın yoğunluğunu hesaplıyor. Newtoncu güç kolu çekmemiş olsa, Cavendish dünyanını yoğunluğunu hesaplayamayacak. Bu konuda bir taslak yazdım.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgeb21be8" class="outline-2">
+<h2 id="orgeb21be8"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-22 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-orgeb21be8">
+<ol class="org-ol">
+<li>Sarkaç kolunun ölçüleri.</li>
+</ol>
+
+
+<div id="org05a8411" class="figure">
+<p><img src="file:///Users/a/org/img/kolun-olculeri.png" width="70%" height="70%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 3: </span>Sarkaç kolunun ölçüleri</p>
+</div>
+
+<ul class="org-ul">
+<li>Uçtan uca uzunluk: 1829 mm</li>
+
+<li>Kolun ortasında en: 47 mm</li>
+
+<li>En uç noktada en: 16 mm</li>
+
+<li>En uç nokta ile merkezin ortasında en: 32 mm</li>
+
+<li>Kolun kalınlığı makalede belirtilmemiş.</li>
+</ul>
+<ol class="org-ol">
+<li value="2">Cavendish makalesinde sarkaç kolunun hangi ağaçtan yapıldığını tam olarak belirtmiyor sadece "slender deal rod" olarak tarif ediyor (s.61). "Slender" ince veya "ince uzun" veya "hatları ince ve güzel" anlamına geliyormuş. "Deal" ise, <a href="http://www.woodworkinghistory.com/glossary_deal.htm#:~:text=In%20Britain%20%2D%2D%20where%20the,with%20these%20kinds%20of%20wood.">bu yazıya göre</a>, kereste ve ahşap işleri ile uğraşanların çeşitli anlamlarda kullandığı bir kelime imiş. Belirli ölçülerde kesilmiş kereste anlamına geldiği gibi, İngiltere'de bulunan çam ağaçlarından kesilmiş kereste anlamına da geliyormuş. Yani, bizim için önemli olan, sarkaç kolunun bir çeşit çam ağacından yapılıyor olması. Sözlükte, "deal tree" ==&gt; "fir" olarak verilmiş, "fir"ün Türkçesi de <b>köknar</b> oluyor. Onun için eğer bulunabiliyorsa sarkaç kolunun köknar ağacından yapılması tercih edilmeli bence.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org03e325b" class="outline-2">
+<h2 id="org03e325b"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-21 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-org03e325b">
+<ul class="org-ul">
+<li>Kolun devamlı hareket halinde olduğu ve Cavendish'in orta noktanın kaymasını ölçtüğünü anlattığım bir <a href="https://youtu.be/xqy6-9vHfCI">video paylaştım</a>.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb0ab88d" class="outline-2">
+<h2 id="orgb0ab88d"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-20 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-orgb0ab88d">
+<ul class="org-ul">
+<li>Parçaları yaptırmak için araştırma yaptım. Yeni bir şey yapmadım.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4209e77" class="outline-2">
+<h2 id="org4209e77"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-19 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-org4209e77">
+<ul class="org-ul">
+<li><a href="https://youtu.be/qC7rlOCtynI">Yeni bir video yayınladım</a>, Cavendish analizinin ikinci bölümü. Videonun özeti de <a href="http://cavendish-deneyi.com/cavendish-analiz-25.html">burada</a>.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org911493e" class="outline-2">
+<h2 id="org911493e"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-18 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-org911493e">
+<ul class="org-ul">
+<li>Parça listesini hazırladım ve <a href="parcalar.html">yayınladım</a>.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8e15761" class="outline-2">
+<h2 id="org8e15761"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-17 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-org8e15761">
+<ul class="org-ul">
+<li>Cavendish deneyinde, ağırlıkların ve dünyanın sarkaca asılı topları çektiğini söylüyor. Ama bu doğru değil. Cavendish burada bir kelime oyunu yapıyor. Cavendish topları matematiksel nokta olarak tanımlıyor. Çünkü hesapların yapıldığı formüllerde topu temsil eden bir terim yok. Onun için Newton'dan başlayarak bütün fizikçiler önce iki kütle \(M\) ve \(m\) arasında Newtoncu çekim gücü olduğunu söylerler sonra bir mazerek bulup \(m\)'yi elerler. Cavendish de \(m\)'yi yani topları matematiksel nokta yaparak formüllerden elemiş oluyor. Bundan çıkan sonuç çok basit, eğer bir terimi sadece süs olarak yazıp törensel olarak eliyorsanız o terim hesaplara girmiyor demektir. Yani Newtoncu doktrinde ısrarla söylenen ve doktrinin temel özelliği olan kütleler arasında karşılıklı diye bir şey olamaz çünkü formüllerde böyle bir terim yok.</li>
+<li>Zaten, ağırlık topu çekse bile, sarkacın simetrisinden dolayı topların ağırlığı yok. Yani Newtoncu çekim gücü topların ağırlığına oranlı olamaz çünkü topların ağırlığı yok. Ama Cavendish \(F(N)/W(B)\) yazarak Newtoncu çekim gücünü topun ağırlığına oranlıyor.</li>
+<li>Uydu ile merkezdeki cisim arasında çekim yok çünkü ikisi de ayın cisim.</li>
+<li>Uydu Keplere göre dönerken dünya Keplere göre dönmüyor.</li>
+<li>\(v^2/r\), \(r/t^2\)'a çözümleniyorsa o zaman neden \(v^2/r\) olarak yazılıyor?</li>
+</ul>
+
+\begin{equation*}
+\frac{v^2}{r}\Rightarrow \frac{\left[ \frac{R}{T}\right ]^2}{\frac{R}{1}} \Rightarrow \frac{R}{T^2}
+\end{equation*}
+
+<p>
+belki paydadaki ve paydaki \(R\) aynı \(R\) değildir.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org364592b" class="outline-2">
+<h2 id="org364592b"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-16 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-org364592b">
+<ul class="org-ul">
+<li>Newton III.8 Cor. 1 ile devam ettim. Densmore, s.471'de \(f_a = r/P^2\) diye bir şey yazıyorlar yani \(f_a\) = accelerative force = ivmelendirici güç. Newton'un icad ettiği güç türlerinden biri daha. Ama, bu Kepler Kuralının bir parçası olduğuna göre, diye düşündüm, \(r/P^2 = 1/r\) olması gerekir diye düşündüm ama Newton kullandığı verilerden \(r\) ve \(P\)'den bu orantıyı hesaplayınca eşit olmadıklarını gördüm. Sonra anladım ki bu Newton'un I.4 Cor. 2'de bahsettiği \(v^2/r\) yani sapan dönüşü hareketniden geliyor, Kepler Kuralı değil. Çok garip. Yörüngenin Kepler Kuralına göre hareket etmesi gerekir. "How did Newton spin rotation into revolution" adlı yazım aklıma geldi. Çünkü, sapan hareketi (ipin ucuna bir taş bağlayıp çevirdiğiniz zaman oluşan hareket) "rotation"dır, yani ip gerilir; ama yörüngeler "revolution"dur ve ortada bir ip yoktur, yörünge hareketi doğal harekettir ama Newton gibi evreni kendi uydurduğu okült güçle açıklamak isteyen bir insan için yörüngeleri de yerinde tutmak için bir güç gereklidir ve bu gücü Newton bulmuştur, Newton'un dediğine göre. Güzel bir masal. Newton'dan yörünge masalları.</li>
+<li>Bir de Feynman'ın Fizik dersleri kitabı geldi. (<a href="https://www.feynmanlectures.caltech.edu/I_07.html">İngilizcesi internette var</a>) Sayfa 7.9'da Cavendish deneyinden bahsediliyor, o sayfaya baktım. Feynman'ın Cavendish deneyinin orijinalinden haberi yok. Cavendish'in dünyanın yoğunluğunu ölçmek için deneyini yaptığını ve Newton'un çekim gücünü varsaydığını bilmiyor. Feynman'ın amacı Newton'un absürd çekim gücünün bir deneyle gözlemlendiğini söylemek, yani Newton propagandası yapmak. Feynman da bütün Newtoncu fizikçiler gibi Cavendish deneyini Newtoncu safsataları onaylamak için yalancı şahit olarak kullanıyorlar.</li>
+<li>Ayrıca Fizikçilerin Kovboyu Feynman'ın kitabın 11. sayfasında yazdığı şeylere kendinin uymadığını da görüyoruz. Feynman, kendisine mektup yazan bir öğrenciye öğüt veriyor, "bilimde dikkatli biçimde oluşturulmuş mantığa ve savlara güvenmelisiniz, otoritelere değil." Peki, bu öğüdü veren Feynman kendisi ne yapıyor, Cavendish deneyi konusunda? Tamamen, fizik ders kitaplarının güvenilmez otoritesini kabul ederek ders kitaplarında okuduğu yanlışı tekrarlıyor. Üstelik bu sefer de kendi otoritesini bize dayatarak. Cavendish deneyi ile ilgisi olmayan bir görsel koyup ona Cavendish deneyinin görseli diyor. Feynman, otoriteye güvenmeyip Cavendish deneyini sorgulyor mu? kütüphaneye gidip Cavendish'in özgün makalesini okuyup deneyi anlamaya çalışıyor mu? Hayır. Fizik ders kitaplarında tekrarlanan Cavendish deneyinin yozlaşmış versiyonunun gerçek Cavendish deneyi diye kabul ediyor.</li>
+<li>Çünkü Cavendish deneyinin tek bir önemi var, Newtoncu çekim gücünü gözlemlemiş olması ve böylece Newton'un uydurduğu, doğa üstü, okult ve absürd güç bir deneyle gözlemlenmiştir diye yalan söylüyor. O zaman Cavendish deneyine, deney deği bir mucize dememiz gerekir.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9b5b90a" class="outline-2">
+<h2 id="org9b5b90a"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-15 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-org9b5b90a">
+<ul class="org-ul">
+<li>Bugün Densmore'dan (s.468) III.8, Corollary 1 ve 2'yi okumaya başladım. Burada Newton Kepler Kuralını \(R/T^2 = 1/R^2\) diye yazıp bununla gezegenlerin yüzeyinde ivmeleri hesaplıyor. Kepler Kuralındaki \(1/R^2\) terimine "Accelerative force" diye bir etiket yapıştırmışlar, yani ağırlığa "accelerative force" etiketi yapıştırdı diye, Newton'un yasaları ile hesap yapıyormuş yalanını söylüyorlar. Bu değişir mi? Hiç zannetmiyorum. Kepler Kuralını kullanıp Newton'un yasaları diyorlar. Newton Kepler Kuralını çalmış ve Newton marka terimleri ile etiketleyip Newton yasaları diye satmış. Kendini pazarlama konuda gerçekten bir dahi imiş Newton ve tarikat kurmakta&#x2026;</li>
+</ul>
+
+
+<div id="org7db3e5d" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/Kepler-Newton.JPG" width="50%" height="50%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 4: </span>Newton Kepler Kuralını nasıl çalmış?</p>
+</div>
+
+<ul class="org-ul">
+<li>Biraz arşivleme de yaptım, Cavendish analizlerini bir dosyada toplasam iyi olur diye düşündüm.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org42e8215" class="outline-2">
+<h2 id="org42e8215"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-14 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-org42e8215">
+<ul class="org-ul">
+<li><a href="https://youtu.be/KfH3_kHdDr8">Bir viedo daha ekledim</a>. Bu sefer ipad ekran kaydı şeklinde yaptım. Yine sarkacın döneminin hesaplanması. Peki Cavendish'in sarkacın dönemini nasıl hesapladığı bu kadar önemli mi? Aslında birinci adımda sarkacın dönemini hesaplıyor, yani eğer deney sarkacı yerçekimi altında salınsaydı dönemi ne olurdu diye hesaplıyor, basit bir oran, kolların uzunluğunu mukayese ediyor. Fakat ondan sonra güç ilişkisine geçiyor ve açıkça söylemedin telin geri döndürücü gücünü Newtoncu çekim gücüne eşitliyor. Önemli olan bu.</li>
+<li>Bir video daha yüklüyorum, bu sefer tebeşir tahtasında, yine dönem konusunda.</li>
+<li>Bir de sunum yapmak için <a href="https://docs.google.com/presentation/d/1p1mQ3wnwrHKctJEg2Gya4Uar5XPNUMuptkxu_6xAsDQ/edit?usp=sharing">slayd başlattım</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org93c9808" class="outline-2">
+<h2 id="org93c9808"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-13 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-org93c9808">
+<ul class="org-ul">
+<li><a href="https://youtu.be/1CxeUYM5NtM">Richard Feynman Cavendish deneyinden bahsediyor</a>. Çok yüzeysel ve yanlış şeyler söylüyor. <a href="https://youtu.be/-UFr1X0prbo?t=2220">Aynı videonun tamamı</a>.</li>
+<li><a href="https://physicstoday.scitation.org/do/10.1063/PT.5.2025/full/">Derme çatma bir Cavendish deneyi</a>.</li>
+<li><a href="https://lithub.com/how-einstein-arrived-at-his-theory-of-general-relativity/">How Einstein Arrived at His Theory of General Relativity</a>. Bu yazıyı okudum biraz. Bir fizikçi tarafından yazıldığı için fizik resmi doktrininin klişelerini tekrarlıyor.</li>
+<li><a href="https://youtu.be/n2KiL30blng">İlk videomu yayınladım</a>. Cavendish'in sarkacın dönemini nasıl hesapladığını anlattım. <a href="http://cavendish-deneyi.com/cavendish-analiz-29.html">Bu yazıda</a> dönemin nasıl hesaplandığını yazmıştım. Ama yazıyı nerdeyse bir ay önce yazmışım, videoda bazı hatalar oldu, yarın düzeltirim.</li>
+<li><a href="https://youtu.be/dGh1I3jg83U">Mass of The Earth and Gravitational Constant (Dünya'nın Kütlesi ve Çekim Sabiti)</a>. Güzel bir video. "Johann Philipp Gustav von Jolly'nin yöntemi ile Dünya'nın Kütle Hesabı ve G evrensel çekim sabitinin hesaplanması anlatılmaktadır."</li>
+<li>Bu arkadaş da Feynman fizik derslerinden <a href="https://youtu.be/Fdbz01BAKnY">Cavendish deneyi bölümünü okuyor</a>. Yukardaki Feynman viedosunun metnine benziyor. Feynman'ın dersleri Türkçede varmış demek ki.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgaec7edb" class="outline-2">
+<h2 id="orgaec7edb"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-12 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-orgaec7edb">
+<ol class="org-ol">
+<li>Peki Newton için kürelerin çekimlerinin merkezler arasında olduğunu ispatlamak neden bu kadar önemli? Çünkü Newton gezegenlerin yörüngelerini hesapladığı zaman güç diye bir şey kullanmıyor. Güç işin doktrin tarafı. Güç doğada olmayan absürd bir şey. Newton yörünge hesaplarında sadece Kepler Kuralını kullanıyor, çünkü yörüngeler Kepler Kuralı ile tanımlanmıştır ve Kepler Kuralında sadece \(R\) yani mesafe vardır, çekim yoktur. Newton \(1/R^2\) oranını Kepler'in orantısından kopartıyor ve bu oran üzerine bir çekim masalı uyduruyor.</li>
+<li>Ama Kepler Kuralında \(1/^R2\) diye bir oran yok çünkü \(R^3/1\) oranı var, Kepler Kuralını \(1/R^2 = R/T^2\) şeklinde yazarsanız Kepler Kuralını yine \(R^3\) ile yazmış olursunuz, orantının iki tarafına da \(R\) harfini yazarak \(R\)'lerden birini yok edemezsiniz. Newton sihirbazlık yaptığını zannediyor ve el çabukluğu ile insanları aldatıyor. Kepler Kuralında \(1/R^2\) diye bir terim yok. Sıra hesap yapmaya gelince Newton ayırdığı oranları birleştiriyor ve hesaplarını Kepler Kuralı ile yapıyor ama daha önce Güç = \(1/R^2\) diye yazdı diye sanki hesaplarında bir güç terimi kullanmış gibi yapıyor. Ve Newton bu sahtekarlıkla bütün insanlığı kandırmış durumda. Newtoncu tarikat, Neqto kültü, günümüzde de gayet güçlü olarak devam ediyor ve kimseyi Newton'un sahte doktrinlerini sorgulamaya inandıramazsınız.</li>
+<li>Newton'un masal dünyasında, tanrı dünyayı bölünemez madde birimleri olarak yaratıp bu madde birimlerine hareket etme ve çekim yapma özellikleri vermiştir. Bu bilgiyi tanrılardan vahip yoluyla alan Mekanik peygamberi Newton da içinde yaşadığımız ve bölünemez madde birimlerinden meydana gelmeyen bu dünyayı bu bölünmez birimler ve çekimleri ile açıklamayı görevi bilmiştir. Ve açıklamıştır da, Newton'dan Büyüklere Çekim Masalları kitabında Newton bu kuramların açıklamıştır ve açıklamakla kalmamış bütün insanlığa dayatmış ve insanların aklını rehin almıştır.</li>
+<li>Newton bir dahidir. Evet, deli dahidir ama dahidir. Newton'un kuramında evrendeki her birim madde, ki bu birim maddeler bildiğiniz her maddeden küçüktür ve bölünemezler, yani mutlak yoğundurlar fakat bu absürd şeylerin bir de çekim gücü vardır yani bu yaramazlar birbirlerini durmadan çekerler, amansizca çekerler ve mesela bir küre meydana getirirler, ama birbirlerini çekip küre haline gelmiş iki cisim karşılaşınce birbirilerini de karşılıklı olarak çekmeye başlarlar, yani düşünün hem her madde birbirini çekiyor hem de diğer kürenin her maddesini çekiyor ve çekim karşılıklı. Bugün elimizin altında olan en güçlü bilgisayarları bile kullanarak böyle bir çekim olayını hesaplayamayız, işin gerçeği bu çekimi yapan birim maddeler kendileri bile bu çekimi yapamazlar, düşünün bütün evrendeki diğer birim maddelerin yerini ve size göre mesafelerini bileceksiniz ve herbirine onun kütlesine uygun çekim gücü yollayacaksınız ve o da size aynı çekim gücünü yollayacak ve bütün bunlar hiç zaman geçmeden olacak! Gelmiş geçmiş en büyük dahi olan Newton bu absürd sistemin imkansızlığının farkına varıyor ve ne yapıyor, çok basit, aniden söylediği herşeyi unutuyor, unutun diyor, her madde evrendeki her maddeyi çeker demiştim ama öyle değilmiş, her madde sadece ağırlık merkezinden çekermiş diyor. Haydaa! Ne oldu şimdi, bütün çekimler durdu ve iki küre birbirini sadece merkezden çeker oldular. Neden? Çünkü bu şekilde Newton, Newton'un saçma çekim yasasını değil, Kepler'in sadece mesafeye dayanan kuralını kullanabilsin diye. İşte deha diye ben buna derim. Ama ders kitaplarında hâlâ okutulur, Newton'um karşılıklı çekim yasası denir, madde birbirini çeker denir, Newton tarikatına yeni gelen müritlerin inanmaları için bu palavralar anlatılır ve onlar da inanır. İnanmadan mürit olunmaz zaten.</li>
+<li>Newton zaten, bir kürenin bütün çekim gücü merkezinde toplanmış demiyor, böyle deseydi anlardık, hayır küre mış gibi yapıyor, neden çünkü küre de Newton'un kutsal otoritesini zedelemek istemiyor ve bütün çekim gücü merkezinde toplanmış gibi yapıyor ve öyle çekiyor. Aslında çekim mekim yok. Hepsi Newton'un uydurması, Newton Kepler Kuralını parçalara ayırıp her parçaya güç diye bir etiket yapıştırdı diye doğada güç olmaz.</li>
+<li>Doğrusu ben anlayamıyorum dünya bütün çekim gücü merkezinde toplanmış gibi nasıl düşen bir taşı çeker ama dünyanın merkezine baktığımızda orada hiçbir çekim gücü yoktur.</li>
+</ol>
+
+
+<div id="org70228eb" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/%C4%B1s%CC%A7%C4%B1k-ters-kare.jpeg" width="50%" height="50%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 5: </span>Işığın ters kare ile yayılması</p>
+</div>
+
+<ol class="org-ol">
+<li value="7">Doğada ters kare ile değişen şeyler vardır, mesela, ışık huzmesi, gibi, ama Newtoncu olmayan çekim gücü mesafenin ters karesi ile yayılmamaktadır. Ayrıca Newtoncuların yayılma işini "ters kare çekim yasası" diye çekimle ilişkilendirmeleri de sok komik.</li>
+<li><p>
+Newton'a uydurduğu çekim gücünün de mesafenin ters karesi ile azaldığını söylüyor. Yani bir şekilde, bir cisimde bulunan bu gizemli çekim gücü, gibi yapıp çekebilen ve evrendeki bütün diğer gibi yapıp çeken Newtoncu maddelerin yerlerini bilen bu maddeler bir de mesafenin ters karesi ile yayılıyorlarmış. Ama \(1/R^2\) oranına bir çekim gücü özelliği vermek doğru değil çünkü bu cismin maddesinde konuşlanmış olan çekim gücünün nasıl yayıldığını gösteren bir ölçü. Bu çekim gücü ağırlığa oranlı, bir cisim ne kadar ağırsa o kadar Newtoncu çekim gücüne sahip demektir, yani
+</p>
+
+<p>
+\(F(N) \propto 1/R^2\)
+</p></li>
+</ol>
+
+<p>
+demek yanlış değil mi, çünkü,
+</p>
+
+<p>
+\(F(N) \propto \text{Ağırlık}\)
+</p>
+
+<p>
+Bu ağırlık azalmıyor ki. Diyorlar ki çekimin etkisi azalıyor, kaynaktan uzaklaştıkça, ama kaynakta azalan bir şey yok. Newton bütün fizik yasaları ile alay ediyor. Uydurduğu bu güç bütün fizik yasalarına aykırı bir şey.
+</p>
+
+<ol class="org-ol">
+<li value="9">Ve kaynakta hiç azalmayan bu çekim gücü bir de mesafeleri zaman geçmeden aşıyor ve bütün bu çekime rağmen gücünden hiçbir şey kaybetmiyor, yaptığı bütün bu çekimlerden dolayı ne ağırlığı azalıyor, ne de çekim gücü azalıyor. Dünya ayı milyonlarca yıldır çekiyor, hem de nasıl çekiyor, koskoca ayı yörüngesinde tutuyor (hani Newtonculara göre dünya çekmese ay yörüngesinden kaçıp gidecek ya, Newton'dan büyüklere çekim masalları böyle emrediyor aya&#x2026;) ama dünyü ayı çekmek için harcadığı bütün bu enerjiyi bir türlü tüketemiyor, sonsuz bir Newtoncu enerjisi var dünyanın ve bütün gezegenlerin ve bütün evrenin! Dünya ayı milyarlarca yıldır aynı güçle çekip duruyor ve Newtonunu kültünün üyeleri fizikçiler bu masallara sorgulamadan inanıyorlar.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org6c25147" class="outline-2">
+<h2 id="org6c25147"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-11 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-org6c25147">
+<ol class="org-ol">
+<li>Bugün Newton'un <i>İlkeler</i> kitabında yaptığı astronomi hesaplarının devamına bakmaya karar verdim (<a href="ilkeler-0304-01.html">III.4 tercüme etmiştim</a>). Bugün de <a href="ilkeler-0308-01.html">III.8'e başladım</a>. Newton'un "çekim gücü" yani "attraction" kelimesini kullanmaması fakat "gravitate" diye ağırlıkla ilgili bir kelime kullanması ilginç tabii. Newton'a kadar, ağırlık ile çekim ilişkilendirilmemiş, Newton ağırlık kelimesinin anlamını değiştirmiş, matematiksel olarak değil, kelime cambazlığı olarak, yoksa Newton bütün hesaplarında sadece Kepler Kuralını kullanıyor. Kepler Kuralına cebir dönüşümleri uyguluyor.</li>
+<li>Dün Cavendish Deneyi diye bir Youtube kanalı başlatmıştım bugün de bir kaç test videosu çektim. Hangi kamera ve ses düzeni daha iyi ona baktım fazla da önemli değil aslında, ses duyulsun yeter.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgf2f8683" class="outline-2">
+<h2 id="orgf2f8683"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-10 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-orgf2f8683">
+<ul class="org-ul">
+<li>Matematik ifadeleri gibi görünen bazı ifadeler aslında sahte olabilir. Matematikle de kelime oyunları ve üç kağıtçılık yapmak mümkün, sinonim ifadeler yaratıp bir ideolojiyi desteklemek mümkün. Bir ifadenin matematiksel bir ifade gibi görünmesi bizi aldatmasın. Newtoncu bütün marka terimler Newtoncu ideolojiyi desteklemek ve Newtonun otoritesini kurtarmak için geliştirilmiş matematiksel görünümlü okulcu ve yalancı ifadelerdir.</li>
+<li>Mesela, Newtoncular \(1/R^3\) gibi basit bir oranı \(1/R^2\) olarak yazabilirler ve size bunu \(1/R^3\) diye satabilirler. Yani \(1/R^3\)'ü \(R/1 = 1/R^2\) olarak yazarlar ve mesela \(1/R^2\) için "güç" derler, "ters kare yasası" derler sanki böyle bir güç varmış gibi. Halbuki, bir orantıyı bölüp her oranına başka anlamlar yüklemek sahtekarlıktan başka bir şey değildir. \(1/R^2 = R/1 \equiv 1/R^3\) bu gerçek değişmez, her orana istediğiniz ideolojik etiketi yapıştırın, Newton'un otoritesini kurtarmak için, kendi tanımladığınız bir birimi "Newton'un yerçekimsel sabiti" diye satmaya çalışın, yaptığınız sahtekarlıktır.</li>
+<li>Newtonculuk Kepler Kuralı üstüne yapıştırmiş etiketlerdir.</li>
+<li>Yoğunluk kavramı. Öyle anlaşılıyor ki, Kepler Kuralı dünyanın içinde devam etmiyor, yani "solid earth" denen dünyanın parçasının, çünkü dünya \(R/T^2\) kuralına göre dönüyor. Bir de dünyanın güneşin etrafında dönmesi var.</li>
+<li>\(V^2/R\) zaten  \(R/T^2\) olarak sadeleşiyor.</li>
+<li>Cavendish deneyini aslına uygun olarak inşa edip Cavendish'in yaptığı deneyi aynı yöntemlerle yapmak istiyorum bunun sonucunda sarkaç kolunun Newtnocu bir gücün etkisi altında dönmeyeceğini göreceğimi düşünüyorum.</li>
+<li>Spiral Kepler Kuralı ile nasıl ilgili, buna da bakmalı.</li>
+<li>Yani Kepler Kuralı sadece yörünge ve astronomi için geçerli değil bence çok daha temel bir orantı. \(T\) ve \(R\)'yi bağlama uygun olarak yorumlamak gerekiyor. İkisi de mesafe olabilir mesela.</li>
+<li>Newtoncular ne kadar mutlu insanlar, Newton'un bütün dediklerine inanmışlar ve hiçbir şeyi sorgulamıyorlar ve Newtoncu ideolojiyi oludğu gibi kabul etmişler, aykırı deneyleri Newtoncu doktrine uyduruyorlar, Newtoncu doktrini çöpe atmak yerine.</li>
+<li>Newtoncu çekim gücü kevramını kullanmadan Cavendish'in analizini yapamıyor muyuz? Zaten, analizde Kepler Kuralının iki parçası ayrı ayrı yazılıp sonra birleştiriliyor. Bu özellikle modern analizde çok açık olarak görülüyor.</li>
+<li>Cavendish deneyini incelerken Newtoncu gücü de anlamamız lazım, çünkü Cavendish'in sarkacı olmayan bir güç tarafından nasıl hareket ettiriliyor, Cavendish bir mucize mi gözlemledi?</li>
+<li>Newton'un ruhu denen bu güç sarkaç kolunu oynatıyor, sarkaç kolunu oynatan Newton'un ruhu, bütün evreni kaplayan Newton'un ruhu.</li>
+<li>Cavendish dünyanın yoğunluğunu hesaplamak için bu deneyi yapıyor. Newtoncu çekim gücü denen şey de sarkaç kolunu oynatıyor ve bu Newtoncu çekim gücünü gözlemleyerek Cavendish dünyanın yoğunluğunu hesaplıyor.</li>
+<li>O zaman Cavendish deneyini anlamak için Newtoncu çekim gücü denen şeyi anlamamız lazım.</li>
+<li>Newtoncu gücü anlamak için de kütle kavramını anlamak gerekiyor. Aslında anlayacak da bir şey yok çünkü kütle, ağırlığın Newtoncu jarfondaki ismi. Kütle ve ağırlık eşanlamlı kelimeler, kütle ve ağırlık diye iki ayrı şey yok.</li>
+<li>Kütle de ağırlık da aynı şekilde tanımlanıyor ve birimleri aynı, ama sanki aynı şeyi değişik bir isimle yazarak Newtoncu doktrin kurtarılmış oluyor,</li>
+</ul>
+
+\begin{align*}
+\text{Ağırlık} &\equiv \text{Hacim} \times \text{Yoğunluk}\\
+\\
+\text{Kütle} &\equiv \text{Hacim} \times \text{Yoğunluk}\\
+\\
+\text{XYZ} &\equiv \text{Hacim} \times \text{Yoğunluk}\\
+\\
+\text{Newton'un ruhu} &\equiv \text{Hacim} \times \text{Yoğunluk}\\
+\end{align*}
+
+<p>
+Görüldüğü gibi (\(\text{Hacim} \times \text{Yoğunluk}\)) ifadesini hangi kelimeye eşitlerseniz eşitleyin o kelimeleri eşanlamlı yapmış olursunuz. Bu tanımlara göre, "Ağırlık", "Kütle", "XYZ", "Newton'un ruhu" eş anlamlı kelimeler olarak tanımlanmış oluyor. Ama Newtoncu fizikçiler iki ayrı kelime kullandılar diye bizim de ağırlık ve kütlenin ayrı şeyler olduğuna inanmamızı istiyorlar.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge60ff55" class="outline-2">
+<h2 id="orge60ff55"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-09 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-orge60ff55">
+<ul class="org-ul">
+<li>Dünyanın yüzeyinde dolaşan uydunun dünyanın içine doğru gidebilseydi dönemi ne olurdu onu hesapladım. Yani \(T=R^{1.5}\)'un nasıl değiştiğine bakmış oldum. Grafiğini çizmek lazım. Fakat, dünyanın dönüşünü belirleyen Kepler Kuralı olmadığı anlaşılıyor (yani kendi etrafında dönüşünü) çünkü dünya bir sapan gibi yani radyan dönüşü ile dönüyor. Ama sapan dönüşü dediğim de \(v^2/R\) da zaten \(R/T^2\)'a basitleşiyor, yani Kepler Kuralının sol tarafı olmuş oluyor. Bundan da sanki dünyanın kendi etrafında dönüşü bu ivme ile veriliyor gibi geliyor, zaten \(mg\) diye yazılan terim bu.</li>
+<li>Diğer bir soru da eğer dünyanın yoğunluğu Kepler Kuralına göre değişmiyorsa, nasıl değişiyor, bir formüle göre mi değişiyor?</li>
+<li>Yoğunluk \(1/T^2\) ise bu neyin yoğunluğu?</li>
+<li>Cavendish deneyi dünyanın yoğunluğunu hesaplamak için yapıldığına göre yoğunluk nedir iyi anlamamız gerekiyor. Üstelik Cavendish yoğunluğu, Newton çekiminin kolu çektiği miktarı ölçerek buluyor, yani hem yoğunluğu hem de Newton çekim gücü nedir iyi anlamamız gerekiyor.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8953107" class="outline-2">
+<h2 id="org8953107"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-08 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-org8953107">
+<ul class="org-ul">
+<li><a href="https://profmattstrassler.com/2022/02/07/the-best-proof-that-the-earth-spins/">Strassler'in yazısı</a> ilginç geldi, çünkü tam da uydudan dünyanın yoğunluğunu hesaplıyordum ama bu konuya daha dikkatli bakmam gerektiğini anladım. Çünkü dünyanın yoğunluğu güneş etrafında dönüşünden geliyor olabilir. Ve dünyanın kendi etrafında dönüşü de "radyan dönüşü" yani vv/r ile belirleniyor olabilir. Bir de "gyroscope" konusu çıktı, buna da bakmam lazım. Türkçeye "ciroskop" olarak girmiş galiba, bu konuda ilginç <a href="https://youtu.be/ty9QSiVC2g0?t=20">bir video</a>.</li>
+<li>Dünya yüzeyinde dolaşan bir uydunun hızı ile dünyanın kendi etrafında dönüşünün (ekvatorda) hızına baktım, uydu dünyanın hızından 17 kat daha hızlı dönüyor. Dünya batıdan doğuya doğru dönüyor.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga142b9c" class="outline-2">
+<h2 id="orga142b9c"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-07 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-orga142b9c">
+<ul class="org-ul">
+<li>Strassler'e göre dünya bir ciroskopmuş (gyroscope). Eğer öyleyse dünya, yani "solid earth" denen kısmına geldiğimizde Kepler kuralı işlemiyor olmalı, solid earth için radyan hareketi geçerli olmalı çünkü ciroskop bir sapan gibi dönüyor.</li>
+<li>Okumam gereken yazılar
+<ol class="org-ol">
+<li>Newton'un astronomi ile ilgili Kepler Kuralı kullanarak yaptığı hesaplar, yani Principia'nın belkemiği, Densmore'dan tekrar okunacak. Zaten <a href="http://cavendish-deneyi.com/ilkeler-newton.html">ay hesabını çevirdim</a> şimdi gerisini çevirmem lazım.</li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S2405844018386961#bib1">Original form of Kepler's law</a>
+The full quote of this discovery in Kepler's works occurs in Harmonices Mundi (Harmony of the World) Book V [18] and is reproduced here along with its translation:
+But it is absolutely certain and exact that the ratio which exists between the periodic times of any two planets is precisely the ratio of the 3/2th power of the mean distances, i.e., of the spheres themselves; provided, however, that the arithmetic mean between both diameters of the elliptic orbit be slightly less than the longer diameter.*</li>
+</ol></li>
+</ul>
+
+<p>
+*For in the Commentaries on Mars, chapter XLVIII, page 232, I have proved that this Arithmetic mean is either the diameter of the circle which is equal in length to the elliptic orbit, or else is very slightly less.
+</p>
+
+<p>
+Ayrıca neden bu orantıya "harmonic law" diyorlar "harmonic" olan nedir, Harmonices Mundi (Harmony of the World) kitabında ilk defa ifade edildiği için mi acaba, yoksa matematik olarak harmoni ile bir ilgisi mi var?
+</p>
+
+<ol class="org-ol">
+<li value="3"><p>
+<a href="https://link.springer.com/chapter/10.1007/978-94-009-2809-1_2">Newton's third law and universal gravitation, I.B. Cohen</a>.
+Dipnot 2: For elliptical orbits Kepler’s “average distance” from the sun is the semi-axis major of the ellipse. Newton learned this law on reading Thomas Streete’s Astronomia Carolina (London, 1661; rev. ed., London, 1710), where (p. 61) it is stated that the mean distances of the planets from the sun are “in sesquialter proportion to the Periods of their Revolution in Time.” We may observe that this third law was the only one of Kepler’s three laws of planetary motion for which Newton gave credit to Kepler in the Principia (2d ed. 1713, 3d ed. 1726, Book 3, Phenomena 1, 2, and 4; in the 1st ed., 1687, these were Hypotheses 5 and 7); see my “Kepler’s Century: Prelude to Newton’s,” Vistas in Astronomy, 1975, 18: 3–40, and my “Hypotheses in Newton’s Philosophy,” Physis, 1966, 8: 163–184.
+</p>
+
+<p>
+Dipnot 5: Since the circumference of a circle of radius \(r\) is \(2πr\) and the time to traverse a complete radius is, by definition, the period of revolution \(T\), it follows that the speed \(v=2\pi r : T\) whence \(v^2 = 4\pi^2 r^2 : T^2\) or, in the language of proportion, \(ν^2\) is proportional to   \(r^2 : T^2\). It requires very little mathematical insight to recognize that the final term in the proportion (math) needs only to be slightly modified in order to become \(r^3 : T^2\), which is a constant for planets in the solar system. It is assumed that orbits are circular. Hence, since \(r^3 : T^2\) a constant, it follows that \(ν^2\) is proportional to (math) is proportional to (\(1 : r\))(\(r^3 : T^2\)). But if the “force” is proportional to 1 : \(r\) and \(ν^2\) is proportional to \(v^2 : r\), then the “force” is proportional to \(1 : r^2\). See, further, my Newtonian Revolution (Cambridge: Cambridge University Press, 1980), pp. 229–230; also pp. 238–241. In his early writings on dynamics (1660s and early 1670s), Newton did not use the expression “centrifugal force” or “vis centrifuga,” but rather wrote of an “endeavour” to recede from the center, an echo of a Descartes’s “conatus recedendi a centro.”
+</p></li>
+
+<li value="4"><a href="https://articles.adsabs.harvard.edu/pdf/1970SvA....13..712S">Current status of determination of the gravitational constant</a>.</li>
+
+<li><a href="https://en.wikipedia.org/wiki/Gaussian_gravitational_constant">Gaussian constant Wikipedia article</a></li>
+
+<li><p>
+How did Newton spin rotation into revolution
+</p>
+
+<p>
+Yukarda Cohen'in bahsettiği olay. Bu konuda yazmıştım.
+</p></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgc24c64a" class="outline-2">
+<h2 id="orgc24c64a"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-06 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-orgc24c64a">
+<ul class="org-ul">
+<li>Cavendish'in deneylerindeki sayılara bakmaya başladım.</li>
+</ul>
+
+<div id="org86244f2" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-deney-1.jpeg" width="50%" height="50%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 6: </span>1. Deneyde sarkacın hareketi</p>
+</div>
+
+<ul class="org-ul">
+<li><a href="https://www.physicsclassroom.com/class/circles/Lesson-4/Kepler-s-Three-Laws">Bu sayfadaki</a> Newton'a dualara baktım. Yeni bir şey yok. Bir ipin ucuna bir taş bağlayıp çevirirseniz bu harekete ben radyan hareketi diyorum çünkü taşın çizdiği daire parçası veya yay yarıçapa oranlıdır. Ama gezegenlerin yörüngesi Kepler Kuralına uyar ve gezegenin çizdiği yay yarıçapa değil yarıçapın 1.5 gücüne oranlı yani \(S \propto R^{1.5}\)</li>
+<li>Yani «Rotation \(\equiv\) S \(\propto\) R» ve «Revolution \(\equiv\) S \(\propto\) \(R^{1.5}\). Bu iki orantı aynı değil bu sebepten sapan hızını veren \(v^2/R\) ilişkisini yörünge hareketi için kullanamazsınız, Newton'un ve Newtoncuların yaptığı gibi.</li>
+<li>Newton'un sapan ipindeki gerilimi uyduları yörüngede tutan Newtoncu çekim gücü olarak tanımlaması çok komik.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc299c2c" class="outline-2">
+<h2 id="orgc299c2c"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-05 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-orgc299c2c">
+<ul class="org-ul">
+<li>Uzay istasyonunun uydusunda <a href="yogunluk-uydu-02.html">yoğunluk hesabı</a>.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf7e2a2f" class="outline-2">
+<h2 id="orgf7e2a2f"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-04 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-orgf7e2a2f">
+<ul class="org-ul">
+<li><a href="yogunluk-3-cesit-01.html">Üç çeşit yoğunluk tanımı var</a>. Dünyanın yoğunluğu için yazarsak, 1) Dünyanın yoğunluğu, 2) Dünyanın ortalama yoğunluğu, 3) Belli bir yarıçap için yoğunluk.</li>
+<li><p>
+Uzay istasyonu, uzay mekiği ve ayın yörüngelerinden Kepler Kuralının sabiti (dünya için) K-0'ı hesapladım. Sayılar biraz farklı çıktı,
+</p>
+
+<p>
+k-0-sts = 10070.72
+</p>
+
+<p>
+k-0-iss = 10128.06
+</p>
+
+<p>
+k-0-moon = 10240.70
+</p></li>
+</ul>
+
+<p>
+Bunların ortalamasını aldım, K-0 = 10146.49
+</p>
+
+<p>
+Bu sabiti kullanarak, Kepler Kuralından, dönemin karesini hesaplayabiliriz, \(T^2 = R^3\) / K-0
+</p>
+
+<p>
+Dünya yüzeyine yakın uydunun dönemini hesaplıyoruz ve 84.13 dakika doğru olarak çıkıyor.
+</p>
+
+<ol class="org-ol">
+<li value="2"><p>
+Ve yoğunluk = 3 \(\pi\) / G formülü ile de dünyanın çeşitli yarıçapları için yoğunluğunu hesapladım,
+</p>
+
+<p>
+(R - 0 km) = 6371 km Yoğunluk = 5,429
+</p>
+
+<p>
+(R - 100 km) = 6271 km Y = 5,809
+</p>
+
+<p>
+(R - 500 km) = 5871 km Y = 7,080
+</p>
+
+<p>
+(R - 1000 km) = 5371 km Y = 9,247
+</p>
+
+<p>
+(R - 2000 km) = 4371 km Y = 17,156
+</p>
+
+<p>
+(R - 6000 km = 371 km Y = 28,058,202
+</p></li>
+
+<li value="3"><p>
+Yoğunluk tablosuna bakarsak
+</p>
+
+<p>
+demir =&gt; 7.8
+</p>
+
+<p>
+kurşun =&gt; 11.3
+</p>
+
+<p>
+cıva =&gt; 13.6
+</p>
+
+<p>
+uranium =&gt; 18.7
+</p>
+
+<p>
+iridium =&gt; 22.6
+</p></li>
+</ol>
+
+<p>
+En sonuncusu merkezden sadece 370 km uzakta ve acaip bir yoğunluk var. Dünyanın merkezine doğru 2 bin km indiğimizde de uranyum yoğunluğuna gelmiş oluyoruz. Bu seviyede uranyum mu bulmayı ümid edelim? Tabii, bunlar ne demek anlamamız gerekiyor.  
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga5e184e" class="outline-2">
+<h2 id="orga5e184e"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-03 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-orga5e184e">
+<p>
+Bu iki yoğunluk tanımının eşit olması gerekmez mi?
+</p>
+
+\begin{equation}
+D = \frac{M}{V}= \frac{3\pi}{GT^2}
+\end{equation}
+
+<p>
+ve
+</p>
+
+\begin{equation}
+D = \frac{M}{V}= \frac{3g}{4\pi GR}
+\end{equation}
+
+<p>
+Fakat <a href="yogunluk-hesabi-01.html">sonuç</a>
+</p>
+
+\begin{equation}
+4\pi^2 = \frac{T^2}{T^2} = 1
+\end{equation}
+
+<p>
+olarak çıkıyor, yani bir eşitsizlik var. Bir yerde bir hata olmalı.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3a9634a" class="outline-2">
+<h2 id="org3a9634a"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-02 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-org3a9634a">
+<ul class="org-ul">
+<li><a href="cavendish-yogunluk-dunya-01.html">İki türlü yoğunluk tanımı</a>.</li>
+<li>Neden iki yoğunluk tipi var? Yoğunluk uydu ve yörünge ile ilgili. Zaten, bunu açıkca gözlemliyoruz, frekans arttıkça yoğunluk artıyor.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1062d32" class="outline-2">
+<h2 id="org1062d32"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-01 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-org1062d32">
+<ul class="org-ul">
+<li><a href="newton-madde-01.html">Newton'dan çekim masalları</a>. Newton mutlak ağır ve mutlak yoğun birimler tanımlıyor ve bu bölünemez birimlere madde diyor. Hareket etmesi bile imkansız olan bu mutlak ağır şeylere Newton bir de çekim gücü özelliği veriyor ve bu saçmalık üzerine bir dünya sistemi kuruyor.</li>
+<li>Yüzey bir tanımlamadır. Deliksiz ve geçirgen olmayan yüzey yoktur olamaz. Ancak Newton gibi bir dahi hiçbir boyutta geçirgenliği olmayan mutlak bir yüzey tanımlayabilir ve bu bölünemez madde birimleri üzerine bir dünya inşa eder ve bu Newtoncu dünya içinde yaşadığımız dünya ile tamamen çeliştiği halde Newton kendisinin mutlak otoritesini, tanrıların kendisine verdiği mutlak otoriteyi, kullanarak bu absürd Newtoncu dünyayı insanlığa dayatır.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org260a6f5" class="outline-2">
+<h2 id="org260a6f5"><span class="timestamp-wrapper"><span class="timestamp">[2022-01-31 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-org260a6f5">
+<ul class="org-ul">
+<li>Cavendish analizi ile modern analizin <a href="cavendish-analiz-30.html">farkı</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-02 Mon 08:57</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

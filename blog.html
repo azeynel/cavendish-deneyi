@@ -1,0 +1,1292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-02 Mon 08:55 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<p>
+( <a href="blog-arsiv.html">Blog Arşiv</a> )
+</p>
+
+<div id="outline-container-orgd46baee" class="outline-2">
+<h2 id="orgd46baee"><span class="timestamp-wrapper"><span class="timestamp">[2023-08-11 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-orgd46baee">
+</div>
+<div id="outline-container-orgac7c666" class="outline-3">
+<h3 id="orgac7c666">emacs error</h3>
+<div class="outline-text-3" id="text-orgac7c666">
+<p>
+devam ediyor
+cevap bekliyorum
+çözümü yok gibi gözüküyor
+</p>
+</div>
+</div>
+<div id="outline-container-org0f23a71" class="outline-3">
+<h3 id="org0f23a71">YAZILAR</h3>
+<div class="outline-text-3" id="text-org0f23a71">
+<p>
+descartes yazısını yazdım blogda yayınladım <a href="https://research-notes.org/2023/08/11/descartes-sosyal-medyada-trollenirdi/">https://research-notes.org/2023/08/11/descartes-sosyal-medyada-trollenirdi/</a>
+yazının ismiyle ilgisi yok
+</p>
+</div>
+</div>
+<div id="outline-container-org1760288" class="outline-3">
+<h3 id="org1760288">nano</h3>
+<div class="outline-text-3" id="text-org1760288">
+<p>
+nedense yine bu basit şeye takıldım
+</p>
+</div>
+</div>
+<div id="outline-container-org132dd1e" class="outline-3">
+<h3 id="org132dd1e">drummer</h3>
+<div class="outline-text-3" id="text-org132dd1e">
+<p>
+ne yazık ki bu çok amatörce işlemiyor
+unuttuk
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc52ffe2" class="outline-2">
+<h2 id="orgc52ffe2"><span class="timestamp-wrapper"><span class="timestamp">[2023-08-11 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-orgc52ffe2">
+</div>
+<div id="outline-container-org35822e4" class="outline-3">
+<h3 id="org35822e4">Emacs error</h3>
+<div class="outline-text-3" id="text-org35822e4">
+<p>
+.el ekli file hangisiyse onu yükle demiş
+yüzlerce .el ekli file var
+I searched for M-x find-name-dired for *.el and there hundred of files with .el extension. Which one do I need to load?
+Hepsini mi acaba?
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9abdc1d" class="outline-2">
+<h2 id="org9abdc1d"><span class="timestamp-wrapper"><span class="timestamp">[2023-08-10 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-org9abdc1d">
+<ol class="org-ol">
+<li>Dave Winer / Drummer diye outline programı var. Ona baktım biraz ama çalışmıyor. Sormam lazım sormak için de, GitHub'a girmem lazım. PW neydi acaba.
+<ol class="org-ol">
+<li>Gerekiyor mu?</li>
+<li>Sordum cevap verir mi bilemem <a href="https://github.com/scripting/drummerSupport/issues/191">https://github.com/scripting/drummerSupport/issues/191</a>
+<ol class="org-ol">
+<li>Kendi server'i ile ilgili bir sorun varmış</li>
+<li>gereksiz bir vakit kaybı</li>
+</ol></li>
+</ol></li>
+<li>Emacs da error veriyor, onu da sordum <a href="https://emacs.stackexchange.com/questions/78390/error-in-process-sentinel-wrong-type-argument-integer-or-marker-p-nil">https://emacs.stackexchange.com/questions/78390/error-in-process-sentinel-wrong-type-argument-integer-or-marker-p-nil</a>
+Birisi cevap vermiş sorun bu kodla ilgiliymiş
+(defun find-dired-sort-by-filename ()
+"Sort entries in <b>Find</b> buffer by file name lexicographically."
+(sort-subr nil 'forward-line 'end-of-line
+	   (lambda ()
+	     (when-let ((start
+			 (next-single-property-change
+			  (point) 'dired-filename)))
+	     (buffer-substring-no-properties start (line-end-position))))))</li>
+</ol>
+<p>
+Hâlâ uğraşıyorum M-x load-library dedi @drew ama library ismi lazım onu bekliyorum
+</p>
+
+<ol class="org-ol">
+<li>Birikmiş gazetelere baktım. BirGün'de Barbie filmi yazısı. Eski Kadın yazım <a href="http://1women1.blogspot.com/2006/12/i-am-writing-this-for-your-review.html">http://1women1.blogspot.com/2006/12/i-am-writing-this-for-your-review.html</a></li>
+<li>Luzumsuz işlerin üstadıyım</li>
+<li>Bugün Twitter aktif
+<ol class="org-ol">
+<li>Laiklik konusunda Alev Coşkun yazısına yorum <a href="https://twitter.com/Ahmet__Zeynel/status/1689566339986280448?s=20">https://twitter.com/Ahmet__Zeynel/status/1689566339986280448?s=20</a></li>
+<li>Kadınlar hakkında da bir yorum <a href="https://twitter.com/Ahmet__Zeynel/status/1689558722786234368?s=20">https://twitter.com/Ahmet__Zeynel/status/1689558722786234368?s=20</a>
+<ol class="org-ol">
+<li>Kadınlar erkekleri köle yapmadan durmayacaklar</li>
+<li>İntikam çok tatlıdır</li>
+<li>Kadınlar zaten imkansızı başarıp bir cins devrimi yapmışlardır.</li>
+<li>Saçma sapan işler futbolcunun biri karısının kızının resmini paylaşmış Hürrem Sultan gibi</li>
+<li>buna yorum bıraktım eğleniyor muyuz vakit mi öldürüyoruz</li>
+<li>vakit zaten ölüyor</li>
+<li>ne yapsan ne yapmasan hiç önemli değil</li>
+<li>ama bazı sonuçlar olabiliyor bazı eylemlerin</li>
+</ol></li>
+</ol></li>
+<li>Bir de yazı yazdım Anadolu'nun Araplığı hakkında, bu kaçıncı yazı aynı konuda</li>
+<li>Amma çirkin bir dünya burası ya&#x2026; Ne işim var benim burada</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-org6a190c7" class="outline-2">
+<h2 id="org6a190c7"><span class="timestamp-wrapper"><span class="timestamp">[2022-12-23 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-org6a190c7">
+<ol class="org-ol">
+<li>What is the problem with spacetime? someone asked at twitter</li>
+
+<li>Read about rest mass comment in phil. forum <a href="https://philosophy.stackexchange.com/questions/95374/what-is-linguistic-logic">https://philosophy.stackexchange.com/questions/95374/what-is-linguistic-logic</a>
+wrote comment
+better to write M<sub>1</sub>, M<sub>2</sub>, M<sub>3</sub> and so on to describe species of mass used in physics</li>
+</ol>
+
+<p>
+frege on definition <a href="https://plato.stanford.edu/entries/frege/">https://plato.stanford.edu/entries/frege/</a>
+important
+</p>
+
+<blockquote>
+<p>
+2.3.2 Definition
+Frege was extremely careful about the proper description and definition of logical and mathematical concepts. He developed powerful and insightful criticisms of mathematical work which did not meet his standards for clarity. For example, he criticized mathematicians who defined a variable to be a number that varies rather than an expression of language which can vary as to which determinate number it may take as a value.
+More importantly, however, Frege was the first to claim that a properly formed definition had to have two important metatheoretical properties. Let us call the new, defined symbol introduced in a definition the definiendum, and the term that is used to define the new term the definiens. Then Frege was the first to suggest that proper definitions have to be both eliminable (a definendum must always be replaceable by its definiens in any formula in which the former occurs) and conservative (a definition should not make it possible to prove new relationships among formulas that were formerly unprovable). Concerning one of his definitions in the Begriffsschrift (§24), Frege writes:
+We can do without the notation introduced by this sentence, and hence without the sentence itself as its definition; nothing follows from the sentence that could not also be inferred without it. Our sole purpose in introducing such definitions is to bring about an extrinsic simplification by stipulating an abbreviation.
+Frege later criticized those mathematicians who developed ‘piecemeal’ definitions or ‘creative’ definitions. In the Grundgesetze der Arithmetik, II (1903, Sections 56–67) Frege criticized the practice of defining a concept on a given range of objects and later redefining the concept on a wider, more inclusive range of objects. Frequently, this ‘piecemeal’ style of definition led to conflict, since the redefined concept did not always reduce to the original concept when one restricts the range to the original class of objects. In that same work (1903, Sections 139–147), Frege criticized the mathematical practice of introducing notation to name (unique) entities without first proving that there exist (unique) such entities. He pointed out that such ‘creative definitions’ were simply unjustified. Creative definitions fail to be conservative, as this was explained above.
+</p>
+</blockquote>
+
+<p>
+philosophy forum: @zeynel highly unlikely due to quantification-see,frege. then read on deixis and vagueness – 
+Papuseme
+</p>
+
+<ol class="org-ol">
+<li>how can someone who writes that we do not know the universe as a whole then can pretend to know the universe as a whole and accept the big bang fairy tale as a scientific and true history of the universe as a whole.</li>
+</ol>
+
+<p>
+So here are some links where strassler talks about the big bang
+</p>
+
+<p>
+My New Articles on Big Bang, Inflation, Etc.
+<a href="https://profmattstrassler.com/2014/03/17/my-new-articles-on-big-bang-inflation-etc/">https://profmattstrassler.com/2014/03/17/my-new-articles-on-big-bang-inflation-etc/</a>
+</p>
+
+<p>
+Big Bang, Classic Confusions
+<a href="https://profmattstrassler.com/articles-and-posts/relativity-space-astronomy-and-cosmology/big-bang-classic-confusions/">https://profmattstrassler.com/articles-and-posts/relativity-space-astronomy-and-cosmology/big-bang-classic-confusions/</a>
+</p>
+
+<p>
+Big Bang: Expansion, NOT Explosion
+<a href="https://profmattstrassler.com/articles-and-posts/relativity-space-astronomy-and-cosmology/history-of-the-universe/big-bang-expansion-not-explosion/">https://profmattstrassler.com/articles-and-posts/relativity-space-astronomy-and-cosmology/history-of-the-universe/big-bang-expansion-not-explosion/</a>
+</p>
+
+<p>
+Did The Universe Really Begin With a Singularity?
+<a href="https://profmattstrassler.com/2014/03/21/did-the-universe-begin-with-a-singularity/">https://profmattstrassler.com/2014/03/21/did-the-universe-begin-with-a-singularity/</a>
+</p>
+
+<blockquote>
+<p>
+Doesn’t the Big Bang Theory say so?
+Well, let me ask you a question. Did you begin with a singularity?
+Let’s see. Some decades ago, you were smaller. And then before that, you were even smaller. At some point you could fit inside your mother’s body, and if we follow time backwards, you were even much smaller than that.
+If we follow your growth curve back, it would be very natural — if we didn’t know anything about biology, cells, and human reproduction — to assume that initially you were infinitesimally small… that you were created from a single point!
+But that would be wrong. The mistake is obvious — it doesn’t make sense to assume that the period of rapid growth that you went through as a tiny embryo was the simple continuation of a process that extends on and on into the past, back until you were infinitely small.  Instead, there was a point where something changed… the growth began not from a point but from a single object of definite size: a fertilized egg.
+The notion that the Universe started with a Big Bang, and that this Big Bang started from a singularity — a point in space and/or a moment in time where the universe was infinitely hot and dense — is not that different, really, from assuming humans begin their lives as infinitely small eggs. It’s about over-extrapolating into the past.
+</p>
+</blockquote>
+
+<p>
+What is puzzling to me, how come someone who writes the above caveat about the big bang fairy tale then can go ahead and discuss the details of the big bang.
+</p>
+
+<p>
+There is a fundamental problem here. Astronomers, cosmologists, physicists, everyone who thinks and writes about the universe believes without exception that we do not know the universe as a whole. The simple and undeniable reason is that there is no light coming to us from beyond the observable universe.
+</p>
+
+<p>
+There is something as undeniable and it is that the Big Bang theory assumes a knowledge of the whole.
+</p>
+
+<p>
+People who admit that they do not know the universe as a whole, conveniently forget this fact and accept a theory thet assumes a knowledge of the whole as a scientific theory.
+</p>
+
+<p>
+Please, these are the smartest people on earth, please tell me how can you say simultaneosly that you do not know the universe as a whole and that you do know the universe as a whole. What is your secret of knowing something you admit you do not know??
+</p>
+
+<p>
+A master of composing meaningless sentences with undefined words.
+We know politicians are the true masters of this way of talking without saying anything meaningful. Talking with buzzwords. But the true master of this art of rhetorical sophistry are physicists.
+16.53
+frank close:
+</p>
+
+
+<p>
+{
+The clever maths bit is the Higgs field is relativistic invariant.
+</p>
+
+<p>
+The ironic bit is that it is transparent to photons which is what Michelson and Morley had used to search for evidence of the ether
+}
+</p>
+
+<p>
+So he is telling lies somewhere. What is Higgs field is it ether or not ether.
+But a physicist can never answer a clear question clearly with yes or no.
+</p>
+
+<p>
+Higgs field is a scalar field and it is an invariant of general relativity
+</p>
+
+<p>
+Relativistic invarience
+<a href="http://astro.vaporia.com/start/relativisticinvariance.html">http://astro.vaporia.com/start/relativisticinvariance.html</a>
+</p>
+
+<p>
+Relativistic invariance (or Lorentz invariance) means "the same regardless of frame of reference".
+</p>
+
+<p>
+frame of reference
+<a href="http://astro.vaporia.com/start/frameofreference.html">http://astro.vaporia.com/start/frameofreference.html</a>
+</p>
+
+<p>
+A frame of reference is "space" considered from a particular vantage point, typically used as the basis of coordinates to be used measuring positions throughout the space. When I measure the dimensions of a room in a house, the frame of reference, to me, is apparently not moving, but actually is a region of space moving and turning as the Earth rotates, orbiting the Sun, in turn, orbiting the Milky Way, which moves at some velocity through nearby galaxies. With this frame of reference, I can specify locations of the walls, furniture, etc., using a coordinate system I choose, e.g., taking one of the room's corners, where it meets the floor, as an origin.
+</p>
+
+<p>
+What is this obsession with “frame of reference” ?
+</p>
+
+<p>
+<a href="http://astro.vaporia.com/start/standardgravitationalparameter.html">http://astro.vaporia.com/start/standardgravitationalparameter.html</a>
+</p>
+
+<p>
+Standard gravitational parameter
+(μ)
+(a body's mass times the universal gravitational constant)
+</p>
+
+
+<p>
+<a href="https://en.wikipedia.org/wiki/Namespace">https://en.wikipedia.org/wiki/Namespace</a>
+namespace
+does physics have a namespace?
+</p>
+</div>
+</div>
+
+<div id="outline-container-org08abb26" class="outline-2">
+<h2 id="org08abb26"><span class="timestamp-wrapper"><span class="timestamp">[2022-08-28 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-org08abb26">
+<ol class="org-ol">
+<li>I posted <a href="https://1notes1.blogspot.com/2022/08/rotation-and-revolution.html">rotation and revolution</a> article.</li>
+<li>In topics file I have these topics:
+<ol class="org-ol">
+<li>Axioms</li>
+<li>Cavendish experiment</li>
+<li>Definitions</li>
+<li>Force (Newton)</li>
+<li>Gravity</li>
+<li>Henry Cavendish</li>
+<li>Inertia</li>
+<li>Newton, Isaac</li>
+<li>Propositions</li>
+</ol></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgaabc905" class="outline-2">
+<h2 id="orgaabc905"><span class="timestamp-wrapper"><span class="timestamp">[2022-08-27 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-orgaabc905">
+<ul class="org-ul">
+<li><i>I posted the following text about how Newton defined his "force of gravity" to <a href="https://twitter.com/cavendish_exp/status/1563434802870595589?s=21&amp;t=ZrCg2aj6Av260WQJ8QvT8g">Twitter</a> and Instagram both in English and Turkish:</i></li>
+</ul>
+<ol class="org-ol">
+<li>Do you know how Newton's force of gravity is defined?</li>
+
+<li>Newton's force of gravity is defined as a miracle!</li>
+
+<li>Newton wants us to believe in a miracle.</li>
+
+<li>And what is the cause of gravity?</li>
+
+<li>According to Newton the cause of gravity is God. This is what Newton says.</li>
+
+<li>Why is Newton's force a miracle?</li>
+
+<li>Because Newton defined this “force” as a physical cause that crossed distances without time passing.</li>
+
+<li>Light takes 4 minutes to travel from the sun to the earth.</li>
+
+<li>Newton’s miracle force travels from the sun to the earth in 0 (zero) seconds.</li>
+
+<li>This is called a miracle because in this world nothing travels without time passing.</li>
+
+<li>In fact, "something is happenning" means "time passing”.We divide time into segments (snapshots) and we give a name to each segment.</li>
+
+<li>In this world time must pass for something to happen.</li>
+
+<li>Newton’s “force” is not an exception to this universal law.</li>
+
+<li>In Newton's fairy tale world, time may obey Newton's occult and absurd doctrines but not in this world.</li>
+
+<li>So instead of believing every absurdity Newton uttered we must question them.</li>
+</ol>
+
+<p>
+###
+</p>
+
+<ol class="org-ol">
+<li>Newton'un yerçekimi kuvvetinin nasıl tanımlandığını biliyor musunuz?</li>
+
+<li>Newton'un yerçekimi kuvveti bir mucize olarak tanımlanmıştır!</li>
+
+<li>Newton bir mucizeye inanmamızı istiyor.</li>
+
+<li>Peki yerçekiminin sebebi nedir?</li>
+
+<li>Newton'a göre yerçekiminin sebebi Tanrı'dır. Newton böyle diyor.</li>
+
+<li>Newton'un kuvveti neden bir mucizedir?</li>
+
+<li>Çünkü Newton bu “kuvveti” zaman geçmeden mesafeleri aşan fiziksel bir neden olarak tanımlamıştır.</li>
+
+<li>Işığın güneşten dünyaya seyahat etmesi 4 dakika sürer.</li>
+
+<li>Newton'un mucizevi kuvveti güneşten dünyaya 0 (sıfır) saniyede ulaşır.</li>
+
+<li>Buna mucize denir çünkü bu dünyada zaman geçmeden hiçbir şey mesafeleri kat edemez.</li>
+
+<li>Aslında, "bir şey oluyor”, demek "zaman geçiyor" demektir. Zamanın geçişine çeşitli isimler veririz. Yani zamanı sahnelere böleriz. Ama zaman geçmeden hiçbir şey olamaz.</li>
+
+<li>Bu dünyada bir şeyin olması için zamanın geçmesi gerekir.</li>
+
+<li>Newton'un “kuvvet” dediği ve uzaktaki objeleri temas etmeden harekete geçirebilen şey de bu evrensel yasanın bir istisnası değildir.</li>
+
+<li>Newton'un masalsı dünyasında zaman, Newton'un okült ve absürt öğretilerine itaat edebilir ama bu dünyada değil.</li>
+
+<li>Dolayısıyla Newton'un söylediği her saçmalığa inanmak yerine onları sorgulamalıyız.</li>
+</ol>
+
+<p>
+###    
+</p>
+
+<ul class="org-ul">
+<li>I'm also working on rotation and revolution.</li>
+<li>I reserve the word "rotation" for the rotation of a solid disk, or a spinning top, or a whirling sling. These are motions where all rotating points have the same angular velocity. Rotationl motion obeys the radian rule.</li>
+<li>I reserve the word "revolution" for orbital motion. Since orbital motion obeys Kepler's Rule (not the radion rule), for object revolving at different radii, angular velocities are different.</li>
+<li>This means that, a formula such as \(a=v^2/r\) which is valid for rotation will not be valid for revolutions.</li>
+<li>But Newton and his disciples assume that rotation and revolution are the same motion and they build theri theory of orbital motion on this similarity. This is why they claim that orbatil motion must be dynamical and there must forces.</li>
+<li>But orbital revolution is circular inertia, as Galileo thought.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2f0cefe" class="outline-2">
+<h2 id="org2f0cefe"><span class="timestamp-wrapper"><span class="timestamp">[2022-08-25 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-org2f0cefe">
+<ul class="org-ul">
+<li>They say that Newton used \(a=v^2/r\) and Kepler's Rule to discover inverse square law. I found the material and <a href="newton-ofer-gal.html">I started to read</a>.</li>
+<li>So far I don't see how Newton derives anything at all, all he does is algebraic manipulations.</li>
+<li>Newton assumes that inertia is motion on a straight line.</li>
+<li>The word "uniform" means no motion (or energy) is transferred to this motion.</li>
+<li>You push a car and let it go, the car continues to move for a while, then it stops because of friction. This is not uniform motion but it is inertial motion.</li>
+<li>It is idiotic to claim that inertial motion continues on a straight line with uniform motion.</li>
+<li>To sustain uniform motion &#x2013;always&#x2013; you need to input energy to overcome friction.</li>
+<li>Physicists say "assume there is no friction". Sure assume no friction and build a perpetual motion machine. Only in fairy tales frictionless motion can exist, not in this world.</li>
+<li>If there is motion there is friction. [Where is friction in a rotating in space? (No air and no moving parts]</li>
+<li>In space friction is so little that all directions are the same, there is no preferred direction and as a result inertial motion is circular.</li>
+<li>So, Newton's fundamental assumption that inertia is rectilinear and orbits are caused by a force bending this rectilenear motion is false.</li>
+<li>Newton's explanation of planetary orbits is silly, it's comical. But no one sees this silliness because physicists are blinden by Newton's authority.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb67f7ee" class="outline-2">
+<h2 id="orgb67f7ee"><span class="timestamp-wrapper"><span class="timestamp">[2022-08-21 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-orgb67f7ee">
+<ul class="org-ul">
+<li>I started to read <a href="newton-def-5--01.html">Newton's Definition 5</a>, where he talks about centripetal force. He assumes that orbital motion is the same motion as the sling motion. But this is not true.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge9e80cb" class="outline-2">
+<h2 id="orge9e80cb"><span class="timestamp-wrapper"><span class="timestamp">[2022-07-14 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-orge9e80cb">
+<ul class="org-ul">
+<li>Copying from my notes:</li>
+</ul>
+<p>
+Write \(F=GMm/r^2\) explicitely,
+</p>
+
+\begin{equation*}
+\frac{r}{t^2}=\frac{GM}{R^2}
+\end{equation*}
+
+<p>
+Now, \(t\) hidden in \(F\) is exposed. But there is no \(t\) on the RHS. There is no physical quantity for time on the RHS. The unit of time hidden in G is a constant; the \(t\) on the LHS is a variable. So the balance of units is cosmetic only.
+</p>
+
+<p>
+What is \(r\)? The distance or unit distance.
+</p>
+
+<p>
+Another weird thing is that \(r\) is the unit distance \(m\) is falling but \(m\) does not exist in this equation, so \(r\) becomes meaningless. Time \(t\) is the unit time \(m\) is falling but \(m\) is no where to be seen.
+</p>
+
+<p>
+So there is something weird going on here. I'm sure they will write a sentence like "you are confusing gravitational mass with inertial mass&#x2026;" etc. etc.
+</p>
+
+<p>
+###
+</p>
+
+<p>
+Did Cavendish really measure or observe the Newtonian force without any doubt? The problem here is that Cavendish assumed the Newtonian force. His experiment was not devised to test the existence of the Newtonian force of attraction. But on [Experiment 1] when he brings the weights near the balls, he observes such a great attraction that the arm of the pendulum moves toward the weight and almost hits the sides of the protective case and Cavendish concludes that (p.484)
+</p>
+
+<blockquote>
+<p>
+These experiments are sufficient to show, that the attraction of the weights on the balls is very sensible, and are also sufficiently regular to determine the quantity of this attraction pretty nearly, as the extreme results do not differ from each other by more than \(\frac{1}{10}\) part.
+</p>
+</blockquote>
+
+<p>
+Clearly Cavendish claims to have observed the Newtonian force of attraction exerted by the weights on the balls suspended on the arm of the pendulum.
+</p>
+
+<p>
+But don't think that the arm is stationary and it is set in motion when the weights are brought near. No. The arm is always in motion.
+</p>
+
+<p>
+Cavendish computes the hypothetical middle point of the extreme points and observes the motion of this middle point.
+</p>
+
+<p>
+###
+</p>
+
+<p>
+Strassler wrote a <a href="https://profmattstrassler.com/2022/06/21/dimensional-analysis-a-secret-weapon-in-physics/">series of articles</a> on dimensional analysis. This proves that physics is a consistent system of units. Physics is unitful. There are branded units sanctified by the names of physicists. But if you work with ratios and proportions you don't have sacred units, you can choose any units you like. Newton did not work with a unit of force called "Newton." The side effects of working with sacred units is the physics equation. A physics equation is not a proportionality. This is a different topic.
+</p>
+
+<p>
+Physicists define a unit, sanctify it, make it a "constant of nature" and reify it. Reifying means that physicists start to believe that the unit they defined and branded with an ideological name, is a real, observable physical quantity. The best example of reified units in physics is the big-G, the letter labeled "Newton's universal constant of gravitation." But G is simply <span class="underline">a</span> unit term of Kepler's Rule that physicists try to sell as <span class="underline">the</span> unit term of Kepler's Rule.
+</p>
+
+<p>
+###
+</p>
+
+<p>
+I'm continuing reading <a href="https://profmattstrassler.com/2022/06/21/dimensional-analysis-a-secret-weapon-in-physics/">Strassler's article</a> about dimensional analysis:
+</p>
+
+<blockquote>
+<p>
+If gravity is at work [&#x2026;] Newton's constant G always appears.
+</p>
+</blockquote>
+
+<p>
+The converse of this is that if G does not appear gravity is not at work there.
+</p>
+
+<blockquote>
+<p>
+[G] characterizes the overall strength of gravity.
+</p>
+</blockquote>
+
+<p>
+I asked about this and he replied «if you doubled G, all gravitational effects would double in strength&#x2026;»
+</p>
+
+<p>
+But it makes no sense to double G, G is tied to radius R and period T of the orbit. I guess that's why they use it as GM. They keep G constant.
+</p>
+
+<p>
+Setting G=0 amounts to setting R=0. In that case, there will be no orbit.
+</p>
+
+<p>
+Strassler says:
+</p>
+
+<blockquote>
+<p>
+The dimensions of G have to be consistent with Newton's gravitational force equation.
+</p>
+</blockquote>
+
+<p>
+Newton's gravitational equation is this,
+</p>
+
+\begin{equation*}
+F=\frac{Mm}{R^2}
+\end{equation*}
+
+<p>
+The dimensions of this equation is wrong, there is a mismatch:
+</p>
+
+\begin{equation*}
+\frac{\text{kg} \cdot L}{T^2} = \frac{\text{kg} \cdot \text{kg}}{L^2}
+\end{equation*}
+
+<p>
+This simplifies to
+</p>
+
+\begin{equation*}
+\frac{L^3}{T^2} = \text{kg}
+\end{equation*}
+
+<p>
+So, Newton's famous force equation is not a meaningful equation.
+</p>
+
+<p>
+So, it is not true that «the dimensions of G have to be consistent with Newton's gravitation force equation.»
+</p>
+
+<p>
+Rather, physicists define the units of G to fix the units of Newton's absurd equation of force.
+</p>
+
+<p>
+And this is a well-known fact. For instance, <a href="http://cavendish-deneyi.com/pdf/cavendish-ducheyne.pdf">Ducheyne writes</a>, that,
+</p>
+
+<blockquote>
+<p>
+The second part of the units of G, \(\frac{m^2}{\text{kg}^2}\), cancels out the units of the other physical quantities in the right side of formula of universal gravitation, \(\frac{\text{kg}^2}{m^2}\), so that only N remains. This is exactly what G does in the equation of universal gravitation: it provides a unit of measure of force, N, which is crucial if we want absolute measurements of gravitation.
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org3c781ba" class="outline-2">
+<h2 id="org3c781ba"><span class="timestamp-wrapper"><span class="timestamp">[2022-07-12 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-org3c781ba">
+<ul class="org-ul">
+<li>Matt Strassler has been posting <a href="https://profmattstrassler.com/2022/06/21/dimensional-analysis-a-secret-weapon-in-physics/">interesting articles</a> lately. I prepared the following question to post as a comment but it seems that he banned me, so I post it here:</li>
+</ul>
+<blockquote>
+<p>
+I have a couple of more questions about your statements about G.
+</p>
+
+<p>
+“&#x2026;The dimensions of G have to be consistent with Newton’s gravitational force equation&#x2026;”
+</p>
+
+<p>
+Newton’s gravitational equation is F=Mm/r<sup>2</sup> and the dimensions of this equation do not agree [Length<sup>3</sup>/Time<sup>2</sup>=Mass]. G is added to fix the dimensions of this equation. So it is not true that “the dimensions of G have to be consistent with Newton’s gravitational force equation”. The correct sentence ought to be: “The dimensions of G must be defined in such a way to fix the dimensions of Newton’s force equation.” And this is a well known fact. For instance, <a href="http://cavendish-deneyi.com/pdf/cavendish-ducheyne.pdf">Ducheyne writes</a> “The second part of the units of G, \(m^2/kg^2\), cancels out the units of the other physical quantities in the right side of formula of universal gravitation, \(kg^2/m^2\), so that only N remains. This is exactly what G does in the equation of universal gravitation: it provides a unit of measure of force, N, which is crucial if we want absolute measurements of gravitation.”
+</p>
+
+<p>
+So this means that, it is possible to stretch the dimensional analysis to get the results one wants.
+</p>
+</blockquote>
+
+<p>
+###
+</p>
+
+<ul class="org-ul">
+<li>I continue with Strassler's conception of G. Strassler writes:</li>
+</ul>
+
+<blockquote>
+<p>
+The dimensions of G have to be consistent with Newton’s gravitational force equation&#x2026;
+</p>
+</blockquote>
+
+<p>
+and then he writes \(F=GMm/r^2\) as \(G=Fr^2/Mm\), and from this pretend to find the dimensions of G. But this is not true. G is inserted into Newton's force equation without G,
+</p>
+
+\begin{equation*}
+F=\frac{Mm}{r^2}
+\end{equation*}
+
+<p>
+Physicists mistakenly (or on purpose) call the above expression a proportionality and add G as a proportionality constant (not true). Let's write the dimensions of \(F=Mm/r^2\)
+</p>
+
+\begin{equation*}
+\frac{kg \cdot L}{T \cdot T}= \left [\frac{}{} X\frac{}{} \right ] \frac{kg \cdot kg}{L^2}
+\end{equation*}
+
+<p>
+What should be the dimensions of [X] above to make Newton's equation dimensionally correct? This is what physicists ask. They define the dimensions of [X] to fix the dimensions of the Newton's force equation and then replace X with G and solve for G and pretend to find the dimensions of G from dimensional analysis!
+</p>
+
+<p>
+I guess physicists believe that the rest of the world is dumb and will believe any fairy tales physicists tell them. Well, not so.
+</p>
+
+<p>
+There is a clear circular reasoning here. The dimensions of G is not found by dimensional analysis, it is first defined by physicists to fix the sacred equation of force to save Newton's sacred authority.
+</p>
+
+<p>
+You define the units of G and then pretend not to know the units of G and pretend to find it by dimensional analysis. If this is not circular reasoning, what is? 
+</p>
+
+<p>
+###
+</p>
+
+<ul class="org-ul">
+<li><p>
+I continue with Strassler's analysis of the famous force equation \(F=GMm/r^2\)
+</p>
+
+<p>
+\(F=GMm/r^2\) is NOT «the force of gravity between two objects of mass M and m that are separated by a distance r» as Strassler claims.
+</p>
+
+<p>
+To see this write F explicitly. F is a placeholder and its purpose is to hide the little m from view so that physicists could repeat the Newtonian incantation: «\(F=GMm/r^2\) is the force of gravity between two objects of mass M and m that are separated by a distance r.»
+</p>
+
+<p>
+But little m is written on both sides of the equation. Do physicists deny this fundamental mathematical reality that a term written on both sides of an equation does not exist in that equation. A term written on both sides of an equation has no effect on that equation. This is a mathematical truth that even the most faithful and dogmatic Newtonian physicist cannot deny.
+</p>
+
+<p>
+Writing F explicitly
+</p></li>
+</ul>
+
+\begin{equation*}
+\frac{mr}{t^2}=\frac{GMm}{r^2}
+\end{equation*}
+
+<p>
+Since m is on both sides of the above equation, we say that m has no effect on this equation; m in this equation is a decoration, or an ideological term, it exist to save Newton's sacred authority. For rational people who take the authority of mathematics above Newton's authority do not see an m in this equation. But a Newtonian physicist can write «the force of gravity between two objects of mass M and m that are separated by a distance r&#x2026;» So r is the distance between M and m. But m does not exist in this equation. Only the faitful Newtonian can write as if m existed.
+</p>
+
+<p>
+The equation
+</p>
+
+\begin{equation*}
+F \equiv \frac{mr}{t^2}=\frac{GMm}{r^2}
+\end{equation*}
+
+<p>
+does not include a term m.
+</p>
+
+<p>
+A term written on both sides of an equation is as good as nil, it does not exist.
+</p>
+
+<p>
+If you do business by writing the same term on both sides of an equation, then I can write an equation which proves that gravity is proportional to Newton's soul S:
+</p>
+
+\begin{equation*}
+F=\frac{GMmS}{r^2}
+\end{equation*}
+
+<p>
+S = Newton's Soul.
+</p>
+
+<p>
+So, you see, according to Newton's force equation, gravity is proportional to Newton's Soul S. But Newton who is the Prophet of Mechanics, he has two souls: Inertial Soul (hidden in F=Sma) and Gravitational Soul and both souls are equal and
+</p>
+
+\begin{equation*}
+Sma=\frac{GMmS}{r^2}
+\end{equation*}
+
+<p>
+and S on both sides cancel each other, but for you as a good physicist, any Newtonian term is infinitely persistent, even when you cancel the term, that sacred Newtonian term persists even though it has been cancelled. The same goes for Newton's Soul S. You must admit that if m is cancelled but persists and you can use non-existent m and say «M an m separated by distance r» I can say that gravity is proportional to Newton's Soul S. Them you will no doubt object that I'm practicing scholasticism and pretending to see terms that do not exist in the equation. Yes, this is true for S and also m. But you take your authority from the Cult of Newton and you can easily assert that m persists after it has been eliminated but S does not have persistent qualities. A term can only have persistent qualities when a good member of the Cult of Newton attributes Newtonian persistence to it. S is not so endowed. You will no doubt say this because physics is the neo-scholasticism.
+</p>
+
+<p>
+###
+</p>
+
+<ul class="org-ul">
+<li>The Newtonian force of attraction is at the core of the Cavendish experiment. What is the Newtonian force of attraction aka gravity? The most fundamental property of gravity is that it acts outside of time. Newtonian gravity travels distances without time passing. This is how it is defined. Gravity is outside of time and therefore it is outside of nature. Newtonian gravity is a supernatural miracle Newton imposed on humanity as the fundamental interaction of nature. Newton's contemporaries knew that this Newtonian gravity was a supernatural miracle and Newton too admitted that gravity was supernatural. There is no argument here. But Newton as a master scholastic doctor and as one of the greatest propagandist ever lived, said that, yes, this is a weird and occult and supernatural force, it exists by fiat and by God's permission, but, I computed the orbits of planets by using this force, therefore, this occult, supernatural and miraculous thing must exist. Don't ask me how it works, but since I computed the orbits of the planets correctly, this miracle must be a part of nature&#x2026; Newton's authority was so strong that this bullshit propaganda and fairy tale was accepted by the world.</li>
+
+<li>So what does Newton say? He says that the force he defined was supernatural but he used this supernatural force to compute orbits therefore supernatural must be natural!!!!!</li>
+
+<li>What kind of idiotic nonsensical argument is this? If this force is defined as a supernatural thing Newton could not have computed orbits with this force. Newton creates a straw argument and says I don't know how this force works but it works so it must exist.</li>
+
+<li>No. Newton is lying. This is a stupid argument. If this force is supernatural, and it is supernatural, even Newton agrees on this point, we don't need to argue about the mechanism of this supernatural force. Supernatural does not have a mechanism in this world.</li>
+
+<li>The correct reasoning is this: If Newton defined a supernatural force, then he cannot have computed orbits with this force. Newton is lying.</li>
+
+<li>This is very easy to confirm. We open Newton's Principia and look at his computations of orbits. How does Newton compute orbits? Does he use a force term in his computations of orbits? No. Newton uses Kepler's Rule to compute orbits. He cannot use anything else because there is only one formula to compute orbits ant it is the Kepler's Rule, that is, \(R^3 \propto T^2\).</li>
+
+<li>What do Newton's disciples aka phyisicist do to compute orbits? They use Kepler's Rule but they branded it with Newtonian sounding terms, like GM. In other words, physicists branded the constant term in the proportionality we call Kepler's Rule, but they still use the proportionality \(R^3 \propto T^2\). You don't compute with constants, you compute with variables and ratios. You can name the constant term of Kepler's Rule whatever you want, this does not change the fact that you are using Kepler's Rule.</li>
+
+<li>This is Cult of Newton. If you are using a proportionality discovered by Kepler to compute orbits but you are trying to hide this fact and brand Kepler Rule with Newtonian branded terms, then you are a cult, you are no different than the old Cult of Aristotle.</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org2e9f2c2" class="outline-2">
+<h2 id="org2e9f2c2"><span class="timestamp-wrapper"><span class="timestamp">[2022-07-05 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-org2e9f2c2">
+<ul class="org-ul">
+<li>I looked at <a href="https://astronomy.swin.edu.au/cosmos/g/Gravitational+Constant">this page</a> about gravitational constant \(G\) and little \(g\):</li>
+</ul>
+
+<blockquote>
+<p>
+The acceleration \(g=F/m_1\) due to gravity on the Earth can be calculated by substituting the mass and radii of the Earth into the above equation and hence $g=9.81 m s<sup>-2</sup>.
+</p>
+</blockquote>
+
+<ul class="org-ul">
+<li>The relation is this,</li>
+</ul>
+
+\begin{equation*}
+gm=\frac{GMm}{R^2}
+\end{equation*}
+
+<p>
+and
+</p>
+
+\begin{equation*}
+g=\frac{GM}{R^2}
+\end{equation*}
+
+<p>
+and
+</p>
+
+\begin{equation*}
+g \equiv \frac{r}{t^2}
+\end{equation*}
+
+<p>
+\(r\) : The distance apple falls
+</p>
+
+<p>
+\(t\) : Unit time the apple falls
+</p>
+
+\begin{equation*}
+\frac{r}{t^2}=\frac{GMm}{R^2}
+\end{equation*}
+
+\begin{equation*}
+g=\frac{6.67E{-11} \times 5.972E24}{6357 \times 1000} = 9.8 \,m/s^2
+\end{equation*}
+
+<ul class="org-ul">
+<li>There is one thing that bothers me here. \(g\) has units of acceleration \(m/s^2\) but \(g=\frac{GM}{R^2}\) does not have an explicit time term. The unit of time is hidden inside \(G\). What does this mean?</li>
+</ul>
+
+\begin{equation*}
+g=\frac{\left [ \frac{1}{\text{kg}}\frac{m^3}{s^2}\frac{\text{kg}}{1}\right ]}{\frac{m^2}{1}} \equiv \frac{m^3}{s^2}\frac{1}{m^2} \equiv \frac{m}{s^2}
+\end{equation*}  
+
+<p>
+Is this \(t\) related to the period \(T\) in Kepler's Rule?
+</p>
+
+<ul class="org-ul">
+<li>And I was trying to compute this \(g\) for different \(R\). There is a different formula for this.</li>
+
+<li>This \(g\) is valid only for \(R\) = 6357 km</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgbd5bef2" class="outline-2">
+<h2 id="orgbd5bef2"><span class="timestamp-wrapper"><span class="timestamp">[2022-07-04 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-orgbd5bef2">
+<ul class="org-ul">
+<li>I looked at the <a href="https://en.wikipedia.org/wiki/Equivalence_principle">Equivalence Principle</a> a little because this is their justification to equate the two parts of the Kepler's Rule that they divided to begin with. Equivalence Principle appears to be related to mass. As good scholastic doctors, physicists invented several species of mass. There is a species of mass for every eventuality for physics. This is the beauty of scholasticism. Scholastic doctors, like physicists, the modern version of scholastic dokctor, have the authority to make new definitions. They explain everything by making a niw definition. By a definition craze they turned the concept of mass into a super gooey scholastic mambo jambo.</li>
+<li>It may take me a year to decipher this concept of Equivalence Principle because not only Newton but the other scholastic heavy Einstein made a big deal out of it and confused the hell out of the subject.</li>
+<li>Marangoz Hakan Usta'ya uğradım. Kutunun 30 cm eninde bir modelini yapabilir miyiz diye düşündüm. Böylece insanlara gösteririz. Kutu makette çok küçük kalıyor.</li>
+<li>Bir de kolun orta deliğini delebiliriz veya metal parçasını yapmaya çalışabiliriz.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgda2ca63" class="outline-2">
+<h2 id="orgda2ca63"><span class="timestamp-wrapper"><span class="timestamp">[2022-07-03 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-orgda2ca63">
+<ol class="org-ol">
+<li>Is it possible to build <a href="https://physics.stackexchange.com/questions/716629/is-it-possible-to-build-a-theory-of-gravity-without-the-notion-of-time">a theory of gravity without time</a>?</li>
+</ol>
+
+<blockquote>
+<p>
+The equivalence principle of the mass which lead to the usage of time in the theory of gravity was in fact originated from the consideration of Newtonian physics. However, the newton's theory was a theory of interaction, it did not actually imply the necessary usage of the notion of time, rather a theory of the proceeding of the events.
+</p>
+</blockquote>
+
+<ol class="org-ol">
+<li value="2">This is how they bring in the time, by \(f=ma\) and they justify this by the so-called «equivalence principle» that allows them to equate \(f=ma\) and \(f=gmm/rr\)</li>
+
+<li value="3">So the whole thing has been worked out over three centuries and became a waterproof Newtonian incantation. You cannot find a crack in it to let light in. It will remain dark and occult for centuries to come.</li>
+
+<li>The Newtonian gravitational equation \(f=gmm/rr\) does not have a time term. The time term enters through \(f=ma\) when the two equations are equated by using the «Equivalence Principle». Time in \(f=ma\), is really \(f=mg\). So \(t\) in \(g\) is the unit time of free fall. But in the case of orbits, with a sleight of hand, this \(t\) becomes \(T^2\), the period of the orbit, in other words the period \(T^2\) in Kepler’s 3/2 rule. But period \(T\) is not time. Time \(t\) in \(f=ma\) is a variable; but the period \(T\) in Kepler’s Rule is a constant, it cannot be time.</li>
+
+<li>The period \(T\) has nothing to do with the philosophical «Time» with big «T». In this sense we can say that the Newtonian theory of gravity is a theory of gravity without the notion of time.</li>
+
+<li>That the Newtonian gravity is a theory of gravity without time is also proved by the fact that Newtonian gravity acts outside of time. For instance, it takes <i>zero seconds</i> for gravity to travel the 150 million kilometers separating the earth and the sun. Nothing else in nature can travel without time passing. In fact, only religions accept miracles that happen outside of time. Newtonian gravity is a miracle that happens outside of time. Newtonian gravity is a supernatural miracle. It does not belong to our world. Newtonian gravity exists in physics only by Newton's sacred authority. If ever physicists could free themselves from Newton's authority and could think rationally and question their Newtonian faith, then the Newtonian force will be removed from physics and dumped in the same physics garbage dump where notions like «crystalline spheres» were dumped.</li>
+
+<li>So, yes it is possible to have a gravity theory without time, the Newtonian gravity theory is an example.</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-orga40f1da" class="outline-2">
+<h2 id="orga40f1da"><span class="timestamp-wrapper"><span class="timestamp">[2022-07-02 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-orga40f1da">
+<ul class="org-ul">
+<li>The absurdity of Newton's definition of the force of gravity</li>
+<li>No one who defines himself or herself as a rational person can take Newton's definition of force seriously. Why?</li>
+</ul>
+
+
+<ol class="org-ol">
+<li>Newton's force travels distances without time passing. Let's say Newton's gravity starts its travel from the sun at time \(t=0\). When do you think gravity will reach the earth? Yes. You are right. Newton's gravity will reach the earth at \(t=0\). Newton's gravity will be crossing the distance between the sun and the earth, that is, 150 million kilometers, in zero seconds. So Newtonian gravity has the special god-given property of being in two places at the same time. This property violates physics most sacred speed limit which says that nothing can travel faster than light. Bur Newtonian gravity doesn't even travel, it's both at the sun and at the earth. Not only that, Newtonian gravity violates all known laws of physics especially energy conservation laws. If Newtonin gravity, as defined by Newton, really existed, you could easily build a perpetual motion machine. It is not that gravity travels so fast that we cannot measure it, no gravity, by definition, travels with no time passing. When a rational person, someone who is not blinded by Newton's sacred authority, reads this definition of force, will say, "this is nonesense, Newton's force is supernatural, it is a miracle and cannot exist in our world."</li>
+
+<li>But this is not all. Newton's force is also intelligent and active. The concept of active matter, a favorite concept of scholasticism, was banned from physics with physics became a rational science with the work of Galileo. Newton reintroduced this ugly concept to physics. Newtonian gravity which is supposedly proportional to the weight or mass of the object, but which does not reside in the object itself, as Newton clearly said, acts intelligently and knows how much force to apply in a distant object. How can this be. It can only happen as a miracle enforced by god. And this what Newton suggested.</li>
+
+<li>If you still belive that this force can exist in nature, there is more. Newtonian force of gravity transfer motion without contact. In mechanics motion can only be transferred (motion cannot be created only transferred) by contact. But Newtonian force of gravity transfer motion without contact. So, imagine a billiard ball. This ball is stationary on the table. If this ball had enough mass will pull another ball and set it in motion even though itself has no motion. So Newtonian gravity can transfer the motion that it does not have to other bodies without contact. Newtonian gravity is thrice miraculous.</li>
+
+<li>We don't know where this force is located. We don't know how it works, but we believe in it. That is, physicists who belong in the Cult of Newton, aka, Cult of the Vis, belive in this absurd and supernatural force by faith.</li>
+
+<li>Newton, of course, knew that he was defining an absurdity. But to fool his followers into believing in this absurdity he said that "I used this force to compute orbits of planets correctly, therefore, I don't know how this force works, but I know it exists becausi I computed planetary orbits with it. Really? Newton was a master liar. Newton was the last of Aristotelians and the first of Newtonians. This means that in Europe scholasticism did not with Newton and the so-called scientific revolution, scholasticism only changed names. The same Doctors of Philosophy who used to write commentary on Aristotle started to write commentary to their new master, Newton.</li>
+
+<li>When we open Newton's book known by its first name as the Principia, we see that Newton did not use any force term when he computed orbits, he used Kepler's 3/2 rule, which I call Kepler's Rule.</li>
+
+<li>Today, Newton's disciples the physicists still use Kepler's Rule to compute planetary orbits and claim that they used Newtonian force. How can they make this claim while it is obvious that they simply apply Kepler's Rule? Because they branded Kepler's Rule with Newtonian sounding labels, that is "GM". In other words, they defined, Kepler's Rule with a constant term looking like a Newtonian term. But the constant of a proportionality can have any value, that's irrelevant. What is relevant is the proportionality and Newtonians too use the 3/2 proportionality. They are trying to fool us.</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-org173cacb" class="outline-2">
+<h2 id="org173cacb"><span class="timestamp-wrapper"><span class="timestamp">[2022-07-01 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-org173cacb">
+<ul class="org-ul">
+<li>Tatil gibi bir gün oldu. I started to read Strassler's article about dimensional analysis and atom's size but did not go very far. It seems to me that they are telling a fairy tale. They make some initial assumptions, then they sanctify these initial assumptions and even after experiments contradict their initial assumptions they don't discard them but they try to save them.</li>
+<li>But the topic is a bit outside of Cavendish experiment so I let it go for now.</li>
+<li>There is a sentence about orbits: «The sun and the planets are tiny compared to the solar system as a whole, and gravity is an attractive force. Why aren't the planets pulled into the sun? It's because they are moving, in orbit.» Effectively, he is saying that orbits are perpetual motion machines!</li>
+<li>Gravity pulls, planets resist the pull and balance gravity.</li>
+<li>Where does the planet get this infinite energy to counter the continuous and unrelating pull of gravity?</li>
+<li>Gravity pulls inward, plenet pulls outward. By calling the outward pull «outward pulling force» (centrifugal force) they think they explained something.</li>
+<li>They explained nothing. Where does the orbiting planet find this infinite outward energy to counter the inward pull of gravity.</li>
+<li>But gravity is not innocent either. Gravity too, as defined by Newton, is supernatural force guilty of breaking all physics laws.</li>
+<li>Newton's gravity starts from the sun and travels millions of miles to earth without time passing. Newtonian gravity acts without time passing. In this regard it is unique. It is a miracle of nature. It must be believed as a miracle of the Cult of Newton. And this is what physicists do.</li>
+<li>In Newton's world orbits are an insult to our intelligence. According to Newton, orbits are powered by a supernatural miracle acting from a distance, without contact, and without time passing. This «force of gravity» is balanced by another miracle this time in the form of a invisible force that balances gravity. This force is not a property of the planet, it is not proportional to the mass of the planet, it must be «the hand of god» that always appears as deus ex machina to save the absurd doctrines of Newton.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3d69912" class="outline-2">
+<h2 id="org3d69912"><span class="timestamp-wrapper"><span class="timestamp">[2022-06-29 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-org3d69912">
+<ul class="org-ul">
+<li>Dün Emin'le Milli Eğitim Müdürü ile görüşmek için buluştuk. İki defa uğradık ama toplantıda olduğu için görüşemedik.</li>
+<li>Bugün de Dikili Vakfı'na gittik, Tuğrul beyle konuştuk. Çok iyi bir toplantı oldu. Deneyin Dikili'de okulların birinde yapılmasını tavsiye ettiler. Bu konuyu araştıracağız.</li>
+<li>Daha sonra Halk Eğitim Merkezi'ne gittik, Müdür Tahsin Akbulak ile konuştuk. O da okullarda yapılmasının iyi olacağını söyledi.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org789e367" class="outline-2">
+<h2 id="org789e367"><span class="timestamp-wrapper"><span class="timestamp">[2022-06-27 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-org789e367">
+<ul class="org-ul">
+<li>Derya Gürses Tarbuck'ın <a href="newton-action-at-a-distance.html">BirGün'de yayınlanan</a> yazısına bir yorum yazdım. Derya hanım, gravity olayının uzaktan etki etmesinin sorunlu olduğunu söylüyor ve eğer mekanik dünya görüşünü kabul edersek, arada bir medya (eter gibi mesela) olmasını kabul etmemiz gerekir diyor. Ama uzaktan etkileşimi asıl süpernatural ve absürd yapan zaman geçmeden mesafeleri aşıyor olmasıdır. Fizikçilerin uydurduğu hiçbir mazeret bu gerçeği değiştiremez ve Newtoncu çekim gücünü doğanın bir parçası yapamaz.</li>
+<li>Bir de fizikçi Strassler'in Kepler Kuralı ile ilgili <a href="strassler-kepler.html">yazdığı bir yazıya</a> yorum yazdım, henüz bitmedi.</li>
+<li>Bir de Newtoncu fiziğin ideolojik bayrağı \(F=GMm/R^2\) denkleminde \(M\) ve \(m\) adlı iki kütleye çarpma işlemi uygulanmasının fiziksel yorumunu merak ettim, <a href="https://hsm.stackexchange.com/questions/14545/online-resources-for-19th-century-physics-textbooks">onu sordum</a>, Newtoncular tarafından Newtonun kutsal otoritesini sorgulamakla suçlandım.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org50e7032" class="outline-2">
+<h2 id="org50e7032"><span class="timestamp-wrapper"><span class="timestamp">[2022-06-11 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-org50e7032">
+<p>
+Quotes from <a href="https://books.google.com.tr/books?id=ZrloHemOmUEC&amp;pg=PA355&amp;redir_esc=y#v=onepage&amp;q&amp;f=true">C.V. Boys</a>. He claims that G is force. The discussion <a href="https://hsm.stackexchange.com/questions/14487/is-newtons-gravitational-constant-g-a-force?noredirect=1#comment33116_14487">here</a>.
+</p>
+
+<p>
+(p.353)
+</p>
+
+<p>
+«[…] Sir Isaac Newton, by his great discovery of gravitation and its laws, was able to show that a single principle, ideally simple, viz, that every particle in the universe attracts any other particle towards itself with a force which is PROPORTİONAL to the product of their masses divided by the square of the distance betwen them, would completely and absolutely account for three laws of planetary motion which Kepler had given to the world.»
+</p>
+
+<p>
+«Newton showed that to complete his law and to put in the numerical constant (the Newtonian Constant of Gravitation) that would convert his proportionality into an equality, two methods are available…»
+</p>
+
+<p>
+Newton showed no such thing. Newton did not know Newton’s constant of gravitation and he did not have a use for it.
+</p>
+
+<p>
+«The Newtonian Constant will be known if we know the force of attraction between two bodies which we can completely measure and weigh.»
+</p>
+
+<p>
+Can we know this force without knowing G?
+</p>
+
+<p>
+«Employing the C.G.S. system of measurement, the Newtonian Constant is equal to the force of attraction in dynes between two balls weighing a gramme each, with their centres one centimeter apart. […] As soon as all the quantities but G in Newton’s equation
+</p>
+
+<p>
+Force = G x Mass x Mass /Distance<sup>2</sup>
+</p>
+
+<p>
+are known […] G is known.
+</p>
+
+<p>
+It seems to me that you cannot know this force F without knowing G, this is what the equation say.
+</p>
+
+<p>
+«…Nevertheless, the attractions exist…»
+</p>
+
+<p>
+I don’t think so.
+</p>
+
+<p>
+Force cannot be measured. This equation does not even define force
+</p>
+
+<p>
+«All these observers actually determined the attraction between masses which could be weighed and measured, and thus found with different degrees of accuracy the value of G.»
+</p>
+
+<p>
+No one ever determined the attraction between masses because there is no such attraction.
+</p>
+
+<p>
+So if G is not force what is it?
+</p>
+
+<p>
+«G represents that mighty principle under the influence of which every star, planet and satellite in the universe pursues its alloted course; it may possibly also be the mainspring of chemical action.»
+</p>
+
+<p>
+«Unlike any other known physical influence, [G] is independent of medium, it knows no refraction, it cannot cast a shadow.»
+</p>
+
+<p>
+«[G] is a mysterious power, which no man can explain; of its propagation through space, all men are ignorant.»
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga78f19f" class="outline-2">
+<h2 id="orga78f19f"><span class="timestamp-wrapper"><span class="timestamp">[2022-06-11 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-orga78f19f">
+<ul class="org-ul">
+<li>In <a href="http://strangebeautiful.com/other-texts/maxwell-matter-motion.pdf">Matter and Motion</a> Maxwell writes (p.108):</li>
+</ul>
+
+<blockquote>
+<p>
+Kepler's Laws are purely kinematical. They completely describe the motion of the planets, but they say nothing about the forces by which these motions are determined.
+</p>
+</blockquote>
+
+<p>
+From this, I deduce the opposite conclusion. If Kepler's Laws are purely kinematical and they completly describe orbits, then orbits must be kinematical! This is the most simple conclusion to draw.
+</p>
+
+<p>
+In previous times, in the antiquity, astronomers defined "crystalline spheres" to hold stars and planets in orbit. Without the crystalline spheres to hold them, the planets would "fall" just like a stone falls unless it is held somehow against gravity.
+</p>
+
+<p>
+Newton replaced crystalline spheres with his "universal" force. But there is no reason to hold planets in orbit by force.
+</p>
+
+<p>
+Future generations of scientists will see that Newton's force is no different than crystalline spheres and they will laugh at us, at our era, for believing in Newton's fairy tales.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgedb90a9" class="outline-2">
+<h2 id="orgedb90a9"><span class="timestamp-wrapper"><span class="timestamp">[2022-05-26 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-orgedb90a9">
+<ul class="org-ul">
+<li>Arsa arayışı devam ediyor.</li>
+<li>Deneyi tanıtmak için İngilizce blog ve FB sayfası açmak gerekebilir.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-02 Mon 08:55</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

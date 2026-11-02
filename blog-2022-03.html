@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-02 Mon 08:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<p>
+( <a href="blog-arsiv.html">Blog Arşiv</a> )
+</p>
+
+<div id="outline-container-org7961aaa" class="outline-2">
+<h2 id="org7961aaa"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-29 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-org7961aaa">
+<ul class="org-ul">
+<li>Einstein yazısı ile ilgilendim biraz.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga9fdc0c" class="outline-2">
+<h2 id="orga9fdc0c"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-27 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-orga9fdc0c">
+<ul class="org-ul">
+<li>Newtoncu mucize gücü fizikten atmak için yerine yeni bir güç tanımı koymaya gerek yok ki. Ama Newtoncu absürd güç hala fiziğin en temel kavramı olarak fizikte duruyor.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga6dd564" class="outline-2">
+<h2 id="orga6dd564"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-26 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-orga6dd564">
+<ul class="org-ul">
+<li>Einstein'ın Newtoncu çekim gücünü eleştirdiği yazı üzerine çalışmaya devam ettim.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf002098" class="outline-2">
+<h2 id="orgf002098"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-25 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-orgf002098">
+<ul class="org-ul">
+<li>Newton'un çekim gücü bir mucize olarak tanımlanmıştır ve bir mucizedir, bu dünyada yoktur.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge5ea9e1" class="outline-2">
+<h2 id="orge5ea9e1"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-24 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-orge5ea9e1">
+<ul class="org-ul">
+<li>Milli Saraylar kurşun atölyesini aradım, usta ile konuştum, resmi kurum oldukları için özel iş yapamıyorlar. Onun dışında da fazla bir yardımda bulunamadı. Saçtan bir küre yap içine kurşunu dökersin dedi. Ben daha profesyonel bir şekilde yaptırmık istiyorum.</li>
+<li><a href="http://www.basaran-dokum.com/kursun+dokum+salma.html">Başaran Döküm</a> profesyonel bir yer. Yaparız dediler, ölçüleri yolladım, şimdi bir fiyat hesaplayıp geri dönecek.</li>
+<li>Onun dışında Ayvalık'ta Mehmet bey şansa henüz kalıba başlamamıştı, onu iptal ettik.</li>
+<li>Tolga Beyle de konuştum, ama o da yardımcı olamam dedi.</li>
+
+<li>Bu dünya ilişkilerden oluşmuyor mu? Ve bir ilişkiyi bir çizgi olarak belirtmiyor muyuz? İşte <i>M</i> ve <i>m</i> arasında Newtoncu çekim gücü ilişkisi (Şekil 1):</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-R">+---+               +---+
+| M |&lt;-------------&gt;| m | 
++---+               +---+
+</pre>
+</div>
+
+<p>
+Böyle bir ilişki var. Ama Newtoncuların <i>F</i>'ler, <i>G</i>'ler ve bir sürü marka terimlerle yazdıkları meşhur "Evrensel" çekim gücü hesaplarını iki bölüme ayırabiliriz. İlk bölümde Newton'un kutsal otoritesi zedelenmesin diye yukardaki ilişki yazılır ve <i>M</i>'nin <i>m</i>'yi Newtoncu "evrensel" güç ile çektiği söylenir. Böylece Newtona dualar edilir ve ikinci bölüme geçiler. Yani <i>m</i> elenir (Şekil 2):
+</p>
+
+
+<div class="org-src-container">
+<pre class="src src-R">+---+               
+| M |&lt;-------------&gt; 
++---+               
+</pre>
+</div>
+
+<p>
+Ben Newton tarikatına bağlı olmadığım için burada <i>M</i>'nin hiçbir şeyi çekmediğini söylerim. Yani, demek ki, <i>M</i> ile <i>m</i> arasında bir çekim yokmuş! Ne evrensel bir çekimmiş ki, daha formülleri yazarken çekilen kütle elendi ve <i>M</i> havayı çeker oldu. "Evrensel hava çeken Newtoncu çekim gücü" diye bir güç mü var acaba. Olabilir. Okulculukta mazeretler bitmez.
+</p>
+
+<p>
+Bu ilişkide <i>M</i> ve <i>m</i> denen iki maddenin birbirini çektiğini gören ey Newtoncu sahtekarlar, <i>m</i>'yi elediniz, artık denklemlerde bulunmuyor. Yok.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4dc817f" class="outline-2">
+<h2 id="org4dc817f"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-23 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-org4dc817f">
+<ul class="org-ul">
+<li>Büyük kalıpları aldım. Çok iyi bir iş çıkartan Onur'a teşekkür ediyorum (Instagram: @seramikalcikalip)</li>
+<li>Kurşun Metal makinayı çalıştıramadığı için küçük topları dökmemişti.</li>
+<li>Kalıpçı Feridun'u da aradım çünkü hava delikleri açılması gerekiyormuş. Bir de güllenin içinden geçecek 16 mm bakır çubuklar için bir düzenek yapılmısı gerekiyor.</li>
+<li>Milli sarayların <a href="https://youtu.be/9zjAT82pJm0">kurşun atölyesi</a> ile iletişime geçmeye çalışacağım. Onlar makinayla değil, pürmüz veya alev tabancası kullanıyorlar.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbb69352" class="outline-2">
+<h2 id="orgbb69352"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-22 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-orgbb69352">
+<ul class="org-ul">
+<li>Büyük kalıplar hazırmış yarın gidip alacağım.</li>
+<li>Einstein'in Newton gücünü eleştirdiği yazı üzerine da çalıştım biraz. Einstein eleştirdiyse biz de eleştirebiliriz mi demek istiyorum? Hayır. Newton'un çağdaşlarından başlamak üzere, 19. yüzyıla kadar, bilimsel düşünen herkes Newton'un otorotesini kullanarak fizik bilimine bir mucizeyi doğal bir olaymış gibi soktuğunu biliyorlardı. Ama Newton bir tarikat kurucuydu ve otoritesi de çok güçlüydü ve Newtoncu propoganda kazandı. Zaten Einstein da bunu söylüyor. Fizikçiler Newton'un otoritesinden korktukları için Newton'u sorgulayamadılar diyor. Bu konularda Einstein haklı. Ama Einstein da işi çözememiş.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5782e4e" class="outline-2">
+<h2 id="org5782e4e"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-21 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-org5782e4e">
+<ul class="org-ul">
+<li>Asırladır süren bir Newtoncu propaganda var. "Newton's Law of Universal Gravitation" dedikleri Newton'un marka terimleri ile markalanmış Kepler Kuralıdır. Bu marka terimler hesaplar yapılmadan elenir. Yörüngeler hesaplanırken geriye Newton'un "teorisinden" hiçbir şey kalmaz. Hesaplar Kepler Kuralı ile yapılır. Gerçek budur.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7992c26" class="outline-2">
+<h2 id="org7992c26"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-20 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-org7992c26">
+<ul class="org-ul">
+<li>Bir gelişme olmadı bugün. Tatil yapmış oldum herhalde.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2425295" class="outline-2">
+<h2 id="org2425295"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-19 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-org2425295">
+<ul class="org-ul">
+<li>Einstein'ın Newton gücünü eleştirisi hakkında bir yazı hazırlıyorum.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4bcb150" class="outline-2">
+<h2 id="org4bcb150"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-18 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-org4bcb150">
+<ul class="org-ul">
+<li>Büyük kalıpların yapımı üzerine çalıştım. (30 cm çap.)</li>
+<li>Einstein'ın Newton gücü hakkında eleştirelerini okudum ve yorum yazdım.</li>
+<li><i>Newton kültü efsanesi tarikatı.</i> Bir de bu kitap çıktı karşıma, Paul Strathern, <i>Newton ve yerçekimi</i>. s.41 «Kepler kanunları neler olduğunu anlatıyordu sadece, Newton ise &#x2013;nedenini&#x2013; açıklıyordu.»</li>
+<li>Evet, böyle çok yaygın bir efsane var. Newton Kepler Kuralının altında yatan nedeni bulmuş yani Kepler Kuralının altında yatan çekim gücüymüş Newton’da onu bulmuş.</li>
+<li>Bunu nerden uydurmuşlar? Newton böyle bir şey yapmamış. Newton yörünge hesaplarını Kepler Kuralı ile yapmış. Newton güç falan bulmamış Kepler Kuralında bulunu \(1/R^2\) terimine «güç» etiketi yapıştırmış. Bu mu buluşu? Bu buluş falan değil çünkü böyle bir oran Kepler Kuralında yok. \(R^3\) var, \(R^2\) ile değişen bir şey yok.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org908b3f8" class="outline-2">
+<h2 id="org908b3f8"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-17 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-org908b3f8">
+<ul class="org-ul">
+<li>Bir resmi fizik efsanesine göre Cavendish "Newton'un evrensel çekim gücü sabiti" <i>G</i>'yi ilk defa ölçen kişidir. Ders kitaplarında tekrarlanır bu yalan. Paul Strathern adlı birisi tarafından yazılmış <i>Newton ve yerçekimi</i> (1997) adlı kitabın 45. sayfasında aynı yalan tekrarlanmış: "&#x2026;egsantrik İngiliz fizikçisi Cavendish'in yerçekimi sabiti, G'nin değerini belirlemeyi başarmasından bir yüz yıl önceydi." Tabii, bu yazar, bir gazeteci, fizik ders kitaplarında yazanları kopyalıyor.</li>
+<li>Fizik ders kitaplarından ve daha akademik makalelerden bu konuda örnekleri <a href="https://www.academia.edu/2524605/The_Cavendish_experiment_as_a_tool_for_historical_understanding_of_science">Steffen Ducheyne</a>'de buluyoruz: "Cavendish never conceived of his experiment as an attempt to measure the gravitational constant [&#x2026;] despite numerous accounts in Physics textbooks to the contrary." (s.1) Ducheyne bir de örnek veriyor: "A characteristic example states: ‘‘The universal gravitational constant G was ﬁrst measured in an important experiment by Sir Henry Cavendish in 1798.’’ (Serway and Jewett2006, vol. I, p. 338).</li>
+<li>Fizikçilerin hep tekrarladıkları diğer bir yalan da o meşhur çekim gücü tanımını Newton'un yazdığıdır, yani Newton, \(F=GMm/r^2\) ilişkisini yazmış. Newton böyle bir şey yazmamıştır çünkü Newton denklemlerle çalışmıyordu, sadece orantılarla çalışıyordu. Fizik denklemlerinin bir ürünü olan G'den de haberi yoktu.</li>
+<li>Bunlar neden önemli? Bu tip tarihsel yalanlar, yani Newton'un kutsal otoritesini korumak için Newton'un müretleri fizikçilerin uydurdukları yalanlar, fiziğin bir okulcu tarikat olduğunu göstermesi açısından önemlidir.</li>
+<li>Fizik tarihinde sadece Einstein, o da kariyeri olmayan, bağımsız bir fizikçi olduğu için, Newton'un absürd ve doğaüstü çekim gücü tanımının fizikte olmaması gerektiğini söylemiş ve Newton'u sorgulamaya cesaret etmiştir. İzafiyet teorisi, Einstein'in Newtoncu çekim gücünü fizikten atma çabasıdır. Görülüyor ki Einstein bile bu konuda başarılı olamamıştır.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8aa68d3" class="outline-2">
+<h2 id="org8aa68d3"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-16 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-org8aa68d3">
+<ul class="org-ul">
+<li>Bergama'da kalıp yaptırmak için Arasta'da dün bir yer bulmuştum, bugün örnek kalıp getirdim ama kapalıydı.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbd58082" class="outline-2">
+<h2 id="orgbd58082"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-15 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-orgbd58082">
+<ul class="org-ul">
+<li><a href="cavendish-deneyi-neden.html">Cavendish deneyini neden yapıyorum?</a> Biraz uzun bir yazı oldu, hâlâ düzeltmeler yapıyorum. Kısa cevap: Cavendish deneyi çok güzel bir deney olduğu için tekrarlamak istiyorum.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1cebc86" class="outline-2">
+<h2 id="org1cebc86"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-14 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-org1cebc86">
+
+<div id="org2bdad65" class="figure">
+<p><img src="file:///Users/a/org/img/küçük-kalıplar-05.JPG" alt="küçük-kalıplar-05.JPG" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>Küçük topların kalıpları Kurşun Metal'de.</li>
+<li>Burç Metal'e de uğradım İzmir'de, bakır çubuklar için. Kilosu 200 TL imiş. 16 mm'lik bir çubuk 158 kiloluk gülleyi taşıyabilir gibi geldi. Ama bu işler için henüz erken. Önce kurşun ağırlıklar dökülecek, bina inşa edilecek, ancak ondan sonra, ağırlıklar bakır çubuklarla asılacak. Yalnız benim gördüğüm işlenecek bakır değilmiş, işlemek gerekiyorsa tavlanmış bakır almalısın dedi. Bu işler için 1. Sanayi'ye git dedi.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7be74e0" class="outline-2">
+<h2 id="org7be74e0"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-13 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-org7be74e0">
+<ul class="org-ul">
+<li>Cavendish deneyi neden yapılmalıdır? Bu soru üzerine çalıştım.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb385b05" class="outline-2">
+<h2 id="orgb385b05"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-12 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-orgb385b05">
+
+<div id="org6b7aa45" class="figure">
+<p><img src="file:///Users/a/org/img/parts/güçlendiren-tel-02.png" alt="güçlendiren-tel-02.png" />  
+</p>
+</div>
+
+<ul class="org-ul">
+<li>Kolu güçlendirmek için Cavendish şekilde <i>hgh</i> olarak gösterilen bir tel kullanıyor. Bu teli, sarkaç kolunun asılı olduğu tele <i>g</i> olarak işaretlenmiş bir metal parça ile sabitlemiş. Gerçi bu parçanın metal olduğunu söylemiyor, ama metal olmalı.</li>
+<li>Kolun bu geometrisine bakınca ben dikey tel <i>lgm</i>'nin kolu <i>g</i> noktasından çevireceğini düşünüyordum, <i>m</i> noktasından değil.</li>
+<li>Gerçekten de bugün Cavendish'in makalesini tekrar okurken kolu <i>ghmh</i> olarak ifade ettiğini okudum, yani Cavendish, kolu sadece ahşap çıta değil ama <i>hgh</i> teli ve ahşap çıtanın meydana getirdiği üçgen olarak görüyor.</li>
+<li>Bu zaten orijinal cümleden anlaşılıyor: "ABCDDCBAEFFE is the case; <i>x</i> and <i>x</i> are the two balls, which are suspended by the wires <i>hx</i> from the arm <i>ghmh</i>, which is itself suspended by the slender wire <i>gl</i>."</li>
+<li>Yani açıkca Cavendish <i>ghmh</i>'in sarkacın kolu olduğunu söylüyor. Kolun asılı olduğu teli de <i>gl</i> olarak ifade ediyor. Eğer sadece, ahşap çubuğu kol olarak görseydi, kolun asılı olduğu telin <i>lm</i> olduğunu söylerdi.</li>
+<li>Bu durumun açıklığa kavuşması iyi oldu!</li>
+<li>Yeni bir sorun daha olabilir: Sayfa 474'te, Cavendish bu sarkacın kesitini gösteren şekillerin parçalarının birbirlerine orantılı olarak çizildiğini ve ölçeğin 1'e 13 olduğunu söylüyor. Fakat ben şimdiye kadar ölçümleri 1'e 11 olarak hesaplıyordum. Bu işleri biraz karıştırabilir. Ölçülere yeniden bakmam gerekecek.</li>
+<li>Tekrar baktım 11.11 katsayısı doğru, ben yuvarlatıp 11 olarak kullanmışım. Çünkü kolun uçtan uca uzunluğunu biliyoruz: 76.6 inch (sayfa 509'da Cavendish, "But the ivory scale at the end of the arm is 38,3 inches from the centre of motion" diyor, yani 38.3 \(\times\) 2 = 76.6 inches = 1945.64 mm. Benim A3 kağıda basılı şekilde, kolun uçtan uca uzunluğu 175 mm, yani 1945 \(\div\) 175 = 11.11.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd8aec8a" class="outline-2">
+<h2 id="orgd8aec8a"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-11 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-orgd8aec8a">
+<ul class="org-ul">
+<li>Bugün <a href="https://youtu.be/nskjXLCXg4w">sarkaç kolunu</a> Ormandaki Marangoz, Serkan bey'den aldım. Çok güzel olmuş. Gerçi bu deneme olarak yapıldı, uzunluğunu yanlış ölçmüşüm, doğru ölçülerle bir tane daha yapılacak.</li>
+<li>Kasa için de konuştuk, onun üzerine de çalışacak.</li>
+<li>Bundan sonraki adım, deneyin yapılacağı yeri bulmak ve binayı inşa etmeye başlamak.</li>
+<li>Toplar için Pazartesi veya Salı Kurşun Metal'e gideceğim. Büyük gülleler için de çalışmalar devam ediyor.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org80b57ea" class="outline-2">
+<h2 id="org80b57ea"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-10 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-org80b57ea">
+<ul class="org-ul">
+<li><a href="bina-olculeri.html">Binanın ölçüleri</a>, <a href="kasa-olculer.html">kasanın ölçüleri</a>.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga866bd0" class="outline-2">
+<h2 id="orga866bd0"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-09 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-orga866bd0">
+<ul class="org-ul">
+<li>Ağırlıkların ağırlığını, emin olmak için, tekrar <a href="agırlıklar.html">hesapladım</a>.</li>
+<li>Kolun ölçüleri yanlış olmuş! 73.3 inch, topların merkezleri arasındaki mesafe. Kolun uçtan uca uzunluğu 76.6 inch olacak.</li>
+<li>Merkezden topların merkezine: 36.65 inch \(\Rightarrow\) 93.09 cm</li>
+<li>Uçtan uca: 76.6 inch \(\Rightarrow\) 1945.64 cm</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf2a8b69" class="outline-2">
+<h2 id="orgf2a8b69"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-08 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-orgf2a8b69">
+<ul class="org-ul">
+<li>Belgesel konusunda araştırma yaptım.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org57d7542" class="outline-2">
+<h2 id="org57d7542"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-07 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-org57d7542">
+<ul class="org-ul">
+<li>Kurşun Metal'e bağlama tellerini götürdüm. Bu hafta içinde yapabilir. Makineyi açınca en az bir tonluk döküm yapması gerekiyormuş, sadece bir top için makineyi açamam dedi, doğal olarak. Kalıplar kırılacak mı açmak için diye sordum, hayır, kırılmıyormuş, o zaman, iki tane dökelim dedim. Haftaya, yine uğrarım.</li>
+<li><a href="cavendish-newton-02.html">Cavendish deneyi ve Newtonculuk tarikatı</a>.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org58e3b29" class="outline-2">
+<h2 id="org58e3b29"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-06 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-org58e3b29">
+<ul class="org-ul">
+<li><a href="belgesel-02.html">Belgesel yapımına</a> önem veriyorum. İyi bir belgesel yönetmeni bulmak istiyorum.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1259f0a" class="outline-2">
+<h2 id="org1259f0a"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-05 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-org1259f0a">
+<ol class="org-ol">
+<li>Cavendish deneyi sadece bir deney değil; bir çok konulara açılan kapıları var.</li>
+<li>Cavendish bu deneyi dünyanın yoğunluğunu hesaplamak için yapıyor.</li>
+<li>Fakat, "dünyanın yoğunluğu" diye bir şeyin matematik olarak bir anlamı yoktur çünkü böyle bir nicelik olamaz. Yani Cavendish dünyanın yoğunluğunu değil, ancak dünyanın <i>ortalama</i> yoğunluğunu hesaplayabilir.</li>
+<li>Dünya bir su küresi gibi, veya, bir kurşun gülle gibi tekdüze (üniform) yoğunluğu olan bir bütünlük değildir. Dünya, bildiğimiz bütün yoğunluk değerlerinin olduğu bir bütünlüktür, tek bir sayı ile ifade edilecek bir yoğunluk değeri yoktur.</li>
+<li>Ayrıca, Cavendish sadece "katı dünya" denen dünya küresinin çok küçük bir bölümünün ortalama yoğunluğunu hesaplamış oluyor. Bu insan merkezci bir tavırdır.</li>
+<li>Cavendish dünyayı, insanların yaşadığı yoğunluk düzleminde başlayan bir küre olarak tanımlıyor, yani bu kürenin yüzeyini insanların yaşadığı yüzey ile kısıtlıyor. Halbuki dünyanın atmosferi var, atmosferden sonra radyasyon kuşakları var&#x2026; bu bölgeleri hesaba katmadan dünyanın yoğunluğunu hesaplamanın bir anlamı olamaz.</li>
+<li>Ayrıca, Cavendish'in kullandığı yoğunluk tanımı sadece tekdüze yoğunluklar için geçerlidir:</li>
+</ol>
+
+\begin{equation*}
+\text{Yoğunluk}= \frac{\text{Ağırlık}}{\text{Birim Hacim}}
+\end{equation*}
+
+<ol class="org-ol">
+<li value="8">Bu formül ancak tekdüze yoğunluğu olan bir bütünlük için geçerlidir, yoksa,</li>
+</ol>
+
+\begin{equation*}
+\text{Ortalama Yoğunluk}= \frac{\text{Ağırlık}}{\text{Birim Hacim}}
+\end{equation*}
+
+<p>
+dememiz gerekir.
+</p>
+
+<ol class="org-ol">
+<li value="9">Yani, dünyanın yoğunluğu, Cavendish'in bulduğu gibi, suyun yoğunluğunun 5.5 katı ise, dünyanın yoğunluğu demirin yoğunluğuna (7.8) yakın olacaktır. Ama etrafımıza baktığımızda dünyayı demir yoğunluğuna yakın bir yoğunlukta görmüyoruz, her yer su dolu! Bu sebepten, Newtoncu bilim insanları dünyanın merkezinde demir yoğunluğu olduğunu ileri sürmüşlerdir. Olabilir. Ama zaten, dünyanın yoğunluğunun, Kepler Kuralına göre, merkeze yaklaştıkça artması gerekir. Ama bunun hesabını tam olarak yapamadım henüz.</li>
+
+<li>Yoğunluk konusundan sonra bir de Newtoncu çekim gücü konusu var. Cavendish dünyanın yoğunluğunu Newtoncu çekim gücünü ölçerek hesaplıyor. Yani Cavendish'e göre, sarkacın kolu doğal dönemi ile salınırken, Newtoncu çekim gücü araya giriyor ve kolu doğal pozisyonundan oynatıyor. Cavendish Newtoncu çekim gücünün sebep olduğu bu hareketi ölçerek dünyanın yoğunluğunu hesaplıyor. Sarkaç kolunu uzaktan ve temas etmeden oynatan mucizevi bir güç bu.</li>
+
+<li>Cavendish, 158 kiloluk kurşun gülleleri sarkaca asılı topların yakınına getirince sarkaç kolu bu gülleler tarafından çekiliyor ve hareketi değişiyor. Sarkaç kolunun iki uç noktasından hesaplanan orta noktası çekim gücünü uygulayan güllelere doğru kayıyor. Bu çok küçük bir açı, yarım dereceden daha az. Ve Newtoncu çekim gücü doktrini Cavendish'in sadece 17 deneyde ölçtüğünü söylediği bu miniskül açı üzerine kurulmuş. (Gerçekten sarkaç kolunun böyle bir hareketi var mı? Bunu anlamak için deneyi tekrarlamak istiyoruz.)</li>
+
+<li>Cavendish deneyinin temelinde Newtoncu çekim gücü olduğuna göre, Cavendish deneyini anlamak için, Newtoncu çekim gücünü anlamamız gerekiyor. Newtoncu çekim gücü olmasa sarkaç kolunu oynatmasa, Cavendish bu deneyle dünyanın yoğunluğunu hesaplayamazdı.</li>
+
+<li>Cavendish bu deneyi Newtoncu çekim gücünü test etmek için yapmıyor; Cavendish çekim gücünü varsayıyor. Bu gücün varolduğundan şüphesi yok, sadece çok zayıf bir güç olduğu için ölçülmesinin zor olduğunu söylüyor. Biz de Cavendish deneyini aslına uygun olarak tekrarlayarak, Cavendish'in sarkacının Newtoncu çekim gücü tarafından oynatılıp oynatılmadığını göreceğiz.</li>
+
+<li>Bence Cavendish Newtoncu çekim gücü diye bir şeyi ölçemez çünkü bu güç doğaüstü bir etken olarak tanımlanmıştır. Bu güç doğaüstü olduğu için Newton'un yörünge hesapları doğru çıkmaktadır! Böyle saçma bir durum var ortada. Newton'un tanımladığı bu çekim gücünün doğaüstü olduğu gizli değildir. Newton kendisi bu tanımladığı gücün doğaüstü nitelikleri olduğunu kabul etmiştir. Newton'un çağdaşları, Newton'u kadim mekanik bilimine hiç de mekanik olmayan, yani uzaktan temas olmadan etki edebilen ve mesafeleri zaman geçmeden katedibilen okült bir şeyi sokmakla suçlamışlardır. Ama çok güçlü bir otoritesi olan Newton bu eleştirileri çocukca bir cevap ile yok saymıştır. Newton, mealen şöyle demiştir: "Ben bu gücü kullanarak gezegenlerin yörüngelerini hesapladım öyleyse bu güç vardır. Zaman geçmeden ve temas olmadan, uzaktan cisimleri hareket ettirebilen bu güç doğaüstü ve okült olabilir ama ben yörüngeleri bu gücü kullanarak doğru olarak hesapladığıma göre bu güç var olmalıdır. Bu güç vardır ama çok zayıf olduğu için biz ölçemiyoruz ve nasıl çalıştığını da bilmiyoruz."</li>
+
+<li>Tarikat kurucu Newton'un otoritesi o kadar güçlüydü ki, kimse de çıkıp, "Sir İsaac, iyi dedin de, bu tanımladığın güç doğaüstü ise bu dünyada ancak bir mucize olarak var olabilir, o zaman da bu güç bir dine ait bir mucize olurdu, fizik veya mekanik bilimlerine ait olmazdı" diyememiş. Kimse Newton'a "sen yalan söylüyorsun, bu güç dediğin şey absürd, okült ve doğaüstü olduğuna göre sen yörüngeleri bu güçle hesaplamadın" diyememiş. Newton gibi, "olmayan bir şeyin nasıl çalıştığını bilmiyoruz" diyerek o şeyin var olduğunu ispatlayamayız. Newton'un yaptığı şarlatanlıktır.</li>
+
+<li>Newton'un kitabı internette var, herkes açıp okuyabilir. Newton'un matematiği de hiç zor değildir, bugün ilkokulda öğrendiğimiz aritmetik seviyesindedir, çünkü Newton karmaşık fizik denklemleri ve derin matematik yöntemleri kullanmaz, sadece oran ve orantılar kullanır. Orantılar da matematiğin en temel ve en basit yapı taşlarıdır. doğa orantılarla çalışır, fizik denklemleri ile değil. (Bazı fizik denklemleri orantıdır, ama çoğu değildir, fizik büyük ölçüde "etiket mekaniğidir."</li>
+
+<li>Newton'un kitabını açıp bakınca görüyoruz ki, Newton kendi uydurduğu çekim gücünü değil Kepler Kuralını kullanıyor. Newton Kepler Kuralının terimlerine kendi Newton markalı etiketlerini yapıştırmış; önce bu etiketler ile bize bir çekim masalı anlatıyor sonra yazdığı bütün Newtoncu marka terimleri eleyip Kepler Kuralı ile yani sadece yörüngenin yarıçapını ve dönemini kullanarak yörüngeleri hesaplıyor. Bu kadar basit bir hırsızlığı ve şarlatanlığı Newton bütün dünyaya kendi buluşu diye satmayı başarmış. Newton'dan sonra gelen Newton tarikatının müritleri de Newton'un yalanlarını devam ettirmişler ve bu yalanları "Newtoncu Mekanik" adı altında kurumsallaştırmışlar.</li>
+
+<li>Avrupa'da okulcu doktorların bilgi üzerinde olan tekeli hiçbir zaman bitmemiştir. Hepimiz Aristocu okulcu doktarların sahtekarlıklarını biliyoruz. Newtoncuların yazdığı bilim tarihinde, Tanrı Newton'u yaratır ve bilim ışığını saçması için insanların arasına bir Mekanik Peygamberi olarak yollar. Böylece, Newton'un bilimsel ışığı sahtekar okulcu Aristocu doktorları yeryüzünden siler ve gerçek Newtoncu bilim adamları dünyaya egemen olur. Ne güzel bir masal! Kazananların yazdığı sahte tarih böyle olur işte. Her tarafı yalan. Newton Avrupa okulculuğunda bir bilimsel devrim değil, okulculuk kurumu içinde bir darbe yapmıştır. Aristo tarikatını yıkıp Newton tarikatını kurmuştur. Aristocu okulcu doktorlar Newtoncu okulcu doktorlar olmuşlardır. Aristonun müritleri Newtonun müritleri olmuşlardır.</li>
+
+<li>Yani Avrupa'da Ortaçağ karanlıkları hâlâ devam etmektedir çünkü Newton tarikatına mensup profesyonel okulcu doktorlar Newton'un çekim doktrinini insanlığa dayatarak gerçeği gizlemektedir.</li>
+
+<li>Newton'un çekim gücünün bu dünyada olmayan saçma bir şey olduğunu anlayan tek fizikçi Einstein'dı. Çünkü Einstein Newtoncu çekim gücünü fizikten atıp yerine, içinde çekim gücü olmayan bir gravitasyon teorisi yaratmaya çalıştı. Ama başarılı olamadı. Newtoncu güç hala fizikte var. Tam aksi oldu, Newtoncu tarikatçılar, Einstein'in içinde çekim olmayan Genel Görecelik kuralı denklemlerinin tam ortasına "Newton'un Evrensel <i>Çekim</i> Sabiti" bayrağını sapladılar ve Einstein'ı da Newtoncu tarikatına katmayı başardılar. Hala bu Newtoncu tarikatın karanlık gücünden şüphe ediyor musunuz?</li>
+</ol>
+
+
+<ol class="org-ol">
+<li>Bağlama teli aldım, küçük topları asmak için tam uygun olabilir. Pazartesi götürürüm, kurşunu dökerken teli de içine koysunlar.</li>
+
+<li>Diğer kalıp da gelmiş ama evde olmadığım için PTT bırakmadı, pazartesi gidip alırım. Yollukları da Dikili'de sanayide açtırırız. Keşke kalıpların fotoğrafını çekmiş olsaydım yolluklar açıldıktan sonra.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org2ae9f3d" class="outline-2">
+<h2 id="org2ae9f3d"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-04 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-org2ae9f3d">
+<ul class="org-ul">
+<li>İzmir'du Kurşun Metal'e Ayvalık'tan aldığım alçı kalıpları götürdüm. Kurşunu dökmek için bir "yolluk" açılması lazım dediler. Kalıpçı Feridun ustya gittim, o yollukları açtı. Kalıbı Kurşun Metale'e geri götürdüm. Çarşamba arayacağım.</li>
+<li>Topları asmak için bağlama teli sipariş verdim. Eğer Çarşamba'dan önce gelirse teli de beraber dökerler. Topların asılı olduğu telin uzunluğu 115 mm, biraz da fazla bıraksa, 17 cm olabilir. Böyle tel topa sabitlenmiş olur ve direk kola asarız. Cavendish de öyle yapmış galiba.</li>
+<li>Parçalar ile ilgili detaylar için <a href="parcalar-detay.html">sayfa açtım</a>.</li>
+<li>Şimdilik Cavendish'in teknolojisi ile yapmıyoruz. Sarkaç kolu mesela bilgisayar yardımı ile kesilebilir. Ama önemli mi? Önemli olan, sarkaç kolunun 7 dakika dönem ile salınması, çünkü Cavendish'in sarkacının dönemi 7 dakika idi. Kurşun ağırlığının ağırlığı önemli ama sarkaca asılı olan topun ağırlığı önemli değil çünkü topu temsil eden \(m\) harfi hesapların yapıldığı denklemlerden eleniyor. Yani sarkaç koluna 100 kiloluk bir top assam veya hiç bir şey asmasam aynı sonucu alamalıyız çünkü \(m\) denklemleren eleniyor. Zaten bu da test edeceğiz. Sarkaç teli boşken sarkaç nasıl salınıyor?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5a0bd88" class="outline-2">
+<h2 id="org5a0bd88"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-03 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-org5a0bd88">
+<ul class="org-ul">
+<li>Ayvalık'ta küçük toplar için yapılan kalıplar geldi.</li>
+</ul>
+
+<div id="org504bff9" class="figure">
+<p><img src="file:///Users/a/org/img/kalıplar-küçük.jpeg" width="35%" height="35%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 1: </span>Küçük toplar için kalıplar</p>
+</div>
+
+<ul class="org-ul">
+<li>Mühendislerle konuşmak üzere <a href="muhendise-sorular.html">birkaç soru hazırladım</a>.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga1baa1a" class="outline-2">
+<h2 id="orga1baa1a"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-02 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-orga1baa1a">
+<ul class="org-ul">
+<li>Toplar için kalıplar ve sarkacın kolunun yapımı ile ilgilendim.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org87e81e8" class="outline-2">
+<h2 id="org87e81e8"><span class="timestamp-wrapper"><span class="timestamp">[2022-03-01 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-org87e81e8">
+<ul class="org-ul">
+<li>İzmir hardacılar çarşısında <i>Kurşun Metal</i> ile topların dökülmesi ile ilgili konuştum. Kalıp olmasını söylediler. Demir döküm kalıp çok pahalı olurmuş ama alçı kalıp ile de yapılabilirmiş. Şimdi alçı kalıbı yapacak bir yer arıyorum.</li>
+<li>Belgesel konusunda düşündüm.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org801a358" class="outline-2">
+<h2 id="org801a358"><span class="timestamp-wrapper"><span class="timestamp">[2022-02-28 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-org801a358">
+<ul class="org-ul">
+<li>Yapılacaklar listesi yaptım
+<ol class="org-ol">
+<li>Sarkaç kolunun inşası</li>
+<li>Kurşun topları dökecek atölye bulunması</li>
+<li>Binanın ölçülerinin çıkartılması</li>
+<li>Cavendish'in verilerinden \(G\)'nin hesaplanması</li>
+<li>Maket yaptırmak iyi olur mu?</li>
+<li>Uydulardan yoğunluk hesapları</li>
+</ol></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-02 Mon 08:57</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

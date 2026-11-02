@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-02 Mon 08:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<p>
+( <a href="blog-arsiv.html">Blog Arşiv</a> )
+</p>
+
+<div id="outline-container-orgaf7d26f" class="outline-2">
+<h2 id="orgaf7d26f"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-31 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-orgaf7d26f">
+<ol class="org-ol">
+<li><a href="cavendish-analiz-11.html">Cavendish</a> analizi ile devam. Cavendish gerçekten çok güzel bir deney yapmış ve çok da güzel bir makale yazmış. Hakkını vermek gerekir.</li>
+<li>Önce sarkaç kolunu oynatmak için gerekli olan gücü hesaplıyor sonra ağırlıkların topu çekim gücü ile dünyanın topu çekim gücünü oranlıyor. Sonra da kolu bir ölçek derecesi döndüren güç ile ağırlığın topu çektiği gücü oranlıyor ama bu oran sonucu dünyanın topu çekmesi eleniyor. Bunden ne anlam çikartabiliriz?</li>
+<li>Dünyanın yoğunluğunu hesapladığımız en son oranda D=$N<sup>2</sup>$/10683 B, dünyanın topu çekimi yok o zaman, çünkü elendi.</li>
+<li>Dünyanın topu çekimi dedikleri zaten topun ağırlığı. Bu konuya daha detaylı bakmak lazım, yani \(mg\). Cavendish \(mg\) olarak yazmıyor ama fikir aynı.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orge292539" class="outline-2">
+<h2 id="orge292539"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-30 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-orge292539">
+<ol class="org-ol">
+<li><a href="cavendish-analiz-10.html">Cavendish</a> analizi ile devam.</li>
+<li>Aynı zamanda makaleyi tercüme etmem lazım ama vakit ayıramıyorum.</li>
+<li>Yan konular var
+<ol class="org-ol">
+<li>Ağırlık ve kütle konusu. Cavendish kütle kavramını kullanmıyor, sadece ağırlık kelimesini kullanıyor ve bu hiç de sorun olmuyor. Kütle Newtoncu bir kavram, Newtonculuk ve Newton tarikatı ile ilgili.</li>
+<li>Moment of inertia konusu var. Kolun asılı olduğu sarkaç, 2 metre uzunluğundu bir kolu çevirebiliyor, markezden. Fakat, kolun ucundan, çekerek kolu çevirmek için, telin gücünden çok daha az bir güç uygulamak yeterli olacaktır. Bunu anlamak gerekiyor.</li>
+<li>Cavendish de modern analizler de "güç" kelimesini çok kullanıyorlar. Gülle topu çekiyor ve bu çekimin sonucunda kol dönüyor; dünya topu çekiyor, ve topun ağırlığı oluşuyor bu çekimden, fakat en son oranda bu sözü edilen güçlerle ilgili hiçbir terim yok. Sadece dönemi temsil eden \(N\) harfi var ve iki sayı var. Bu güç terimleri nereye gitti? Elendiler mi?</li>
+<li>Dünyanın yoğunluğunun Kepler Kuralından hesaplanması var, çünkü Cavendish'in hesapladığı dünyanın yoğunluğu değil, dünyanın bir yarıçapında yoğunluğu.</li>
+<li>Alçak dünya uydularının yörüngesini kullanarak yoğunluk hesaplanması.</li>
+<li>\(F_N\) ve \(F_R\)'nin birbirini dengeleyemeyeceği, çünkü bu iki güç aynı cinsten değil, aynı şeye oranlı değiller, biri açıya düz oranlı diğeri mesafeye ters oranlı.</li>
+<li>\(F_N\), \(F_R\)'yi bir kere yakaladı mı bir daha bırakmaz çünkü mesafenin karesi olarak artıyor. Dengede duramaz bu iki güç.</li>
+<li>Yani salınım olmazdı eğer \(F_N\) diye bir güç sarkaç kolunu çekiyor olsaydı, çekerdi ve birakmazdı.</li>
+</ol></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org616c994" class="outline-2">
+<h2 id="org616c994"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-29 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-org616c994">
+<ol class="org-ol">
+<li><a href="cavendish-analiz-09.html">Cavendish</a> bir kere daha, son bölümleri okudum.</li>
+<li>Cavendish dünyanın yoğunluğu \(D\)'yi, kolun "doğal pozisyonundan" \(B\) derece dönmesinden hesaplıyor, bu orana göre,</li>
+</ol>
+
+\begin{equation*}
+D=\frac{N^2}{10,683\,B}
+\end{equation*}
+
+<ol class="org-ol">
+<li value="3">Dünyanın yoğunluğunun, sarkacın döneminin karesine orantılı olduğunu anlıyoruz. Neden?</li>
+</ol>
+
+\begin{equation*}
+D=\frac{N^2}{B}\;\frac{1}{10,683}
+\end{equation*}
+
+<p>
+olarak da yazabiliriz.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org15ae427" class="outline-2">
+<h2 id="org15ae427"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-28 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-org15ae427">
+<ol class="org-ol">
+<li>(yoğunluk = ağırlık / hacım) formülünü kullanarak uzay istasyonunda cisimlerin yoğunluğunu hesaplamaya kalksak bütün yoğunluklar sıfır çıkmaz mıydı? Çünkü uzayda cisimlerin ağırlığı, çünkü serbest düşüşte olan cisimlerin ağırlığı yok.</li>
+<li>Demek yoğunluk hareketle veya yörünge ile ilgili bir şeymiş, frekansla ilgili&#x2026; Burada zaten, birim hacımlı bir cismin ağırlığına yoğunluk diyoruz.</li>
+<li>Michael Beeson's "<a href="http://www.michaelbeeson.com/interests/GreatMoments/Cavendish.pdf">Cavendish weighs the earth</a>" makalesini okudum.</li>
+<li>En son Cavendish</li>
+</ol>
+
+\begin{equation*}
+\frac{F_N}{W_b} = \frac{1}{818\,N^2}
+\end{equation*}     
+
+<p>
+diye bir ilişki bulmuştu. Bundan sonra ağırlığın topun üzerindeki çekimi ile, dünyanın topu çekimini oranlayacak.
+</p>
+
+<ol class="org-ol">
+<li value="5">İyi da, \(F_N\) zaten ağırlığın topu çekimi değil mi? Değil aslında, kolu bir ölçek derecesi döndürmek için gerekli olan gücü buldu, şimdi, ağırlığın topu hangi güçle çektiğini bulacak.</li>
+<li>İlk önce, Cavendish'in ağırlığın topu çektiği gücü bulduğunu zannediyordum ama öyle değil, Cavendish topun merkezine yerleştirilmiş bir "parçacığı" nasıl çektiğini hesaplıyor.</li>
+<li>Yani, günümüzde fizikçilerin, "test parçacığı" veya "nokta parçacık" dedikleri Newtoncu çekim doktrinini doğrulamaktan başka bir işi olmayan bir "parçacık" tipini Cavendish de kullanıyor. Ağırlığı ve uzay uzantısı olan topu, uzantısı olmayan, ağırlığı da olmayan, matemetiksel bir noktaya fiziksel özellikler yüklüyorlar.</li>
+<li>Neyse, önemli olan, Cavendish, ağırlığın topu nasıl çektiğini değil, ağırlığın topun merkezindeki bir noktayı (parçacık diyor) nasıl çektiğini belirleyecek. Zaten, "güç" dedikleri şey sadece mesafe ile değiştiği için bu noktanın mesafeyi belirlemesi yeterli oluyor.</li>
+<li>Öyleyse, bu nokta parçacıklardan birini alıp topun merkezine koyuyoruz ve ağırlığın bu parçacığı nasıl çektiğini hesaplıyoruz. Sonra, aynı nokta parçacığı 1 foot çapı olan bir su küresinin yüzeyine getirip yerleştiriyoruz. Ağırlığın bu su birimi ile ölçüldüğü zaman ağırlığı 10.64 olduğuna göre, şu oranı hesaplayabiliriz,</li>
+</ol>
+
+\begin{equation*}
+\frac{F_{\text{Gülle}}}{F_{\text{Su}}} = 10.64 \times \frac{1}{(8.85)^2}\;\frac{(6)^2}{1}
+\end{equation*}
+
+<ol class="org-ol">
+<li value="10">Cavendish, (ağırlığın topu çekimi)/(dünyanın topu çekimi) oranını kuruyor:</li>
+</ol>
+
+\begin{equation*}
+\frac{\text{ağırlığın topu çekimi}}{\text{dünyanın topu çekimi}} = \frac{10.64 \times 0.9779 \times \frac{(6)^2}{(8.85)^2}}{41,800,000\,D} = \frac{1}{8,739,000\,D}
+\end{equation*}     
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org8ca9921" class="outline-2">
+<h2 id="org8ca9921"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-27 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-org8ca9921">
+<ol class="org-ol">
+<li><a href="cavendish-analiz-08.html">Cavendish</a> çalışmaya devam. Bu analizlerde, kullanılan en temel formül (yoğunluk = kütle \(\times\) hacım) ilişkisi. Yani dünyanın yoğunluğu bu ilişkiden hesaplanıyor.</li>
+<li>Bunun anlamı nedir? Bir kere, bu formül, dünyanın yoğunluğunun her noktada aynı olduğunu varsayıyor. Ama bu doğru değil.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgefff805" class="outline-2">
+<h2 id="orgefff805"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-26 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-orgefff805">
+<ol class="org-ol">
+<li>Cavendish çalışmaya devam ettim. Bundan sonra daha detaylı olarak anlamaya çalışacağım.</li>
+<li>Cavendish'in telin geri döndürücü gücü \(F_R\)'yi, Newtonu güç \(F_N\)'ye eşitlemesi ve bunu hiçbir açıklama yapmadan gizli bir varsayım olarak yapması bence çok sorunlu.</li>
+<li>\(F_R = F_N\) konusuna daha detaylı olarak Cavendish'in ölçümlerini tek tek incelerken daha detaylı olarak inceleriz.</li>
+<li><p>
+Ama şöyle bir durum var, eğer \(F_R=F_N\) olsaydı \(F_N\) telin sertliğine bağlı olurdu, yani, \(F_R0, F_R1, F_R2, F_R3\) çeşitli sertlikleri olan teller ise, her tel için Newtoncu gücün değeri de değişik olacaktır:
+</p>
+
+<p>
+\(F_R0 = F_N0\)
+</p>
+
+<p>
+\(F_R1 = F_N1\)
+</p>
+
+<p>
+\(F_R2 = F_N2\)
+</p>
+
+<p>
+\(F_R3 = F_N3\)
+</p></li>
+
+<li value="5"><p>
+Halbuki, tel değiştirilince Newtoncu gücün değişmemesi gerekir,
+</p>
+
+<p>
+\(F_R0 = F_N\)
+</p>
+
+<p>
+\(F_R1 = F_N\)
+</p>
+
+<p>
+\(F_R2 = F_N\)
+</p>
+
+<p>
+\(F_R3 = F_N\)
+</p></li>
+
+<li value="6">Demek ki, deneyini yapmadan önce, Cavendish, çesitli sertlikte teller deneyerek Newtoncu gücün hangi telin gücüne eşit olduğunu bulması gerekirdi. Ama Newtoncu tarikatın üyeleri Peygamberleri Newton'un en temel emri olan çekim gücünü sorgulayamazlar.</li>
+
+<li>Cavendish Newtoncu gücü varsayıyor, ölçmüyor.</li>
+
+<li>Matematiği böyle yazsak nasıl olur?</li>
+</ol>
+
+<pre class="example" id="org2c205a0">
+l :: tt..........sarkaç kolunun uzunluğu
+                 dönemin karesine orantılıdır
+          1
+F(R) :: ----.....sarkacın geri döndürücü gücü		   
+         TT      dönemin karesi ile ters
+		 orantılıdır
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org9a1617f" class="outline-2">
+<h2 id="org9a1617f"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-25 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-org9a1617f">
+<ul class="org-ul">
+<li><a href="pdf/henry-cavendish-the-man-and-the-measurement.pdf">Falconer</a> analizine baktım ama Cavendish'den bile daha karmaşık anlatmış. Bir de modern analiz vermiş orada da ilginç olan \(G\) ve \(g\)'nin ilişkisini veren formül,</li>
+</ul>
+
+\begin{equation*}
+G = \frac{g\,r^2}{M_e}
+\end{equation*}
+
+<p>
+veya
+</p>
+
+\begin{equation*}
+\frac{G}{g} = \frac{r^2}{M_e}
+\end{equation*}
+
+<p>
+Newtoncu birim bükücü \(G\) ile "yerçekiminin verdiği ivme" \(g\)'nin ne ilgisi var?
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgf8d8658" class="outline-2">
+<h2 id="orgf8d8658"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-24 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-orgf8d8658">
+<ol class="org-ol">
+<li><a href="cavendish-analiz-07.html">Cavendish</a> okumaya devam ettim.</li>
+<li>Bir yatay sarkacın dönemini ölçerek dünyanın yoğunluğu nasıl hesaplanabilir diye merak ediyorum. Yoğunluk,</li>
+</ol>
+
+\begin{equation*}
+\text{YOĞUNLUK}=\frac{\text{KÜTLE}}{\text{HACİM}}
+\end{equation*}     
+
+<p>
+ilişkisinden giriyor. Bunu, kütle için çözüp,
+</p>
+
+\begin{equation*}
+\text{KÜTLE}=\text{YOĞUNLUK}\times \text{HACIM}
+\end{equation*}
+
+<p>
+Newton'un \(F=Gmm'/r^2\) formülünde kütlelerden biri için kullanıyorlar.
+</p>
+
+<ol class="org-ol">
+<li value="3">Yani dünyanın kütlesinin, aynı bir su küresi gibi tekdüze ve her noktada aynı olduğunu varsayıyorlar. Tabii bu gerçek değil.</li>
+
+<li>Ayrıca, bu formül, birim hacim için ağırlığın (kütlenin değil) ağırlığını vermiş oluyor. Asıl yoğunluk Kepler Kuralı ile hesaplanır çünkü Kepler Kuralı yoğunluğun tanımıdır.</li>
+
+<li>Yoğunluğu bu formül ile hesaplıyorlarsa sarkaç düzeneğine gerek var? Dünyanın hacmı biliniyor ama ağırlığı bilinmiyor. Sorun bu.</li>
+
+<li>Peki bu formülün Kepler Kuralı ile ilişkisi nedir?</li>
+
+<li>Bir kere dünyanın tanımını doğru olarak yapmıyorlar. İnsanların yaşadığı yoğunluk katmanını "dünya" diye tanımlıyorlar. Dünyanın yarıçapı \(r\) insanların yaşadığı yoğunluk katmanının yarıçapı. "Dünya" sanki \(r\)'de bitiyormuş gibi tanımlıyorlar, halbuki herkes dünyanın atmosferi ve atmosferden sonra gelen yoğunluk katmanları ile bir bütün olduğunu biliyor. Neden o zaman dünyayı insanların yaşadığı \(r\)'de kesiyorlar? Bu insan merkezci bir düşüncedir, aynı insanı evrenin ortasına layık görüp dünyayı evrenin ortasına yerleştiren dünya görüşüdür.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org8b0abe6" class="outline-2">
+<h2 id="org8b0abe6"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-23 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-org8b0abe6">
+<ul class="org-ul">
+<li><a href="cavendish-analiz-06.html">Cavendish analizini</a> okumaya devam ettim. Şimdi son bir şey kaldı o da, bu formülü Cavendish deneyde yaptığı ölçümlerde nasıl kullanıyor, ona bakacağız.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org22ed933" class="outline-2">
+<h2 id="org22ed933"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-22 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-org22ed933">
+<ol class="org-ol">
+<li>Cavendish telin geri döndürücü gücü \(F_R\) ile ağırlıkla top arasında olduğu varsayılan Newtoncu çekim gücü \(F_N\)'yi eşitliyor. Bu bence problemli.</li>
+<li>Kolu \(A\) açısı kadar topa uygulanması gereken güçten bahsediyor ama aslında bu güç telin geri döndürüü gücü \(F_R\), \(F_N\) değil.</li>
+<li>Zaten \(F_R\) ile \(F_N\)'yi eşitleyemezsiniz çünkü \(F_R\) kolun oynadığı açı ile düz orantılı, oysa, \(F_N\) mesafenin karesi ile ters orantılı olarak değişiyor.</li>
+<li>Telin bükülme sabitine eşitleyebilirsiniz, bu da, büyük bir tesadüf olur, çünkü Cavendish'in rastgele seçtiği bir telin bükülme sabiti büyük bir şans eseri Newtoncu çekim gücüne eşit olacak. Olayların doğal akışına aykırı bir olay.</li>
+<li>Cavendish sarkaç koluna asılı top ile ağırlığın merkezleri arasındaki mesafenin 8.85 inch olduğunu söylüyor. Acaba bu hangi pozisyonda olan mesafe.  Çünkü top hareket edip ağırlığa yaklaşıyor. 8.85'i nerede ve nasıl kullandıına bakarız. Deneyde yapılan ölçümlerle bu önceden yapılan teorik analiz birbirini tutmuyor.</li>
+<li>Bu iki gücün eşitliğini de şöyle anlatıyorlar: Top telin bükülme gücü ile dönerken, topa iyice yaklaşıyor, ve geri dönmek üzere duruyor. Bu anda, Newtoncu çekim gücü, telin gücünü alt ediyor ve topu biraz daha kendine doğru çekiyor bu da kolun dönemini değiştiriyor. İşte bu anda telin kolu geri döndürme gücü ile Newtoncu çekim gücünün aynı olduğu varsayılıyor.</li>
+<li>Bunun da sorunlu olduğunu düşünüyorum çünkü torque diye bir olay var. Tel bütün kolu merkezden uyguladığı bir güç ile çevirebiliyor, çok güçlü, fakat, kolun ucuna asılı topu çeken güç, kolu çok daha az bir güç ile çekebilecektir. Yani, en basit olarak, kapıyı menteşelere yakın bir yerden itmek için gereken güç, kapı koluna yakın bir yerden itmek için gereken güçten çok daha fazla olacaktır.</li>
+<li>Cavendish, kolu oynatmak için, telin sertliğinden biraz fazla bir güç yeterli olacaktır diyor. Topun ağırlığı önemli değil. Fakat, kolu oynatmak için gereken güç telin sertliğinden çok çok daha az olacaktır.</li>
+<li>Belli bir tel sertliği için kolu ucundan oynatmak için gereken gücü hesaplayabiliriz ama bunu yapamıyorum şu anda. Aslında gereksiz tabii. Çünkü topla ağırlık arasında Newtoncu çekim gücü diye bir şey yok.</li>
+<li>Newton doğada yeni bir güç bulmamıştır, Kepler Kuralını bulmuştur.</li>
+<li>Fizikçiler bu Newtoncu gücün birimi olarak \(G\)'nin ilk defa Cavendish tarafından ölçüldüğünü söylerler, yani yalan söylüyorlar. \(G\)'nin ölçülmesi demek, Newtoncu gücün ölçüldüğü anlamına gelir. Cavendish'in kullandığı orantılarda \(G\) harfi ile ifade edilen bir birime gerek yok çünkü orantılarla çalışırsanız birim kullanmazsınız. Fizikçilere göre, Newtoncu güç ilk defa bir deneyde Cavendish tarafından ölçülmüştür diyorlar. Fakat, bu da tam doğru değil, çünkü fizikçiler, astronomi ölçeğinde, Newtoncu gücün ölçüldüğünü söylüyorlar, ama aslında astronomide yapılan, Newton'un da yaptığı, Kepler Kuralını doğrulamaktan başka bir şey değil.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orga84b654" class="outline-2">
+<h2 id="orga84b654"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-21 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-orga84b654">
+<ol class="org-ol">
+<li><a href="babinet-analiz-01.html">Babinet</a>'nin analizine baktım yine. Cavendish'in analizinden çok değişik bir analiz yapıyor.</li>
+<li>Cavendish'in yapmadığı hesapları yapıyor, dünyanın kütlesini kilogram ile hesaplıyor mesela. Cavendish böyle bir hesap yapmıyor.</li>
+<li>Babinet'nin en son formülü</li>
+</ol>
+
+\begin{equation*}
+\frac{3}{4000}\; \frac{K}{\pi}\;\frac{T^2}{t^2}\frac{l}{e}\; \frac{1}{d^2}\;\frac{1}{R} 
+\end{equation*}
+
+<ol class="org-ol">
+<li value="4">Bu oranın 5,5 sayısını verdiğini söylüyor.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgb6fd4d7" class="outline-2">
+<h2 id="orgb6fd4d7"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-20 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-orgb6fd4d7">
+
+<div id="org38a2319" class="figure">
+<p><img src="img/Cavendish-eskiz.JPG" alt="Cavendish'in su küresi" width="50%" height="50%" title="Cavendish'in su küresi" align="center" />
+</p>
+<p><span class="figure-number">Şekil 1: </span>Cavendish'in su küresi</p>
+</div>
+
+<ol class="org-ol">
+<li>Cavendish şimdi, ağırlıkların top üzerindeki çekim gücü ile dünyanın top üzerindeki çekim gücünü oranlıyor:</li>
+</ol>
+
+\begin{equation*}
+\frac{\text{Ağırlığın top üzerindeki çekim gücü}}{\text{Dünyanın top üzerindeki çekim gücü}}
+\end{equation*}
+
+<ol class="org-ol">
+<li value="2">Cavendish önce çok küçük ve gereksiz bir düzeltme yapıyor, onun detaylarına girmiyorum.</li>
+<li>Ağırlıkların her biri 2,439,000 grains ağırlığındaymış. Öyleyse, bu ağırlıklar, çapı 1 foot olan suyun ağırlığının 10.64 katıymış.</li>
+<li>Yani, Cavendish çapı 1 foot olan bir su küresini yoğunluk birimi olarak alıyor.</li>
+</ol>
+
+\begin{equation*}
+\frac{\text{Ağırlık}}{\text{Su küresi}} = 10.64
+\end{equation*}
+
+<ol class="org-ol">
+<li value="5">Cavendish önce, ağırlığın topun merkezinde bir birim madde parçasını çekimini hesaplıyor sonra o madde parçasını alıp su küresinin yüzeyine koyuyor. Tabii bu masalda, çekici cisimler hep sanki bütün güçleri merkezlerinde toplanmış gibi çekiyorlar, Newton'un ispatladığı! gibi.</li>
+<li>Su küresinin çapı 1 foot = 12 inch ve yarısı yani yarıçapı = 6 inch.</li>
+<li>Cavendish çekimlerin ağırlığa oranlı olduğunu varsayıyor ve</li>
+</ol>
+
+\begin{equation*}
+10.64 \times \left ( \frac{6}{8.85}\right )^2
+\end{equation*}
+
+<p>
+oranının 1'e oranlı olduğunu söylüyor. Yani, su küresi birim olduğu için herhalde.
+</p>
+
+\begin{equation*}
+\frac{\text {Ağırlığın çekimi}}{\text{Suyun çekimi}} = \frac{10.64}{1}\; \frac{1}{(8.85)^2} \; \frac{(6)^2}{1}
+\end{equation*}
+
+<ol class="org-ol">
+<li value="8"><p>
+Şimdi dünyaya geçiyoruz:
+</p>
+
+<p>
+Dünyanın yarıçapı = 41,800,000 feet
+</p></li>
+</ol>
+
+\begin{equation*}
+\frac{\text {Dünyanın yoğunluğu}}{\text{Suyun yoğunluğu}} = \frac{\text{D}}{1}
+\end{equation*}
+
+<ol class="org-ol">
+<li value="9">Burada 90. sayfadaki dip nottaki açıklamalara geçiyorum, çünkü Cavendish detay vermiyor. Önce bu orana tek tek bakalım:</li>
+</ol>
+
+\begin{equation*}
+\frac{\text{Ağırlığın topu çekimi}}{\text{Dünyanın topu çekimi}}
+\end{equation*}
+
+\begin{equation*}
+\text{Ağırlığın topu çekimi} = \frac{G \times 10.64 \times d \times m}{8.85}
+\end{equation*}
+
+\begin{equation*}
+\text{Dünyanın topu çekimi} = \frac{G \times (41,800,000)^3 \times d' \times m}{6 \times (41,800,000)^2}
+\end{equation*}
+
+<p>
+Biraz cebirden sonra,
+</p>
+
+\begin{equation*}
+\frac{\text{Ağırlığın topu çekimi}}{\text{Dünyanın topu çekimi}} = \frac{1}{8,739,000\text{D}}
+\end{equation*}
+
+<ol class="org-ol">
+<li value="10">Burada, \(d\) = suyun yoğunluğu, \(d'\) = dünyanın yoğunluğu, \(m\) = topun ağırlığı.</li>
+<li>Bundan sonra, yine biraz cebir ve daha önce bulunmuş ilişki ile, Cavendish,</li>
+</ol>
+
+\begin{equation*}
+\frac{\text{Ağırlığın topu çekimi}}{\text{Kolu bir ölçek derecesi döndürmek için gerekli güç}} = \frac{\text{N}^2}{10,683\text{D}}
+\end{equation*}
+
+<p>
+formülünü buluyor. Sarkacın dönemi \(N\)'yi ölçüyor ve dünyanın yoğunluğu \(D\)'yi suyun yoğunluğunu birim alarak ifade ediyor. Dünyanın yoğunluğu bu basit ifadeden hesaplanıyor yani. Bu ifadede, ne bir güç terimi var, ne ağırlığı temsil eden bir sembol var, ne de topu temsil eden bir sembol var, hepsi elendi, demek ki hepsi birer kukla sembolmuş ve hesaplara girmiyorlarmış. Cavendish bize bir Newtoncu çekim masalı anlatıyormuş.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org00ad5f3" class="outline-2">
+<h2 id="org00ad5f3"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-19 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-org00ad5f3">
+<ol class="org-ol">
+<li>Cavendish'in "Arch of A" dediği, "A açısının yayı" diye tercüme ediliyor ama aslında Cavendish A açısının radyan olarak değerini kullanıyor.</li>
+<li>O zaman, aşağıdaki ilişki yanlış yazılmış oluyor,</li>
+</ol>
+
+\begin{equation*}\frac{F_R}{W_b}= \frac{\text{A'nın yayı}}{\text{36.65}}\,\frac{36.65}{39.14}\,\frac{1}{N^2}\end{equation*}
+
+<p>
+bu aslında
+</p>
+
+\begin{equation*}\frac{F_R}{W_b}= \frac{\text{A'nın yayı}}{\text{yarı çap}}\,\frac{36.65}{39.14}\,\frac{1}{N^2}\end{equation*}
+
+<p>
+olmalıydı. Yani [36.65] değil de, [yarıçap] olması lazım.
+</p>
+
+<ol class="org-ol">
+<li value="3">(A'nın yayı / yarıçap) terimini, \(A\) açısının radyan değeri 1/766 (yani yay/yarıçap) ile değiştiriyoruz.</li>
+<li>Cavendish'in de yaptığı bu zaten, öyle anlıyorum.</li>
+<li>Bundan sonra Cavendish'in dünyanın yoğunluğunu hesapladığı bölüme bakacağız.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgfc881b2" class="outline-2">
+<h2 id="orgfc881b2"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-18 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-orgfc881b2">
+<ol class="org-ol">
+<li>Cavendish kolu \(A\) açısı ile oynatacak geri döndürücü bulduktan sonra, kolu 1 ölçek derecesi oynatacak gücü hesaplıyor. Bir ölçek derecesi 1/20 inch ve hareket merkezinden 38.3 inch uzuklıkta. Kollar 36.65 inch uzaklıkta asılı olduğu için, demek bu fildişi ölçek topların 1.65 inch önünde bulunuyor.</li>
+<li>Cavendish herhangi bir \(A\) açısı için geri döndürücü gücü</li>
+</ol>
+
+\begin{equation*}\frac{F_R}{W_b}= \frac{\text{A'nın arkı}}{\text{36.65}}\,\frac{36.65}{39.14}\,\frac{1}{N^2}\end{equation*}
+
+<p>
+olarak yazmıştı.
+</p>
+
+<ol class="org-ol">
+<li value="3">Burada "\(A\)'nın arkı"nı "1/766" ile değiştireceğiz çünkü</li>
+</ol>
+
+\begin{equation*} \text{$A$'nın arkı} = \frac{1}{20}\frac{1}{38.3}= \frac{1}{766}\end{equation*}
+
+<ol class="org-ol">
+<li value="4">Fakat bu değişimi yapınca Cavendish'in ifadesini</li>
+</ol>
+
+\begin{equation*}\frac{F_R}{W_b}= \frac{1}{766}\; \frac{1}{N^2} \; \frac{36.65}{39.14}\end{equation*}
+
+<p>
+bulamıyoruz.
+</p>
+
+<ol class="org-ol">
+<li value="5">Fazladan bir [1/36.65] faktörü kalıyor.</li>
+</ol>
+
+\begin{equation*}\frac{F_R}{W_b}= \frac{1}{766}\; \left [ \frac{1}{36.65}\right ] \;\frac{1}{N^2} \; \frac{36.65}{39.14}\end{equation*}
+
+<p>
+Bunu çözemedim henüz.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge0e682e" class="outline-2">
+<h2 id="orge0e682e"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-17 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-orge0e682e">
+<ul class="org-ul">
+<li><a href="cavendish-analiz-05.html">Cavendish analizinin</a> sarkaçlarla ilgili bölümünü bitirdim. Önce saniye sarkacını deney sarkacı ile ilişkilendiriyor sonra da herhangi bir tel sertliği için sarkacın dönemi ne olur onu buluyor. Aslında, sadece orantılar kullanılarak çok güzel bir analiz yapıyor.</li>
+<li>Şimdi sıra, su küresi ile ilgili analizine geldi.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd20dd94" class="outline-2">
+<h2 id="orgd20dd94"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-16 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-orgd20dd94">
+<ul class="org-ul">
+<li><a href="chang-analiz-01.html">Victoria Chang</a>'ın analizini okudum.</li>
+<li>Standart Newtoncu fizik analizi, telin eylemsizlik momentini falan hesaplıyor</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4f64837" class="outline-2">
+<h2 id="org4f64837"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-15 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-org4f64837">
+<ol class="org-ol">
+<li>Cavendish kendi söylüyor: Sarkacın dönemini belirlemede sarkaca asılı topların hiçbir etkisi yok, çünkü sarkacın simetrisinden dolayı toplar ağırlıksız gibi davranıyorlar.</li>
+<li>Topların ağırlıksız olmalarının sonucu olarak, sarkaç kolunu hareket ettirmek için uygulanması gereken güç, topların ağırlığından bağımsızdır. Sarkaç kolunu hareket ettirmek için sadece teli bükmek için gereken güç kadar bir güçten fazlasını uygulamak gerekmiyor.</li>
+<li>Bu sebepten, bu sarkaçla, sarkaca asılı toplar ile, topları Newtoncu güç ile çektiği varsayılan büyük güllelerin arasındaki çekim gücü ölçülemez.</li>
+<li>Telin bükülme gücü \(F_w\) olsun; Newtoncu güç de \(F_N\) olsun.</li>
+<li>\(F_w\) zaten verilmiş, değişmiyor. O zaman, \(F_N\) için iki seçenek var: Ya telin bükülme gücünden azdır ve etkisi olmaz veya telin gücünden fazladır veya eşittir, o zaman, zaten, \(F_N\) mesafenin karesi ile değiştiği için, mesafe ile direk olarak artan \(F_w\)'ı bırakmaz.</li>
+<li>Yani, bu deneyde, \(F_N\)'un değeri sadece \(F_w = F_N\) olabilir. Zaten Cavendish de bu iki gücün eşit olduğunu varsayıyor. Cavendish telin bükülme gücünü Newtoncu çekim gücüne eşitliyor. Zaten bu iki gücü de sadece sarkacın döneminden buluyor. Yani güçler kendini dönem olarak belli ediyor.</li>
+<li>Ayrıca Cavendish'in dünyanın yoğunluğunu nasıl hesapladığını anlattığı hikaye ile deneyde yaptığı ölçümler arasında bir kopukluk var. Bu konuya daha sonra, deneyleri incelerken bakmakta fayda var.</li>
+<li>Cavendish kolu döndürmek için toplara uygulanacak en az gücü bu şekilde yazıyor:</li>
+</ol>
+
+\begin{align*}
+   \frac{F_e}{W_b} = \frac{\text{yay}}{l}  
+\end{align*}
+
+<ol class="org-ol">
+<li value="9">Yani, toplara uygulanacak güç ile topun ağırlığını oranlıyor. Ama yatay sarkaçta böyle bir oranın geçerli olmadığını biliyoruz.</li>
+
+<li value="10">Ducheyne'de şöyle bir açıklama var. Eğer,</li>
+</ol>
+
+<p>
+\(F_e\) = toplara uygulanan güç
+\(F_r\) = telin bükülme gücü, telin geri döndürücü gücü,
+</p>
+
+<p>
+ise,
+</p>
+
+\begin{align}
+   \frac{F_e}{F_r} = \frac{T_r^2}{T_e^2}  
+\end{align}
+
+<ol class="org-ol">
+<li value="11">Sarkacın geri döndürücü gücü dönemin ters karesine orantılı olduğu için bu ilişkiyi yazabiliyoruz.</li>
+<li>Fakat daha önce \(F_r=W_b \times \text{A'nın yayı}\; /\; l\) olduğunu yazmıştık, buradan \(F_r\)'nin değerini alıp bir önceki ilişkideki \(F_r\) ile değiştiriyoruz:</li>
+</ol>
+
+\begin{align}
+   F_r = W_b \times \frac{\text{A'nın yayı}}{l}  
+\end{align}
+
+<p>
+(2)'yi, (1)'deki \(F_r\) ile değiştiriyoruz. (Bu \(F\)'ler etiket olmasa bu değişimler yapılamaz, bunu da not edelim).
+</p>
+
+<ol class="org-ol">
+<li value="13">Ama yatay sarkaçta "geri döndürücü güç", topun ağırlığından bağımsız olduğu için, (2) dikey sarkaçlarda için geçerli olabilir ama yatay sarkaç için geçerli değildir.</li>
+<li>Neyse şimdilik öyle olduğunu varsayalım.</li>
+</ol>
+
+\begin{align*}
+    \frac{F_e}{\frac{W_b} \; \frac{\text{A'nın yayı}}{l}} &= \frac{T_r^2}{T_e^2}\\
+    \\
+    \frac{F_e}{1}\; \frac{l}{W_b}\; \frac{\text{A'nın yayı}}{l} &= \frac{T_r^2}{T_e^2}\\
+    \\
+    \frac{F_e}{W_b} &=\frac{\text{A'nın yayı}}{l}\; \frac{T_r^2}{T_e^2}
+\end{align*}
+
+<p>
+Fakat,
+</p>
+
+\begin{align*}
+  T_r^2 = \frac{36.65}{39.14}
+\end{align*}
+
+<p>
+ve
+</p>
+
+\begin{align*}
+    \frac{F_e}{W_b} = \frac{\text{arch A}}{l}\;\frac{36.65}{39.14}\;\frac{1}{T_e^2}
+\end{align*}
+
+<p>
+Ve son olarak, Cavendish'in makalesinde, \(T_e^2\), \(N\) harfi ile ifade edildiği için,
+</p>
+
+\begin{align*}
+    \frac{F_e}{W_b} = \frac{\text{arch A}}{l}\;\frac{36.65}{39.14}\;\frac{1}{N^2}
+\end{align*}
+
+<ul class="org-ul">
+<li>Cavendish'in analizinde bir çok sorunlar var.</li>
+<li>Yukardaki analizi Ducheyne'nin makalesinden uyarladım, o da Cavendish'in analizini detaylı olarak açıklamaya çalışıyor. Fakat düşeyne \(l\) terimini, yani, sarkaç kolunun yarıçapını, düşürmüş. Halbuki Cavendish'in makalesinde var.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8defad9" class="outline-2">
+<h2 id="org8defad9"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-14 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-org8defad9">
+<p>
+Cavendish sarkaçlarla ilgili 2 ilişki kullanıyor:
+</p>
+
+<ol class="org-ol">
+<li>Sarkaç kolu dönemin karesine orantılıdır:</li>
+</ol>
+
+\begin{equation}\text{sarkaç kolu} \propto (\text{dönem})^2\end{equation}
+
+<ol class="org-ol">
+<li value="2">Geri döndürücü güç dönemin karesine ters orantılıdır:</li>
+</ol>
+
+\begin{equation}
+    \text{geri döndürücü güç} \propto \frac{1}{(\text{dönem})^2}
+\end{equation}
+
+<ol class="org-ol">
+<li value="3">Cavendish bir de sadece dikey sarkaçlar için geçerli olan bu ilişkiyi yazıyor, yani geri döndürücü gücün sarkaca asılı topa oranı \(\sin\) A olarak değişir:</li>
+</ol>
+
+\begin{align}
+   \frac{F}{W} = \frac{\text{yay}}{l}  
+\end{align}
+
+\begin{equation}
+    F = W \sin A
+\end{equation}
+
+<ol class="org-ol">
+<li value="4">Yeryüzünde geri döndürücü güç \(g\) olduğu için de,</li>
+</ol>
+\begin{equation}
+    F = mg \sin A
+\end{equation}
+</div>
+</div>
+
+<div id="outline-container-orgb8b1a4d" class="outline-2">
+<h2 id="orgb8b1a4d"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-13 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-orgb8b1a4d">
+<ol class="org-ol">
+<li>Cavendish'in makalesine geri döndüm, tam olarak ne yaptığını anlamaya çalışıyorum.</li>
+<li>Bir kere, anlaşılması gereken şu ki, sarkaca asılı topların ağırlığı önemli değil çünkü ağırlıklar sarkacın dönemini etkilemiyor.</li>
+<li>Şöyle bir durum var, Cavendish, ilk ölçümlerde kullandığı yumuşak tel ile yaptığı ölçümlerle dünyanın yoğunluğunu hesaplamış mı? Nasıl bir sonuç almış? Bakmam lazım.</li>
+<li>Cavendish görünüşte Newtoncu analiz yapıyor, "Güç" kelimesini kullanıyor, ağır güllelerin sarkaca asılı küçük gülleleri çektiğini varsayıyor hatta bunu gözlemlediğini söylüyor ama bu görüntünün altında Cavendish Kepler kuralını kullanıyor; ilk hedefte göstermek istediğimiz bu, Cavendish'in analizinin altında Kepler Kuralı var.</li>
+<li>Okuduğum bütün analizlerin ortak noktası Newton'un güç tanımı ile başlıyor olmaları, yani büyük güllelerin küçük gülleleri Newtoncu güç ile çektiğini ve bu gücün kendini sarkacın dönemi olarak belli ettiğini varsayıyorlar ve dönemi ölçerek bu dönemden dünyanın yoğunluğunu hesaplıyorlar. Çok garip.</li>
+<li>Herkesin başlangıç noktası olan Newton'un meşhur güç tanımından, \(F=GMm/R^2\), bütün dekoratif ve sabit terimleri çıkartınca geriye \(F\propto 1/R^2\) ifadesi kalıyor. Newtoncular bunun bir orantı olduğunu ve \(R\) ile belirtilen mesafe azaldıkca \(F\) ile belirtilen "Newtoncu güç" denen miktarın arttığına inanmamızı istiyorlar. Fakat, \(F\propto 1/R^2\) bir orantı olamaz çünkü orantının bir tarafı "güç" bir tarafı "mesafe", (oranlar ve orantılar birbirleri ile mukayese edilebilir değerler arasında olabilir ancak) ve \(1/R^2\)'ın ait olduğu orantı, \(1/R^2 = R/T^2\) orantısıdır. Bu orantının sağ tarafı \(=R/T^2\) olmadan, \(1/R^2\) oranının bir anlamı kalmıyor çünkü \(1/R^2\) mesafenin karesi ile değişmiyor, \(=R/T^2\) gibi değişiyor. Bu orantı parçalanırsa, orantıyı meydana getiren oranların bir anlamı kalmaz. Hiçbir orantı parçalanamaz, parçalanan bir orantının oranlarının ayrı ayrı anlamı olamaz.</li>
+<li>Newtoncular, bu orantıdan \(1/R^2\)'ı kopartıp alıyorlar ve bu orana "güç" diye bir etiket yapıştırıyorlar. Fakat, \(1/R^2\) ile değişen ve \(F\) harfiyle tanımlanmış bir sayısal değer yok. \(F\) sayısal değeri olan, oranlara girebilen bir miktar değil çünkü \(F\) bir etikettir. Bu çok açık çünkü bir sonraki adımda \(F\) eleniyor. Bir orantıdan sayısal değeri olan bir terime elemeyezsniz. Eğer bir terim eleniyorsa o başka bir terim için yer tutan bir etikettir. Gerçektende \(F\) Newtoncuların parçalarına ayırdığı Kepler Kuralının diğer parçası \(R/T^2\) oranı için yer tutan bir etikettir. Yani Newtoncular önce bu \(F\) etiketlerini yazıp sonra da \(F=F\) diyip bu etiketleri eliyorlar ve Kepler Kuralının parçalarını birleştiriyorlar. Buna el çabukluğu veya matematiksel üç kağıtçılık denir.</li>
+<li>Kepler Kuralından \(R\) ve \(T\) terimlerini eleyemezsiniz çünkü bunlar orantının temel sayısal miktarlarıdır ama Kepler Kuralında \(F\) diye bir sayısal değer yoktur yani uydu hareketlerini ve yörüngeleri Kepler Kuralı ile açıkladığımıza göre ve Kepler Kuralında \(F\) diye bir terim olmadığına göre uyduları yörüngede tutan şeyin Newtoncu güç \(F\) olmadığını anlıyoruz. Newtoncuların ne dediğine değil ne yaptıklarına bakmak lazım. Newtoncular, bir sürü Newtoncu etiketler kullanarak, bir yörünge masalı anlatırlar, ama sonra onlar da yörüngeleri Kepler kuralı ile hesaplarlar.</li>
+<li>Newtoncu sözde güç \(1/R^2\) yalın hali ile yani bir oran olarak kullanılamaz çünkü bir mesafe değişirken mesafe olmayan, hatta ne olduğu bile belli olmayan gizli bir gücün değişiyor görünmesi için birimler ve birim dönüştürücüler kullanmanız lazım. Fizikçilerin yazdıkları Newtoncu denklemler matematik görünümlü  kukla denklemlerdir, kukla ifadelerdir; içi boş, sadece gösteriş için yazılmış ve Newton'un otoritesine ibadet etmek için geliştirilmiş sadece görüntüden ibaret, denklem gibi görünen ve daha sonra zaten elenen şeylerdir. Newtoncu birim dönüştürücü, boyut tamamlayıcı \(G\) olmadan \(F\propto 1/R^2\) ifadesinin hiçbir anlamı olamaz.</li>
+<li>Birimler ve \(G\) olmadan \(F\)'ye sayısal bir değer veremezsiniz çünkü \(1/R^2\) mesafedir, bu mesafeye dekoratif ve Newton markası ile damgalanmış etiketler ekleyerek ancak, \(F\)'yi sayısal bir değermiş gibi gösterebiliyorsunuz, ama bütün bunlar dekor ve göstermelik, Newton'a adanmış etiketlerle süslenmiş matematik görünümlü boş ifadelerdir. \(1/R^2\) ifadesine eklediğiniz bu süslü etiketler bu oranı güce dönüştürmeye yetmiyor çünkü eklediğiniz bütün dekoratif terimleri eliyorsunuz ve geriye sadece \(R\) ve \(T\) kalıyor yani Kepler Kuralı kalıyor, yani \(R\propto T^{1.5}\) orantısı kalıyor. Matematiği etiketlerle kandıramazsınız. Newton'un otoritesi incinmesin diye ve Newton'a ibadet etmek için müritlerinin uydurduğu dua denklemlerinin sahte oldukları ortaya çıkacaktır. Temel olan Kepler Kuralıdır, Newton'un Kepler Kuralına yapıştırdığı etiketler temel olamaz, ancak süs olur.</li>
+<li>Temel olan Kepler'in bulduğu \(R\) ve \(T\)'yi birbirine bağlayan orantıdır.</li>
+<li>\(F\propto 1/R^2\) topal bir orantıdır, bir orantının sadece bir oranıdır, \(F\) orantının diğer oranı için yer tutan bir etikettir.</li>
+<li>\(F\) değişen bir sayısal miktar değildir çünkü bir etikettir.</li>
+<li>Newtoncular \(R\) değiştikçe \(F\)'nin değiştiğini iddia ediyorlar ancak bu Newtoncu masalın bir anlamı yok çünkü \(F\) tanım icabı iki kütle arasında etkileşim içinde olan bir masal kahramanıdır. Onun için Newtoncular mutlaka bu iki kütleyi \(M\) ve \(m\) olarak yazarak işe başlarlar ama tabii yörüngelerin kütle ile bir ilişkisi olmadığı için Newtoncular bu yazdıkları \(M\) ve \(m\) kütlelerini ustaca elerler. Ama belki de pek ustaca değil, çünkü önce \(m\) harfini elerler ve denklemlere bakıyorsunuz güç \(F\), \(M\) harfinden çıkıp küçük \(m\) harfini çekmesi lazım ama bu arada \(m\) denklemlerden elenmiştir ve \(M\) olmayan bir \(m\) harfini çekmektedir. Newtoncuları bu durum hiç rahatsız etmez çünkü birazdan \(M\)'yi de eleyip gönderirler bu sefer \(F\) olmayan \(M\) ve olmayan \(m\) arasında devamlı etki eden evrensel Newtoncu güç olarak Newtoncu masallarda etkisini devam ettirmeye devam eder.</li>
+<li>Newtonca'da "kütle" denen şey aslında Kepler Kuralının birim oranıdır, yani, \(R_0^2/T_0^2\) terimidir. Newton, yoğunluğun birimine, "kütle" demiş. Zaten Newton'un bulduğunu iddia ettiği "evrensel yerçekimsel çekim gücü yasası"; Newton'un Kepler Kuralını parçalayıp her parçasına kendi marka etiketlerini yapıştırmasından başka bir şey değildir.</li>
+<li>Newton yoğunluk birimine "kütle" dedi diye yoğunluk birimi kütle diye bir şey olmuyor; kütle birim yoğunluk demek. Temel olan yoğunluktur, kütle değildir. Kütle ve yerçekimsel çekim gücü Newton'un kendi maddeci doktrinlerini satmak için uydurduğu kavramlardır.</li>
+<li>Kütle zaten sayısal bir değeri olmayan gizli bir kavramdır. Uyduruk bir kavramdır.</li>
+<li>Yoğunluk esastır. Yani şu meşhur "Newtoncu mekanik" denen şeyin aslında "Newtoncu etiket mekaniği" olduğunu söyleyebiliriz.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgaba0a7f" class="outline-2">
+<h2 id="orgaba0a7f"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-12 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-orgaba0a7f">
+<ul class="org-ul">
+<li><p>
+Cavendish makalesinin ilk sayfasının 3. paragrafında diyorki: «Sarkacın kolunu merkezin etrafında döndürmek için; sarkacın asılı olduğu teli çevirmek için gerekli olan güçten fazlası gerekmediği için, açıktır ki, eğer tel yeteri kadar inceyse, en ufak bir güç, mesela, çapı bir kaç inch olan bir kurşun ağırlığın çekim gücü kolu ölçülebilir bir şekilde döndürmeye yeterli olacaktır.» Yani Cavendish açıkça söylüyor, sarkaca asılı olan topun ağırlığının önemi yok, kolu oynatmak için sadece teli döndürebilecek kadar bir güç uygulamak yeterli olacaktır. Yani sarkaca 1 kg'lık bir top da asılı olsa, 100 kg'lık top da asılı olsa, aynı tel için, bu 10 kg'ı da, 100 kg'ı da oynatmak için aynı güç yeterli olacaktır. Yani \(F \propto W\) gibi bir ilişki yok. Yani, telin geri döndürücü gücü \(F\) ile topun ağırlığı \(W\) arasında bir ilişki yok.
+</p>
+
+<p>
+Sarkacın simetrisinden dolayı topları ağırlıksızmış gibi görebiliriz.
+</p>
+
+<p>
+Dikey sarkaçlarda, \(F=mg\) yazabiliyoruz çünkü sarkaç topunun ağırlığı \(m\) salınırken yukarı doğru çıkmak zorunda, bunun için de, topun ağırlığı \(F\) ile ilişkilendirilebilir. Ama, yatay sarkaçta toplar aşağı yukarı hareket etmiyorlar ve yerçekiminin etkisi kalmıyor.
+</p>
+
+<p>
+Fakat, Cavendish topların ağırlıksız olduğunu söyledikten sonra \(F/W\) oranını kuruyor, yani telin geri döndürücü gücü ile topun ağırlığını ilişkilendiriyor.
+</p></li>
+
+<li><a href="ozet-2021-12-11.html">Özet</a>'te birkaç düzeltme yaptım.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcff1685" class="outline-2">
+<h2 id="orgcff1685"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-11 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-orgcff1685">
+<ul class="org-ul">
+<li><a href="ozet-2021-12-11.html">Özet</a> yazdım.</li>
+<li><a href="kaynakca.html#MissingReference">Poynting</a> gezegenlerin ve aylarının yörüngelerinin Kepler Kuralına göre hareket ettiklerini gözlemliyoruz diyor. Yani, <b>Poynting uzay cisimlerinin ve aylarının Kepler Kuralına uyduğunu kabul ediyor</b>. Fakat, sonra, Kepler Kuralının üzerine Newtoncu etiketler yapıştırıp aslında gezegenlerin Newton'un çekim yasalarına göre hareket ettiğini söylüyor. Poynting, Newton tarikatının bir üyesi gibi davranıyor. Ama Kepler Kuralında güç diye bir şeyi temsil eden sayısal bir terim yok. Güç sadece bir etiket, Newtoncuların Kepler Kuralında bulunan \(1/R^3\) terimini orantıdan kopartıp alıp \(1/R^2\) olarak yazıyorlar ama \(1/R^2\) ile yörünge hesabı yapılamaz.</li>
+<li>Newton okulculuğun yani skolastiklerin kullandığı en eski kelime cambazlığını yapıyor, bilinen bir terimi alıp ona yeni bir isim takıyor. Çok eski bir usüldür bu, Newton da bu yöntemi başarı ile uyguluyor.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd49ef6e" class="outline-2">
+<h2 id="orgd49ef6e"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-10 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-orgd49ef6e">
+<ul class="org-ul">
+<li>Ducheyne'le devam ettim ama faydası olmuyor, sembolleri çok karışık.</li>
+<li>Newtoncular Kepler'in bulduğu orantıyı direk olarak kullanmak yerine \(1/R^2\) oranını alıp orantıyı parçalamış oluyorlar. Newtonca'da \(1/R^2\) «ters kare çekim yasası» anlamına geliyor. Fakat \(1/R^2\)'in Kepler'in orantısından ayrı olarak bir anlamı yok. Onun için, "güç" dedikleri \(1/R^2\) ile çekim masalları anlattıktan sonra orantının diğer parçasını yani \(R/T^2\)'ı "yerçekimi ivmesi \(g\)" olarak alıp orantıyı birleştiriyorlar. İşlerine geldiği zaman Kepler orantısını \(R=T^{1.5}\) olarak da yazabiliyorlar. Ama Newtonculukta, temel olan Newtoncu güçtür, Kepler'in orantısı sadece Newton doktrinlerine destek olarak ve "Kepler'in 3. Kuralı" olarak vardır. Çünkü Newtonculara göre yapılmış yapılacak bütün buluşlar Newton tarafından yapılmıştır, eğer Newton bulmamışsa da Newton'a hazırlık olarak aslında Newtoncu olan insanlar Newton adına bulmuşlardır. Yani Kepler de bir Newtoncudur, Newtoncuların yazdığı bu tarihte.</li>
+</ul>
+
+<div id="org84be787" class="figure">
+<p><img src="img/cav-deneyi.JPG" alt="Kepler ve Cavendish deneyi" width="50%" height="50%" title="Kepler ve Cavendish deneyi" align="center" />
+</p>
+<p><span class="figure-number">Şekil 2: </span>Kepler ve Cavendish deneyi</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5d0786d" class="outline-2">
+<h2 id="org5d0786d"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-09 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-org5d0786d">
+<ul class="org-ul">
+<li>Ducheyne'nin makalesini biraz daha okudum.</li>
+<li>Dünyanın yoğunluğunu hacım ve kütleden hesaplamak ne kadar doğru olabilir? Zaten "dünyanın yoğunluğu" anlamsız bir ifade, dünyanın yoğunluğu bir su küresi gibi tek düze ve her yerde aynı değil. Dünyanın yoğunluğu Kepler Kuralına göre değişiyor.</li>
+<li>Cavendish telin sertliği ile yani, telin geri döndürücü gücü \(F_{tel}\) ile toplara ağırlıklar tarafından uygulanan Newtoncu gücü, \(F_N\), birbirine karıştırıyor. Bu konuya fazla girmiyor. Yaptığı analizden iki gücü eşitlediği anlaşılıyor, \(F_{tel} = F_N\), diyor.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org34f1355" class="outline-2">
+<h2 id="org34f1355"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-08 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-org34f1355">
+<ul class="org-ul">
+<li>Cavendish'in deneyde kullandığı yatay burulmalı sarkaç ile bir saniye sarkacını nasıl ilişkilendirdiği anlaşıldı. Aslında <a href="clotfelter-analiz-01.html">Clotfelter</a> net olarak açıklamış. Cavendish yatay sarkacın telinin sertliğini hesaplamak istemiyor. Sadece dönem ile ilgileniyor. Telin sertliği, sarkacı sallandıran, geri döndürücü gücü belirliyor. Cavendish'i ilgilendiren bu güç, çünkü, ağırlıkla sarkaca asılı topların arasında olduğu varsayılan Newtoncu çekim gücünü, telin bu geri döndürücü gücüne eşitleyerek, Newtoncu gücün değerini bulacak.</li>
+<li>Cavendish, yatay sarkacın dönemini bilmiyor, sadece kolun uzunluğunu biliyor. Sarkacın dönemi telin sertliğine göre değişebilir. Onun için Cavendish, dönemi ve uzunluğu bilinen bir saniye sarkacını kendi yatay sarkacı ile ilişkilendirmek istiyor. Bunun için de, telin yatay sarkacı aynı dikey sarkaçları sallandıran yerçekimi ivmesi ile aynı şekilde sallandırdığını varsayıyor. Böyle olunca da dikey sarkaçlar için geçerli olan sarkaç yasalarını kullanarak yatay sarkaca da uyguluyor.</li>
+<li>Önce dikey sarkaçlar için geçerli olan bu ilişkiyi yazıyoruz:</li>
+</ul>
+
+\begin{equation*}
+\frac{F_0}{W} = \frac{\text{dönüş açısının yayı}}{\text{sarkacın uzunluğu}} = \frac{\text{yay}}{l}
+\end{equation*}
+
+<p>
+bundan, güç \(F_0\) için çözerek,
+</p>
+
+\begin{equation*}
+F_0 = W \frac{\text{yay}}{l}
+\end{equation*}
+
+<p>
+Bu basit sarkacın dönemi \(T_0\) olsun.
+</p>
+
+<p>
+Aynı uzunlukta olan fakat başka bir geri döndürücü güç altında salınan herhangi bir sarkacın dönemi \(T\), \(T_0\)'a, şu ilişkiyle bağlı olacaktır,
+</p>
+
+\begin{equation*}
+\frac{F}{F_0} = \frac{T_0^2}{T^2}
+\end{equation*}
+
+<p>
+çünkü bir sarkacın dönemi, geri döndürücü gücün karekökü ile ters orantılıdır.
+</p>
+
+<ul class="org-ul">
+<li>Yukardaki \(F_0\) için bulduğumuz tanımı alıp, bu denkleme ekliyoruz</li>
+</ul>
+
+\begin{equation*}
+\frac{F}{F_0} = \frac{T_0^2}{T^2}
+\end{equation*}
+
+<p>
+ve \(F\) için çözüyoruz,
+</p>
+
+\begin{equation*}
+F = F_0 \left ( \frac{T_0^2}{T^2} \right ) = W \left ( \frac{\text{yay}}{l} \right ) \; \left (  \frac{T_0^2}{T^2} \right ) 
+\end{equation*}
+
+<p>
+Cavendish'in denklemini elde etmiş oluyoruz.
+</p>
+
+<p>
+Ama, Cavendish'te
+</p>
+
+<p>
+\(T^2 = N^2\)
+</p>
+
+<p>
+\(T_0^2 = 36.65 / 39.14\)
+</p>
+
+\begin{align*}
+    \frac{F}{W} &= \frac{\frac{36.65}{39.14}}{\frac{N^2}{1}}\;\frac{\text{yay}}{l}\\
+\\
+    &= \frac{36.65}{39.14}\; \frac{1}{N^2}\; \frac{\text{yay}}{36.65}
+\end{align*}
+</div>
+</div>
+
+
+<div id="outline-container-orga381784" class="outline-2">
+<h2 id="orga381784"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-07 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-orga381784">
+<ul class="org-ul">
+<li><a href="ducheyne-analiz-02.html">Ducheyne</a> ile devam. Bazı sorular var. Yatay sarkaçla dikey sarkaçları nasıl ilişkilendiriyor? Topun ağırlığı bu işin içine girmemesi lazım. Aslında sadece sarkaç ilişkisini kullanıyorlar, yani <i>sarkaç kolunun uzunluğu</i> \(::\) <i>dönemin karesi</i>.</li>
+<li>Yatay sarkacın teli, yatay sarkacı hareketlendiren yerçekimi ivmesi ile aynı olursa o zaman yatay sarkacın dönemini bulabiliyoruz. Ama ondan sonra, Cavendis'in herhangi bir sertliği olan tel için yatay sarkacın nasıl sallanacağını bulması gerekiyor. Bunu nasıl yapıyor henüz anlayamadım.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org314dbe3" class="outline-2">
+<h2 id="org314dbe3"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-06 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-org314dbe3">
+<ul class="org-ul">
+<li><a href="ducheyne-analiz-01.html">Ducheyne</a>'nin analizi ile devam ettim</li>
+<li>Demek ki fizikçiler dünyanın yoğunluğunu tekdüze, bir su küresi gibi mesela, olduğunu kabul ediyorlar ve dünyanın hacminden yoğunluğunu bulabileceklerini düşünüyorlar. Ama dünyanın yoğunluğu bir devamlılıktır ve Kepler Kuralına göre değişir.</li>
+<li>Cavendish'in analizi, \(F/W\), oranının kullanıyor, \(F\) = kolu \(A\) açısı kadar döndürmek için toplara uygulanması gereken Newtoncu çekim gücü; \(W\) = sarkaca asılı topların ağırlığı. Buradan anlaşılıyor ki, Cavendish, burulmalı sarkaca asılı topları hareket ettirmek için topun ağırlığına orantılı bir güç uygulamak gerektiğini düşünüyor. Fakat, burulmalı sarkacın özelliği topları yerçekimi etikisinden kurtarması ve topları ağırlıksız yapması. Yani kola, 100 kg, top da asılı olsa, 1 kg top da asılı olsa, aynı güç onları hareket ettirecektir. Bunu deney yaparak göstermek iyi olurdu.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org693ecbc" class="outline-2">
+<h2 id="org693ecbc"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-05 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-org693ecbc">
+<ul class="org-ul">
+<li>Bugün <a href="clotfelter-analiz-01.html">Clotfelter</a>'in makalesini tercüme ettim.</li>
+<li>Cavendish'in neden bir saniye sarkacı kullandığı anlaşıldı.</li>
+<li>Newtoncuların, Newtonla başlayarak, \(1/R^2\), yani yarıçapın ters karesine "güç" etiketini yapıştırdıkları için, aslında Kepler Kuralını kullandıkları yerde "güç" etiketini kullanıyorlar. Yani, Newtoncular 1/R2 ve "ters kare çekim yasası" dedikleri her yerde, aslında Kepler Kuralını kullandıklarını anlayabiliriz.</li>
+
+<li>Güç kelimesini kullanmadan içinde \(1/R^2\) olan oranları güç kelimesini kullanmadan yazabilir miyiz?</li>
+
+<li>Top aslında su küresinin yüzeyinde yörüngede olduğunu varsayabiliriz. Bunu da dünyanın yüzeyinde dolaşan bir uydu ile mukayese edebiliriz. Çünkü dünya yüzeyinde dolaşan uydunun yarıçapını ve dönemini biliyoruz.</li>
+
+<li>Dünyanın hacminde bir su küresinin etrafında dolaşan bir uydunun hareketi nasıl olur? Ama su küresi gibi yoğunluğu tek düze olan bir gökcismi yok. Önemli olan bunu anlamak.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb7fa4ba" class="outline-2">
+<h2 id="orgb7fa4ba"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-04 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-orgb7fa4ba">
+<ul class="org-ul">
+<li><a href="falconer-analiz-01.html">Isobel Falconer</a>'ın Cavendish hakkında makalesinden ilgili bölümleri tercüme ettim.</li>
+<li>« Bundan sonra Cavendish, şimdi hesapladığımız gücü; ağırlıklar ve sarkaca asılı toplar arasında etki ederek kolu çeviren yerçekimsel çekim gücüne eşitledi. » Yerçekimsel çekim gücü diye bir şey var mı acaba? Hesaplar öncesinde anlattıkları masalda var ama hesapların yapıldığı formüllerde yok.</li>
+<li>Cavendish kendi makalesindeki analizinde Newton'un çekim gücü doktrini ile ilgili adımları atlamış, Falconer onları açıklıyor.</li>
+<li>Steffen Ducheyne'nin <a href="pdf/cavendish-ducheyne.pdf">makalesine</a> de baktım ama henüz bilgisayara aktaramadım.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org750006a" class="outline-2">
+<h2 id="org750006a"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-03 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-org750006a">
+<ul class="org-ul">
+<li>Babinet'ye tekrar baktım ama çözemedim ama Cavendish'in analizini aslına uygun olarak orantı matematiği ile açıklayan bir makale buldum:  <a href="pdf/cavendish-ducheyne.pdf">Steffen Ducheyne, The Cavendish Experiment as a Tool for Historical Understanding of Science</a>.
+<ul class="org-ul">
+<li>Ducheyne'nin makalesinden bazı notlar: « Cavendish deneyini yerçekimsel güç sabiti \(G\)'yi ölçmek için tasarlamadı.» Doğru, zaten Cavendish'in "Newton'un evrensel çekim gücü sabiti \(G\)" diye bir kavramdan haberi yoktu. Cavendish, denklemlerle değil, orantılarla çalıştı; orantı matematiğinde \(G\) gibi standart birimler yoktur. \(G\) Newtoncu mekanikte, Newtoncu güç \(F\)'nin olduğu denklemlerin birimlerini uyumlu hale getirmek için tanımlanmış bir birim çevirme terimidir.</li>
+<li>Cavendish \(G\)'yi ölçmediği halde, fizik ders kitaplarında Cavendish'in \(G\)'yi ölçtüğü yalanı tarihi bir gerçek gibi verilir: "Evrensel yerçekimsel güç sabiti \(G\) ilk defa Sir Henry Cavendish tarafından çok önemli bir deneyde ölçülmüştür." (Serway and Jewett'in 2006'da yazdıkları bir fizik ders kitabından alıntı.) Bu basit bir tarihi hata değil. Bugüne kadar, hâlâ Newtoncu yerçekimsel çekim gücü ve onun birimi \(G\), bu iş için tasarlanmış gerçek ve bilimsel bir deneyde ölçülmediği için, fizikçiler, bir tarihi hata olarak değil, bilinçli olarak, Cavendish deneyini yapılışından 150 yıl sonra, \(G\) daha henüz tanımlanmamışken, \(G\)'yi ölçmüştür diye tanımlamışlardır. Neden? Newton'un kutsal otoritesini kurtarmak için.</li>
+<li>« Cavendish yerçekimsel ters kare yasası için bir test yapmamıştır. »</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4268c59" class="outline-2">
+<h2 id="org4268c59"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-02 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-org4268c59">
+<ul class="org-ul">
+<li><a href="ilkeler-0304-10.html">Bugün sonuna geldim</a>, (s.379)</li>
+<li><i>Eğer yörünge hesaplarında F yoksa o zaman yörünge hareketleri de F olmadan var oluyor demektir</i>.</li>
+<li>Yarın tekrar <a href="babinet-analiz-01.html">Babinet</a>'ye dönerim</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8f73d71" class="outline-2">
+<h2 id="org8f73d71"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-01 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-org8f73d71">
+<ul class="org-ul">
+<li><a href="ilkeler-0304-09.html">III.4 bitti</a></li>
+<li>Şimdi tartışılan konu, bu yerçekimsel çekimin karşılıklı olup olmadığı. Tabii, Newton, çekimin karşılıklı olduğunu iddia ediyor ama bu işleri karıştırır ve yörünge hesaplarının imkansızlaştırır, eğer her madde birimi hem yakınındaki diğer bütün madde birimlerini hem de uzaktaki madde birimlerini –Newton'un varsaydığı gibi– çekiyor olsaydı, böyle bir hesaplama yapmak modern bilgisayarları bile aşardı. Onun için fizikçiler hep çekilen kütlenin çekecek gücü olmadığını varsayarlar. Çeken cisim de kendi içinde çekim yapmaz ve bütün çekim gücü sanki markezinde toplanmış gibi çekim yapar. Bütün bu masalları Newton Kepler Kuralına kendi ideolojik maddeci doktrinlerini ekleyebilmek için uydurmuştur.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6696953" class="outline-2">
+<h2 id="org6696953"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-30 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-org6696953">
+<ul class="org-ul">
+<li><a href="ilkeler-0304-08.html">III.4'ün sonuna gelindi</a>.</li>
+<li>Aslında Newton burada ay ile dünyanın aynı şeyin (bu şey ne ise) etkisi altında düştüklerini ispat eder gibi yapıyor fakat asıl derdi, asıl amacı, bu kendi tanımladığı Newtoncu çekim gücünün doğada var olduğunu ispatlamak. Yani, bu çekim gücünü varsayıyor ve bu güçle yörünge hesapları yaptığını söylüyor ve yörünge hesapları doğru çıktığına göre, bu Newtoncu çekim gücünün de evrende varolan ve bütün hareketlerin ve bütün yörüngelerin sebebi olduğunu ispatladığını söylüyor. Fakat Newton önce bir masal anlatıyor ondan sonra Kepler'in bulduğu orantıyı kullanarak yörüngeleri hesaplıyor. Yörünge hesaplarında masalında anlattığı bu çekim gücünü kullanmıyor. Sonuç olarak, Newton, bu önermede ve <i>İlkeler</i> kitabında ve başka hiçbir yerde "ters kare" bir güç yasasının varlığını ispatlamıyor.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-02 Mon 08:57</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

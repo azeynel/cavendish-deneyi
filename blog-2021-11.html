@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-02 Mon 08:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org1c96fdf" class="outline-2">
+<h2 id="org1c96fdf"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-30 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-org1c96fdf">
+<ul class="org-ul">
+<li><a href="ilkeler-0304-08.html">III.4'ün sonuna gelindi</a>.</li>
+<li>Aslında Newton burada ay ile dünyanın aynı şeyin (bu şey ne ise) etkisi altında düştüklerini ispat eder gibi yapıyor fakat asıl derdi, asıl amacı, bu kendi tanımladığı Newtoncu çekim gücünün doğada var olduğunu ispatlamak. Yani, bu çekim gücünü varsayıyor ve bu güçle yörünge hesapları yaptığını söylüyor ve yörünge hesapları doğru çıktığına göre, bu Newtoncu çekim gücünün de evrende varolan ve bütün hareketlerin ve bütün yörüngelerin sebebi olduğunu ispatladığını söylüyor. Fakat Newton önce bir masal anlatıyor ondan sonra Kepler'in bulduğu orantıyı kullanarak yörüngeleri hesaplıyor. Yörünge hesaplarında masalında anlattığı bu çekim gücünü kullanmıyor. Sonuç olarak, Newton, bu önermede ve <i>İlkeler</i> kitabında ve başka hiçbir yerde "ters kare" bir güç yasasının varlığını ispatlamıyor.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9eaef74" class="outline-2">
+<h2 id="org9eaef74"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-29 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-org9eaef74">
+<ul class="org-ul">
+<li><a href="ilkeler-0304-07.html">III.4'ün tercümesi</a> ile devam ettim.</li>
+<li>Newton, Kepler Kuralı'nı parçalara ayırıp kitabına serpiştirmiş! Burada \(F\) de \(f\) de Kepler orantısının birer parçası için yer tutan etiketlerden başka bir şey değil. Yani burada "\(\propto\)" işareti doğru kullanılmamış çünkü "\(\propto\)" mesela, \(AB \propto AD\) şeklinde yazılır ve "AB, AD gibi değişiyor", veya "AB, AD'ye orantılıdır" diye okunur. "\(\propto\)" işareti her zaman tam bir orantı için yazılmış bir kısaltmadır. "\(\propto\)" işaretini gördüğümüz zaman en az dört terim, yani en az iki orandan bahsediyoruz demektir (Bu bilgiler 6.5'inci bölümden alınmıştır.) Ama burada \(F, \propto \frac{d}{t^2}\) teriminde, \(F\) \(\frac{d}{t^2}\) gibi değişmemektedir, çünkü \(F\) diye değişen bir değer yoktur, \(F\) sadece \(\frac{1}{r^2}\) terimi için yer tutmaktadır. Ekmek kuyruğunda başkası için sıra bekleyen birisi gibi, sıranın asıl sahibi yani, \(\frac{1}{r^2}\) gelince \(F\) sıradan çıkıp gidecektir. Ve öyle de oluyor, \(F\) etiketini, değişen, gerçek bir değer ile değiştiriyorlar. Peki madem eleyeceklerdi \(F\)'yi neden yazdılar? Newton'un kutsal otoritesine ibadet etmek için! Burada yapılan, Newton'un parçalara ayırıp kitabına dağıttığı Kepler Kuralı'nın parçalarını Newton'un dağıttığı yerlerden toplayıp bir araya getirme operasyonudur.</li>
+<li>"&prop;" işareti çok önemli. Fizikte, Newton'la başlayarak oranların ve orantıların kutsallığına saygı duyulmamaya başlanmıştır.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org55af537" class="outline-2">
+<h2 id="org55af537"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-28 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-org55af537">
+<ul class="org-ul">
+<li><a href="ilkeler-0304-06.html">III.4'ün tercümesi</a> ile devam ettim. Newton'un ayın yörüngesi ile ilgili hesapları detaylı olarak inceledik.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbdf6f3c" class="outline-2">
+<h2 id="orgbdf6f3c"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-27 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-orgbdf6f3c">
+<ul class="org-ul">
+<li><a href="ilkeler-0304-04.html">III.4'ün Densmore'dan tercümesine devam ettim</a>. Bir de Newton'un yörünge masalı üzerine <a href="ilkeler-0304-05.html">bir yorum</a> yazdım.</li>
+<li>Yarın III.4'ün analizini okuyacağım.</li>
+</ul>
+
+
+<div id="orge6afde2" class="figure">
+<p><img src="img/densmore.png" alt="Newton's Principia, Dana Densmore" width="25%" height="25%" title="Newton's Principia, Dana Densmore" align="center" />
+</p>
+<p><span class="figure-number">Şekil 1: </span>Newton's Principia, Dana Densmore</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfb4941d" class="outline-2">
+<h2 id="orgfb4941d"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-26 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-orgfb4941d">
+<ul class="org-ul">
+<li><a href="ilkeler-0304-03.html">III.4'te geçen değerlerin listesini</a> tercüme ettim:</li>
+</ul>
+
+<p>
+R = Ayın dünyadan ortalama uzaklığı
+</p>
+
+<p>
+P = Ayın dönemi
+</p>
+
+<p>
+c = Dünyanın çevresi
+</p>
+
+<p>
+d = dünyanın çapı
+</p>
+
+<p>
+C = Ayın yörüngesinin çevresi
+</p>
+
+<p>
+D = Ayın yörüngesinin çapı
+</p>
+
+<ul class="org-ul">
+<li><a href="kaynakca.html#MissingReference">Densmore</a>'da III.4'ü okumaya başladım. Densmor, "III.4, modern kozmolojimizin ve evrensel yerçekimi gücü kuramının gelişmesinde çok önemli ve kritik bir önermedir ve, bilim tarihinde önemli bir dönüm noktasıdır ve belki de <i>İlkeler</i>'deki en heyecan verici ispattır" demiş.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org57f23ae" class="outline-2">
+<h2 id="org57f23ae"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-25 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-org57f23ae">
+<ul class="org-ul">
+<li><a href="ilkeler-0304-01.html">Önerme III.4</a> ve <a href="ilkeler-0304-02.html">Önerme III.4 Scholium</a> ile devam ettim.</li>
+<li>Yorum ekledim, düzelttim. Cohen'de de ilgili yerleri okudum biraz (s.204).</li>
+<li>Bu önermede Newton çok sayıda yeni kavramlar tanıtıyor. Ağırlık olarak bilinen, ağırlık olarak gözlemlediğimiz şeyin aslında, dünyanın merkezinde konuşlanmış gibi davranan bir çekim gücünün sebep olduğu bir şey olduğunu öne sürüyor. Gizli varsayım olarak, yine Newton'un tanımladığı, kütle kavramı var; uzaktan zaman geçmeden etki edebilen bir güç tanımı var; merkezcil ve merkezden uzağa doğru meyilli tamamen hayali ve uydurma güçler var; mesafenin karesi ile ters orantılı olan bir hayali güç daha var; yani Newton bir masal anlatıyor ve bu masalını da bütün dünyaya kabul ettirmeyi başarmış. <i>İlkeler</i>'in en önemli önermelerinden biri bu.</li>
+<li>"Dünyanın merkezinde konuşlanmış gibi davranan" diyoruz, çünkü bu Newtoncu yerçekimsel güç gerçekte dünyanın merkezinde toplanmış değil, Newton'u kırmamak için, Newton'un kutsal otoritesi zedelenmesin diye, sanki dünyanın merkezinde toplanmış <i>gibi</i> çekim gücünü uygular. (Newton, III.8'de bu konuyu işliyor.)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org166954c" class="outline-2">
+<h2 id="org166954c"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-24 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-org166954c">
+<ul class="org-ul">
+<li><a href="ilkeler-0304-02.html">Önerme III.4 Scholium</a> ile devam ettim.</li>
+<li>Newton'un bu yorumunda Kepler'den bahsetmesi ilginç. Çünkü, Newton, III.4'te, ayın yörüngesini hesaplamak için Kepler Kuralı'nı kullanıyor ama sanki kendisi yeni bir "çekim gücü" bulmuş gibi ve hesaplarını bu güçle yapıyormuş gibi yazıyor. Newton, Kepler Kuralı'nı ilk defa Thomas Streete'in astronomi ders kitabında gördü. O zamanlar, henüz Newton dışında kimse bu kuralın önemini anlayamamıştı, hatta astronomler onu bir çeşit sayısal rastlantı olarak görülüyordu. Thomas Streete Kepler Kuralı'nı ilk kullanan astronomlardan biri idi.</li>
+<li>Newton, "Kepler'in bulduğu gezegenler yasası" diye Kepler'e atıfda bulunuyor. Bir kere Kepler'in bulduğu bir yasa değil, bir orantı.</li>
+<li>Newton, Kepler Kuralı'nı kendine mal etmek için bu basit orantı ile kendisinin bulduğunu iddia ettiği bir çekim gücü ile ilişkilendirmeye çalışıyor. Ne diyor mesela? Jüpiter ve Saturn'ün uyduları Kepler Kuralı'na uydukları için onların "merkezcil" bir gücü varmış ve bu güç mesafenin karesi ile ters orantılıymış. Yalan. Kepler Kuralında böyle bir güç, bu Newton'un Kepler Kuralı'nı sahiplenmek için uydurduğu bir yalan.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org09b5f73" class="outline-2">
+<h2 id="org09b5f73"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-23 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-org09b5f73">
+<ul class="org-ul">
+<li>Newton'un İlkeleri'nden "Ay deneyi" diye bilinen, <a href="ilkeler-0304-01.html">3. Kitap, 4. Önerme</a>'yi tercüme etmeye başladım.</li>
+<li>Bu Önerme'de Newton, ayın yörüngesini, kendi tanımladığı "yerçekimsel çekim gücü" ile açıklamaya çalışıyor. Ama bu yerçekimsel çekim gücünü de Newton, doğa üstü, zaman geçmeden etki eden bir etken olarak tanımladığı için yörüngeleri bu güçle açıklamak mümkün olamaz.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7c46b43" class="outline-2">
+<h2 id="org7c46b43"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-22 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-org7c46b43">
+<ul class="org-ul">
+<li><a href="babinet-analiz-01.html">Babinet</a> ile devam ettim. Tekrar okudum. Kepler Kuralı'nı kullanıyor, bir kere daha okuyup tam çözmem gerekiyor.</li>
+<li><a href="pdf/Newton-Principia-calculations.pdf">Newton'un yörünge hesaplarını</a> tercüme etmeye başladım, çünkü Babinet ve Cornu ve Baille zaten Newton'un analizini kullanıyorlar.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org095a9f2" class="outline-2">
+<h2 id="org095a9f2"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-21 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-org095a9f2">
+<ul class="org-ul">
+<li><a href="https://www.birgun.net/haber/newton-ve-simya-i-366536">Newton ve Simya</a> diye ilginç bir yazıya rastladım, gazetelerde görmeye alışmadığımız bir yazı.</li>
+<li>Bu yazıda şöyle güzel bir cümle var: «Bilim tarihçileri Newton bir ilim insanı olduğu için ve fizik alanında ağırlıklı olarak çalıştığı için doğayı yöneten kuralların da doğa ile ilgili olması gerektiği üzerinden bir varsayımdan yola çıkarak Newton hakkında tespitler yapıyorlardı.»</li>
+<li>Yani «doğa doğaldır.» Sebepler doğal olmalıdır, sebepler doğanın içinde olmalıdır.</li>
+<li>Fakat Newton sadece simya konusunda değil, fizik konularında da bu kurala uymadığını biliyoruz, hatta özellikle fizikte, Newton doğa üstü sebepleri fiziğe sokan insandır, yani Newton'un tanımladığı güç tanımı icabı doğada olması mümkün olmayan bir güçtür.</li>
+<li>Newtoncu güç «doğa ile ilgili» bir etken değildir, doğanın dışındadır.</li>
+<li>«Yeniçağ'daki doğa ve doğaüstü anlayışı oldukça ilginçtir. Doğa ve doğaüstü içiçe geçmiş durumda.»</li>
+<li>«Dolayısıyla doğaüstü ya da "süpernatürel" diye adlandırdığımız meseleler zaten dünyada gerçekleşiyor.»</li>
+<li>«İnsanlar mucizelere inanıyorlar, doğal olarak simyaya da inanıyorlar.»</li>
+<li>«/Simya genel anlamda doğal materyeller kullanarak deneylerle doğaüstü sonuçlar elde etmeye çalışma çabasıdır/.»</li>
+<li>Güzel bir tanım olmuş.</li>
+<li>İnsanlar hâlâ mucizelere inanıyorlar. Newtoncu çekim gücü bir mucize değildir de nedir?</li>
+<li>«Ruhani dünya ile materyel dünya arasında bir analoji vardır.»</li>
+<li>Ruhani ve materyel dünyaların ikilemi&#x2026; ayrı bir konu. Ama bu dünya maddeler dünyası olarak kabul edildiği için, yani bu dünyanın Newtoncu bir dünya olduğu kabul edildiği için, madde dünyasının karşıtı bir madde olmayan dünyanın varlığı hayal ediliyor. Halbuki bu dünya Newtoncu ve maddeci olmasa madde olmayan ruhani bir dünya hayal etmeye gerek kalmazdı.</li>
+<li>Eski <a href="newton-kalpazan.html">Kalpazan Newton</a> yazısını bir sayfa olarak yayınladım.</li>
+<li>«Dünyanın yoğunluğu» kavramı anlamlı bir kavram değil, «dünyanın ortalama yoğunluğu» daha anlamlı olabilir, ama o bile sorunlu. Dünyanın yoğunluğu Kepler Kuralına doğru değişiyor yani, bir devamlılık.</li>
+<li>Mesela, bir taşın yoğunluğunu hesaplayabiliriz, elmasın, suyun, atmosferin yoğunluğunu hesaplayabiliriz, ama zaten bu şeyler yoğunlukları ile tanımlanmış şeyler. Ama dünya öyle değil.</li>
+<li>Cavendish suyun yoğunluğunu birim olarak dünyanın yoğunluğunu hesaplıyor. Cavendisih'in bulduğu 5.5 sayısı, dünyanın yoğunluğunun suyun yoğunluğunun 5.5 katı olduğunu söylüyor. Acaba, yoğunluğu suyun 5.5 katı olan materyel nedir?</li>
+<li>Dünyanın yoğunluğu tekdüze değildir.</li>
+<li>Dünyanın ortalama yoğunluğundan bahsetmek de gökkuşağının ortalama renginden bahsetmek gibi bir şey olur.</li>
+<li>Yoğunluğun tanımı Kepler Kuralı ile verildiğine göre, dünyanın yoğunluğu hesaplanacaksa Kepler Kuralı ile hesaplanacaktır. Yani Cavendish de dünyanın yoğunluğunu sadece Kepler Kuralı ile hesaplayabilirdi, ve öyle de yaptı.</li>
+<li>Cavendish de dahil olmak üzere bu deneyli ilgilenen herkes sarkaca asılı topların büyük toplar tarafından Newtoncu güç ile çektiğini varsayıyorlar ve bu varsayımlarını da hiçbir şekilde sorgulamıyorlar.</li>
+<li>Bu inanca göre küçük ve büyük güller arasında Newtoncu yerçekimsel çekim gücü var ve büyük toplar küçük topları çekiyor ve bu çekim sonucunda sarkacın kolu \(\alpha\) açısı kadar dönüyor.</li>
+<li>Telin sertliği sarkacın salınım yapmasını sağlıyor ve oynama açısına direk olarak oranlı; toplar arasındaki çekim gücü ise mesafenin karesi ile artıyor.</li>
+<li>Bu iki gücün nasıl değiştiğini kolun oynadığı yayın yani \(L\sin{\alpha}\)'nın nasıl değiştiğine bakarak iki gücü hesaplayabiliriz.</li>
+<li>Newton'un «Newtoncu çekim gücü» tanımlamasından 110 yıl sonra Cavendish deneyi yapılıyor ve henüz bu güç bir deneyle ölçülmüş değil.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org402c4ef" class="outline-2">
+<h2 id="org402c4ef"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-20 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-org402c4ef">
+<ul class="org-ul">
+<li><a href="babinet-analiz-01.html">Babinet</a> ile devam ettim. Bu ilginç bir analiz çünkü Newtoncu tanımlar ve marka terimler kullanmıyor. <a href="https://en.wikipedia.org/wiki/Jacques_Babinet">Babinet</a> (1794 – 1872) bir Fransız fizikçisiymiş.</li>
+<li>Google books'da "Cornu et Baille" diye ararken <a href="https://books.google.com.tr/books?id=t4ISDAAAQBAJ&amp;lpg=PA108&amp;dq=cornu%20et%20baille&amp;hl=tr&amp;pg=PA106#v=onepage&amp;q=cornu%20et%20baille&amp;f=true">The Pendulum: A case study in physics</a> diye bir kitap çıktı.</li>
+<li>İki konu gündeme geldi: 1) Telin burulma gücü açıyla direk orantılı, açı arttıkça burulma gücü artıyor, ama sözde Newtoncu güç aradaki mesafenin karesi ile ters orantılı olarak değişiyor.</li>
+<li>Bir de, G ve g'nin ilişkisi. Bunlara bakmam lazım. Unutmuşum.</li>
+<li>Bir de, G'yi hesapladıkları denklemde, birbirlerini Newtoncu çekim gücü ile çeken top ve ağırlığın aralarındaki mesafe \(d\) olarak denklemde var; \(M\) çeken ağırlık var ama \(M\)'nin çektiği \(m\) denklemde yok. Yani \(M\) hiçliği kendine doğru çekiyor olmalı, bu da bu denklemi yazan fizikçileri hiç rahatsız etmiyor.</li>
+<li>Eski <a href="pdf/densytics-1.pdf">kitabı</a> LeanPub'dan alıp buraya yükledim. Referans için lazım olabilir.</li>
+<li>Burulmalı sarakacın telin burulmasından başka sürtünmesi olmaması, Galileo'nun tam yatay bir düzeyde hareket eden sürtünmesiz ideal süredurumda giden top gibi&#x2026;</li>
+<li>Onun için ağırlıkların önemi yok gibi. Telin sertliği yoksa salınım da yok.</li>
+<li>Zaten sarkacın tam dengede olması bile zor bir iş&#x2026;</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5e0e345" class="outline-2">
+<h2 id="org5e0e345"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-19 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-org5e0e345">
+<ul class="org-ul">
+<li><a href="poynting-analiz-01.html">Poynting</a> (1894) ile devam ettim. <a href="https://en.wikipedia.org/wiki/John_Henry_Poynting">John Henry Poynting</a> bir İngiliz fizikçiydi. Poynting analizinde telin sertliği ve sarkacın momentumu ile ilgili terimler de kullanıyor ama bunların gerekli olduğunu düşünmüyorum. Cavendish, ilk yaptığı ölçümlerde, telin çok yumuşak olduğunu görünce daha sert bir tel alıyor, yoksa, telin ve sarkacın sertliğini ve momentini hesaplayıp ona göre bir sarkaç inşa etmiyor.</li>
+<li>Fakat Poynting, hayali saniye sarkacını da \(L\) olarak analizine ekliyor, modern analizlerlerde saniye sarkacından hiç bahsedilmez.</li>
+<li>Bu Cavendish sonrası analizlerin hepsi önce Newton \(1/r^2\) tanımını yazıp (denklem değil tanım bu) ondan sonra "jeolojik yerçekimi sabiti \(g\)'yi (dünyanın yüzeyinde yerçekimi ivmesi), dünyanın boyutları ve hacmi ile yazarak ve bu denkleme de G'yi ilave ederek, iki denklemi, ilişkilendirip "evrensel lüzumsuz terim Büyük G"yi eliyorlar. Dünyanın yoğunluğu terimi böylece işin içine girmiş oluyor.</li>
+<li>Poynting, Cavendish'in yaptığı 13. gözlemi detaylı olarak inceliyor, şimdi onu okuyorum.</li>
+<li>Anlamadığım şeylerden biri de, deney sürecinde, sarkacın orta noktasının bulunması, yani merkez noktasının, sarkaç devamlı "yürüdüğü" için yani ağırlıklar olsa da olmasa da devamlı bir salınım halinde olduğu için ve merkez noktası da devamlı yer değiştirdiği için, bu nokta deney sürecinde, her gözlem için ayrı ayrı, bulunuyor. Bu noktadan, sarkacın hareket ettiği açı bulunuyor. Yani, eğer çekimden dolayı bir hareket varsa, sarkacın kendi hareketi çıkartılıp, çekime ait hareket bulunuyor. Aslında zor olan bu, yoksa, teorik denklemleri yazmak kolay.</li>
+<li><a href="cornu-ve-baille-analiz-01.html">Cornu ve Baille analizine</a> baktım. Pek bir şey anlayamadım.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org733d396" class="outline-2">
+<h2 id="org733d396"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-18 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-org733d396">
+<ul class="org-ul">
+<li><a href="cavendish-analiz-03">Cavendish'in analizi</a> ile devam ettim.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org78993ed" class="outline-2">
+<h2 id="org78993ed"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-17 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-org78993ed">
+<ul class="org-ul">
+<li>Bugün <a href="cavendish-analiz-03.html">Cavendish'in analizi</a> ile devam ettim. Cavendish özellikle kurşun ağırlıklarla toplar arasındaki çekimden bahsederken, ağırlığın topun merkezinde olduğu varsayılan bir parçacığı çektiğini söylemeye özen gösteriyor çünkü Newtoncu çekim gücünün varlığını varsayıyor ama kullandığı oranlarda sadece mesafe var, bir kütle yok. Cavendish, zaten bir kütle terimi yazmıyor; kütle terimi \(m\) Cavendish'ten sonra, Newton'un müritleri tarafından geliştirilmiş "Newtoncu mekanik" içinde varolan dekoratif terimler Newton'a ibadet olarak yazılıp siliniyorlar.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6027953" class="outline-2">
+<h2 id="org6027953"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-16 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-org6027953">
+<ul class="org-ul">
+<li>Bugün Cavendish'in; ağırlıkların topları çektiği çekim gücü ile dünyanın topları çektiği çekim gücünü hesapladığı 88. sayfadan <a href="cavendish-analiz-03.html">tercüme etmeye başladım</a>. Çok eski birimler kullanıyor. Güllelerin çekim gücünü bir su küresinin çekimi ile oranlıyor falan. Anlaması biraz zor. Sonra, dipnota baktım, o biraz daha detay veriyor ama hâlâ anlamış değilim.</li>
+<li>Daha sonra, üç tane Fransızca makale bulmaya çalıştım, <a href="https://ia800900.us.archive.org/14/items/13659914.med.yale.edu/D%C3%A9termination%20nouvelle....pdf">birini buldum</a>, diğerlerini bulumadım.</li>
+<li>J. Babinet, <i>Note sur le calcul de l'experience de Cavendish relative a la masse et a la densite moyenne de la terre</i>, Cosmos 24, 543-5 1864</li>
+
+<li>A. Cornu et J. B. Baille, <i><a href="https://ia800900.us.archive.org/14/items/13659914.med.yale.edu/D%C3%A9termination%20nouvelle....pdf">Détermination nouvelle de la constante de l'attaction et de la densité moyenne de la terre</a></i>, Comp. Rend. 76, 954-8</li>
+
+<li>A. Cornu et J.B. Baille <i>Sur la mesure da la densité moyenne de la terre</i>, Comp. Rend., 86, 1001-4</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgb3a1330" class="outline-2">
+<h2 id="orgb3a1330"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-15 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-orgb3a1330">
+<ul class="org-ul">
+<li><a href="http://cavendish-deneyi.com/sarkacin-sabitleri.html">Sarkacın sabitleri</a> sayfasını eklemeler yaptım. Cavendish'in "&#x2026;subtends an angle at the center, whose arch is \(\frac{1}{766}\)&#x2026;" sözünü anlayamıyordum, meğer, radian ölçüsünden bahsediyormuş.</li>
+<li>Google yerine <a href="https://www.bing.com/search?q=cavendish+used+angle+radians&amp;sp=-1&amp;pq=cavendish+used+&amp;sc=0-15&amp;qs=n&amp;sk=&amp;cvid=C5FA54DD86F24965B124F01532E68EE6&amp;first=28&amp;FORM=PERE2">Bing</a>'de arayınca Cavendish deneyi ile ilgili yeni sayfalar çıktı. <a href="http://bennettscienceblog.blogspot.com/2018/06/cavendish-gravity-experiment-part-2.html">Bu kişi</a> Cavendish deneyini tekrarlamaya çalışıyormuş, iyi bir şey yapıyor bence ama yaptığı düzeneğin Cavendish'in sarkacıyla bir ilgisi yok.</li>
+<li>Cavendish'in deneyini yaptığı yıllarda radian ölçüsüne "dairesel açı" diyorlarmış (circular angle) ama Cavendish "circular angle" da dememiş. Neyse, ne demek istediğini anladık. Daha önemli konular var, deneyde kullanılan yatay sarkaçla, saniye sarkacının ilgisi; telin sertleğinin jeolojik yerçekimi sabiti \(g\) ile ilgisi; telin sertliğini \(g\)'ye göre mi ayarlıyorlar, çünkü saniye sarkacı \(g\) ile ilgili, ve Cavendish, kendi sarkacı saniye sarkacı gibi sallansaydı nasıl sallanırdı onu hesaplıyor, yani iki sarkacın kollarının uzunluğunun oranını alıyor ve kendi sarkacının döneminin bu orana göre olacağını söylüyor.</li>
+<li>İki sarkacın ne ilgisi var, henüz anlamış değilim.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga476ae7" class="outline-2">
+<h2 id="orga476ae7"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-14 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-orga476ae7">
+<ul class="org-ul">
+<li><a href="http://cavendish-deneyi.com/ilkeler.html">İlkeler</a> sayfasını başlattım. Veya "aksiyomlar" veya "varsayımlar" mı olmalı?</li>
+<li>Dün Cavendish'in kolu çevirmek için gereken gücü nasıl hesapladığı <a href="http://cavendish-deneyi.com/cavendish-analiz-01.html">bölümü</a> tercüme etmiştim. Bugün de, aynı sayfada bulunan bir dipnotu <a href="http://cavendish-deneyi.com/cavendish-analiz-02.html">çevirdim</a>. Dipnotu, kitabın editörü, <a href="http://www.biographi.ca/en/bio/mackenzie_arthur_stanley_16E.html">A. Stanley Mackenzie</a> yazmış. Bu kitap, <i>Memoirs of the laws of Gravitation</i> (1900) Cavendish'in makalesinin bütününü içeriyor ve dipnotlarda açıklamalar da var.</li>
+<li><a href="http://cavendish-deneyi.com/sarkacin-sabitleri.html">Sarkacın sabitleri</a> sayfasını açtım.</li>
+</ul>
+
+
+<div id="orge6b8fe9" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/McKenzie.png" alt="A. Stanley Mackenzie" width="25%" height="25%" title="A. Stanley Mackenzie" align="center" />
+</p>
+<p><span class="figure-number">Şekil 2: </span>A. Stanley Mackenzie</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbd8493d" class="outline-2">
+<h2 id="orgbd8493d"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-13 Sat]</span></span></h2>
+<div class="outline-text-2" id="text-orgbd8493d">
+<ul class="org-ul">
+<li>Cavendish'in <a href="http://cavendish-deneyi.com/cavendish-analiz-01.html">özgün analizi</a>'ni okumaya başladım. Çok uzun cümleler kurmuş. Kısa cümlelere ayırdım.</li>
+<li>Cavendish orantılarla çalıştığı için yazısında denklem yok. Orantıları da sözle açıklıyor. Mesela, "sarkacın kolunu A açısı kadar döndürmek için gerekli olan gücün, o topun ağırlığına olan oranı, A'nın yayının kolun yarıçapına oranına eşittir," gibi.</li>
+<li>Oranlar ve oranların eşitliği olan orantılar kullandığı için Cavendish'in analizinde standard birimler ve sonradan elenecek terimler yok. Onun için oranlarla çalışmak çok daha yalın ve gerçeğe yakın oluyor.</li>
+<li>Fakat Cavendish deneyini yapalı iki asırdan fazla zaman geçmiş; Cavendish'in okuyucularının doğal olarak bildiği matematiği ve matematiği yazma şeklini biz artık bilmiyoruz. Onun için biraz zorluk oluyor.</li>
+<li>Bundan sonra Cavendish'in analizinin daha detaylı olarak açıklamasını inceleyeceğim.</li>
+<li>Gopi Krishna Vijaya Kepler'in 3. yasası (Kepler Kuralı) hakkında güzel <a href="https://www.sciencedirect.com/science/article/pii/S2405844018386961#!">bir yazı</a> yazmış.</li>
+</ul>
+
+
+<div id="orgc0fb44e" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/J-K-Vijaya-K3.png" alt="Kepler Kuralı'nın ilk ifadesi" width="50%" height="50%" Kepler="Kuralı'nın ilk ifadesi" align="center" />
+</p>
+<p><span class="figure-number">Şekil 3: </span>Kepler Kuralı'nın ilk ifadesi</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org27eb0ae" class="outline-2">
+<h2 id="org27eb0ae"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-12 Fri]</span></span></h2>
+<div class="outline-text-2" id="text-org27eb0ae">
+<ul class="org-ul">
+<li><a href="http://cavendish-deneyi.com/newtoncu-analiz-01.html">Newtoncu analiz</a> yazısına takıldım. Okudum düzelttim. Cümlelerden birini çözemedim. Cavendish kolu çevirmek için gerekli gücü topların ağırlığı ile ifade ediyor gibi bir şey söylüyor. İlerde çözerim. Başka Newtoncu analizler de okumam lazım zaten. <a href="https://en.wikipedia.org/wiki/Cavendish_experiment">Wikipedia</a>'daki analiz faydalı olabilir. Fizik ders kitaplarında da var.</li>
+<li>Önce Cavendish'in özgün analizini okuyup tekrar anlamam lazım, çoktan unuttum gitti.</li>
+</ul>
+
+<div id="org382b321" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-memoirs-88.jpeg" alt="cavendish deneyi" width="50%" height="50%" title="cavendish deneyi" align="center" />
+</p>
+<p><span class="figure-number">Şekil 4: </span>Cavendish deneyinin özgün analizi</p>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-orge7fa7ba" class="outline-2">
+<h2 id="orge7fa7ba"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-11 Thu]</span></span></h2>
+<div class="outline-text-2" id="text-orge7fa7ba">
+<ul class="org-ul">
+<li><a href="http://cavendish-deneyi.com/sorular.html">Sorular</a> sayfasına baktım, birkaç düzeltme yaptım ama yeni soru eklemedim.</li>
+<li><a href="http://cavendish-deneyi.com/deneyin-modern-bir-aciklamasi.html">Mccormmach</a>'ın modern Newtoncu analizine baktım, sadeleştirdim, Türkçe'ye çevirdim ve <a href="http://cavendish-deneyi.com/newtoncu-analiz-01.html">yayınladım.</a>.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgaccec46" class="outline-2">
+<h2 id="orgaccec46"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-10 Wed]</span></span></h2>
+<div class="outline-text-2" id="text-orgaccec46">
+<ul class="org-ul">
+<li><a href="http://cavendish-deneyi.com/tercume.html">Tercümeye</a> devam ettim. Sarkacın koluna asılı iki tane küçük kurşun top var, iki tane de Cavendish'in "ağırlık" dediği daha büyük kurşun gülleler var. Bu iki gülle, kolun içinde bulunduğu kutunun iki tarafına yerleştiriliyor böylece topları çeken güç ikiye katlanmış oluyor, tabii güç diye bir şey varsa.</li>
+<li>Sonra topların yerini değiştiriyor ve bir de öyle ölçüm yapıyor. Sonra kolun ölçülen hareketinin "farkının yarısı" kolun ağırlıklar tarafından ne kadar oynatıldığını verecektir diyor. Ama bu "farkın yarısı" ne anlama geliyor anlamadım. Kol, iki tarafta da eşit derecede hareket ettiyse, fark sıfır olmaz mı?</li>
+<li>Neyse, ilerde anlarız ne demek istediğini.</li>
+<li><a href="https://books.google.com.tr/books?id=TWB-74DCm68C&amp;lpg=PA280&amp;dq=experiments%20to%20determine%20the%20density%20of%20the%20earth%20cavendish&amp;hl=tr&amp;pg=PA281#v=snippet&amp;q=cavendish%20experiment&amp;f=false">Russel McCormmach'ın John Michell biografisinde</a> Cavendish deneyini modern denklemlerle açıklamasını okudum. Burada Newtoncuların Newton'a nasıl ibadet ettikleri açıkça görülüyor. Bir sürü Newton ile markalaştırılmış terimler yazıp sonra eliyorlar. Yani aslında bu "derivasyon" dedikleri Newton terimlerini önce yazıp sonra sanki matematiksel bir şey yapıyormuş gibi elimine etme taktiği ile Cavendish deneyinin Newton gücü ile bir ilgisi olmadığını göstermiş oluyorlar çünkü bütün Newtoncu güç terimlerini önce yazıp sonra eliyorlar.</li>
+<li>Cavendish'e deneyin aletini veren <a href="https://en.wikipedia.org/wiki/John_Michell">John Michell</a> de ilginç biriymiş. Gerci Cavendish John Michell'den aldığı parçaları kullanmamış ki, en azından, sarkacın kolu tam düz değilmiş onun için Cavendish kendisi yeni bir kol yaptırmış. Geriye ne kaldı ki zaten? Tel. Teli de kendisi yeni alıyor.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org25e42c2" class="outline-2">
+<h2 id="org25e42c2"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-09 Tue]</span></span></h2>
+<div class="outline-text-2" id="text-org25e42c2">
+<ul class="org-ul">
+<li><i><a href="http://cavendish-deneyi.com/deneyin-modern-bir-aciklamasi.html">Deneyin modern bir açıklaması</a></i> yazısını ekledim. Deneyi sanki Newton gücünü ölçmüş gibi açıklıyor, Newtoncu dekoratif süs terimleri yazıp sonra eliyor falan, klasik Newtoncu ibadetler. Bir bölümünü Türkçeye çevirdim.</li>
+<li><a href="https://upload.wikimedia.org/wikipedia/commons/5/5f/The_laws_of_gravitation%3B_memoirs_by_Newton%2C_Bouguer_and_Cavendish%2C_together_with_abstracts_of_other_important_memoirs_%28IA_bub_gb_O58mAAAAMAAJ%29.pdf">Memoirs on the Laws of Gravitation</a> makalesini indirdim ve çıktı aldım ve tercüme etmeye başladım. Bu makale Cavendish'in tam metnini veriyor ve Cavendish'in deney sonuçlarını nasıl hesapladığını aslına uygun olarak açıklıyor, yüz yıl sonra uydurulmuş Newton denklemleri falan kullanmıyor.</li>
+<li>Bir kaç sayfa taslak da yazdım</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org89c987f" class="outline-2">
+<h2 id="org89c987f"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-08 Mon]</span></span></h2>
+<div class="outline-text-2" id="text-org89c987f">
+<ul class="org-ul">
+<li>Düşündüğümden daha yavaş gidiyor.</li>
+<li>Bugün <a href="tanimlar.html">tanımlar</a> sayfasını başlattım ve birkaç tanım ekledim.</li>
+<li><i><a href="http://cavendish-deneyi.com/pdf/cavendish-2021-11-08.pdf">Aristocuların sonuncusu, Newtoncuların ilki</a></i> yazısını okudum düzelttim.</li>
+<li>Bu yazıdaki ana konular:
+<ul class="org-ul">
+<li><b>Newton kültü</b>
+<ul class="org-ul">
+<li>İnsanlara dünyadaki bütün hareketlerin sebebinin Newton'un absürd çekim gücü olduğu öğretiliyor.</li>
+</ul></li>
+<li><b>Newton'un ruhu</b>
+<ul class="org-ul">
+<li>Newton'un çağdaşları, Newton'un uydurduğu bu evrensel çekim gücünü evrene nüfuz etmiş Newton'un ruhu olarak görmüşlerdir çünkü bu gücün hiçbir bilimsel ve deneysel dayanağı yoktur.</li>
+</ul></li>
+<li><b>Newton okulculuğu</b>
+<ul class="org-ul">
+<li>Newton Avrupa okulculuğunda bir darbe yapıp, bin yıldır geçerli olan Aristo okulculuğunu yıkıp Newton okulunu başlatmıştır.</li>
+</ul></li>
+<li><b>Newton'un sihirli astronomisi</b>
+<ul class="org-ul">
+<li>Newton'un tabloları kullanmadan sadece bir formül kullanarak gezegenlerin yörüngelerini hesaplaması çağdaşlarına sihirli bir şey gibi görünmüştür.</li>
+</ul></li>
+<li><b>Toplumda para neyse fizikte güç odur</b>
+<ul class="org-ul">
+<li>Para da güç de; birbirleri ile kıyaslanması mümkün olmayan şeyleri kıyaslamak için icad edilmiş birim dönüştürme araçlarıdır.</li>
+</ul></li>
+<li><b>Newton gücü bilinen bütün doğa yasalarına aykırıdır</b>
+<ul class="org-ul">
+<li>En başta fiziğin en kutsal yasası termodinamik yasası olmak üzere bilinen bütün fizik yasalarına aykırı olan bir güç fiziğin temel direği yapılmıştır.</li>
+</ul></li>
+<li><b>Newton'un amacı bir dünya sistemi kurmaktı</b>
+<ul class="org-ul">
+<li>Dünya sistemi; bütün hareketlerin tek bir formül veya aksiyom ile açıklandığı, kendi içinde tutarlı bir sistemdir.</li>
+</ul></li>
+<li><b>Cavendish deneyi Newton gücünü ölçmemiştir</b>
+<ul class="org-ul">
+<li>Cavendish deneyi sadece dünyanın ortalama yoğunluğunu hesaplamıştır; deneyden yüz yıl sonra fizikçiler deneye Newton gücünü ölçtüğü yalanını yapıştırmaya çalışmışlardır.</li>
+</ul></li>
+<li><b>Kepler Kural'ı yoğunluğun tanımıdır</b>
+<ul class="org-ul">
+<li>Bunu da bulan Newtondur.</li>
+</ul></li>
+<li><b>Newton'un dünya sistemi</b>
+<ul class="org-ul">
+<li>Kepler Kuralı'nın temel formül olarak kullanıldığı bir dünya sistemidir. Newton'un müritleri daha sonra Kepler Kuralını Newton birimleri ile markalaştırmışlardır.</li>
+</ul></li>
+<li><b>Kozmos evren değildir</b>
+<ul class="org-ul">
+<li>Kozmos evrenin, insan merkezli boyutlara indirgenmiş halidir. Evreni insan boyutlarına indirgeyen profesyonel rahipler, kendi tanımladıkları bu kosmozu evrenin tümü diye satarlar.</li>
+</ul></li>
+<li><b>Dünyanın temel formülü</b>
+<ul class="org-ul">
+<li>Böyle bir formül yoktur fakat Kepler Kuralı ile gezegenlerin yörüngelerini hesaplayabiliyoruz, hatta yörünge olan her yerde, yıldızlar dahil, Kepler Kuralı karşımıza çıkıyor.</li>
+</ul></li>
+<li><b>Newton astronomiyi tablolardan kurtardı mı?</b>
+<ul class="org-ul">
+<li>Newton Kepler Kuralı'nı kullanarak gezegenlerin yörüngelerini hesaplamıştır, ama bugün uzay araçlarını uzaya gönderirken Kepler Kuralı kullanılmaz, pratikte hala tablolar kullanılır.</li>
+</ul></li>
+<li><b>Newton Kepler Kuralı'nı çalıyor</b>
+<ul class="org-ul">
+<li>Newton Kepler Kuralını çalıp sanki kendi yeni bir doğa gücü bulmuş gibi satmıştır.</li>
+</ul></li>
+<li><b>Kepler Kuralı</b>
+<ul class="org-ul">
+<li>Bir yörüngede, yarıçapın dönemin 1.5 katına oranlı olduğunu söyleyen ve Kepler tarafından bulunmuş bir oran.</li>
+</ul></li>
+<li><b>Newton'un asıl buluşu</b>
+<ul class="org-ul">
+<li>Newton Kepler Kuralı'nın yoğunluğun tanımı olduğunu bulmuş ve bunu <i>İlkeler</i>'in 1. tanımında şifreleyerek gizlemiştir.</li>
+</ul></li>
+<li><b>Newton aldatmacası</b>
+<ul class="org-ul">
+<li>Newton'un güç diye bir şey bulduğu ve gezegenlerin yörüngelerini bu güç ile hesapladığı yalanı.</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3b25787" class="outline-2">
+<h2 id="org3b25787"><span class="timestamp-wrapper"><span class="timestamp">[2021-11-07 Sun]</span></span></h2>
+<div class="outline-text-2" id="text-org3b25787">
+<ul class="org-ul">
+<li>Blog gibi bir şey yapabilir miyim acaba diye düşündüm.</li>
+<li>Dün web sitesini işler hale getirdim, navigation bar biraz zorladı ama sonunda ekledim.</li>
+<li>Sabah biraz yeni yazı yazdım</li>
+<li>Dün yazdıklarımı düzelttim ( taslak-2021-11-05 )</li>
+<li>Akşam web sitesindeki linkleri düzelttim</li>
+<li>Wikipedia'da Cavendish deneyi sayfasına baktım, birisi ilk sayfadaki resmi çıkartıp kendi garajında yaptığı bir aletin resmini koymuş. Talk sayfasında değiştirilsin diye not bıraktım belki ben de değiştirebilirim.</li>
+<li>Yeni yazı yazmak yerine olan yazıları eklesem daha iyi olur diye düşündüm.</li>
+<li>Newton'un yaptığı 6 astronomi hesabının çıktısını aldım, Türkçe'ye çvirmem lazım.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4509d27" class="outline-2">
+<h2 id="org4509d27"><span class="todo TODO">TODO</span> Astronomical Computations in Newton's Principia Türkçe'ye çevir</h2>
+</div>
+<div id="outline-container-orgc624cf0" class="outline-2">
+<h2 id="orgc624cf0"><span class="todo TODO">TODO</span> Densmore <i>The Central Argument</i> okumaya başla</h2>
+</div>
+<div id="outline-container-org486de7e" class="outline-2">
+<h2 id="org486de7e"><span class="todo TODO">TODO</span> Cavendish deneyinin Kepler Kuralı olduğunu gösteren yazıyı bul, incele.</h2>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-02 Mon 08:57</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
