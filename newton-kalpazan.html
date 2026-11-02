@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-02 Mon 09:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-orgd9707fd" class="outline-2">
+<h2 id="orgd9707fd">Kalpazan Newton: hem suçlu hem güçlü</h2>
+<div class="outline-text-2" id="text-orgd9707fd">
+<p>
+(<a href="pdf/newton-kalpazan.pdf">Aynı yazı PDF olarak</a>)  
+</p>
+
+<ol class="org-ol">
+<li></li>
+</ol>
+
+<p>
+Newton’un kalpazanlığı pek bilinmez. Darphanede müdürlük yaparken yakalayıp darağacına yolladığı para kalpazanlarından daha kalpazandı Newton.
+</p>
+
+<p>
+Newton’un suçu sahte para basmak değil; Newton’un suçu, sahte bir “güç” tanımlayıp, gerçek diye pazarlamak; sahte bir “dünya sistemi” kurup bütün insanlığa gerçek dünya diye satmaktır.
+</p>
+
+<p>
+Newton’un bilim düşmanı bir kalpazan, akademik tarikat şeyhi, ve sahte dünya pazarlayıcısı olduğunu insanlara anlatabilmek biraz zor; Newton efsanesini delmek kolay değil.
+</p>
+
+
+<p>
+Newton insandan çok tanrılara yakın bir deha olarak putlaştırılmış; ve insanlara evrenin yasasını indiren bilim peygamberi olarak markalaştırılmış. Putlaştırmayı ve markalaştırmayı yapan da bu işlerin kitabını yazmış olan, dünyanın en eski bürokrasisi; Avrupa skolastik bürokrasisi; bugünkü adı ile, fizik.
+</p>
+
+<p>
+Bu bürokrasi en kıymetli markası olan “Newton”u, sonuna kadar koruyacaktır. İşlevini çoktan yitirmiş Newton öğretisi, bir İngiliz sömürü markası olarak devam edip gidecektir. Sahtekar felsefe doktoru Newton çoktan öldü; ama sahtekarlığı güçlü Newton markası altında insanları aldatmaya devam ediyor.
+</p>
+
+<p>
+Tabiatın Newton kanunlarına uyduğu, insanlara alfabeleri ile birlikte öğretilir. Okuma yazmayı öğrenirken çocuklar, tabiatın madde olduğunu ve kanunları olduğunu ve bu kanunları büyük İngiliz bilim adamı Sör İsaac Newton’un bulduğunu da öğrenirler. Genç dimağlar Newtonculuk kültü ile büyürler; Newtonculuk kültünü bilim zannederler; bilimin sorgulamak olduğu onlara öğretilmez; bilimin Newton’un öğretilerine tek gerçek doğru diye inanmak olduğu öğretilir.
+</p>
+
+<p>
+İnsanlara, Newton’un bir sahtekâr olduğunu söylemek, onlara alfabelerinin yanlış olduğunu söylemek gibidir; inanmazlar. Newton kanunları olmasaydı uydular dünyaya düşerdi, diye mantık yürütürler.
+</p>
+
+<p>
+Newton, bilimi kendini tanrılaştırmak için ve kendi adına bir okul kurmak için kullanmış; ve bağımsız bilimsel düşüncenin gelişmesini şimdiye kadar engellemiş, bir sahtekardı; diye bir iddia ortaya atsak; bu ispatlanabilinir mi?
+</p>
+
+<p>
+İspatlansa ne değişir?
+</p>
+
+<p>
+Genelde, Newton markası hakkında yazılmış herşey -iyi veya kötü- Newton efsanesini güçlendirmekten başka bir işe yaramaz. Newton’un bütün zamanların en büyük bilim düşmanı olduğunu belgelerle kanıtlasak bile; Newton efsanesine katkıda bulunmuş olurduk. Yine de Newton’un asıl yüzünün bilinmesinde fayda olduğunu düşünüyorum.
+</p>
+
+<ol class="org-ol">
+<li value="2"></li>
+</ol>
+
+<p>
+Newton evrensel güç diye bir şey bulmamıştır.
+</p>
+
+<p>
+Bulamazdı. Tabiatta Newton’un tanımladığı türden bir güç yok; bunu Newton’un müritleri fizikçiler bile kabul ediyorlar.
+</p>
+
+<p>
+Newtoncuların 300 senede geliştirdiği Newton efsanesini delip asıl Newton’u bulmak için, Newton’un kendisinin yazdıklarına bakmalıyız; yani Principia diye bilinen kitaba.
+</p>
+
+<p>
+Principia‘yı yazan kişi, tanrısal bir varlık değildi; doğum ve ölüm tarihleri belli, ölümlü ve insan vücutlu; zamanının standart peripatetik ve dinî eğitimini almış, sıradan bir Avrupalı skolastik felsefe doktoruydu.
+</p>
+
+<p>
+O zamanlar, her felsefe doktoru kendini ispatlamak için “De Motu” yani “hareket hakkında” adlı Latince bir kitap yazmalıydı. Bugün de hâlâ eski Avrupa kütüphanelerinde saklanan; kimsenin okumadığı, meşhur skolastik yorumlar işte bu gibi kitaplardan meydana geliyordu. Galileo’da bir De Motu yazmıştı.
+</p>
+
+<p>
+Günümüzün skolastik felsefe doktorları, “hareket” hakkında değil; hareketin tek sebebi olduğuna inandıkları “gravitasyon” üzerine yorumlarını yazarlar; bu da artık skolastik doktorların tabiata değil -Aristo’ya bile değil- fakat şeyhleri Newton’a yorum yazdıklarını gösterir. Newton efsanesinin ne kadar yerleşik olduğunun bir kanıtı daha.
+</p>
+
+<p>
+Principia‘da, Newton müritlerine, “tabittaki güçleri bulacaksınız, işiniz bu” diye direktif vermişti.
+</p>
+
+<p>
+Fizikçiler, şeyhülfiziğin bu emrine hâlâ uyarlar; gözlemleri Newtoncu öğretiye uygularlar.
+</p>
+
+<p>
+Newton mezun olduktan sonra, akademik hayata atılmış ve kendisinden beklendiği gibi, bir De Motu yorumu üretmiştir.
+</p>
+
+<p>
+Nedir bu De Motular?
+</p>
+
+<p>
+De Motu, skolastik kariyer için gerekli, kitap şeklinde sunulmuş bir lüzumsuzluk abidesidir.
+</p>
+
+<p>
+De Motu, skolastiklerin hareket hakkında daha önce yazılmış yorumlara yorum olarak yazdıkları; uzun ve otoriter; mutlaka Latince yazılmış; ve salt Latince yazılmış olduğu için bilim statüsüne erişmiş; yazandan başka kimsenin okumayacağı; karanlık ve karmaşık; yani, “skolastik” kelimesinin bütün kötü anlamlarının cisimlendirilmiş halidir.
+</p>
+
+<p>
+Newton bir Descartes hayranıydı; aynı Descartes gibi bir dünya sistemi kurmak istiyordu; böyle bir sistemin taslağı olarak yazdığı De Motu yetersizdi ve yayınlamaya bile gerek duymamıştı.
+</p>
+
+<p>
+Bir dünya sistemi kurmak kolay değildir; hele Google öncesi zamanlarda hiç kolay değildi. Dünya sistemi kurabilmek için; o sistemin bütününü tanımlayan genel ve birleştirici bir ana fikir olması gerekir. O birleştirici ana fikir, tasarlanan dünyanın hem varoluş nedeni olmalı, hem de o dünyada gözlemlenen her şeyi açıklamalı ve öngörebilmelidir. Zordur böyle bir kural bulmak.
+</p>
+
+<p>
+Günümüzde, sicim teorisinin sicim kavramı böyle birleştirici ve dünya yapıcı bir fikir olarak ortaya atılmıştır.
+</p>
+
+<p>
+Batlamyus’un birleştirici ana fikri, dairesel yörüngelerin kutsallığı idi.
+</p>
+
+<p>
+Descartes’ın girdaplar dünyası, Newton’un zamanının egemen dünya sistemiydi. Gezegenlerin her hareketini girdap metaforu ile açıklamaya çalışmaktaydı Descartes; fakat bunda pek başarılı olamamıştı.
+</p>
+
+<p>
+Aristo ise çelişki mantığı üzerine bir dünya kurmuştu.
+</p>
+
+<p>
+Günümüzde dünyanın fraktal olduğunu varsayan dünya kurucuları da vardır; bir fizikçi, evrenin bilgisayar olduğunu iddia etmektedir; diğer fizikçiler evrenin üzümlü kek olduğunu; futbol topu olduğunu; içinde makarna kaynayan bir kazana benzediğini; ileri sürmüşlerdir.
+</p>
+
+<p>
+Bunlar sadece şimdi aklıma gelenler; Google’da ararsanız, dünya taslakları borsasında fizikçilerin pazarladığı daha bir çok eğlenceli dünyalar bulabilirsiniz; dünya tasarlamanın kendi başına bir meslek olduğunu görürsünüz.
+</p>
+
+<p>
+Newton’un zamanında, seçkin ve özel bir meslek olan dünya kuruculuğunun, bir tek mensubu varken -Newton’un kendisi- bugünlerde her kendine fizikçiyim diyen ortaya bir dünya taslağı atıyor; bu dünyaların hepsi de, rastlantıya bakın ki, o fizikçinin uzmanlaştığı alan neyse onun üstüne kurulmuş oluyor; plazma fiziğinde uzman bir fizikçi “dünya plazmadır” diye yeni bir dünya yaratıveriyor. Dünya kurma işi bile sulandırılmış ve tüketim toplumunun gereklerine uydurulmuş.
+</p>
+
+<p>
+Newton’un en büyük hayali kendi adına patentli bir dünya sistemi kurmak olduğu halde, ne yazık ki, elinde bir dünya ana fikri yoktu.
+</p>
+
+<p>
+Buna rağmen, tasarladığı “Newton’un dünya sistemi”nin bazı temel özelliklerini biliyordu.
+</p>
+
+<p>
+Descartes’ın dünyası bir girdaplar -yani doluluk- dünyası olduğu için, Newton’un yeni dünyası bir boşluk dünyası olmalıydı, bu kesin; eski Fransız doluluğuna Newton, yeni İngiliz boşluğu ile karşı çıkacaktı. Zaten bu iki ezeli düşman ülkelerin aynı dünya görüşünü paylaşmaları mümkün değildi. Avrupa’da bilimsel düşünce hiç bir zaman şahsi ve dini görüşlerden ve politikadan ayrı olamamıştır.
+</p>
+
+<p>
+Newton’un dünyası ayrıca, maddeci olacaktı; çünkü, Newton’un dediğine göre “tanrı dünyayı mutlak katı, bölünmez parçacıklar” olarak yaratmıştı. Newton kendini peygamber zannediyordu herhalde.
+</p>
+
+<p>
+İyi de; boş ve maddeci dünya varsayımları, Newton’un felsefi ve dini önyargılarından başka şeyler değildiler; bu iki nitel varsayımla, gezegenlerin hareketleri hesaplanamazdı. Bu haliyle kalsa, Newton’un dünyası, diğer uygulamasız skolastik dünya taslakları gibi unutulup gitmeye mahkum olacaktı.
+</p>
+
+<p>
+Fakat, henüz bilmese de, Newton seçilmiş bir insandı; nasıl döndüklerini bulmaya çalıştığı evrenin çarkları, Newton’a istediği dünya ana kuralını vermek için gizlice dönüyorlardı.
+</p>
+
+<p>
+Newton’un doğru zamanda doğru yerde olabilmesi için; tabiatı Newtoncu olarak yaratan tanrı, Cambridge’de de bir veba salgını çıkartmaktan çekinmedi; ve Newton, böylece, alın yazısını gerçekleştirmek üzere, şehir dışındaki baba evine geri döndü.
+</p>
+
+<p>
+Devamlı yağmurlu ve puslu bir havası olan bu beldede; ender güneşli günlerden birinde, Newton bahçede çalışmaya karar verdi; yazı takımını, bir tomar kağıdı ve kütüphanesinden seçtiği bir kaç kitabı alıp, elma ağacının altına oturdu.
+</p>
+
+<p>
+Yazdı, çizdi; güneşin verdiği rehavetle biraz kestirdi; üzerine konup onu uyandıran sineklere küfür etti; tokalı ayakkabılarından başlayıp yukarlara doğru tırmanan karıncalara fiske attı; mavi gökyüzünde, mavi-beyaz aya gözü takıldı, acaba ay peynirden mi yapılmış, ha, ha, ha, diye kendi esprisine gülerken, karnı guruldadı; uzanıp bir elma koparttı, çatır çutur yedi elmayı; yanlışlıkla ısırdığı kurdun yarısının elmanın üstünde can çekiştiğini görünce, lokmasını tükürdü; ağzını ceketinin koluyla sildi; keyifle gerindi, ayaklarını uzattı, ve getirdiği kitaplar arasından Astronomia Carolina adlı, arada sırada mektuplaştığı, astronom Thomas Streete tarafından yazılmış kitabın sayfalarını dalgın dalgın karıştırmaya başladı; hepsi bildiği şeylerdi.
+</p>
+
+<p>
+İşte Streete Jüpiter’in aylarının yörüngelerini hesaplamak için bir çizelge hazırlamıştı; dizi dizi sayılara bakan Newton yörüngeleri kafasında kolayca canlandırdı; Ganymede, Europa ve İo’nun gezegenleri etrafındaki hiç bitmeyen danslarınının o ilahi harmonisini düşünerek hayale daldı. . .
+</p>
+
+<p>
+Fakat o da ne!
+</p>
+
+<p>
+Streete, Newton’un o zamana kadar hiç görmediği bir işlemle yörüngeleri hesaplamaktaydı!
+</p>
+
+<p>
+Newton bilmediği şeyler görmeye alışkın değildi. Eğer Newton bilmiyorsa, o şey ya yanlıştır, ya uydurmadır, ya da gereksiz bir detaydır.
+</p>
+
+<p>
+Newton rehavetini silkeleyip, kitaba konsantre oldu.
+</p>
+
+<p>
+Streete, toparladığı gözlemlerden yaptığı bir çizelge ile yetinmemiş; bir de, yörüngenin yarıçapı ve dönemini bağlayan bir kural kullanmıştı. Yörüngenin dönemi, yarıçapın 1.5 katına oranlıdır, diyormuş bu kural.
+</p>
+
+<p>
+Nerden uydurmuş bu saçmalığı; 1.5 katıymış! Bu kural ancak şu Alman astroloğu Kepler gibi birinin uydurabileceği sayı gizemciliği olabilir . . . diye akıl yürütürken; bir sonraki sayfada, bu kuralı Kepler’in, Tycho Brahe’nin gözlemlerini analiz ederek bulduğunu okudu Newton.
+</p>
+
+<p>
+Büyük deha Newton, şaşırmıştı; her şeyin bir ilki vardır.
+</p>
+
+<p>
+Ama, kendine özel, erişilmez akıl yürütme yöntemlerini anında devreye sokan Newton, “ya doğruysa. . .” diye düşünüp çabucak toparlandı; tüy kalemini hokkasına batırıp, sayfanın kenarında Streete’in yaptığı hesapları tekrarladı.
+</p>
+
+<p>
+Hesaplar doğruydu; Newton’un aklı yatmıştı; evrenin kanununu bulduğu için kendi kendini tebrik etti.
+</p>
+
+<p>
+Evet, gerçekten de, bu basit kuralda, Newton; Streete’in -ve o zamana kadar hiç kimsenin- göremediği, bir şey görmüştü. Kendine, bir kitap yoluyla vahiy indirildiğini anlamıştı Newton; tanrı gözlerini açmış ve ona evrenin kanununu göstermişti.
+</p>
+
+<p>
+Her peygamber, peygamberliğe erişmek için, ıssız bir yerde inzivaya çekilir; eski mitolojilerin yaşadığı bir yerdir mutlaka burası; orada peygamberi peygamber yapan mucize gerçekleşir.
+</p>
+
+<p>
+İşte peygamberlik adayı Newton da, en eski peygamberlik mitolojisinin; pandoranın kutusunun; yasak bilgi ağacının; Adem’le Havva’nın; olduğu o malum elma bahçesi mitolojisine uygun olarak, vahiy verilmek üzere, bir elma ağacının altına oturtturulmuş; ve vahiy gelmişti.
+</p>
+
+<p>
+Diğer bir metafor boyutuna geçersek; Newton’un bulduğu bu kural, simyacıların felsefe taşı gibi, Newton’un skolastik De Motu‘sunu bilimsel altına dönüştürecekti.
+Usta simyacı Newton, vahih mahiy diye sallasa da, pratikte, filozof taşının kucağına düştüğünü anlamıştı. Üzümü ye, bağını sorma.
+</p>
+
+<p>
+Ve Newton, eğer Arşimed daha önce söylememiş olsaydı, “Evreka! Evreka” diye sokaklarda bağırabilirdi, ama yapmadı; duygularını göstermek İngiliz karakterine uymazdı; ve kendisi Newton’du; tabii ki dünya kanununu bulacaktı; bunda havaya girecek bir şey yoktu; doğaldı.
+</p>
+
+<p>
+Gururlu ve sakin, Newton odasına geri döndü ve Kraliyet astronomu Flamsteed’e bir not yazdı. Streete’in bu yeni kuralla yaptığı hesapların gerçekten de Jüpiter’in uydularının yörüngelerini doğru olarak verip vermediğini sordu.
+</p>
+
+<p>
+Cevap sonradan “doğrudur” diye gelecektir; ama kendi dehasına sonsuz güveni olan Newton, cevabı beklemeye gerek duymadı; De Motu‘sunun üstündeki kalın toz tabakasını üfledi; “De Motu” kelimelerinin üstünü çizip, “Philosophia Naturalis Principia Mathematica” yazdı.
+</p>
+
+<p>
+Ve bilim altın çağına girmiş oldu.
+</p>
+
+<p>
+Newton’la tanrısı birbirlerine göz kırptılar; insanları bilimsel karanlıktan kurtaracak mekanik Musa’sı dünyaya gelmişti; tanrı, yarı tanrılığa yükselen Newton’u, o akşam vereceği “tanrıların kokteyline” davet etti; Principia‘dan öğrendiğimize göre, Newton ve havari Halley, bu kokteyle katılmışlar ve tanrıdan bir komet hakkında tüyolar bile almışlardı.
+</p>
+
+<p>
+Yalnız bir problem vardı.
+</p>
+
+<p>
+Aslında problem sayılmaz; Newton gibi peygamberleşmiş eski bir skolastik bürokrat için çözülemeyecek problem olamaz; en kötü ihtimal müritleri sonradan çözüp Newton’un çözdüğünü söylerler.
+</p>
+
+<p>
+Çok tekrarlanmış bir hikayeye göre; Avrupanın tartışmasız, en üstün zeka ailesi olan Bernoulli ailesi; ki Bach ailesinin müzikte kurduğu hanedanlığı matematikte kurmuşlardı; ne yazık ki, bütün uğraşmalarına rağmen çözemedikleri bir problemle karşı karşıyaydılar. Pratik şakaları çok seven aile “biz çözemediysek kimse çözemez, en iyisi bu çetrefilli problemi Newton’un başına saralım” demişlerdi.
+</p>
+
+<p>
+Newton, Bernoulli’lerden mesaj getiren atlıyı duyunca kapısını açmış; mesajı almış, okumuş ve bekleyen kuryeye çözümü uzatıp “söyle o Bernoulli biraderlere bir daha böyle basit problemlerle vaktimi harcamasınlar” demiş.
+</p>
+
+<p>
+Ve bu peygamberliğinden önce olmuş bir olay! Nasıl ki, Newton’un bulduğu evrensel güç, zaman geçmeden bir maddeden ötekine gidip gelebiliyorsa; Newton da zaman geçmeden problem çözebiliyormuş.
+</p>
+
+<p>
+Fakat şimdi, kariyerinin bu önemli noktasında, Newton’un çözmesi gereken problem şuydu: Kepler’in bulduğu söylenen bu kuralın, aslında Newton’un bulduğu bir tabiat kanununun basit bir yan etkisi olduğunu bütün dünyayı inandırmalıydı.
+</p>
+
+<p>
+Newton bu pazarlama problemini çözmek için, Kepler kuralını, kendi dinamik prensiplerinden indirgeyecekti; kurala bazı teorik ve politik müdahele ve ayarlamalar yapacaktı; patentli bir dünya markası kurmanın onda dokuzu zaten pazarlamaydı.
+</p>
+
+<p>
+Streete tipik bir astronom olduğu için pazarlamadan anlamazdı; kendini satmasını hiç öğrenememişti; onun aklı sadece hesaplara yatıyordu; bu yüzden, saf saf, “Keplerin bulduğu bu kuralı denedim, ve iyi sonuçlar aldım” diye, diğer bir araştırmacıya övücü sözler söylemek gafletinde bulunmuştu.
+</p>
+
+<p>
+Tabii ki, “Newton” markalı bir dünya sistemi, “Kepler” denen bir Alman astronom parçasının sözde bulduğu bir kural üstüne kurulamazdı.
+</p>
+
+<p>
+Newton artık dünyasının temel kuralını bulmuştu ve büyük düşünmekteydi; geçmişte ve gelecekte, yapılmış ve yapılacak, bütün buluşlar Newton tarafından yapılmıştı; insanlık geçmişi, Newton denen deha zirvesine ulaşmak için geçmiş uzun bir hazırlık safhasından başka bir şey değildi. . .
+</p>
+
+<ol class="org-ol">
+<li value="3"></li>
+</ol>
+
+<p>
+Newton’un dünya sistemi, Newton’un şahsen bulduğu bir temel tabiat kanunu üzerine kurulacaktır. O kanun nasıl tanımlanmalıydı?
+</p>
+
+<p>
+Kepler’in kuralını gördüğünde, Newton zaten o kanunun ne olacağını biliyordu: evrensel çekim gücü.
+</p>
+
+<p>
+Newton hemen işe koyuldu ve Keplerin kuralını markalaştırmaya başladı.
+</p>
+
+<p>
+Newton’un Kepler kuralını markalaştırma yöntemi, skolastik felsefe doktorlarının o çok iyi bilinen “böl ve sahiplen” yöntemiydi. Newton bu işin ustasıydı.
+</p>
+
+<p>
+İşleri güçleri teorik yorumlara daha derin teorik yorumlar yazmak olan skolastik doktorlar; rakiplerinin uydurduğu bir fikri alır, o fikri ikiye bölüp, bu yeni parçalara kendi öğretilerini çağrıştıracak isimler koyarlardı.
+</p>
+
+<p>
+Bu kılı kırk yarma metodunu, usta bir felsefe doktoru -teoride- sonsuza dek devam ettirebilirdi; pratikte ise, bu böl sahiplen işi, kitabın kaç sayfa olacağına göre ayarlanırdı.
+</p>
+
+<p>
+Eğer skolastik doktor bin sayfalık, orta boy bir yorum yazmayı planlamışsa; ilk beş yüz sayfası, bölüp isimlendirmeye; geri kalan beş yüz sayfa da, uydurulan isimlerin teker teker elenmesine ayrılırdı.
+</p>
+
+<p>
+Skolastik indirgeme sonucunda, kendi uydurduğu isimleri eleyip de orijinal kavramı yeniden bulan indirgeyici skolastik doktor; çaldığı orijinal kavramı kendisinin bulduğunu iddia ederdi; çünkü onu kendi öğretisinden indirgemişti.
+</p>
+
+<p>
+Bu oyunu herkes bildiği için, kimse birbirinin bitmez tükenmez indirgemelerini okumazdı; otomatik olarak birbirlerini hırsızlıkla suçlarlardı; sonunda bu bilimsel tartışmayı kazanan, kendi öğretisini en iyi pazarlayan doktor olurdu; ve kendi kuşağının en büyük bilim adamı olarak Avrupa tarihine geçerdi; ve onun bu anıt kitabı sömürge ülkelerinde kurulmuş Avrupa okullarında, Avrupa’nın bilimselliğine ve akılcılığına, sömürge halklarının nasıl -ne kadar uğraşırlarsa uğraşsınlar- hiç bir zaman ulaşamıyacaklarının kanıtı olarak okutulurdu.
+</p>
+
+<p>
+Bu indirgeme işinin büyük ustası Newton, kendine yazdığı bir notta, Leibniz’i skolastik indirgeme yapmakla suçlamıştı; kendisinin icat ettiği dinamik bilimini, Leibniz’in yeni adlar takarak sahiplenmeye çalıştığından şikayet etmişti.
+</p>
+
+<p>
+Şimdi aynı tip skolastik indirgemeyi, kendisi Keplerin kuralına uygulamaya hazırdı.
+</p>
+
+<p>
+Kepler kuralı en basit olarak,
+</p>
+
+\begin{equation*}
+    \text{Y}^3=\text{D}^2
+\end{equation*}
+
+<p>
+şeklinde yazılır (\(\text{Y}= \text{Yörüngenin yarıçapı}; \text{D}=\text{Yörüngenin dönemi}\)).
+</p>
+
+<p>
+Newton bunu hemen
+</p>
+
+\begin{equation*}
+    \frac{\text{Y}}{\text{D}^2} = \frac{1}{\text{Y}^2}
+\end{equation*}
+
+<p>
+olarak ikiye böldü ve iki tarafı da o “bulduğu” yeni tabiat kanunu “güç” diye etiketledi.
+</p>
+
+\begin{equation*}
+    \frac{\text{Y}}{\text{D}^2} = \text{Güç}
+\end{equation*}
+
+\begin{equation*}
+    \frac{\text{1}}{\text{Y}^2} = \text{Güç}
+\end{equation*}
+
+<p>
+Newton elma ağacının altında evrensel bir güç bulmadı; Kepler kuralını buldu; gücü Kepler kuralını sahiplenmek için uydurdu.
+</p>
+
+<p>
+Kepler kuralını bölmeye devam eden Newton, “maddenin miktarının ölçüsü” diye tanımladığı kütleyi de Kepler kuralına monte etti.
+</p>
+
+<p>
+Kepler kuralı ile yörüngeleri hesaplayabilmek için, yarıçap ve dönem için üniteler seçmemiz gerekir; bir ünite terimi ile Kepler kuralını şöyle yazabiliriz:
+</p>
+
+\begin{equation*}
+    \frac{\text{Y}_0^3}{\text{D}_0^2} = \frac{\text{Y}^3}{\text{D}^2}
+\end{equation*}
+
+<p>
+\(\text{Y}_0^3/\text{D}_0^2\) terimi ünite olarak sabit tutulur. Newton işte bu sabit terimi “kütle” diye etiketledi,
+</p>
+
+\begin{equation*}
+    \frac{\text{Y}_0^3}{\text{D}_0^2} = \text{Kütle}
+\end{equation*}
+
+<p>
+Ve böylece, salt geometrik Kepler kuralı gitti; dinamik Newton kanunları geldi.
+</p>
+
+<p>
+Newton bir kaç kalem darbesiyle, aslen geometrik ve maddesiz bir dünyayı, maddeli ve okült olarak kanunlaştırmış oldu.
+</p>
+
+<p>
+Bundan sonra, Newton kendini, “Newton’un Dünya Sistemi”nin detaylarını tanımlamaya verdi.
+</p>
+
+<p>
+Newton Streete’in astronomi ders kitabında görüp de, kendi adına markalaştırdığı bir kuralı temel alarak, yeni bir dünya sistemi yaratmaya koyuldu.
+</p>
+
+<p>
+Bütün gözlemleri; bilinen ne varsa, her şeyi; yeni etiketler uydurarak açıkladı; ve böylece, kendi içinde tutarlı, fakat hayali ve farazi, bir dünya yarattı.
+</p>
+
+<p>
+Kepler kuralının hiç bir güç gerektirmeden açıkladığı yörüngeleri, kendi dinamik öğretisine uyarlamak için, Newton yeni bir tabiat kanunu yazıp, yürürlüğe koydu; ve “Newton’un 1. kanunu” dedi bu kanununa.
+</p>
+
+<p>
+Eğer merkezdeki cismin çekim gücü olmasaydı; uydusu, yörüngesinden fırlayıp düz bir çizgi üstünde uçup giderdi, diye bir masal uydurdu Newton.
+</p>
+
+<p>
+Şimdiye kadar kimse düz çizgide hareket eden bir uzay cismi görmemiştir. Yok böyle bir şey. Düz çizgide hareket kanunu, Newton’un simya laboratuarında uzun uzun kaynattığı cıvadan duman altı olup da uydurduğu, sonra kendinin de inandığı bir safsatadır.
+</p>
+
+<p>
+Düz bir çizgide yoluna devam eden bir cismin var olduğunu varsaysak bile, bu cismin, Newton gücü gibi dinamik bir güç tarafından yakalanıp kapalı bir yörüngeye sokulmasının imkansız olduğunu; bir mıknatısın etrafında yörünge yaratmanın imkansızlığını bilen herkes bilir.
+</p>
+
+<p>
+Güç tarafından kurulan bir yörünge, ne inanılmaz bir mucizedir!
+</p>
+
+<p>
+Kutuplarda buzdolabı ticaretinden köşeyi dönebilecek kalibrede bir pazarlamacı olan Newton için, uydurduğu hiç bir mucizeyi bilimsel gerçek olarak satmak zor değildir.
+</p>
+
+<p>
+Usta skolastik pazarlamacı-şeyh-peygamber ve de kalpazan sör Newton; öğretisinin temel dogması madde ile gücü de başarı ile birleştirdi; güç, madde denen bölünmez ana parçacıklar arasında iletişim kurup hareket yaratır, dedi.
+</p>
+
+<p>
+Madde arasında böyle bir güç gerçekten olsaydı, zaman geçmeden gidip geliyor olacaktı. Newton’un kendisi, bu tip okült güçleri varsayanları, bilim düşmanı skolastikler olmakla suçlamış ve bilimi okült güçlerden kurtardığını yazmıştı. Hem suçlu, hem güçlü!
+</p>
+
+<p>
+Newton, “işte bakın, güç ile hesaplar yapıyorum, ve iyi sonuçlar alıyorum; o zaman güç kanunum doğru olmalı” dedi. Bu gücün detaylarını, ilerde müritlerinin bulacağını söyledi; şimdi çok zayıf bir güç olduğu için kendisi ölçemiyormuş.
+</p>
+
+<p>
+Dünya sistemini kurarken, Newton’u en çok zorlayan kütleydi.
+</p>
+
+<p>
+Gözlem kökenli Kepler kuralında madde veya kütle yok; tamamen geometrik ve çekimsiz bir dünya tanımlıyor. Newton’un hayali ve farazi dinamik dünyası ise gezegenlerin, ihtiva ettikleri madde oranında birbirlerini çekmelerini gerektiriyordu.
+</p>
+
+<p>
+Principia‘nın 1. bölümünde, Newton, gezegenleri geometrik noktalar olarak aldığı için, kütle konusu işleri bozmuyordu; ama 3. bölümde, gezegenlerin gerçek ve kütleli gezegenler olduğunu varsayıyordu; bu da Kepler kuralına uymadığı için, Newton gezegenlerin yörüngelerini hesaplayamıyordu.
+</p>
+
+<p>
+Geometrik bir dünyayı, kendi dinamik öğretisine uydurmak isteyen Newton’u bu problem neredeyse pes dedirtecekti. Fakat sonunda Newton bu engeli de bir skolastik laf oyunuyla çözmeyi başaracaktı; her gök cismi “sanki” bütün kütlesi merkezinde toplanmış “gibi” çeker, diyerek…
+</p>
+
+<p>
+Newton’un keyfine göre, gezegenler kütlesiz noktalar gibi hareket edecekler; sonra maestro Newton, keyfi isteyince, “kütle!” diye buyuracak; bütün geometrik noktalar, kütleli nokta olacaklardı. Seç, beğen, al; hangisi işine gelirse; nokta da olur; kütleli nokta da…
+</p>
+
+<p>
+Newton’un müritleri daha sonra, Newton’un yarattığı bu cinas oyununa “nokta kütle” adını takarak, kütlesiz kütleyi resmi bir fiziksel miktar yapacaklar; Newtonculuğu da bilimsiz bilim olarak tarihe yazacaklardı.
+</p>
+
+<p>
+Bu tip skolastik uydurmalar Newton’un dehasının göstergeleridir. Gözlemler Newton öğretisini inkar ediyorsa, yanlış olan gözlemlerdir; Newton öğretisi doğru olarak tanrı tarafından Newton’a indirilmiştir; her gözlem, Newtoncu öğretiye yeni terimler ekleyerek açıklanabilir; Newton’un -ve Avrupa’nın- bilimsel metodu, tabiatı öğretiye uydurmaktır.
+</p>
+
+<p>
+Ve nihayet, bilimin miladı olan 1687’de, Newton’un dünya sistemi, Principia adlı kitapta paketlenerek; Avrupa skolastik camiasına, yeni akademik kutsal metinleri olarak dayatılır.
+</p>
+
+<p>
+Bye, Bye Aristo! Bin yaşa sen, yeni şeyhimiz, ey yüce Newton!
+</p>
+
+<ol class="org-ol">
+<li value="4"></li>
+</ol>
+
+<p>
+Newtonculuk, kısa zamanda, bütün Avrupa’ya, Newton’un güçlü propagandası desteğinde, yayıldı; sonra da bütün dünyaya, Avrupa sömürgeciliğinin de yardımıyla, yayıldı; ve bayrak devletlerinin resmi dini oldu.
+</p>
+
+<p>
+Newton’u şöhret yapan, Descartes’ın girdap teorisini çürütmesiydi; çünkü girdap teorisi gezegenlerin hareketlerini hesaplamakta yetersiz kalıyordu.
+</p>
+
+<p>
+Newton, Principia‘da verdiği örneklerle, bulduğunu söylediği yeni dinamik kanunları kullanarak gezegenlerin hareketlerini hesapladığını iddia etti.
+</p>
+
+<p>
+Hesapladı mı? Evet, hesapladı; ama Kepler kuralını kullanarak hesapladı; güç kullanarak değil.
+</p>
+
+<p>
+Bunu ispatlamak çok kolay.
+</p>
+
+<p>
+Principia‘da, yeni sisteminin işlemsel gücünü göstermek için, Newton sadece 6 tane örnek vermiştir. Bu hesapların hepsi Kepler kuralı kullanılarak yapılmıştır.
+</p>
+
+<p>
+Tabii ki, Newton hesaplarını Kepler kuralı ile yaptığını saklamaktadır; Newton Kepler kuralını kullanır fakat yaptığı işlemleri dinamik işlemlermiş gibi anlatan yorumlar yazar. Bu bilimsel sahtekarlığı bugünkü fiziğin kalıplaşmış Newton mekaniğinde göremezsiniz; ama Principia’da Newton’un sahtekarlığı açıkça görülebilir.
+</p>
+
+<p>
+Kepler kuralının iki parçası, \(1/Y^2\) ve \(Y/D^2\)‘yi, Newton “güç” diye etiketlemişti ya; hesaplarını da sanki güç etiketleri ile yapıyormuş gibi anlatıyordu; fakat sonunda “güç, eşittir güç” deyip ikiye böldüğü Kepler kuralını birleştiriyordu; hesaplar her zaman Kepler kuralı ile yapılıyordu.
+</p>
+
+<p>
+Newton ikiye böldüğü Kepler kuralını birleştirmek için dekoratif güç etiketlerini eliyordu. İşlemsel formüllerde güç yoktu.
+</p>
+
+<p>
+Bugün bile, inanılmaz bir tarikatçılık mantalitesi ile, Newton’un müritleri fizikçiler, direk Kepler kuralından başlayıp yörüngeleri hesaplamak yerine; aynen şehleri Newton’un yaptığı gibi güç terimlerini gereksiz yere yazıp elerler; bir çeşit duadır bu; Newton’un otoritesine saygıdır; Newtoncu tarikatın değişmez bir sünnetidir.
+</p>
+
+<p>
+Günümüzde Newton mekaniği diye bilinen şeye bakarak, sanki Newton’un Principia‘da bir mekanik geliştirmiş olduğunu zannedebilirsiniz.
+</p>
+
+<p>
+Hayır. Principia‘daki o altı basit hesaplamadan yola çıkarak Newton’un müritleri “Newton mekaniği”ni iki yüz sene içinde tamamlamışlardır. Newton’un, Newton mekaniği diye bir şeyden haberi yoktu.
+</p>
+
+<p>
+İşin ilginç yanı, Newton mekaniği artık Newton mekaniği değildir; sadece marka olarak Newton’a aittir; akademik fizikçilerin aksine, pragmatik astronomlar, Newton’un Kepler kuralına eklediği dinamik etiketleri atmışlardır.
+</p>
+
+<p>
+Laplace, 18. yüzyılın sonlarında, Newtoncu sistemi Fransız akademisi için Fransızlaştırdığı 5 ciltlik anıtsal çalışmasına “bu yapıtta güçle bir işimiz olmayacak” diye başlar. Evet, Laplace; Newton mekaniğini güç diye bir hipoteze gerek duymadan uygular.
+</p>
+
+<p>
+Aynı Laplace, “senin sisteminde tanrı nerede?” diye soran Napolyon’a “tanrı diye bir hipoteze gereksinim duymadım” diyen insandır.
+</p>
+
+<p>
+Tanrı, güç, madde ve para gibi tanımlar; inananlar inandığı için, sadece soyut bir boyutta gerçek olan tanımlardır; sadece inananların gerçeği olarak var olurlar. O zaman, bu kavramlar sebep değil sonuçturlar ve bilimsel açıklama yapmak için kullanılmazlar.
+</p>
+
+<p>
+Ondokuzuncu yüzyılda, Fransız astronomisi, Le Verrier’nin çalışmaları ile doruğa ulaşmıştı. Le Verrier, Newton mekaniği kullanarak gezegenlerin hareketlerini açıkladığını söylüyordu.
+</p>
+
+<p>
+Le Verrier’in yazdığı kitapları açıp bakın; ben baktım.
+</p>
+
+<p>
+Le Verrier uyduları trigonometrik yöntemlerle hesaplamaktadır; yani Batlamyus’un geometrik episiklerini, analitik olarak uygulamaktadır; kitapları sayfalar boyu uzayıp giden trigonometri formülleri ile doludur. Newton mekaniği lafta kalmıştır; Newton’un uydurduğu hiç bir dinamik etiket uygulamalı astronomide kullanılmaz.
+</p>
+
+<p>
+Newton efsanesi o kadar yerleşik bir bürokratik alışkanlıktır ki, NASA bile yörüngeleri bilgisayarlarda sayısal yöntemlerle hesapladığı halde; kendi web sayfalarında, uyduların Newton kanunlarına uyduğunu belirtir. NASA da uygulamada Newton’u devre dışı bırakmıştır, ama eski bir alışkanlık olarak Newton markasını devam ettirir.
+</p>
+
+<p>
+Bürokrasiler temel ideolojilerinin miadının dolduğunu, yanlış veya gereksiz olduğunu, hiç bir zaman kabul etmezler. İdeolojilerinin içini boşaltıp yeni metodlar kullanırlar ama ismini değiştirmezler.
+</p>
+
+<p>
+Burada adı geçen bürokrasi, Newton’un kurduğu akademik tarikattır.
+</p>
+
+<p>
+Newton; Principia‘da, bir kaç basit taslak olarak verdiği sözde dinamik hesaplar aracılığıyla, kendi öğretisi maddeci ve okült dünya görüşünün gerçek tabiat olduğunu; tabiatın Newtoncu olduğunu; Newtonculuğun bilim olduğunu, bütün dünyaya inandırmayı başarmıştı.
+</p>
+
+<p>
+Newton’un müritleri, Newton dinini başarı ile devam ettirmektedirler.
+</p>
+
+<ol class="org-ol">
+<li value="5"></li>
+</ol>
+
+<p>
+Gezegenlerin yörüngelerini; Newton’un uydurduğu ve Kepler kuralına monte ettiği hiç bir etiketi kullanmadan; sadece Kepler kuralının bozulmamış yalın halini kullanarak, başarı ile hesaplayabiliriz.
+</p>
+
+<p>
+Bundan çıkan sonuç nedir?
+</p>
+
+<p>
+Kepler kuralı, bildiğimiz tek hareket kuralıdır; Newtoncular Kepler kuralına kendi birimlerini ekleyerek ona “Newton mekaniği” demişler ve sahiplenmişlerdir.
+</p>
+
+<p>
+Eğer Kepler kuralı doğruysa, ki doğru olduğunu herkes kabul ediyor; o zaman Newtoncu maddeli bir dünyada yaşamadığımız ortaya çıkıyor.
+</p>
+
+<p>
+Zaten Newton kendi sisteminin sahte olduğunu biliyordu; çünkü Newton, Kepler kuralının yoğunluğun tanımı olduğunu anlayan ilk insandı.
+</p>
+
+<p>
+Newton’a elma ağacı altında indirilen gerçek buydu. Tanrı, Newton’a dünyanın bir yoğunluk sürekliliği olduğunu söyledi; işte sana yoğunluğu tarif eden formülü gösteriyorum; bunu al insanlara ver dedi.
+</p>
+
+<p>
+Tanrı Newton’a gücü indirmedi; yoğunluğun tarifini indirdi; Tanrı Newton’a, bak Newtoncuğum, frekans yoğunluğa oranlı, dedi. Newton hemen anladı elbette; frekans -yani hareket- yoğunluksa, madde olamazdı.
+</p>
+
+<p>
+Newton ise, kendi tanrısını aldattı; insanlığa doğru yolu göstermedi; onlara kendi uydurduğu sahte bir dünyayı sattı; kendisine indirilen bilgiyi insanlardan gizleyip, onu kendini tanrılaştırmak için kullandı.
+</p>
+
+<p>
+Newton’un tanrılara karşı suçu büyük. Tanrılar, Newton’u kara listeye aldılar ve onu ve havarilerini bir daha hiç bir kokteyle çağırmadılar.
+</p>
+
+<p>
+Ama insanlığa karşı suçu daha da büyük Newton’un. İşte deşifre edilmesi gereken de budur.
+</p>
+
+<p>
+Newton’un Kepler kuralını indirgeme yoluyla çalması önemli değildir.
+</p>
+
+<p>
+Newton’un, Kepler kuralını, bile bile, Principia‘da 1. tanım olarak ve yoğunluğun tanımı olarak şifrelemesi ve gizlemesi, ve bütün dünyaya maddeli ve kopuk bir tabiat modelini dayatması. . . insanlığa karşı suçu budur.
+</p>
+
+<p>
+Newton’un bilime ve insanlığa karşı suçu, Principia‘nın 1. tanımında gizlidir; hem de Newton’un kendisi tarafından, kendine karşı yazılmış, kesin bir delil olarak; durmaktadır.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-02 Mon 09:41</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
