@@ -1,0 +1,2291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-02 Mon 09:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org9dd2d26" class="outline-2">
+<h2 id="org9dd2d26">Experiments to determine the density of the earth / Henry Cavendish (1797)</h2>
+<div class="outline-text-2" id="text-org9dd2d26">
+<ul class="org-ul">
+<li><a href="https://upload.wikimedia.org/wikipedia/commons/5/5f/The_laws_of_gravitation%3B_memoirs_by_Newton%2C_Bouguer_and_Cavendish%2C_together_with_abstracts_of_other_important_memoirs_%28IA_bub_gb_O58mAAAAMAAJ%29.pdf">Experiments to Determine the density of the earth in MEMOİRS ON THE LAWS OF GRAVİTATİON</a>
+Cavendish'in makalesinin Türkçesi var mı bilmiyorum, belki vardır, bulursam onu eklerim, yoksa burada makalenin Türkçesi de bulunsun. Tercüme ilerledikçe ekleyeceğim.</li>
+</ul>
+</div>
+
+<div id="outline-container-orge939905" class="outline-3">
+<h3 id="orge939905">Dünyanın yoğunluğunu belirlemek için deneyler / Henry Cavendish (1797)</h3>
+<div class="outline-text-3" id="text-orge939905">
+<p>
+(Sayfa 59)
+</p>
+<ol class="org-ol">
+<li>Yıllar önce, şimdi ölmüş olan arkadaşım John Michell, o da bu cemiyetin bir üyesiydi, dünyanın yoğunluğunu hesaplamak için, küçük maddelerin birbirleri arasındaki çekimi ölçülebilir yapan bir alet geliştirmişti, fakat, başka işlerle meşgul olduğu için aleti ölümünden az öncesine kadar tamamlayamadı ve bu aletle deney yapamadan öldü.</li>
+
+<li>John Michell'in ölümünden sonra, bu alet, Cambridge'de Jackson kürsüsü profesörü, Rev. Francis John Hyde Wollaston'a geçti; o da bu aletle istediği gibi deneyler yapacak yeri ve zamanı olmadığı için, onu bana vermek nezaketini gösterdi.</li>
+
+<li>Bu alet çok basittir; hafif olmakla birlikte çok sağlam olan 6 feet (1.8 metre) uzunluğunda bir çubuktan meydana gelmiştir.</li>
+
+<li>Bu çubuk 40 inch (1.01 metre) uzunluğunda ince bir tel ile yere paralel olarak asılmıştır.</li>
+
+<li>Bu çubuğun her iki ucuna ortalama 2 inch (5.08 cm) çapında kurşun toplar asılmıştır.</li>
+
+<li>Çubuk ve toplar, rüzgarın etkisinden korunsunlar diye, dar bir ahşap kutunun içine konmuşlardır.</li>
+
+<li>Sarkacın kolunu merkezi etrafında döndürmek için asılı olduğu teli çevirmek için gerekli olan güçten daha fazlası gerekmediğine göre, çok açıktır ki, eğer tel yeteri kadar ince olursa, en küçük güç, mesela, bir kaç inch çapı olan kurşun bir ağırlığın çekimi, sarkacın kolunu oynatmaya yetecektir.</li>
+
+<li>John Michell 8 inch (20.32 cm) çapında ağırlıklar kullanmayı planlıyordu.</li>
+
+<li>Bu ağırlıklardan biri kutunun bir tarafına, küçük toplardan birinin tam karşısına, mümkün olduğu kadar yakın olarak, yerleştirilecekti; diğer ağırlık da diğer topun tam karşısına yerleştirilecekti, böylece bu iki ağırlığın çekim gücü sarkacın kolunu oynatmak için birleşmiş olacaklardı; ve bu pozisyondaki ağırlıkların kolu ne kadar oynattığı ölçüldükten sonra, ağırlıklar kutunun diğer tarafına yerleştirilecekti ve kolun ne kadar oynadığı tekrar ölçülecekti; ve sonuç olarak, bu pozisyonların [farkının yarısı] alınarak kolun ağırlıkların çekimiyle ne kadar oynadığı anlaşılacaktı.</li>
+
+<li>(Sayfa 60) Bu şekilde dünyanın yoğunluğunu belirleyebilmek için, sarkacın kolunu belli bir mesafe oynatmak için gerekli olan gücü hesaplamak gerekecektir.</li>
+
+<li>John Michell bu gücü hesaplamak için sarkacın kolunu hareket ettirmeyi düşünmüştü; dönemden gücü kolapca hesaplayabilirdi.[*]</li>
+
+<li>[*] Coulomb, buna benzer bir düzenek kullanarak, çok küçük çekim güçlerinin sebep olduğu hareketleri ölçtüğü deneyler yapmıştır. Fakat John Michell bana, bu aleti Coulomb'un deneyleri yayınlanmadan önce yapmayı planladığını ve nasıl kullanacağını belirlediğini söylemişti.</li>
+
+<li>John Michell kurşun ağırlıkları taşısın diye iki tane ahşap stand yapmıştı, ve standları iterek ağırlıkları neredeyse değecek kadar kutunun yakınına getiriyordu fakat görünüşe göre bu hareketi kendisi yapmayı düşünüyordu.</li>
+
+<li>Topları çeken ağırlıkların, toplara uyguladıkları çekim gücü çok küçüktür, ağırlıklarının \(\left ( \frac{1}{50,000,000} \right )\)'den (elli milyonda birinden) fazla değildir, çok açıktır ki,  sarkacın harekitine müdahale edecek olan çok ufak bir güç, deneyin başarılı olmasını engelleyecektir.</li>
+
+<li>ve bu yapılan deneyler gösteriyor ki engellemesi en zor rahatsız edici güç, sıcak ve soğuk değişikliklerinden doğan güçtür,</li>
+
+<li>çünkü eğer kutunun bir tarafı diğer tarafından daha sıcaksa, orada bulunan hava seyreltilmiş olacaktır ve sonuç olarak yukarı çıkacaktır, fakat öteki tarafta inecektir ve bu da kolu ölçülebilir şekilde oynatacak bir akım yaratacaktır. [**]</li>
+
+<li>[**] (Cavendish burada Cassini'nin yaptığı bir deneyle ve bu sıcak/soğuk akımından nasıl önlem aldığına dair uzun bir dipnot yazmış, gereksiz olduğu için şimdilik çevirmiyorum.)</li>
+
+<li>Bu hataya karşı korunmanın önemini anladığım için, aleti devamlı kapalı kalacak bir odaya kapatmaya karar verdim,</li>
+
+<li>ve kolun hareketini de odanın dışından bir teleskopla gözlemlemeye karar verdim, hiç odaya girmeden,</li>
+
+<li>ve kurşun ağırlıkları dışardan oynatabileceğim şekilde bir düzenekle asmaya karar verdim, böylece deney süresinnce odaya girmeme gerek kalmayacaktı.</li>
+
+<li>Gözlemleri yapmak için yöntemi değiştirdiğim için, Mr. Michell'in aletinde bazı değişiklikler yapmayı zorunlu kıldı.</li>
+
+<li>Bazı parçalarının da gerektiği kadar uygun olmadığını farkettiğim için, aletin büyük bir bölümünü yeniden inşa etmeyi seçtim.</li>
+
+<li>Şekil 1, aletin dikey kesitini ve içinde bulunduğu binayı göstermektedir.</li>
+</ol>
+
+
+<div id="org547d32f" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-image.jpeg" alt="cavendish deneyi görsel" width="70%" height="70%" title="cavendish deneyi görsel" align="center" />
+</p>
+<p><span class="figure-number">Şekil 1: </span>Cavendish deneyi</p>
+</div>
+
+
+<ol class="org-ol">
+<li>ABCDDCBAEFFE topların içinde bulunduğu kasadır.</li>
+
+<li>\(x\) ve \(x\) \(ghmh\) koluna \(hx\) telleri ile asılmış iki toptur.</li>
+
+<li>\(ghmh\) kolunun kendisi ince bir ip \(gl\) ile asılmıştır.</li>
+
+<li>İnce uzun sarkaç kolu \(hmh\) çam ağacıdır.</li>
+
+<li>Sarkaç kolu gümüş tel \(hgh\) ile güçlendirilmiş ve böylece, çok ince olduğu halde, topları taşıması mümkün olmuştur. [*]</li>
+
+<li>[*] Mr. Michell'in yaptığı kol tamamen ahşaptandı, benimkinden çok daha güçlü ve sert idi, ve çok da fazla ağır değildi. Fakat, bana geldiğinde kol eğilmişti bu sebepten yeni bir kol yapmayı seçtim. Bu şekli de yapımı daha kolay olduğu için ve daha az hava direnci gösterdiği için. Bir de şekli daha basit olduğu için, ağırlıklar tarafından ne kadar çekildiğini daha kolay hesaplayabilecektim.</li>
+
+<li>Kasa, yere sağlam olarak yerleştirilmiş 4 direk üzerinde duruyordu ve dört vida ile yatay düzlem için ayarlanabiliyordu. Vidaların ikisi \(S\) ve \(S\) olarak şekildi gösterilmiştir. Diğer ikisi şekli basitliğini bozmamak için gösterilmemiştir.</li>
+
+<li>\(G\) ve \(G\) binanın yan duvarlarıdır.</li>
+
+<li>\(W\) ve \(W\) kurşun ağırlıklardır. Ağırlıklar bakır çubuklar \(RrPrR\) ile ve ahşap çubuk \(rr\) ile merkezdeki \(Pp\) kamasına asılmışlardır.</li>
+
+<li>\(Pp\) kaması, \(HH\) kirişinin içinden geçip, aletin merkezine dik açı yapacak şekilde, ve kirişin içinde dönüyor, kirişten düşmesini de \(p\) plakası önlüyor.</li>
+
+<li>\(MM\) \(Pp\) kamasına sabitlenmiş bir makaradır. \(Mm\) de makaranın etrafında dolanmış bir iptir ve yan duvardan geçmektedir. Bu şekilde, gözlemci makarayı döndürerek, ağırlıkları bir taraftan diğer tarafa geçirebilmektedir.</li>
+
+<li>Şekil 2, aletin bir planıdır.</li>
+</ol>
+
+
+<div id="org28b361e" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-fig-2.png" alt="cavendish deneyi görsel" width="70%" height="70%" title="cavendish deneyi görsel" align="center" />    
+</p>
+</div>
+
+<ol class="org-ol">
+<li>\(AAAA\) kasadır.</li>
+
+<li>\(SSSS\), kasayı taşıyan dört vidadır.</li>
+
+<li>\(hh\) kol ve toplardır.</li>
+
+<li>\(W\) ve \(W\) ağırlıklardır.</li>
+
+<li>\(MM\) ağırlıkları döndüren makaradır.</li>
+
+<li>Ağırlıklar bu pozisyonda olduğu zaman, ikisi birleşip kolu \(hW\) yönünde çekiyorlar.</li>
+
+<li>Fakat kollar, şekilde kesik çizgilerle ifade edilen, \(w\) ve \(w\) pozisyonuna getirilince, bu sefer birlikte kolu ters yönde, yani \(hw\) yönüne doğru çekeceklerdir.</li>
+
+<li>Bu ağırlıkların alete çarpmasını önlemek için tahta parçaları ile durduruluyorlar; bu tahtalar binanın duvarına takılmışlardır ve ağırlıkları kasanın 1/5 inch yakınına gelmeden durdurmaktadırlar. Ağırlıklar duvara çarpsalar bile aleti sarsmadıklarını gözlemledim.</li>
+
+<li>Kolun nerede olduğunu öçmek için, kasanın içine fildişi cetveller yerleştirilmiştir, bu cetvelin her derecesi 1/20 inchtir. Bu cetvel, kollara çarpmadan mümkün olduğu kadar yakınlarına gelecek şekilde yerleştirilmiştir.</li>
+
+<li>Diğer küçük bir parça fildişi cetvel kolun iki ucuna yerleştirilmiştir, ve bu da ölçek (vernier) vazifesi görmektedir. Ölçek derecesi, cetvelin her derecesini 5 parçaya böldüğü için, kolun pozisyonu kolaylıkla 1/100 inch olarak ölçülebilmektedir ve hatta daha hassas olarak da tahmin edilebilmektedir.</li>
+
+<li>Cetvelin bu bölümleri Şekil 1'de \(T\) ve \(T\) olarak ifade edilen kısa bir teleskop aracılığı ile gözlemlenmektedir. Cetveli görmek için kasanın kenarlarında camla kapatılan küçük pencereler açılmıştır.</li>
+
+<li>Cetveli aydınlatmak için \(L\) ve \(L\) lambaları kullanılmıştır. Lambaların dışbükey mercekleri ışığı tam cetveli aydınlatacak şekilde ayarlanmıştır. Odaya başka hiçbir ışık girmemektedir.</li>
+
+<li>Fildişi cetveldeki dereceler \(Ww\) yönünde artıyor (Şekil 2), bu sebepten, ağırlıklar, kesik çizgilerle belirtilmiş \(w\) ve \(w\) pozisyonunda olduğu zaman, kol \(w\) ağırlıklara doğru çekildiği zaman, dereceler arttığı için, bu pozisyonu, pozitif pozisyon olarak kabul ediyorum.</li>
+
+<li>\(FK\) (Şekil 1) bir tahta çubuktur ve sonsuz bir vida aracılığı ile, \(gl\) telinin asılı olduğu plakayı döndürmektedir. Bu şekilde gözlemci kol tam kasanın ortasına gelene kadar, kasanın kenarlarına çarpmasını önleyerek, teli döndürebilmektir.</li>
+
+<li>\(gl\) teli, üstte kendisini taşıyan parçaya, ve altta, kola, pirinç kıskaçlarla tutturulmuş ve vidalarla sabitlenmiştir.</li>
+
+<li>Bu iki şekilde, değişik parçalar, birbirleri ile yaklaşık olarak aynı oranda ve 1/13 oranında çizilmiştir.</li>
+
+<li>Deneyleri anlatmaya başlamadan, gözlemlerin nasıl yapıldığını anlatmakta fayda olduğunu düşünüyorum.</li>
+
+<li>Kolun sabit durduğunu farzedin ve durduğu yeri gözlemleyin. Sonra, ağırlıkları hareket ettirin [toplara yaklaştırın demek istiyor herhalde]. Böylece kol ağırlıklara doğru hareket ettiği gibi, salınmaya da başlayacaktır. Kolun salınımı uzun müddet devam edecektir.</li>
+
+<li>[Ağırlıkların toplara Newtoncu çekim uygulamasının sonucu olan] bu hareketi ölçebilmek için, kolun iki uç noktasını gözlemlemek gerekir. Bu iki uç noktasından da, kolun hareketsiz kalıp duracağı orta nokta hesaplanacaktır.</li>
+
+<li>Kolun duracağı orta noktayı bulmak için, kolun üç birbirini takip eden uç noktasını gözlemliyorum ve birinci ve üçüncü uç noktaların ortalamasını alıyorum, böylece salınımın bir yöndeki uç noktasını bulmuş oluyorum. Ondan sonra bu nokta ile ikinci noktanın ortasını alıyorum, bu da kolun durduğu nokta oluyor.</li>
+
+<li>Sarkacın salınımı devamlı olarak azladığı için, açıktır ki, sadece iki uç noktanın ortası gerçek durma noktasını vermeyecektir.</li>
+
+<li>Birçok uç nokta gözlemleyerek, değişik üçlü uç noktaların ortalamasını almanın daha doğru bir sonuç vereceği düşünülebilir.</li>
+
+<li>Fakat, kol, çok seyrek olarak bir saat tam hareketsiz olarak durur (rahatsız edici güçlere karşı tedbir almamıza karşı). Bu sebepten, kolun sabit duracağı noktayı, ağırlıkları toplara yaklaştırdıktan hemen sonra yapılan gözlemlerle belirlemek en iyisi olacaktır.</li>
+
+<li>Bir sonraki işimiz sarkacın salınım dönemini bulmak olacaktır. Onu da şu şekildi buluyorum: Salınımın iki uç noktasını buluyorum ve aynı zamanda, kolun iki belli noktaya geldiği zamanları ölçüyorum, bu iki belli noktanın, kolun sabit kalacağı noktanın iki tarafında olmasına, ve tahmin edebildiğim kadar, sabit noktadan çok uzak olmamasına dikkat ediyorum.</li>
+
+<li>Sonra, salınımın orta noktasını hesaplıyorum, and, oranlı olarak, kolun bu orta noktaya geldiği zamanı ölçüyorum.</li>
+
+<li>Ve birkaç salınımdan sonra, aynı süreci tekrarlıyorum, ve kolun bu iki orta noktaya gelişinin zaman aralığını, salınımların sayısına bölüyorum, bu da bir salınımın zamanını vermiş oluyor.</li>
+
+<li>Aşağıdaki örnek burada anlattıklarımıza açıklık getirecektir.</li>
+</ol>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Uç noktalar</th>
+<th scope="col" class="org-left">Bölümler</th>
+<th scope="col" class="org-left">Zaman</th>
+<th scope="col" class="org-right">Sabit Nokta</th>
+<th scope="col" class="org-right">Orta noktanın zamanı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">97.2</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">25</td>
+<td class="org-left">10:23:04</td>
+<td class="org-right">&#x2013;&gt;</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">24</td>
+<td class="org-left">10:23:57</td>
+<td class="org-right">&#x2013;&gt;</td>
+<td class="org-right">10:23:23</td>
+</tr>
+
+<tr>
+<td class="org-right">22.1</td>
+<td class="org-left">--</td>
+<td class="org-left">--</td>
+<td class="org-right">24.6</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">27.0</td>
+<td class="org-left">--</td>
+<td class="org-left">--</td>
+<td class="org-right">24.7</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">22.6</td>
+<td class="org-left">--</td>
+<td class="org-left">--</td>
+<td class="org-right">24.75</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">26.8</td>
+<td class="org-left">--</td>
+<td class="org-left">--</td>
+<td class="org-right">24.8</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">23.0</td>
+<td class="org-left">--</td>
+<td class="org-left">--</td>
+<td class="org-right">24.85</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">26.6</td>
+<td class="org-left">--</td>
+<td class="org-left">--</td>
+<td class="org-right">24.9</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">25</td>
+<td class="org-left">11:05:22</td>
+<td class="org-right">&#x2013;&gt;</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">24</td>
+<td class="org-left">11:06:48</td>
+<td class="org-right">&#x2013;&gt;</td>
+<td class="org-right">11:05:22</td>
+</tr>
+</tbody>
+</table>
+
+<ol class="org-ol">
+<li value="63">İlk sütun salınımın uç noktalarını göstermektedir.</li>
+
+<li>İkinci sütun, ara bölümleri [dereceleri?] gösteriyor. [Burada Cavendish, cetvelden okuduğu kolun pozisyonundan bahsediyor olmalı. Kolun içinde bulunduğu kasanın içine herbir derecesi 1/20 olan bir cetvel var, oradan kolun pozisyonunu okuyor]</li>
+
+<li>Üçüncü sütun, kolun bu bölümlere geldiği zamanı gösteriyor ve dördüncü sütun bu şekildi bulunan sabit noktayı gösteriyor: Birinci ve üçüncü uç noktaların ortalaması 27.1'dir ve bu nokta ile ikinci uç noktanın ortalaması 24.6'dır, ve bu da ilk üç uç noktalardan hesaplanan sabit noktadır.</li>
+
+<li>Aynı şekilde, ikinci, üçüncü ve dördüncü uç noktalardan hesaplanan sabit nokta 24.7'dir. Ve böyle devam edebiliriz.</li>
+
+<li>Beşinci sütun kolun salınımın orta noktasına geldiği zamanı gösteriyor. Bu da şöyle hesaplanıyor: 27.2 ve 22.1'in ortalaması 24.65'tir ve ilk salınımın orta noktasıdır. Ve kol, 25'e 10:23:04'te ve 24'e 10:23:57'de geldiğine göre, oranlayarak, 24.65'e 10:23:23'te geldiğini hesaplıyoruz.</li>
+
+<li>Benzer şekilde, kol yedinci salınımın orta noktasına 11:05:22'de geldi, öyleyse, 41 dakika 59 saniyede altı salınım yapılmış oldu, veya bir salınım 7 dakika, 0 saniyede yapılmış oldu. [Bu sarkacın yarım dönemi mi, tam dönemi mi?]</li>
+
+<li>Bu yöntemin iyi uygunluğunu  değerlendirmek için, salınımın havanın direncinden ve sabit noktanın ["point of rest", hareketsizlik noktası olabilir, sabit nokta da olabilir, ama bu sabit nokta hareket ediyor] hareketinden nasıl etkilendiğine bakmalıyız.</li>
+
+<li>Kolun, birinci salınımda, \(D\)'den \(B\)'ye hareket ettiğini, ikinci salınımda da \(B\)'den \(d\)'ye hareket ettiğin varsayalım. (Şekil 3) \(Bd\) \(DB\)'den direçten dolayı, daha az olduğunu varsayalım. \(DB\)'yi \(M\)'de, \(Bd\)'yi \(m\)'de ve \(Mm\)'yi \(n\)'de iki eşit parçaya bölelim ve \(x\)'in salınımda herhangi bir nokta olduğunu varsayalım. O zaman, eğer direnç hızın karesine eşitse, salınım dönemi çok az değişmiş olur. Fakat, eğer \(T\) salınım dönemi ise, bir dairenin çapının yarı-çevresi gibi, \(B\)'den \(n\)'ye hareket zamanı bir salınımı \(\frac{1}{2}\) kadar aşacaktır, hemen hemen</li>
+</ol>
+
+\begin{equation*}
+\frac{T\times D\,d}{8\,B\,n}
+\end{equation*}
+
+<p>
+kadar, ve \(B\)'den \(m\)'ye bir salınımdan \(\frac{1}{2}\) kadar eksik kalacaktır, aynı miktarda. Ve \(B\)'den \(x\)'e hareket zamanı, ikinci salınımda, \(x\)'den \(B\)'ye hareketi önce ilk önce
+</p>
+
+\begin{equation*}
+\frac{T\times D\,d\times B\,x^2}{4B\,n^2\times \sqrt{B\,x\times x\,\delta}}
+\end{equation*}
+
+<p>
+kadar aşacaktır, (\(dd\)'nin \(\delta\)'da iki eşit parçaya bölündüğünü farzedersek.
+</p>
+
+<ol class="org-ol">
+<li value="71">Öyleyse, eğer bir ortalam alınırsa, kolun \(x\)'e ilk geldiği zaman ile, ve aynı noktaya dönüşü arasında, bu ortalama \(B\)'ye gelişinin gerçek zamanından</li>
+</ol>
+
+\begin{equation*}
+\frac{T\times D\,d\times B\,x^2}{8\,B\,n^2\;\sqrt{B\,x\times x\,\delta}}
+\end{equation*}
+
+<p>
+kadar daha önce [*] olacaktır
+</p>
+
+<p>
+[*] I. Todhunter'ın (1873) gösterdiği gibi bu kelime "önce" değil "sonra" olmalıdır. [Zaten, dünyanın yoğunluğu hesabını etkilemeyecek tamamen gereksiz bir analiz olmuş.]
+</p>
+
+<ol class="org-ol">
+<li value="72">Hareketsizlik noktasının hareketinin etkisi şöyledir: eğer kol hareketsizlik noktası ile aynı yönde ilerliyorsa, bir uç noktadan diğer uç noktaya hareket etme zamanı artar, fakat aksi yöned ilerliyorlarsa, azalır. Fakat eğer, hareketsizlik noktası aynı hızda ilerliyorsa, bir uç noktadan artaya noktaya hareket zamanı, orta noktadan diğer uç noktaya hareket zamanı ile aynı olacaktır. Ve birbirini takip eden iki salınım zamanı çok az değişmiş olacaktır, ve, dolayısıyla, bir salınımın orta noktasından, bir sonraki salınımın orta noktasına gidiş zamanı çok az değişmiş olacaktır.</li>
+
+<li>Öyle gözüküyor ki, havanın direncinden dolayı, kolun salınımın orta noktasına gelmesi, uç noktalara gelişinin tam olarak ortalaması değil, bu benim salınımın dönemi bulma yöntemimde bazı hatalara sebep oluyor.</li>
+
+<li>Fakat, gözlemlenmelidir ki, kolun orta noktaya gelmesinin zamanı salınımın ortasından önce olduğu için, hem ilk ve hem de son salınım için, ve genel olarak nerdeyse eşit olarak, bu sebepten doğan hata kayda değer olmayacaktır. Ayrıca, salınımın dönemini bulmak için, bu yöntemden daha az itiraza sebep olacak başka bir yöntem düşünemiyorum.</li>
+
+<li>Salınımın dönemi ya daha önce yapılmış deneylerle belirlenebilir, veya ağırlıkların yerinin değiştirilmesinin sebep olduğu dönemi belirleyerek, her deneyde ayrı olarak belirlenebilir.</li>
+
+<li>Fakat dönemi her deneyde belirlemenin bir avantajı vardır. Eğer raslantısal bir çekim olursa, mesela, kolun hareketinin görüldüğü [kasalara takılı olan cam pencerelerden] gelen bir elektriksel çekim, bu çekim kolu oynatmak için gereken gücü arttıracaktır, aynı zamanda salınım zamınını da azaltacaktır, ve sonuç olarak, eğer kolu oynatmak için gereken güç deney sırasında hesaplanırsa, hata çok daha az olacaktır. Eğer kolu oynatacak güç daha önceki deneylerden alınmış olursa, hata artacaktır.</li>
+
+<li>DENEYLERİN AÇIKLAMASI</li>
+
+<li>İlk yaptığım deneylerde, kolun asılı olduğu tel, gümüş kaplı bakırdan yapılmıştı (silvered copper), \(39\frac{1}{4}\) inch uzunluğundaydı ve 1 foot uzunluğunda bir parçası $2\frac{4}{10} grains ağırlığındaydı. Bu telin sertleği kolu aşağı yukarı 15 dakikada bir salınım yaptıracak sertlikteydi.</li>
+
+<li>Deneye başlar başlamaz bu telin yeteri kadar sert olmadığını farkettim çünkü ağırlıkların çekimi o kadar fazlaydı kı toplar kasanın kenarına çarptılar. Buna rağmen, değiştirmeden önce, bu telle bir kaç deney yapmaya karar verdim.</li>
+
+<li>Bu deneyde, kurşun ağırlıkların asılı olduğu çubuklar demirden yapılmıştı.</li>
+
+<li>Sarkaç kolunda manyetik olan hiçbir şey olmamasına dikkat ettiğim için, çubukların manyetik olup olmamalarının bir önemi yokmuş gibi düşünülebilir, fakat daha da emin olmak için, kurşun ağırlıkları çıkardım ve demir çubukların kendi başlarına nasıl bir etkisi olacağına baktım.</li>
+
+<li>Şimdi, hesaplayarak, bu çubukların toplar üzerindeki çekim gücünün topların ağırlıklarına oranı, aşağı yukarı 17'de 2500'ü kadardı ("as 17 to 2500).</li>
+
+<li>Yapılan bu deneylerde, ağırlıkların topları çeken gücü, kolu aşağı yukarı 15 cetvel derecesi kadar oynattığı gözlemlenmiştir. Öyleyse, sadece çubukların çekimi topları bir cetvel derecesinin onda biri (1/10) kadar çekecektir. Ve dolayısıyla, çubukların bir yakın pozisyondan diğer yakın pozisyona geçirilmesiyle, kol bir ölçek derecesinin beşte biri (1/5) [5 sayısı tam okunmuyor] kadar hareket etmiş olacaktır.</li>
+
+<li>Bu deneyin sonucu şöyle oldu: çubukların bir yakın pozisyondan diğer yakın pozisyona getirilmesinden sonra, ilk 15 dakika, kolda çok az hareket meydana geldi, yerçekimi gücünün yaratacağı hareketten daha az, fakat daha sonra kolun hareketi arttı, çeyrek saat veya yarım saat sonra, kolun 1/2 veya 1.5 cetvel derecesi hareket ettiğini gördüm, ve bu hareket yerçekimi tarafından hareket ettirilmiş olsaydı gideceği yönde olan bir hareketti.</li>
+
+<li>Demir çubukları eski pozisyonlarına getirince, kol da aynı şekilde, ileri gittiği kadar, geri döndü.</li>
+
+<li>Açıklamak gerekir ki, bu deneylerde kolun hareketleri, bazen hiçbir sebep olmadan yaptığı hareketlerden hiç de farklı değildi. Fakat, bu demir çubuklarla yapılan üç deneylerde, hareket hep aynı şekildeydi, sadece miktarı 0.5'le 1.5 arası değişiyordu, bu sebepten, bu hareketi demir çubukların sebep olduğunu düşünmek mantıklı olacaktır.</li>
+
+<li>Bu bahsettiğim sonuç bana manyetik etki olabilir gibi geldiği için, fakat manyetik olsaydı tam bu şekilde olmazdı, demir çubukları bakır çubuklarla değiştirdim ve önceki gibi deney yaptım. Sonuç olarak, aynı tipte fakat daha düzensiz, bir etki olduğunu gözlemledim, ve raslantısal bir etki olduğunu varsaydım ve kurşun ağırlıkları takıp deneyle devam ettim.</li>
+
+<li>Bir de, demir çubukları bir yakın pozisyondan diğer yakın pozisyona taşımaktan doğan etki, ortalama olarak, bir cetvel derecesinden fazla değildi. Fakat ağırlıkları orta noktadan yakın noktaya taşımaktan doğan etki 15 cetvel derecesiydi. Dolayısıyla, eğer demir çubukları kullanmayı devam etseydim, sonuçları etkileyecek olan hata bütünün 30'da birini (1/30) geçmezdi.</li>
+
+<li>1. Deney. 5 Ağustos</li>
+</ol>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Uç noktalar</th>
+<th scope="col" class="org-right">Bölümler</th>
+<th scope="col" class="org-right">Zaman</th>
+<th scope="col" class="org-right">Sabit Nokta</th>
+<th scope="col" class="org-left">Orta noktanın zamanı</th>
+<th scope="col" class="org-left">Fark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">11.4</td>
+<td class="org-right">09:42:00</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">11.5</td>
+<td class="org-right">09:55:00</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">11.5</td>
+<td class="org-right">10:05:00</td>
+<td class="org-right">11.5</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">Ağırlıklar ==&gt; +</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">[10:05]</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">23.4</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">27.6</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-right">25.82</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">24.7</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-right">26.07</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">27.3</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-right">26.10</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">Ağırlıklar ==&gt; 0</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">[11:06]</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">05.0</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">11</td>
+<td class="org-right">00:00:48</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">12</td>
+<td class="org-right">00:01:30</td>
+<td class="org-right">--</td>
+<td class="org-left">00:01:13</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">18.2</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-right">12</td>
+<td class="org-left">--</td>
+<td class="org-left">14d 56s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">12</td>
+<td class="org-right">00:16:29</td>
+<td class="org-right">--</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">11</td>
+<td class="org-right">00:17:20</td>
+<td class="org-right">--</td>
+<td class="org-left">00:16:09</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">06.6</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-right">11.92</td>
+<td class="org-left">--</td>
+<td class="org-left">14d 36s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">11</td>
+<td class="org-right">00:30:24</td>
+<td class="org-right">--</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">12</td>
+<td class="org-right">00:31:11</td>
+<td class="org-right">--</td>
+<td class="org-left">00:30:45</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">16.3</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-right">11.72</td>
+<td class="org-left">--</td>
+<td class="org-left">15d 13s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">12</td>
+<td class="org-right">00:45:58</td>
+<td class="org-right">--</td>
+<td class="org-left">--</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">11</td>
+<td class="org-right">00:47:04</td>
+<td class="org-right">--</td>
+<td class="org-left">00:45:58</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">07.7</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Kolun hareketleri (cetvel derecesi olarak):
+</p>
+
+<p>
+Orta pozisyondan pozitif pozisyona = 14.32
+</p>
+
+<p>
+Pozitif pozisyondan orta pozisyona = 14.10
+</p>
+
+<p>
+Salınım dönemi = 14d 55s
+</p>
+
+<ol class="org-ol">
+<li value="90">Bu deneyde, ağırlıkların çekimi kolu 11.5'ten 25.8' çekti, yani, eğer kolu durdurmak için tedbir almamış olsaydım, kolun hızı [momentum acquired] onu 40' yaklaştıracaktı, ve toplar kasanın kenarlarına çarpmış olacaktı.</li>
+
+<li>Bu çarpışmayı önlemek için, kol 15 derece civarında hareket edince, ağırlıkları orta pozisyona getirdim, ve kol salınımın sonuna gelene kadar orada tuttum, ve sonra onları tekrar pozitif pozisyona taşıdım, böylece sarkaç kolunun salınımı o kadar azaldı ki, kasa çarpmamış oldu, bu sebepten salınımın ilk uç noktasını ölçemedim.</li>
+
+<li>Buna benzer bir yöntem, ağırlıklar orta noktaya getirilince ve bundan sonraki iki deneyde uygulandı.</li>
+
+<li>Ağırlıkları orta pozisyondan pozitif pozisyona taşıyınca, kolun salınımı o kadar küçüktü ki, salınım dönemini ölçmek gereksiz göründü.</li>
+
+<li>Ağırlıklar orta pozisyona geri getirilince, her salınımın dönemi ne kadar birbirlerini yakın olduğunu görmek için, her salınımdan sonra kolun orta noktaya gelişini hesapladım.</li>
+
+<li>Takip eden deneylerde büyük bölümünde, kolun orta noktaya gelişini hesaplamak için sadece ilk ve son salınımı hesaba kattım.</li>
+
+<li>2. DENEY. 6 AĞUSTOS</li>
+</ol>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Uç noktalar</th>
+<th scope="col" class="org-right">Bölümler</th>
+<th scope="col" class="org-right">Zaman</th>
+<th scope="col" class="org-right">Sabit Nokta</th>
+<th scope="col" class="org-left">Orta noktanın zamanı</th>
+<th scope="col" class="org-left">Fark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">11</td>
+<td class="org-right">10:04:00</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">11</td>
+<td class="org-right">10:11:00</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">11</td>
+<td class="org-right">10:17:00</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">11</td>
+<td class="org-right">10:25:00</td>
+<td class="org-right">11.00</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">Ağırlıklar +</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">29.3</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">24.1</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-right">26.87</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">30.0</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-right">27.57</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">26.2</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-right">28.02</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">29.7</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-right">28.12</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">26.9</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-right">28.05</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">28.7</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-right">27.85</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">28.4</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">Ağırlıklar -</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">06.0</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">12</td>
+<td class="org-right">01:03:50</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">13</td>
+<td class="org-right">01:04:34</td>
+<td class="org-right">--</td>
+<td class="org-left">01:04:01</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">18.5</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-right">12.37</td>
+<td class="org-left">--</td>
+<td class="org-left">14d 52s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">13</td>
+<td class="org-right">01:18:29</td>
+<td class="org-right">--</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">12</td>
+<td class="org-right">01:19.18</td>
+<td class="org-right">--</td>
+<td class="org-left">01:18:53</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">06.5</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-right">11.67</td>
+<td class="org-left">--</td>
+<td class="org-left">14d 46s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">11</td>
+<td class="org-right">01:33:48</td>
+<td class="org-right">--</td>
+<td class="org-left">--</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">12</td>
+<td class="org-right">01:34:51</td>
+<td class="org-right">--</td>
+<td class="org-left">01:33:39</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">15.2</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-right">11.00</td>
+<td class="org-left">--</td>
+<td class="org-left">13d 46s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">13</td>
+<td class="org-right">01:45:08</td>
+<td class="org-right">--</td>
+<td class="org-left">--</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">12</td>
+<td class="org-right">01:46:22</td>
+<td class="org-right">--</td>
+<td class="org-left">01:47:25</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">07.1</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-right">10.75</td>
+<td class="org-left">--</td>
+<td class="org-left">15d 25.s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">11</td>
+<td class="org-right">02:03:48</td>
+<td class="org-right">--</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">12</td>
+<td class="org-right">02:05:18</td>
+<td class="org-right">--</td>
+<td class="org-left">02:02:50</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">13.6</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Kolun hareketleri (cetvel derecesi olarak):
+</p>
+
+<p>
+Orta pozisyondan pozitif pozisyona = 15.87
+</p>
+
+<p>
+Pozitif pozisyondan orta pozisyona = 15.45
+</p>
+
+<p>
+Salınım dönemi = 14d 42s
+</p>
+
+<ol class="org-ol">
+<li value="97">3. DENEY. 7 AĞUSTOS</li>
+</ol>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Uç noktalar</th>
+<th scope="col" class="org-right">Bölümler</th>
+<th scope="col" class="org-right">Zaman</th>
+<th scope="col" class="org-left">Sabit Nokta</th>
+<th scope="col" class="org-right">Orta noktanın zamanı</th>
+<th scope="col" class="org-left">Fark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">31.5</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">29.0</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">30.12</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">31.0</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">30.02</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">29.1</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">Ağırlıklar 0</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">09.0</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">14</td>
+<td class="org-right">10:34:18</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">15</td>
+<td class="org-right">10:35:08</td>
+<td class="org-left">--</td>
+<td class="org-right">10:34:55</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">20.5</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">14.8</td>
+<td class="org-right">--</td>
+<td class="org-left">14d 44s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">15</td>
+<td class="org-right">10:49:31</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">14</td>
+<td class="org-right">10:50:27</td>
+<td class="org-left">--</td>
+<td class="org-right">10:49:39</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">09.2</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">14.07</td>
+<td class="org-right">--</td>
+<td class="org-left">14d 38s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">14</td>
+<td class="org-right">11:05:07</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">15</td>
+<td class="org-right">11:06:18</td>
+<td class="org-left">--</td>
+<td class="org-right">11:04:17</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">17.4</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">13.52</td>
+<td class="org-right">--</td>
+<td class="org-left">14d 47s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">14</td>
+<td class="org-right">11.18:46</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">13</td>
+<td class="org-right">11:19:58</td>
+<td class="org-left">--</td>
+<td class="org-right">11:19:04</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">10.1</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">13.3</td>
+<td class="org-right">--</td>
+<td class="org-left">14d 27s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">13</td>
+<td class="org-right">11:33:46</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">14</td>
+<td class="org-right">11:35:26</td>
+<td class="org-left">--</td>
+<td class="org-right">10:33:31</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">15.6</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">Ağırlıklar +</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">32.0</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">28</td>
+<td class="org-right">00:02:48</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">27</td>
+<td class="org-right">00:03:56</td>
+<td class="org-left">--</td>
+<td class="org-right">00:02:59</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">23.7</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">27.8</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">31.8</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">28.27</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">25.8</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">28.62</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">27</td>
+<td class="org-right">00:44:58</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">28</td>
+<td class="org-right">00:46:50</td>
+<td class="org-left">--</td>
+<td class="org-right">00:47:40</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">31.1</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Kolun hareketleri (cetvel derecesi olarak):
+</p>
+
+<p>
+Pozituf pozisyondan orta pozisyona = 15.22
+</p>
+
+<p>
+Orta pozisyondan pozitif pozisyona = 14.50
+</p>
+
+<p>
+Orta pozisyonda salınım dönemi = 14d 39s
+</p>
+
+<p>
+Pozitif pozisyonda salınım dönemi = 14d 54s
+</p>
+
+<ol class="org-ol">
+<li value="98">Bu deneyler, ağırlıkların toplar üzerindeki çekiminin ölçülebilir olduğunu göstermek için yeterlidir. Ve ağırlıkların topları çekimi, bu gücün miktarını belirlemek için de yeteri kadar düzenlidir çünkü uç sonuçlar birbirlerinden 10 parçada 1'den fazla farklı değildirler. ("&#x2026;the extreme results do not differ from each other by more than 1/10 part.")</li>
+
+<li>Fakat, bu deneylerde sebebi tam olarak belli olmayan bir durum var. Çekimin etkisi, ağırlıkların yerini değiştirdikten sonra, yarım saat veya bir saat, artıyor gibi görünüyor. Görüldüğü gibi, bu üç deneyde de, ağırlıkları artı pozisyona getirdikten sonra, kolun orta noktası artmaya devam etti. Ağırlıkları artı pozisyondan sıfır pozisyona getirince de, azalmaya devam etti.</li>
+
+<li>Bu etkinin sebebi olarak aklıma ilk gelen telin esnekliğinin eksik olmasıydı. Bu eksiklik telde de olabilirdi, ve telin bağlı olduğu bir şeyde olabilirdi. Bir gücün altında uzun müddet bükülmüş olan bir tel esnekliğini kaybedeceği için, aynı gücü ilk defasında verdiği tepkiyi veremez.</li>
+
+<li>Bu savımı denemek için, kolu çeviren tokmağı [ Cavvendish "index", diyor, bu Şekil 1'deki "K" harfi ile işaretlenmiş tokmak olmalı] o kadar çevirdim ki, eğer kasaların kenarına dayanmamış olsalardı 50 cetvel derecesi dönmüş olacaklardı. Fakat, 35 dereceden daha ileri gidemediği için, gidebildiğinden 15 derece eksik dönmüş oldu, kısaca, tel 15 derece döndürülmüş oldu.</li>
+
+<li>Tokmak bu pozisyonda 2-3 saat kaldıktan sonra, kolu doğal pozisyonuna geri gelmesi için tokmağı eski haline getirdim.</li>
+
+<li>[Cavendish burada yukardaki gereksiz tartışmaya devam ediyor, gereksiz çünkü zaten, şimdi teli değiştirip bundan sonraki deneyleri daha sert bir tel yapacak. Onun için şu anda tercüme etmiyorum.]</li>
+
+<li>Bundan sonra kol daha sert bir telden asıldı.</li>
+
+<li>4. DENEY. 12 AĞUSTOS</li>
+</ol>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Uç noktalar</th>
+<th scope="col" class="org-right">Bölümler</th>
+<th scope="col" class="org-right">Zaman</th>
+<th scope="col" class="org-left">Sabit Nokta</th>
+<th scope="col" class="org-right">Orta noktanın zamanı</th>
+<th scope="col" class="org-left">Fark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">21.6</td>
+<td class="org-right">09:30:00</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">21.5</td>
+<td class="org-right">09:52:00</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">21.5</td>
+<td class="org-right">10:13:00</td>
+<td class="org-left">21.50</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">Ağırlıklar 0 &#x2013;&gt; +</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">27.2</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">22.1</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">24.60</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">27.0</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">24.67</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">22.6</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">24.75</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">26.8</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">24.80</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">23.0</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">24.85</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">26.6</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">24.9</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">23.4</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">Ağırlıklar &#x2013;&gt; -</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">15.0</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">17</td>
+<td class="org-right">10:19:25</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">19</td>
+<td class="org-right">10:20:41</td>
+<td class="org-left">--</td>
+<td class="org-right">10:20:31</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">22.4</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">18.72</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">7d 0s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">20</td>
+<td class="org-right">10:26:45</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">19</td>
+<td class="org-right">10:27:22</td>
+<td class="org-left">--</td>
+<td class="org-right">11:27:31</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">15.1</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">18.52</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">6d 57s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">19</td>
+<td class="org-right">10:35:01</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">20</td>
+<td class="org-right">10:35:48</td>
+<td class="org-left">--</td>
+<td class="org-right">11:34:28</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">21.5</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">18.35</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">7d 23s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">20</td>
+<td class="org-right">10:40:23</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">19</td>
+<td class="org-right">10:41:18</td>
+<td class="org-left">--</td>
+<td class="org-right">11:41:51</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">15.3</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">18.22</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">6d 48s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">18</td>
+<td class="org-right">10:48:36</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">19</td>
+<td class="org-right">10:49:24</td>
+<td class="org-left">--</td>
+<td class="org-right">11:48:39</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">20.8</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">18.10</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">6d 58s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">19</td>
+<td class="org-right">10:54:45</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">18</td>
+<td class="org-right">10:55:45</td>
+<td class="org-left">--</td>
+<td class="org-right">11:55:37</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">15.5</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">Ağırlıklar &#x2013;&gt; +</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">31.3</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">25</td>
+<td class="org-right">11:10:25</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">23</td>
+<td class="org-right">11:11:03</td>
+<td class="org-left">--</td>
+<td class="org-right">11:10:40</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">17.1</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">24.02</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">7d 3s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">22</td>
+<td class="org-right">11:17:06</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">23</td>
+<td class="org-right">11:17:26</td>
+<td class="org-left">--</td>
+<td class="org-right">11:17:43</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">30.6</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">24.17</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">7d 1s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">25</td>
+<td class="org-right">11:24:33</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">23</td>
+<td class="org-right">11:25:17</td>
+<td class="org-left">--</td>
+<td class="org-right">11:24:44</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">18.4</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">24.32</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">7d 5s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">23</td>
+<td class="org-right">11:31:21</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">25</td>
+<td class="org-right">11:32:09</td>
+<td class="org-left">--</td>
+<td class="org-right">11:31:40</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">29.9</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">24.40</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">6d 59s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">25</td>
+<td class="org-right">11:38:39</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">23</td>
+<td class="org-right">11:39:31</td>
+<td class="org-left">--</td>
+<td class="org-right">11:38:48</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">19.4</td>
+<td class="org-right">--</td>
+<td class="org-right">--</td>
+<td class="org-left">24.50</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">7d 6s</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">23</td>
+<td class="org-right">11:45:16</td>
+<td class="org-left">--</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">25</td>
+<td class="org-right">11:46:12</td>
+<td class="org-left">--</td>
+<td class="org-right">11:45:54</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">29.3</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Kolun hareketleri (cetvel derecesi olarak):
+</p>
+
+<p>
+Orta pozisyondan pozitif pozisyona = 3.1
+</p>
+
+<p>
+Pozitif pozisyondan negatif pozisyona = 6.18
+</p>
+
+<p>
+Negatif pozisyondan pozitif pozisyona = 5.92
+</p>
+
+<p>
+Negatif pozisyonda salınım dönemi = 7d 1s
+</p>
+
+<p>
+Positif pozisyonda salınım dönemi = 7d 3s
+</p>
+
+<ol class="org-ol">
+<li value="106">5. DENEY. 20 AĞUSTOS</li>
+</ol>
+
+
+<div id="org0587d03" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-exp-5.png" width="70%" height="70%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 2: </span>5. Deney</p>
+</div>
+
+<ol class="org-ol">
+<li value="107">Dördüncü deneyde, ağırlıkların etkisi, ağırlıkların üç ayrı hareketi için, artıyor gibi görünüyordu, aynı ilk kullandığımız telde olduğu gibi. Fakat bu son deneyde durum daha değişikti. Ağırlıkları pozitif pozisyondan negatif pozisyoha getirdiğimizde arttığı halde, fakat ağırlıklar eksi pozisyondan artı pozisyona getirdiğimizde azaldı.</li>
+
+<li>Bundan sonra, bu etkinin mıknatıslık sonucu mu olduğunu araştırmak istedim. [Cavendish dünyanın manyetik alanından bahsediyor. Dünyanın manyetik alanının kolu etkileyip etkilemediğini araştırdığı 4 paragraf var, bunları tercüme etmiyorum, çünkü sonuç olarak, dünyanın manyetik alanının sarkaç koluna bir etkisi yokmuş. Bu konuda Cavendish'e güvenebiliriz. Sanki bu gereksiz incelemeleri, deneyin ne kadar hassas olduğunu göstermek için yapıyor gibi geliyor bana.]</li>
+
+<li>[Bir sonraki paragrafta da kolun bulunduğu kasa ile ağırlıkların değişik ısılarda olmasından doğabilecek hataları araştırıyor. Bu paragrafları da şimdilik tercüme etmiyorum.]</li>
+
+<li>6. DENEY. 6 EYLÜL</li>
+</ol>
+
+
+<div id="org25f674a" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-exp-6.png" width="70%" height="70%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 3: </span>6. Deney</p>
+</div>
+
+<ol class="org-ol">
+<li>7. DENEY. 18 EYLÜL</li>
+</ol>
+
+
+<div id="orgb7cef74" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-exp-7.png" width="70%" height="70%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 4: </span>7. Deney</p>
+</div>
+
+<ol class="org-ol">
+<li>8. DENEY. 23 EYLÜL</li>
+</ol>
+
+
+<div id="org21f8b90" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-exp-8.png" width="70%" height="70%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 5: </span>8. Deney</p>
+</div>
+
+<ol class="org-ol">
+<li value="113">[Isı değişikliğinin deneye etkisi üzerine detaylı denemeler yapmış. Sadece sonucu çeviriyorum şimdilik.] Sayfa 80. Yukarıda bahsettiğimiz etkinin ağırlıklar ve kasa arasındaki sıcaklık farkından kaynaklandığı yeterli delillerle ispat edilmiştir, çünkü, ağırlıkların kasadan çok daha sıcak olmadığı, 6., 8., ve 9. deneylerde [*] ağırlıkların etkisi artıyordu, fakat, ağırlıklar kasadan çok sıcak olduğu zaman artıyordu, ve kasadan çok daha soğuk olduklarında da azalıyordu. [Tam anlaşılamıyor, Cavendish ağırlıkları topların yakınına getirince, ve öyle bırakınca, çekim etkisi mi azalıyor?]</li>
+
+<li>Bu deneyde, topların içinde bulunduğu kasa çok derindi ve toplar da kasanın tabanına çok yakın bulunuyorlardı, bu da hava ceryanının etkisini daha belirgin yapıyordu. Bu hatayı ilerki deneylerde gidermeyi düşünüyorum.</li>
+</ol>
+
+<p>
+[*] Bu bir baskı hatası olmalı, bahsedilen deneyler 6., 7., ve 8. deneyler olmalı.
+</p>
+
+<ol class="org-ol">
+<li value="115">9. DENEY. 29 NİSAN</li>
+</ol>
+
+
+<div id="org32c37fe" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-exp-9.png" width="70%" height="70%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 6: </span>9. Deney</p>
+</div>
+
+<ol class="org-ol">
+<li value="116">10. DENEY. 5 MAYIS</li>
+</ol>
+
+
+<div id="org2c837fd" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-exp-10.png" width="70%" height="70%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 7: </span>10. Deney</p>
+</div>
+
+<ol class="org-ol">
+<li value="117">11. DENEY. 6 MAYIS</li>
+</ol>
+
+
+<div id="org1e56f88" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-exp-11.png" width="70%" height="70%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 8: </span>11. Deney</p>
+</div>
+
+<ol class="org-ol">
+<li value="118">En son üç deney, topların döndüren topuz döndürülerek, toplar kasaların kenarlarına çarpmadan mümkün olduğu kadar yakına getirilmiştir. Kol 35 derecede olduğunda, toplar kasaya çarpıyordu. Bundan sonraki iki deneyde topuz normal pozisyonuna geri getirildi.</li>
+
+<li value="118">12. DENEY. 9 MAYIS</li>
+</ol>
+
+
+<div id="org31d714a" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-exp-12.png" width="70%" height="70%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 9: </span>12. Deney</p>
+</div>
+
+<ol class="org-ol">
+<li value="119">13. DENEY. 25 MAYIS</li>
+</ol>
+
+
+<div id="org55f9452" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-exp-13.png" width="70%" height="70%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 10: </span>13. Deney</p>
+</div>
+
+<ol class="org-ol">
+<li value="120">14. DENEY. 26 MAYIS</li>
+</ol>
+
+
+<div id="org6e2f310" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-exp-14.png" width="70%" height="70%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 11: </span>14. Deney</p>
+</div>
+
+<ol class="org-ol">
+<li value="121">Bir sonraki deneyde, ağırlıkların yeri değiştirilmeden önce, toplar kasanın kenarlarına mümkün olduğu kadar yaklaştırıldılar, fakat, 9., 10., ve 11. deneylerde toplar yakın kenara getirilmişlerdi, bu deneyde uzak kenara yaklaştırıldılar.</li>
+
+<li>15. DENEY. 27 MAYIS</li>
+</ol>
+
+
+<div id="orga720132" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-exp-15.png" width="70%" height="70%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 12: </span>15. Deney</p>
+</div>
+
+<ol class="org-ol">
+<li value="123">Bir sonraki deney, bana yardımcı olma nezaketin gösteren Mr. Gilpin tarafından yapılmıştır.</li>
+</ol>
+
+
+<div id="orgf7305ac" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-exp-16.png" width="70%" height="70%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 13: </span>16. DENEY</p>
+</div>
+
+<ol class="org-ol">
+<li value="124">17. DENEY. 30 MAYIS</li>
+</ol>
+
+
+<div id="orgcc7a1ba" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-exp-17.png" width="70%" height="70%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 14: </span>17. Deney</p>
+</div>
+
+<ol class="org-ol">
+<li value="125">BU DENEYLERDEN DÜNYANIN YOĞUNLUĞUNU HESAPLAMA YÖNTEMİ HAKKINDA</li>
+</ol>
+
+<p>
+Bu bölümün tercümesi <a href="cavendish-analiz-01.html">burada</a>.
+</p>
+
+<ol class="org-ol">
+<li value="126">(Sayfa 91) Buradan itibaren Cavendish, sarkacın hareketini etkileyeceğini düşündüğü bazı etkilerin sonucunda doğan hataları düzeltmek için detaylı incelemelere geçiyor. Bu düzeltmeleri şöyle sıralamış:</li>
+
+<li value="1">Kolun hareket etmeye direcinin sarkaç dönemine olan etkisi.</li>
+
+<li>Ağırlıkların kolu çektiği güç.</li>
+
+<li>Ağırlıkların uzaktaki topu çektiği güç.</li>
+
+<li>Bakır çubukların topları ve kolu çekimi.</li>
+
+<li>Kasanın topları ve kolu çekimi</li>
+
+<li>Kolun durumuna göre, ağırlıkların topları çekimindeki değişiklikler ve bunun dönemi yansıması.</li>
+
+<li value="127">Bu 6 düzeltmeyi yazdıktan sonra Cavendish sonuncusu hariç bu düzeltmelerin gereksiz olduğunu söylüyor!</li>
+
+<li>Bu düzeltmelerin hiçbiri, sonuncusu hariç olmak üzere, deneyin sonuçlarını etkileyecek önemde değildirler, fakat tamamen de yok sayılmamalırı gerekir.</li>
+
+<li>[Cavendish'in yaptığı bu incelemeler gerçekten de sadece orantılarla çalışan bir ustandan örnekler olarak incelenmeli ama deneyin sonuçlarına bir etkisi olmadığı için şemdilik tercüme etmiyorum.]</li>
+
+<li>(Sayfa 99) SONUÇLAR</li>
+</ol>
+
+
+<div id="org550c851" class="figure">
+<p><img src="http://cavendish-deneyi.com/img/cavendish-results.png" width="70%" height="70%" align="center" />
+</p>
+<p><span class="figure-number">Şekil 15: </span>SONUÇLAR</p>
+</div>
+
+<ol class="org-ol">
+<li value="131">Bu tabloda görünüyor ki, deneyler toplu olarak birbirleri ile uyumlu olduğu halde, hem kolun hareketinde, hem de salınım döneminde, ölçülen sayılar arasındaki farklılık ölçüm hatalarından doğabilecek hatalardan daha fazladır.</li>
+
+<li>Kolun hareketindeki farklılıkların, ısı farklığılndan doğan hava ceryanından kaynaklandığı söylenebilr. Fakat bu sebep, dönemdeki farklılıkları da açıklar mı bu şüpheli.</li>
+
+<li>Eğer hava ceryanı düzenli olsaydı, ve topların salınırken geçtiği her yerde aynı hızda olsaydı, o zaman, dönemdeki farklılıkları açıklayamazdı.</li>
+
+<li>Fakat, büyük olasılıkla hava ceryanında çok değişiklikler olduğu için, dönemdeki farklılıkları açıklayabilirdi.</li>
+
+<li>İlk telle yapılan deneylerde dünyanın yoğunluğu 5.48 [*] kere suyun yoğunluğu olarak hesaplanmıştı.</li>
+</ol>
+
+<p>
+[*] Cavendish'in verdiği bu sayılarda hata olduğu hakkında uzun bir dipnot var. Fakat, "dünyanın yoğunluğu" Cavendish'in verdiği 5.48 yerine, dipnotta bahsedilen 5.31 olsa ne fark eder ki? Dünyanın yoğunluğu zaten anlamsı bir kavram. 
+</p>
+
+<ol class="org-ol">
+<li value="136">Daha sonra kullanılan telle de yapılan deneyler aynı sonucu vermiştir.</li>
+
+<li>Ve bu telle yapılan 23 deneyin en aşırı farkı sadece .75'tir, ve dolayısıyla, aşırı sonuçlar, ortalamadan .38 veya 1/14'ten fazla farketmemektedir. Dolayısıyla, bu deneylerin yoğunluğu büyük bir kesinlikle belirlediğini söyleyebiliriz.</li>
+
+<li>Fakat, bu deneylerin sonuçlarının hava ceryanlarından veya yasalarını iyi bilmediğimiz başka etkenlerden etkilendiği vurgulanarak, ve bu etkenlerin her zaman veya düzenli olarak aynı yönde etki yaparak sonuçlarda önemli hatalara sebep olduğu söylenebilir.</li>
+
+<li>Fakat, deneyler değişik iklim koşullarında, ve ağırlıkların ve havanın ısılarının çok farklı olduğu ortamlarda yapıldığı için ve kolu kasanın kenarlarından değişik mesafelere koyarak yapıldığı için, hata sebeplerinin aynı şekilde ve düzenli olarak deneyi etkilemeleri ve [as to make the error of the mean results nearlu equal to the difference between this and the extreme,] ve bu sebepten, dünyanın yoğunluğunun 5.48'den tamamın 14'te biri kadar değişmesi olasalık dışı gibi görünüyor. [and therefore, it seems very unlikely that the density of the earth should differ from 5.48 by so much us 1/14 of the whole.</li>
+
+<li>Bu deneylere bir de, bu küçük mesafelerde yerçekiminin büyük mesafelerde takip ettiği yasalarla aynı yasalara uymadığı savını ileri sürerek itiraz edebilirsiniz.</li>
+
+<li>Fakat, cisimler birbirlerini yapışkanlık [cohesion] etkisinin devreye girdiği çok küçük mesafelere yaklaşmadığı için bu deneylerde böyle bir etki gözlemlenmemiştir.</li>
+
+<li>Sonuçların bu yapışkanlık etkisinden etkilenip etkilenmediğini denemek için, 9., 10., 11. ve 15. deneylerde topları kasanın kenarlarına mümkün olduğu yaklaştırdım, fakat, topların bu pozisyonda olduğu deneyler ile başka pozisyonlardı olduğu  deneyler arasında bir fark göremedim.</li>
+
+<li>Dr. Maskelyne tarafından Schehallien tepesinin çekimini ölçmek için yaptığı deneylerde dünyanın yoğunluğunun suyun yoğunluğunun 4.5 katı olduğunu bulmuştu, bu yaptığımız deneylerin sonuçlarından beklediğimden daha farklı olduğunu söyleyebilirim. Fakat, hangi deneyin [Maskelyne'nin mi, yoksa bu deneyler mi, demek istiyor] daha güvenilir olduğu hakkında ölçemediğim düzensiz etkilerin sonuçları nasıl etkilediğini incelemeden bir yargıda bulunmak istemiyorum. (sayfa 101)</li>
+
+<li>Bundan sonra Cavendish'in deneyleri etkileyecek unsurların etkisini hesapladığı uzun bir ek bölümü var. Bunu da tercüme etmiyorum, çünkü, hesaplar çok ilginç olduğu halde, deneylerin sonuçlarına bir etkileri yok.</li>
+
+<li>Ek (sayfa 101) MAUN KASANIN TOPLARI ÇEKİM HAKKINDA</li>
+
+<li>[Makale burada bitiyor. Bundan sonra eksik yerler tercüme edilebilir. Son hızla yaptığım bu taslak düzeltilebilir.]</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-02 Mon 09:35</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
