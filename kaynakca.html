@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
+<head>
+<!-- 2026-11-02 Mon 10:20 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="http://cavendish-deneyi.com/css/worg-classic-new.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+
+<div id="outline-container-org903400a" class="outline-2">
+<h2 id="org903400a">KAYNAKÇA</h2>
+<div class="outline-text-2" id="text-org903400a">
+</div>
+<div id="outline-container-org9b0e579" class="outline-3">
+<h3 id="org9b0e579">Halil İnalcık</h3>
+<div class="outline-text-3" id="text-org9b0e579">
+<p>
+Osmanlı Tarihinde İslamiyet ve Devlet
+</p>
+
+<p>
+s.137, Batılılaşma ve Laikleşmenin Tarihi Kökenleri
+</p>
+<ul class="org-ul">
+<li>Laikliği şeriat hukukundan kurtulmak olarak alıyor</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb5fa56d" class="outline-3">
+<h3 id="orgb5fa56d">A. Stanley Mackenzie (1900)</h3>
+<div class="outline-text-3" id="text-orgb5fa56d">
+<p>
+<a href="pdf/The_laws_of_gravitation;_memoirs_by_Newton,_Bouguer_and_Cavendish,_together_with_abstracts_of_other_important_memoirs_(IA_bub_gb_O58mAAAAMAAJ).pdf">The Laws of Gravitation, Memoirs by Newton, Bouguer and Cavendish</a>
+</p>
+<ul class="org-ul">
+<li>Cavendish'in makalesini buradan tercüme ediyorum.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7cbf97a" class="outline-3">
+<h3 id="org7cbf97a">Henry Cavendish (1798)</h3>
+<div class="outline-text-3" id="text-org7cbf97a">
+<p>
+<a href="https://royalsocietypublishing.org/doi/pdf/10.1098/rstl.1798.0022">Experiments to determine the density of the earth</a>
+</p>
+<ul class="org-ul">
+<li>Cavendish'in orijinal makalesi. <i><a href="https://royalsocietypublishing.org/doi/10.1098/rstl.1798.0022">Philosophical Transactions</a></i>, Vol. 88., 31 December 1798.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf29fe68" class="outline-3">
+<h3 id="orgf29fe68">Francis Baily (1843)</h3>
+<div class="outline-text-3" id="text-orgf29fe68">
+<p>
+<a href="pdf/Experiments_with_the_Torsion_Rod_for_Det.pdf">Experiments with the torsion rod for determining the mean density of the earth</a>
+</p>
+
+<p>
+<i>Memoirs of the Royal Astronomical Society</i>, Vol. XIV
+</p>
+
+<ul class="org-ul">
+<li>Francis Baily tries to repeat the Cavendish experiment but this is not an exact replication. He made too many design changes.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga8d600b" class="outline-3">
+<h3 id="orga8d600b">Ofer Gal</h3>
+<div class="outline-text-3" id="text-orga8d600b">
+<p>
+<a href="pdf/ofer-gal-inverse-square-law.pdf">Inverse Square Law</a>
+</p>
+
+<p>
+To understand the change, let us look first at that manuscript of Newton from 1666—On Circular Motion (OCM).  In this manuscript Newton proves the ISL from Kepler’s third law, the harmonic law.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org63c3443" class="outline-3">
+<h3 id="org63c3443">Richard Conn Henry (2000)</h3>
+<div class="outline-text-3" id="text-org63c3443">
+<p>
+<a href="pdf/Circular_motion.pdf">Circular Motion</a>
+</p>
+
+<p>
+<i>An extraordinarily simple and transparent derivation of the formula for the acceleration that occurs in uniform circular motion is presented.</i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org048945e" class="outline-3">
+<h3 id="org048945e">Christiaan Huygens (1703)</h3>
+<div class="outline-text-3" id="text-org048945e">
+<p>
+<a href="https://www.princeton.edu/~hos/mike/texts/huygens/centriforce/huyforce.htm">De Vi Centrifuga</a> (in English)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga9b9d53" class="outline-3">
+<h3 id="orga9b9d53">James Clerk Maxwell (1888)</h3>
+<div class="outline-text-3" id="text-orga9b9d53">
+<p>
+<a href="http://strangebeautiful.com/other-texts/maxwell-matter-motion.pdf">Matter and Motion</a> (digitally printed version 2010)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org43e204e" class="outline-3">
+<h3 id="org43e204e">C. Vernon Boys (1894)</h3>
+<div class="outline-text-3" id="text-org43e204e">
+<p>
+<a href="https://books.google.com.tr/books?id=ZrloHemOmUEC&amp;pg=PA355&amp;redir_esc=y#v=onepage&amp;q&amp;f=true">The Newtonian Constant of Gravitation</a>
+</p>
+<ul class="org-ul">
+<li>He defines G as Newtonian Constant of Gravitation for the first time.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge76b10d" class="outline-3">
+<h3 id="orge76b10d">Charles Vernon Boys (Obituary Notice) (1944)</h3>
+<div class="outline-text-3" id="text-orge76b10d">
+<p>
+Charles Vernon Boys. 1855-1944
+<a href="https://www.jstor.org/stable/768861">Obituary Notices of Fellows of the Royal Society</a>
+Vol. 4, No. 13 (Nov., 1944), pp. 771-788 (19 pages)
+Rayleigh. “Charles Vernon Boys. 1855-1944.” Obituary Notices of Fellows of the Royal Society, vol. 4, no. 13, 1944, pp. 771–88. JSTOR, <a href="http://www.jstor.org/stable/768861">http://www.jstor.org/stable/768861</a>. Accessed 28 May 2022.
+</p>
+
+
+<ul class="org-ul">
+<li>Footnote on page 777 says that Cavendish's apparatus is in the possession of The Royal Institution: «Footnote 6: Boys’ apparatus is at the Science Museum, South Kensington. Cavendish’s apparatus is at the Royal Institution. Bailey’s apparatus is at the Royal Astronomical Society.»</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5b43e6e" class="outline-3">
+<h3 id="org5b43e6e">John Michell</h3>
+<div class="outline-text-3" id="text-org5b43e6e">
+<p>
+<a href="https://archive.org/details/memoirofjohnmich00geikrich/page/91/mode/1up">Memoirs of John Michell</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5d24857" class="outline-3">
+<h3 id="org5d24857">Espen Gaarder Haug</h3>
+<div class="outline-text-3" id="text-org5d24857">
+<p>
+Norwegian University of Life Sciences, Ås, Norway
+</p>
+
+<p>
+espenhaug@mac.com
+<a href="https://www.scirp.org/pdf/jmp_2022022114492632.pdf">
+Newton Did Not Invent or Use the So-Called Newton’s Gravitational Constant; G, It Has Mainly Caused Confusion</a>
+</p>
+
+<p>
+<i>Journal of Modern Physics</i>, 2022, 13, 179-205
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6e775bf" class="outline-3">
+<h3 id="org6e775bf">P.F. Titchmarsh (1966)</h3>
+<div class="outline-text-3" id="text-org6e775bf">
+<p>
+<a href="pdf/Cavendish-Titmarch.pdf">The Michell-Cavendish Experiment</a>
+<i>The School Science Review</i>, no. 162 (March 1966) 321-22
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9cf03ed" class="outline-3">
+<h3 id="org9cf03ed">J. Babinet (1864)</h3>
+<div class="outline-text-3" id="text-org9cf03ed">
+<p>
+<a href="https://books.googleusercontent.com/books/content?req=AKW5Qac3QA1coDcI0C511L0NNLLLV3eXAdwOt1Jj3PenF9syxkJxGw6kII5avbxmp7qSAYgEZ7k84TYeWchE7YetBV5SVasCESFqEk1iJmisnwWz0m8hNzgZNYC6Y2b---bi6xdi15ZcNnTO8APSBTsE2wsVu3Nz4q9gD7nWENoWwa60y8Ew2P2tx0Gr2E-fnCsqLE-QpJkxraQXDSB-fe2WJB5XDkZ2qFonY60DYfZS_YvEPh2nR5wBfPHpsXQobXC3fZJFefa7q7NuqRdnV2yinfQ8a7SadoN527CvMcrlOwxwYS1l9Cc">Note sur le calcul de l'experience de Cavendish relative a la masse et a la densite moyenne de la terre</a>,
+</p>
+
+<p>
+Cosmos 24, 543-5 1864
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbebe9d4" class="outline-3">
+<h3 id="orgbebe9d4">Bullen, K.E., (1975)</h3>
+<div class="outline-text-3" id="text-orgbebe9d4">
+<p>
+<a href="https://books.google.com.tr/books?id=HLz0CAAAQBAJ&amp;pg=PA18&amp;dq=cornu+et+baille&amp;hl=tr&amp;sa=X&amp;ved=2ahUKEwjv9vvXn6f0AhUrRPEDHU5pDnk4KBDoAXoECAkQAg#v=onepage&amp;q=cornu%20et%20baille&amp;f=false">The Earth's Density</a>
+</p>
+
+<p>
+Chapman and Hall.
+</p>
+<ul class="org-ul">
+<li>Google Books'da, Cavendish hakkında kısa bir bölüm var, s.16</li>
+<li>Telin sertliğini hesaba katan analizlerden</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org21585c9" class="outline-3">
+<h3 id="org21585c9">Chang, Victoria (2007)</h3>
+<div class="outline-text-3" id="text-org21585c9">
+<p>
+<a href="http://large.stanford.edu/courses/2007/ph210/chang1/">Weighing the Earth in 1798: The Cavendish Experiment</a>
+Coursework for Stanford University
+Modern analiz Cavendish analizi ile karışık
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb0ec2ab" class="outline-3">
+<h3 id="orgb0ec2ab">Cohen, I.B ve Whitman, Anne. (1999)</h3>
+<div class="outline-text-3" id="text-orgb0ec2ab">
+<p>
+The Principia: Mathematical Principles of Natural Philosophy.
+</p>
+
+<p>
+University of California Press.
+</p>
+
+<p>
+<a id="org4aef742"></a>    
+</p>
+</div>
+</div>
+<div id="outline-container-org220087a" class="outline-3">
+<h3 id="org220087a">A. Cornu et J. B. Baille,</h3>
+<div class="outline-text-3" id="text-org220087a">
+<p>
+<a href="https://ia800900.us.archive.org/14/items/13659914.med.yale.edu/D%C3%A9termination%20nouvelle....pdf">Détermination nouvelle de la constante de l'attaction et de la densité moyenne de la terre</a>,
+</p>
+
+<p>
+<a href="https://gallica.bnf.fr/ark:/12148/bpt6k3033b/f954.item">Gallica</a>
+</p>
+
+<p>
+Comp. Rend. 76, 954-8
+</p>
+</div>
+</div>
+
+<div id="outline-container-org37e1737" class="outline-3">
+<h3 id="org37e1737">A. Cornu et J.B. Baille, (1878)</h3>
+<div class="outline-text-3" id="text-org37e1737">
+<p>
+<a href="https://babel.hathitrust.org/cgi/pt?id=nnc1.cu00923117&amp;view=1up&amp;seq=169&amp;skin=2021">Sur la mesure da la densité moyenne de la terre</a>,
+</p>
+
+<p>
+Comp. Rend., 86, 1001-4
+</p>
+<ul class="org-ul">
+<li>Kısa not.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org69ed9ce" class="outline-3">
+<h3 id="org69ed9ce">A. Cornu et J.B. Baille, (1878)</h3>
+<div class="outline-text-3" id="text-org69ed9ce">
+<p>
+<a href="https://babel.hathitrust.org/cgi/pt?id=nnc1.cu00923168&amp;view=1up&amp;seq=705&amp;skin=2021%20">Sur la measure de la densité moyenne de la Terre</a>,
+</p>
+
+<p>
+Comp. Rend., 86, 699-702.
+</p>
+<ul class="org-ul">
+<li>Kısa not.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org41af456" class="outline-3">
+<h3 id="org41af456">Densmore, Dana ve Donahue, William H. (2003)</h3>
+<div class="outline-text-3" id="text-org41af456">
+<p>
+Newton's Principia: The Central Argument.
+</p>
+
+<p>
+Green Lion Press.
+</p>
+
+<p>
+<a id="org8dc1c78"></a>    
+</p>
+</div>
+</div>
+<div id="outline-container-orgde00498" class="outline-3">
+<h3 id="orgde00498">Steffen Ducheyne (2011)</h3>
+<div class="outline-text-3" id="text-orgde00498">
+<p>
+<a href="http://cavendish-deneyi.com/pdf/cavendish-ducheyne.pdf">The Cavendish Experiment as a Tool for Historical Understanding of Science</a>
+</p>
+<ul class="org-ul">
+<li>Cavendish'in kendi analizini çok detaylı açıklıyor</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org268c618" class="outline-3">
+<h3 id="org268c618">Falconer, Isobel (1999)</h3>
+<div class="outline-text-3" id="text-org268c618">
+<p>
+<a href="pdf/henry-cavendish-the-man-and-the-measurement.pdf">Henry Cavendish: the man and the measurement</a>
+</p>
+
+<p>
+Measurement Science and Technology, Volume 10, Number 6
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org7993814" class="outline-3">
+<h3 id="org7993814">Christian Huygens (1673)</h3>
+<div class="outline-text-3" id="text-org7993814">
+<p>
+Horologium Oscillatorium.
+</p>
+
+<p>
+translated and annotated by Ian Bruce
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd6fdc04" class="outline-3">
+<h3 id="orgd6fdc04">Gopi Krishna Vijaya</h3>
+<div class="outline-text-3" id="text-orgd6fdc04">
+<p>
+Original form of Kepler's Third Law and its misapplication in Propositions XXXII-XXXVII in Newton's Principia (Book I).
+</p>
+
+<p>
+Heliyon, Volume 5, Issue 2, February 2019
+</p>
+<ul class="org-ul">
+<li>Kepler Kuralı'nın orijinalini ana kaynaktan almış, tercümesi ile.</li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S2405844018386961">Buradan</a> okunabilir.</li>
+</ul>
+
+<p>
+<a id="org40dce55"></a>
+</p>
+</div>
+</div>
+<div id="outline-container-org29a7339" class="outline-3">
+<h3 id="org29a7339">Gregory L. Baker, James A. Blackburn, (2005)</h3>
+<div class="outline-text-3" id="text-org29a7339">
+<p>
+<a href="https://books.google.com.tr/books?id=t4ISDAAAQBAJ&amp;lpg=PA108&amp;dq=cornu%20et%20baille&amp;hl=tr&amp;pg=PR4#v=onepage&amp;q=cornu%20et%20baille&amp;f=false">The Pendulum: A case study in Physics</a>,
+</p>
+
+<p>
+Oxford University Press.
+</p>
+<ul class="org-ul">
+<li>Google books. Telin torque'u (burulma momenti?) kolun dönme açısına direk orantılı iken, sözde çekim gücü mesafenin karesine ters orantılı. Bu iki gücün ilişkisi nasıl ola ki? Kim kazanır? Newtoncu güç kesin kazanır çünkü fizikçiler Newton'u korumak için doğayı hiçe sayarlar.</li>
+<li>Aslında telin torque'u işlemlere girmiyor, Cavendish böyle bir hesap yapmıyor.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8558696" class="outline-3">
+<h3 id="org8558696">Janiak, Andrew. (2021)</h3>
+<div class="outline-text-3" id="text-org8558696">
+<p>
+Felsefi Yazılar: İsaac Newton.
+</p>
+
+<p>
+Çeviren: Deniz Esen.
+</p>
+
+<p>
+Say Yayınları.
+</p>
+<ul class="org-ul">
+<li>Bu kitap, Andrew Janiek'in 2014'te Cambridge University Press'den çıkan kitabının tercümesi ama Say Yayınları yazarın ismini kullanmamayı tercih etmiş.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb3dc688" class="outline-3">
+<h3 id="orgb3dc688">Lauginie, Pierre (2009)</h3>
+<div class="outline-text-3" id="text-orgb3dc688">
+<p>
+<a href="https://webcache.googleusercontent.com/search?q=cache:f5-1hSAqlMkJ:https://www.raco.cat/index.php/ActesHistoria/article/download/55808/330231+&amp;cd=4&amp;hl=tr&amp;ct=clnk&amp;gl=tr">PESER LA TERRE, PESERLES MONDES DE LA «BALANCEA PESER LES MONDES»DE CAVENDISH (1798)AUX REPETITIONS DIDACTIQUESA L’UNIVERSITE</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf213fbc" class="outline-3">
+<h3 id="orgf213fbc">Poynting, J.H, (1894)</h3>
+<div class="outline-text-3" id="text-orgf213fbc">
+<p>
+<a href="https://ia600205.us.archive.org/26/items/meandensityeart00poyngoog/meandensityeart00poyngoog.pdf">The Mean Density of the Earth</a>,
+</p>
+
+<p>
+London, Charles Griffin and Co.
+</p>
+<ul class="org-ul">
+<li>Cavindish deneyinden de bahsediyor, detaylı açıklamalar var.</li>
+<li><a href="https://ia600205.us.archive.org/26/items/meandensityeart00poyngoog/meandensityeart00poyngoog.pdf">PDF</a> olarak da indirdim.</li>
+</ul>
+
+<p>
+<a id="org73e859b"></a>    
+</p>
+</div>
+</div>
+<div id="outline-container-org22b217d" class="outline-3">
+<h3 id="org22b217d">Stinner, Arthur (2001)</h3>
+<div class="outline-text-3" id="text-org22b217d">
+<p>
+<a href="pdf/Linking_The_Book_of_Nature_and_The_Book_of_Scie.pdf">Linking ‘The Book of Nature’ and ‘The Book of Science’: Using Circular Motion as an Exemplar beyond the Textbook</a>
+</p>
+
+<ul class="org-ul">
+<li>Researchgate.net makalesi</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcc9c92e" class="outline-3">
+<h3 id="orgcc9c92e">Beeson, Michael</h3>
+<div class="outline-text-3" id="text-orgcc9c92e">
+<p>
+Cavendish weighs the earth
+<a href="http://www.michaelbeeson.com/interests.php?include=GreatMoments.html">Michael Beeson's home page</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org565c939" class="outline-3">
+<h3 id="org565c939"><a href="https://www.physics.utoronto.ca/~phy224_324/experiments/cavendish/cavendish.pdf">Cavendish lab (classroom)</a></h3>
+<div class="outline-text-3" id="text-org565c939">
+<p>
+Bu da \(I=2md^2\) diyor, yani \(L=2d\) demiş. Aynı hesaba geliyor olabilir, bununlar \(mL^2/2\) (Wikipedia)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgad8d387" class="outline-3">
+<h3 id="orgad8d387"><a href="http://web.physics.ucsb.edu/~phys128/experiments/cavendish/cavendish.pdf">PASCO Cavendish balance manual (classroom)</a></h3>
+<div class="outline-text-3" id="text-orgad8d387">
+<p>
+The gravitational attraction between a 38.3 gram mass and a 1.5 kg mass when their centers are separated by a distance of approximately 42.2 mm (a situation similar to that of the Gravitational Torsion Balance) is about 7 x 10 -10 newtons. If this doesn’t seem like a small quantity to measure, consider that the weight of the small mass is more than two hundred million times this amount. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org154bf4b" class="outline-3">
+<h3 id="org154bf4b"><a href="https://www.sciencedirect.com/science/article/pii/S2405844018386961#bib1">Original form of Kepler's Third Law and its misapplication in Propositions XXXII-XXXVII in Newton's Principia (Book I)</a></h3>
+<div class="outline-text-3" id="text-org154bf4b">
+<p>
+Gopi Krishna Vijay, Heliyon, Volume 5, Issue 2, February 2019.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb41ac59" class="outline-3">
+<h3 id="orgb41ac59"><a href="https://books.google.com.tr/books?id=rEYUAAAAQAAJ&amp;printsec=frontcover&amp;hl=tr#v=onepage&amp;q&amp;f=false">Newton's System of the World</a></h3>
+<div class="outline-text-3" id="text-orgb41ac59">
+<p>
+Sayfa ix, Kepler Kuralından bahsediyor.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5232870" class="outline-3">
+<h3 id="org5232870">P.F. Titchmarsh,</h3>
+<div class="outline-text-3" id="text-org5232870">
+<p>
+“The Michell-Cavendish Experiment” The School Science Review, no. 162 (March 1966) 321-22
+</p>
+</div>
+</div>
+
+<div id="outline-container-org19b6902" class="outline-3">
+<h3 id="org19b6902">James Edwards</h3>
+<div class="outline-text-3" id="text-org19b6902">
+<p>
+A companion from London to Brighthelmston, in Sussex, Topograpical Maps… (London, 1798, 1801), 11.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org38f1fef" class="outline-3">
+<h3 id="org38f1fef">Katie Mack</h3>
+<div class="outline-text-3" id="text-org38f1fef">
+<p>
+<a href="http://cavendish-deneyi.com/pdf/9781982103545.pdf">The End of Everything (Astrophysically speaking)</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Tarih: 2021-11-04 Thu 00:00</p>
+<p class="date">Oluşturuldu: 2026-11-02 Mon 10:20</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
